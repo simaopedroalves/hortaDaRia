@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: rgba(33, 156, 144, 1);
+    --yellow: rgba(233, 184, 36, 1);
+    --orange: rgba(238, 147, 34, 1);
+    --red: rgba(216, 63, 49, 1);
+    --white: rgb(245, 245, 245);
+}
+
+.dark-theme {
+    --green: ;
+    --yellow: ;
+    --orange: ;
+    --red: ;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: var(--green);
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    gap: 4vw;
+    justify-content: space-between;
+    align-items: center;
+    min-width: auto;
+    padding: 0 5vw;
+}
+
+.logo-img {
+    object-fit: contain;
+    border-radius: 50%;
+    max-width: 15vw;
+}
+
+
+
+/* CARRINHO */
+.cart-div{
+    position: relative;
+    /* border: 1px solid var(--yellow); */
+    max-height: max-content;
+}
+
+.fa-cart-shopping,
+.fa-magnifying-glass,
+.fa-bars-staggered {
+    color: var(--white);
+    font-size: 1rem;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.article-number {
+    border-radius: 50%;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.2rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+}
+/* =========================================== */
+.menu-list, #searchBarInput {
+    display: none;
+}
+
+/* SEARCH BAR */
+.searchBar-div button {
+    padding: 0.2rem;
+    border-radius: 30%;
+    background-color: var(--orange);
+} 
