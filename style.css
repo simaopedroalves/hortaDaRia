@@ -27,6 +27,7 @@ header {
     background-color: var(--green);
     min-width: 100%;
     max-width: 100%;
+
 }
 
 /* NAVBAR */
@@ -37,6 +38,8 @@ header {
     align-items: center;
     min-width: auto;
     padding: 0 5vw;
+    max-height: 10vh;
+
 }
 
 .logo-img {
@@ -45,6 +48,13 @@ header {
     max-width: 15vw;
 }
 
+/* =======div with cart and hamburguer menu============= */
+
+.cart-and-menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
 
 
 /* CARRINHO */
@@ -64,7 +74,7 @@ header {
 }
 
 .article-number {
-    border-radius: 50%;
+    border-radius: 30%;
     background-color: var(--red);
     color: var(--white);
     padding: 0.2rem;
@@ -73,13 +83,27 @@ header {
     left: 0.7rem;
 }
 /* =========================================== */
-.menu-list, #searchBarInput {
+.menu-list {
     display: none;
 }
 
 /* SEARCH BAR */
-.searchBar-div button {
-    padding: 0.2rem;
-    border-radius: 30%;
-    background-color: var(--orange);
-} 
+.searchBar-div{
+    /* border: 1px solid var(--yellow); */
+    border-radius: 5%;
+    background-color: var(--green);
+    min-height: 10vh;
+    max-width: 90vw;
+    margin: 12vh auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.searchBarInput {
+    min-width: 80%;
+    font-size: 1rem;
+    border: var(--orange) 0.1rem solid;
+    border-radius: 10%;
+}
+
