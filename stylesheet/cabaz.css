@@ -1,0 +1,40 @@
+.cabazes {
+    display: grid;
+    margin: 5vh 1vw;
+}
+
+.cabaz-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin: 5vh auto;
+}
+
+.photo-div-cabaz img{
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 1rem;
+    opacity: 0.6;
+    transition: 1s;
+    box-shadow: 0 0.3rem 0.7rem 0;
+}
+
+.photo-div-cabaz img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.cabazes-title {
+    font-weight: bold;
+    margin: 5vh;
+    max-width: 100%;
+    padding: 2rem;
+    border-radius: 0 35rem 0 35rem;
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+.cabazes-title h1 {
+    display: grid;
+    
+}

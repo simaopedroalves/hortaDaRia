@@ -5,8 +5,9 @@
 }
 
 :root {
-    --green: rgba(33, 156, 144, 1);
-    --yellow: rgba(233, 184, 36, 1);
+    --green: rgb(136, 171, 142, 1);
+    --green-one: rgb(175, 200, 173, 1);
+    --yellow: rgb(238, 199, 89, 1);
     --orange: rgba(238, 147, 34, 1);
     --red: rgba(216, 63, 49, 1);
     --white: rgb(245, 245, 245);
@@ -19,17 +20,19 @@
     --red: ;
 }
 
+body {
+    background-color: var(--green-one);
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0.5rem;
     background-color: var(--green);
     min-width: 100%;
     max-width: 100%;
-
+    max-height: 10vh;
 }
-
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -38,8 +41,15 @@ header {
     align-items: center;
     min-width: auto;
     padding: 0 5vw;
-    max-height: 10vh;
+    max-height: 100%;
 
+}
+
+.logo-img-div {
+    display: grid;
+    align-items: center;
+    padding: 0.2rem;
+    max-height: 100%;
 }
 
 .logo-img {
@@ -90,7 +100,7 @@ header {
 /* SEARCH BAR */
 .searchBar-div{
     /* border: 1px solid var(--yellow); */
-    border-radius: 5%;
+    border-radius: 2rem;
     background-color: var(--green);
     min-height: 10vh;
     max-width: 90vw;
@@ -98,12 +108,24 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly; 
+    padding: 1rem;
+}
+
+.searchBar-div button {
+    outline: 0;
+    border: 0;
+    border-radius: 25%;
 }
 
 .searchBarInput {
     min-width: 80%;
     font-size: 1rem;
     border: var(--orange) 0.1rem solid;
-    border-radius: 10%;
+    border-radius: 2rem;
 }
 
+.fa-magnifying-glass {
+    background-color: var(--yellow);
+    padding: 0.1rem;
+    border-radius: 25%;
+}

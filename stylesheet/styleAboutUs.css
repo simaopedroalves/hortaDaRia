@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-us {
+    display: grid;
+}
+
+.about-us div:first-child {
+    display: grid;
+    text-align: center;
+}
+
+.about-us-title {
+    /* font-size: xx-large; */
+    font-weight: bold;
+    margin: 5vh;
+    max-width: 100%;
+    padding: 2rem;
+    border-radius: 0 35rem 0 35rem;
+    background-color: var(--yellow);
+}
+
+.hortaDaRia {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.about-us-photo {
+    margin: 0 auto 5vh auto;
+
+}
+
+.about-us-photo img{
+    object-fit: cover;
+    max-width: 100vw;
+
+}
+
+.about-us-description {
+    text-align: justify;
+    display: grid;
+    gap: 0.5rem;
+    margin: 0 5vw;
+}
