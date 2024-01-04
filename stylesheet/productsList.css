@@ -1,0 +1,43 @@
+.all-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 15vh 1vw; */
+    gap: 1rem;
+    margin: 5vh 2vw 10vh 2vw;
+}
+
+.all-products .title-div {
+    grid-column: span 2;
+}
+
+.all-products div {
+    text-align: center;
+    color: var(--white);
+    font-weight: 800;
+    display: grid;
+    align-items: center;
+}
+
+.all-products img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.all-products a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.all-products a p {
+    border-radius: 5rem;
+    background-color: var(--green);
+    border: solid var(--orange) 1.5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+

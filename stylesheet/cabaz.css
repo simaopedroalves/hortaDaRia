@@ -24,7 +24,7 @@
     opacity: 1;
 }
 
-.cabazes-title {
+.title-div {
     font-weight: bold;
     margin: 5vh;
     max-width: 100%;
@@ -34,7 +34,8 @@
     text-align: center;
 }
 
-.cabazes-title h1 {
+.title-div h1 {
     display: grid;
+    color: black;
     
 }
