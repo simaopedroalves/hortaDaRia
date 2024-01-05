@@ -5,19 +5,19 @@ const menu = document.querySelector('.menu-list')
 function showMenu() {
     menu.style.display = 'grid';
     openMenu.style.display = 'none';
-    closeMenu.style.display = 'flex';
+    closeMenu.style.display = 'grid';
 }
 
 function desappearMenu() {
     menu.style.display = 'none';
-    openMenu.style.display = 'flex';
+    openMenu.style.display = 'grid';
     closeMenu.style.display = 'none';
 }
 
-openMenu.addEventListener('click', () => {
-    showMenu()
-})
-
-closeMenu.addEventListener('click', () => {
-    desappearMenu()
-})
+// closeMenu.addEventListener('click', () => {
+//     // desappearMenu()
+// })
+ openMenu.addEventListener('click', () => {
+     // showMenu()
+     menu.classList.toggle('show')
+ })
