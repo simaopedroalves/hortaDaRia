@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="stylesheet/cabaz.css">
     <link rel="stylesheet" href="stylesheet/bottomMenu.css">
     <link rel="stylesheet" href="stylesheet/productsList.css">
+    <link rel="stylesheet" href="stylesheet/contacts.css">
 
 
 
@@ -40,20 +41,20 @@
                 </div>
 
                 <i class="fa-solid fa-bars-staggered"></i>
-            
-            
-                <ul class="menu-list">
- <!-- href.value = element.id.value -->
-                    <li> <a href="#">Quem Somos</a>  </li>  
-                    <li> <a href="#">Criar Cabaz</a> </li>
-                    <li> <a href="#">Produtos</a>    </li>
-                    <li> <a href="#">Contactos</a>   </li>
-                    <li> <a href="#">Testemunhos</a> </li>
-                    <li> <a href="#">Fotos</a>       </li>
-                    <li> <a href="#">Videos</a>      </li>
-                </ul>
+                <i class="fa-solid fa-x"></i>
             </div>
         </nav>
+
+        <ul class="menu-list">
+            <!-- href.value = element.id.value -->
+            <li> <a href="#">Quem Somos</a>  </li>  
+            <li> <a href="#">Criar Cabaz</a> </li>
+            <li> <a href="#productsList">Produtos</a>    </li>
+            <li> <a href="#">Contactos</a>   </li>
+            <li> <a href="#">Testemunhos</a> </li>
+            <li> <a href="#">Fotos</a>       </li>
+            <li> <a href="#">Videos</a>      </li>
+        </ul>
 
     </header>
         <!-- search bar -->
@@ -128,7 +129,7 @@
 
 <!-- lista de produtos para criar cabaz -->
 
-        <section class="all-products">
+        <section class="all-products" id="productsList">
 
             <div class="title-div">
                 <h1>Cria o teu <span class="hortaDaRia">Cabaz</span></h1>
@@ -151,14 +152,14 @@
             <div class="verduras-folhas photo-div-product">
                 <a href="">
                     <img src="images/cabaz-photo.jpeg" alt="">
-                    <p>Verduras e Folhas</p>
+                    <p>Verduras</p>
                 </a>
             </div>
 
             <div class="ovos-sabao photo-div-product">
                 <a href="">
                     <img src="images/cabaz-photo.jpeg" alt="">
-                    <p>Ovos e Sabão</p>
+                    <p>Ovos</p>
                 </a>
             </div>
 
@@ -172,21 +173,21 @@
             <div class="microverdes-germinados photo-div-product">
                 <a href="">
                     <img src="images/cabaz-photo.jpeg" alt="">
-                <p>Microverdes e Germinados</p>
+                <p>Microverdes</p>
                 </a>
             </div>
 
             <div class="vasos-plantas photo-div-product">
                 <a href="">
                     <img src="images/cabaz-photo.jpeg" alt="">
-                    <p>Vasos e Plantas</p>
+                    <p>Plantas</p>
                 </a>
             </div>
 
             <div class="flores-comestiveis photo-div-product">
                 <a href="">
                     <img src="images/cabaz-photo.jpeg" alt="">
-                    <p>Flores Comestiveis</p>
+                    <p>Horticolas</p>
                 </a>
             </div>
 
@@ -200,10 +201,56 @@
             <div class="horticolas-frio photo-div-product">
                 <a href="">
                     <img src="images/cabaz-photo.jpeg" alt="">
-                    <p>Horticolas de Frio</p>
+                    <p>Flores Comestiveis</p>
                 </a>
             </div>
 
         </section>
+
+        <section class="media-and-contacts">
+
+                <div class="contacts-title">
+                    <h3>Contacts</h3>
+                </div>
+
+                <div class="location">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <a href="" target="_blank">
+                        <p class="location-name">V. N. Famalicão</p>
+                    </a>    
+                </div>
+
+                <div class="contact">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="contact-number">+ 351 914 547 465</p>
+                    <span class="call-cost">Custo chamada nacional</span>
+                </div>
+
+                <div class="mail">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:hortadarianatural@gmail.com" target="_blank">
+                        <p class="email">hortadarianatural@gmail.com</p>
+                    </a>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <p>Tiago.Horta.da.Ria</p>
+                    </a>
+                    <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>horta.da.ria</p>
+                    </a>
+                </div>
+
+
+        </section>
+
+        <footer>
+            <a href="mailto:simaaoweb@gmail.com">
+                <p class="my-name">simaoPedro</p>
+            </a>
+        </footer>
 </body>
 </html>

@@ -1,0 +1,57 @@
+.contacts-title {
+    color: var(--white);
+    background-color: var(--orange);
+    width: min-content;
+    padding: 0.5rem;
+    border-radius: 5rem;
+}
+
+.media-and-contacts {
+    display: grid;
+    margin: 5vh;
+    gap: 3vh;
+}
+
+.media-and-contacts div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.media-and-contacts i {
+    color: var(--orange);
+    background-color: var(--white);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.media-and-contacts a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.call-cost {
+    font-size: 0.8rem;
+    grid-column-start: 2;
+    color: var(--white);
+}
+
+.email, .contact-number {
+    color: var(--white);
+    background-color: var(--green);
+    padding: 0.5rem;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
