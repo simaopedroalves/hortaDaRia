@@ -3,7 +3,7 @@
     background-color: var(--orange);
     width: min-content;
     padding: 0.5rem;
-    border-radius: 5rem;
+    border-radius: 2rem;
 }
 
 .media-and-contacts {
@@ -15,7 +15,7 @@
 .media-and-contacts div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -28,7 +28,7 @@
     font-size: 1rem;
 }
 
-.media-and-contacts a {
+.media-and-contacts a, p {
     text-decoration: none;
     cursor: pointer;
     color: var(--white);
@@ -47,11 +47,3 @@
     border-radius: 5rem;
     text-align: center;
 }
-
-.social-media a {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-

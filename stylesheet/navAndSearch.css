@@ -22,6 +22,7 @@
 
 body {
     background-color: var(--green-one);
+    margin-bottom: 10vh;
 }
 
 header {
@@ -31,19 +32,14 @@ header {
     background-color: var(--green);
     min-width: 100%;
     max-width: 100%;
-    max-height: 10vh;
     z-index: 99;
 }
 /* NAVBAR */
 .navbar {
     display: flex;
-    gap: 4vw;
-    justify-content: space-between;
     align-items: center;
-    min-width: auto;
-    padding: 0 5vw;
-    max-height: 100%;
-
+    justify-content: space-between;
+    padding: 0.2rem 0.5rem;
 }
 
 .logo-img-div {
@@ -56,7 +52,7 @@ header {
 .logo-img {
     object-fit: contain;
     border-radius: 50%;
-    max-width: 15vw;
+    max-height: 8vh;
 }
 
 /* =======div with cart and hamburguer menu============= */
@@ -82,11 +78,8 @@ header {
     color: var(--white);
     font-size: 1rem;
     min-height: 100%;
-    width: min-content;;
-}
-
-.fa-x {
-    display: none;
+    width: min-content;
+    cursor: pointer;
 }
 
 .article-number {
@@ -124,6 +117,7 @@ header {
     border-radius: 3rem;
     padding: 0.3rem;
     font-weight: 800;
+    cursor: pointer;
 
 }
 
@@ -131,6 +125,15 @@ header {
     text-decoration: none;
     color: var(--white);
 }
+
+.menu-list li:hover {
+    /* background-color: var(--white); */
+    color: var(--green-one);
+}
+
+/* .menu-list li a:hover {
+    color: var(--green-one);
+} */
 
 
 /* SEARCH BAR */
@@ -146,22 +149,17 @@ header {
     justify-content: space-evenly;
     padding: 1rem;
 }
-
-.searchBar-div button {
-    outline: 0;
-    border: 0;
-    border-radius: 25%;
-}
-
+ 
 .searchBarInput {
     min-width: 80%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: var(--orange) 0.1rem solid;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.5rem;
 }
 
 .fa-magnifying-glass {
     background-color: var(--yellow);
-    padding: 0.1rem;
-    border-radius: 25%;
+    padding: 0.3rem;
+    border-radius: 50%;
 }

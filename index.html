@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="stylesheet/bottomMenu.css">
     <link rel="stylesheet" href="stylesheet/productsList.css">
     <link rel="stylesheet" href="stylesheet/contacts.css">
+    <link rel="stylesheet" href="stylesheet/footer.css">
+
 
 
 
@@ -40,17 +42,17 @@
                     <span class="article-number">0</span>
                 </div>
 
-                <i class="fa-solid fa-bars-staggered"></i>
-                <!-- <i class="fa-solid fa-x"></i> -->
+                <i class="fa-solid fa-bars-staggered openMenu"></i>
+                <!-- <i class="fa-solid fa-x"></i>  fa-bars-staggered  -->
             </div>
         </nav>
 
         <ul class="menu-list">
             <!-- href.value = element.id.value -->
             <li> <a href="#">Quem Somos</a>  </li>  
-            <li> <a href="#">Criar Cabaz</a> </li>
+            <li> <a href="#cabazesMenu">Criar Cabaz</a> </li>
             <li> <a href="#productsList">Produtos</a>    </li>
-            <li> <a href="#">Contactos</a>   </li>
+            <li> <a href="#contactsAndSocialMedia">Contactos</a>   </li>
             <li> <a href="#">Testemunhos</a> </li>
             <li> <a href="#">Fotos</a>       </li>
             <li> <a href="#">Videos</a>      </li>
@@ -60,11 +62,9 @@
         <!-- search bar -->
         <div class="searchBar-div">
             <input type="search" class="searchBarInput">
-            <button>
                 <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
         </div> 
-
+        <!-- BOTTOM MENU BAR -->
         <section class="bottom-menu">
             <div class="home"><i class="fa-solid fa-house"></i></div>
             <div class="info"><i class="fa-solid fa-info"></i></div>
@@ -96,7 +96,7 @@
         <!-- CABAZES -->
 
 
-        <section class="cabazes">
+        <section class="cabazes" id="cabazesMenu">
 
             <div class="title-div">
                 <h1>Os nossos <span class="hortaDaRia">Cabazes</span></h1>
@@ -207,10 +207,10 @@
 
         </section>
 
-        <section class="media-and-contacts">
+        <section class="media-and-contacts" id="contactsAndSocialMedia">
 
                 <div class="contacts-title">
-                    <h3>Contacts</h3>
+                    <h3>Contactos</h3>
                 </div>
 
                 <div class="location">
@@ -236,12 +236,15 @@
                 <div class="social-media">
                     <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
                         <i class="fa-brands fa-facebook-f"></i>
-                        <p>Tiago.Horta.da.Ria</p>
                     </a>
+                    <p>Tiago.Horta.da.Ria</p>
+                </div>
+                <div class="social-media">                    
                     <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
-                        <p>horta.da.ria</p>
                     </a>
+                    <p>horta.da.ria</p>
+                </div>
                 </div>
 
 
