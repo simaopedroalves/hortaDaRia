@@ -13,15 +13,6 @@
     text-align: center;
 }
 
-/* .about-us-title {
-    font-weight: bold;
-    margin: 5vh;
-    max-width: 100%;
-    padding: 2rem;
-    border-radius: 0 35rem 0 35rem;
-    background-color: var(--yellow);
-}*/
-
 .hortaDaRia {
     font-size: 2rem;
     color: var(--white);
@@ -30,13 +21,11 @@
 
 .about-us-photo {
     margin: 0 auto 5vh auto;
-
 }
 
 .about-us-photo img{
     object-fit: cover;
     max-width: 100vw;
-
 }
 
 .about-us-description {
@@ -44,4 +33,40 @@
     display: grid;
     gap: 0.5rem;
     margin: 0 5vw;
+}
+
+@media screen and (min-width: 700px) {
+
+    .welcome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hortaDaRia {
+        font-size: 3rem;
+        color: var(--black);
+        font-weight: bold;
+        background-color: var(--yellow);
+        border-radius: 1rem;
+        padding: 1rem;
+    } 
+
+    .about-us-photo img{
+        min-width: 50vw;
+        max-height: 15rem;
+        object-fit: contain;
+    }
+    
+    .about-us-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.5rem;
+        /* align-items: center; */
+        text-align: justify;
+    }
+    .about-us-description p{
+        color: var(--black);        
+    }
 }

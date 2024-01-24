@@ -31,8 +31,10 @@ header {
     left: 0;
     background-color: var(--green);
     min-width: 100%;
-    max-width: 100%;
+    max-width: 100vw;
     z-index: 99;
+    padding: auto;
+    display: grid;
 }
 /* NAVBAR */
 .navbar {
@@ -52,7 +54,7 @@ header {
 .logo-img {
     object-fit: contain;
     border-radius: 50%;
-    max-height: 8vh;
+    max-height: 8svh;
 }
 
 /* =======div with cart and hamburguer menu============= */
@@ -112,11 +114,11 @@ header {
 .menu-list li {
     list-style: none;
     background-color: var(--green-one);
-    min-width: 95vw;
+    min-width: 100svw;
     text-align: center;
     border-radius: 3rem;
     padding: 0.3rem;
-    font-weight: 800;
+    font-weight: 800; 
     cursor: pointer;
 
 }
@@ -126,10 +128,12 @@ header {
     color: var(--white);
 }
 
-.menu-list li:hover {
-    /* background-color: var(--white); */
-    color: var(--green-one);
+.menu-list li a:hover {
+    background-color: var(--white);
+    color: var(--green);
+    padding: 0.2rem;
 }
+
 
 /* .menu-list li a:hover {
     color: var(--green-one);
@@ -148,6 +152,8 @@ header {
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
+    max-width: 70svw;
+
 }
  
 .searchBarInput {
@@ -162,4 +168,40 @@ header {
     background-color: var(--yellow);
     padding: 0.3rem;
     border-radius: 50%;
+}
+
+@media screen and (min-width: 700px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-img {
+        max-height: 10svh;
+    }
+    
+    .fa-x, .fa-bars-staggered {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        justify-content: space-around;
+        /* border: solid red 2px; */
+    }
+ 
+    .menu-list li {
+        min-width: 5vw;
+        font-size: 1.2rem;
+        background-color: var(--green);
+        /* border: solid red 1px; */
+
+    }
+
+    .searchBar-div {
+    background-color: var(--green-one);
+
+    }
 }

@@ -2,17 +2,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     /* margin: 15vh 1vw; */
     gap: 1rem;
-    margin: 5vh 2vw 10vh 2vw;
+    margin: 5vh 0.5rem 10vh 0.5rem;
 }
 
 .all-products .title-div {
     grid-column: span 3;
 }
 
-.all-products div {
+.all-products div:not(.title-div) {
     text-align: center;
     color: var(--white);
     font-weight: 800;
@@ -41,3 +41,30 @@
     /* font-size: 1rem; */
 }
 
+@media screen and (max-width: 350px) {
+
+    .all-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all-products .title-div {
+        grid-column: span 2;
+    }
+
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+    .all-products {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .all-products .title-div {
+        grid-column: span 5;
+    }
+
+
+
+}

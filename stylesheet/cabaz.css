@@ -6,8 +6,8 @@
 .cabaz-menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    margin: 5vh auto;
+    gap: 1rem;
+    margin: 5vh 1.5rem;
 }
 
 .photo-div-cabaz img{
@@ -34,8 +34,28 @@
     text-align: center;
 }
 
-.title-div h1 {
-    display: grid;
-    color: black;
-    
+@media screen and (max-width: 350px) {
+
+    .title-div {
+        border-radius: 0 5rem 0 5rem;
+    }
+
 }
+
+@media screen and (min-width: 600px) {
+
+    .cabaz-menu {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+    }
+
+    .title-div {
+        background-color: var(--green-one);
+        /* border: solid red 2px; */
+        font-size: 2rem;
+        color: var(--black);
+
+    }
+
+}
+
