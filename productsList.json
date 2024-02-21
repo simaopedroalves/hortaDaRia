@@ -1,0 +1,253 @@
+{
+    "cabazes": [
+        {
+            "name": "Cabaz 10€",
+            "price": 10,
+            "Content": ["cenoura baby", "mini-acelgas", "salada mix", "tangerinas", "microverdes mix"]
+        },
+        {
+            "name": "Cabaz 15€",
+            "price": 15,
+            "Content": ["cenoura baby", "mini-acelgas", "salada mix", "tangerinas", "microverdes mix", 
+                        "limões", "coentros", "abóbora"]
+        },
+        {
+            "name": "Cabaz 15€",
+            "price": 15,
+            "Content": ["cenoura baby", "mini-acelgas", "salada mix", "tangerinas", "microverdes mix", 
+                        "limões", "coentros", "abóbora", "batata-doce", "espargos", "couve toscana"]
+        }
+    ],
+    "saladas": [
+        {
+            "name": "salada natura",
+            "price": 2
+        },
+        {
+            "name": "alface mix",
+            "price": 1.5
+        }
+    ],
+    "verduras": [
+        {
+            "name": "ruibarbo",
+            "price": 10
+        },
+        {
+            "name": "couve galega",
+            "price": 2
+        },
+        {
+            "name": "couve galega cortada",
+            "price": 1.5
+        },
+        {
+            "name": "acelgas baby",
+            "price": 2
+        },
+        {
+            "name": "couve toscana",
+            "price": 2
+        }
+    ],
+    "raizes": [
+        {
+            "name": "batata-doce",
+            "price": 2
+        },
+        {
+            "name": "cenouras baby",
+            "price": 2.5
+        },
+        {
+            "name": "espargos",
+            "price": 3.5
+        }
+    ],
+    "microverdes": [
+        {
+            "name": "rabanete rose",
+            "price": 2.5
+        },
+        {
+            "name": "rabanete red rambo",
+            "price": 2.5
+        },
+        {
+            "name": "girassol",
+            "price": 2.5
+        },
+        {
+            "name": "ervilhas",
+            "price": 2.5
+        },
+        {
+            "name": "capuchinha",
+            "price": 5
+        },
+        {
+            "name": "mix de microverdes",
+            "price": 2
+        },
+        {
+            "vasos": [
+                {
+                    "name": "vaso ervilha",
+                    "price": 5
+                }, 
+                {
+                    "name": "vaso girassol",
+                    "price": 5
+                },
+                {
+                    "name": "vaso rabanete rose",
+                    "price": 5
+                },
+                {
+                    "name": "vaso rabanete red rambo",
+                    "price": 5
+                },
+                {
+                    "name": "2 vasos à escolha",
+                    "price": 9
+                },
+                {
+                    "name": "3 vasos à escolha",
+                    "price": 12
+                }
+            ]
+        }
+    ],
+    "floresComestiveis": [
+        {
+            "name": "amor perfeito",
+            "price": 0.1
+        },
+        {
+            "name": "borragem",
+            "price": 0.1
+        },
+        {
+            "name": "capuchinhas",
+            "price": 0.2
+        },
+        {
+            "name": "mix de flores",
+            "price": 2
+        },
+        {
+            "name": "petunias",
+            "price": 0.3
+        },
+        {
+            "name": "flor galega",
+            "price": 0.1
+        }
+    ],
+    "leguminosas": [
+        {
+            "name": "favas",
+            "price": 4,
+            "description": "descascadas e congeladas"
+        }
+    ],
+    "horticulas": [
+        {
+            "name": "abóbora manteiga",
+            "price": 1.5
+        },
+        {
+            "name": "abóbora muscade/laranja",
+            "price": 2.5
+        },
+        {
+            "name": "limões",
+            "price": 1.5
+        },
+        {
+            "name": "laranjas",
+            "price": 1.5
+        },
+        {
+            "name": "tangerinas",
+            "price": 1.5
+        }
+    ],
+    "ovos": [
+        {
+            "name": "ovos",
+            "price": 4
+        }
+    ], 
+    "sabaoNatural": [
+        {
+            "name": "óleo de coco, azeite e alfazema",
+            "price": 4.5
+        },
+        {
+            "name": "óleo de coco, azeite e hortelã",
+            "price": 4.5
+        }
+    ],
+    "ervasAromaticasECha": [
+        {
+            "name": "alecrim",
+            "price": 1
+        },
+        {
+            "name": "chá de limonete",
+            "price": 2
+        },
+        {
+            "name": "chá de cidreira",
+            "price": 2
+        },
+        {
+            "name": "folhas de loureiro",
+            "price": 1
+        },
+        {
+            "name": "hortelã e chocolate",
+            "price": 2
+        },
+        {
+            "name": "cidreira fresca",
+            "price": 1
+        },
+        {
+            "name": "tomilho",
+            "price": 1
+        },
+        {
+            "name": "oregãos",
+            "price": 1
+        },
+        {
+            "name": "coentros",
+            "price": 1
+        }
+    ],
+    "plantasEmVaso": [
+        {
+            "name": "suculenta",
+            "price": 2
+        },
+        {
+            "name": "oregãos",
+            "price": 2
+        },
+        {
+            "name": "espargos",
+            "price": 2
+        },
+        {
+            "name": "salvia",
+            "price": 2
+        },
+        {
+            "name": "tomilho",
+            "price": 2
+        }
+    ]
+
+}

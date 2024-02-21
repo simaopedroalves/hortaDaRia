@@ -11,6 +11,7 @@
     --orange: rgba(238, 147, 34, 1);
     --red: rgba(216, 63, 49, 1);
     --white: rgb(245, 245, 245);
+    --black: rgb(0,0,0);
 }
 
 .dark-theme {
@@ -21,7 +22,7 @@
 }
 
 body {
-    background-color: var(--green-one);
+    background-color: var(--white);
     margin-bottom: 10vh;
 }
 
@@ -129,7 +130,7 @@ header {
 }
 
 .menu-list li a:hover {
-    background-color: var(--white);
+    background-color: var(--black);
     color: var(--green);
     padding: 0.2rem;
 }

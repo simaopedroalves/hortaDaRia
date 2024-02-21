@@ -21,7 +21,7 @@
 
 .media-and-contacts i {
     color: var(--orange);
-    background-color: var(--white);
+    background-color: var(--black);
     width: fit-content;
     padding: 1rem;
     border-radius: 50%;
@@ -31,7 +31,7 @@
 .media-and-contacts a, p {
     text-decoration: none;
     cursor: pointer;
-    color: var(--white);
+    color: var(--black);
 }
 
 .call-cost {
@@ -41,7 +41,7 @@
 }
 
 .email, .contact-number {
-    color: var(--white);
+    color: var(--black);
     background-color: var(--green);
     padding: 0.5rem;
     border-radius: 5rem;
