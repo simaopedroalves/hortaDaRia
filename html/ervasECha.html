@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simão Alves">
+    <meta name="description" content="Produtos 100% Naturais - Horta d´Ria - V. N. Famalicão">
+    <meta name="keywords" content="Agricultura, Terra, Horta, cidade, aldeia, produtos, frescos, fruta, legumes, vegetais, horticolas, ecologia, ecológica, natural, famalicão, famalicao, vnf, agricultor, agricultora">
+    <link rel="stylesheet" href="/stylesheet/styleAboutUs.css">
+    <link rel="stylesheet" href="/stylesheet/cabaz.css">
+    <link rel="stylesheet" href="/stylesheet/bottomMenu.css">
+    <link rel="stylesheet" href="/stylesheet/productsList.css">
+    <link rel="stylesheet" href="/stylesheet/contacts.css">
+    <link rel="stylesheet" href="/stylesheet/footer.css">
+    <link rel="stylesheet" href="/stylesheet/ervasECha.css">
+    <link rel="stylesheet" href="/stylesheet/navAndSearch.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/> -->
+    <script src="/scriptDocs/ervasECha.js" defer></script>
+    <script src="https://kit.fontawesome.com/ff1abd11bd.js" crossorigin="anonymous"></script> 
+    <script src="/script.js" defer></script>
+
+
+    <title>Ervas e Chá - Horta d'Ria - Produtos Biológicos - Vila Nova de Famalicão</title>
+</head>
+<body>
+    
+       <!-- NAVBAR -->
+    <header>
+
+        <nav class="navbar" id="navBar">
+            <div class="logo-img-div">
+                <img src="/images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
+            </div>
+            
+            <div class="cart-and-menu">
+
+                <div class="cart-div">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="article-number">0</span>
+                </div>
+
+                <i class="fa-solid fa-bars-staggered openMenu"></i>
+                <!-- <i class="fa-solid fa-x"></i>  fa-bars-staggered  -->
+            </div>
+        </nav>
+
+        <ul class="menu-list">
+            <!-- href.value = element.id.value -->
+            <li> <a href="#">Quem Somos</a>  </li>  
+            <li> <a href="#cabazesMenu">Criar Cabaz</a> </li>
+            <li> <a href="#productsList">Produtos</a>    </li>
+            <li> <a href="#contactsAndSocialMedia">Contactos</a>   </li>
+            <li> <a href="#">Testemunhos</a> </li>
+            <li> <a href="#">Fotos</a>       </li>
+            <li> <a href="#">Videos</a>      </li>
+        </ul>
+
+    </header>
+
+    <section class="ervas">
+        <div class="boxItem">
+            <img src="/images/cabaz-photo.jpeg" alt="">
+            <div class="kiloPrice">5 <span>€/kilo</span></div>
+            <select type="text" min="1" class="quantity" placeholder="quantidade">
+                <!-- <option value="">Quantidade</option> -->
+                <option value="15gr">15 gr.</option>
+                <option value="25gr">25 gr.</option>
+                <option value="50gr">50 gr.</option>
+                <option value="100gr">100 gr.</option>
+                <option value="250gr">250 gr.</option>
+                <option value="500gr">500 gr.</option>
+            </select>
+            <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+            <div class="priceToPay">10 <span>€</span></div>
+            <button class="addToCart btn btn-success">Comprar</button>
+        </div>
+
+         <!-- BOTTOM MENU BAR -->
+         <section class="bottom-menu">
+            <div class="home"><i class="fa-solid fa-house"></i></div>
+            <div class="info"><i class="fa-solid fa-info"></i></div>
+            <div class="criar-cabaz"><i class="fa-solid fa-basket-shopping"></i></div>
+            <div class="login"><i class="fa-solid fa-user"></i></div>
+        </section>
+
+        <div class="boxItem">
+            <img src="/images/cabaz-photo.jpeg" alt="">
+            <div class="kiloPrice">5 <span>€/kilo</span></div>
+            <select type="text" min="1" class="quantity" placeholder="quantidade" name="Erva_Alecrim">
+                <!-- <option value="">Quantidade</option> -->
+                <option value="15gr">15 gr.</option>
+                <option value="25gr">25 gr.</option>
+                <option value="50gr">50 gr.</option>
+                <option value="100gr">100 gr.</option>
+                <option value="250gr">250 gr.</option>
+                <option value="500gr">500 gr.</option>
+            </select>
+            <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+            <div class="priceToPay">10 <span>€</span></div>
+            <button class="addToCart btn btn-success">Comprar</button>
+        </div>
+    </section>
+
+    <section class="media-and-contacts" id="contactsAndSocialMedia">
+
+        <div class="contacts-title">
+            <h3>Contactos</h3>
+        </div>
+
+        <div class="location">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <a href="" target="_blank">
+                <p class="location-name">V. N. Famalicão</p>
+            </a>    
+        </div>
+
+        <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <p class="contact-number">+ 351 914 547 465</p>
+            <span class="call-cost">Custo chamada nacional</span>
+        </div>
+
+        <div class="mail">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:hortadarianatural@gmail.com" target="_blank">
+                <p class="email">hortadarianatural@gmail.com</p>
+            </a>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <p>Tiago.Horta.da.Ria</p>
+        </div>
+        <div class="social-media">                    
+            <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <p>horta.da.ria</p>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:simaaoweb@gmail.com">
+            <p class="my-name"><span class="designBy">Design by </span>SP</p>
+        </a>
+    </footer>
+
+</body>
+</html>

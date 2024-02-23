@@ -192,39 +192,48 @@
     "ervasAromaticasECha": [
         {
             "name": "alecrim",
-            "price": 1
+            "price": 1,
+            "image": "/images/cabaz-photo.jpeg"
         },
         {
             "name": "chá de limonete",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "chá de cidreira",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "folhas de loureiro",
-            "price": 1
+            "price": 1,
+            "image": "url()"
         },
         {
             "name": "hortelã e chocolate",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "cidreira fresca",
-            "price": 1
+            "price": 1,
+            "image": "url()"
         },
         {
             "name": "tomilho",
-            "price": 1
+            "price": 1,
+            "image": "url()"
         },
         {
             "name": "oregãos",
-            "price": 1
+            "price": 1,
+            "image": "url()"
         },
         {
             "name": "coentros",
-            "price": 1
+            "price": 1,
+            "image": "url()"
         }
     ],
     "plantasEmVaso": [

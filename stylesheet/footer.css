@@ -2,7 +2,7 @@ footer {
     cursor: pointer;
     text-align: end;
     width: fit-content;
-    margin: 1rem auto;
+    margin: 1rem auto 0 auto;
 
 }
 
