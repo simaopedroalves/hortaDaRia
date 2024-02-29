@@ -19,6 +19,8 @@
     align-items: center;
     font-size: 1rem;
     font-weight: 700;
+    border: solid var(--green-one) 2px;
+    border-radius: 1rem;
 }
 
 .boxItem img {

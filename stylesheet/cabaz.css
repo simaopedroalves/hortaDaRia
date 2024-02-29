@@ -1,6 +1,6 @@
 .cabazes {
     display: grid;
-    margin: 5vh 1vw;
+    margin: 6vh 1vw;
 }
 
 .cabaz-menu {
@@ -8,6 +8,50 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 5vh 1.5rem;
+}
+
+.cabaz-1, .cabaz-2, .cabaz-3 {
+    position: relative;
+    /* border: solid blue 4px; */
+}
+
+.cabazOne, .cabazTwo, .cabazThree {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 10%;
+    right: 10%;
+    /* border: solid green 4px; */
+}
+
+.cabazContent {
+    font-size: 1rem;
+    /* border: solid red 2px; */
+    /* min-height: 3rem; */
+    color: var(--black);
+    display: grid;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    gap: 0.5rem;
+}
+
+.cabazContent h4 {
+    font-weight: bold;
+    background-color: var(--white);
+    color: var(--green);
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.cabazContent span {
+    background-color: var(--green);
+    max-width: fit-content;
+    color: var(--white);
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
 }
 
 .photo-div-cabaz img{

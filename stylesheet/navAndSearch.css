@@ -11,7 +11,8 @@
     --orange: rgba(238, 147, 34, 1);
     --red: rgba(216, 63, 49, 1);
     --white: rgb(245, 245, 245);
-    --black: rgb(0,0,0);
+    --black: rgba(0,0,0,1);
+    --gray: rgba(0,0,0,0.5)
 }
 
 .dark-theme {
@@ -23,7 +24,6 @@
 
 body {
     background-color: var(--white);
-    margin-bottom: 10vh;
 }
 
 header {
@@ -175,10 +175,6 @@ header {
     background-color: var(--yellow);
     padding: 0.3rem;
     border-radius: 50%;
-}
-
-.designBy {
-    color: var(--black);
 }
 
 @media screen and (min-width: 700px) {
