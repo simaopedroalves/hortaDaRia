@@ -1,0 +1,65 @@
+.contactForm {
+    margin: 15dvh 1rem 5dvh 1rem;
+    display: grid;
+    gap: 2rem;
+    border: solid var(--green) 0.2rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+.contactForm div:not(.introduction, .clientMessage) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactForm div input {
+    min-width: 60vw;
+    border-radius: 0.3rem;
+    border-color: var(--green);
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+}
+
+.contactForm div input::placeholder, 
+.contactForm div textarea::placeholder {
+    padding-left: 0.3rem;
+}
+
+.contactForm div textarea {
+    min-width: 60vw;
+    border-radius: 0.3rem;
+    border-color: var(--green);
+    padding: 0.4rem;
+}
+
+.clientMessage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.introduction .introductionText {
+    color: var(--black);
+    text-align: justify;
+
+}
+
+.btn-info {
+    max-width: 30%;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    background-color: var(--orange);
+    color: var(--black);
+    padding: 0.5rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+
+.border {
+    border: solid red 2px;
+}

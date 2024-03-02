@@ -1,6 +1,6 @@
 .all-products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     /* margin: 15vh 1vw; */
@@ -9,7 +9,7 @@
 }
 
 .all-products .title-div {
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
 .all-products div:not(.title-div) {
@@ -18,6 +18,7 @@
     font-weight: 800;
     display: grid;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .all-products img {

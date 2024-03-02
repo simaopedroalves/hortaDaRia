@@ -35,7 +35,7 @@
 }
 
 .call-cost {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     grid-column-start: 2;
     color: var(--white);
 }

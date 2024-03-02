@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simão Alves">
+    <meta name="description" content="Produtos 100% Naturais - Horta da Ria - V. N. Famalicão">
+    <meta name="keywords" content="Agricultura, Terra, Horta, cidade, aldeia, produtos, frescos, fruta, legumes, vegetais, horticolas, ecologia, ecológica, natural, famalicão, famalicao, vnf, agricultor, agricultora">
+    <link rel="stylesheet" href="/stylesheet/navAndSearch.css">
+    <link rel="stylesheet" href="/stylesheet/styleAboutUs.css">
+    <link rel="stylesheet" href="/stylesheet/cabaz.css">
+    <link rel="stylesheet" href="/stylesheet/bottomMenu.css">
+    <link rel="stylesheet" href="/stylesheet/productsList.css">
+    <link rel="stylesheet" href="/stylesheet/contacts.css">
+    <link rel="stylesheet" href="/stylesheet/footer.css">
+    <link rel="stylesheet" href="/stylesheet/form.css">
+    <script src="\scriptDocs/form.js" defer></script>
+
+
+
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/ff1abd11bd.js" crossorigin="anonymous"></script> 
+    <script src="\script.js" defer></script>
+    
+
+    <title>Contactos - Horta d'Ria - Produtos 100% Naturais - Agricultura Local e Ecológica - V. N. Famalicão</title>
+
+
+</head>
+<body>
+            <!-- NAVBAR -->
+    <header>
+
+        <nav class="navbar" id="navBar">
+            <div class="logo-img-div">
+                <a href="\index.html">
+                    <img src="\images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
+                </a>
+            </div>
+            
+            <div class="cart-and-menu">
+
+                <div class="cart-div">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="article-number">0</span>
+                </div>
+
+                <i class="fa-solid fa-bars-staggered openMenu"></i>
+                <!-- <i class="fa-solid fa-x"></i>  fa-bars-staggered  -->
+            </div>
+        </nav>
+
+        <ul class="menu-list">
+            <!-- href.value = element.id.value -->
+            <li> <a href="\html/aboutUs.html">Quem Somos</a>  </li>  
+            <li> <a href="#cabazesMenu">Criar Cabaz</a> </li>
+            <li> <a href="/index.html">Produtos</a>    </li>
+            <li> <a href="#">Contactos</a>   </li>
+            <li> <a href="#">Testemunhos</a> </li>
+            <li> <a href="#">Fotos</a>       </li>
+            <li> <a href="#">Videos</a>      </li>
+        </ul>
+
+    </header>
+        <!-- search bar -->
+        <!-- <div class="searchBar-div">
+            <input type="search" class="searchBarInput">
+                <i class="fa-solid fa-magnifying-glass"></i>
+        </div>  -->
+        <!-- BOTTOM MENU BAR -->
+    <section class="bottom-menu">
+        <div class="home"><i class="fa-solid fa-house"></i></div>
+        <div class="info"><i class="fa-solid fa-info"></i></div>
+        <div class="criar-cabaz"><i class="fa-solid fa-basket-shopping"></i></div>
+        <div class="login"><i class="fa-solid fa-user"></i></div>
+    </section>
+
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <form class="contactForm" action="https://formsubmit.co/simaaoweb@gmail.com"method="post">
+
+        <!-- <input type="hidden" name="_captcha" value="false"> -->
+        <input type="hidden" name="_next" value="https://">
+        <input type="hidden" name="_subject" value="" id="newMessage">
+        <input type="hidden" name="_template" value="table">
+        <!-- <input type="hidden" name="_autoresponse" value="" id="autoResponseMessage"> -->
+
+        <div class="introduction">
+            <p class="introductionText">
+                Tens alguma dúvida ou tens curiosidade em saber mais sobre os nossos produtos ou a nossa Quinta?
+                Preenche o formulário em baixo.
+                Iremos responder-te com a maior brevidade possível.
+            </p>
+        </div>
+
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="Nome" id="name" required>
+        </div>
+
+        <div>
+            <label for="email" class="mail">E-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="exemplo@email.com">
+        </div>
+
+        <div>
+            <label for="phoneNumber">Telemóvel</label>
+            <input type="number" name="Telemovel" id="phoneNumber" placeholder="9********">
+        </div>
+
+        <div class="clientMessage">
+            <label for="message" class="clientMessage">Mensagem</label>
+            <textarea id="clientMessage" name="Mensagem" required autocorrect rows="5" placeholder="Escreve aqui a tua mensagem"></textarea>
+           </div>
+
+        <button type="submit" class="btn-info" id="submitBtn">Enviar</button>
+        
+    </form>
+
+    <section class="media-and-contacts" id="contactsAndSocialMedia">
+
+        <div class="contacts-title">
+            <h3>Contactos</h3>
+        </div>
+
+        <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <p class="contact-number">+ 351 914 547 465</p>
+            <span class="call-cost">Custo chamada nacional</span>
+        </div>
+
+        <div class="location">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <a href="" target="_blank">
+                <p class="location-name">V. N. Famalicão</p>
+            </a>    
+        </div>
+
+        <div class="mail">
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:hortadarianatural@gmail.com" target="_blank">
+                <p class="email">hortadarianatural@gmail.com</p>
+            </a>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <p>Tiago.Horta.da.Ria</p>
+        </div>
+        <div class="social-media">                    
+            <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <p>horta.da.ria</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="mailto:simaaoweb@gmail.com">
+            <p class="my-name"><span class="designBy">Design by </span>SP</p>
+        </a>
+    </footer>
+
+</body>
+</html>
