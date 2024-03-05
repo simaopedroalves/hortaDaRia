@@ -1,10 +1,20 @@
 
-.ervas {
+.ervas,
+.saladas,
+.verduras,
+.raizes,
+.microverdes,
+.floresComestiveis,
+.leguminosas,
+.horticulas,
+.ovos,
+.sabaoNatural,
+.plantasEmVaso {
     display: grid;
-    gap: 0.7rem;
+    gap: 1rem;
     grid-template-columns: repeat(1, 1fr);
     max-width: 100vw;
-    margin-top: 7rem;
+    margin: 7rem auto;
     justify-content: center;
 }
 
@@ -14,6 +24,7 @@
     padding: 1rem;
     justify-content: center;
     max-width: 70%;
+    max-height: fit-content;
     margin: 0 auto;
     gap: 1rem;
     align-items: center;
@@ -21,6 +32,19 @@
     font-weight: 700;
     border: solid var(--green-one) 2px;
     border-radius: 1rem;
+}
+
+.boxItem h3 {
+    /* border: solid red 2px; */
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: var(--white);
+    grid-column: span 2;
+    padding: 0.4rem;
+    border-radius: 5%;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
 }
 
 .boxItem img {
@@ -42,9 +66,10 @@
 }
 
 .boxItem select option {
-    color: var(--white);
-    background-color: var(--green-one);
+    color: var(--green);
+    background-color: var(--white);
     max-width: 50%;
+    font-weight: 600;
 }
 
 .boxItem select option:hover {

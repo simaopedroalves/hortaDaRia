@@ -43,7 +43,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.2rem 0.5rem;
+    padding: 0rem 0.5rem;
     width: 100%;
 }
 
@@ -89,7 +89,7 @@ header {
 
 .article-number {
     border-radius: 30%;
-    background-color: var(--red);
+    background-color: var(--orange);
     color: var(--white);
     padding: 0.2rem;
     position: absolute;
@@ -102,6 +102,7 @@ header {
     transition-property: all;
     transition-duration: 500ms;
     transition-timing-function: linear;
+    /* transform: ; */
 }
 
 .show {
@@ -114,14 +115,15 @@ header {
     
 }
 
-.menu-list li {
+header .menu-list li {
     list-style: none;
-    background-color: var(--green-one);
-    min-width: 100svw;
+    background-color: var(--orange);
+    color: var(--white);
+    min-width: 70svw;
     text-align: center;
     border-radius: 3rem;
     padding: 0.3rem;
-    font-weight: 800; 
+    font-weight: 900; 
     cursor: pointer;
 
 }
@@ -131,16 +133,16 @@ header {
     color: var(--white);
 }
 
-.menu-list li a:hover {
-    background-color: var(--black);
-    color: var(--green);
+header .menu-list li a:hover {
+    background-color: var(--gray);
+    color: var(--orange);
     padding: 0.2rem;
 }
 
-.menu-list li a:visited {
-    color: var(--white);
-    background-color: var(--green-one);
-}
+/* .menu-list li a:visited {
+    color: var(--black);
+    background-color: var(--orange);
+} */
 
 /* .menu-list li a:hover {
     color: var(--green-one);

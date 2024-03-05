@@ -39,16 +39,16 @@
 
 .cabazContent h4 {
     font-weight: bold;
-    background-color: var(--white);
-    color: var(--green);
+    background-color: var(--black);
+    color: var(--white);
     padding: 0.3rem;
     border-radius: 0.5rem;
 }
 
 .cabazContent span {
-    background-color: var(--green);
+    background-color: var(--orange);
     max-width: fit-content;
-    color: var(--white);
+    color: var(--black);
     font-weight: bold;
     margin: 0 auto;
     padding: 0.3rem;
