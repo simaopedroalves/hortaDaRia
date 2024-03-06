@@ -10,6 +10,8 @@ openMenu.addEventListener('click', () => {
 const cabazOne = document.querySelector('.cabazOne')
 const cabazTwo = document.querySelector('.cabazTwo')
 const cabazThree = document.querySelector('.cabazThree')
+const cabazFour = document.querySelector('.cabazFour')
+
 
 
 
@@ -71,7 +73,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <span class="cabazPrice">${priceThree}€</span>
             </div>
         `
-        
+        let nameFour = object.cabazes[3].name
+        let priceFour = object.cabazes[3].price
+
+        cabazFour.innerHTML += `
+            <div class="cabazContent">
+                <h4 class="cabazName">${nameFour}</h4>
+            </div>
+        `
 
     // }
 

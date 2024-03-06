@@ -16,6 +16,11 @@
             "price": 20,
             "content": ["cenoura baby", "mini-acelgas", "salada mix", "tangerinas", "microverdes mix", 
                         "limões", "coentros", "abóbora", "batata-doce", "espargos", "couve toscana"]
+        },
+        {
+            "name": "Criar Cabaz",
+            "price": "",
+            "content": ""
         }
     ],
     "saladas": [

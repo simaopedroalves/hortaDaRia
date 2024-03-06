@@ -1,3 +1,86 @@
+/* for Each Cabaz style individually*/
+
+/* Cabaz Um */
+
+.cabaz-um {
+    margin: 5rem auto 0 auto;
+    display: grid;
+    justify-content: center;
+    /* border: solid red 1px; */
+}
+
+.cabaz-name-title {
+    font-size: 2rem;
+    color: var(--orange);
+    background-color: var(--black);
+    min-width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin: 2vh auto;
+    /* border: solid red 1px; */
+
+}
+
+.cabaz-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+    padding: 0.5rem;
+    /* border: solid red 1px; */
+}
+
+.cabaz-list {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    font-weight: 600;
+}
+
+.add-to-cart {
+    background-color: var(--orange);
+    color: var(--black);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    padding: 0.4rem;
+    grid-column-start: 2;
+    margin: 0 auto;
+}
+
+.cabaz-item {
+    list-style: none;
+    
+}
+
+.cabaz-content img, .sugestionsContent div img {
+    max-width: 40vw;
+}
+
+.sugestions {
+    margin: 5rem auto;
+    overflow-x: hidden;
+   
+}
+ 
+.sugestionsContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: hidden;
+    gap: 1.5rem;
+}
+
+.sugestion {
+    border: solid var(--green-one) 0.2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* home page stylesheet */
+
 .cabazes {
     display: grid;
     margin: 6vh 1vw;
@@ -10,12 +93,12 @@
     margin: 5vh 1.5rem;
 }
 
-.cabaz-1, .cabaz-2, .cabaz-3 {
+.cabaz-1, .cabaz-2, .cabaz-3, .cabaz-4 {
     position: relative;
     /* border: solid blue 4px; */
 }
 
-.cabazOne, .cabazTwo, .cabazThree {
+.cabazOne, .cabazTwo, .cabazThree, .cabazFour {
     position: absolute;
     top: 25%;
     bottom: 25%;
