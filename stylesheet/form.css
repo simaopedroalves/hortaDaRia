@@ -1,5 +1,5 @@
 .contactForm {
-    margin: 15dvh 3rem 5dvh 3rem;
+    margin: 15dvh auto 5dvh auto;
     display: grid;
     justify-content: center;
     gap: 2rem;
@@ -10,7 +10,7 @@
 
 .contactForm div:not(.introduction, .clientMessage) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -40,7 +40,7 @@
 
 .clientMessage {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
 }
 
