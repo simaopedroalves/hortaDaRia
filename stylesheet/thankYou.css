@@ -1,0 +1,14 @@
+.thankYou {
+    margin: 10vh auto 0 auto;
+    min-height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.thankYou h2, .thankYou p {
+    color: var(--black);
+    padding: 0;
+    margin: 0;
+}
