@@ -128,21 +128,21 @@ header .menu-list li {
 
 }
 
-.menu-list li a {
+.menu-list a {
     text-decoration: none;
     color: var(--white);
 }
 
-header .menu-list li a:hover {
+header .menu-list  a:hover {
     background-color: var(--gray);
     color: var(--orange);
     padding: 0.2rem;
 }
 
-/* .menu-list li a:visited {
+.menu-list li a:visited {
     color: var(--black);
     background-color: var(--orange);
-} */
+}
 
 /* .menu-list li a:hover {
     color: var(--green-one);

@@ -1,18 +1,17 @@
-footer {
+.webDevSp {
     cursor: pointer;
-    text-align: end;
-    min-width: 100vw;
+    text-align: center;
     min-height: fit-content;
-    margin: 0 auto 6vh auto;
     outline: 0;
-    border: 0;
+    /* border: 0; */
+    border-radius: 20%;
 }
 
-footer a {
+.webDevSp a {
     text-decoration: none;
 }
 
-.my-name {
+.webDevSp .my-name {
     color: var(--orange);
     background-color: var(--white);
     padding: 0.5rem;
@@ -21,7 +20,7 @@ footer a {
     background-color: var(--gray);
 }
 
-.designBy {
+.webDevSp a p .designBy {
     color: var(--white);
 }
 

@@ -11,6 +11,7 @@
     gap: 3vh;
     padding: 1rem;
     background-color: var(--gray);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .media-and-contacts div {
@@ -28,10 +29,14 @@
     font-size: 1rem;
 }
 
-.media-and-contacts a, p {
+.media-and-contacts a {
     text-decoration: none;
     cursor: pointer;
     color: var(--white);
+}
+
+.contact, .location {
+    grid-column: span 2;
 }
 
 .call-cost {

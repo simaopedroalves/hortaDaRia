@@ -7,6 +7,8 @@ openMenu.addEventListener('click', () => {
     openMenu.classList.toggle('fa-x')
 })
 
+
+// menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne')
 const cabazTwo = document.querySelector('.cabazTwo')
 const cabazThree = document.querySelector('.cabazThree')
