@@ -9,9 +9,10 @@
 .media-and-contacts {
     display: grid;
     gap: 3vh;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--gray);
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 5vh;
 }
 
 .media-and-contacts div {
