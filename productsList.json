@@ -3,24 +3,28 @@
         {
             "name": "Cabaz 1",
             "price": 10,
-            "content": ["cenoura baby", "mini-acelgas", "salada mix", "tangerinas", "microverdes mix"]
+            "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix"],
+            "open": "/html/cabaz-um.html"          
         },
         {
             "name": "Cabaz 2",
             "price": 15,
             "content": ["cenoura baby", "mini-acelgas", "salada mix", "tangerinas", "microverdes mix", 
-                        "limões", "coentros", "abóbora"]
+                        "limões", "coentros", "abóbora"],
+            "open": "/html/cabaz-dois.html"          
         },
         {
             "name": "Cabaz 3",
             "price": 20,
             "content": ["cenoura baby", "mini-acelgas", "salada mix", "tangerinas", "microverdes mix", 
-                        "limões", "coentros", "abóbora", "batata-doce", "espargos", "couve toscana"]
+                        "limões", "coentros", "abóbora", "batata-doce", "espargos", "couve toscana"],
+            "open": "/html/cabaz-tres.html"          
         },
         {
             "name": "Criar Cabaz",
             "price": "",
-            "content": ""
+            "content": "",
+            "open": "/html/criar-cabaz.html.html"          
         }
     ],
     "saladas": [

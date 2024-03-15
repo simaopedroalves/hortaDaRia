@@ -85,8 +85,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     // }
-
-
 })
+
+// scroll behavior of Each Cabaz page sugestions
+
+const scrolling = document.querySelector('.sugestionsContent');
+
+scrolling.addEventListener('wheel', (scroll) => {
+   
+    scroll.preventDefault();
+    scrolling.scrollLeft += scroll.deltaY;
+    scrolling.style.scrollBehavior = 'auto';
+    // scrolling.style.scrollBehavior = 'smooth';
+
+});
 
 
