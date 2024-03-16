@@ -35,6 +35,10 @@
     padding-left: 5vw;
 }
 
+.social-media span {
+    font-size: 0.7rem;
+}
+
 .media-and-contacts .footer-head {
     display: grid;
     /* border: solid red 1px; */
