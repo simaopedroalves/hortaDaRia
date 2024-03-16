@@ -4,6 +4,7 @@
     min-height: fit-content;
     outline: 0;
     /* border: 0; */
+    margin-bottom: 6vh
 }
 
 .webDevSp a {
@@ -16,8 +17,7 @@
     padding: 0.5rem;
     font-weight: 800;
     font-size: small;
-    background-color: var(--gray);
-    border-radius: 10%;
+    background-color: var(--green);
 
 }
 

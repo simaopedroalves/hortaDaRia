@@ -1,15 +1,14 @@
 .all-products {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    /* margin: 15vh 1vw; */
-    gap: 1rem;
-    margin: 5vh 1rem 10vh 1rem;
+    gap: 1vw;
+    margin: 5vh auto 10vh auto;
 }
 
 .all-products .title-div {
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .all-products div:not(.title-div) {
@@ -35,10 +34,11 @@
 }
 
 .all-products a p {
-    border-radius: 5rem;
+    border-radius: 1rem 0 1rem 0;
     background-color: var(--green);
-    border: solid var(--orange) 1.5px;
-    padding: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 0.2rem;
     /* font-size: 1rem; */
 }
 

@@ -1,24 +1,9 @@
-.contacts-title {
-    color: var(--white);
-    background-color: var(--orange);
-    width: min-content;
-    padding: 0.5rem;
-    border-radius: 2rem;
-}
-
 .media-and-contacts {
     display: grid;
     gap: 3vh;
-    padding: 0.5rem;
-    background-color: var(--gray);
-    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--green);
     margin-bottom: 5vh;
-}
-
-.media-and-contacts div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 5rem 0 0 0;
 }
 
 .media-and-contacts i {
@@ -37,21 +22,72 @@
 }
 
 .contact, .location {
+    display: flex;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: fit-content;
+    gap: 5vw;
+    padding-left: 5vw;
+}
+
+.media-and-contacts .footer-head {
+    display: grid;
+    /* border: solid red 1px; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5vw;
+    padding-top: 2vh;
+}
+
+.media-and-contacts .footer-head h4 {
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.media-and-contacts .footer-head p {
     grid-column: span 2;
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    text-align: center;
+}
+
+.line-break {
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+    height: 0.5vh;
+    width: 100vw;
 }
 
 .call-cost {
-    font-size: 0.6rem;
+    /* font-size: 0.6rem; */
     grid-column-start: 2;
     color: var(--white);
 }
 
-.email, .contact-number {
+.footer-end {
+    display: grid;
     color: var(--white);
-    /* background-color: var(--green); */
-    padding: 0.5rem;
-    border-radius: 5rem;
-    text-align: center;
+    font-size: 1.1rem;
+    padding-left: 5vw;
+    letter-spacing: 0.1em;
+    gap: 1vh;
+}
+
+.footer-end p, .social-media{
+    font-weight: 700;
+    font-style: oblique;
 }
 
 @media screen and (max-width: 350px) {
