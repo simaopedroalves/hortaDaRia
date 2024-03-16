@@ -13,7 +13,7 @@
 .cabaz-name-title {
     font-size: 2rem;
     color: var(--orange);
-    background-color: var(--black);
+    background-color: var(--white);
     min-width: fit-content;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
