@@ -80,6 +80,24 @@
     color: var(--white);
 }
 
+.info-tel {
+    display: grid;
+    gap: 0;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.info-tel span:nth-child(1) {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.info-tel span:nth-child(2) {
+    font-size: 0.5rem;
+}
+
+
 .footer-end {
     display: grid;
     color: var(--white);

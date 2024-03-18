@@ -132,12 +132,12 @@ header .menu-list li {
     text-decoration: none;
     color: var(--white);
 }
-
+/* 
 header .menu-list  a:hover {
     background-color: var(--gray);
     color: var(--orange);
     padding: 0.2rem;
-}
+} */
 
 .menu-list li a:visited {
     color: var(--black);
