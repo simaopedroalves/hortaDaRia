@@ -7,8 +7,13 @@
 .about-us {
     display: grid;
     margin: 6vh auto;
+    justify-content: center;
 }
 
+.about-us-div {
+    display: grid;
+    gap: 4vh;
+}
 .about-us div:first-child {
     display: grid;
     text-align: center;
@@ -29,15 +34,23 @@
     max-width: 100vw;
 }
 
-.about-us-description {
+.about-us .about-us-description {
     text-align: justify;
     display: grid;
+    justify-content: center;
     gap: 0.5rem;
     margin: 0 5vw;
+
 }
 
 .about-us-description p {
     color: var(--black);
+}
+
+.about-us-description h3 {
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 0.5rem 0.2rem;
 }
 
 @media screen and (min-width: 700px) {

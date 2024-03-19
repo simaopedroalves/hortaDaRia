@@ -116,7 +116,7 @@
         </div>
 
         <div class="clientMessage">
-            <label for="message" class="clientMessage">Mensagem</label>
+            <label for="message">Mensagem</label>
             <textarea id="clientMessage" name="Mensagem" required autocorrect rows="5" placeholder="Escreve aqui a tua mensagem"></textarea>
            </div>
 
@@ -124,8 +124,9 @@
         
     </form>
 
-    <section>
-
+    <!-- GOOGLE MAPS MARKER -->
+    <section class="googleMapsLocation">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24403.239035449966!2d-8.549947995752449!3d41.41244371673814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1710806518386!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <section class="media-and-contacts" id="contactsAndSocialMedia">
@@ -156,7 +157,10 @@
 
         <div class="contact social-media">
             <a href="callto:00351914547465"><i class="fa-solid fa-phone"></i></a>
-            <span class="call-cost">Custo chamada nacional</span>
+            <div class="info-tel">
+                <span class="call-cost">+351 914 547 465</span>
+                <span class="call-cost">Custo chamada nacional</span>
+            </div>
         </div>
 
         <div class="location social-media">
@@ -164,11 +168,6 @@
             <a href="" target="_blank">
                 <span class="location-name">V. N. Famalicão</span>
             </a>    
-        </div>
-
-        <div class="mail social-media">
-           
-            
         </div>
 
        <div class="footer-end">
