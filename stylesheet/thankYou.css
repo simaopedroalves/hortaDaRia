@@ -1,14 +1,29 @@
 .thankYou {
-    margin: 10vh auto 0 auto;
-    min-height: 80vh;
+    margin: 0 auto 0 auto;
+    height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    text-align: center;
 }
 
-.thankYou h2, .thankYou p {
+.thankYou .message {
     color: var(--black);
-    padding: 0;
-    margin: 0;
+    font-size: 0.7rem;
+    margin: 0 15vw;
+}
+
+.thankYou div span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--green);
+}
+
+.follow-us-message i {
+    color: var(--orange);
+    background-color: var(--black);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 0.7rem;
 }
