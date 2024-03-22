@@ -100,4 +100,6 @@ scrolling.addEventListener('wheel', (scroll) => {
 
 });
 
+//event on shopping cart one navbar
+
 
