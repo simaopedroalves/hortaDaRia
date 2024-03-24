@@ -17,3 +17,9 @@
 .bottom-menu div i {
     color: var(--white);
 }
+
+@media screen and (min-width: 700px) {
+    .bottom-menu {
+        display: none;
+    }
+}

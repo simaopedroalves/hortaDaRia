@@ -35,6 +35,26 @@
         {
             "name": "alface mix",
             "price": 1.5
+        },
+        {
+            "name": "Rúcula cutivada",
+            "price": 1.5
+        },
+        {
+            "name": "Mix verduras asiáticas",
+            "price": 1.5
+        },
+        {
+            "name": "Salada Ibérica",
+            "price": 1.5
+        },
+        {
+            "name": "Salada Wok",
+            "price": 2
+        },
+        {
+            "name": "Agrião da Terra",
+            "price": 1.5
         }
     ],
     "verduras": [

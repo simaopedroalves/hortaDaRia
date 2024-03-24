@@ -28,12 +28,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="kiloPrice">${saladaPrice}<span>€/kilo</span></div>
         <select type="text" min="1" class="quantity" placeholder="quantidade">
             <!-- <option value="">Quantidade</option> -->
-            <option value="15gr">15 gr.</option>
-            <option value="25gr">25 gr.</option>
-            <option value="50gr">50 gr.</option>
-            <option value="100gr">100 gr.</option>
-            <option value="250gr">250 gr.</option>
-            <option value="500gr">500 gr.</option>
+            <option value="100gr">100 gr</option>
+            <option value="250gr">250 gr</option>
+            <option value="500gr">500 gr</option>
+            <option value="750gr">750 gr</option>
+            <option value="1Kg">1 Kg</option>
+            <option value="2Kg">2Kg</option>
+            <option value="1Un">1 Unidade</option>
+            <option value="2Un">2 Unidades</option>
         </select>
         <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
         <div class="priceToPay">Total<span>€</span></div>

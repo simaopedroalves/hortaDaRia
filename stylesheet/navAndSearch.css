@@ -30,7 +30,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--green);
+    background-color: var(--white);
     min-width: 100%;
     max-width: 100vw;
     max-height: 10svh;
@@ -80,7 +80,7 @@ header {
 .fa-magnifying-glass,
 .fa-bars-staggered,
 .fa-x {
-    color: var(--white);
+    color: var(--green);
     font-size: 1rem;
     min-height: 100%;
     width: min-content;
@@ -117,11 +117,10 @@ header {
 
 header .menu-list li {
     list-style: none;
-    background-color: var(--orange);
+    background-color: var(--green);
     color: var(--white);
     min-width: 70svw;
     text-align: center;
-    border-radius: 3rem;
     padding: 0.3rem;
     font-weight: 900; 
     cursor: pointer;
@@ -187,8 +186,18 @@ header .menu-list  a:hover {
         justify-content: space-between;
     }
 
+    .navbar {
+        display: flex;
+        gap: 5vw;
+        margin-top: 1vh;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+    
+
     .logo-img {
         max-height: 10svh;
+        cursor: pointer;
     }
     
     .fa-x, .fa-bars-staggered {
@@ -197,20 +206,35 @@ header .menu-list  a:hover {
 
     .menu-list {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        min-width: 60svw;
+        margin: 0 2vw;
         /* border: solid red 2px; */
     }
- 
-    .menu-list li {
-        min-width: 5vw;
-        font-size: 1.2rem;
-        background-color: var(--green);
-        /* border: solid red 1px; */
 
+    header .menu-list a li {
+        list-style: none;
+        color: var(--green);
+        background-color: var(--white);
+        text-align: left;
+        padding: 0.3rem;
+        font-weight: 900; 
+        cursor: pointer;
+        min-width: 0svw;
+        /* border: 1px solid red; */
+    }
+
+    .fa-bars-staggered,
+    .fa-x {
+        display: none;
+    }
+ 
+    header .menu-list a li:hover {
+        color: var(--orange)
     }
 
     .searchBar-div {
-    background-color: var(--green-one);
+        background-color: var(--green-one);
 
     }
 }

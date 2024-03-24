@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         let nameOne = object.cabazes[0].name
         let priceOne = object.cabazes[0].price
 
-        cabazOne.innerHTML += `
+        cabazOne.innerHTML = `
             <div class="cabazContent">
                 <h4 class="cabazName">${nameOne}</h4>
                 <span class="cabazPrice">${priceOne}€</span>
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         let nameTwo = object.cabazes[1].name
         let priceTwo = object.cabazes[1].price
 
-        cabazTwo.innerHTML += `
+        cabazTwo.innerHTML = `
             <div class="cabazContent">
                 <h4 class="cabazName">${nameTwo}</h4>
                 <span class="cabazPrice">${priceTwo}€</span>
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         let nameThree = object.cabazes[2].name
         let priceThree = object.cabazes[2].price
 
-        cabazThree.innerHTML += `
+        cabazThree.innerHTML = `
             <div class="cabazContent">
                 <h4 class="cabazName">${nameThree}</h4>
                 <span class="cabazPrice">${priceThree}€</span>
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         let nameFour = object.cabazes[3].name
         let priceFour = object.cabazes[3].price
 
-        cabazFour.innerHTML += `
+        cabazFour.innerHTML = `
             <div class="cabazContent">
                 <h4 class="cabazName">${nameFour}</h4>
             </div>
@@ -92,12 +92,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 const scrolling = document.querySelector('.sugestionsContent');
 
 scrolling.addEventListener('wheel', (scroll) => {
-   
     scroll.preventDefault();
     scrolling.scrollLeft += scroll.deltaY;
     scrolling.style.scrollBehavior = 'auto';
     // scrolling.style.scrollBehavior = 'smooth';
-
 });
 
 //event on shopping cart one navbar
