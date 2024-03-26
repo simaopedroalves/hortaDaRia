@@ -32,14 +32,12 @@
     border: solid var(--green-one) 0.2rem;
     margin: 0 5vw;
     border-radius: 5%;
+
 }
 
 .cabaz-list {
     display: grid;
-    align-items: center;
     justify-content: center;
-    gap: 0.7rem;
-    font-weight: 600;
 }
 
 .add-to-cart {
@@ -58,7 +56,7 @@
 
 .cabaz-item {
     list-style: none;
-    
+
 }
 
 .cabaz-content img, .sugestionsContent div img {
@@ -74,7 +72,7 @@
     padding-left: 2vw;
     /* overflow: scroll;  */
 }
- 
+
 .sugestionsContent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -95,7 +93,7 @@
     border-radius: 0.5rem;
     display: grid;
     align-items: center;
-    
+
 }
 
 .sugestion a {
@@ -107,7 +105,7 @@
 .sugestion a span {
     text-align: center;
 }
-/* 
+/*
 .sugestion:hover {
     transform: scale(1.1);
 } */
@@ -175,15 +173,13 @@
     object-fit: contain;
     max-width: 100%;
     border-radius: 1rem;
-    opacity: 0.6;
     transition: 1s;
-    box-shadow: 0 0.3rem 0.7rem 0;
+    /* box-shadow: 0 0.3rem 0.7rem 0; */
 }
 
-.photo-div-cabaz img:hover {
+/* .photo-div-cabaz img:hover {
     transform: scale(1.1);
-    opacity: 1;
-}
+} */
 
 .title-div {
     font-weight: bold;
@@ -202,28 +198,133 @@
 
 @media screen and (min-width: 700px) {
 
+    .cabaz-um, .cabaz-dois, .cabaz-tres {
+        /* max-height: 95vh; */
+    }
+
+    .cabaz-content img, .sugestionsContent div img {
+        max-height: 50vh;
+    }
+
+    .cabaz-content {
+        border: none;
+        font-size: 1rem;
+        /* border: solid red 1px; */
+        justify-content: center;
+        margin: 2vh auto;
+    }
+
+    .cabaz-content img {
+        /* border: solid red 1px; */
+
+    }
+
+    .add-to-cart:hover {
+        background-color: var(--black);
+        color: var(--orange);
+    }
+
+    .cabaz-content .cabaz-list{
+        border: solid var(--orange) 2px;
+        border-radius: 1rem;
+        min-height: 80%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        background-color: var(--green);
+        color: var(--white);
+        padding: 1rem;
+        align-items: center;
+    }
+
+    /* SUGESTIONS  */
+
+    .sugestions {
+        min-height: 85svh;
+        gap: 0
+    }
+
+    .sugestionsTitle {
+        font-size: 1.5rem;
+        color: var(--green);
+    }
+
+    .sugestion {
+        border: none;
+        /* justify-content: center; */
+        /* margin: 0 auto; */
+        position: relative;
+    }
+
+    .sugestion span {
+        color: var(--orange);
+        /* border: solid red 1px; */
+        min-width: 100%;
+        margin: 2rem auto;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+    }
+
+    .sugestion span:hover {
+        text-decoration: underline;
+    }
+
     .title-div {
         font-weight: bold;
         margin: 5vh 0;
-        max-width: 100%;
+        max-width: 100vw;
         padding: 3vh;
         /* border-radius: 0 35rem 0 35rem; */
-        background-color: var(--white);
+        background-color: var(--green-one);
+        color: var(--white);
         text-align: center;
     }
 
     .hortaDaRia {
         font-size: 2rem;
-        color: var(--black);
-        background-color: var(--white);
+        color: var(--white);
+        background-color: var(--green-one);
         font-weight: bold;
         border-radius: 0;
-    } 
+    }
+
+    .cabazes {
+        margin-bottom: 25vh;
+        margin: 6vh auto;
+    }
 
     .cabaz-menu {
         grid-template-columns: repeat(4, 1fr);
-        gap: 0.5rem;
+        justify-content: center;
+        gap: 5vw;
+        margin: 10vh auto;
     }
 
-}
+    .cabaz-1 a, .cabaz-2 a, .cabaz-3 a, .cabaz-4 a {
+       text-decoration: none;
+    }
 
+    .cabazOne, .cabazTwo, .cabazThree, .cabazFour {
+        position: static;
+    }
+
+    .cabazContent h4 {
+        background-color: transparent;
+        color: var(--green);
+        border-radius: 0;
+        font-size: 2rem;
+    }
+
+    .cabazContent h4:hover {
+        color: var(--orange);
+    }
+
+    .photo-div-cabaz {
+        display: flex;
+    }
+
+    .photo-div-cabaz img{
+        max-height: 40vh;
+    }
+}

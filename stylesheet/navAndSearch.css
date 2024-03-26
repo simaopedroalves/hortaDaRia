@@ -200,9 +200,6 @@ header .menu-list  a:hover {
         cursor: pointer;
     }
     
-    .fa-x, .fa-bars-staggered {
-        display: none;
-    }
 
     .menu-list {
         display: flex;
@@ -224,10 +221,7 @@ header .menu-list  a:hover {
         /* border: 1px solid red; */
     }
 
-    .fa-bars-staggered,
-    .fa-x {
-        display: none;
-    }
+   
  
     header .menu-list a li:hover {
         color: var(--orange)
@@ -236,5 +230,10 @@ header .menu-list  a:hover {
     .searchBar-div {
         background-color: var(--green-one);
 
+    }
+
+    .fa-bars-staggered,
+    .fa-x {
+        display: none;
     }
 }

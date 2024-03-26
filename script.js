@@ -98,6 +98,7 @@ scrolling.addEventListener('wheel', (scroll) => {
     // scrolling.style.scrollBehavior = 'smooth';
 });
 
-//event on shopping cart one navbar
+
+
 
 

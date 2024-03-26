@@ -107,6 +107,8 @@
     gap: 1vh;
 }
 
+
+
 .footer-end p, .social-media{
     font-weight: 700;
     font-style: oblique;
@@ -128,6 +130,54 @@
 
 @media screen and (min-width: 600px) {
 
-    
+    .media-and-contacts {
+        grid-template-columns: repeat(4, 1fr);
+        padding-bottom: 5vh;
+        align-items: center;
+        max-width: 100vw;
+        overflow-x: hidden;
+        margin-bottom: 0;
+
+    }
+
+    .footer-head, .line-break {
+        grid-column: span 4;
+    }
+
+    .footer-end {
+        grid-column: span 3;
+        font-size: 1rem;
+    }
+
+    .footer-end a {
+        padding: 0.2rem;
+        max-width: fit-content;
+    }
+
+    .footer-end a:hover {
+        text-decoration: underline;
+        background-color: var(--orange);
+        max-width: fit-content;
+    }
+
+    .media-and-contacts i {
+        color: var(--white);
+        border: solid var(--white) 2px;
+        background-color: transparent;
+        font-size: 1.2rem;
+    }
+
+    .media-and-contacts i:hover {
+        border: solid var(--orange) 2px;
+    }
+
+    .info-tel span:nth-child(1),
+    .social-media a span {
+        font-size: 1rem;
+    }
+
+    .info-tel span:nth-child(2) {
+        font-size: 0.8rem;
+    }
 
 }
