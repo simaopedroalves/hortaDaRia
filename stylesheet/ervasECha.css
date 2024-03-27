@@ -14,7 +14,7 @@
     gap: 1vw;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100vw;
-    margin: 7rem 2vw;
+    margin: 7rem auto;
     justify-content: center;
 }
 

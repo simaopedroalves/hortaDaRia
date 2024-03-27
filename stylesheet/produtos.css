@@ -39,6 +39,7 @@
     border: none;
     outline: none;
     padding: 0.2rem;
+    margin: auto;
     /* font-size: 1rem; */
 }
 
@@ -59,13 +60,37 @@
 @media screen and (min-width: 700px) {
 
     .all-products {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        margin: 15vh 20vw;
     }
 
     .all-products .title-div {
-        grid-column: span 5;
+        grid-column: span 4;
     }
 
+    .all-products div:not(.title-div) {
+        justify-content: center;
+        padding: 1rem;
+        border: solid var(--orange) 2px;
+    }
+
+    .all-products div:not(.title-div):hover {
+        border: solid var(--green) 2px;
+    }
+
+    .all-products a p {
+        background-color: var(--white);
+        border: solid var(--green) 2px;
+        color: var(--green);
+        max-width: 75%;
+    }
+
+    .all-products a p:hover {
+        border: solid var(--orange) 2px;
+        color: var(--orange);
+    }
+
+    .all-products
 
 
 }

@@ -59,7 +59,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
     }
 
     .hortaDaRia {
@@ -78,13 +77,29 @@
     }
     
     .about-us-div {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         font-size: 1.5rem;
         /* align-items: center; */
+        max-width: 80vw;
         text-align: justify;
+
+    }
+    .about-us-div .about-us-description p{
+        /* margin: 0 auto; */
+        text-align: left;
+
     }
     .about-us-description p{
-        color: var(--black);        
+        color: var(--black);     
+        font-size: 1rem;   
+    }
+    .about-us-description h3 {
+        background-color: var(--white);
+        color: var(--green);
+        font-size: 2rem;
+        border: var(--orange) 2px solid;
+        max-width: fit-content;
+        padding: 1rem;
+        border-radius: 1rem 0 1rem 0;
+        margin: 5vh;
     }
 }

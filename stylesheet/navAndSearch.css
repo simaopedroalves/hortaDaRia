@@ -233,7 +233,10 @@ header .menu-list  a:hover {
     }
 
     .fa-bars-staggered,
-    .fa-x {
+    .fa-x,
+    .openMenu,
+    .openMenu::before,
+    .openMenu::after {
         display: none;
     }
 }
