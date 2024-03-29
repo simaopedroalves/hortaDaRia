@@ -282,6 +282,32 @@
             "name": "3 vasos à escolha",
             "price": 12
         }
+    ],
+    "testimonials": [
+        {
+            "name": "Tiago",
+            "testimonial": "They are so fun",
+            "date": "29/03/2024",
+            "job": "Web Developer"
+        },
+        {
+            "name": "Tiago",
+            "testimonial": "They are so fun",
+            "date": "29/03/2024",
+            "job": "Web Developer"
+        },
+        {
+            "name": "Tiago",
+            "testimonial": "They are so fun",
+            "date": "29/03/2024",
+            "job": "Web Developer"
+        },
+        {
+            "name": "Tiago",
+            "testimonial": "They are so fun",
+            "date": "29/03/2024",
+            "job": "Web Developer"
+        }
     ]
 
 }

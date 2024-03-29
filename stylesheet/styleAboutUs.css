@@ -35,7 +35,7 @@
 }
 
 .about-us .about-us-description {
-    text-align: justify;
+    text-align: left;
     display: grid;
     justify-content: center;
     gap: 0.5rem;

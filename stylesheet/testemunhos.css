@@ -1,0 +1,38 @@
+.testimonials {
+    display: grid;
+    gap: 3vh;
+    margin: 20vh auto;
+}
+
+.testimonials > div:nth-child(odd) {
+    text-align: left;
+}
+
+.testimonials > div:nth-child(even) {
+    text-align: right;
+}
+
+.testimonials > div:nth-child(odd), 
+.testimonials > div:nth-child(even) {
+    border: solid var(--green) 2px;
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+    margin: 0 3vw;
+    border-radius: 1rem 0 1rem 0;
+
+}
+
+.testimonials .date-and-job {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    min-width: 100%;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
