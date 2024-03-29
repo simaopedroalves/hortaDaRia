@@ -117,34 +117,6 @@
         {
             "name": "mix de microverdes",
             "price": 2
-        },
-        {
-            "vasos": [
-                {
-                    "name": "vaso ervilha",
-                    "price": 5
-                }, 
-                {
-                    "name": "vaso girassol",
-                    "price": 5
-                },
-                {
-                    "name": "vaso rabanete rose",
-                    "price": 5
-                },
-                {
-                    "name": "vaso rabanete red rambo",
-                    "price": 5
-                },
-                {
-                    "name": "2 vasos à escolha",
-                    "price": 9
-                },
-                {
-                    "name": "3 vasos à escolha",
-                    "price": 12
-                }
-            ]
         }
     ],
     "floresComestiveis": [
@@ -285,6 +257,30 @@
         {
             "name": "tomilho",
             "price": 2
+        },
+        {
+            "name": "ervilha",
+            "price": 5
+        }, 
+        {
+            "name": "girassol",
+            "price": 5
+        },
+        {
+            "name": "rabanete rose",
+            "price": 5
+        },
+        {
+            "name": "rabanete red rambo",
+            "price": 5
+        },
+        {
+            "name": "2 vasos à escolha",
+            "price": 9
+        },
+        {
+            "name": "3 vasos à escolha",
+            "price": 12
         }
     ]
 

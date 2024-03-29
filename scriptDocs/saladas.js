@@ -23,24 +23,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         secSaladas.innerHTML += `
         <div class="boxItem">
-        <h3>${saladaName}</h3>
-        <img src="/images/cabaz-photo.jpeg" alt="">
-        <div class="kiloPrice">${saladaPrice}<span>€/kilo</span></div>
-        <select type="text" min="1" class="quantity" placeholder="quantidade">
-            <!-- <option value="">Quantidade</option> -->
-            <option value="100gr">100 gr</option>
-            <option value="250gr">250 gr</option>
-            <option value="500gr">500 gr</option>
-            <option value="750gr">750 gr</option>
-            <option value="1Kg">1 Kg</option>
-            <option value="2Kg">2Kg</option>
-            <option value="1Un">1 Unidade</option>
-            <option value="2Un">2 Unidades</option>
-        </select>
-        <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-        <div class="priceToPay">Total<span>€</span></div>
-        <button class="addToCart btn btn-success">Comprar</button>
-    </div>
+            <h3>${saladaName}</h3>
+            <img src="/images/cabaz-photo.jpeg" alt="">
+            <div class="kiloPrice">${saladaPrice}<span>€/kilo</span></div>
+            <select type="text" min="1" class="quantity" placeholder="quantidade">
+                <!-- <option value="">Quantidade</option> -->
+                <option value="100gr">100 gr</option>
+                <option value="250gr">250 gr</option>
+                <option value="500gr">500 gr</option>
+                <option value="750gr">750 gr</option>
+                <option value="1Kg">1 Kg</option>
+                <option value="2Kg">2Kg</option>
+                <option value="1Un">1 Unidade</option>
+                <option value="2Un">2 Unidades</option>
+            </select>
+            <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+            <div class="priceToPay">Total<span>€</span></div>
+            <button class="addToCart btn btn-success">Comprar</button>
+        </div>
         `
 
     }

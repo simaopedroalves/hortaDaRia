@@ -23,18 +23,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         secfloresComestiveis.innerHTML += `
         <div class="boxItem">
-        <h3>${floresComestiveisName}</h3>
-        <img src="/images/cabaz-photo.jpeg" alt="">
-        <div class="kiloPrice">${floresComestiveisPrice}<span>€/kilo</span></div>
-        <select type="text" min="1" class="quantity" placeholder="quantidade">
-            <!-- <option value="">Quantidade</option> -->
-            <option value="15gr">15 gr.</option>
-            <option value="25gr">25 gr.</option>
-            <option value="50gr">50 gr.</option>
-            <option value="100gr">100 gr.</option>
-            <option value="250gr">250 gr.</option>
-            <option value="500gr">500 gr.</option>
-        </select>
+            <h3>${floresComestiveisName}</h3>
+            <img src="/images/cabaz-photo.jpeg" alt="">
+            <div class="kiloPrice">${floresComestiveisPrice}<span>€/kilo</span></div>
+            <select type="text" min="1" class="quantity" placeholder="quantidade">
+                <!-- <option value="">Quantidade</option> -->
+                <option value="15gr">15 gr.</option>
+                <option value="25gr">25 gr.</option>
+                <option value="50gr">50 gr.</option>
+                <option value="100gr">100 gr.</option>
+                <option value="250gr">250 gr.</option>
+                <option value="500gr">500 gr.</option>
+            </select>
         <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
         <div class="priceToPay">Total<span>€</span></div>
         <button class="addToCart btn btn-success">Comprar</button>

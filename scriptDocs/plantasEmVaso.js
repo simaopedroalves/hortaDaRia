@@ -22,20 +22,19 @@ document.addEventListener('DOMContentLoaded', async () => {
         let plantasEmVasoPrice = object.plantasEmVaso[i].price;
         
         secPlantasEmVaso.innerHTML += `
-            <div class="boxItem">
+            <div class="boxItem vasosSec">
                 <h3>${plantasEmVasoName}</h3>
                 <img src="/images/cabaz-photo.jpeg" alt="">
-                <div class="kiloPrice">${plantasEmVasoPrice}<span>€/kilo</span></div>
-                <select type="text" min="1" class="quantity" placeholder="quantidade">
+                <div class="kiloPrice">${plantasEmVasoPrice}<span>€/Un</span></div>
+                <select type="text" min="1" class="quantity" placeholder="Nº de Vasos">
                     <!-- <option value="">Quantidade</option> -->
-                    <option value="15gr">15 gr.</option>
-                    <option value="25gr">25 gr.</option>
-                    <option value="50gr">50 gr.</option>
-                    <option value="100gr">100 gr.</option>
-                    <option value="250gr">250 gr.</option>
-                    <option value="500gr">500 gr.</option>
+                    <option value="1UN">1 Un</option>
+                    <option value="2UN">2 Un</option>
+                    <option value="3UN">3 Un</option>
+                    <option value="4UN">4 Un</option>
+                    <option value="5UN">5 Un</option>
+                    <option value="6UN">6 Un</option>
                 </select>
-                <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay">Total<span>€</span></div>
                 <button class="addToCart btn btn-success">Comprar</button>
             </div>

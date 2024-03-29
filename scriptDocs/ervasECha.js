@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
      
         let ervaName = object.ervasAromaticasECha[i].name;
         let ervaPrice = object.ervasAromaticasECha[i].price;
-        let image = object.ervasAromaticasECha[i].image;
+        // let image = object.ervasAromaticasECha[i].image;
     
         // console.log('Nome: ' + ervaName + '\n' + 'Preço: ' + ervaPrice)
         
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         <div class="boxItem">
             <h3>${ervaName}</h3>
             <img src="/images/cabaz-photo.jpeg" alt="">
-            <div class="kiloPrice">${ervaPrice}<span>€/kilo</span></div>
+            <div class="kiloPrice">${ervaPrice}<span>€/Kg</span></div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
                 <!-- <option value="">Quantidade</option> -->
                 <option value="15gr">15 gr.</option>
