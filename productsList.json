@@ -287,8 +287,8 @@
         {
             "name": "Tiago",
             "testimonial": "They are so fun",
-            "date": "29/03/2024",
-            "job": "Web Developer"
+            "testimonialDate": "29/03/2024",
+            "clientJob": "Web Developer"
         },
         {
             "name": "Tiago",

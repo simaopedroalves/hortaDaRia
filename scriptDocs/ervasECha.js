@@ -1,4 +1,5 @@
 const secErvas = document.querySelector('.ervas');
+
 async function callErvas() {
     return (await fetch('/productsList.json')).json()
 }
