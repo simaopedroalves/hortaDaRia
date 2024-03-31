@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-around;
     margin: 5vh 2vw 10vh 2vw;
+    max-width: 100vw;
 }
 
 .all-products .title-div {
@@ -36,7 +37,7 @@
     max-width: 35vw;
     border-radius: 1rem 0 1rem 0;
     color: var(--green);
-    background-color: var(--white); 
+    background-color: var(--white);
     border: solid 2px var(--green);
     outline: none;
     padding: 0.2rem;
@@ -62,7 +63,9 @@
 
     .all-products {
         grid-template-columns: repeat(4, 1fr);
-        margin: 15vh 20vw;
+        margin: 7vh 15vw;
+        justify-content: center;
+        gap: 2vw;
     }
 
     .all-products .title-div {
@@ -70,9 +73,13 @@
     }
 
     .all-products div:not(.title-div) {
-        justify-content: center;
+        /* justify-content: center; */
         padding: 1rem;
         border: solid var(--orange) 2px;
+    }
+
+    .all-products img {
+        max-width: 15vw;
     }
 
     .all-products div:not(.title-div):hover {
@@ -83,7 +90,7 @@
         background-color: var(--white);
         border: solid var(--green) 2px;
         color: var(--green);
-        max-width: 75%;
+        /* max-width: 75%; */
     }
 
     .all-products a p:hover {
@@ -91,7 +98,7 @@
         color: var(--orange);
     }
 
-  
+
 
 
 }

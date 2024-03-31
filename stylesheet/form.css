@@ -77,3 +77,8 @@
     height: 100%;
     border: solid red 2px;
 }
+
+@media screen and (min-width: 700px) {
+    
+
+}

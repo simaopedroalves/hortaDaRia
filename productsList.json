@@ -286,28 +286,29 @@
     "testimonials": [
         {
             "name": "Tiago",
-            "testimonial": "They are so fun",
+            "testimonial": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rem quod ratione unde a dolore, assumenda similique sit optio quo possimus cumque nam. Necessitatibus sit rerum facilis vel pariatur voluptas?",
             "testimonialDate": "29/03/2024",
             "clientJob": "Web Developer"
         },
         {
             "name": "Tiago",
-            "testimonial": "They are so fun",
-            "date": "29/03/2024",
-            "job": "Web Developer"
+            "testimonial": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rem quod ratione unde a dolore, assumenda similique sit optio quo possimus cumque nam. Necessitatibus sit rerum facilis vel pariatur voluptas?",
+            "testimonialDate": "29/03/2024",
+            "clientJob": "Web Developer"
         },
         {
             "name": "Tiago",
-            "testimonial": "They are so fun",
-            "date": "29/03/2024",
-            "job": "Web Developer"
+            "testimonial": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rem quod ratione unde a dolore, assumenda similique sit optio quo possimus cumque nam. Necessitatibus sit rerum facilis vel pariatur voluptas?",
+            "testimonialDate": "29/03/2024",
+            "clientJob": "Web Developer"
         },
         {
             "name": "Tiago",
-            "testimonial": "They are so fun",
-            "date": "29/03/2024",
-            "job": "Web Developer"
+            "testimonial": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat rem quod ratione unde a dolore, assumenda similique sit optio quo possimus cumque nam. Necessitatibus sit rerum facilis vel pariatur voluptas?",
+            "testimonialDate": "29/03/2024",
+            "clientJob": "Web Developer"
         }
+       
     ]
 
 }
