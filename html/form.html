@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Simão Alves">
-    <meta name="description" content="Produtos 100% Naturais - Horta da Ria - V. N. Famalicão">
-    <meta name="keywords" content="Agricultura, Terra, Horta, cidade, aldeia, produtos, frescos, fruta, legumes, vegetais, horticolas, ecologia, ecológica, natural, famalicão, famalicao, vnf, agricultor, cabaz, cabazes, produtos 100% naturais, contactos">
+    <meta name="description" content="Contactos - Produtos 100% Naturais - Horta d'Ria - V. N. Famalicão">
+    <meta name="keywords" content="Agricultura, horta, produtos 100% Naturais, cabaz 1, cabaz 2, cabaz 3, cria o teu cabaz, cabaz, cabazes, horta d'ria, horta da ria, contactos">
     <link rel="stylesheet" href="/stylesheet/navAndSearch.css">
     <link rel="stylesheet" href="/stylesheet/styleAboutUs.css">
     <link rel="stylesheet" href="/stylesheet/cabaz.css">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/stylesheet/form.css">
     <script src="\scriptDocs/form.js" defer></script>
 
+    <!-- script to send auto response to the client -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
 
@@ -88,16 +90,18 @@
 
 
     <!-- FORMULARIO DE CONTACTO -->
-    <form name="Horta_da_Ria" action="/html/success.html" method="POST" data-netlify="true" class="contactForm" >
+    <!-- <form name="Horta_da_Ria" action="/html/success.html" method="POST" data-netlify="true" class="contactForm" > -->
+        <form onsubmit="emailSend(); reset(); return false;" class="contactForm" >
+
         <!-- <input type="hidden" name="_captcha" value="false"> -->
         <!-- <input type="hidden" name="_next" value="https://"> -->
-        <!-- <input type="hidden" name="subject" value="" id="newMessage"> -->
+        <input type="hidden" name="subject" value="" id="newMessage" data-remove-prefix>
         <!-- <input type="hidden" name="_template" value="table"> -->
         <!-- <input type="hidden" name="_autoresponse" value="" id="autoResponseMessage"> -->
 
         <div class="introduction">
             <p class="introductionText">
-                Tens alguma dúvida ou tens curiosidade em saber mais sobre os nossos produtos ou a nossa Quinta?
+                Tens alguma dúvida ou tens curiosidade em saber mais sobre os nossos produtos ou a nossa Horta?
                 Preenche o formulário em baixo.
                 Iremos responder-te com a maior brevidade possível.
             </p>
@@ -131,6 +135,8 @@
     <section class="googleMapsLocation">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24403.239035449966!2d-8.549947995752449!3d41.41244371673814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1710806518386!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+
+
 
     <section class="media-and-contacts" id="contactsAndSocialMedia">
 

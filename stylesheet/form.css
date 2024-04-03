@@ -75,10 +75,44 @@
 .googleMapsLocation iframe{
     width: 100%;
     height: 100%;
-    border: solid red 2px;
 }
 
 @media screen and (min-width: 700px) {
     
+.contactForm {
+    margin: 15dvh 20dvw   
+}
+
+.introduction .introductionText {
+    text-align: center;
+}
+
+.contactForm div:not(.introduction, .clientMessage) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactForm div  {
+    max-width: 40dvw;
+    margin: 0 10dvw;
+}
+
+.btn-info:hover {
+    cursor: pointer;
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.googleMapsLocation {
+    max-width: 80vw;
+    min-height: 60dvh;
+    margin: 15vh auto;
+}
+
+.googleMapsLocation iframe{
+    width: 100%;
+    height: 60dvh;
+}
 
 }
