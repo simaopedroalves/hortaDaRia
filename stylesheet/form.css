@@ -37,6 +37,7 @@
     border-color: var(--green);
     padding: 0.4rem;
     margin: 0;
+    resize: vertical;
 }
 
 .clientMessage {

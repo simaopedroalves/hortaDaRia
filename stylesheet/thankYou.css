@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.thankYou .message {
+.thankYouMessage {
     color: var(--black);
     font-size: 0.7rem;
     margin: 0 15vw;
