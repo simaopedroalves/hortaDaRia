@@ -42,3 +42,10 @@
     text-decoration: none;
 }
 
+.fa-paper-plane {
+    display: inline-block;
+    /* animation: animate__backInLeft; */
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
