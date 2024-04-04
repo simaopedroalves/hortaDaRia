@@ -1,22 +1,32 @@
 .thankYou {
     margin: 0 auto 0 auto;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.thankYouMessage {
-    color: var(--black);
-    font-size: 0.7rem;
-    margin: 0 15vw;
-}
-
-.thankYou div span {
+.thankYou div:first-child {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--green);
+    line-height: 10vh;
+}
+
+.follow-us-message {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vh;
+    max-width: 100vw;
+    margin: 0 10vw;
+}
+
+.follow-us-message p {
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: 900;
+    grid-column: span 3;
 }
 
 .follow-us-message i {
@@ -25,5 +35,10 @@
     width: fit-content;
     padding: 1rem;
     border-radius: 50%;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
+
+.follow-us-message a {
+    text-decoration: none;
+}
+
