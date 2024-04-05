@@ -4,190 +4,230 @@
             "name": "Cabaz 1",
             "price": 10,
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix"],
-            "open": "/html/cabaz-um.html"          
+            "open": "/html/cabaz-um.html",
+            "image": "/images/fotosCabazes/cabaz-um/c1.jpg"          
         },
         {
             "name": "Cabaz 2",
             "price": 15,
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
                         "Limões", "Coentros", "Abóbora"],
-            "open": "/html/cabaz-dois.html"          
+            "open": "/html/cabaz-dois.html" ,
+            "image": "/images/fotosCabazes/cabaz-dois/c2.jpg"         
         },
         {
             "name": "Cabaz 3",
             "price": 20,
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
                         "Limões", "Coentros", "Abóbora", "Batata-doce", "Espargos", "Couve toscana"],
-            "open": "/html/cabaz-tres.html"          
+            "open": "/html/cabaz-tres.html",
+            "image": "/images/fotosCabazes/cabaz-tres/c3.jpg"         
         },
         {
             "name": "Criar Cabaz",
             "price": "",
             "content": "",
-            "open": "/html/produtos.html"          
+            "open": "/html/produtos.html",
+            "image": "/images/fotosCabazes/criar-cabaz/cb.jpg"          
         }
     ],
     "saladas": [
         {
             "name": "salada natura",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "alface mix",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "Rúcula cutivada",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "Mix verduras asiáticas",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "Salada Ibérica",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "Salada Wok",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "Agrião da Terra",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         }
     ],
     "verduras": [
         {
             "name": "ruibarbo",
-            "price": 10
+            "price": 10,
+            "image": "url()"
         },
         {
             "name": "couve galega",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "couve galega cortada",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "acelgas baby",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "couve toscana",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         }
     ],
     "raizes": [
         {
             "name": "batata-doce",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "cenouras baby",
-            "price": 2.5
+            "price": 2.5,
+            "image": "url()"
         },
         {
             "name": "espargos",
-            "price": 3.5
+            "price": 3.5,
+            "image": "url()"
         }
     ],
     "microverdes": [
         {
             "name": "rabanete rose",
-            "price": 2.5
+            "price": 2.5,
+            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
         },
         {
             "name": "rabanete red rambo",
-            "price": 2.5
+            "price": 2.5,
+            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
         },
         {
             "name": "girassol",
-            "price": 2.5
+            "price": 2.5,
+            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
         },
         {
             "name": "ervilhas",
-            "price": 2.5
+            "price": 2.5,
+            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
         },
         {
             "name": "capuchinha",
-            "price": 5
+            "price": 5,
+            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
         },
         {
             "name": "mix de microverdes",
-            "price": 2
+            "price": 2,
+            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
         }
     ],
     "floresComestiveis": [
         {
             "name": "amor perfeito",
-            "price": 0.1
+            "price": 0.1,
+            "image": "url()"
         },
         {
             "name": "borragem",
-            "price": 0.1
+            "price": 0.1,
+            "image": "url()"
         },
         {
             "name": "capuchinhas",
-            "price": 0.2
+            "price": 0.2,
+            "image": "url()"
         },
         {
             "name": "mix de flores",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "petunias",
-            "price": 0.3
+            "price": 0.3,
+            "image": "url()"
         },
         {
             "name": "flor galega",
-            "price": 0.1
+            "price": 0.1,
+            "image": "url()"
         }
     ],
     "leguminosas": [
         {
             "name": "favas",
             "price": 4,
-            "description": "descascadas e congeladas"
+            "description": "descascadas e congeladas",
+            "image": "url()"
         }
     ],
     "horticulas": [
         {
             "name": "abóbora manteiga",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "abóbora muscade/laranja",
-            "price": 2.5
+            "price": 2.5,
+            "image": "url()"
         },
         {
             "name": "limões",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "laranjas",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         },
         {
             "name": "tangerinas",
-            "price": 1.5
+            "price": 1.5,
+            "image": "url()"
         }
     ],
     "ovos": [
         {
             "name": "ovos",
-            "price": 4
+            "price": 4,
+            "image": "url()"
         }
     ], 
     "sabaoNatural": [
         {
             "name": "óleo de coco, azeite e alfazema",
-            "price": 4.5
+            "price": 4.5,
+            "image": "url()"
         },
         {
             "name": "óleo de coco, azeite e hortelã",
-            "price": 4.5
+            "price": 4.5,
+            "image": "url()"
         }
     ],
     "ervasAromaticasECha": [
@@ -240,47 +280,58 @@
     "plantasEmVaso": [
         {
             "name": "suculenta",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "oregãos",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "espargos",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "salvia",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "tomilho",
-            "price": 2
+            "price": 2,
+            "image": "url()"
         },
         {
             "name": "ervilha",
-            "price": 5
+            "price": 5,
+            "image": "url()"
         }, 
         {
             "name": "girassol",
-            "price": 5
+            "price": 5,
+            "image": "url()"
         },
         {
             "name": "rabanete rose",
-            "price": 5
+            "price": 5,
+            "image": "url()"
         },
         {
             "name": "rabanete red rambo",
-            "price": 5
+            "price": 5,
+            "image": "url()"
         },
         {
             "name": "2 vasos à escolha",
-            "price": 9
+            "price": 9,
+            "image": "url()"
         },
         {
             "name": "3 vasos à escolha",
-            "price": 12
+            "price": 12,
+            "image": "url()"
         }
     ],
     "testimonials": [

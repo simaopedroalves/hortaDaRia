@@ -45,6 +45,18 @@
     /* font-size: 1rem; */
 }
 
+.section-title {
+    grid-column: span 2;
+    margin: 0 auto 1rem auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 1rem 0;
+}
+
 @media screen and (max-width: 350px) {
 
     .all-products {
@@ -98,7 +110,9 @@
         color: var(--orange);
     }
 
-
+    .section-title {
+        grid-column: span 4;
+    }
 
 
 }

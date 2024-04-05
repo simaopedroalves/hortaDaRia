@@ -20,11 +20,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let microverdesName = object.microverdes[i].name;
         let microverdesPrice = object.microverdes[i].price;
+        let image = object.microverdes[i].image;
         
         secMicroverdes.innerHTML += `
         <div class="boxItem">
             <h3>${microverdesName}</h3>
-            <img src="/images/cabaz-photo.jpeg" alt="">
+            <img src="${image}" alt="">
             <div class="kiloPrice">${microverdesPrice}<span>€/kilo</span></div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
                 <!-- <option value="">Quantidade</option> -->

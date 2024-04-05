@@ -59,7 +59,7 @@
 
 }
 
-.cabaz-content img, .sugestionsContent div img {
+.cabaz-content img, .sugestionsContent div a img {
     max-width: 40vw;
     object-fit: cover;
 }
@@ -89,11 +89,12 @@
 
 .sugestion {
     border: solid var(--green-one) 0.2rem;
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 0.5rem;
     display: grid;
     align-items: center;
-
+    justify-content: center;
+    max-height: fit-content;
 }
 
 .sugestion a {
@@ -121,7 +122,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin: 5vh 1.5rem;
+    margin: 3vh 1.5rem;
 }
 
 .cabaz-1, .cabaz-2, .cabaz-3, .cabaz-4 {
@@ -169,11 +170,11 @@
     border-radius: 0.5rem;
 }
 
-.photo-div-cabaz img{
-    object-fit: contain;
+.cabaz-menu .photo-div-cabaz img{
+    object-fit: cover;
+    min-height: 100%;
     max-width: 100%;
     border-radius: 1rem;
-    transition: 1s;
     /* box-shadow: 0 0.3rem 0.7rem 0; */
 }
 

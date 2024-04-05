@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         // let prices = object.cabazes[i].price;
         let nameOne = object.cabazes[0].name
         let priceOne = object.cabazes[0].price
+        let imageCabazOne = object.cabazes[0].image;
+        let imageCabazTwo = object.cabazes[1].image;
+        let imageCabazThree = object.cabazes[2].image;
+        let imageCreateCabaz = object.cabazes[3].image;
 
         cabazOne.innerHTML = `
             <div class="cabazContent">

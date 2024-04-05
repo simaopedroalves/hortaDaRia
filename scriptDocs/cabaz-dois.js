@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         let cabazNumOne = object.cabazes[0].open;
         let cabazNumThree = object.cabazes[2].open;
         let createCabaz = object.cabazes[3].open;
-
+        let imageCabazOne = object.cabazes[0].image;
+        let imageCabazTwo = object.cabazes[1].image;
+        let imageCabazThree = object.cabazes[2].image;
+        let imageCreateCabaz = object.cabazes[3].image;
 
          console.log('Nome: ' + cabazName + '\n' + 'Preço: ' + cabazPrice + '\n' + 'Conteudo: ' + cabazContent)
       
@@ -39,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="cabaz-list">
                 ${cabazContent}
             </div>
-            <img src="/images/cabaz-photo.jpeg" alt="">
+            <img src="${imageCabazTwo}" alt="">
             <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
         </div>
 
@@ -51,21 +54,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 <div class="sugestionOne sugestion">
                     <a href="${cabazNumOne}">
-                        <img src="/images/cabaz-photo.jpeg" alt="">
+                        <img src="${imageCabazOne}" alt="">
                         <span>Cabaz nº 1</span>
                     </a>
                 </div>
 
                 <div class="sugestionTwo sugestion">
                     <a href="${cabazNumThree}">
-                        <img src="/images/cabaz-photo.jpeg" alt="">
+                        <img src="${imageCabazThree}" alt="">
                         <span>Cabaz nº 3</span>
                     </a>
                 </div>
 
                 <div class="sugestionThree sugestion">
                     <a href="${createCabaz}">
-                        <img src="/images/cabaz-photo.jpeg" alt="">
+                        <img src="${imageCreateCabaz}" alt="">
                         <span>Criar Cabaz</span>
                     </a>
                 </div>
