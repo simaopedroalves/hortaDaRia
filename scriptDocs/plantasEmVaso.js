@@ -20,11 +20,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         let plantasEmVasoName = object.plantasEmVaso[i].name;
         let plantasEmVasoPrice = object.plantasEmVaso[i].price;
+        let image = object.plantasEmVaso[i].image;
+
         
         secPlantasEmVaso.innerHTML += `
             <div class="boxItem vasosSec">
                 <h3>${plantasEmVasoName}</h3>
-                <img src="/images/cabaz-photo.jpeg" alt="">
+                <img src="${image}" alt="">
                 <div class="kiloPrice">${plantasEmVasoPrice}<span>€/Un</span></div>
                 <select type="text" min="1" class="quantity" placeholder="Nº de Vasos">
                     <!-- <option value="">Quantidade</option> -->

@@ -20,20 +20,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         let ovosName = object.ovos[i].name;
         let ovosPrice = object.ovos[i].price;
+        let image = object.ovos[i].image;
+
         
         secOvos.innerHTML += `
             <div class="boxItem">
                 <h3>${ovosName}</h3>
-                <img src="/images/cabaz-photo.jpeg" alt="">
+                <img src="${image}" alt="">
                 <div class="kiloPrice">${ovosPrice}<span>€/kilo</span></div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <!-- <option value="">Quantidade</option> -->
-                    <option value="15gr">15 gr.</option>
-                    <option value="25gr">25 gr.</option>
-                    <option value="50gr">50 gr.</option>
-                    <option value="100gr">100 gr.</option>
-                    <option value="250gr">250 gr.</option>
-                    <option value="500gr">500 gr.</option>
+                    <option value="1/2-duzia">1/2 dúzia</option>
+                    <option value="1-duzia">1 dúzia</option>
+                    <option value="duzia_e_meia">dúzia e meia</option>
+                    <option value="2-duzias">2 dúzias</option>
+                    <option value="3-duzias">3 dúzias</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay">Total<span>€</span></div>

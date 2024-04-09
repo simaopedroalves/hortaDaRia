@@ -76,7 +76,7 @@ header {
     max-height: max-content;
 }
 
-.fa-cart-shopping,
+.cart-div .fa-basket-shopping,
 .fa-magnifying-glass,
 .fa-bars-staggered,
 .fa-x {

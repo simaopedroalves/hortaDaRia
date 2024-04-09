@@ -40,15 +40,15 @@
         {
             "name": "alface mix",
             "price": 1.5,
-            "image": "url()"
+            "image": "/images/saladas/mescla-de-alfaces.jpg"
         },
         {
-            "name": "Rúcula cutivada",
+            "name": "Rúcula cultivata",
             "price": 1.5,
-            "image": "url()"
+            "image": "/images/saladas/rucula-cultivata.jpg"
         },
         {
-            "name": "Mix verduras asiáticas",
+            "name": "Verduras asiáticas",
             "price": 1.5,
             "image": "url()"
         },
@@ -65,7 +65,7 @@
         {
             "name": "Agrião da Terra",
             "price": 1.5,
-            "image": "url()"
+            "image": "/images/saladas/agriao-da-terra.jpg"
         }
     ],
     "verduras": [
@@ -85,6 +85,16 @@
             "image": "url()"
         },
         {
+            "name": "acelgas",
+            "price": 2,
+            "image": "/images/verduras/acelgas.jpg"
+        },
+        {
+            "name": "alcachofra",
+            "price": 2,
+            "image": "/images/verduras/alcachofra.jpg"
+        },
+        {
             "name": "acelgas baby",
             "price": 2,
             "image": "url()"
@@ -93,6 +103,51 @@
             "name": "couve toscana",
             "price": 2,
             "image": "url()"
+        },
+        {
+            "name": "Espinafre de folha larga",
+            "price": 1.25,
+            "image": "url()"
+        },
+        {
+            "name": "Espinafre manteiga",
+            "price": 1.25,
+            "image": "/images/verduras/espinafre-manteiga.jpg"
+        },
+        {
+            "name": "Red russian kale baby",
+            "price": 1.5,
+            "image": "url()"
+        },
+        {
+            "name": "Couve pack-choi",
+            "price": 1,
+            "image": "/images/verduras/couve-pack-choi.jpg"
+        },
+        {
+            "name": "Couve tatsoi",
+            "price": 1,
+            "image": "/images/verduras/couve-tatsoi.jpg"
+        },
+        {
+            "name": "Couve rabano roxa",
+            "price": 0.8,
+            "image": "/images/verduras/couve-rabano-roxa.jpg"
+        },
+        {
+            "name": "Couve rabano verde",
+            "price": 0.8,
+            "image": "url()"
+        },
+        {
+            "name": "Couve curly kale",
+            "price": 1,
+            "image": "/images/verduras/couve-kurly-kale.jpg"
+        },
+        {
+            "name": "verduras asiáticas",
+            "price": 1,
+            "image": "/images/verduras/verduras-asiaticas.jpg"
         }
     ],
     "raizes": [
@@ -102,6 +157,16 @@
             "image": "url()"
         },
         {
+            "name": "cebola-nova",
+            "price": 2,
+            "image": "/images/raizes/cebola-nova.jpg"
+        },
+        {
+            "name": "cenouras",
+            "price": 2,
+            "image": "/images/raizes/cenouras.jpg"
+        },
+        {
             "name": "cenouras baby",
             "price": 2.5,
             "image": "url()"
@@ -109,7 +174,7 @@
         {
             "name": "espargos",
             "price": 3.5,
-            "image": "url()"
+            "image": "/images/raizes/espargos.jpg"
         }
     ],
     "microverdes": [
@@ -148,12 +213,12 @@
         {
             "name": "amor perfeito",
             "price": 0.1,
-            "image": "url()"
+            "image": "/images/floresComestiveis/amores-perfeitos.jpg"
         },
         {
             "name": "borragem",
             "price": 0.1,
-            "image": "url()"
+            "image": "/images/floresComestiveis/borragem.jpg"
         },
         {
             "name": "capuchinhas",
@@ -163,7 +228,7 @@
         {
             "name": "mix de flores",
             "price": 2,
-            "image": "url()"
+            "image": "/images/floresComestiveis/mix"
         },
         {
             "name": "petunias",
@@ -171,7 +236,12 @@
             "image": "url()"
         },
         {
-            "name": "flor galega",
+            "name": "flor da galega",
+            "price": 0.1,
+            "image": "url()"
+        },
+        {
+            "name": "flor da toscana",
             "price": 0.1,
             "image": "url()"
         }
@@ -181,6 +251,11 @@
             "name": "favas",
             "price": 4,
             "description": "descascadas e congeladas",
+            "image": "/images/leguminosas/favas.jpg"
+        },
+        {
+            "name": "ervilhas de quebrar",
+            "price": 10,
             "image": "url()"
         }
     ],
@@ -213,7 +288,12 @@
     ],
     "ovos": [
         {
-            "name": "ovos",
+            "name": "ovos de galinha",
+            "price": 2,
+            "image": "/images/ovos/ovo-galinha.jpg"
+        },
+        {
+            "name": "ovos de codorniz",
             "price": 4,
             "image": "url()"
         }
@@ -228,13 +308,23 @@
             "name": "óleo de coco, azeite e hortelã",
             "price": 4.5,
             "image": "url()"
+        },
+        {
+            "name": "óleo de coco, azeite e laranja",
+            "price": 4.5,
+            "image": "url()"
+        },
+        {
+            "name": "óleo de coco, azeite e alecrim",
+            "price": 4.5,
+            "image": "url()"
         }
     ],
     "ervasAromaticasECha": [
         {
             "name": "alecrim",
             "price": 1,
-            "image": "/images/cabaz-photo.jpeg"
+            "image": "url()"
         },
         {
             "name": "chá de limonete",
@@ -248,6 +338,16 @@
         },
         {
             "name": "folhas de loureiro",
+            "price": 1,
+            "image": "url()"
+        },
+        {
+            "name": "hortelã-pimenta",
+            "price": 1,
+            "image": "url()"
+        },
+        {
+            "name": "hortelã menta",
             "price": 1,
             "image": "url()"
         },
@@ -275,6 +375,16 @@
             "name": "coentros",
             "price": 1,
             "image": "url()"
+        },
+        {
+            "name": "hipericão do gerês",
+            "price": 1,
+            "image": "url()"
+        },
+        {
+            "name": "salsa",
+            "price": 1,
+            "image": "url()"
         }
     ],
     "plantasEmVaso": [
@@ -295,6 +405,16 @@
         },
         {
             "name": "salvia",
+            "price": 2,
+            "image": "url()"
+        },
+        {
+            "name": "hortelã-pimenta",
+            "price": 2,
+            "image": "url()"
+        },
+        {
+            "name": "hortelã menta",
             "price": 2,
             "image": "url()"
         },
