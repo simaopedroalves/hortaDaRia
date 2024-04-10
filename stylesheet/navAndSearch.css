@@ -12,6 +12,8 @@
     --red: rgba(216, 63, 49, 1);
     --white: rgb(245, 245, 245);
     --black: rgba(0,0,0,1);
+   
+
     --gray: rgba(0,0,0,0.5)
 }
 
@@ -108,7 +110,7 @@ header {
 .show {
     display: grid;
     max-width: 100vw;
-    background-color: var(--green);
+    background-color: var(--white);
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem;
@@ -117,8 +119,8 @@ header {
 
 header .menu-list li {
     list-style: none;
-    background-color: var(--green);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--green);
     min-width: 70svw;
     text-align: center;
     padding: 0.3rem;

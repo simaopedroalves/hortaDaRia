@@ -5,7 +5,7 @@
             "price": 10,
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix"],
             "open": "/html/cabaz-um.html",
-            "image": "/images/fotosCabazes/cabaz-um/c1.jpg"          
+            "image": ""          
         },
         {
             "name": "Cabaz 2",
@@ -13,7 +13,7 @@
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
                         "Limões", "Coentros", "Abóbora"],
             "open": "/html/cabaz-dois.html" ,
-            "image": "/images/fotosCabazes/cabaz-dois/c2.jpg"         
+            "image": ""         
         },
         {
             "name": "Cabaz 3",
@@ -21,14 +21,14 @@
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
                         "Limões", "Coentros", "Abóbora", "Batata-doce", "Espargos", "Couve toscana"],
             "open": "/html/cabaz-tres.html",
-            "image": "/images/fotosCabazes/cabaz-tres/c3.jpg"         
+            "image": ""         
         },
         {
             "name": "Criar Cabaz",
             "price": "",
             "content": "",
             "open": "/html/produtos.html",
-            "image": "/images/fotosCabazes/criar-cabaz/cb.jpg"          
+            "image": ""          
         }
     ],
     "saladas": [
@@ -72,7 +72,7 @@
         {
             "name": "ruibarbo",
             "price": 10,
-            "image": "url()"
+            "image": "/images/verduras/ruibarbo.jpg"
         },
         {
             "name": "couve galega",
@@ -117,7 +117,7 @@
         {
             "name": "Red russian kale baby",
             "price": 1.5,
-            "image": "url()"
+            "image": "/images/verduras/red-russian-kale-baby.jpg"
         },
         {
             "name": "Couve pack-choi",
@@ -181,32 +181,32 @@
         {
             "name": "rabanete rose",
             "price": 2.5,
-            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
+            "image": "/images/microverdes/microverdes-rabanetes.jpg"
         },
         {
             "name": "rabanete red rambo",
             "price": 2.5,
-            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
+            "image": "/images/microverdes/rabanetes.jpg"
         },
         {
             "name": "girassol",
             "price": 2.5,
-            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
+            "image": "images/microverdes/microverdes-girassol.jpg"
         },
         {
             "name": "ervilhas",
             "price": 2.5,
-            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
+            "image": "/images/microverdes/microverdes-ervilha.jpg"
         },
         {
             "name": "capuchinha",
             "price": 5,
-            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
+            "image": "/images/microverdes/microverdes-capuchinha.jpg"
         },
         {
             "name": "mix de microverdes",
             "price": 2,
-            "image": "/images/microverdes/microverdes_Ervilhas.jpg"
+            "image": "/images/microverdes/microverdes-mix.jpg"
         }
     ],
     "floresComestiveis": [
@@ -244,6 +244,11 @@
             "name": "flor da toscana",
             "price": 0.1,
             "image": "url()"
+        },
+        {
+            "name": "flor de mel",
+            "price": 0.1,
+            "image": "/images/floresComestiveis/flor-de-mel.jpg"
         }
     ],
     "leguminosas": [
@@ -256,7 +261,7 @@
         {
             "name": "ervilhas de quebrar",
             "price": 10,
-            "image": "url()"
+            "image": "/images/leguminosas/ervilhas-quebrar.jpg"
         }
     ],
     "horticulas": [
@@ -295,29 +300,29 @@
         {
             "name": "ovos de codorniz",
             "price": 4,
-            "image": "url()"
+            "image": "/images/ovos/ovos-codorniz.jpg"
         }
     ], 
     "sabaoNatural": [
         {
             "name": "óleo de coco, azeite e alfazema",
             "price": 4.5,
-            "image": "url()"
+            "image": "/images/sabaoNatural/sabao-natural.jpg"
         },
         {
             "name": "óleo de coco, azeite e hortelã",
             "price": 4.5,
-            "image": "url()"
+            "image": "/images/sabaoNatural/sabao-natural.jpg"
         },
         {
             "name": "óleo de coco, azeite e laranja",
             "price": 4.5,
-            "image": "url()"
+            "image": "/images/sabaoNatural/sabao-natural.jpg"
         },
         {
             "name": "óleo de coco, azeite e alecrim",
             "price": 4.5,
-            "image": "url()"
+            "image": "/images/sabaoNatural/sabao-natural.jpg"
         }
     ],
     "ervasAromaticasECha": [

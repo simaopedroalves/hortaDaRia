@@ -29,28 +29,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         let imageCabazThree = object.cabazes[2].image;
         let imageCreateCabaz = object.cabazes[3].image;
 
-
-
-
-
-        console.log('Nome: ' + cabazName + '\n' + 'Preço: ' + cabazPrice + '\n' + 'Conteudo: ' + cabazContent)
-      
-        console.log(cabazContent)
-        console.log(typeof(cabazContent.toString()))
-
         cabazContent = cabazContent.toString().replaceAll(',', '<br>')
-        secCabazUm.innerHTML += `
-        <h2 class="cabaz-name-title">${cabazName}</h2>
+        secCabazUm.innerHTML += 
+        `
+            <h2 class="cabaz-name-title">${cabazName}</h2>
 
-        <div class="cabaz-content">
-            <div class="cabaz-list">
-                ${cabazContent}
+            <div class="cabaz-content">
+                <div class="cabaz-list">
+                    ${cabazContent}
+                </div>
+                
+                <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
             </div>
-            <img src="${imageCabazOne}" alt="">
-            <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
-        </div>
-
-        <div class="sugestions">
 
             <h4 class="sugestionsTitle">Outras Sugestões:</h4>
 
@@ -78,8 +68,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
 
             </div>
-
-        </div>
         `
 
         // let sugOne = document.querySelector('.sugestionOne')

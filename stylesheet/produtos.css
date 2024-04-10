@@ -1,14 +1,15 @@
 .all-products {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     align-items: center;
-    justify-content: space-around;
-    margin: 5vh 2vw 10vh 2vw;
+    /* justify-content: space-around; */
+    /* margin: 5vh 2vw 10vh 2vw; */
     max-width: 100vw;
+    margin-bottom: 10vh;
 }
 
 .all-products .title-div {
-    grid-column: span 2;
+    /* grid-column: span 2; */
 }
 
 .all-products div:not(.title-div) {
@@ -34,13 +35,13 @@
 }
 
 .all-products a p {
-    max-width: 35vw;
-    border-radius: 1rem 0 1rem 0;
-    color: var(--green);
-    background-color: var(--white);
-    border: solid 2px var(--green);
+    max-width: 100%;
+    border-radius: 1rem 0;
+    color: var(--white);
+    background-color: var(--green);
+    /* border: solid 2px var(--orange); */
     outline: none;
-    padding: 0.2rem;
+    padding: 1rem;
     margin: auto;
     /* font-size: 1rem; */
 }

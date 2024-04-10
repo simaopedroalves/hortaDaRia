@@ -53,16 +53,23 @@
 }
 
 @media screen and (min-width: 700px) {
+    .section-title-testimonial {
+        grid-column: span 4;
+        margin-bottom: 10dvh;
+    }
+    
     .testimonials {
         grid-template-columns: repeat(4, 1fr); 
         gap: 0;
         justify-content: center;
-        margin: 20vh 3vw;
+        margin: 30dvh 3vw 20vh 3vw;
     }
 
     .testimonials > div:nth-child(even) {
         text-align: left;
     }
+
+
 
 }
 

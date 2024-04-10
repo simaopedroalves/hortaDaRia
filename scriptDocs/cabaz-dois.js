@@ -42,11 +42,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="cabaz-list">
                 ${cabazContent}
             </div>
-            <img src="${imageCabazTwo}" alt="">
             <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
         </div>
-
-        <div class="sugestions">
 
             <h4 class="sugestionsTitle">Outras Sugestões:</h4>
 
@@ -75,7 +72,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             </div>
 
-        </div>
         `
 
         let sugOne = document.querySelector('.sugestionOne')
