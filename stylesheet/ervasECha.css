@@ -118,6 +118,11 @@
 .plantasEmVaso {
     grid-template-columns: repeat(4, 1fr);
     margin: 5vh auto;
+    background-color: var(--white);
+}
+
+.boxItem {
+    background-color: var(--green-one);
 }
 
 .boxItem img {

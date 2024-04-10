@@ -310,8 +310,8 @@
     }
 
     .cabazes {
-        margin-bottom: 25vh;
-        margin: 6vh auto;
+        /* margin-bottom: 25vh; */
+        /* margin: 6vh auto; */
     }
 
     .cabaz-menu {
@@ -321,17 +321,17 @@
         margin: 2vh auto;
     }
 
-    .cabaz-1 a, .cabaz-2 a, .cabaz-3 a, .cabaz-4 a {
+    /* .cabaz-1 a, .cabaz-2 a, .cabaz-3 a, .cabaz-4 a {
        text-decoration: none;
     }
-
-    .cabazOne, .cabazTwo, .cabazThree, .cabazFour {
-        position: static;
+*/
+    .cabazContent {
+        min-height: 40vh;
     }
 
     .cabazContent h4 {
         background-color: transparent;
-        color: var(--green);
+        color: var(--white);
         border-radius: 0;
         font-size: 2rem;
     }
@@ -340,11 +340,11 @@
         color: var(--orange);
     }
 
-    .photo-div-cabaz {
+    /* .photo-div-cabaz {
         display: flex;
-    }
+    } */
 
-    .photo-div-cabaz img{
+    /* .photo-div-cabaz img{
         max-height: 40vh;
-    }
+    } */
 }

@@ -107,7 +107,9 @@
     gap: 1vh;
 }
 
-
+.footer-end a {
+    max-width: fit-content;
+}
 
 .footer-end p, .social-media{
     font-weight: 700;
