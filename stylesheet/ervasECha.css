@@ -11,13 +11,14 @@
 .sabaoNatural,
 .plantasEmVaso {
     display: grid;
-    gap: 2vw;
+    gap: 1vw;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100vw;
-    padding: 10vh 2vw;
+    padding: 10vh 3vw;
     justify-content: center;
     /* border: solid red 1px; */
     background-color: var(--green);
+    
 }
 
 .boxItem {
