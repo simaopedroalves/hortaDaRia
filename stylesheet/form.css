@@ -60,7 +60,7 @@
 .introduction .introductionText {
     color: var(--black);
     text-align: justify;
-
+    font-size: 0.8rem;
 }
 
 .btn-info {
