@@ -100,12 +100,12 @@
         </div>
 
         <div>
-            <label for="name">Nome:</label>
+            <label for="name">Nome<span>*</span></label>
             <input type="text" name="Nome" id="name" required>
         </div>
 
         <div>
-            <label for="email" class="mail">E-mail:</label>
+            <label for="email" class="mail">E-mail<span>*</span></label>
             <input type="email" name="email" id="email" required placeholder="exemplo@email.com">
         </div>
 
@@ -115,11 +115,14 @@
         </div>
 
         <div class="clientMessage">
-            <label for="message">Mensagem</label>
+            <label for="message">Mensagem<span>*</span></label>
             <textarea id="clientMessage" name="Mensagem" required autocorrect rows="5" placeholder="Escreve aqui a tua mensagem"></textarea>
-           </div>
+        </div>
+
+        <span>* Preenchimento obrigatório</span>
 
         <button type="submit" class="btn-info" id="submitBtn">Enviar</button>
+
         
     </form>
 

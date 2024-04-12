@@ -45,11 +45,12 @@
 
 .about-us-description p {
     color: var(--black);
+    font-size: 0.7rem;
+    text-align: justify;
 }
 
 .about-us-description h3 {
-    background-color: var(--yellow);
-    color: var(--black);
+    color: var(--orange);
     padding: 0.5rem 0.2rem;
 }
 

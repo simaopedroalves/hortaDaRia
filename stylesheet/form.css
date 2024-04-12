@@ -24,6 +24,7 @@
     border-left: none;
     border-right: none;
     background-color: transparent;
+    color: var(--black);
 }
 
 .contactForm div input::placeholder, 
@@ -40,10 +41,20 @@
     resize: vertical;
 }
 
+.contactForm div label span {
+    color: var(--orange);
+    font-size: 0.8rem;
+}
+
 .clientMessage {
     display: grid;
     align-items: center;
     gap: 1rem;
+}
+
+.contactForm span {
+    color: var(--orange);
+    font-size:  0.6rem;
 }
 
 .introduction .introductionText {

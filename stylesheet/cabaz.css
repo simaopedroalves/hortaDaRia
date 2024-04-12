@@ -126,7 +126,7 @@
 
 .cabazes {
     display: grid;
-    margin: 6vh 1vw;
+    margin: 1vw;
 }
 
 .cabaz-menu {
@@ -212,6 +212,12 @@
     /* background-color: var(--yellow); */
     text-align: center;
 }
+
+.cabazes-section-title {
+    color: var(--green);
+    text-align: left;
+}
+
 
 @media screen and (max-width: 350px) {
 

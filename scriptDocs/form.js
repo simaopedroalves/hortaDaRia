@@ -4,6 +4,7 @@ const clientMessage = document.querySelector('#clientMessage');
 const submitBtn = document.querySelector('#submitBtn');
 const clientName = document.querySelector('#name');
 const subjectNewMessage = document.querySelector('#newMessage')
+const phoneNumber = document.querySelector('#phoneNumber')
 
 
 // RESPOSTA AUTOMATICA DO NETLIFY PARA O CLIENTE
@@ -12,3 +13,66 @@ submitBtn.addEventListener('click', () => {
 
     subjectNewMessage.value = "Mensagem de " + clientName.value;
 })
+
+// CHECK IF NAME IS VALID
+clientName.addEventListener('input', () => {
+
+    let regex = new RegExp (/^[a-z][a-z\s\ã\à\á\í\ó]+$/, "gi");
+
+    let string = clientName.value;
+
+    if (regex.test(string) === true) {
+        clientName.style.borderBottomColor = 'var(--green)'
+        submitBtn.disabled = false
+
+        return
+    }
+    else {
+        clientName.style.borderBottomColor = 'var(--red)'
+        submitBtn.disabled = true
+    }
+
+})
+
+// CHECK IF EMAIL IS VALID
+
+email.addEventListener('input', () => {
+
+    let regex = /^([0-9]|[a-z]|.|_)+\b@\b[a-z]{2,6}\.[a-z]{2,3}$/g
+
+    let string = email.value;
+
+    if (regex.test(string) === true) {
+        email.style.borderBottomColor = 'var(--green)'
+        submitBtn.disabled = false
+
+        return
+    }
+    else {
+        email.style.borderBottomColor = 'var(--red)'
+        submitBtn.disabled = true
+    }
+
+})
+
+// CHECK IF PHONE NUMBER IS VALID
+
+phoneNumber.addEventListener('input', () => {
+
+    let regex = /^9\d{8}$/g
+
+    let string = phoneNumber.value;
+
+    if (regex.test(string) === true) {
+        phoneNumber.style.borderBottomColor = 'var(--green)'
+        submitBtn.disabled = false
+
+        return
+    }
+    else {
+        phoneNumber.style.borderBottomColor = 'var(--red)'
+        submitBtn.disabled = true
+    }
+
+})
+
