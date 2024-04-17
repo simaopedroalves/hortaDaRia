@@ -68,11 +68,15 @@
     margin: 0 auto;
     border-radius: 0.3rem;
     background-color: var(--orange);
-    color: var(--black);
+    color: var(--white);
     padding: 0.5rem;
     font-weight: 700;
     outline: none;
     border: none;
+}
+
+.btn-info:disabled {
+    background-color: var(--red);
 }
 
 .border {
@@ -95,7 +99,7 @@
     margin: 15dvh 20dvw   
 }
 
-.introduction .introductionText {
+.introduction .introductionText, .obligationOrErrorMessage {
     text-align: center;
 }
 
@@ -114,6 +118,7 @@
     cursor: pointer;
     background-color: var(--black);
     color: var(--orange);
+
 }
 
 .googleMapsLocation {

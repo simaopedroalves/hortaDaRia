@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         let clientName = object.testimonials[i].name;
         let clientTestimonial = object.testimonials[i].testimonial;
         let testimonialDate = object.testimonials[i].testimonialDate;
-        let clientJob = object.testimonials[i].clientJob;
 
         // let image = object.ervasAromaticasECha[i].image;
     
@@ -34,7 +33,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <p class="testimonial-text">${clientTestimonial}</p>
                 <div class="date-and-job">
                     <h6 class="testimonial-date">${testimonialDate}</h6>
-                    <h6 class="job-client">${clientJob}</h6>
                 </div>
             </div>
         `

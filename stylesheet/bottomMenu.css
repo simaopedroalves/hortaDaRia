@@ -11,7 +11,7 @@
     background-color: var(--white);
     min-width: 100vw;
     max-width: 100vw;
-    max-height: 6vh;
+    max-height: 6svh;
 }
 
 .bottom-menu div i {

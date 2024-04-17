@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <img src="${imageCabazOne}" alt="">
                         <span>Cabaz nº 1</span>
                     </a>
-                </div>
+                </div> 
 
                 <div class="sugestionTwo sugestion">
                     <a href="${cabazNumThree}">

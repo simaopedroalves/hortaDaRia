@@ -16,10 +16,8 @@
     text-align: center;
     color: var(--white);
     font-weight: 800;
-    display: grid;
-    align-items: center;
     padding: 0.5rem;
-}
+} 
 
 .all-products img {
     object-fit: contain;
@@ -35,15 +33,13 @@
 }
 
 .all-products a p {
-    max-width: 100%;
+    max-width: 75dvw;
     border-radius: 1rem 0;
     color: var(--white);
     background-color: var(--green);
-    /* border: solid 2px var(--orange); */
     outline: none;
     padding: 1rem;
     margin: auto;
-    /* font-size: 1rem; */
 }
 
 .section-title {

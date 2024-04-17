@@ -69,12 +69,13 @@
     margin: 5vh 0 0 0;
     text-align: left;
     font-weight: bold;
-    text-decoration: underline;
-    color: var(--black);
-    background-color: var(--orange);
+    /* text-decoration: underline; */
+    color: var(--orange);
+    /* background-color: var(--orange); */
     max-width: fit-content;
     padding: 1rem;
-    border-radius: 1rem 0;
+    /* border-radius: 1rem 0; */
+    font-size: 1.2rem;
 }
 
 .sugestionsContent {
@@ -97,9 +98,10 @@
 }
 
 .sugestion {
-    border: solid var(--green-one) 0.2rem;
+    border: solid var(--orange) 0.2rem;
+    background-color: var(--green-one);
     padding: 0.7rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem 0;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -107,14 +109,14 @@
 }
 
 .sugestion a {
-    color: var(--black);
+    color: var(--);
     text-decoration: none;
     font-weight: 800;
 }
 
 .sugestion a span {
     text-align: center;
-    color: var(--orange);
+    color: var(--white);
     font-size: 1.5rem;
 }
 /*
@@ -156,7 +158,7 @@
     border-radius: 1rem 0;
     background-color: var(--green-one);
     /* min-height: 3rem; */
-    color: var(--black);
+    /* color: var(--black); */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -168,8 +170,8 @@
 
 .cabazContent h4 {
     font-weight: bold;
-    background-color: var(--green-one);
-    color: var(--black);
+    background-color: transparent;
+    color: var(--white);
     padding: 0.3rem;
     /* border-radius: 0.5rem; */
     min-width: max-content;
@@ -177,9 +179,9 @@
 }
 
 .cabazContent span {
-    background-color: var(--orange);
+    background-color: var(--green);
     max-width: fit-content;
-    color: var(--black);
+    color: var(--white);
     font-weight: bold;
     margin: 0 auto;
     padding: 0.3rem;
@@ -214,7 +216,7 @@
 }
 
 .cabazes-section-title {
-    color: var(--green);
+    color: var(-orange);
     text-align: left;
 }
 
