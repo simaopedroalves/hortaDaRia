@@ -1,14 +1,14 @@
 {
     "cabazes": [
         {
-            "name": "Cabaz 1",
+            "name": "Cabaz pequeno",
             "price": 10,
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix"],
             "open": "/html/cabaz-um.html",
             "image": ""          
         },
         {
-            "name": "Cabaz 2",
+            "name": "Cabaz médio",
             "price": 15,
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
                         "Limões", "Coentros", "Abóbora"],
@@ -16,7 +16,7 @@
             "image": ""         
         },
         {
-            "name": "Cabaz 3",
+            "name": "Cabaz grande",
             "price": 20,
             "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
                         "Limões", "Coentros", "Abóbora", "Batata-doce", "Espargos", "Couve toscana"],
