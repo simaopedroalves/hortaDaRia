@@ -21,8 +21,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         let saladaName = object.saladas[i].name;
         let saladaPrice = object.saladas[i].price;
         let image = object.saladas[i].image;
-
         
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
+
         secSaladas.innerHTML += `
         <div class="boxItem">
             <h3>${saladaName}</h3>
@@ -46,4 +50,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     }
+
 })

@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         let raizesPrice = object.raizes[i].price;
         let image = object.raizes[i].image;
 
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
         
         secRaizes.innerHTML += `
             <div class="boxItem">

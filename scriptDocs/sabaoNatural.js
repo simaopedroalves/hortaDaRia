@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         let sabaoNaturalPrice = object.sabaoNatural[i].price;
         let image = object.sabaoNatural[i].image;
 
-        
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
+
         secSabaoNatural.innerHTML += `
             <div class="boxItem">
                 <h3>${sabaoNaturalName}</h3>

@@ -322,12 +322,12 @@
         /* margin: 6vh auto; */
     }
 
-    .cabaz-menu {
+    /* .cabaz-menu {
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         gap: 5vw;
         margin: 2vh auto;
-    }
+    } */
 
     /* .cabaz-1 a, .cabaz-2 a, .cabaz-3 a, .cabaz-4 a {
        text-decoration: none;
@@ -355,4 +355,15 @@
     /* .photo-div-cabaz img{
         max-height: 40vh;
     } */
+}
+
+@media screen and (min-width: 860px) {
+
+    .cabaz-menu {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        gap: 5vw;
+        margin: 2vh auto;
+    }
+    
 }

@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         let floresComestiveisPrice = object.floresComestiveis[i].price;
         let image = object.floresComestiveis[i].image;
 
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
         
         secfloresComestiveis.innerHTML += `
         <div class="boxItem">

@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         let ervaName = object.ervasAromaticasECha[i].name;
         let ervaPrice = object.ervasAromaticasECha[i].price;
         let image = object.ervasAromaticasECha[i].image;
-    
+       
+            //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+            if (image == '') {
+                image = "/images/logo.png";
+            }
+        
         // console.log('Nome: ' + ervaName + '\n' + 'Preço: ' + ervaPrice)
         
         secErvas.innerHTML += `
@@ -43,7 +48,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             <button class="addToCart btn btn-success">Comprar</button>
         </div>
     `
+
+
     }
 
     
 })
+
+         

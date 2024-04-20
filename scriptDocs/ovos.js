@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         let ovosPrice = object.ovos[i].price;
         let image = object.ovos[i].image;
 
-        
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
+
         secOvos.innerHTML += `
             <div class="boxItem">
                 <h3>${ovosName}</h3>

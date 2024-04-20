@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         let microverdesPrice = object.microverdes[i].price;
         let image = object.microverdes[i].image;
         
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
+
         secMicroverdes.innerHTML += `
         <div class="boxItem">
             <h3>${microverdesName}</h3>

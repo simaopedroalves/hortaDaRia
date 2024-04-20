@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         let leguminosasPrice = object.leguminosas[i].price;
         let image = object.leguminosas[i].image;
 
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
         
         secLeguminosas.innerHTML += `
             <div class="boxItem">

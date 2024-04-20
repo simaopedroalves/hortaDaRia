@@ -86,12 +86,6 @@
     font-weight: 600;
 }
 
-.boxItem select option:hover {
-    color: var(--green-one);
-    background-color: var(--white);
-}
-
-
 .boxItem button {
     background-color: var(--black);
     border: solid var(--black) 2px;
@@ -102,7 +96,6 @@
     outline: none;
     max-width: 100%;
 }
-
 
 @media screen and (min-width: 700px) {
 
@@ -136,10 +129,41 @@
     font-weight: bold;
 }
 
+.boxItem select:hover {
+    cursor: pointer;
+}
+
+.boxItem select option:hover {
+    color: var(--green-one);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
 .boxItem button:hover {
     color: var(--orange);
     cursor: pointer;
     border: solid 2px var(--orange);
 }
 
+}
+
+@media screen and (min-width: 1000px) {
+
+    .ervas,
+    .saladas,
+    .verduras,
+    .raizes,
+    .microverdes,
+    .floresComestiveis,
+    .leguminosas,
+    .horticulas,
+    .ovos,
+    .sabaoNatural,
+    .plantasEmVaso {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .section-title {
+        grid-column: span 6;
+    }
 }

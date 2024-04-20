@@ -39,13 +39,13 @@ header {
     max-width: 100vw;
     min-height: 10svh;
     max-height: 10svh;
-
     z-index: 99;
     padding: auto;
     display: grid;
 }
 /* NAVBAR */
 .navbar {
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -185,37 +185,68 @@ header .menu-list  a:hover {
 }
 
 .welcomeSection {
+    min-width: 100svw;
     max-width: 100svw;
-    max-height: 100svh;
+    min-height: 100svh;
+    /* max-height: 100dvh; */
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
-    margin-top: 10dvh;
-}
+    /* margin-top: 10dvh; */
+    /* margin-top: 0; */
+    /* border: solid var(--black) 5px; */
 
-.welcomeSection div img{
-    object-fit: cover;
-    max-width: 50svw;
-    min-height: 100%;
-    /* border: solid var(--orange) 2px; */
+
 }
 
 .welcomeSection .title-div {
+    min-height: 33.3dvh;
+    min-width: 50dvw;
     display: grid;
     align-items: center;
     color: var(--white);
-    min-height: 100%;
-    min-width: 100%;
+    /* min-height: 25vh;
+    min-width: 50vw; */
     margin: auto;
     background-color: var(--green);
-    /* border: solid var(--orange) 2px; */
+    /* border: solid var(--black) 5px; */
     border: none;
     outline: none;
+    font-size: 1rem;
 }
 
-.welcomeSection div .hortaDaRia {color: var(--white);}
+h1 {
+    /* border: solid var(--black) 5px; */
 
-@media screen and (min-width: 700px) {
+}
+
+
+
+.welcomeSection div img {
+    object-fit:cover;
+    max-width: fit-content;
+    max-height: fit-content;
+    /* border: solid var(--black) 5px; */
+    max-width: 50dvw;
+    min-height: 33.3dvh;
+    max-height: 33.3dvh;
+}
+.welcomeSection div {
+    max-width: 50dvw;
+    min-height: 33.3dvh;
+    max-height: 33.3dvh;
+    /* border: solid var(--orange) 5px; */
+}
+
+/* .welcomeSection div .hortaDaRia {
+    color: var(--white);
+    font-size: 1rem;
+} */
+
+@media screen and (min-width: 700px) { 
+
 
     header {
         display: flex;
@@ -229,7 +260,9 @@ header .menu-list  a:hover {
         display: flex;
         gap: 5vw;
         align-items: center;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
+        justify-content: space-between;
+
     }
     
 
@@ -239,13 +272,12 @@ header .menu-list  a:hover {
     }
     
 
-    .menu-list {
+    /* .menu-list {
         display: flex;
         justify-content: space-between;
         min-width: 60svw;
         margin: 0 2vw;
-        /* border: solid red 2px; */
-    }
+    } */
 
     header .menu-list a li {
         list-style: none;
@@ -261,7 +293,7 @@ header .menu-list  a:hover {
 
    
  
-    header .menu-list a li:hover {
+    /* header .menu-list a li:hover {
         color: var(--orange)
     }
 
@@ -276,7 +308,7 @@ header .menu-list  a:hover {
     .openMenu::before,
     .openMenu::after {
         display: none;
-    }
+    } */
 
     .welcomeSection {
         grid-template-columns: repeat(6, 1fr);
@@ -284,9 +316,12 @@ header .menu-list  a:hover {
         align-items: center;
         gap: 0;
         justify-content: center;
-        margin: 0 auto 10vh auto;
+        /* margin: 0 auto 10vh auto; */
         background-color: var(--green);
         overflow: hidden;
+        /* max-width: 100dvw; */
+        border: solid var(--orange) 5px;
+        margin-top: 12dvh;
     }
 
     .welcomeSection .title-div {
@@ -346,6 +381,34 @@ header .menu-list  a:hover {
     .welcomeSection div .hortaDaRia {
         color: var(--white);
         background-color: transparent;
+    }
+
+}
+
+@media screen and (min-width: 860px) {
+    
+    .menu-list {
+        display: flex;
+        justify-content: space-between;
+        min-width: 60svw;
+        margin: 0 2vw;
+    }
+
+    header .menu-list a li:hover {
+        color: var(--orange)
+    }
+
+    .searchBar-div {
+        background-color: var(--green-one);
+
+    }
+
+    .fa-bars-staggered,
+    .fa-x,
+    .openMenu,
+    .openMenu::before,
+    .openMenu::after {
+        display: none;
     }
 
 }

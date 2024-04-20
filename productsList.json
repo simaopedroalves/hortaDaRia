@@ -50,17 +50,17 @@
         {
             "name": "Verduras asiáticas",
             "price": 1.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "Salada Ibérica",
             "price": 1.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "Salada Wok",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "Agrião da Terra",
@@ -77,12 +77,12 @@
         {
             "name": "couve galega",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "couve galega cortada",
             "price": 1.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "acelgas",
@@ -97,17 +97,17 @@
         {
             "name": "acelgas baby",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "couve toscana",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "Espinafre de folha larga",
             "price": 1.25,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "Espinafre manteiga",
@@ -137,7 +137,7 @@
         {
             "name": "Couve rabano verde",
             "price": 0.8,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "Couve curly kale",
@@ -154,7 +154,7 @@
         {
             "name": "batata-doce",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "cebola-nova",
@@ -169,7 +169,7 @@
         {
             "name": "cenouras baby",
             "price": 2.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "espargos",
@@ -191,7 +191,7 @@
         {
             "name": "girassol",
             "price": 2.5,
-            "image": "images/microverdes/microverdes-girassol.jpg"
+            "image": "/images/microverdes/microverdes-girassol.jpg"
         },
         {
             "name": "ervilhas",
@@ -223,7 +223,7 @@
         {
             "name": "capuchinhas",
             "price": 0.2,
-            "image": "url()"
+            "image": "/images/floresComestiveis/flor_capuchinha.jpg"
         },
         {
             "name": "mix de flores",
@@ -233,7 +233,7 @@
         {
             "name": "petunias",
             "price": 0.3,
-            "image": "url()"
+            "image": "/images/floresComestiveis/flor_petunia.jpg"
         },
         {
             "name": "flor da galega",
@@ -253,7 +253,7 @@
         {
             "name": "flor da toscana",
             "price": 0.1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "flor de mel",
@@ -278,27 +278,27 @@
         {
             "name": "abóbora manteiga",
             "price": 1.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "abóbora muscade/laranja",
             "price": 2.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "limões",
             "price": 1.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "laranjas",
             "price": 1.5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "tangerinas",
             "price": 1.5,
-            "image": "url()"
+            "image": ""
         }
     ],
     "ovos": [
@@ -344,17 +344,17 @@
         {
             "name": "chá de limonete",
             "price": 2,
-            "image": "url()"
+            "image": "/images/ervasECha/cha_limonete.jpg"
         },
         {
             "name": "chá de cidreira",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "folhas de loureiro",
             "price": 1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "hortelã-pimenta",
@@ -364,109 +364,124 @@
         {
             "name": "hortelã menta",
             "price": 1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "hortelã e chocolate",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "cidreira fresca",
             "price": 1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "tomilho",
             "price": 1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "oregãos",
             "price": 1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "coentros",
             "price": 1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "hipericão do gerês",
             "price": 1,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "salsa",
             "price": 1,
-            "image": "url()"
+            "image": ""
         }
     ],
     "plantasEmVaso": [
         {
             "name": "suculenta",
             "price": 2,
-            "image": "url()"
+            "image": ""
+        },
+        {
+            "name": "amor-perfeito",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_amorPerfeito.jpg"
+        },
+        {
+            "name": "cravo tunico",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_cravoTunico.jpg"
         },
         {
             "name": "oregãos",
             "price": 2,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "espargos",
             "price": 2,
-            "image": "url()"
+            "image": "/images/plantasEmVaso/vaso_espargos.jpg"
         },
         {
             "name": "salvia",
             "price": 2,
-            "image": "url()"
+            "image": "/images/plantasEmVaso/vaso_salvia.jpg"
         },
         {
             "name": "hortelã-pimenta",
             "price": 2,
-            "image": "url()"
+            "image": ""
+        },
+        {
+            "name": "hortelã-pimenta-chocolate",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_hortelaPimentaChocolate.jpg"
         },
         {
             "name": "hortelã menta",
             "price": 2,
-            "image": "url()"
+            "image": "/images/plantasEmVaso/vaso_hortelaMenta.jpg"
         },
         {
             "name": "tomilho",
             "price": 2,
-            "image": "url()"
+            "image": "/images/plantasEmVaso/vaso_tomilho.jpg"
         },
         {
             "name": "ervilha",
             "price": 5,
-            "image": "url()"
+            "image": ""
         }, 
         {
             "name": "girassol",
             "price": 5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "rabanete rose",
             "price": 5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "rabanete red rambo",
             "price": 5,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "2 vasos à escolha",
             "price": 9,
-            "image": "url()"
+            "image": ""
         },
         {
             "name": "3 vasos à escolha",
             "price": 12,
-            "image": "url()"
+            "image": ""
         }
     ],
     "testimonials": [
