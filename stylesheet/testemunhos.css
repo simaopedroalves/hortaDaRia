@@ -54,19 +54,24 @@
 
 @media screen and (min-width: 700px) {
     .section-title-testimonial {
-        grid-column: span 4;
+        grid-column: span 2;
         margin-bottom: 10dvh;
     }
     
     .testimonials {
-        grid-template-columns: repeat(4, 1fr); 
-        gap: 0;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 5vh;
         justify-content: center;
         margin: 30dvh 3vw 20vh 3vw;
     }
 
     .testimonials > div:nth-child(even) {
         text-align: left;
+    }
+
+    .client-testimonial {
+        min-height: 15rem;
+        max-height: 15rem;
     }
 
 

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         secfloresComestiveis.innerHTML += `
         <div class="boxItem">
-            <h3>${floresComestiveisName}</h3>
+            <h3 id="itname">${floresComestiveisName}</h3>
             <img src="${image}" alt="">
             <div class="kiloPrice">${floresComestiveisPrice}<span>€/kilo</span></div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
@@ -44,11 +44,26 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <option value="250Un">250 Un</option>
                 <option value="500Un">500 Un</option>
             </select>
-        <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-        <div class="priceToPay">Total<span>€</span></div>
-        <button class="addToCart btn btn-success">Comprar</button>
-    </div>
+            <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+            <div class="priceToPay">Total<span>€</span></div>
+            <button class="addToCart btn btn-success">Comprar</button>
+        </div>
         `
 
     }
+    
 })
+
+// ================= WORK IN ON IT  ==========================
+
+// secfloresComestiveis.addEventListener('click', (event) => {
+//     let itemSelected = event.target;
+    
+//     if (itemSelected.classList.contains('addToCart')) {
+//     let itName = document.querySelector('#itname')
+
+//         itemSelected.parentElement.itName.textContent
+//             console.log(itName)
+//     }
+// })
+

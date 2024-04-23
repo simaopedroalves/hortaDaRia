@@ -228,7 +228,7 @@
         {
             "name": "mix de flores",
             "price": 2,
-            "image": "/images/floresComestiveis/mix"
+            "image": "/images/floresComestiveis/mix.jpg"
         },
         {
             "name": "petunias",
@@ -248,7 +248,7 @@
         {
             "name": "flor de calendula",
             "price": 0.1,
-            "image": "/images/floresComestiveis/celendula.jpg"
+            "image": "/images/floresComestiveis/calendula.jpg"
         },
         {
             "name": "flor da toscana",

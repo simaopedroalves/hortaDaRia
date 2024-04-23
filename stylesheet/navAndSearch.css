@@ -34,7 +34,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--white-two);
+    background-color: var(--white);
     min-width: 100%;
     max-width: 100vw;
     min-height: 10svh;
@@ -197,8 +197,6 @@ header .menu-list  a:hover {
     /* margin-top: 10dvh; */
     /* margin-top: 0; */
     /* border: solid var(--black) 5px; */
-
-
 }
 
 .welcomeSection .title-div {
@@ -217,13 +215,6 @@ header .menu-list  a:hover {
     font-size: 1rem;
 }
 
-h1 {
-    /* border: solid var(--black) 5px; */
-
-}
-
-
-
 .welcomeSection div img {
     object-fit:cover;
     max-width: fit-content;
@@ -233,6 +224,7 @@ h1 {
     min-height: 33.3dvh;
     max-height: 33.3dvh;
 }
+
 .welcomeSection div {
     max-width: 50dvw;
     min-height: 33.3dvh;
@@ -244,6 +236,37 @@ h1 {
     color: var(--white);
     font-size: 1rem;
 } */
+body::-webkit-scrollbar {
+    display: block;
+    width: 0.5vw;
+    height: 1px;
+    border: none;
+    outline: none;
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border: none;
+    outline: none;
+
+}
+
+body::-webkit-scrollbar-track-piece:end {
+    background-color: transparent;
+
+}
+
+body::-webkit-scrollbar:horizontal {
+    display: none;
+
+}
+
+body::-webkit-scrollbar:vertical {
+    color: transparent;
+    height: 1px;
+}
+
 
 @media screen and (min-width: 700px) { 
 
@@ -313,20 +336,23 @@ h1 {
     .welcomeSection {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(7, 1fr);
-        align-items: center;
+        align-items:  flex-start;
         gap: 0;
-        justify-content: center;
+        /* justify-content: space-around; */
         /* margin: 0 auto 10vh auto; */
         background-color: var(--green);
         overflow: hidden;
         /* max-width: 100dvw; */
-        border: solid var(--orange) 5px;
-        margin-top: 12dvh;
+        /* border: solid var(--orange) 5px; */
+        /* margin-top: 12dvh; */
+        max-width: 100vw;
+        min-height: 100vh;
     }
 
     .welcomeSection .title-div {
         /* border: solid var(--orange) 2px; */
-        min-width: 50dvw;
+        min-height: min-content;
+        min-width: 40dvw;
     }
 
     .welcomeSection div img{

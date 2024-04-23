@@ -89,6 +89,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     // }
+
+    
+
 })
 
 // scroll behavior of Each Cabaz page sugestions
@@ -101,6 +104,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 //     scrolling.style.scrollBehavior = 'auto';
 //     // scrolling.style.scrollBehavior = 'smooth';
 // });
+
 
 
 
