@@ -1,4 +1,5 @@
 const secfloresComestiveis = document.querySelector('.floresComestiveis');
+const cartList = document.querySelector('.shopping-cart')
 
 async function callFloresComestiveis () {
     return (await fetch('/productsList.json')).json()
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         secfloresComestiveis.innerHTML += `
         <div class="boxItem">
-            <h3 id="itname">${floresComestiveisName}</h3>
+            <h3 id="itName">${floresComestiveisName}</h3>
             <img src="${image}" alt="">
             <div class="kiloPrice">${floresComestiveisPrice}<span>€/kilo</span></div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
@@ -50,20 +51,48 @@ document.addEventListener('DOMContentLoaded', async () => {
         </div>
         `
 
+        let addCartBtn = document.querySelectorAll('.addToCart');
+        let titleName = document.querySelectorAll('#itName');
+        let selectedOptionValue = document.querySelectorAll('.quantity');
+
+        
+        function addThisItemToCart(imagem, titulo) {
+            let newItem = document.createElement('div')
+
+            newItem.innerHTML = `
+                    <div class="box-1">
+                        <img src="${imagem}" alt="">
+                    </div>
+                        
+                    <div class="box-2">
+
+                        <h3>${titulo}</h3>
+
+                        <div class="box-2-child">
+                            <button class="lessOneItemBtn">-</button>
+                            <input type="number" >
+                            <button class="oneMoreItemBtn">+</button>
+                        </div>
+
+                        <div>
+                            <span class="priceToPay">Total</span>
+                            <button><i class="fa-regular fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                `
+                cartList.appendChild(document.createElement('div'));
+                newItem.classList.add('box-cart');
+        }
+
+        addCartBtn.forEach((btn, i) => {
+            btn.addEventListener('click', () => {
+                console.log('Quero ' + selectedOptionValue[i].value + ' de ' + titleName[i].textContent)
+
+                addThisItemToCart(`${image}`, `${floresComestiveisName}`)
+            })
+        })
+
     }
     
 })
-
-// ================= WORK IN ON IT  ==========================
-
-// secfloresComestiveis.addEventListener('click', (event) => {
-//     let itemSelected = event.target;
-    
-//     if (itemSelected.classList.contains('addToCart')) {
-//     let itName = document.querySelector('#itname')
-
-//         itemSelected.parentElement.itName.textContent
-//             console.log(itName)
-//     }
-// })
 
