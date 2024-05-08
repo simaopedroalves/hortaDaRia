@@ -204,6 +204,7 @@
     transform: scale(1.1);
 } */
 
+
 .title-div {
     font-weight: bold;
     margin: 5vh 0 0 0;
@@ -211,9 +212,9 @@
     padding: 3vh;
     color: var(--orange);
     /* border-radius: 0 35rem 0 35rem; */
-    /* background-color: var(--yellow); */
+    /* background-color: var(--yellow */
     text-align: center;
-}
+} 
 
 .cabazes-section-title {
     color: var(-orange);
