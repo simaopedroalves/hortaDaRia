@@ -196,8 +196,8 @@ header .menu-list  a:hover {
 .welcomeSection {
     min-width: 100svw;
     max-width: 100svw;
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: 100svh;
+    max-height: 100svh;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -209,7 +209,7 @@ header .menu-list  a:hover {
 }
 
 .welcomeSection .title-div {
-    min-height: 33vh;
+    min-height: 33.3svh;
     min-width: 50dvw;
     display: grid;
     align-items: center;
