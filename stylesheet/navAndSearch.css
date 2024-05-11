@@ -209,7 +209,7 @@ header .menu-list  a:hover {
 }
 
 .welcomeSection .title-div {
-    min-height: 33.3svh;
+    min-height: 33.3dvh;
     min-width: 50dvw;
     display: grid;
     align-items: center;
