@@ -7,6 +7,13 @@ openMenu.addEventListener('click', () => {
     openMenu.classList.toggle('fa-x')
 })
 
+//basket opne and close
+
+// const basket = document.querySelector('.fa-basket-shopping');
+
+// basket.addEventListener('click', () => {
+//     console.log('hey')
+// })
 
 // menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne')
@@ -104,10 +111,3 @@ document.addEventListener('DOMContentLoaded', async () => {
 //     scrolling.style.scrollBehavior = 'auto';
 //     // scrolling.style.scrollBehavior = 'smooth';
 // });
-
-
-
-
-
-
-
