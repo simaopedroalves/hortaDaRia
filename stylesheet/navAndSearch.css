@@ -198,6 +198,7 @@ header .menu-list  a:hover {
     max-width: 100svw;
     /* min-height: 100svh; */
     /* max-height: 100dvh; */
+    height: 100vh;
     display: grid;
     align-items: center;
     justify-content: center;
