@@ -4,23 +4,38 @@
     border-radius: 1rem 0;
 }
 
+
 .shopping-cart {
 
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: -200vw;
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    /* right: -200vw; */
     /* border: green solid 1px; */
     display: grid;
     gap: 1rem;
     align-content: start;
-    transition: 1500ms;
+    justify-content: center;
+    /* transition: 1500ms; */
     padding: 1rem 0;
     min-height: 80vh;
     margin: 10vh 0;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
+
+.totalPriceDiv {
+    background-color: var(--green-one);
+    display: flex;
+    border: var(--orange) solid 2px;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    font-weight: 800;
+    align-items: center;
+    max-width: fit-content;
+    gap: 0.5rem;
+    float: right;
+}
 
 .box-cart {
     border-bottom: var(--orange) solid 1px;
@@ -43,21 +58,20 @@
     text-decoration: underline;
 }
 
-.itemPrice {
+input[type=number] {
     border: none;
-    outline: none;
     color: var(--black);
+    max-width: 15vw;
     background-color: var(--green-one);
-    border-radius: 15%;
-    min-height: fit-content;
+    border-radius: 0.5rem;
     font-size: 0.8rem;
     font-weight: bold;
-    padding: 0.2rem;
+    padding-left: 20%;
 }
 
 .box-2 :nth-child(2) {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     gap: 3dvw
 }
 
@@ -79,6 +93,7 @@
     font-size: 0.7rem;
 }
 
+
 .fa-trash-can {
     border: none;
     outline: none;
@@ -88,6 +103,8 @@
     padding: 0.3rem;
     font-size: 0.7rem;
 }
+
+/* ================================================== */
 
 .boxItem {
     display: grid;
@@ -164,34 +181,3 @@
     outline: none;
     max-width: 100%;
 }
-
-.displayNone {
-    
-}
-
-.totalToPay {
-    min-width: 50vw;
-    min-height: 2rem;
-    background-color: var(--green);
-    color: var(--white);
-    font-size: 1rem; 
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
-    position: fixed;
-    bottom: 0;
-    right: -200vw;
-    transition: 1500ms;
-    border-radius: 0.5rem 0 0 0.5rem;
-}
-
-.totalToPay span {
-    margin-right: 1rem;
-}
-
-
-.open-totalPrice {
-    right: 0;
-
-} 

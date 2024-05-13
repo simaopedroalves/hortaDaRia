@@ -111,3 +111,28 @@ document.addEventListener('DOMContentLoaded', async () => {
 //     scrolling.style.scrollBehavior = 'auto';
 //     // scrolling.style.scrollBehavior = 'smooth';
 // });
+
+
+// ============================== CARRINHO ==========================================
+
+
+const deleteButtons = document.querySelectorAll('.fa-trash-can');
+
+deleteButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        let itemtoDelete = btn.parentElement.parentElement.parentElement.parentElement
+        itemtoDelete.remove()
+        let priceItem = btn.parentElement.parentElement
+        let price = priceItem.getElementsByClassName('itemPrice')
+        console.log(price.textContent)
+    })
+    updateTotal()
+})
+
+function updateTotal() {
+    let total = document.querySelector('.totalPrice');
+    let cartItem = document.querySelectorAll('.box-cart');
+    // let price = boxItem.getElementsByClassName('itemPrice')
+    
+   
+}
