@@ -2,11 +2,8 @@ import {updateNumbItemsOnCart} from '/script.js'
 
 const secfloresComestiveis = document.querySelector('.floresComestiveis');
 
-
 async function callFloresComestiveis () {
-
     return (await fetch('/productsList.json')).json()
-   
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -22,17 +19,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error)
     }
 
-
-    
-
     for (let i = 0; i < object.floresComestiveis.length; i++) {
-        
         let floresComestiveisName = object.floresComestiveis[i].name;
         let floresComestiveisPrice = object.floresComestiveis[i].price;
         let image = object.floresComestiveis[i].image;
         let product_id = object.floresComestiveis[i].productId;
-
-        // console.log(floresComestiveisName)
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
@@ -42,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         secfloresComestiveis.innerHTML += `
         <div class="boxItem">
             <h3 id="itName">${floresComestiveisName}</h3>
-            <img src="${image}" alt="">
+            <img class="itemImg" src="${image}" alt="">
             <div class="kiloPrice">${floresComestiveisPrice}€/Un</div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
                 <!-- <option value="">Quantidade</option> -->
@@ -62,11 +53,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         </div>
         `
 
+        // console.log(floresComestiveisName)
+
+        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
+        if (image == '') {
+            image = "/images/logo.png";
+        }
         
         let addCartBtn = document.querySelectorAll('.addToCart');
 
-        
-        // let cart = JSON.parse(localStorage.getItem('cart')) || [];
         function addItem(item) {
 
             addCartBtn.forEach(btn => {
@@ -80,11 +75,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
                    updateNumbItemsOnCart() 
                 })
-                //   location.reload()
             })
         }
         addItem()
-                // cartList.appendChild(document.createElement('div'));
     
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
@@ -101,9 +94,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         }
                     
-                // } 
-            
-        
         let selectedOptionValue = document.querySelectorAll('.quantity');
         let kiloPrice = document.querySelectorAll('.kiloPrice');
         let finalItemPrice = document.querySelectorAll('.priceToPay'); 
@@ -131,4 +121,3 @@ document.addEventListener('DOMContentLoaded', async () => {
             updateNumbItemsOnCart()
     }
 })
-

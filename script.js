@@ -166,3 +166,11 @@ export function updateNumbItemsOnCart() {
 updateNumbItemsOnCart()
 
 
+
+
+
+function addItemToCart (event) {
+  let button = event.target;
+
+  console.log(button.textContent)
+}
