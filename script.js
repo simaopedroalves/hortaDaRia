@@ -1,28 +1,19 @@
 const openMenu = document.querySelector('.openMenu');
- const menu = document.querySelector('.menu-list')
+const menu = document.querySelector('.menu-list');
 // OPEN AND CLOSE THE MENU
 
 openMenu.addEventListener('click', () => {
     menu.classList.toggle('show')
     openMenu.classList.toggle('fa-x')
 })
-
-//basket opne and close
-
-// const basket = document.querySelector('.fa-basket-shopping');
-
-// basket.addEventListener('click', () => {
-//     console.log('hey')
-// })
-
 // menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne')
 const cabazTwo = document.querySelector('.cabazTwo')
 const cabazThree = document.querySelector('.cabazThree')
 const cabazFour = document.querySelector('.cabazFour')
 
-
-
+// let cart = JSON.parse(localStorage.getItem('cart'));
+// let products = JSON.parse(localStorage.getItem('products'));
 
 async function callData() {
     return (await fetch('/productsList.json')).json()
@@ -40,27 +31,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error)
     }
 
-    // for (let i = 0; i < object.ervasAromaticasECha.length; i++) {
-
-    //     let name = object.ervasAromaticasECha[i].name;
-    //     let price = object.ervasAromaticasECha[i].price;
-    //     let img = object.ervasAromaticasECha[i].image;
-
-    //     secErvas.innerHTML += `
-    //     `
-    // }
-
-
-    // for (let i = 0; i < object.cabazes.length; i++) {
-
-        // let names = object.cabazes[i].name;
-        // let prices = object.cabazes[i].price;
-        let nameOne = object.cabazes[0].name
-        let priceOne = object.cabazes[0].price
-        let imageCabazOne = object.cabazes[0].image;
-        let imageCabazTwo = object.cabazes[1].image;
-        let imageCabazThree = object.cabazes[2].image;
-        let imageCreateCabaz = object.cabazes[3].image;
+    let nameOne = object.cabazes[0].name
+    let priceOne = object.cabazes[0].price
+        // let imageCabazOne = object.cabazes[0].image;
+        // let imageCabazTwo = object.cabazes[1].image;
+        // let imageCabazThree = object.cabazes[2].image;
+        // let imageCreateCabaz = object.cabazes[3].image;
 
         cabazOne.innerHTML = `
             <div class="cabazContent">
@@ -95,44 +71,98 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `
 
-    // }
 
-    
-
+       
 })
-
-// scroll behavior of Each Cabaz page sugestions
-
-// const scrolling = document.querySelector('.sugestionsContent');
-
-// scrolling.addEventListener('wheel', (scroll) => {
-//     scroll.preventDefault();
-//     scrolling.scrollLeft += scroll.deltaY;
-//     scrolling.style.scrollBehavior = 'auto';
-//     // scrolling.style.scrollBehavior = 'smooth';
-// });
-
 
 // ============================== CARRINHO ==========================================
 
+// function createCart() {
 
-const deleteButtons = document.querySelectorAll('.fa-trash-can');
+//     let cart = JSON.parse(localStorage.getItem('cart'));
+//     console.log(cart);
 
-deleteButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        let itemtoDelete = btn.parentElement.parentElement.parentElement.parentElement
-        itemtoDelete.remove()
-        let priceItem = btn.parentElement.parentElement
-        let price = priceItem.getElementsByClassName('itemPrice')
-        console.log(price.textContent)
+//     cart.forEach((el) => {
+//         let name = el.itName;
+//         let image = el.itImageSrc;
+//         let price = el.itPrice;
+//         let quantity = el.itQuantity;
+        
+//         let newDiv = document.createElement('div');
+
+//         newDiv.classList.add('box-cart');
+        
+//         var newItem = `
+//             <div class="box-1">
+//                 <img src="${image}" alt="">
+//             </div>
+                    
+//             <div class="box-2">
+
+//                 <h3 class="itName">${name}</h3>
+
+//                 <div class="box-2-child">
+//                     <select type="text" min="1" class="quantity" placeholder="quantidade">
+//                         <option value="">${quantity}</option>
+//                         <option value="1Un">1 Un</option>
+//                         <option value="5Un">5 Un</option>
+//                         <option value="10Un">10 Un</option>
+//                         <option value="25Un">25 Un</option>
+//                         <option value="50Un">50 Un</option>
+//                         <option value="75Un">75 Un</option>
+//                         <option value="100Un">100 Un</option>
+//                         <option value="250Un">250 Un</option>
+//                         <option value="500Un">500 Un</option>
+//                     </select>
+//                 </div>
+
+//                 <div>
+//                     <span class="priceToPay">${price}</span>
+//                     <button><i class="fa-regular fa-trash-can"></i></button>
+//                 </div>
+//             </div>
+//         ` 
+//         newDiv.innerHTML = newItem;
+//         // shoppingCart.appendChild(newDiv);
+
+//         // <div class="totalPriceDiv">
+//         //     <span>Total: </span>
+//         //     <span class="totalPrice">0</span>
+//         //     <span>€</span>
+//         // </div> 
+//     })
+
+//     updateNumbItemsOnCart()
+// }
+// createCart()
+
+
+// delete/ remove each item or product when is clicked the trash button from cart page
+// and localstorage
+
+
+
+// update number of items to be equal to the number
+// displayed on basket on top of the page
+export function updateNumbItemsOnCart() {
+    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+
+    numbOfItemsOnCart.forEach(el => {
+        el.textContent = '0'
+        let cart = JSON.parse(localStorage.getItem('cart'));
+
+        for (let i = 0; i < cart.length; i++) {
+            if (cart.length > 0) {
+                el.textContent = cart.length
+            }
+            if (cart.length <= 0) {
+                el.textContent = '0'
+            }
+            // else {return}
+        }
     })
-    updateTotal()
-})
-
-function updateTotal() {
-    let total = document.querySelector('.totalPrice');
-    let cartItem = document.querySelectorAll('.box-cart');
-    // let price = boxItem.getElementsByClassName('itemPrice')
-    
-   
 }
+
+updateNumbItemsOnCart()
+
+

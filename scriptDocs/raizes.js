@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js';
+
 const secRaizes = document.querySelector('.raizes');
 
 async function callRaizes () {
@@ -51,4 +53,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     }
+    updateNumbItemsOnCart()
 })

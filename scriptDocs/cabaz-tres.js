@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js'
+
 const secCabazTres = document.querySelector('.cabaz-tres');
 
 async function callCabazTres() {
@@ -74,6 +76,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             </div>
         `
-
+        updateNumbItemsOnCart()
     // }
 })

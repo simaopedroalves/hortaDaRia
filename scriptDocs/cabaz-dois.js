@@ -1,3 +1,6 @@
+import {updateNumbItemsOnCart} from '/script.js'
+
+
 const secCabazDois = document.querySelector('.cabaz-dois');
 
 async function callCabazDois() {
@@ -81,4 +84,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         })
             
     // }
+    updateNumbItemsOnCart()
 })

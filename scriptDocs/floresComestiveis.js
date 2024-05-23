@@ -1,6 +1,6 @@
+import {updateNumbItemsOnCart} from '/script.js'
+
 const secfloresComestiveis = document.querySelector('.floresComestiveis');
-const cartList = document.querySelector('.shopping-cart')
-const cart = [];
 
 
 async function callFloresComestiveis () {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         object = await callFloresComestiveis();
-        
+        // console.log(object.floresComestiveis)
     }
     catch (error) {
         console.error('ERROR');
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         let image = object.floresComestiveis[i].image;
         let product_id = object.floresComestiveis[i].productId;
 
+        // console.log(floresComestiveisName)
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
@@ -61,15 +62,52 @@ document.addEventListener('DOMContentLoaded', async () => {
         </div>
         `
 
+        
         let addCartBtn = document.querySelectorAll('.addToCart');
-        let titleName = document.querySelectorAll('#itName');
+
+        
+        // let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        function addItem(item) {
+
+            addCartBtn.forEach(btn => {
+                btn.addEventListener('click', (event) => {
+                    btn = event.target;
+                    let name = btn.parentElement.querySelector('#itName').textContent;
+                    let imageSrc = btn.parentElement.querySelector('img').src;
+                    let itemPrice = btn.parentElement.querySelector('.kiloPrice').textContent;
+                    let quantity = btn.parentElement.querySelector('.quantity').value;
+                    let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
+                    addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
+                   updateNumbItemsOnCart() 
+                })
+                //   location.reload()
+            })
+        }
+        addItem()
+                // cartList.appendChild(document.createElement('div'));
+    
+        function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
+            let itemObj = JSON.parse(localStorage.getItem('cart'))
+           
+            itemObj.push({
+                itName: name,
+                itImageSrc: imageSrc,
+                itPrice: itemPrice,
+                itQuantity: quantity,
+                itTotal: itemTotal
+            })
+            console.log(itemObj)
+            localStorage.setItem('cart', JSON.stringify(itemObj))
+
+        }
+                    
+                // } 
+            
+        
         let selectedOptionValue = document.querySelectorAll('.quantity');
         let kiloPrice = document.querySelectorAll('.kiloPrice');
-        let finalItemPrice = document.querySelectorAll('.priceToPay') 
-
-                // cartList.appendChild(document.createElement('div'));
-      
-
+        let finalItemPrice = document.querySelectorAll('.priceToPay'); 
+            
         selectedOptionValue.forEach((btn, i) => {
 
             btn.addEventListener('click', () => {           
@@ -78,62 +116,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                     var priceToPay = 0;
                     kg = parseFloat(selectedOptionValue[i].value);
                     qt = parseFloat(kiloPrice[i].textContent)
-                    priceToPay = kg * qt
+                    priceToPay = kg * (qt)
+                    priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
                     return priceToPay
 
                 }
 
                 finalPricePerItem() 
-
-                // function addCartToHTML () { 
-                
-                //     let newItem = document.createElement('div')
-                //     let totalPrice = document.querySelectorAll('.priceToPay')
-
-                //     newItem.classList.add('box-cart');
-                //      cartList.textContent = '';
-                //      cartList.appendChild(newItem) 
-
-                //     newItem.innerHTML = `
-                    
-                //         <div class="box-1">
-                //             <img src="${image}" alt="">
-                //         </div>
-                            
-                //         <div class="box-2">
-
-                //             <h3>${floresComestiveisName}</h3>
-
-                //             <div class="box-2-child">
-                //                 <button class="lessOneItemBtn">-</button>
-                //                 <input type="number" >
-                //                 <button class="oneMoreItemBtn">+</button>
-                //             </div>
-
-                //             <div>
-                //                 <span class="priceToPay">${totalPrice}</span>
-                //                 <button><i class="fa-regular fa-trash-can"></i></button>
-                //             </div>
-                //         </div>
-                //     `
-                //   console.log(newItem)
-                // }
-
             })
             
         })
-
-// aqui o objetivo é adicionar o item ao carrinho com outro stylesheet ja defenido
         
-
-            // para ser adicionado à memoria
-            // function addCartToLocalStorage() {
-            //     localStorage.setItem('cart', JSON.stringify(cart))
-            // }
-            
-        
-
+            updateNumbItemsOnCart()
     }
 })
 

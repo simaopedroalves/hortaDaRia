@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js';
+
 const secHorticulas = document.querySelector('.horticulas');
 
 async function callHorticulas () {
@@ -29,9 +31,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         secHorticulas.innerHTML += `
             <div class="boxItem">
-                <h3>${horticulasName}</h3>
+                <h3 id="itName">${horticulasName}</h3>
                 <img src="${image}" alt="">
-                <div class="kiloPrice">${horticulasPrice}<span>€/kilo</span></div>
+                <div class="kiloPrice">${horticulasPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <!-- <option value="">Quantidade</option> -->
                     <option value="250gr">250 gr</option>
@@ -44,10 +46,71 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <option value="2Un">2 Un</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-                <div class="priceToPay">Total<span>€</span></div>
+                <div class="priceToPay"></div>
                 <button class="addToCart btn btn-success">Comprar</button>
             </div>
         `
 
+
+        let addCartBtn = document.querySelectorAll('.addToCart');
+
+        function addItem(item) {
+
+            addCartBtn.forEach(btn => {
+                btn.addEventListener('click', (event) => {
+                    btn = event.target;
+                    let name = btn.parentElement.querySelector('#itName').textContent;
+                    let imageSrc = btn.parentElement.querySelector('img').src;
+                    let itemPrice = btn.parentElement.querySelector('.kiloPrice').textContent;
+                    let quantity = btn.parentElement.querySelector('.quantity').value;
+                    let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
+                    addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
+                   updateNumbItemsOnCart() 
+                })
+            })
+        }
+        addItem()
+    
+        function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
+            let itemObj = JSON.parse(localStorage.getItem('cart'))
+           
+            itemObj.push({
+                itName: name,
+                itImageSrc: imageSrc,
+                itPrice: itemPrice,
+                itQuantity: quantity,
+                itTotal: itemTotal
+            })
+            console.log(itemObj)
+            localStorage.setItem('cart', JSON.stringify(itemObj))
+
+        }
+        
+        let selectedOptionValue = document.querySelectorAll('.quantity');
+        let kiloPrice = document.querySelectorAll('.kiloPrice');
+        let finalItemPrice = document.querySelectorAll('.priceToPay'); 
+            
+        selectedOptionValue.forEach((btn, i) => {
+
+            btn.addEventListener('click', () => {           
+
+                function finalPricePerItem (kg, qt) {
+                    var priceToPay = 0;
+                    kg = parseFloat(selectedOptionValue[i].value);
+                    qt = parseFloat(kiloPrice[i].textContent)
+                    priceToPay = kg * (qt/1000)
+                    priceToPay = priceToPay.toFixed(2)
+                    finalItemPrice[i].textContent = priceToPay + ' €'
+                    return priceToPay
+
+                }
+
+                finalPricePerItem() 
+        
+            })
+        })
+        updateNumbItemsOnCart()
+        
     }
+
 })

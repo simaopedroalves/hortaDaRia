@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js';
+
 const secTestimonials = document.querySelector('.testimonials');
 
 async function callTestimonials() {
@@ -38,5 +40,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
     }
 
-    
+    updateNumbItemsOnCart()
 })

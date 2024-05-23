@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js'
+
 const secVerduras = document.querySelector('.verduras');
 
 async function callVerduras () {
@@ -52,4 +54,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     }
+    updateNumbItemsOnCart()
 })

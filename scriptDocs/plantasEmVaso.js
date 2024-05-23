@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js';
+
 const secPlantasEmVaso = document.querySelector('.plantasEmVaso');
 
 async function callPlantasEmVaso () {
@@ -47,4 +49,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     }
+    updateNumbItemsOnCart()
 })

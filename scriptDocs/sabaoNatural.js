@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js';
+
 const secSabaoNatural = document.querySelector('.sabaoNatural');
 
 async function callSabaoNatural () {
@@ -48,4 +50,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     }
+
+    updateNumbItemsOnCart()
 })

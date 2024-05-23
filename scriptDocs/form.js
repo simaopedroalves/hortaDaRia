@@ -1,3 +1,6 @@
+import {updateNumbItemsOnCart} from '/script.js'
+
+
 const autoResponseMessage = document.querySelector('#autoResponseMessage');
 const email = document.querySelector('#email');
 const clientMessage = document.querySelector('#clientMessage');
@@ -94,3 +97,4 @@ phoneNumber.addEventListener('input', () => {
 
 })
 
+updateNumbItemsOnCart()

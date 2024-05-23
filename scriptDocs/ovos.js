@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js';  
+
 const secOvos = document.querySelector('.ovos');
 
 async function callOvos () {
@@ -47,4 +49,5 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
 
     }
+    updateNumbItemsOnCart()
 })

@@ -1,3 +1,6 @@
+import {updateNumbItemsOnCart} from '/script.js'
+
+
 const secSaladas = document.querySelector('.saladas');
 
 async function callSaladas () {
@@ -29,9 +32,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         secSaladas.innerHTML += `
         <div class="boxItem">
-            <h3>${saladaName}</h3>
+            <h3 id="itName">${saladaName}</h3>
             <img src="${image}" alt="">
-            <div class="kiloPrice">${saladaPrice}<span>€/kilo</span></div>
+            <div class="kiloPrice">${saladaPrice}€/kg</div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
                 <!-- <option value="">Quantidade</option> -->
                 <option value="100gr">100 gr</option>
@@ -44,11 +47,78 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <option value="2Un">2 Unidades</option>
             </select>
             <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-            <div class="priceToPay">Total<span>€</span></div>
+            <div class="priceToPay"></div>
             <button class="addToCart btn btn-success">Comprar</button>
         </div>
         `
+        // for (let i = 0; i < object.saladas.length; i++) {
+
+
+        //     let addCartBtn = document.querySelectorAll('.addToCart');
+    
+        //     let itemObj = [];
+    
+        //     addCartBtn.forEach(btn => {
+        //         btn.addEventListener('click', (event) => {
+        //             btn = event.target;
+        //             let name = btn.parentElement.querySelector('#itName').textContent;
+        //             let imageSrc = btn.parentElement.querySelector('img').src;
+        //             let itemPrice = btn.parentElement.querySelector('.kiloPrice').textContent;
+        //             let quantity = btn.parentElement.querySelector('.quantity').value;
+        //             let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
+        //             addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
+                    
+        //         })
+        //         //   location.reload()
+        //     })
+        //             // cartList.appendChild(document.createElement('div'));
+          
+        //     function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
+                  
+        //         itemObj.push({
+        //             itName: name,
+        //             itImageSrc: imageSrc,
+        //             itPrice: itemPrice,
+        //             itQuantity: quantity,
+        //             itTotal: itemTotal
+        //         })
+                    
+        //         localStorage.setItem('cart', JSON.stringify(itemObj))
+    
+        //     }
+                        
+        //             // } 
+                
+            
+        //     let selectedOptionValue = document.querySelectorAll('.quantity');
+        //     let kiloPrice = document.querySelectorAll('.kiloPrice');
+        //     let finalItemPrice = document.querySelectorAll('.priceToPay'); 
+                
+    
+    
+        //     selectedOptionValue.forEach((btn, i) => {
+    
+        //         btn.addEventListener('click', () => {           
+    
+        //             function finalPricePerItem (kg, qt) {
+        //                 var priceToPay = 0;
+        //                 kg = parseFloat(selectedOptionValue[i].value);
+        //                 qt = parseFloat(kiloPrice[i].textContent)
+        //                 priceToPay = kg * (qt/1000)
+        //                 priceToPay = priceToPay.toFixed(2)
+        //                 finalItemPrice[i].textContent = priceToPay + ' €'
+        //                 return priceToPay
+    
+        //             }
+    
+        //             finalPricePerItem() 
+        //         })
+                
+        //     })
+        //     updateNumbItemsOnCart()
+        // }
 
     }
+    updateNumbItemsOnCart()
 
 })

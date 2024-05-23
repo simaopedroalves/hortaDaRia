@@ -1,3 +1,5 @@
+import {updateNumbItemsOnCart} from '/script.js'
+
 const secCabazUm = document.querySelector('.cabaz-um');
 
 async function callCabazUm() {
@@ -69,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             </div>
         `
-
+        updateNumbItemsOnCart()
         // let sugOne = document.querySelector('.sugestionOne')
             
         // sugOne.addEventListener('click', () => {
