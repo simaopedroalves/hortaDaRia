@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     let quantity = btn.parentElement.querySelector('.quantity').value;
                     let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
                     addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
-                   updateNumbItemsOnCart() 
+                    updateNumbItemsOnCart() 
                 })
             })
         }

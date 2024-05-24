@@ -118,12 +118,6 @@ header {
 }
 
 .show {
-    /* display: grid;
-    max-width: 100vw;
-    background-color: var(--white);
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 1rem; */
     right: 0;
 }
 
@@ -309,20 +303,18 @@ body::-webkit-scrollbar:vertical {
         justify-content: space-between;
 
     }
-    
 
     .logo-img {
         max-height: 10svh;
         cursor: pointer;
     }
     
-
-    /* .menu-list {
+    .menu-list {
         display: flex;
         justify-content: space-between;
         min-width: 60svw;
         margin: 0 2vw;
-    } */
+    }
 
     header .menu-list a li {
         list-style: none;
@@ -335,8 +327,6 @@ body::-webkit-scrollbar:vertical {
         min-width: 0svw;
         /* border: 1px solid red; */
     }
-
-   
  
     /* header .menu-list a li:hover {
         color: var(--orange)

@@ -6,6 +6,8 @@ openMenu.addEventListener('click', () => {
     menu.classList.toggle('show')
     openMenu.classList.toggle('fa-x')
 })
+
+
 // menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne')
 const cabazTwo = document.querySelector('.cabazTwo')
@@ -37,13 +39,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         // let imageCabazTwo = object.cabazes[1].image;
         // let imageCabazThree = object.cabazes[2].image;
         // let imageCreateCabaz = object.cabazes[3].image;
-
-        cabazOne.innerHTML = `
+        let newDivOne = document.createElement('div');
+        let newItemOne = `
             <div class="cabazContent">
                 <h4 class="cabazName">${nameOne}</h4>
                 <span class="cabazPrice">${priceOne}€</span>
             </div>
         `
+        newDivOne.innerHTML = newItemOne;
+        cabazOne.append(newDivOne);
+
+
         let nameTwo = object.cabazes[1].name
         let priceTwo = object.cabazes[1].price
 

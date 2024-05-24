@@ -101,8 +101,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         let selectedOptionValue = document.querySelectorAll('.quantity');
         let kiloPrice = document.querySelectorAll('.kiloPrice');
         let finalItemPrice = document.querySelectorAll('.priceToPay'); 
-            
-
 
         selectedOptionValue.forEach((btn, i) => {
 
