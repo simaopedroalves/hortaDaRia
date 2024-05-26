@@ -1,4 +1,4 @@
-import {updateNumbItemsOnCart} from '/script.js';  
+// import {updateNumbItemsOnCart} from '/script.js';  
 
 const secOvos = document.querySelector('.ovos');
 
@@ -115,3 +115,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     updateNumbItemsOnCart()
 })
+
+function updateNumbItemsOnCart() {
+    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+    let cart = JSON.parse(localStorage.getItem('cart'));
+
+    numbOfItemsOnCart.forEach(el => {
+        el.textContent = '0'
+
+        for (let i = 0; i < cart.length; i++) {
+            if (cart.length > 0) {
+                el.textContent = cart.length
+            }
+            if (cart.length <= 0) {
+                el.textContent = '0'
+            }
+        }
+    })
+}
