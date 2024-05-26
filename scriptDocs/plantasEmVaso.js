@@ -113,5 +113,5 @@ document.addEventListener('DOMContentLoaded', async () => {
             
         })
     }
-    updateNumbItemsOnCart()
 })
+updateNumbItemsOnCart()
