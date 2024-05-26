@@ -60,8 +60,8 @@
 
 .boxItem img {
     grid-column: span 2;
-    object-fit: fill;
-    min-height: 30vh;
+    object-fit: cover;
+    max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
     border-radius: 0.5rem;

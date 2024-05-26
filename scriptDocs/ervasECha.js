@@ -1,4 +1,4 @@
-import {updateNumbItemsOnCart} from '/script.js';
+// import {updateNumbItemsOnCart} from '/script.js';
 
 const secErvas = document.querySelector('.ervas');
 // const cartList = document.querySelector('.shopping-cart')

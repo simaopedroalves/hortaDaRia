@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // update number of items to be equal to the number
 // displayed on basket on top of the page
-export function updateNumbItemsOnCart() {
+function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
     let cart = JSON.parse(localStorage.getItem('cart'));
 
