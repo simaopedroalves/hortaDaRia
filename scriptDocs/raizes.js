@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
         let addCartBtn = document.querySelectorAll('.addToCart');
 
-        function addItem(item) {
+        function addItem() {
 
             addCartBtn.forEach(btn => {
                 btn.addEventListener('click', (event) => {

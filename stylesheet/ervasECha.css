@@ -60,14 +60,11 @@
 
 .boxItem img {
     grid-column: span 2;
-    object-fit: contain;
+    object-fit: fill;
+    min-height: 30vh;
     max-width: 100%;
-    /* max-height: 50%; */
     margin: 0 auto;
     border-radius: 0.5rem;
-    /* opacity: 0.6; */
-    /* transition: 1s; */
-    /* box-shadow: 0 0.3rem 0.7rem 0; */
 }
 
 .boxItem select {

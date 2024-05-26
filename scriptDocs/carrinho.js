@@ -1,21 +1,18 @@
 import {updateNumbItemsOnCart} from "/script.js"
 
-const shoppingCart = document.querySelector('.shopping-cart');
+const shoppingCart = document.querySelector('.cartList');
 
 
 function createCart() {
 
     let cart = JSON.parse(localStorage.getItem('cart'));
-    console.log(cart);
 
     cart.forEach((el) => {
         let name = el.itName;
         let image = el.itImageSrc;
         let price = el.itPrice;
         let quantity = el.itQuantity;
-        
         let newDiv = document.createElement('div');
-
         newDiv.classList.add('box-cart');
         
         var newItem = `
@@ -48,8 +45,10 @@ function createCart() {
                 </div>
             </div>
         ` 
+
         newDiv.innerHTML = newItem;
         shoppingCart.appendChild(newDiv);
+        // console.log(shoppingCart);
 
         // <div class="totalPriceDiv">
         //     <span>Total: </span>

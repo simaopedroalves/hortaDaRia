@@ -14,8 +14,6 @@ const cabazTwo = document.querySelector('.cabazTwo')
 const cabazThree = document.querySelector('.cabazThree')
 const cabazFour = document.querySelector('.cabazFour')
 
-// let cart = JSON.parse(localStorage.getItem('cart'));
-// let products = JSON.parse(localStorage.getItem('products'));
 
 async function callData() {
     return (await fetch('/productsList.json')).json()
@@ -35,10 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let nameOne = object.cabazes[0].name
     let priceOne = object.cabazes[0].price
-        // let imageCabazOne = object.cabazes[0].image;
-        // let imageCabazTwo = object.cabazes[1].image;
-        // let imageCabazThree = object.cabazes[2].image;
-        // let imageCreateCabaz = object.cabazes[3].image;
+     
         let newDivOne = document.createElement('div');
         let newItemOne = `
             <div class="cabazContent">
@@ -47,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `
         newDivOne.innerHTML = newItemOne;
-        cabazOne.append(newDivOne);
+        cabazOne.appendChild(newDivOne);
 
 
         let nameTwo = object.cabazes[1].name
@@ -85,10 +80,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 // displayed on basket on top of the page
 export function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+    let cart = JSON.parse(localStorage.getItem('cart'));
 
     numbOfItemsOnCart.forEach(el => {
         el.textContent = '0'
-        let cart = JSON.parse(localStorage.getItem('cart'));
 
         for (let i = 0; i < cart.length; i++) {
             if (cart.length > 0) {
@@ -97,7 +92,6 @@ export function updateNumbItemsOnCart() {
             if (cart.length <= 0) {
                 el.textContent = '0'
             }
-            // else {return}
         }
     })
 }
