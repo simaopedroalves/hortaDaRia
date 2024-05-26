@@ -91,20 +91,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                     itQuantity: quantity,
                     itTotal: itemTotal
                 })
-                    
                 localStorage.setItem('cart', JSON.stringify(itemObj))
-    
             }
                         
-                    // } 
-                
-            
             let selectedOptionValue = document.querySelectorAll('.quantity');
             let kiloPrice = document.querySelectorAll('.kiloPrice');
             let finalItemPrice = document.querySelectorAll('.priceToPay'); 
                 
-    
-    
             selectedOptionValue.forEach((btn, i) => {
     
                 btn.addEventListener('click', () => {           
@@ -126,7 +119,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             })
     }
     updateNumbItemsOnCart()
-
 })
 
 function updateNumbItemsOnCart() {

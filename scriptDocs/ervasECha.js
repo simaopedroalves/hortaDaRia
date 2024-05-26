@@ -123,12 +123,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     updateNumbItemsOnCart()
 })
-    // for (let i = 0; i < object.ervasAromaticasECha.length; i++) {
+  
+function updateNumbItemsOnCart() {
+    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+    let cart = JSON.parse(localStorage.getItem('cart'));
 
+    numbOfItemsOnCart.forEach(el => {
+        el.textContent = '0'
 
-        
-       // updateNumbItemsOnCart()
-    // }
-
+        for (let i = 0; i < cart.length; i++) {
+            if (cart.length > 0) {
+                el.textContent = cart.length
+            }
+            if (cart.length <= 0) {
+                el.textContent = '0'
+            }
+        }
+    })
+}
 
 

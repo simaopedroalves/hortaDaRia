@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 itQuantity: quantity,
                 itTotal: itemTotal
             })
-            console.log(itemObj)
             localStorage.setItem('cart', JSON.stringify(itemObj))
 
         }

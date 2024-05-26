@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     updateNumbItemsOnCart()
                     refreshItemSelected(btn)
                 })
-                //   location.reload()
             })
         }
 
@@ -77,7 +76,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             btn.parentElement.querySelector('.priceToPay').textContent = '';
             alert(`${name} foi adicionado ao cesto!`)
         }
-                // cartList.appendChild(document.createElement('div'));
     
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
@@ -89,7 +87,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 itQuantity: quantity,
                 itTotal: itemTotal
             })
-            console.log(itemObj)
             localStorage.setItem('cart', JSON.stringify(itemObj))
 
         }

@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 itQuantity: quantity,
                 itTotal: itemTotal
             })
-            console.log(itemObj)
             localStorage.setItem('cart', JSON.stringify(itemObj))
 
         }
@@ -108,13 +107,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     return priceToPay
 
                 }
-
                 finalPricePerItem() 
             })
-            
         })
     }
-
     updateNumbItemsOnCart()
 })
 
