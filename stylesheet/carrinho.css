@@ -37,13 +37,16 @@
 }
 
 .box-cart {
+    min-width: 90dvw;
+    max-width: 90dvw;
     border-bottom: var(--orange) solid 1px;
     display: flex;
     justify-content: center;    
-    align-items: center;
+    align-content: center;
     gap: 5dvw;
-    margin: 0 auto;
-    padding-bottom: 1rem;
+    margin: auto;
+    padding: 2rem;
+    /* ATENTION TO THIS PADDING AND WIDTH'S */
 }
 
 .box-2 {
@@ -54,10 +57,24 @@
 .box-2 h3 {
     font-weight: 800;
     font-size: 1.2rem;
-    text-decoration: underline;
+    max-width: 80%;
+    text-align: center;
+
 }
 
-input[type=number] {
+.box-2 .box-2-child span {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--green);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+
+/* input[type=number] {
     border: none;
     color: var(--black);
     max-width: 15vw;
@@ -66,11 +83,11 @@ input[type=number] {
     font-size: 0.8rem;
     font-weight: bold;
     padding-left: 20%;
-}
+} */
 
-.box-2 :nth-child(2) {
+ .box-2 :nth-child(2) {
     display: flex;
-    /* justify-content: flex-start; */
+    justify-content: flex-start; 
     gap: 3dvw
 }
 
@@ -79,9 +96,9 @@ input[type=number] {
     justify-content: flex-start;
     gap: 15dvw;
     align-items: center;
-}
+} 
 
-.lessOneItemBtn, .oneMoreItemBtn {
+/* .lessOneItemBtn, .oneMoreItemBtn {
     border: none;
     outline: none;
     color: var(--white);
@@ -90,6 +107,10 @@ input[type=number] {
     border-radius: 15%;
     font-weight: bold;
     font-size: 0.7rem;
+} */
+
+.priceToPay {
+    
 }
 
 

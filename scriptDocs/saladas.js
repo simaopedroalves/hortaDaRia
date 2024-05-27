@@ -37,14 +37,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="kiloPrice">${saladaPrice}€/kg</div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
                 <!-- <option value="">Quantidade</option> -->
-                <option value="100gr">100 gr</option>
-                <option value="250gr">250 gr</option>
-                <option value="500gr">500 gr</option>
-                <option value="750gr">750 gr</option>
-                <option value="1Kg">1 Kg</option>
-                <option value="2Kg">2Kg</option>
-                <option value="1Un">1 Unidade</option>
-                <option value="2Un">2 Unidades</option>
+                <option value="100 gr">100 gr</option>
+                <option value="250 gr">250 gr</option>
+                <option value="500 gr">500 gr</option>
+                <option value="750 gr">750 gr</option>
+                <option value="1 Kg">1 Kg</option>
+                <option value="2 Kg">2Kg</option>
+                <option value="1 Un">1 Unidade</option>
+                <option value="2 Un">2 Unidades</option>
             </select>
             <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
             <div class="priceToPay"></div>
@@ -106,7 +106,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                         var priceToPay = 0;
                         kg = parseFloat(selectedOptionValue[i].value);
                         qt = parseFloat(kiloPrice[i].textContent)
-                        priceToPay = kg * (qt/1000)
+
+                        if (kg > 10) {
+                            priceToPay = kg * (qt/1000)
+                            }     
+                            else {
+                            priceToPay = kg * (qt)
+                            }   
+
+                        // priceToPay = kg * (qt/1000)
                         priceToPay = priceToPay.toFixed(2)
                         finalItemPrice[i].textContent = priceToPay + ' €'
                         return priceToPay

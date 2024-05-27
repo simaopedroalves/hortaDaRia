@@ -33,14 +33,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="boxItem">
                 <h3 id="itName">${ovosName}</h3>
                 <img src="${image}" alt="">
-                <div class="kiloPrice">${ovosPrice}€/dúzia</div>
+                <div class="kiloPrice">${ovosPrice}€/Dz</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <!-- <option value="">Quantidade</option> -->
-                    <option value="1/2-duzia">1/2 dúzia</option>
-                    <option value="1-duzia">1 dúzia</option>
-                    <option value="duzia_e_meia">dúzia e meia</option>
-                    <option value="2-duzias">2 dúzias</option>
-                    <option value="3-duzias">3 dúzias</option>
+                    <option value="1/2 dúzia">1/2 dúzia</option>
+                    <option value="1 dúzia">1 dúzia</option>
+                    <option value="Dúzia e 1/2">Dúzia e 1/2</option>
+                    <option value="2 dúzias">2 dúzias</option>
+                    <option value="3 dúzias">3 dúzias</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
@@ -98,9 +98,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 function finalPricePerItem (kg, qt) {
                     var priceToPay = 0;
-                    kg = parseFloat(selectedOptionValue[i].value);
+                    // kg = parseFloat(selectedOptionValue[i].value);
+                    kg = selectedOptionValue[i].value;
                     qt = parseFloat(kiloPrice[i].textContent)
-                    priceToPay = kg * (qt)
+
+                    console.log(kg)
+                    if (kg == "1/2 dúzia") {
+                        priceToPay = qt / 2
+                    }
+                    if (kg == "1 dúzia") {
+                        priceToPay = qt * 1
+                    }
+                    if (kg == "Dúzia e 1/2") {
+                        priceToPay = qt + (qt / 2)
+                    }
+                    if (kg == "2 dúzias") {
+                        priceToPay = qt * 2
+                    }
+                    if (kg == "3 dúzias") {
+                        priceToPay = qt * 3
+                    }
+
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
                     return priceToPay

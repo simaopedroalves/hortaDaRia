@@ -2,11 +2,16 @@
     display: grid;
     gap: 3vh;
     margin: 10vh auto;
+    padding: 0 5dvw;
 }
 
 .testimonials .client-name {
     color: var(--orange);
     letter-spacing: 0.1rem;
+}
+
+.testimonials .testimonial-text {
+    font-size: 0.7rem;
 }
 
 .testimonials .client-testimonial .date-and-job {

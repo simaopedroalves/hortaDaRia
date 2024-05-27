@@ -31,17 +31,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         secSabaoNatural.innerHTML += `
             <div class="boxItem">
-                <h3>${sabaoNaturalName}</h3>
+                <h3 id="itName">${sabaoNaturalName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${sabaoNaturalPrice}€/Un</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <!-- <option value="">Quantidade</option> -->
-                    <option value="1Un">1 Un</option>
-                    <option value="2Un">2 Un</option>
-                    <option value="3Un">3 Un</option>
-                    <option value="4Un">4 Un</option>
-                    <option value="5Un">5 Un</option>
-                    <option value="10Un">10 Un</option>
+                    <option value="1 Un">1 Un</option>
+                    <option value="2 Un">2 Un</option>
+                    <option value="3 Un">3 Un</option>
+                    <option value="4 Un">4 Un</option>
+                    <option value="5 Un">5 Un</option>
+                    <option value="10 Un">10 Un</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>

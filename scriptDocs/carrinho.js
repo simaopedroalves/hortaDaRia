@@ -25,8 +25,8 @@ function createCart() {
                 <h3 class="itName">${name}</h3>
 
                 <div class="box-2-child">
-                    <select type="text" min="1" class="quantity" placeholder="quantidade">
-                        <option value="">${quantity}</option>
+                        <span value="">${quantity}</span>
+                    <!--
                         <option value="1Un">1 Un</option>
                         <option value="5Un">5 Un</option>
                         <option value="10Un">10 Un</option>
@@ -36,6 +36,7 @@ function createCart() {
                         <option value="100Un">100 Un</option>
                         <option value="250Un">250 Un</option>
                         <option value="500Un">500 Un</option>
+                    -->
                     </select>
                 </div>
 
@@ -55,13 +56,14 @@ function createCart() {
         //     <span class="totalPrice">0</span>
         //     <span>€</span>
         // </div> 
-    })
+        // updateCartTotal(`${price}`)
 
+    })
     updateNumbItemsOnCart()
+
 }
 
 createCart()
-
 
 
 
@@ -110,3 +112,17 @@ function updateNumbItemsOnCart() {
         }
     })
 }
+
+// TROCAR O OBJETO DO CARRINHO E PASSAR DE CADA ITEM PRA O CARRINHO APENAS O
+// VALOR FINAL E NÃO O VALOR POR UN OU KG
+
+// function updateCartTotal() {
+//     let price = document.querySelectorAll('.box-2-child');
+
+//     price.forEach(el => {
+//         console.log(el.textContent)
+//     })
+    
+
+// }
+

@@ -106,7 +106,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                     var priceToPay = 0;
                     kg = parseFloat(selectedOptionValue[i].value);
                     qt = parseFloat(kiloPrice[i].textContent)
-                    priceToPay = kg * (qt/1000)
+
+                    if (kg > 10) {
+                        priceToPay = kg * (qt/1000)
+                        }     
+                        else {
+                        priceToPay = kg * (qt)
+                        }   
+
+                    // priceToPay = kg * (qt/1000)
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
                     return priceToPay
