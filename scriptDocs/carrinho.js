@@ -10,11 +10,15 @@ function createCart() {
     cart.forEach((el) => {
         let name = el.itName;
         let image = el.itImageSrc;
-        let price = el.itPrice;
+        let price = el.itTotal;
         let quantity = el.itQuantity;
         let newDiv = document.createElement('div');
         newDiv.classList.add('box-cart');
         
+        if (image == "") {
+            image = "/images/logo.png"
+        }
+
         var newItem = `
             <div class="box-1">
                 <img src="${image}" alt="">
@@ -70,21 +74,34 @@ createCart()
 const allTrashBtn = document.querySelectorAll('.fa-trash-can');
 
 allTrashBtn.forEach(btn => {
+
+    
     btn.addEventListener('click', (event) => {
         btn = event.target;
         let div = btn.parentElement.parentElement.parentElement.parentElement;
         div.remove()
         let cart = JSON.parse(localStorage.getItem('cart'))
         let itemName = btn.parentElement.parentElement.parentElement.querySelector('.itName').textContent;
+        
         for (let i = 0; i < cart.length; i++) {
-            if (cart[i].itName == itemName) {
-                cart.splice(cart[i], 1)
+
+            if (itemName == cart[i].itName) {
+                console.log(cart[i]);
+                console.log(itemName);
+                cart.splice(, 1)
+                console.log('cart: ' + cart);
+                
+
                 localStorage.setItem('cart', JSON.stringify(cart))
             }
+            
         }
+
         updateNumbItemsOnCart()
         alertItemRemoved(btn)
+
     })
+
 });
 
 function alertItemRemoved (btn) {

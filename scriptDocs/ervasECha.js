@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         let ervaName = object.ervasAromaticasECha[i].name;
         let ervaPrice = object.ervasAromaticasECha[i].price;
         let image = object.ervasAromaticasECha[i].image;
-       
+        let resultado = document.querySelectorAll('.priceToPay');
             //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
             if (image == '') {
                 image = "/images/logo.png";
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${ervaPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <!-- <option value="">Quantidade</option> -->
+                   <!-- <option value="">Quantidade</option> -->
                     <option value="15gr">15 gr</option>
                     <option value="25gr">25 gr</option>
                     <option value="50gr">50 gr</option>
@@ -50,11 +50,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
-                <button class="addToCart btn btn-success">Comprar</button>
+                <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
-        let addCartBtn = document.querySelectorAll('.addToCart');
 
+        let addCartBtn = document.querySelectorAll('.addToCart');
+          
         function addItem() {
 
             addCartBtn.forEach(btn => {
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
                     updateNumbItemsOnCart()
                     refreshItemSelected(btn)
+
                 })
             })
         }
@@ -80,7 +82,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             btn.parentElement.querySelector('.priceToPay').textContent = '';
             alert(`${name} foi adicionado ao cesto!`)
         }
-    
+
+        // THIS FUNCTION ALLOWS TO ADD THE ITEM SELECTED TO LOCALSTORAGE
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
            
@@ -100,10 +103,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         let kiloPrice = document.querySelectorAll('.kiloPrice');
         let finalItemPrice = document.querySelectorAll('.priceToPay'); 
 
+        // THE BUTTON BUY, ARE DISABLED, AND ONLY TURN TO ENABLED WHEN THE  
+        //USER SELECT THE QUANTITY OF THE RESPECTIVE ITEM
+        // ALSO MAKES THE TOTAL PRICE PER ITEM CALCULATION 
         selectedOptionValue.forEach((btn, i) => {
 
             btn.addEventListener('click', () => {           
-
+              
                 function finalPricePerItem (kg, qt) {
                     var priceToPay = 0;
                     kg = parseFloat(selectedOptionValue[i].value);
@@ -115,15 +121,21 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 }
 
+                let buyBtn = btn.parentElement.querySelector('.addToCart');
+                buyBtn.removeAttribute('disabled'); 
+                
                 finalPricePerItem() 
             })
             
         })
+
+
     }
 
     updateNumbItemsOnCart()
 })
   
+// THE NUMBER OF ITEMS INSIDE CART IS UPDATED
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
     let cart = JSON.parse(localStorage.getItem('cart'));
