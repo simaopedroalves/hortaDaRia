@@ -88,7 +88,7 @@ allTrashBtn.forEach(btn => {
             if (itemName == cart[i].itName) {
                 console.log(cart[i]);
                 console.log(itemName);
-                cart.splice(, 1)
+              
                 console.log('cart: ' + cart);
                 
 
