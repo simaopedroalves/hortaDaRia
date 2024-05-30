@@ -81,28 +81,37 @@ allTrashBtn.forEach(btn => {
         let div = btn.parentElement.parentElement.parentElement.parentElement;
         div.remove()
         let cart = JSON.parse(localStorage.getItem('cart'))
-        let itemName = btn.parentElement.parentElement.parentElement.querySelector('.itName').textContent;
         
-        for (let i = 0; i < cart.length; i++) {
-
-            if (itemName == cart[i].itName) {
-                console.log(cart[i]);
-                console.log(itemName);
-              
-                console.log('cart: ' + cart);
-                
-
-                localStorage.setItem('cart', JSON.stringify(cart))
-            }
-            
-        }
-
+        let itemName = btn.parentElement.parentElement.parentElement.querySelector('.itName').textContent;
+        cart.splice(itemName, 1)
+        localStorage.setItem('cart', JSON.stringify(cart))
+        remove(itemName)
         updateNumbItemsOnCart()
         alertItemRemoved(btn)
 
     })
 
 });
+
+
+// REMOVE ITEM FROM LOCALSTORAGE
+function remove(itemName) {
+
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    
+    for (let i = 0; i < cart.length; i++) {
+        
+        if (cart[i].itName === itemName) {
+            cart.splice(i, 1);
+        }
+        
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+}
+
+
+
 
 function alertItemRemoved (btn) {
     

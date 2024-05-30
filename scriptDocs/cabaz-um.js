@@ -84,20 +84,28 @@ function addCabazToCart() {
         let quantity = 1
         let itemPrice = secCabazUm.querySelector('.cabazPrice').textContent
         let itemTotal = itemPrice;
-        let itemObj = JSON.parse(localStorage.getItem('cart'));
+        let cart = JSON.parse(localStorage.getItem('cart'));
 
-        itemObj.push({
-            itName: name,
-            itImageSrc: "",
-            itPrice: itemPrice,
-            itQuantity: quantity + " Cabaz",
-            itTotal: itemTotal
-        })
-        
-        localStorage.setItem('cart', JSON.stringify(itemObj))
+        for (let i = 0; i < cart.length; i++) {
+           
+            if (cart[i].itQuantity > 1) {
+                cart[i].itQuantity = quantity + 1
+            }
+        }
+
+         cart.push({
+                    itName: name,
+                    itImageSrc: "",
+                    itPrice: itemPrice,
+                    itQuantity: quantity + " Cabaz(es)",
+                    itTotal: itemTotal
+                })
+
+        localStorage.setItem('cart', JSON.stringify(cart))
         updateNumbItemsOnCart()
     
     })
+
 }
 
 addCabazToCart()

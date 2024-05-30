@@ -87,3 +87,40 @@
     padding: 0.3rem;
     font-size: 0.7rem;
 }
+
+.buttonsDelAndAdvance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: sticky;
+    bottom: 6svh;
+    max-height: 6svh;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+}
+
+.delete-cart {
+    font-size: 0.8rem;    
+    border-radius: 1rem 0;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.advance-cart {
+    font-size: 0.8rem;
+    border-radius: 1rem 0;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: var(--white);
+}
