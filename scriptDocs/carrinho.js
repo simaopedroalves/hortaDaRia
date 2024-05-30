@@ -14,7 +14,12 @@ function createCart() {
         let quantity = el.itQuantity;
         let newDiv = document.createElement('div');
         newDiv.classList.add('box-cart');
-        
+        let emptyCarMessage = document.querySelector('.empty-car-message');
+
+        if(cart.length >= 1) {
+            emptyCarMessage.style.display = 'none';
+        }
+
         if (image == "") {
             image = "/images/logo.png"
         }
@@ -87,8 +92,7 @@ allTrashBtn.forEach(btn => {
         localStorage.setItem('cart', JSON.stringify(cart))
         remove(itemName)
         updateNumbItemsOnCart()
-        alertItemRemoved(btn)
-
+        alertItemRemoved(btn);
     })
 
 });
@@ -110,15 +114,11 @@ function remove(itemName) {
 
 }
 
-
-
-
 function alertItemRemoved (btn) {
     
     let name = btn.parentElement.parentElement.parentElement.querySelector('.itName').textContent;
     
     alert(`${name} foi removido do cesto!`)
-
 }
 
 function updateNumbItemsOnCart() {

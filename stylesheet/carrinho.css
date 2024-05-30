@@ -4,7 +4,7 @@
     align-content: start;
     justify-content: center;
     padding: 1rem 0;
-    min-height: 80vh;
+    min-height: 60vh;
     margin: 10vh 0;
 }
 
@@ -47,10 +47,14 @@
 
 .box-2 h3 {
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.8rem;
     max-width: 100%;
     text-align: left;
 
+}
+
+.box-2 h3::first-letter {
+    text-transform: uppercase;
 }
 
 .box-2 .box-2-child span {
@@ -58,7 +62,7 @@
     font-size: 0.8rem;
     font-weight: bold;
     background-color: var(--green);
-    padding: 0.2rem;
+    padding: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,19 +98,20 @@
     align-items: center;
     gap: 2rem;
     position: sticky;
-    bottom: 6svh;
     max-height: 6svh;
     left: 0;
     right: 0;
     background-color: var(--white);
+    border: 0;
+    outline: 0;
 }
 
 .delete-cart {
-    font-size: 0.8rem;    
+    font-size: 0.7rem;    
     border-radius: 1rem 0;
     border: 0;
     outline: 0;
-    padding: 1rem;
+    padding: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
     background-color: var(--orange);
@@ -114,13 +119,21 @@
 }
 
 .advance-cart {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     border-radius: 1rem 0;
     border: 0;
     outline: 0;
-    padding: 1rem;
+    padding: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
     background-color: var(--green);
     color: var(--white);
+}
+
+.empty-car-message {
+    display: grid;
+    margin: 2rem 20vw;
+    font-weight: 500;
+    gap: 1rem;
+    color: var(--green);
 }

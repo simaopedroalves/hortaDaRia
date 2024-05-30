@@ -1,15 +1,32 @@
-.testImage {
-    margin: 10dvh auto;
-    height: fit-content;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.1rem;
-    align-items: center;
-    justify-content: center;
+.informations-sec {
+    margin-top: 9svh;
 }
 
-.testImage img {
-    object-fit: cover;
-    max-width: 33vw;
+.come-see-us,
+.website-explanation {
+    display: grid;
+    gap: 1rem;
+    margin: 0 2rem 10svh 2rem;
+}
+
+.come-see-us h3, 
+.website-explanation h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+}
+
+.come-see-us p,
+.website-explanation p {
+    line-height: 1.5rem;
+    color: var(--green);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.praca-location a,
+.create-cabaz a {
+    color: var(--orange);
+    font-weight: bold;
+    cursor: pointer;
 }
