@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // ALSO MAKES THE TOTAL PRICE PER ITEM CALCULATION 
         selectedOptionValue.forEach((btn, i) => {
 
-            btn.addEventListener('click', () => {           
+            btn.addEventListener('change', () => {           
               
                 function finalPricePerItem (kg, qt) {
                     var priceToPay = 0;
