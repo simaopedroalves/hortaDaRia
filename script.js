@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `
 
-
+    location.reload()
        
 })
 
