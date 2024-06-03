@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
                     updateNumbItemsOnCart()
                     refreshItemSelected(btn)
-
                 })
             })
         }

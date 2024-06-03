@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             
         selectedOptionValue.forEach((btn, i) => {
 
-            btn.addEventListener('click', () => {           
+            btn.addEventListener('change', () => {           
 
                 function finalPricePerItem (kg, qt) {
                     var priceToPay = 0;
