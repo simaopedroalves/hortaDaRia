@@ -9,7 +9,7 @@
 }
 
 .cartList img {
-    max-width: 15dvh;
+    max-width: 15vh;
     object-fit: cover;
     border-radius: 1rem 0;
 }
