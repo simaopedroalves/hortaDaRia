@@ -109,8 +109,9 @@ function remove(itemName) {
             cart.splice(i, 1);
         }
         
-        localStorage.setItem('cart', JSON.stringify(cart));
     }
+    localStorage.setItem('cart', JSON.stringify(cart));
+
 
 }
 
@@ -118,8 +119,32 @@ function alertItemRemoved (btn) {
     
     let name = btn.parentElement.parentElement.parentElement.querySelector('.itName').textContent;
     
-    alert(`${name} foi removido do cesto!`)
+    let alert = document.querySelector('.alert');
+    alert.classList.add('show-alert');
+
+    alert.innerHTML = `
+        <span class="cart-changed-message">${name} removido(a) do Cesto</span>
+    `
+
+    setTimeout(() => {
+        alert.classList.remove('show-alert')
+    }, 3000);
 }
+
+function clearCart () {
+    let deleteCartBtn = document.querySelector('.delete-cart');
+    let cart = JSON.parse(localStorage.getItem('cart'))
+
+    deleteCartBtn.addEventListener('click', () => {
+
+        cart = []
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        location.reload()
+    })
+}
+
+clearCart()
 
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');

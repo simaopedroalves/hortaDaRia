@@ -1,5 +1,6 @@
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
+
 // OPEN AND CLOSE THE MENU
 
 openMenu.addEventListener('click', () => {
@@ -72,9 +73,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `
 
-    location.reload()
-       
 })
+
 
 // update number of items to be equal to the number
 // displayed on basket on top of the page
@@ -97,3 +97,4 @@ function updateNumbItemsOnCart() {
 }
 
 updateNumbItemsOnCart()
+

@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
-                <button class="addToCart btn btn-success">Comprar</button>
+                <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
         let addCartBtn = document.querySelectorAll('.addToCart');
@@ -66,18 +66,34 @@ document.addEventListener('DOMContentLoaded', async () => {
                     addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
                     updateNumbItemsOnCart() 
                     refreshItemSelected(btn)
+                    showAllert(name)
                 })
             })
         }
+
         addItem()
 
         function refreshItemSelected (btn) {
-            let name = btn.parentElement.querySelector('#itName').textContent;
-
             btn.parentElement.querySelector('.priceToPay').textContent = '';
-            alert(`${name} foi adicionado ao cesto!`)
         }
 
+        function showAllert (name) {
+            let alert = document.querySelector('.alert');
+            alert.classList.add('show-alert');
+
+            alert.innerHTML = `
+                <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
+                <button class="see-cart">
+                    <a href="/html/carrinho.html">
+                        Ver Carrinho
+                    </a> 
+                </button>
+            `
+
+            setTimeout(() => {
+                alert.classList.remove('show-alert')
+            }, 3000);
+        }
     
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
@@ -118,6 +134,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     finalItemPrice[i].textContent = priceToPay + ' €'
                     return priceToPay
                 }
+
+                let buyBtn = btn.parentElement.querySelector('.addToCart');
+                buyBtn.removeAttribute('disabled'); 
+                
                 finalPricePerItem() 
             })
         })

@@ -27,6 +27,7 @@
 }
 
 body {
+    position: relative;
     background-color: var(--white);
 }
 
@@ -76,6 +77,50 @@ header {
 
 
 /* CARRINHO */
+.alert {
+    background-color: var(--orange);
+    color: var(--black);
+    max-width: 80dvw;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    z-index: 20;
+    max-height: 12vh;
+    display: none;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.show-alert {
+    z-index: 100;
+    display: grid;
+    position: fixed;
+    left: 10vw;
+    top: 2vh;
+    right: 10vw;
+}
+
+.alert button {
+    border: solid var(--black) 2px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    max-width: fit-content;
+    margin: 0.5rem auto;
+    font-weight: bold;
+    background-color: var(--black);
+    color: var(--white);
+
+}
+
+.alert button a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.alert .cart-changed-message::first-letter {
+    text-transform: uppercase;
+}
+
 .cart-div{
     position: relative;
     /* border: 1px solid var(--yellow); */
