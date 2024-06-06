@@ -29,7 +29,7 @@
     /* justify-content: center; */
     /* max-height: 30vh; */
     max-height: max-content;
-    gap: 0.5rem;
+    gap: 0.3rem;
     font-size: 1rem;
     font-weight: 700;
     border: solid var(--green-one) 2px;
@@ -67,12 +67,20 @@
     border-radius: 0.5rem;
 }
 
+.boxItem .kiloPrice {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 .boxItem select {
-    max-width: 85%;
-    border-radius: 0.5rem;
-    font-size: 0.7rem;
-    padding: 0.2rem;
+    max-width: 100%;
+    border-radius: 0.1rem;
+    font-size: 0.8rem;
+    padding: 0.2rem auto;
     font-weight: bold;
+    font-size: 0.8rem;
+    border: solid var(--green) 1px;
+    color: var(--black);
 }
 
 .boxItem select option {

@@ -34,7 +34,7 @@ function createCart() {
                 <h3 class="itName">${name}</h3>
 
                 <div class="box-2-child">
-                        <span value="">${quantity}</span>
+                        <span class="quantity">${quantity}</span>
                     <!--
                         <option value="1Un">1 Un</option>
                         <option value="5Un">5 Un</option>
@@ -79,40 +79,39 @@ createCart()
 const allTrashBtn = document.querySelectorAll('.fa-trash-can');
 
 allTrashBtn.forEach(btn => {
-
     
     btn.addEventListener('click', (event) => {
         btn = event.target;
         let div = btn.parentElement.parentElement.parentElement.parentElement;
         div.remove()
-        let cart = JSON.parse(localStorage.getItem('cart'))
+
+        // let cart = JSON.parse(localStorage.getItem('cart'))
         
         let itemName = btn.parentElement.parentElement.parentElement.querySelector('.itName').textContent;
-        cart.splice(itemName, 1)
-        localStorage.setItem('cart', JSON.stringify(cart))
-        remove(itemName)
-        updateNumbItemsOnCart()
+        let itemQuantity = btn.parentElement.parentElement.parentElement.querySelector('div .quantity').textContent;
+        remove(itemName, itemQuantity)
         alertItemRemoved(btn);
+        setTimeout(() => {
+            location.reload()
+        }, 2000)
     })
 
 });
 
-
-// REMOVE ITEM FROM LOCALSTORAGE
-function remove(itemName) {
+function remove(itemName, itemQuantity) {
 
     let cart = JSON.parse(localStorage.getItem('cart'))
     
     for (let i = 0; i < cart.length; i++) {
         
-        if (cart[i].itName === itemName) {
+        if (cart[i].itName === itemName && cart[i].itQuantity === itemQuantity) {
             cart.splice(i, 1);
         }
         
     }
+
     localStorage.setItem('cart', JSON.stringify(cart));
-
-
+    updateNumbItemsOnCart()
 }
 
 function alertItemRemoved (btn) {
@@ -128,7 +127,7 @@ function alertItemRemoved (btn) {
 
     setTimeout(() => {
         alert.classList.remove('show-alert')
-    }, 3000);
+    }, 2000);
 }
 
 function clearCart () {
@@ -164,16 +163,24 @@ function updateNumbItemsOnCart() {
     })
 }
 
-// TROCAR O OBJETO DO CARRINHO E PASSAR DE CADA ITEM PRA O CARRINHO APENAS O
-// VALOR FINAL E NÃO O VALOR POR UN OU KG
+function calcFinalPrice () {
+    let finalPrice = document.querySelector('.final-price');
+    let priceToPay = document.querySelectorAll('.priceToPay');
+    let sumAllPricesArr = [];
 
-// function updateCartTotal() {
-//     let price = document.querySelectorAll('.box-2-child');
+    priceToPay.forEach(price => {
+        let allPrices = parseFloat(price.textContent);
+        sumAllPricesArr.push(allPrices);
+    })
 
-//     price.forEach(el => {
-//         console.log(el.textContent)
-//     })
-    
+    let sum = sumAllPricesArr.reduce(
+        (accumulator, currentValue) => accumulator + currentValue, 0
+    );
+    console.log(sumAllPricesArr);
+    console.log(sum);
+    sum = sum.toFixed(2)
+    finalPrice.textContent = sum + '€'
+}
 
-// }
+calcFinalPrice()
 

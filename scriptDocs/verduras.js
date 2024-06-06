@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${verdurasPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <!-- <option value="">Quantidade</option> -->
+                    <option value="qt">Quantidade</option>
                     <option value="100gr">100 gr</option>
                     <option value="250gr">250 gr</option>
                     <option value="500gr">500 gr</option>
@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     updateNumbItemsOnCart() 
                     refreshItemSelected(btn)
                     showAllert(name)
+                    btn.setAttribute("disabled", "")
                 })
             })
         }
@@ -93,11 +94,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             setTimeout(() => {
                 alert.classList.remove('show-alert')
-            }, 3000);
+            }, 2000);
         }
     
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
+
+            if (itemObj === null) {
+                itemObj = []
+            }
            
             itemObj.push({
                 itName: name,
@@ -123,18 +128,27 @@ document.addEventListener('DOMContentLoaded', async () => {
                     kg = parseFloat(selectedOptionValue[i].value);
                     qt = parseFloat(kiloPrice[i].textContent);
 
+                    let qtText = selectedOptionValue[i].value;
+                    let addCartBtn = btn.parentElement.querySelector('.addToCart')
+                  
                     if (kg > 10) {
                         priceToPay = kg * (qt/1000)
-                        }     
-                        else {
+                        priceToPay = priceToPay.toFixed(2)
+                        finalItemPrice[i].textContent = priceToPay + ' €'
+
+                    }  
+
+                    else if (qtText === "qt") {
+                        finalItemPrice[i].textContent = ''
+                        addCartBtn.setAttribute("disabled", "")
+                    }   
+
+                    else {
                         priceToPay = kg * (qt)
-                        }   
-
-                    // priceToPay = kg * (qt/1000)
-                    priceToPay = priceToPay.toFixed(2)
-                    finalItemPrice[i].textContent = priceToPay + ' €'
+                        priceToPay = priceToPay.toFixed(2)
+                        finalItemPrice[i].textContent = priceToPay + ' €'
+                    }
                     return priceToPay
-
                 }
 
                 let buyBtn = btn.parentElement.querySelector('.addToCart');

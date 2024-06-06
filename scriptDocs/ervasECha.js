@@ -32,15 +32,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 image = "/images/logo.png";
             }
         
-        // console.log('Nome ' + ervaName + '\n' + 'Preço: ' + ervaPrice)
-        
         secErvas.innerHTML += `
             <div class="boxItem">
                 <h3 id="itName">${ervaName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${ervaPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <option value="qt">Qt</option>
+                    <option value="qt">Quantidade</option>
                     <option value="15gr">15 gr</option>
                     <option value="25gr">25 gr</option>
                     <option value="50gr">50 gr</option>
@@ -97,7 +95,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             setTimeout(() => {
                 alert.classList.remove('show-alert')
-            }, 3000);
+            }, 2000);
         }
 
         // THIS FUNCTION ALLOWS TO ADD THE ITEM SELECTED TO LOCALSTORAGE
@@ -107,7 +105,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (itemObj === null) {
                 itemObj = []
             }
-            
+
             itemObj.push({
                 itName: name,
                 itImageSrc: imageSrc,
@@ -115,7 +113,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 itQuantity: quantity,
                 itTotal: itemTotal
             })
-            console.log(itemObj)
             localStorage.setItem('cart', JSON.stringify(itemObj))
         }
                     
@@ -137,6 +134,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     let qtText = selectedOptionValue[i].value;
                     let addCartBtn = btn.parentElement.querySelector('.addToCart')
+
                     if (qtText === "qt") {
                         finalItemPrice[i].textContent = ''
                         addCartBtn.setAttribute("disabled", "")
@@ -157,10 +155,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 finalPricePerItem() 
             })
-            
         })
-
-
     }
 
     updateNumbItemsOnCart()

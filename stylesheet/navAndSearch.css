@@ -75,7 +75,6 @@ header {
     align-items: center;
 }
 
-
 /* CARRINHO */
 .alert {
     background-color: var(--orange);
@@ -84,11 +83,12 @@ header {
     border-radius: 1rem;
     padding: 0.5rem;
     z-index: 20;
-    max-height: 12vh;
+    max-height: min-content;
     display: none;
     justify-content: center;
     font-weight: bold;
     margin: 0 auto;
+    text-align: center;
 }
 
 .show-alert {
@@ -109,7 +109,6 @@ header {
     font-weight: bold;
     background-color: var(--black);
     color: var(--white);
-
 }
 
 .alert button a {
@@ -139,14 +138,15 @@ header {
 }
 
 .article-number {
-    border-radius: 50%;
+    border-radius: 40%;
     background-color: var(--orange);
     color: var(--white);
-    padding: 0.2rem;
+    padding: 0.2rem 0.3rem;
     position: absolute;
     top: 0.7rem;
     left: 0.7rem;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 /* =========================================== */
 .menu-list {

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${ovosPrice}€/Dz</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <!-- <option value="">Quantidade</option> -->
+                    <option value="qt">Quantidade</option>
                     <option value="1/2 dúzia">1/2 dúzia</option>
                     <option value="1 dúzia">1 dúzia</option>
                     <option value="Dúzia e 1/2">Dúzia e 1/2</option>
@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     updateNumbItemsOnCart() 
                     refreshItemSelected(btn)
                     showAllert(name)
+                    btn.setAttribute("disabled", "")
                 })
             })
         }
@@ -88,11 +89,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             setTimeout(() => {
                 alert.classList.remove('show-alert')
-            }, 3000);
+            }, 2000);
         }
 
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
+
+            if (itemObj === null) {
+                itemObj = []
+            }
            
             itemObj.push({
                 itName: name,
@@ -118,8 +123,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     // kg = parseFloat(selectedOptionValue[i].value);
                     kg = selectedOptionValue[i].value;
                     qt = parseFloat(kiloPrice[i].textContent)
+                    let qtText = selectedOptionValue[i].value;
+                    let addCartBtn = btn.parentElement.querySelector('.addToCart')
 
-                    console.log(kg)
+                   
                     if (kg == "1/2 dúzia") {
                         priceToPay = qt / 2
                     }
@@ -138,6 +145,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
+
+                    if (qtText === "qt") {
+                        finalItemPrice[i].textContent = ''
+                        addCartBtn.setAttribute("disabled", "")
+                    }
+
+                    
                     return priceToPay
 
                 }

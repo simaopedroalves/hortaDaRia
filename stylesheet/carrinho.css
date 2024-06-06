@@ -137,3 +137,21 @@
     gap: 1rem;
     color: var(--green);
 }
+
+.sub-total {
+    position: sticky;
+    bottom: 4rem;
+    text-align: right;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: var(--orange);
+    color: var(--black);
+    max-width: fit-content;
+    border-radius: 1rem 0;
+    font-size: 0.7rem;
+}
+
+.final-price {
+    font-size: 1rem;
+}

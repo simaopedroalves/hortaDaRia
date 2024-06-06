@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${sabaoNaturalPrice}€/Un</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <!-- <option value="">Quantidade</option> -->
+                    <option value="qt">Quantidade</option>
                     <option value="1 Un">1 Un</option>
                     <option value="2 Un">2 Un</option>
                     <option value="3 Un">3 Un</option>
@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     updateNumbItemsOnCart()
                     refreshItemSelected(btn)
                     showAllert(name)
+                    btn.setAttribute("disabled", "")
                 })
             })
         }
@@ -89,11 +90,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             setTimeout(() => {
                 alert.classList.remove('show-alert')
-            }, 3000);
+            }, 2000);
         }
     
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
+
+            if (itemObj === null) {
+                itemObj = []
+            }
            
             itemObj.push({
                 itName: name,
@@ -118,9 +123,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                     var priceToPay = 0;
                     kg = parseFloat(selectedOptionValue[i].value);
                     qt = parseFloat(kiloPrice[i].textContent)
-                    priceToPay = kg * (qt)
+                    let qtText = selectedOptionValue[i].value;
+                    let addCartBtn = btn.parentElement.querySelector('.addToCart')
+
+                    if (qtText === "qt") {
+                        finalItemPrice[i].textContent = ''
+                        addCartBtn.setAttribute("disabled", "")
+                    }
+                    else {
+                    priceToPay = kg * qt
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
+                    addCartBtn.removeAttribute("disabled")
+                    }
+                    
                     return priceToPay
 
                 }

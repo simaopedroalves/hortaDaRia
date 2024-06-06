@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${leguminosasPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <!-- <option value="">Quantidade</option> -->
+                    <option value="qt">Quantidade</option>
                     <option value="15gr">15 gr.</option>
                     <option value="25gr">25 gr.</option>
                     <option value="50gr">50 gr.</option>
@@ -65,6 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     updateNumbItemsOnCart()
                     refreshItemSelected(btn)
                     showAllert(name)
+                    btn.setAttribute("disabled", "")
                 })
             })
         }
@@ -90,12 +91,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             setTimeout(() => {
                 alert.classList.remove('show-alert')
-            }, 3000);
+            }, 2000);
         }
     
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
            
+            if (itemObj === null) {
+                itemObj = []
+            }
+
             itemObj.push({
                 itName: name,
                 itImageSrc: imageSrc,
@@ -104,14 +109,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 itTotal: itemTotal
             })
             localStorage.setItem('cart', JSON.stringify(itemObj))
-
         }
                     
         let selectedOptionValue = document.querySelectorAll('.quantity');
         let kiloPrice = document.querySelectorAll('.kiloPrice');
         let finalItemPrice = document.querySelectorAll('.priceToPay'); 
-            
-
 
         selectedOptionValue.forEach((btn, i) => {
 
@@ -120,11 +122,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                 function finalPricePerItem (kg, qt) {
                     var priceToPay = 0;
                     kg = parseFloat(selectedOptionValue[i].value);
-                    qt = parseFloat(kiloPrice[i].textContent)
+                    qt = parseFloat(kiloPrice[i].textContent);
+
+                    let qtText = selectedOptionValue[i].value;
+                    let addCartBtn = btn.parentElement.querySelector('.addToCart')
+
+                    if (qtText === "qt") {
+                        finalItemPrice[i].textContent = ''
+                        addCartBtn.setAttribute("disabled", "")
+                    }
+                    else {
                     priceToPay = kg * (qt/1000)
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
+                    addCartBtn.removeAttribute("disabled")
+                    }
+                    
                     return priceToPay
+
                 }
 
                 let buyBtn = btn.parentElement.querySelector('.addToCart');

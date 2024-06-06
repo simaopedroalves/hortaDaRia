@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <img src="${image}" alt="">
             <div class="kiloPrice">${microverdesPrice}€/Kg</div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
-                <!-- <option value="">Quantidade</option> -->
+                <option value="qt">Quantidade</option>
                 <option value="25gr">25 gr</option>
                 <option value="50gr">50 gr</option>
                 <option value="75gr">75 gr</option>
@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     updateNumbItemsOnCart()
                     refreshItemSelected(btn)
                     showAllert(name)
+                    btn.setAttribute("disabled", "")
                 })
             })
         }
@@ -94,10 +95,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             setTimeout(() => {
                 alert.classList.remove('show-alert')
-            }, 3000);
+            }, 2000);
         }
+    
         function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
             let itemObj = JSON.parse(localStorage.getItem('cart'))
+
+            if (itemObj === null) {
+                itemObj = []
+            }
            
             itemObj.push({
                 itName: name,
@@ -122,6 +128,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                     var priceToPay = 0;
                     kg = parseFloat(selectedOptionValue[i].value);
                     qt = parseFloat(kiloPrice[i].textContent);
+
+                    let qtText = selectedOptionValue[i].value;
+                    let addCartBtn = btn.parentElement.querySelector('.addToCart')
+
+                    if (qtText === "qt") {
+                        finalItemPrice[i].textContent = ''
+                        addCartBtn.setAttribute("disabled", "")
+                    }
 
                     if (kg >= 1) {
                         priceToPay = kg * (qt)
