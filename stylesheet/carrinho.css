@@ -116,6 +116,7 @@
     text-transform: uppercase;
     background-color: var(--orange);
     color: var(--white);
+    cursor: pointer;
 }
 
 .advance-cart {
@@ -124,10 +125,15 @@
     border: 0;
     outline: 0;
     padding: 0.8rem;
-    font-weight: bold;
     text-transform: uppercase;
     background-color: var(--green);
+}
+
+.advance-cart a {
+    font-weight: bold;
+    text-decoration: none;
     color: var(--white);
+    cursor: pointer;
 }
 
 .empty-car-message {
@@ -155,3 +161,82 @@
 .final-price {
     font-size: 1rem;
 }
+
+
+/* PAGINA 1 APÓS AVANCAR */
+
+
+
+.client-data-sec form{
+    margin-top: 9svh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3vw;
+    gap: 1rem;
+    max-width: 100vw;
+}
+
+.border-1 {
+    border: solid red 2px;
+}
+
+.client-data-sec form section {
+    border: solid var(--green) 3px;
+    border-radius: 1rem 0;
+    padding: 1.5rem;
+}
+
+.client-data-sec input {
+    background-color: var(--white);
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid var(--green) 2px;
+    margin-left: 1rem;
+    
+} 
+
+.name-email-phone {
+    display: grid;
+    gap: 1rem;
+
+}
+
+.name-email-phone div:not(.radio-buttons) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name-email-phone .radio-buttons {
+    display: grid;
+    gap: 1rem;
+}
+
+.name-email-phone .radio-buttons div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.deliver-sec {
+    display: grid;
+    gap: 1rem;
+}
+
+.deliver-sec div:not(.schedule-deliver) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deliver-sec .cp {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.deliver-sec .cp input{
+    max-width: 3rem;
+}
+

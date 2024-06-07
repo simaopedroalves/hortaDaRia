@@ -91,9 +91,7 @@ allTrashBtn.forEach(btn => {
         let itemQuantity = btn.parentElement.parentElement.parentElement.querySelector('div .quantity').textContent;
         remove(itemName, itemQuantity)
         alertItemRemoved(btn);
-        setTimeout(() => {
-            location.reload()
-        }, 2000)
+        calcFinalPrice();
     })
 
 });
@@ -107,7 +105,9 @@ function remove(itemName, itemQuantity) {
         if (cart[i].itName === itemName && cart[i].itQuantity === itemQuantity) {
             cart.splice(i, 1);
         }
-        
+        if (cart.length === 0) {
+            location.reload()
+        }
     }
 
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -183,4 +183,6 @@ function calcFinalPrice () {
 }
 
 calcFinalPrice()
+
+// ========================  ADVANCE PAGE Nº 1  ===========================================
 
