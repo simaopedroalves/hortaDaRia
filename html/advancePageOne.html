@@ -81,21 +81,21 @@
 
                 <div class="radio-buttons">
                     <div>
-                        <input id="deliver-box" type="radio" name="deliver" value="Entrega" checked>
+                        <input id="deliver-box" type="radio" name="deliver" value="Entrega ou Levantamento" checked>
                         <label for="deliver-box">Entrega</label>
                     </div>
                     <div>
-                        <input id="pick-up-box" type="radio" name="deliver" value="Levantar">
+                        <input id="pick-up-box" type="radio" name="deliver" value="Entrega ou Levantamento">
                         <label for="pick-up-box">Levantar</label>
                     </div>
                 </div>
                 <div>
                     <label for="name">Nome</label>
-                    <input id="name" type="text" required>
+                    <input id="name" type="text" name="Nome" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input id="email" type="email" required>
+                    <input id="email" type="email" name="Email" required>
                 </div>
                 <div>
                     <label for="phone-number">Telemóvel</label>
@@ -160,19 +160,19 @@
 
                     <!-- ========== LEVANTAR ========= -->
             <section class="pick-up-sec border-1">
-                <input type="hidden" name="Local Levantamento">
+                <input type="hidden" name="Local de Levantamento">
                 <h5>
                     Onde preferes levantar a tua encomenda?
                 </h5>
                 <div>
-                    <input id="praca" type="radio" name="local" value="Praça-Mercado" checked>
+                    <input id="praca" type="radio" name="local" value="Quero levantar na" checked>
                     <div class="mercado">
                         <label for="praca">Mercado de Famalicão</label>
                         <span>Sábado (7:00 - 13:00)</span>
                     </div>
                 </div>
                 <div>
-                    <input id="horta" type="radio" name="local" value="Horta">
+                    <input id="horta" type="radio" name="local" value="Quero Levantar na">
                     <label for="horta">Horta d'Ria</label>
                 </div>
                 
@@ -181,8 +181,8 @@
             <section class="horta-pick-up-sec border-1">
                 <input type="hidden" name="Levantamento na Horta">
                 <div>
-                    <label for="pick-up-day">Dia Levantamento</label>
-                    <input id="pick-up-day" type="date" name="Data Levantamento">
+                    <label for="pick-up-day">Dia de Levantamento</label>
+                    <input id="pick-up-day" type="date" name="Dia Levantamento">
                 </div>
                 <div class="schedule-deliver">
                     <label for="ppick-up-schedule">Horário</label>
@@ -212,7 +212,7 @@
             </section>
 
             <section class="hear-about-us-sec">
-                <label for="hear-about-us">Como chegaste até nós?</label>
+                <label for="hear-about-us" name="Como Chegou até nós">Como chegaste até nós?</label>
                 <div>
                     <input type="checkbox" id="facebook" name="facebook" value="facebook">
                     <label for="facebook">Facebook</label>
