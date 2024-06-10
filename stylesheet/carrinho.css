@@ -242,7 +242,8 @@
     justify-content: center;
 }
 
-#cp {
+#cp,
+#cP {
     max-width: calc(100vw/5);
 }
 
