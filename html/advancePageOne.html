@@ -70,13 +70,25 @@
 
     <section class="client-data-sec">
 
-        <form class="contactForm" name="Horta_da_Ria" action="/html/success.html" method="POST" data-netlify="true"> 
+        <form class="contactForm" name="Horta_da_Ria_Encomenda" action="/html/success.html" method="POST" data-netlify="true"> 
+        <input type="hidden" name="subject" value="Nova Encomenda" id="newMessage" data-remove-prefix>
 
             <h4>
                 Para avançares com a tua encomenda precisas de preencher o seguinte formulário:
             </h4>
 
             <section class="name-email-phone border-1">
+
+                <div class="radio-buttons">
+                    <div>
+                        <input id="deliver-box" type="radio" name="deliver" value="Entrega" checked>
+                        <label for="deliver-box">Entrega</label>
+                    </div>
+                    <div>
+                        <input id="pick-up-box" type="radio" name="deliver" value="Levantar">
+                        <label for="pick-up-box">Levantar</label>
+                    </div>
+                </div>
                 <div>
                     <label for="name">Nome</label>
                     <input id="name" type="text" required>
@@ -89,16 +101,7 @@
                     <label for="phone-number">Telemóvel</label>
                     <input id="phone-number" type="number" name="Telemóvel" required>
                 </div>
-                <div class="radio-buttons">
-                    <div>
-                        <input id="deliver-box" type="radio" name="deliver" value="Entrega" checked>
-                        <label for="deliver-box">Entrega</label>
-                    </div>
-                    <div>
-                        <input id="pick-up-box" type="radio" name="deliver" value="Levantar">
-                        <label for="pick-up-box">Levantar</label>
-                    </div>
-                </div>
+                
             </section>
                 <!-- ======= ENTREGA ========= -->
             <section class="deliver-sec border-1">
@@ -115,10 +118,13 @@
                     <input id="floor-number" type="text" name="Andar">
                 </div>
                 <div class="cp">
-                    <label for="cp">Código Postal</label>
-                    <input id="cp" type="number">-
-                    <!-- <span>-</span> -->
-                    <input id="cp" type="number">
+                    <div class="">
+                        <label for="cp">Código Postal</label>
+                    </div>
+                    <div class="cp-numbers">
+                        <input id="cp" type="number">
+                        <input id="cp" type="number">
+                    </div>
                 </div>
                 <div>
                     <label for="address-local">Localidade</label>
@@ -160,8 +166,10 @@
                 </h5>
                 <div>
                     <input id="praca" type="radio" name="local" value="Praça-Mercado" checked>
-                    <label for="praca">Praça Mercado de V. N. Famalicão</label>
-                    <span>Sábado (7:00 - 13:00)</span>
+                    <div class="mercado">
+                        <label for="praca">Mercado de Famalicão</label>
+                        <span>Sábado (7:00 - 13:00)</span>
+                    </div>
                 </div>
                 <div>
                     <input id="horta" type="radio" name="local" value="Horta">
@@ -198,12 +206,12 @@
                     </div>
             </section>
 
-            <section class="obs-sec border-1">
+            <section class="obs-sec">
                 <label for="observations">Observações</label>
-                <textarea name="observation" id="observations" placeholder="Gostaria de..."></textarea>
+                <textarea name="observation" id="observations" placeholder="Gostaria de..." rows="6"></textarea>
             </section>
 
-            <section class="hear-about-us border-1">
+            <section class="hear-about-us-sec">
                 <label for="hear-about-us">Como chegaste até nós?</label>
                 <div>
                     <input type="checkbox" id="facebook" name="facebook" value="facebook">
@@ -231,7 +239,10 @@
                     <input type="text" id="outro" name="Outro">
                 </div>
             </section>
-            <button type="submit">Avançar</button>
+
+            <!-- BUTTON SUBMIT -->
+            <button type="submit" class="send-user-data-btn">Avançar</button>
+
         </form>
     </section>
 

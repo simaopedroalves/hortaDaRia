@@ -177,10 +177,6 @@
     max-width: 100vw;
 }
 
-.border-1 {
-    border: solid red 2px;
-}
-
 .client-data-sec form section {
     border: solid var(--green) 3px;
     border-radius: 1rem 0;
@@ -211,7 +207,7 @@
 }
 
 .name-email-phone .radio-buttons {
-    display: grid;
+    display: flex;
     gap: 1rem;
 }
 
@@ -221,22 +217,104 @@
     gap: 1rem;
 }
 
-.deliver-sec {
+.deliver-sec, 
+.horta-pick-up-sec,
+.obs-sec {
     display: grid;
     gap: 1rem;
 }
 
-.deliver-sec div:not(.schedule-deliver) {
+.deliver-sec div:not(.schedule-deliver), 
+.horta-pick-up-sec div:not(.schedule-deliver) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 .deliver-sec .cp {
     display: flex;
-    justify-content: flex-start;
 }
 
-.deliver-sec .cp input{
-    max-width: 3rem;
+.deliver-sec .cp .cp-numbers{
+    display: flex;
+    max-width: min-content;
+    justify-content: center;
 }
 
+#cp {
+    max-width: calc(100vw/5);
+}
+
+/* HORARIO ENTREGA */
+
+.schedule-deliver {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.schedule-deliver div {
+    grid-column: span 2;
+}
+ 
+/* ONDE LEVANTAR ENCOMENDA */
+
+.pick-up-sec{
+    display: grid;
+    gap: 1rem;
+    text-align: left;
+}
+
+.pick-up-sec div {
+    display: flex;
+    gap: 1rem;
+}
+
+.pick-up-sec .mercado {
+    display: grid;
+    gap: 0;
+
+}
+
+/* OBSERVAÇÕES */
+
+.obs-sec textarea::placeholder {
+    padding: 0.1rem 0 0 0.1rem;
+}
+
+.obs-sec textarea {
+    padding: 0.3rem;
+    resize: vertical;
+    border: var(--orange) solid 2px;
+    border-radius: 0.3rem;
+}
+
+select,
+input[type="date"] {
+    border: var(--orange) solid 2px;
+    padding: 0.3rem;
+}
+
+/* COMO CHEGASTE ATÉ NÓS */
+
+.hear-about-us-sec {
+    display: grid;
+    gap: 1rem;
+}
+
+/* BUTTON SUBMIT */
+
+.send-user-data-btn {
+    max-width: 30%;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0.5rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    margin: 1rem auto 15vh auto;
+}
