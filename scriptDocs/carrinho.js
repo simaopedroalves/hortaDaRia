@@ -184,5 +184,28 @@ function calcFinalPrice () {
 
 calcFinalPrice()
 
+function enableOrDisableButtonOnTop () {
+
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    let advanceBtn = document.querySelector('.advance-cart');
+    let delCartAndAdvanceBtnDiv = document.querySelector('.buttonsDelAndAdvance');
+    
+    document.addEventListener('DOMContentLoaded', () => { 
+        
+        if (cart.length == 0) {
+            delCartAndAdvanceBtnDiv.classList.add('hide-button')
+        }
+
+        if (cart.length > 0) {
+            delCartAndAdvanceBtnDiv.classList.remove('hide-button')
+
+        }
+
+        console.log('carrinho ' + cart.length);
+        console.log(advanceBtn);
+    })
+}
+
+enableOrDisableButtonOnTop()
 // ========================  ADVANCE PAGE Nº 1  ===========================================
 

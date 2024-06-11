@@ -92,6 +92,7 @@ function updateNumbItemsOnCart() {
             if (cart.length <= 0) {
                 el.textContent = '0'
             }
+            else return
         }
     })
 }

@@ -21,7 +21,7 @@
     <!-- <script  src="\scriptDocs/ervasECha.js" defer></script> -->
     <script type="text/javascript" src="/script.js" defer></script>
 
-    <script type="text/javascript" src="\scriptDocs/carrinho.js" defer></script>
+    <script type="text/javascript" src="/scriptDocs/advancePageOne.js" defer></script>
 
     <title>Preenchimento dados - Horta d'Ria - Produtos 100% Naturais - Agricultura Local e Ecológica - V. N. Famalicão</title>
     <link rel="icon" type="image/png" href="/images/HR_logo.png">
@@ -74,21 +74,23 @@
         <input type="hidden" name="subject" value="Nova Encomenda" id="newMessage" data-remove-prefix>
 
             <h4>
-                Para avançares com a tua encomenda precisas de preencher o seguinte formulário:
+                Preferes levantar a tua encomenda ou queres te entreguemos em casa ou no teu local de trabalho?
             </h4>
+
+            <div class="radio-buttons">
+                <div>
+                    <input id="deliver-box" type="radio" name="deliver" value="Para Entregar em Casa">
+                    <label for="deliver-box">Entrega</label>
+                </div>
+                <div>
+                    <input id="pick-up-box" type="radio" name="deliver" value="Vai Levantar a Encomenda">
+                    <label for="pick-up-box">Levantar</label>
+                </div>
+            </div>
 
             <section class="name-email-phone border-1">
 
-                <div class="radio-buttons">
-                    <div>
-                        <input id="deliver-box" type="radio" name="deliver" value="Para Entregar em Casa">
-                        <label for="deliver-box" name="Name-Entrega" value="value-entrega">Entrega</label>
-                    </div>
-                    <div>
-                        <input id="pick-up-box" type="radio" name="deliver" value="Vai Levantar a Encomenda">
-                        <label for="pick-up-box" name="Name-levantar" value="value-levantar">Levantar</label>
-                    </div>
-                </div>
+                
                 <div>
                     <label for="name">Nome</label>
                     <input id="name" type="text" name="Nome" required>
@@ -241,7 +243,7 @@
             </section>
 
             <!-- BUTTON SUBMIT -->
-            <button type="submit" class="send-user-data-btn">Avançar</button>
+            <button type="submit" class="send-user-data-btn" disabled>Avançar</button>
 
         </form>
     </section>
