@@ -225,6 +225,8 @@ function updateCartAndSubmit () {
     })
 }
 
+updateCartAndSubmit()
+
 function clearCart () {
     let cart = JSON.parse(localStorage.getItem('cart'))
         cart = []
