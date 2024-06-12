@@ -215,4 +215,23 @@ clientAddressLocal.addEventListener('input', () => {
 
 })
 
-// 
+// SUBMIT BUTTON
+
+submitBtn.addEventListener('click', () => {
+    clearCart()
+    location.reload()
+    
+})
+
+function clearCart () {
+    let deleteCartBtn = document.querySelector('.delete-cart');
+    let cart = JSON.parse(localStorage.getItem('cart'))
+
+    deleteCartBtn.addEventListener('click', () => {
+
+        cart = []
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+        location.reload()
+    })
+}
