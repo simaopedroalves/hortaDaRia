@@ -221,7 +221,6 @@ function updateCartAndSubmit () {
     submitBtn.addEventListener('click', () => {
         getCartItemsFromLocalStorage()
         clearCart()
-        location.reload()
     })
 }
 
@@ -231,7 +230,6 @@ function clearCart () {
     let cart = JSON.parse(localStorage.getItem('cart'))
         cart = []
         localStorage.setItem('cart', JSON.stringify(cart));
-        location.reload()
 }
 
 // SEND ITEMS INSIDE CART TO COMPANY EMAIL 
@@ -249,7 +247,6 @@ function getCartItemsFromLocalStorage () {
             <input type="hidden" value="${nameBuy}"
         `
         cartBuy.append(newItem)
-        console.log(cartBuy)
     })
 
     
