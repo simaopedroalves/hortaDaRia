@@ -219,6 +219,7 @@ clientAddressLocal.addEventListener('input', () => {
 
 function updateCartAndSubmit () { 
     submitBtn.addEventListener('click', () => {
+        allInputs.value = ''
         getCartItemsFromLocalStorage()
         clearCart()
     })
