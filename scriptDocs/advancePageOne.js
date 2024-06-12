@@ -215,23 +215,42 @@ clientAddressLocal.addEventListener('input', () => {
 
 })
 
-// SUBMIT BUTTON
+// SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
 
-submitBtn.addEventListener('click', () => {
-    clearCart()
-    location.reload()
-    
-})
-
-function clearCart () {
-    let deleteCartBtn = document.querySelector('.delete-cart');
-    let cart = JSON.parse(localStorage.getItem('cart'))
-
-    deleteCartBtn.addEventListener('click', () => {
-
-        cart = []
-
-        localStorage.setItem('cart', JSON.stringify(cart));
+function updateCartAndSubmit () { 
+    submitBtn.addEventListener('click', () => {
+        getCartItemsFromLocalStorage()
+        clearCart()
         location.reload()
     })
 }
+
+function clearCart () {
+    let cart = JSON.parse(localStorage.getItem('cart'))
+        cart = []
+        localStorage.setItem('cart', JSON.stringify(cart));
+        location.reload()
+}
+
+// SEND ITEMS INSIDE CART TO COMPANY EMAIL 
+
+function getCartItemsFromLocalStorage () {
+    let cartBuy = document.querySelector('.cart-items-selected')
+    let cart = JSON.parse(localStorage.getItem('cart'))
+    
+    cart.forEach(el => {
+        let quantityBuy = el.itQuantity
+        let nameBuy = el.itName
+
+        let newItem = `
+            <input type="hidden" value="${quantityBuy}">
+            <input type="hidden" value="${nameBuy}"
+        `
+        cartBuy.append(newItem)
+        console.log(cartBuy)
+    })
+
+    
+
+}
+

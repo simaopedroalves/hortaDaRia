@@ -93,11 +93,11 @@
                 
                 <div>
                     <label for="name">Nome<span class="required-input-icon">*</span></label>
-                    <input id="name" type="text" name="Nome" required>
+                    <input id="name" type="text" name="Nome" required class="required">
                 </div>
                 <div>
                     <label for="email">Email<span class="required-input-icon">*</span></label>
-                    <input id="email" type="email" name="Email" required>
+                    <input id="email" type="email" name="Email" required class="required">
                 </div>
                 <div>
                     <label for="phone-number">Telemóvel</label>
@@ -109,14 +109,14 @@
             <section class="deliver-sec border-1">
                 <div>
                     <label for="address">Morada<span class="required-input-icon">*</span></label>
-                    <input id="address" type="text" name="Morada" required>
+                    <input id="address" type="text" name="Morada" required class="required">
                 </div>
                 <div>
                     <label for="door-number">Porta nº<span class="required-input-icon">*</span></label>
-                    <input id="door-number" type="number" name="Porta" required>
+                    <input id="door-number" type="number" name="Porta" required class="required">
                 </div>
                 <div>
-                    <label for="floor-number">Andar<span class="required-input-icon">*</span></label>
+                    <label for="floor-number">Andar</label>
                     <input id="floor-number" type="text" name="Andar">
                 </div>
                 <div class="cp">
@@ -124,8 +124,8 @@
                         <label for="cp">Código Postal<span class="required-input-icon">*</span></label>
                     </div>
                     <div class="cp-numbers">
-                        <input id="cp" type="number" name="Código Postal" required>
-                        <input id="cP" type="number" name="Código Postal" required>
+                        <input id="cp" type="number" name="Código Postal" required class="required">
+                        <input id="cP" type="number" name="Código Postal" required class="required">
                     </div>
                 </div>
                 <div>
@@ -138,7 +138,7 @@
                 </div>
                 <div class="schedule-deliver">
                     <label for="schedule">Horário<span class="required-input-icon">*</span></label>
-                    <select id="schedule" name="Horário" value="horario entre: " required>
+                    <select id="schedule" name="Horário" value="horario entre: " required class="required">
                         <optgroup label="Manhã">
                             <option value="9h-10h">09:00 - 10:00</option>
                             <option value="10h-11h">10:00 - 11:00</option>
@@ -215,6 +215,7 @@
 
             <section class="hear-about-us-sec">
                 <label for="hear-about-us" value="Como Chegou até nós">Como chegaste até nós?</label>
+                <input type="hidden" value="CHEGOU ATÉ NÓS ATRAVÉS DE:">
                 <div>
                     <input type="checkbox" id="facebook" name="facebook" value="facebook">
                     <label for="facebook">Facebook</label>
@@ -244,8 +245,10 @@
 
             <span class="error-message">* Preenchimento Obrigatório</span>
 
+            <div class="cart-items-selected hide-section" name="Cesto:" value="CESTO:"></div>
+
             <!-- BUTTON SUBMIT -->
-            <button type="submit" class="send-user-data-btn">
+            <button type="submit" class="send-user-data-btn" disabled>
                 <!-- <a href="/html/success.html">Avançar</a> -->
                 Avançar
             </button>
