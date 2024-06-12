@@ -346,3 +346,9 @@ input[type="date"] {
     display: none;
 }
 
+.error-message, 
+.required-input-icon {
+    font-size: 0.7rem;
+    color: var(--orange);
+}
+

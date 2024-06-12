@@ -52,7 +52,7 @@
     justify-content: center;
 }
 
-.add-to-cart {
+.add-to-cart-button {
     background-color: var(--orange);
     color: var(--black);
     border-radius: 1rem;

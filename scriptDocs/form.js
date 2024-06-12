@@ -10,7 +10,7 @@ const subjectNewMessage = document.querySelector('#newMessage')
 const phoneNumber = document.querySelector('#phoneNumber')
 const errorMessage = document.querySelector('.obligationOrErrorMessage')
 const validMessage = "* Preenchimento obrigatório"
-const invalidMessage = "Algo está errado!"
+const invalidMessage = "Algo está errado! Verifica os dados inseridos."
 
 // RESPOSTA AUTOMATICA DO NETLIFY PARA O CLIENTE
 

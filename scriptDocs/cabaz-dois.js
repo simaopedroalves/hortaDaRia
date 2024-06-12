@@ -40,12 +40,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         cabazContent = cabazContent.toString().replaceAll(',', '<br>')
         secCabazDois.innerHTML += `
         <h2 class="cabaz-name-title">${cabazName}</h2>
+        <span class="cabazPrice">${cabazPrice} €</span>
+          
 
         <div class="cabaz-content">
             <div class="cabaz-list">
                 ${cabazContent}
             </div>
-            <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
+            <button type="button" class="add-to-cart-button">Adicionar ao Carrinho</button>
         </div>
 
             <h4 class="sugestionsTitle">Outras Sugestões:</h4>
@@ -55,14 +57,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="sugestionOne sugestion">
                     <a href="${cabazNumOne}">
                         <img src="${imageCabazOne}" alt="">
-                        <span>Cabaz nº 1</span>
+                        <span>Cabaz pequeno</span>
                     </a>
                 </div> 
 
                 <div class="sugestionTwo sugestion">
                     <a href="${cabazNumThree}">
                         <img src="${imageCabazThree}" alt="">
-                        <span>Cabaz nº 3</span>
+                        <span>Cabaz grande</span>
                     </a>
                 </div>
 
@@ -108,12 +110,12 @@ function updateNumbItemsOnCart() {
 
 function addCabazToCart() {
 
-    let addToCart = secCabazUm.querySelector('.add-to-cart');
+    let addToCartBtn = secCabazDois.querySelector('.add-to-cart-button');
 
-    addToCart.addEventListener('click', () => {
-        let name = secCabazUm.querySelector('.cabaz-name-title').textContent;
+    addToCartBtn.addEventListener('click', () => {
+        let name = secCabazDois.querySelector('.cabaz-name-title').textContent;
         let quantity = 1
-        let itemPrice = secCabazUm.querySelector('.cabazPrice').textContent
+        let itemPrice = secCabazDois.querySelector('.cabazPrice').textContent
         let itemTotal = itemPrice;
         let cart = JSON.parse(localStorage.getItem('cart'));
 
@@ -128,18 +130,37 @@ function addCabazToCart() {
                     itName: name,
                     itImageSrc: "",
                     itPrice: itemPrice,
-                    itQuantity: quantity + " Cabaz(es)",
+                    itQuantity: quantity + " Cabaz",
                     itTotal: itemTotal
                 })
 
         localStorage.setItem('cart', JSON.stringify(cart))
         updateNumbItemsOnCart()
+        showAllert(name)
     
     })
 
 }
 
 addCabazToCart()
+
+function showAllert (name) {
+    let alert = document.querySelector('.alert');
+    alert.classList.add('show-alert');
+
+    alert.innerHTML = `
+        <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
+        <button class="see-cart">
+            <a href="/html/carrinho.html">
+                Ver Carrinho
+            </a> 
+        </button>
+    `
+
+    setTimeout(() => {
+        alert.classList.remove('show-alert')
+    }, 2000);
+}
 
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');

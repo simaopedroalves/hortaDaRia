@@ -92,40 +92,40 @@
 
                 
                 <div>
-                    <label for="name">Nome</label>
+                    <label for="name">Nome<span class="required-input-icon">*</span></label>
                     <input id="name" type="text" name="Nome" required>
                 </div>
                 <div>
-                    <label for="email">Email</label>
+                    <label for="email">Email<span class="required-input-icon">*</span></label>
                     <input id="email" type="email" name="Email" required>
                 </div>
                 <div>
                     <label for="phone-number">Telemóvel</label>
-                    <input id="phone-number" type="number" name="Telemóvel" required>
+                    <input id="phone-number" type="number" name="Telemóvel">
                 </div>
                 
             </section>
                 <!-- ======= ENTREGA ========= -->
             <section class="deliver-sec border-1">
                 <div>
-                    <label for="address">Morada</label>
-                    <input id="address" type="text" name="Morada">
+                    <label for="address">Morada<span class="required-input-icon">*</span></label>
+                    <input id="address" type="text" name="Morada" required>
                 </div>
                 <div>
-                    <label for="door-number">Porta nº</label>
-                    <input id="door-number" type="number" name="Porta">
+                    <label for="door-number">Porta nº<span class="required-input-icon">*</span></label>
+                    <input id="door-number" type="number" name="Porta" required>
                 </div>
                 <div>
-                    <label for="floor-number">Andar</label>
+                    <label for="floor-number">Andar<span class="required-input-icon">*</span></label>
                     <input id="floor-number" type="text" name="Andar">
                 </div>
                 <div class="cp">
                     <div class="">
-                        <label for="cp">Código Postal</label>
+                        <label for="cp">Código Postal<span class="required-input-icon">*</span></label>
                     </div>
                     <div class="cp-numbers">
-                        <input id="cp" type="number" name="Código Postal">
-                        <input id="cP" type="number" name="Código Postal">
+                        <input id="cp" type="number" name="Código Postal" required>
+                        <input id="cP" type="number" name="Código Postal" required>
                     </div>
                 </div>
                 <div>
@@ -133,12 +133,12 @@
                     <input id="address-local" type="text" name="Localidade">
                 </div>
                 <div>
-                    <label for="deliver-day">Dia de Entrega</label>
-                    <input id="deliver-day" type="date" name="Data Entrega">
+                    <label for="deliver-day">Dia de Entrega<span class="required-input-icon">*</span></label>
+                    <input id="deliver-day" type="date" name="Data Entrega" required>
                 </div>
                 <div class="schedule-deliver">
-                    <label for="schedule">Horário</label>
-                    <select id="schedule" name="Horário" value="horario entre: ">
+                    <label for="schedule">Horário<span class="required-input-icon">*</span></label>
+                    <select id="schedule" name="Horário" value="horario entre: " required>
                         <optgroup label="Manhã">
                             <option value="9h-10h">09:00 - 10:00</option>
                             <option value="10h-11h">10:00 - 11:00</option>
@@ -242,8 +242,12 @@
                 </div>
             </section>
 
+            <span class="error-message">* Preenchimento Obrigatório</span>
+
             <!-- BUTTON SUBMIT -->
-            <button type="submit" class="send-user-data-btn" disabled>Avançar</button>
+            <button type="submit" class="send-user-data-btn">
+                <a href="/html/success.html">Avançar</a>
+            </button>
 
         </form>
     </section>
@@ -267,7 +271,12 @@
                     <i class="fa-solid fa-info"></i>
                 </a>
             </div>
-            <div class="criar-cabaz"><i class="fa-solid fa-basket-shopping"></i></div>
+            <!-- <div class="criar-cabaz"><i class="fa-solid fa-basket-shopping"></i></div> -->
+            <div class="criar-cabaz">
+                <a href="/html/produtos.html">
+                    <i class="fa-solid fa-seedling"></i>
+                </a>
+            </div>
             <div class="login"><i class="fa-solid fa-user"></i></div>
         
         </section>
