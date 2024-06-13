@@ -5,9 +5,9 @@ const pickUpAtMercadoBtn = document.querySelector('#praca');
 const deliverSection = document.querySelector('.deliver-sec');
 const pickUpSection = document.querySelector('.pick-up-sec');
 const pickUpHortaSection = document.querySelector('.horta-pick-up-sec');
-const allInputs = document.querySelectorAll('input')
+const allInputs = document.querySelectorAll('input');
  
-// when user click on button 'Entrega', the sections that are not related with delivery dissapear
+// the user needs to choose if he want a delivery or pick up the products
 function disableInputs () {
     allInputs.forEach(el => {
         el.setAttribute('readonly', true)
@@ -22,19 +22,25 @@ function enableInputs () {
     })
 }
 
+// when user click on radio button 'Entrega', the sections that are 
+//not related with delivery dissapear
+
 deliverAtHomeRadioBtn.addEventListener('click', () => {
     pickUpSection.classList.add('hide-section');
     pickUpHortaSection.classList.add('hide-section');
     deliverSection.classList.remove('hide-section');
     enableInputs()
+    addRequiredAttribute()
 });
 
-// when user click on button 'Levantar', the sections that are not related with Pick Up dissapear
+// when user click on radio button 'Levantar', the sections that are not 
+//related with Pick Up dissapear
 pickUpRadioBtn.addEventListener('click', () => {
     pickUpSection.classList.remove('hide-section');
-    pickUpHortaSection.classList.remove('hide-section');
+    pickUpHortaSection.classList.add('hide-section');
     deliverSection.classList.add('hide-section');
     enableInputs()
+    removeRequiredAttribute()
 });
 
 pickUpAtMercadoBtn.addEventListener('click', () => {
@@ -45,8 +51,25 @@ pickUpAtHortaBtn.addEventListener('click', () => {
     pickUpHortaSection.classList.remove('hide-section')
 });
 
-// code to validate data like name, address, email...
+// when the user wants pick up, the input that are required on address section, aren't required 
+function removeRequiredAttribute() {
+    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
 
+    previousRequiredElements.forEach(el => {
+        el.removeAttribute('required')
+    })
+}
+
+// when the user wants a deliver, some input are required on address section
+function addRequiredAttribute() {
+    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
+
+    previousRequiredElements.forEach(el => {
+        el.setAttribute('required')
+    })
+}
+
+// code to validate data like name, address, email...
 const clientName = document.querySelector('#name');
 const errorMessage = document.querySelector('.error-message');
 const submitBtn = document.querySelector('.send-user-data-btn');
@@ -251,6 +274,7 @@ function getCartItemsFromLocalStorage () {
     })
 
     
+    console.log(cartBuy)
 
 }
 
