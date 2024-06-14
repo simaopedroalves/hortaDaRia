@@ -266,22 +266,19 @@ function getCartItemsFromLocalStorage () {
             newItem.type = 'hidden';
             newItem.name = nameBuy;
             newItem.value = quantityBuy;
-
-        console.log(newItem);
     
-        let cartBuy = document.querySelector('.cart-items-selected')
-        cartBuy.append(newItem);
-        cartBuy.name = 'Cesto'
-        console.log(cartBuy);
-        console.log(cartBuy.name);
+        cartForm.append(newItem);
 
-        cartForm.append()
     })
+    console.log(cartForm);
 
 
 }
 
-let cart = JSON.parse(localStorage.getItem('cart'));
-
-console.log(cart);
+// reload page when the user retroced after submit the form
+window.onpageshow = (e) => {
+    if(e.persisted) {
+        window.location.reload()
+    }
+}
 
