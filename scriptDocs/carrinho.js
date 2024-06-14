@@ -176,8 +176,6 @@ function calcFinalPrice () {
     let sum = sumAllPricesArr.reduce(
         (accumulator, currentValue) => accumulator + currentValue, 0
     );
-    console.log(sumAllPricesArr);
-    console.log(sum);
     sum = sum.toFixed(2)
     finalPrice.textContent = sum + '€'
 }
@@ -187,7 +185,6 @@ calcFinalPrice()
 function enableOrDisableButtonOnTop () {
 
     let cart = JSON.parse(localStorage.getItem('cart'));
-    let advanceBtn = document.querySelector('.advance-cart');
     let delCartAndAdvanceBtnDiv = document.querySelector('.buttonsDelAndAdvance');
     
     document.addEventListener('DOMContentLoaded', () => { 
@@ -200,9 +197,6 @@ function enableOrDisableButtonOnTop () {
             delCartAndAdvanceBtnDiv.classList.remove('hide-button')
 
         }
-
-        console.log('carrinho ' + cart.length);
-        console.log(advanceBtn);
     })
 }
 

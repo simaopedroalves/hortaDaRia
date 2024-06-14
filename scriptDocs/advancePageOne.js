@@ -243,7 +243,6 @@ submitBtn.addEventListener('click', () => {
     getCartItemsFromLocalStorage()
     clearCart()
     allInputs.value = ''
-    window.reload()
 })
 
 function clearCart () {
@@ -255,22 +254,34 @@ function clearCart () {
 // SEND ITEMS INSIDE CART TO COMPANY EMAIL 
 
 function getCartItemsFromLocalStorage () {
-    let cartBuy = document.querySelector('.cart-items-selected')
-    let cart = JSON.parse(localStorage.getItem('cart'))
-    
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    let cartForm = document.querySelector('.cart-form');
+
+
     cart.forEach(el => {
         let quantityBuy = el.itQuantity
         let nameBuy = el.itName
+        
+        let newItem = document.createElement('input');
+            newItem.type = 'hidden';
+            newItem.name = nameBuy;
+            newItem.value = quantityBuy;
 
-        let newItem = `
-            <input type="hidden" value="${quantityBuy}">
-            <input type="hidden" value="${nameBuy}"
-        `
-        cartBuy.append(newItem)
+        console.log(newItem);
+    
+        let cartBuy = document.querySelector('.cart-items-selected')
+        cartBuy.append(newItem);
+        cartBuy.name = 'Cesto'
+        console.log(cartBuy);
+        console.log(cartBuy.name);
+
+        cartForm.append()
     })
 
-    
-    console.log(cartBuy)
 
 }
+
+let cart = JSON.parse(localStorage.getItem('cart'));
+
+console.log(cart);
 
