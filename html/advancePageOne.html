@@ -79,12 +79,12 @@
 
             <div class="radio-buttons">
                 <div>
-                    <input id="deliver-box" type="radio" name="deliver" value="Para Entregar em Casa">
                     <label for="deliver-box">Entrega</label>
+                    <input id="deliver-box" type="radio" name="deliver" value="Para Entregar em Casa">
                 </div>
                 <div>
-                    <input id="pick-up-box" type="radio" name="deliver" value="Vai Levantar a Encomenda">
                     <label for="pick-up-box">Levantar</label>
+                    <input id="pick-up-box" type="radio" name="deliver" value="Vai Levantar a Encomenda">
                 </div>
             </div>
 
@@ -162,19 +162,18 @@
 
                     <!-- ========== LEVANTAR ========= -->
             <section class="pick-up-sec border-1">
-                <input type="hidden" name="Local de Levantamento: ">
-                <h5>
+                <h5 name="Local de Levantamento: ">
                     Onde preferes levantar a tua encomenda?
                 </h5>
                 <div>
-                    <input id="praca" type="radio" name="local">
+                    <input id="praca" type="radio" name="local" value="Mercado">
                     <div class="mercado">
                         <label for="praca">Mercado de Famalicão</label>
                         <span>Sábado (7:00 - 13:00)</span>
                     </div>
                 </div>
                 <div>
-                    <input id="horta" type="radio" name="local">
+                    <input id="horta" type="radio" name="local" value="Horta d'Ria">
                     <label for="horta">Horta d'Ria</label>
                 </div>
                 
@@ -204,7 +203,7 @@
                     </select>
                     <div>
                         <label for="other-schedule">Outro horário</label>
-                        <input type="text" name="Horário p/Levantamento">
+                        <input type="text" name="Horário p/Levantamento Opcional">
                     </div>
             </section>
 
@@ -214,8 +213,8 @@
             </section>
 
             <section class="hear-about-us-sec">
-                <label for="hear-about-us" value="Como Chegou até nós">Como chegaste até nós?</label>
-                <input type="hidden" value="CHEGOU ATÉ NÓS ATRAVÉS DE:">
+                <label for="hear-about-us" name="Como Chegou até nós" value="Como Chegou até nós">Como chegaste até nós?</label>
+                <input type="hidden" name="CHEGOU ATÉ NÓS ATRAVÉS DE:" value="CHEGOU ATÉ NÓS ATRAVÉS DE:">
                 <div>
                     <input type="checkbox" id="facebook" name="facebook" value="facebook">
                     <label for="facebook">Facebook</label>
@@ -245,7 +244,7 @@
 
             <span class="error-message">* Preenchimento Obrigatório</span>
 
-            <div class="cart-items-selected hide-section" name="Cesto:" value="CESTO:"></div>
+            <div class="cart-items-selected" name="Cesto:" value="CESTO:"></div>
 
             <!-- BUTTON SUBMIT -->
             <button type="submit" class="send-user-data-btn" disabled>

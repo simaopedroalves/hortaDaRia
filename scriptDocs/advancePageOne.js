@@ -240,15 +240,12 @@ clientAddressLocal.addEventListener('input', () => {
 
 // SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
 
-function updateCartAndSubmit () { 
     submitBtn.addEventListener('click', () => {
-        allInputs.value = ''
         getCartItemsFromLocalStorage()
         clearCart()
+        allInputs.value = ''
     })
-}
 
-updateCartAndSubmit()
 
 function clearCart () {
     let cart = JSON.parse(localStorage.getItem('cart'))

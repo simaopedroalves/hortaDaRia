@@ -224,6 +224,7 @@
 
 .radio-buttons div {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     gap: 1rem;
     font-weight: bold;
