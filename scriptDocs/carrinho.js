@@ -202,4 +202,9 @@ function enableOrDisableButtonOnTop () {
 
 enableOrDisableButtonOnTop()
 // ========================  ADVANCE PAGE Nº 1  ===========================================
-
+// reload page when the user retroced after submit the form
+window.onpageshow = (e) => {
+    if(e.persisted) {
+        window.location.reload()
+    }
+}
