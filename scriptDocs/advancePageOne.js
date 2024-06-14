@@ -240,7 +240,7 @@ clientAddressLocal.addEventListener('input', () => {
 
 // SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
 submitBtn.addEventListener('click', () => {
-    getCartItemsFromLocalStorage()
+    // getCartItemsFromLocalStorage()
     clearCart()
     allInputs.value = ''
 })
@@ -253,6 +253,10 @@ function clearCart () {
 
 // SEND ITEMS INSIDE CART TO COMPANY EMAIL 
 
+document.addEventListener('DOMContentLoaded', () => {
+    getCartItemsFromLocalStorage()
+})
+
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
     let cartForm = document.querySelector('.cart-form');
@@ -263,15 +267,16 @@ function getCartItemsFromLocalStorage () {
         let nameBuy = el.itName
         
         let newItem = document.createElement('input');
-            newItem.type = 'text';
+            newItem.type = 'hidden';
             newItem.name = nameBuy;
             newItem.value = quantityBuy;
     
         cartBuy.append(newItem);
 
     })
+    console.log(cartBuy);
     console.log(cartForm);
-
+    console.log(cart);
 
 }
 
