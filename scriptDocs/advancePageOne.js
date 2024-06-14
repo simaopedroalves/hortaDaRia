@@ -263,7 +263,7 @@ function getCartItemsFromLocalStorage () {
         let nameBuy = el.itName
         
         let newItem = document.createElement('input');
-            newItem.type = 'hidden';
+            newItem.type = 'text';
             newItem.name = nameBuy;
             newItem.value = quantityBuy;
     
