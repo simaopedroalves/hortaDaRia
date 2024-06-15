@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 const cartForm = document.forms['hortaDaRiaEncomenda'];
-// const cartBuy = document.querySelector('.cart-items-selected');
+const cartBuy = document.querySelector('.cart-items-selected');
 
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
@@ -282,8 +282,8 @@ function getCartItemsFromLocalStorage () {
             newItemQuantity.value = `${quantityBuy}`;
 
         console.log(newItemName.value);
-        cartForm.appendChild(newItemName);
-        cartForm.appendChild(newItemQuantity);
+        cartBuy.appendChild(newItemName);
+        cartBuy.appendChild(newItemQuantity);
 
     })
   
