@@ -280,8 +280,8 @@ function getCartItemsFromLocalStorage () {
         // cartBuy.append(newItem);
         cartForm.appendChild(newItemQuantity);
         cartForm.appendChild(newItemName);
-        cartBuy.appendChild(newItemName);
-        cartBuy.appendChild(newItemQuantity);
+        // cartBuy.appendChild(newItemName);
+        // cartBuy.appendChild(newItemQuantity);
 
     })
     console.log(cartBuy);
