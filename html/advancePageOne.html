@@ -72,6 +72,8 @@
 
         <form class="cart-form" name="hortaDaRiaEncomenda" action="/html/success.html" method="POST" data-netlify="true"> 
         <input type="hidden" name="subject" value="Nova Encomenda" id="newMessage" data-remove-prefix>
+        <input type="hidden" name="hortaDaRiaEncomenda" value="hortaDaRiaEncomenda">
+        
 
             <h4>
                 Preferes levantar a tua encomenda ou queres te entreguemos em casa ou no teu local de trabalho?
@@ -241,7 +243,9 @@
                     <input type="text" id="outro" name="comoChegueiAteVos">
                 </div>
             </section>
-            <section class="cart-items-selected"></section>
+            <div class="cart-items-selected" data-netlify-recaptcha="true">
+                <input type="hidden" name="hortaDaRiaEncomenda" value="hortaDaRiaEncomenda">
+            </div>
 
             <span class="error-message">* Preenchimento Obrigatório</span>
 
