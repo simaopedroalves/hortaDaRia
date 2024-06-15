@@ -257,8 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
     getCartItemsFromLocalStorage()
 })
 
-const cartForm = document.forms['hortaDaRiaEncomenda'];
-// const cartBuy = document.querySelector('.cart-items-selected');
+// const cartForm = document.forms['hortaDaRiaEncomenda'];
+const cartBuy = document.querySelector('.cart-items-selected');
 
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
@@ -266,10 +266,10 @@ function getCartItemsFromLocalStorage () {
    //what 
 
     cart.forEach(el => {
+
         const quantityBuy = el.itQuantity
         const nameBuy = el.itName
 
-        console.log(el);
         
         const newItemName = document.createElement('input');
             newItemName.type = 'hidden';
@@ -281,14 +281,13 @@ function getCartItemsFromLocalStorage () {
             newItemQuantity.name = 'itemQuantidade';
             newItemQuantity.value = quantityBuy;
 
-        cartForm.appendChild(newItemName);
-        cartForm.appendChild(newItemQuantity);
-   
-        console.log(cartForm);
-        console.log(cart);
+        cartBuy.appendChild(newItemName);
+        cartBuy.appendChild(newItemQuantity);
 
     })
   
+    console.log(cartBuy);
+    console.log(cart);
 
 }
 
