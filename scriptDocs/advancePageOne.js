@@ -280,10 +280,10 @@ function getCartItemsFromLocalStorage () {
             newItemQuantity.value = quantityBuy;
 
         // cartBuy.append(newItem);
-        cartForm.appendChild(newItemQuantity);
-        cartForm.appendChild(newItemName);
-        // cartBuy.appendChild(newItemName);
-        // cartBuy.appendChild(newItemQuantity);
+        // cartForm.appendChild(newItemQuantity);
+        // cartForm.appendChild(newItemName);
+        cartBuy.appendChild(newItemName);
+        cartBuy.appendChild(newItemQuantity);
         console.log(cartBuy);
         console.log(cartForm);
         console.log(cart);
