@@ -257,8 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
     getCartItemsFromLocalStorage()
 })
 
-// const cartForm = document.forms['hortaDaRiaEncomenda'];
-const cartBuy = document.querySelector('.cart-items-selected');
+let cartForm = document.forms['hortaDaRiaEncomenda'];
+let cartBuy = document.querySelector('.cart-items-selected');
 
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
@@ -287,6 +287,8 @@ function getCartItemsFromLocalStorage () {
     })
   
     console.log(cartBuy);
+    console.log(cartForm);
+
     console.log(cart);
 
 }
