@@ -261,7 +261,7 @@ function getCartItemsFromLocalStorage () {
     const cart = JSON.parse(localStorage.getItem('cart'));
     const cartForm = document.querySelector('.cart-form');
     let cartBuy = document.querySelector('.cart-items-selected');
-   
+   //what 
 
     cart.forEach(el => {
         let quantityBuy = el.itQuantity
