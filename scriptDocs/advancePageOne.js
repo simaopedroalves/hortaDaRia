@@ -273,17 +273,17 @@ function getCartItemsFromLocalStorage () {
         console.log(el);
         const newItemName = document.createElement('input');
             newItemName.type = 'hidden';
-            newItemName.name = 'itemNome';
-            newItemName.value = `${nameBuy}`;
+            newItemName.name = 'itemEscolhido';
+            newItemName.value = `${nameBuy}, ${quantityBuy}`;
         
-        const newItemQuantity = document.createElement('input')
-            newItemQuantity.type = 'hidden';
-            newItemQuantity.name = 'itemQuantidade';
-            newItemQuantity.value = `${quantityBuy}`;
+        // const newItemQuantity = document.createElement('input')
+        //     newItemQuantity.type = 'hidden';
+        //     newItemQuantity.name = 'itemQuantidade';
+        //     newItemQuantity.value = `${quantityBuy}`;
 
         console.log(newItemName.value);
         cartBuy.appendChild(newItemName);
-        cartBuy.appendChild(newItemQuantity);
+        // cartBuy.appendChild(newItemQuantity);
 
     })
   
