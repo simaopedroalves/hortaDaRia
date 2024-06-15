@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function getCartItemsFromLocalStorage () {
     const cart = JSON.parse(localStorage.getItem('cart'));
-    const cartForm = document.querySelector('.cart-form');
+    let cartForm = document.querySelector('.cart-form');
     let cartBuy = document.querySelector('.cart-items-selected');
    //what 
 
