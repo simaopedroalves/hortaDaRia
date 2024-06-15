@@ -283,7 +283,7 @@ function getCartItemsFromLocalStorage () {
 
         console.log(newItemName.value);
         cartBuy.appendChild(newItemName);
-        // cartBuy.appendChild(newItemQuantity);
+        cartForm.appendChild(newItemName);
 
     })
   
