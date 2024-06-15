@@ -258,20 +258,30 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function getCartItemsFromLocalStorage () {
-    let cart = JSON.parse(localStorage.getItem('cart'));
-    let cartForm = document.querySelector('.cart-form');
-    let cartBuy = document.querySelector('.cart-items-selected')
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    const cartForm = document.querySelector('.cart-form');
+    let cartBuy = document.querySelector('.cart-items-selected');
+   
 
     cart.forEach(el => {
         let quantityBuy = el.itQuantity
         let nameBuy = el.itName
+        console.log(el);
+        let newItemName = document.createElement('input');
+            newItemName.type = 'hidden';
+            newItemName.name = 'Nome';
+            newItemName.value = nameBuy;
         
-        let newItem = document.createElement('input');
-            newItem.type = 'hidden';
-            newItem.name = nameBuy;
-            newItem.value = quantityBuy;
-    
-        cartBuy.append(newItem);
+        let newItemQuantity = document.createElement('input')
+            newItemQuantity.type = 'hidden';
+            newItemQuantity.name = 'Quantidade';
+            newItemQuantity.value = quantityBuy;
+
+        // cartBuy.append(newItem);
+        cartForm.appendChild(newItemQuantity);
+        cartForm.appendChild(newItemName);
+        cartBuy.appendChild(newItemName);
+        cartBuy.appendChild(newItemQuantity);
 
     })
     console.log(cartBuy);
