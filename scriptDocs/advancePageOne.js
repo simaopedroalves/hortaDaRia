@@ -279,7 +279,7 @@ const totalToPayInput = document.querySelector('#totalPriceToPayId');
 const finalPrice = JSON.parse(localStorage.getItem('finalPrice'));
 
 function getTotalToPay() {
-    totalToPayInput.value = finalPrice;
+    totalToPayInput.value = finalPrice + '€';
 }
 
 // reload page when the user retroced after submit the form
