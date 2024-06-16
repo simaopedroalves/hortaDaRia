@@ -265,19 +265,12 @@ const cartContent = document.querySelector('#cartContent')
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
    
-    cart.forEach(el => {
-       
-        let cesto = {
-            quantidade: el.itQuantity,
-            produto: el.itName
-        }
-
-        let arr = [];
-        arr.push(el.itQuantity, el.itName);
-        console.log(arr);
-        // console.log(cesto);
-        let clientCart = JSON.stringify(arr);
-        console.log(clientCart);
+    cart.forEach((el, i) => {
+        let cesto = [];
+        cesto.push(el.itQuantity, el.itName);
+        console.log(cesto);
+        cesto = cesto.join(' ' + 'de ');
+        let clientCart = JSON.stringify(cesto);
         cartContent.value += clientCart
         console.log(cartContent.value);
     })
