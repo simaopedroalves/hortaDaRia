@@ -259,32 +259,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const cartForm = document.forms['hortaDaRiaEncomenda'];
 const cartBuy = document.querySelector('.cart-items-selected');
+const cartContent = document.querySelector('#cartContent')
+
 
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
    
-   //what 
+    let cartString = JSON.stringify(cart);
+    console.log(cartString);
+    cartContent.value = cartString
 
-    cart.forEach(el => {
+    console.log(cartContent)
 
-        const quantityBuy = el.itQuantity
-        const nameBuy = el.itName
+    // cart.forEach(el => {
 
-        console.log(el);
-        const newItemName = document.createElement('input');
-            newItemName.type = 'hidden';
-            newItemName.name = 'itemEscolhido';
-            newItemName.value = `${quantityBuy} ,${nameBuy}`;
+    //     const quantityBuy = el.itQuantity
+    //     const nameBuy = el.itName
+
+    //     console.log(el);
+    //     // const newItemName = document.createElement('input');
+    //     //     newItemName.type = 'hidden';
+    //     //     newItemName.name = 'itemEscolhido';
+    //     //     newItemName.value = `${quantityBuy} ,${nameBuy}`;
             
-        // const newItemQuantity = document.createElement('input')
-        //     newItemQuantity.type = 'hidden';
-        //     newItemQuantity.name = 'itemQuantidade';
-        //     newItemQuantity.value = `${quantityBuy}`;
+    //     // const newItemQuantity = document.createElement('input')
+    //     //     newItemQuantity.type = 'hidden';
+    //     //     newItemQuantity.name = 'itemQuantidade';
+    //     //     newItemQuantity.value = `${quantityBuy}`;
 
-        cartBuy.append(newItemName);
-    console.log(cartBuy);
 
-    })
+
+    // })
 
 
     // console.log(cartBuy);
