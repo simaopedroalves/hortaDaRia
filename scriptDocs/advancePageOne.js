@@ -255,6 +255,7 @@ function clearCart () {
 
 document.addEventListener('DOMContentLoaded', () => {
     getCartItemsFromLocalStorage()
+    getTotalToPay()
 })
 
 const cartForm = document.forms['hortaDaRiaEncomenda'];
@@ -268,12 +269,17 @@ function getCartItemsFromLocalStorage () {
     cart.forEach((el, i) => {
         let cesto = [];
         cesto.push(el.itQuantity, el.itName);
-        console.log(cesto);
         cesto = cesto.join(' ' + 'de ');
         let clientCart = JSON.stringify(cesto);
         cartContent.value += clientCart
-        console.log(cartContent.value);
     })
+}
+
+const totalToPayInput = document.querySelector('#totalPriceToPayId');
+const finalPrice = JSON.parse(localStorage.getItem('finalPrice'));
+
+function getTotalToPay() {
+    totalToPayInput.value = finalPrice;
 }
 
 // reload page when the user retroced after submit the form

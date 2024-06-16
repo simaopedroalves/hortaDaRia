@@ -178,6 +178,8 @@ function calcFinalPrice () {
     );
     sum = sum.toFixed(2)
     finalPrice.textContent = sum + '€'
+
+    localStorage.setItem('finalPrice', JSON.stringify(sum))
 }
 
 calcFinalPrice()
