@@ -265,38 +265,16 @@ const cartContent = document.querySelector('#cartContent')
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
    
-    let cartString = JSON.stringify(cart);
-    console.log(cartString);
-    cartContent.value = cartString
+    cart.forEach(el => {
+       
+        let cesto = {
+            quantidade: el.itQuantity,
+            produto: el.itName
+        }
 
-    console.log(cartContent)
-
-    // cart.forEach(el => {
-
-    //     const quantityBuy = el.itQuantity
-    //     const nameBuy = el.itName
-
-    //     console.log(el);
-    //     // const newItemName = document.createElement('input');
-    //     //     newItemName.type = 'hidden';
-    //     //     newItemName.name = 'itemEscolhido';
-    //     //     newItemName.value = `${quantityBuy} ,${nameBuy}`;
-            
-    //     // const newItemQuantity = document.createElement('input')
-    //     //     newItemQuantity.type = 'hidden';
-    //     //     newItemQuantity.name = 'itemQuantidade';
-    //     //     newItemQuantity.value = `${quantityBuy}`;
-
-
-
-    // })
-
-
-    // console.log(cartBuy);
-    console.log(cartForm);
-
-    console.log(cart);
-
+        let clientCart = JSON.stringify(cesto);
+        cartContent.value = clientCart
+    })
 }
 
 // reload page when the user retroced after submit the form
