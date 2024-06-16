@@ -272,8 +272,14 @@ function getCartItemsFromLocalStorage () {
             produto: el.itName
         }
 
-        let clientCart = JSON.stringify(cesto);
-        cartContent.value = clientCart
+        let arr = [];
+        arr.push(el.itQuantity, el.itName);
+        console.log(arr);
+        // console.log(cesto);
+        let clientCart = JSON.stringify(arr);
+        console.log(clientCart);
+        cartContent.value += clientCart
+        console.log(cartContent.value);
     })
 }
 
