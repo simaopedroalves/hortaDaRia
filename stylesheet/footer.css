@@ -3,7 +3,6 @@
     text-align: center;
     min-height: fit-content;
     outline: 0;
-    /* border: 0; */
     margin-bottom: 6vh
 }
 
@@ -18,15 +17,16 @@
     font-weight: 800;
     font-size: small;
     background-color: var(--green);
-
 }
 
 .webDevSp a p .designBy {
     color: var(--white);
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 700px) {
 
-    
+    .webDevSp {
+        grid-column: span 3;
+    }
 
 }

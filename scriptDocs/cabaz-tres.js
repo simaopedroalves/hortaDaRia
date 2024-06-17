@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         let cabazNumOne = object.cabazes[0].open;
         let cabazNumTwo = object.cabazes[1].open;
         let createCabaz = object.cabazes[3].open;
-        let imageCabazOne = object.cabazes[0].image;
-        let imageCabazTwo = object.cabazes[1].image;
-        let imageCabazThree = object.cabazes[2].image;
-        let imageCreateCabaz = object.cabazes[3].image;
+        // let imageCabazOne = object.cabazes[0].image;
+        // let imageCabazTwo = object.cabazes[1].image;
+        // let imageCabazThree = object.cabazes[2].image;
+        // let imageCreateCabaz = object.cabazes[3].image;
 
 
 
@@ -40,38 +40,35 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         cabazContent = cabazContent.toString().replaceAll(',', '<br>')
         secCabazTres.innerHTML += `
-        <h2 class="cabaz-name-title">${cabazName}</h2>
-        <span class="cabazPrice">${cabazPrice} €</span>
+            <div class="cabaz-box">
+                <h2 class="cabaz-name-title">${cabazName}</h2>
+                <span class="cabazPrice">${cabazPrice} €</span>
 
-
-        <div class="cabaz-content">
-            <div class="cabaz-list">
-                ${cabazContent}
+                <div class="cabaz-content">
+                    <div class="cabaz-list">
+                        ${cabazContent}
+                    </div>
+                    <button type="button" class="add-to-cart-button">Adicionar ao Carrinho</button>
+                </div>
             </div>
-            <button type="button" class="add-to-cart-button">Adicionar ao Carrinho</button>
-        </div>
-
-            <h4 class="sugestionsTitle">Outras Sugestões:</h4>
 
             <div class="sugestionsContent">
+                <h4 class="sugestionsTitle">Outras Sugestões:</h4>
 
                 <div class="sugestionOne sugestion">
                     <a href="${cabazNumOne}">
-                        <img src="${imageCabazOne}" alt="">
                         <span>Cabaz pequeno</span>
                     </a>
                 </div>
 
                 <div class="sugestionTwo sugestion">
                     <a href="${cabazNumTwo}">
-                        <img src="${imageCabazTwo}" alt="">
                         <span>Cabaz médio</span>
                     </a>
                 </div>
 
                 <div class="sugestionThree sugestion">
                     <a href="${createCabaz}">
-                        <img src="${imageCreateCabaz}" alt="">
                         <span>Criar Cabaz</span>
                     </a>
                 </div>

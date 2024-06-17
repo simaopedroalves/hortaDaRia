@@ -5,8 +5,11 @@
 .cabaz-um, .cabaz-dois, .cabaz-tres {
     margin: 7dvh 2vw;
     display: grid;
-    /* border: solid red 1px; */
     max-width: 100%;
+}
+
+.cabaz-box {
+    display: grid;    
 }
 
 .cabaz-name-title {
@@ -68,7 +71,6 @@
 
 .cabaz-item {
     list-style: none;
-
 }
 
 .cabaz-content img, .sugestionsContent div a img {
@@ -121,7 +123,6 @@
 }
 
 .sugestion a {
-    color: var(--);
     text-decoration: none;
     font-weight: 800;
 }
@@ -150,27 +151,11 @@
     margin: 3vh 1.5rem;
 }
 
-/* .cabaz-1, .cabaz-2, .cabaz-3, .cabaz-4 {
-    position: relative;
-     border: solid blue 4px; 
-
-
-.cabazOne, .cabazTwo, .cabazThree, .cabazFour {
-    position: absolute;
-    top: 25%;
-    bottom: 25%;
-    left: 10%;
-    right: 10%;
-    /* border: solid green 4px; 
-} */
-
 .cabazContent {
     font-size: 1rem;
     border: solid var(--orange) 2px;
     border-radius: 1rem 0;
     background-color: var(--green-one);
-    /* min-height: 3rem; */
-    /* color: var(--black); */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -185,7 +170,6 @@
     background-color: transparent;
     color: var(--white);
     padding: 0.3rem;
-    /* border-radius: 0.5rem; */
     min-width: max-content;
     text-transform: uppercase;
 }
@@ -205,17 +189,11 @@
     min-height: 100%;
     max-width: 100%;
     border-radius: 1rem;
-    /* box-shadow: 0 0.3rem 0.7rem 0; */
 }
 
 .cabaz-menu .photo-div-cabaz a {
     text-decoration: none;
 }
-
-/* .photo-div-cabaz img:hover {
-    transform: scale(1.1);
-} */
-
 
 .title-div {
     font-weight: bold;
@@ -223,8 +201,6 @@
     max-width: 100%;
     padding: 3vh;
     color: var(--orange);
-    /* border-radius: 0 35rem 0 35rem; */
-    /* background-color: var(--yellow */
     text-align: center;
 } 
 
@@ -234,36 +210,32 @@
 }
 
 
-@media screen and (max-width: 350px) {
-
-
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) {  
 
     .cabaz-um, .cabaz-dois, .cabaz-tres {
-        /* max-height: 95vh; */
+        margin: 15vh auto 5vh auto;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 80vh;
     }
 
-    .cabaz-content img, .sugestionsContent div img {
-        max-height: 50vh;
+    .cabaz-name-title {
+        margin: 0 auto;
     }
 
     .cabaz-content {
         border: none;
         font-size: 1rem;
-        /* border: solid red 1px; */
+        align-content: flex-start;
         justify-content: center;
-        margin: 2vh auto;
+        gap: 1rem;
+        padding: 0;
+    }
     
+    .add-to-cart-button {
+        padding: 1rem;
     }
 
-    .cabaz-content img {
-        /* border: solid red 1px; */
-
-    }
-
-    .add-to-cart:hover {
+    .add-to-cart-button:hover {
         background-color: var(--black);
         color: var(--orange);
     }
@@ -276,38 +248,38 @@
         line-height: 2.5rem;
         background-color: var(--green);
         color: var(--white);
-        padding: 1rem;
+        padding: 3rem;
         align-items: center;
     }
 
     /* SUGESTIONS  */
 
-    .sugestions {
-        min-height: 85svh;
-        gap: 0
+    .sugestionsContent {
+        margin: 0;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 1vw;
     }
 
     .sugestionsTitle {
+        padding: 0;
+        margin: 0;
         font-size: 1.5rem;
-        color: var(--green);
+        color: var(--orange);
+        font-weight: bold;
     }
 
     .sugestion {
+        background-color: var(--green-one);
         border: none;
-        /* justify-content: center; */
-        /* margin: 0 auto; */
-        position: relative;
+        padding: 1rem;
+        align-content: center;
     }
 
     .sugestion span {
-        color: var(--orange);
-        /* border: solid red 1px; */
         min-width: 100%;
-        margin: 2rem auto;
         font-size: 1.5rem;
-        position: absolute;
-        bottom: -2rem;
-        left: 0;
     }
 
     .sugestion span:hover {
@@ -330,28 +302,8 @@
         border-radius: 0;
     }
 
-    .cabazes {
-        /* margin-bottom: 25vh; */
-        /* margin: 6vh auto; */
-    }
-
-    /* .cabaz-menu {
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        gap: 5vw;
-        margin: 2vh auto;
-    } */
-
-    /* .cabaz-1 a, .cabaz-2 a, .cabaz-3 a, .cabaz-4 a {
-       text-decoration: none;
-    }
-*/
     .cabazContent {
         min-height: 40vh;
-    }
-
-    .cabaz-content:hover {
-
     }
 
     .cabazContent h4 {
@@ -360,14 +312,6 @@
         border-radius: 0;
         font-size: 1.5rem;
     }
-
-    /* .photo-div-cabaz {
-        display: flex;
-    } */
-
-    /* .photo-div-cabaz img{
-        max-height: 40vh;
-    } */
 }
 
 @media screen and (min-width: 860px) {
@@ -376,7 +320,12 @@
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
         gap: 5vw;
-        margin: 2vh auto;
+        align-items: center;
     }
-    
+    .cabazContent h4 {
+        font-size: 1.2rem;
+        
+    }
+
+
 }

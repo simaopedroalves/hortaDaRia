@@ -60,14 +60,15 @@
 @media screen and (min-width: 700px) {
     .section-title-testimonial {
         grid-column: span 2;
-        margin-bottom: 10dvh;
+        text-align: center;
+        margin-bottom: 2dvh;
     }
     
     .testimonials {
         grid-template-columns: repeat(2, 1fr); 
         gap: 5vh;
         justify-content: center;
-        margin: 30dvh 3vw 20vh 3vw;
+        margin: 15dvh 3vw 20vh 3vw;
     }
 
     .testimonials > div:nth-child(even) {
@@ -75,11 +76,12 @@
     }
 
     .client-testimonial {
-        min-height: 15rem;
-        max-height: 15rem;
+        max-height: min-content;
     }
 
-
+    .testimonials .testimonial-text {
+        font-size: 1rem;
+    }
 
 }
 
