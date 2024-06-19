@@ -1,3 +1,9 @@
+body {
+    background-image: url('/images/alface-de-fundo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 .all-products {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
@@ -6,10 +12,16 @@
     /* margin: 5vh 2vw 10vh 2vw; */
     max-width: 100vw;
     margin-bottom: 10vh;
+   
 }
 
 .all-products .title-div {
     /* grid-column: span 2; */
+    /* background-color: black; */
+    color: var(--white);
+    background-image: linear-gradient(90deg, var(--green), var(--black));
+    border: none;
+    outline: none;
 }
 
 .all-products div:not(.title-div) {
@@ -42,17 +54,7 @@
     margin: auto;
 }
 
-.section-title {
-    grid-column: span 2;
-    margin: 0 auto 1rem auto;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background-color: var(--green);
-    color: var(--white);
-    padding: 0.5rem;
-    letter-spacing: 0.2rem;
-    border-radius: 1rem 0;
-}
+
 
 @media screen and (max-width: 350px) {
 

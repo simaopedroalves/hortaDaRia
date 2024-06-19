@@ -32,6 +32,7 @@ body {
 }
 
 header {
+    background-image: linear-gradient(90deg, var(--green), var(--black));
     position: fixed;
     top: 0;
     left: 0;
@@ -46,7 +47,8 @@ header {
 }
 /* NAVBAR */
 .navbar {
-    background-color: transparent;
+    /* background-image: linear-gradient(90deg, var(--green), var(--black)); */
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,7 +164,8 @@ header {
     min-width: 100vw;
     right: -100dvw;
     transition: 1000ms;
-    background-color: var(--white); 
+    /* background-color: var(--white);  */
+
 }
 
 .show {
@@ -171,13 +174,16 @@ header {
 
 header .menu-list li {
     list-style: none;
-    background-color: var(--white);
-    color: var(--green);
+    /* background-color: var(--white); */
+    color: var(--white);
     min-width: 70svw;
     text-align: center;
     padding: 0.3rem;
     font-weight: 900; 
     cursor: pointer;
+    background-image: linear-gradient(90deg, var(--green), var(--black));
+    outline: none;
+    border: none;
     
 }
 
@@ -331,9 +337,21 @@ body::-webkit-scrollbar:vertical {
     height: 1px;
 }
 
+.section-title {
+    grid-column: span 2;
+    margin: 0 auto 1rem auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 1rem 0;
+}
+
 
 @media screen and (min-width: 700px) { 
-
+   
 
     header {
         display: flex;
@@ -374,12 +392,16 @@ body::-webkit-scrollbar:vertical {
     header .menu-list a li {
         list-style: none;
         color: var(--white);
-        background-color: transparent;
         text-align: left;
         padding: 0.3rem;
         font-weight: 900; 
         cursor: pointer;
         min-width: 0svw;
+    }
+
+    header .menu-list li {
+        background-image: none;
+
     }
 
     .welcomeSection {
@@ -448,6 +470,20 @@ body::-webkit-scrollbar:vertical {
     .welcomeSection div .hortaDaRia {
         color: var(--white);
         background-color: transparent;
+    }
+
+    body {
+        position: relative;
+    }
+
+    .alert {
+        max-width: 20vw;
+        position: fixed;
+        top: 15vh;
+        right: 5vw;
+        left: 70vw;
+        font-size: 1rem;
+
     }
 
 }

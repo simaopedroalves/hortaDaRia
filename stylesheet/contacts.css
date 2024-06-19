@@ -147,6 +147,8 @@
     }
 
     .footer-end {
+        display: flex;
+        justify-content: space-around;
         grid-column: span 3;
     }
 
