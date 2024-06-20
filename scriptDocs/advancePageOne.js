@@ -87,6 +87,7 @@ clientName.addEventListener('input', () => {
         submitBtn.disabled = false
         errorMessage.textContent = validMessage 
         errorMessage.style.color = "var(--orange)" 
+        localStorage.setItem('clientName', JSON.stringify(string))
         return
     }
     else {
@@ -95,6 +96,10 @@ clientName.addEventListener('input', () => {
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
     }
+    console.log(string);
+
+
+
 })
 
 // CHECK IF EMAIL IS VALID
@@ -235,29 +240,34 @@ clientAddressLocal.addEventListener('input', () => {
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
     }
+    console.log(clientNameLocalStorage);
+    console.log(clientNameToDisplay);
 
 })
 
 // SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
 submitBtn.addEventListener('click', () => {
-    // getCartItemsFromLocalStorage()
     clearCart()
     allInputs.value = ''
+
 })
 
 function clearCart () {
     let cart = JSON.parse(localStorage.getItem('cart'))
-        cart = []
+        cart = [];
         localStorage.setItem('cart', JSON.stringify(cart));
 }
+
+
 
 // SEND ITEMS INSIDE CART TO COMPANY EMAIL 
 
 document.addEventListener('DOMContentLoaded', () => {
     getCartItemsFromLocalStorage()
     getTotalToPay()
+  
 })
-
+console.log("hi");
 const cartForm = document.forms['hortaDaRiaEncomenda'];
 const cartBuy = document.querySelector('.cart-items-selected');
 const cartContent = document.querySelector('#cartContent')
@@ -266,18 +276,18 @@ const cartContent = document.querySelector('#cartContent')
 function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
    
-    cart.forEach((el, i) => {
+    cart.forEach(el => {
         let cesto = [];
         cesto.push(el.itQuantity, el.itName);
         cesto = cesto.join(' ' + 'de ');
         let clientCart = JSON.stringify(cesto);
         cartContent.value += clientCart
     })
+
 }
 
 const totalToPayInput = document.querySelector('#totalPriceToPayId');
 const finalPrice = JSON.parse(localStorage.getItem('finalPrice'));
-
 function getTotalToPay() {
     totalToPayInput.value = finalPrice + '€';
 }

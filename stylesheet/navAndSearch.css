@@ -14,9 +14,7 @@
     --white: rgb(245, 245, 245, 1);
     --white-two: rgb(245, 245, 245, 0.6);
     --black: rgba(0,0,0,1);
-   
-
-    --gray: rgba(0,0,0,0.5)
+    --gray: rgba(0,0,0,0.5);
 }
 
 .dark-theme {

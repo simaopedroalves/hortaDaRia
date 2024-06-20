@@ -5,10 +5,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 5vh;
 }
 
 .thankYou div:first-child {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--green);
     line-height: 10vh;
@@ -48,4 +49,3 @@
     animation-duration: 3s;
     animation-delay: 0.5s;
 }
-
