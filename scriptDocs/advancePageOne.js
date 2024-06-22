@@ -65,7 +65,7 @@ function addRequiredAttribute() {
     let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
 
     previousRequiredElements.forEach(el => {
-        el.setAttribute('required')
+        el.setAttribute('required', '')
     })
 }
 
@@ -96,7 +96,6 @@ clientName.addEventListener('input', () => {
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
     }
-    console.log(string);
 
 
 
@@ -240,9 +239,6 @@ clientAddressLocal.addEventListener('input', () => {
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
     }
-    console.log(clientNameLocalStorage);
-    console.log(clientNameToDisplay);
-
 })
 
 // SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
@@ -267,7 +263,6 @@ document.addEventListener('DOMContentLoaded', () => {
     getTotalToPay()
   
 })
-console.log("hi");
 const cartForm = document.forms['hortaDaRiaEncomenda'];
 const cartBuy = document.querySelector('.cart-items-selected');
 const cartContent = document.querySelector('#cartContent')
@@ -299,3 +294,22 @@ window.onpageshow = (e) => {
     }
 }
 
+// try to remove name of inputs that no have value
+
+console.log(clientName.name);
+
+function deleteInputNames () {
+    clientPhoneNumber.addEventListener('change' , () => {
+        if (clientPhoneNumber.value !== '') {
+            clientPhoneNumber.name = clientPhoneNumber.name
+        }
+        else {
+            clientPhoneNumber.name = '';
+        }
+    
+        console.log(clientPhoneNumber.name + ' ' + clientPhoneNumber.value);
+    })
+    
+}
+
+deleteInputNames ()

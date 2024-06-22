@@ -249,11 +249,13 @@
     background-color: var(--orange);
     color: var(--black);
     padding: 0.7rem 0.7rem 0.7rem 0;
+    cursor: pointer;
 }
 
 .radio-buttons div label {
     font-weight: bold;
     font-size: 0.8rem;
+    cursor: pointer;
 }
 
 .deliver-sec, 
@@ -281,9 +283,17 @@
     justify-content: center;
 }
 
+
 #cp,
 #cP {
     max-width: calc(100vw/5);
+}
+
+/* REMOVE ARROWS UP AND DOWN */
+#cp::-webkit-inner-spin-button,
+#cP::-webkit-inner-spin-button
+ {
+    appearance: none;
 }
 
 /* HORARIO ENTREGA */
@@ -310,6 +320,10 @@
 .pick-up-sec div {
     display: flex;
     gap: 1rem;
+}
+
+.pick-up-sec label{
+    cursor: pointer;
 }
 
 .pick-up-sec .mercado {
@@ -407,5 +421,28 @@ input[type="date"] {
         grid-column: span 3;
         margin-top: 5vh;
     }
+    
+    .client-data-sec form h4{
+        margin: 2rem auto;
+        font-size: 1rem;
+    }
 
+    
+    .deliver-sec .cp .cp-numbers input {
+        text-align: center;
+        max-width: 3rem;
+    }
+
+    #cp,
+    #cP {
+        max-width: 3rem;
+        text-align: center;
+    }
+
+    .pick-up-sec span {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+   
 }
