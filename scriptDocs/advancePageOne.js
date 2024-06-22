@@ -303,7 +303,7 @@ function deleteInputNames () {
         if (clientPhoneNumber.value !== '') {
             clientPhoneNumber.name = clientPhoneNumber.name
         }
-        if (clientPhoneNumber == '') {
+        if (clientPhoneNumber.value == '') {
             clientPhoneNumber.name = '';
         }
     
