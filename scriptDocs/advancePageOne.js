@@ -293,23 +293,3 @@ window.onpageshow = (e) => {
         window.location.reload()
     }
 }
-
-// try to remove name of inputs that no have value
-
-console.log(clientName.name);
-
-function deleteInputNames () {
-    clientPhoneNumber.addEventListener('change' , () => {
-        if (clientPhoneNumber.value !== '') {
-            clientPhoneNumber.name = clientPhoneNumber.name
-        }
-        if (clientPhoneNumber.value == '') {
-            clientPhoneNumber.name = '';
-        }
-    
-        console.log(clientPhoneNumber.name + ' ' + clientPhoneNumber.value);
-    })
-    
-}
-
-deleteInputNames ()

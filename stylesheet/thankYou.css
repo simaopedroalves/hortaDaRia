@@ -49,3 +49,29 @@
     animation-duration: 3s;
     animation-delay: 0.5s;
 }
+
+/* MESSAGE AFTER USER SEND ORDER */
+
+.thankYouOrder {
+    margin: 10vh auto 0 auto;
+    min-height: 75vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 5vh; */
+}
+
+.thankYouMessage {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    color: var(--green);
+    font-weight: bold;
+    gap: 0.7rem;
+    line-height: 1.5rem;
+}
+
+.thankYouMessage p {
+
+}

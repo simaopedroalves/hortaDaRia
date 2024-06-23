@@ -140,6 +140,7 @@ function clearCart () {
 
         localStorage.setItem('cart', JSON.stringify(cart));
         location.reload()
+        shoppingCart.style.backgroundImage = ''
     })
 }
 
