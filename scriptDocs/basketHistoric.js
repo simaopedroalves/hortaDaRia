@@ -17,19 +17,34 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         for (let i = 0; i < images.baskets.length; i++) {
         
-            let date = images.baskets[i].date;
             let image = images.baskets[i].image;
             
             imagesHtmlSection.innerHTML += `
                 <div class="img-div">
-                    <figure>
-                        <img src="${image}" alt="">
-                        <figcaption>${date}</figcaption>
-                    </figure>
+                    <img src="${image}" alt="" class="cb-image">
                 </div>
             `
-        
-    }
+            zoomImage()
+        }
+
+        const imageToZoom = document.querySelector('.zoom-div');
+
+        function zoomImage() {
+            let allImages = document.querySelectorAll('.historic-images img');
+            allImages.forEach(el => {
+               el.addEventListener('click', (event) => {
+                    let image = event.target.src;        
+                    let newDiv = `
+                        <img src="${image}" alt="" class="zoom-image">
+                    `
+                    imageToZoom.classList.toggle('test-show')
+                    imageToZoom.innerHTML = newDiv
+                    imagesHtmlSection.classList.toggle('zoom-image-section')
+                })
+            });
+        }
+      
 
 })
+
 
