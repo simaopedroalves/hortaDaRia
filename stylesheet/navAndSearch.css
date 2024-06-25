@@ -335,17 +335,7 @@ body::-webkit-scrollbar:vertical {
     height: 1px;
 }
 
-.section-title {
-    grid-column: span 2;
-    margin: 0 auto 1rem auto;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background-color: var(--green);
-    color: var(--white);
-    padding: 0.5rem;
-    letter-spacing: 0.2rem;
-    border-radius: 1rem 0;
-}
+
 
 
 @media screen and (min-width: 700px) { 

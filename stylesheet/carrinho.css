@@ -383,6 +383,12 @@ input[type="date"] {
     padding: 0.3rem;
 }
 
+select {
+    background: linear-gradient(to top, var(--black), var(--green));
+    font-weight: bold;
+    color: var(--white);
+}
+
 /* COMO CHEGASTE ATÉ NÓS */
 
 .hear-about-us-sec {
@@ -441,8 +447,8 @@ input[type="date"] {
         max-width: min-content;
         min-height: 30vh;
         /* background-color: var(--green-one); */
-        border-radius: 1rem;
-        background-image: linear-gradient(45deg, var(--orange), var(--green));
+        /* border-radius: 1rem; */
+        /* background-image: linear-gradient(45deg, var(--orange), var(--green)); */
     
     }   
     .box-2 :nth-child(3) {
@@ -479,5 +485,9 @@ input[type="date"] {
         text-align: center;
         grid-column: span 3;
         font-size: 1.2rem;
+    }
+
+    .schedule-deliver {
+        grid-template-columns: repeat(1,1fr);
     }
 }

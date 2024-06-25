@@ -29,8 +29,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const imageToZoom = document.querySelector('.zoom-div');
 
+        // IF THE USER WANTS TO ZOOM THE IMAGE, JUST CLIK ON THAT IMAGE TO ZOOM IT,
+        // THE REVERSE HAPPENS WHEN THE USER CLICK AGAIN ON THE IMAGE
         function zoomImage() {
             let allImages = document.querySelectorAll('.historic-images img');
+            let footer = document.querySelector('.media-and-contacts')
+           
             allImages.forEach(el => {
                el.addEventListener('click', (event) => {
                     let image = event.target.src;        
@@ -38,13 +42,20 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <img src="${image}" alt="" class="zoom-image">
                     `
                     imageToZoom.classList.toggle('test-show')
+                    imagesHtmlSection.classList.toggle('disappear')
+                    footer.classList.toggle('disappear')
                     imageToZoom.innerHTML = newDiv
-                    imagesHtmlSection.classList.toggle('zoom-image-section')
+
+                    if (imageToZoom.classList.contains('test-show') === true) {
+                        imageToZoom.addEventListener('click', () => {
+                            imageToZoom.classList.remove('test-show')
+                            imagesHtmlSection.classList.remove('disappear')
+                            footer.classList.remove('disappear')
+                        })
+                    }
                 })
             });
         }
-      
-
 })
 
 

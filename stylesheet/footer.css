@@ -3,7 +3,7 @@
     text-align: center;
     min-height: fit-content;
     outline: 0;
-    margin-bottom: 6vh
+    margin-bottom: 3vh
 }
 
 .webDevSp a {
@@ -11,12 +11,12 @@
 }
 
 .webDevSp .my-name {
-    color: var(--orange);
+    /* color: var(--orange); */
     background-color: var(--white);
     padding: 0.5rem;
     font-weight: 800;
     font-size: small;
-    background-color: var(--green);
+    background-color: transparent;
 }
 
 .webDevSp a p .designBy {

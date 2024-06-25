@@ -21,13 +21,23 @@
     position: static;
 }
 
+.section-title {
+    grid-column: span 2;
+    margin: 0 auto 1rem auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 1rem 0;
+}
+
 .boxItem {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0.5rem;
     align-items: center;
-    /* justify-content: center; */
-    /* max-height: 30vh; */
     max-height: max-content;
     gap: 0.3rem;
     font-size: 1rem;
@@ -50,7 +60,6 @@
     font-weight: bold;
     letter-spacing: 0.1rem;
     min-height: 2.6rem;
-    /* min-width: 0%; */
     max-width: 90%;
     display: flex;
     justify-content: center;
