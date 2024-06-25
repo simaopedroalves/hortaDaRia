@@ -15,7 +15,13 @@ body {
     position: absolute;
     top: -10rem;
     bottom: 0;
-    opacity: 0.9;
+    opacity: 0.6;
+}
+
+.white-background {
+    background: linear-gradient(to bottom, var(--black), var(--green));
+    color: var(--white);
+
 }
 
 .cartList {
@@ -71,7 +77,7 @@ body {
     font-size: 0.8rem;
     max-width: 100%;
     text-align: left;
-    color: var(--black);
+    color: var(--white);
     font-weight: bold;
 }
 
@@ -80,7 +86,7 @@ body {
 }
 
 .box-2 .box-2-child span {
-    color: var(--black);
+    color: var(--white);
     font-size: 0.8rem;
     font-weight: bold;
     background-color: var(--green);
@@ -105,11 +111,12 @@ body {
 } 
 
 .priceToPay {
-    color: var(--black);
+    color: var(--white);
     font-weight: bold;
     background-color: var(--green-one);
     padding: 0.3rem;
     border-radius: 0.5rem;
+    min-width: fit-content;
 }
 
 .fa-trash-can {
@@ -121,7 +128,7 @@ body {
     cursor: pointer;
 }
 
-/* ADVANCE PAGE STYLE */
+/* to ADVANCE PAGE STYLE */
 .buttonsDelAndAdvance {
     display: flex;
     justify-content: center;
@@ -131,7 +138,7 @@ body {
     max-height: 6svh;
     left: 0;
     right: 0;
-    background-color: var(--white);
+    background-color: transparent;
     border: 0;
     outline: 0;
 }
@@ -222,6 +229,7 @@ body {
     font-weight: 600;
     text-align: center;
     max-width: 60vw;
+    color: var(--white);
 }
 
 .client-data-sec form section {
@@ -230,15 +238,16 @@ body {
     padding: 1.5rem;
 }
 
-.client-data-sec input {
-    background-color: var(--white);
+.client-data-sec input, textarea {
+    background: linear-gradient(to top, var(--black), var(--green));
     outline: none;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: solid var(--green) 2px;
+    border: none;
     margin-left: 1rem;
-    
+    color: var(--white);
+    font-weight: bold;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+
 } 
 
 .name-email-phone {
@@ -357,6 +366,8 @@ body {
 
 .obs-sec textarea::placeholder {
     padding: 0.1rem 0 0 0.1rem;
+    color: var(--white);
+    font-weight: bold;
 }
 
 .obs-sec textarea {
