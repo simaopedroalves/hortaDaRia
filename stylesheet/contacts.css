@@ -15,6 +15,7 @@
     padding: 1rem;
     border-radius: 50%;
     font-size: 0.7rem;
+    cursor: pointer;
 }
 
 .media-and-contacts a {
