@@ -108,12 +108,12 @@ body {
 
     }
     .about-us-description p{
-        color: var(--black);     
+        color: var(--green);     
         font-size: 1rem;   
     }
     .about-us-description h3 {
-        background-color: var(--white);
-        color: var(--green);
+        background-color: var(--orange);
+        color: var(--black);
         font-size: 2rem;
         border: var(--orange) 2px solid;
         max-width: fit-content;

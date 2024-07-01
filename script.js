@@ -98,3 +98,24 @@ function updateNumbItemsOnCart() {
 }
 
 updateNumbItemsOnCart()
+
+//  try to disable cart and add a message that says no more shopping using DATE.
+
+let dateNow = new Date()
+dateNow = dateNow.toString().split(' ');
+dateNow = dateNow[0];
+console.log(dateNow);
+
+let title = document.querySelectorAll('.title-div h1');
+
+function delTitle () {
+    if (dateNow == 'Mon') {
+        title.forEach(el =>{
+            el.textContent = 'Não é possivel fazer encomendas'
+
+        }) 
+        
+    }
+}
+
+// delTitle()

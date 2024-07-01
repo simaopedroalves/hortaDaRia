@@ -12,6 +12,8 @@
     min-width: 100vw;
     max-width: 100vw;
     max-height: 6svh;
+    background-image: linear-gradient(to right, var(--green), var(--black));
+    /* display: none; */
 }
 
 .bottom-menu div i {
