@@ -1,0 +1,7 @@
+.video {
+    display: grid;
+    justify-content: center;
+    margin: 12svh auto;
+    /* min-height: 80vh; */
+    max-width: 100vw;
+}

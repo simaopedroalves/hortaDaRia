@@ -17,7 +17,7 @@
     padding: 10vh 3vw;
     justify-content: center;
     /* border: solid red 1px; */
-    background-color: var(--green);
+    background-color: var(--black);
     position: static;
 }
 
@@ -43,7 +43,7 @@
     font-size: 1rem;
     font-weight: 700;
     border: solid var(--green-one) 2px;
-    background-color: var(--white);
+    background-color: var(--black);
     border-radius: 0.5rem;
 }
 
@@ -51,11 +51,11 @@
     /* border: solid red 2px; */
     margin: 0 auto;
     text-transform: uppercase;
-    background-color: var(--yellow);
-    color: var(--black);
+    /* background-color: var(--yellow); */
+    color: var(--orange);
     grid-column: span 2;
-    padding: 0.4rem;
-    border-radius: 0.5rem;
+    /* padding: 0.4rem; */
+    /* border-radius: 0.5rem; */
     font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
@@ -76,9 +76,11 @@
     border-radius: 0.5rem;
 }
 
-.boxItem .kiloPrice {
+.boxItem .kiloPrice,
+.boxItem .priceToPay {
     font-size: 0.8rem;
     font-weight: 600;
+    color: var(--white);
 }
 
 .boxItem select {
@@ -101,11 +103,12 @@
 }
 
 .boxItem button {
-    background-color: var(--black);
-    border: solid var(--black) 2px;
+    background-color: var(--orange);
+    /* border: solid var(--orange) 2px; */
     border-radius: 0.3rem;
     padding: 0.3rem;
-    color: var(--white);
+    color: var(--black);
+    font-weight: 700;
     letter-spacing: 0.1rem;
     outline: none;
     max-width: 100%;

@@ -26,7 +26,6 @@ body {
 
 .all-products div:not(.title-div) {
     text-align: center;
-    color: var(--white);
     font-weight: 800;
     padding: 0.5rem;
 } 
@@ -41,14 +40,13 @@ body {
 
 .all-products a {
     text-decoration: none;
-    color: var(--white);
 }
 
 .all-products a p {
     max-width: 75dvw;
     border-radius: 1rem 0;
-    color: var(--white);
-    background-color: var(--green);
+    color: var(--black);
+    background-color: var(--green-one);
     outline: none;
     padding: 1rem;
     margin: auto;

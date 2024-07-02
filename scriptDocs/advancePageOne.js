@@ -22,6 +22,7 @@ function enableInputs () {
     })
 }
 
+
 // when user click on radio button 'Entrega', the sections that are 
 //not related with delivery dissapear
 
@@ -293,3 +294,25 @@ window.onpageshow = (e) => {
         window.location.reload()
     }
 }
+
+disabledAllOrders()
+
+// DISABLE SUBMIT BUTTON FROM THURSDAY TO SUNDAY BECAUSE
+// ORDERS ARE NOT AVAIABLE
+
+let disabledButtonSubmit = () => {
+
+    let orderDisableMessage = document.querySelector('.disable-orders');
+    
+    if (orderDisableMessage.style.display == 'flex') {
+        submitBtn.style.display = 'none';
+        errorMessage.style.display = 'none';
+    }
+
+    else {
+        submitBtn.style.display = 'flex';
+        errorMessage.style.display = 'flex';
+    }
+}
+
+disabledButtonSubmit()

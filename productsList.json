@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix"],
+            "content": ["Acelgas", "Cebola verde", "Mescla Kales", "Salada natura", "Microverdes mix"],
             "open": "/html/cabaz-um.html",
             "image": "",
             "productId": 1
@@ -11,8 +11,8 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
-                        "Limões", "Coentros", "Abóbora"],
+            "content": ["Acelgas", "Cebola verde", "Mescla Kales", "Salada natura", "Microverdes mix", 
+                        "Pepino", "Courgete", "Mostardas", "Couve rabano"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -20,8 +20,9 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Cenoura baby", "Mini-acelgas", "Salada mix", "Tangerinas", "Microverdes mix", 
-                        "Limões", "Coentros", "Abóbora", "Batata-doce", "Espargos", "Couve toscana"],
+            "content": ["Acelgas", "Cebola verde", "Mescla Kales", "Salada natura", "Microverdes mix", 
+                        "Pepino", "Courgete", "Mostardas", "Couve rabano", "Morangos", "Cenouras", "Tomate C. Boi",
+                        "Cogumelos marron"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         
@@ -63,13 +64,13 @@
         {
             "name": "Salada Ibérica",
             "price": 1.5,
-            "image": "",
+            "image": "/images/saladas/salada-iberica.jpg",
             "productId": 9
         },
         {
             "name": "Salada Wok",
             "price": 2,
-            "image": "",
+            "image": "/images/saladas/salada-wok.jpg",
             "productId": 10
         },
         {
@@ -119,7 +120,7 @@
         {
             "name": "couve toscana",
             "price": 2,
-            "image": "",
+            "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18
         },
         {
@@ -161,7 +162,7 @@
         {
             "name": "Couve rabano verde",
             "price": 0.8,
-            "image": "",
+            "image": "/images/verduras/couve-rabano-verde.jpg",
             "productId": 25
         },
         {
@@ -342,30 +343,18 @@
             "price": 1.5,
             "image": "",
             "productId": 53
-        },
-        {
-            "name": "laranjas",
-            "price": 1.5,
-            "image": "",
-            "productId": 54
-        },
-        {
-            "name": "tangerinas",
-            "price": 1.5,
-            "image": "",
-            "productId": 55
         }
     ],
     "ovos": [
         {
             "name": "ovos de galinha",
-            "price": 2,
+            "price": 4,
             "image": "/images/ovos/ovo-galinha.jpg",
             "productId": 56
         },
         {
             "name": "ovos de codorniz",
-            "price": 4,
+            "price": 2,
             "image": "/images/ovos/ovos-codorniz.jpg",
             "productId": 57
         }
@@ -454,13 +443,13 @@
         {
             "name": "oregãos",
             "price": 1,
-            "image": "",
+            "image": "/images/ervasECha/oregaos.jpg",
             "productId": 71
         },
         {
             "name": "coentros",
             "price": 1,
-            "image": "",
+            "image": "/images/ervasECha/coentros.jpg",
             "productId": 72
         },
         {
@@ -498,7 +487,7 @@
         {
             "name": "oregãos",
             "price": 2,
-            "image": "",
+            "image": "/images/plantasEmVaso/vaso_oregaos.jpg",
             "productId": 78
         },
         {

@@ -71,6 +71,17 @@ header {
     max-height: 7svh;
 }
 
+/* ===============MESSAGE WHEN ORDER ARE DISABLE============================ */
+.disable-orders {
+    color: var(--orange);
+    /* background-color: var(--black); */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    max-width: fit-content;
+    animation: pulse 2s 1s infinite;
+    display: none;
+}
+
 /* =======div with cart and hamburguer menu============= */
 
 .cart-and-menu {
@@ -246,11 +257,12 @@ header .menu-list  a:hover {
 
 .welcomeSection {
     /* min-height: 94vh; */
-    margin: 8vh 0 0 0;
+    margin: 9svh 0 0 0;
 }
 
 .welcomeSection .title-div {
-    min-height: 30vh;
+    min-height: 29svh;
+    max-height: 29svh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -378,6 +390,7 @@ body::-webkit-scrollbar:vertical {
 
     .welcomeSection .title-div {
         min-width: 33vw;
+        max-height: 100vh;
     }
 
     body {

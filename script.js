@@ -104,18 +104,20 @@ updateNumbItemsOnCart()
 let dateNow = new Date()
 dateNow = dateNow.toString().split(' ');
 dateNow = dateNow[0];
-console.log(dateNow);
 
-let title = document.querySelectorAll('.title-div h1');
+function disabledAllOrders () {
 
-function delTitle () {
-    if (dateNow == 'Mon') {
-        title.forEach(el =>{
-            el.textContent = 'Não é possivel fazer encomendas'
+    let orderDisableMessage = document.querySelector('.disable-orders');
+  
+    if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed')  {
+       orderDisableMessage.style.display = 'none'
+    }
 
-        }) 
-        
+    else {
+        orderDisableMessage.style.display = 'flex'
     }
 }
 
-// delTitle()
+ disabledAllOrders()
+
+// let submitBtn = document.querySelector('.send-user-data-btn');

@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-}
-
 .circle {
     position: absolute;
     top: 25vh;
@@ -43,7 +40,7 @@ body {
 } 
 
 .about-us-photo {
-    margin: 0 auto 5vh auto;
+    margin: 5vh auto 5vh auto;
 }
 
 .about-us-photo img{
