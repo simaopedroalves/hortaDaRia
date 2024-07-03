@@ -248,6 +248,12 @@ body {
 
 } 
 
+/* animation to invalid inputs */
+
+.invalid-input {
+    animation: 3s infinite ease-in-out 0.5s flash;
+}
+
 .name-email-phone {
     display: grid;
     gap: 1rem;
@@ -489,4 +495,11 @@ select {
     .schedule-deliver {
         grid-template-columns: repeat(1,1fr);
     }
+
+    .error-message, 
+    .required-input-icon {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--orange);
+}
 }

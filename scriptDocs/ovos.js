@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         let ovosName = object.ovos[i].name;
         let ovosPrice = object.ovos[i].price;
         let image = object.ovos[i].image;
-
+        // let stock = object.ovos[i].stock;
+        let id = object.ovos[i].productId;
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
             image = "/images/logo.png";
@@ -44,9 +45,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
+               
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
+
+       
         let addCartBtn = document.querySelectorAll('.addToCart');
 
         function addItem() {
@@ -163,6 +167,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             })
             
         })
+
     }
     updateNumbItemsOnCart()
 })
@@ -184,3 +189,5 @@ function updateNumbItemsOnCart() {
         }
     })
 }
+
+

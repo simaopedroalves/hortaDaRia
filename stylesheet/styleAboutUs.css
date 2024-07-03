@@ -40,7 +40,7 @@
 } 
 
 .about-us-photo {
-    margin: 5vh auto 5vh auto;
+    margin: 5vh auto;
 }
 
 .about-us-photo img{
@@ -86,24 +86,39 @@
         padding: 1rem;
     } 
 
-    .about-us-photo img{
-        min-width: 50vw;
-        max-height: 15rem;
-        object-fit: contain;
-    }
+   
     
     .about-us-div {
         font-size: 1.5rem;
         /* align-items: center; */
-        max-width: 80vw;
+        max-width: 100vw;
         text-align: justify;
-
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin: 5vh auto;
     }
     .about-us-div .about-us-description p{
         /* margin: 0 auto; */
-        text-align: left;
+        /* text-align: center; */
 
     }
+
+    .about-us-photo {
+        max-width: 40vw;
+    }
+
+    .about-us-photo img{
+        max-width: 40vw;
+        object-fit: cover;
+    }
+
+    .about-us-description {
+        /* max-width: 40vw; */
+
+    }
+
     .about-us-description p{
         color: var(--green);     
         font-size: 1rem;   
@@ -117,5 +132,9 @@
         padding: 1rem;
         border-radius: 1rem 0 1rem 0;
         margin: 5vh;
+    }
+
+    .description-two {
+        grid-column: span 2;
     }
 }

@@ -1,13 +1,11 @@
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
-
 // OPEN AND CLOSE THE MENU
 
 openMenu.addEventListener('click', () => {
     menu.classList.toggle('show')
     openMenu.classList.toggle('fa-x')
 })
-
 
 // menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne')
@@ -120,4 +118,4 @@ function disabledAllOrders () {
 
  disabledAllOrders()
 
-// let submitBtn = document.querySelector('.send-user-data-btn');
+ 

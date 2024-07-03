@@ -350,13 +350,15 @@
             "name": "ovos de galinha",
             "price": 4,
             "image": "/images/ovos/ovo-galinha.jpg",
-            "productId": 56
+            "productId": 56,
+            "stock": "ola"
         },
         {
             "name": "ovos de codorniz",
             "price": 2,
             "image": "/images/ovos/ovos-codorniz.jpg",
-            "productId": 57
+            "productId": 57,
+            "stock": true
         }
     ], 
     "sabaoNatural": [

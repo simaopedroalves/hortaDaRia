@@ -79,20 +79,22 @@ const invalidMessage = "Algo está errado! Verifica os dados inseridos."
 
 // CHECK IF NAME IS VALID
 clientName.addEventListener('input', () => {
-
+    let label = document.querySelectorAll('label')
     let regex = new RegExp (/^[a-z][a-z\s\ã\à\á\í\ó]+$/, "gi");
     let string = clientName.value;
 
-    if (regex.test(string) === true) {
-        clientName.style.borderBottomColor = 'var(--green)'
+    if (regex.test(string) === true || string == '') {
+        clientName.parentElement.style.color = 'var(--white)'
         submitBtn.disabled = false
+        clientName.parentElement.firstElementChild.classList.remove('invalid-input')
         errorMessage.textContent = validMessage 
         errorMessage.style.color = "var(--orange)" 
         localStorage.setItem('clientName', JSON.stringify(string))
         return
     }
     else {
-        clientName.style.borderBottomColor = 'var(--red)'
+        clientName.parentElement.style.color = 'var(--red)'
+        clientName.parentElement.firstElementChild.classList.add('invalid-input')
         submitBtn.disabled = true
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
@@ -112,15 +114,20 @@ email.addEventListener('input', () => {
     let regex = /^([0-9]|[a-z]|.|_)+\b@\b[a-z]{2,6}\.[a-z]{2,3}$/g
     let string = email.value;
 
-    if (regex.test(string) === true) {
-        email.style.borderBottomColor = 'var(--green)'
+    if (regex.test(string) === true || string == '') {
+        email.parentElement.style.color = 'var(--white)'
+        email.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage
         errorMessage.style.color = "var(--orange)" 
         return
     }
+    else if (string == '') {
+
+    }
     else {
-        email.style.borderBottomColor = 'var(--red)'
+        email.parentElement.style.color = 'var(--red)'
+        email.parentElement.firstElementChild.classList.add('invalid-input')
         submitBtn.disabled = true
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
@@ -138,21 +145,17 @@ clientPhoneNumber.addEventListener('input', () => {
     let regex = /^9\d{8}$/g
     let string = clientPhoneNumber.value;
 
-    if (regex.test(string) === true) {
-        clientPhoneNumber.style.borderBottomColor = 'var(--green)'
+    if (regex.test(string) === true || string == '') {
+        clientPhoneNumber.parentElement.style.color = 'var(--white)'
+        clientPhoneNumber.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage 
         errorMessage.style.color = "var(--orange)" 
         return
     }
-    if (clientPhoneNumber.value == "") {
-        clientPhoneNumber.style.borderBottomColor = 'var(--green)'
-        submitBtn.disabled = false
-        errorMessage.textContent = validMessage
-        errorMessage.style.color = "var(--orange)" 
-    }
     else {
-        clientPhoneNumber.style.borderBottomColor = 'var(--red)'
+        clientPhoneNumber.parentElement.style.color = 'var(--red)'
+        clientPhoneNumber.parentElement.firstElementChild.classList.add('invalid-input')
         submitBtn.disabled = true
         errorMessage.textContent = invalidMessage
         errorMessage.style.color = "var(--red)" 
@@ -171,21 +174,17 @@ firstCPNumber.addEventListener('input', () => {
     let regex = /^\d{4}$/g
     let string = firstCPNumber.value;
 
-    if (regex.test(string) === true) {
-        firstCPNumber.style.borderBottomColor = 'var(--green)'
+    if (regex.test(string) === true || firstCPNumber.value == "") {
+        firstCPNumber.parentElement.parentElement.style.color = 'var(--white)'
+        firstCPNumber.parentElement.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage 
         errorMessage.style.color = "var(--orange)" 
         return
     }
-    if (firstCPNumber.value == "") {
-        firstCPNumber.style.borderBottomColor = 'var(--green)'
-        submitBtn.disabled = false
-        errorMessage.textContent = validMessage
-        errorMessage.style.color = "var(--orange)" 
-    }
     else {
-        firstCPNumber.style.borderBottomColor = 'var(--red)'
+        firstCPNumber.parentElement.parentElement.style.color = 'var(--red)'
+        firstCPNumber.parentElement.parentElement.firstElementChild.classList.add('invalid-input')
         submitBtn.disabled = true
         errorMessage.textContent = invalidMessage
         errorMessage.style.color = "var(--red)" 
@@ -197,21 +196,17 @@ secondCPNumber.addEventListener('input', () => {
     let regex = /^\d{3}$/g
     let string = secondCPNumber.value;
 
-    if (regex.test(string) === true) {
-        secondCPNumber.style.borderBottomColor = 'var(--green)'
+    if (regex.test(string) === true || secondCPNumber.value == "") {
+        secondCPNumber.parentElement.parentElement.style.color = 'var(--white)'
+        secondCPNumber.parentElement.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage 
         errorMessage.style.color = "var(--orange)" 
         return
     }
-    if (secondCPNumber.value == "") {
-        secondCPNumber.style.borderBottomColor = 'var(--green)'
-        submitBtn.disabled = false
-        errorMessage.textContent = validMessage
-        errorMessage.style.color = "var(--orange)" 
-    }
     else {
-        secondCPNumber.style.borderBottomColor = 'var(--red)'
+        secondCPNumber.parentElement.parentElement.style.color = 'var(--red)'
+        secondCPNumber.parentElement.parentElement.firstElementChild.classList.add('invalid-input')
         submitBtn.disabled = true
         errorMessage.textContent = invalidMessage
         errorMessage.style.color = "var(--red)" 
