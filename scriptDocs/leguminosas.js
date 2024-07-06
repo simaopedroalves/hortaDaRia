@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         let leguminosasName = object.leguminosas[i].name;
         let leguminosasPrice = object.leguminosas[i].price;
         let image = object.leguminosas[i].image;
+        let stock = object.leguminosas[i].stock;
+        let product_id = object.leguminosas[i].productId;
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         
         secLeguminosas.innerHTML += `
-            <div class="boxItem">
+            <div class="boxItem" id="${product_id}">
                 <h3 id="itName">${leguminosasName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${leguminosasPrice}€/Kg</div>
@@ -49,6 +51,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `
 
+        // function on script.js
+        findStockOfItems (stock, product_id)
+
+        
         let addCartBtn = document.querySelectorAll('.addToCart');
 
         function addItem() {

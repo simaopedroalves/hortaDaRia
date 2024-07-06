@@ -129,16 +129,11 @@
 .plantasEmVaso {
     grid-template-columns: repeat(4, 1fr);
     margin: 5vh auto;
-    background-color: var(--white);
-}
-
-.boxItem {
-    background-color: var(--green-one);
 }
 
 .boxItem img {
+    min-height: 30vh;
     max-height: 30vh;
-    /* max-width: 65%; */
 }
 
 .boxItem h3 {
@@ -158,6 +153,7 @@
 
 .boxItem button:hover {
     color: var(--orange);
+    background-color: var(--black);
     cursor: pointer;
     border: solid 2px var(--orange);
 }
@@ -178,6 +174,7 @@
     .sabaoNatural,
     .plantasEmVaso {
         grid-template-columns: repeat(6, 1fr);
+        max-width: 85vw;
     }
 
     .section-title {

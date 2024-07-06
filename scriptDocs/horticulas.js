@@ -1,6 +1,6 @@
 // import {updateNumbItemsOnCart} from '/script.js';
 
-const secHorticulas = document.querySelector('.horticulas');
+const section = document.querySelector('.horticulas');
 
 async function callHorticulas () {
     return (await fetch('/productsList.json')).json()
@@ -23,14 +23,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         let horticulasName = object.horticulas[i].name;
         let horticulasPrice = object.horticulas[i].price;
         let image = object.horticulas[i].image;
+        let stock = object.horticulas[i].stock;
+        let product_id = object.horticulas[i].productId;
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
             image = "/images/logo.png";
         }
         
-        secHorticulas.innerHTML += `
-            <div class="boxItem">
+        section.innerHTML += `
+            <div class="boxItem" id="${product_id}">
                 <h3 id="itName">${horticulasName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${horticulasPrice}€/Kg</div>
@@ -50,7 +52,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
-
+        // function on script.js
+        findStockOfItems (stock, product_id)
 
         let addCartBtn = document.querySelectorAll('.addToCart');
 

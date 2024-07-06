@@ -32,12 +32,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         // let imageCabazThree = object.cabazes[2].image;
         // let imageCreateCabaz = object.cabazes[3].image;
 
-         console.log('Nome: ' + cabazName + '\n' + 'Preço: ' + cabazPrice + '\n' + 'Conteudo: ' + cabazContent)
       
         // console.log(cabazContent)
         // console.log(typeof(cabazContent.toString()))
 
-        cabazContent = cabazContent.toString().replaceAll(',', '<br>')
+        cabazContent = cabazContent.toString().replaceAll(',', '<br>');
+        // cabazContent = cabazContent.toString().replaceAll(',', ' + ');
+
         secCabazDois.innerHTML += `
             <div class="cabaz-box">
 

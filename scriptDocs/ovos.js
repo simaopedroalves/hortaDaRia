@@ -18,21 +18,23 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error)
     }
 
+
     for (let i = 0; i < object.ovos.length; i++) {
         
-        let ovosName = object.ovos[i].name;
+        let name = object.ovos[i].name;
         let ovosPrice = object.ovos[i].price;
         let image = object.ovos[i].image;
-        // let stock = object.ovos[i].stock;
-        let id = object.ovos[i].productId;
+        let stock = object.ovos[i].stock;
+        let product_id = object.ovos[i].productId;
+        
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
             image = "/images/logo.png";
         }
 
         secOvos.innerHTML += `
-            <div class="boxItem">
-                <h3 id="itName">${ovosName}</h3>
+            <div class="boxItem" id="${product_id}">
+                <h3 id="itName">${name}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${ovosPrice}€/Dz</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
@@ -45,14 +47,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
-               
+                <span class="hiddenStock display-none">${stock}</span>
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
 
-       
-        let addCartBtn = document.querySelectorAll('.addToCart');
+         // function on script.js
+         findStockOfItems (stock, product_id)
 
+        let addCartBtn = document.querySelectorAll('.addToCart');
+    
         function addItem() {
 
             addCartBtn.forEach(btn => {
@@ -189,5 +193,4 @@ function updateNumbItemsOnCart() {
         }
     })
 }
-
 

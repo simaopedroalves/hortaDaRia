@@ -1,6 +1,6 @@
 // import {updateNumbItemsOnCart} from '/script.js'
 
-const secfloresComestiveis = document.querySelector('.floresComestiveis');
+const section = document.querySelector('.floresComestiveis');
 
 async function callFloresComestiveis () {
     return (await fetch('/productsList.json')).json()
@@ -20,19 +20,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     for (let i = 0; i < object.floresComestiveis.length; i++) {
-        let floresComestiveisName = object.floresComestiveis[i].name;
+        let name = object.floresComestiveis[i].name;
         let floresComestiveisPrice = object.floresComestiveis[i].price;
         let image = object.floresComestiveis[i].image;
         let product_id = object.floresComestiveis[i].productId;
+        let stock = object.floresComestiveis[i].stock;
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
             image = "/images/logo.png";
         }
         
-        secfloresComestiveis.innerHTML += `
-        <div class="boxItem">
-            <h3 id="itName">${floresComestiveisName}</h3>
+        section.innerHTML += `
+        <div class="boxItem" id="${product_id}">
+            <h3 id="itName">${name}</h3>
             <img class="itemImg" src="${image}" alt="">
             <div class="kiloPrice">${floresComestiveisPrice}€/Un</div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
@@ -48,10 +49,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <option value="500Un">500 Un</option>
             </select>
             <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+            <span class="hiddenStock display-none">${stock}</span>
             <div class="priceToPay"></div>
             <button class="addToCart btn btn-success" disabled>Comprar</button>
         </div>
         `
+        // function on script.js
+        findStockOfItems (stock, product_id)
 
         let addCartBtn = document.querySelectorAll('.addToCart');
 
@@ -136,7 +140,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         addCartBtn.setAttribute("disabled", "")
                     }
                     else {
-                    priceToPay = kg * (qt/1000)
+                    priceToPay = kg * qt
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
                     addCartBtn.removeAttribute("disabled")

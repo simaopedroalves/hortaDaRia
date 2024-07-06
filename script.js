@@ -97,7 +97,7 @@ function updateNumbItemsOnCart() {
 
 updateNumbItemsOnCart()
 
-//  try to disable cart and add a message that says no more shopping using DATE.
+// to disable cart order and add a message that says that, using DATE.
 
 let dateNow = new Date()
 dateNow = dateNow.toString().split(' ');
@@ -119,3 +119,13 @@ function disabledAllOrders () {
  disabledAllOrders()
 
  
+// find inside JSON data if each item have stock to display
+// or not the respective item or not
+
+function findStockOfItems (stock, product_id) {
+    let box = document.getElementById(product_id)
+
+    if (!stock) {
+        box.classList.add('display-none')
+    }
+}

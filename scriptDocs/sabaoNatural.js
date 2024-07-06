@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         let sabaoNaturalName = object.sabaoNatural[i].name;
         let sabaoNaturalPrice = object.sabaoNatural[i].price;
         let image = object.sabaoNatural[i].image;
+        let stock = object.sabaoNatural[i].stock;
+        let product_id = object.sabaoNatural[i].productId;
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         secSabaoNatural.innerHTML += `
-            <div class="boxItem">
+            <div class="boxItem" id="${product_id}">
                 <h3 id="itName">${sabaoNaturalName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${sabaoNaturalPrice}€/Un</div>
@@ -48,6 +50,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
+
+        // function on script.js
+        findStockOfItems (stock, product_id)
+
         let addCartBtn = document.querySelectorAll('.addToCart');
 
         function addItem() {

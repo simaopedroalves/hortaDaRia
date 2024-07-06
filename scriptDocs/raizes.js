@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         
         secRaizes.innerHTML += `
-            <div class="boxItem">
+            <div class="boxItem" id="">
                 <h3 id="itName">${raizesName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${raizesPrice}€/Kg</div>
@@ -51,6 +51,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
+
+        // function on script.js
+        findStockOfItems (stock, product_id)
+
         let addCartBtn = document.querySelectorAll('.addToCart');
 
         function addItem() {

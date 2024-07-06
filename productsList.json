@@ -41,43 +41,57 @@
             "name": "salada natura",
             "price": 2,
             "image": "/images/saladas/alfaces-mix.jpg",
-            "productId": 5
+            "productId": 5,
+            "stock": true
+
         },
         {
             "name": "alface mix",
             "price": 1.5,
             "image": "/images/saladas/mescla-de-alfaces.jpg",
-            "productId": 6
+            "productId": 6,
+            "stock": true
+
         },
         {
             "name": "Rúcula cultivata",
             "price": 1.5,
             "image": "/images/saladas/rucula-cultivata.jpg",
-            "productId": 7
+            "productId": 7,
+            "stock": true
+
         },
         {
             "name": "Verduras asiáticas",
             "price": 1.5,
             "image": "",
-            "productId": 8
+            "productId": 8,
+            "stock": true
+
         },
         {
             "name": "Salada Ibérica",
             "price": 1.5,
             "image": "/images/saladas/salada-iberica.jpg",
-            "productId": 9
+            "productId": 9,
+            "stock": true
+
         },
         {
             "name": "Salada Wok",
             "price": 2,
             "image": "/images/saladas/salada-wok.jpg",
-            "productId": 10
+            "productId": 10,
+            "stock": true
+
         },
         {
             "name": "Agrião da Terra",
             "price": 1.5,
             "image": "/images/saladas/agriao-da-terra.jpg",
-            "productId": 11
+            "productId": 11,
+            "stock": true
+
         }
     ],
     "verduras": [
@@ -85,97 +99,129 @@
             "name": "ruibarbo",
             "price": 10,
             "image": "/images/verduras/ruibarbo.jpg",
-            "productId": 12
+            "productId": 12,
+            "stock": true
+
         },
         {
             "name": "couve galega",
             "price": 2,
             "image": "",
-            "productId": 13
+            "productId": 13,
+            "stock": true
+
         },
         {
             "name": "couve galega cortada",
             "price": 1.5,
             "image": "",
-            "productId": 14
+            "productId": 14,
+            "stock": true
+
         },
         {
             "name": "acelgas",
             "price": 2,
             "image": "/images/verduras/acelgas.jpg",
-            "productId": 15
+            "productId": 15,
+            "stock": true
+
         },
         {
             "name": "alcachofra",
             "price": 2,
             "image": "/images/verduras/alcachofra.jpg",
-            "productId": 16
+            "productId": 16,
+            "stock": true
+
         },
         {
             "name": "acelgas baby",
             "price": 2,
             "image": "",
-            "productId": 17
+            "productId": 17,
+            "stock": true
+
         },
         {
             "name": "couve toscana",
             "price": 2,
             "image": "/images/verduras/couve-toscana.jpg",
-            "productId": 18
+            "productId": 18,
+            "stock": true
+
         },
         {
             "name": "Espinafre de folha larga",
             "price": 1.25,
             "image": "",
-            "productId": 19
+            "productId": 19,
+            "stock": true
+
         },
         {
             "name": "Espinafre manteiga",
             "price": 1.25,
             "image": "/images/verduras/espinafre-manteiga.jpg",
-            "productId": 20
+            "productId": 20,
+            "stock": true
+
         },
         {
             "name": "Red russian kale baby",
             "price": 1.5,
             "image": "/images/verduras/red-russian-kale-baby.jpg",
-            "productId": 21
+            "productId": 21,
+            "stock": true
+
         },
         {
             "name": "Couve pack-choi",
             "price": 1,
             "image": "/images/verduras/couve-pack-choi.jpg",
-            "productId": 22
+            "productId": 22,
+            "stock": true
+
         },
         {
             "name": "Couve tatsoi",
             "price": 1,
             "image": "/images/verduras/couve-tatsoi.jpg",
-            "productId": 23
+            "productId": 23,
+            "stock": true
+
         },
         {
             "name": "Couve rabano roxa",
             "price": 0.8,
             "image": "/images/verduras/couve-rabano-roxa.jpg",
-            "productId": 24
+            "productId": 24,
+            "stock": true
+
         },
         {
             "name": "Couve rabano verde",
             "price": 0.8,
             "image": "/images/verduras/couve-rabano-verde.jpg",
-            "productId": 25
+            "productId": 25,
+            "stock": true
+
         },
         {
             "name": "Couve curly kale",
             "price": 1,
             "image": "/images/verduras/couve-kurly-kale.jpg",
-            "productId": 26
+            "productId": 26,
+            "stock": true
+
         },
         {
             "name": "verduras asiáticas",
             "price": 1,
             "image": "/images/verduras/verduras-asiaticas.jpg",
-            "productId": 27
+            "productId": 27,
+            "stock": true
+
         }
     ],
     "raizes": [
@@ -183,31 +229,41 @@
             "name": "batata-doce",
             "price": 2,
             "image": "",
-            "productId": 28
+            "productId": 28,
+            "stock": true
+
         },
         {
             "name": "cebola-nova",
             "price": 2,
             "image": "/images/raizes/cebola-nova.jpg",
-            "productId": 29
+            "productId": 29,
+            "stock": true
+
         },
         {
             "name": "cenouras",
             "price": 2,
             "image": "/images/raizes/cenouras.jpg",
-            "productId": 30
+            "productId": 30,
+            "stock": true
+
         },
         {
             "name": "cenouras baby",
             "price": 2.5,
             "image": "",
-            "productId": 31
+            "productId": 31,
+            "stock": true
+
         },
         {
             "name": "espargos",
             "price": 3.5,
             "image": "/images/raizes/espargos.jpg",
-            "productId": 32
+            "productId": 32,
+            "stock": true
+
         }
     ],
     "microverdes": [
@@ -215,37 +271,49 @@
             "name": "rabanete rose",
             "price": 2.5,
             "image": "/images/microverdes/microverdes-rabanetes.jpg",
-            "productId": 33
+            "productId": 33,
+            "stock": true
+
         },
         {
             "name": "rabanete red rambo",
             "price": 2.5,
             "image": "/images/microverdes/rabanetes.jpg",
-            "productId": 34
+            "productId": 34,
+            "stock": true
+
         },
         {
             "name": "girassol",
             "price": 2.5,
             "image": "/images/microverdes/microverdes-girassol.jpg",
-            "productId": 35
+            "productId": 35,
+            "stock": true
+
         },
         {
             "name": "ervilhas",
             "price": 2.5,
             "image": "/images/microverdes/microverdes-ervilha.jpg",
-            "productId": 36
+            "productId": 36,
+            "stock": true
+
         },
         {
             "name": "capuchinha",
             "price": 5,
             "image": "/images/microverdes/microverdes-capuchinha.jpg",
-            "productId": 37
+            "productId": 37,
+            "stock": true
+
         },
         {
             "name": "mix de microverdes",
             "price": 2,
             "image": "/images/microverdes/microverdes-mix.jpg",
-            "productId": 38
+            "productId": 38,
+            "stock": true
+
         }
     ],
     "floresComestiveis": [
@@ -253,61 +321,81 @@
             "name": "amor perfeito",
             "price": 0.1,
             "image": "/images/floresComestiveis/amores-perfeitos.jpg",
-            "productId": 39
+            "productId": 39,
+            "stock": true
+
         },
         {
             "name": "borragem",
             "price": 0.1,
             "image": "/images/floresComestiveis/borragem.jpg",
-            "productId": 40
+            "productId": 40,
+            "stock": true
+
         },
         {
             "name": "capuchinhas",
             "price": 0.2,
             "image": "/images/floresComestiveis/flor_capuchinha.jpg",
-            "productId": 41
+            "productId": 41,
+            "stock": false
+
         },
         {
             "name": "mix de flores",
             "price": 2,
             "image": "/images/floresComestiveis/mix.jpg",
-            "productId": 42
+            "productId": 42,
+            "stock": true
+
         },
         {
             "name": "petunias",
             "price": 0.3,
             "image": "/images/floresComestiveis/flor_petunia.jpg",
-            "productId": 43
+            "productId": 43,
+            "stock": true
+
         },
         {
             "name": "flor da galega",
             "price": 0.1,
             "image": "/images/floresComestiveis/flor-galega.jpg",
-            "productId": 44
+            "productId": 44,
+            "stock": true
+
         },
         {
             "name": "flor de Courgete",
             "price": 0.1,
             "image": "/images/floresComestiveis/flor-courgete.jpg",
-            "productId": 45
+            "productId": 45,
+            "stock": true
+
         },
         {
             "name": "flor de calendula",
             "price": 0.1,
             "image": "/images/floresComestiveis/calendula.jpg",
-            "productId": 46
+            "productId": 46,
+            "stock": true
+
         },
         {
             "name": "flor da toscana",
             "price": 0.1,
             "image": "",
-            "productId": 47
+            "productId": 47,
+            "stock": true
+
         },
         {
             "name": "flor de mel",
             "price": 0.1,
             "image": "/images/floresComestiveis/flor-de-mel.jpg",
-            "productId": 48
+            "productId": 48,
+            "stock": true
+
         }
     ],
     "leguminosas": [
@@ -316,13 +404,17 @@
             "price": 4,
             "description": "descascadas e congeladas",
             "image": "/images/leguminosas/favas.jpg",
-            "productId": 49
+            "productId": 49,
+            "stock": true
+
         },
         {
             "name": "ervilhas de quebrar",
             "price": 10,
             "image": "/images/leguminosas/ervilhas-quebrar.jpg",
-            "productId": 50
+            "productId": 50,
+            "stock": true
+
         }
     ],
     "horticulas": [
@@ -330,19 +422,25 @@
             "name": "abóbora manteiga",
             "price": 1.5,
             "image": "",
-            "productId": 51
+            "productId": 51,
+            "stock": true
+
         },
         {
             "name": "abóbora muscade/laranja",
             "price": 2.5,
             "image": "",
-            "productId": 52
+            "productId": 52,
+            "stock": true
+
         },
         {
             "name": "limões",
             "price": 1.5,
             "image": "",
-            "productId": 53
+            "productId": 53,
+            "stock": true
+
         }
     ],
     "ovos": [
@@ -351,7 +449,7 @@
             "price": 4,
             "image": "/images/ovos/ovo-galinha.jpg",
             "productId": 56,
-            "stock": "ola"
+            "stock": true
         },
         {
             "name": "ovos de codorniz",
@@ -366,25 +464,33 @@
             "name": "óleo de coco, azeite e alfazema",
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
-            "productId": 58
+            "productId": 58,
+            "stock": true
+
         },
         {
             "name": "óleo de coco, azeite e hortelã",
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
-            "productId": 59
+            "productId": 59,
+            "stock": true
+
         },
         {
             "name": "óleo de coco, azeite e laranja",
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
-            "productId": 60
+            "productId": 60,
+            "stock": true
+
         },
         {
             "name": "óleo de coco, azeite e alecrim",
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
-            "productId": 61
+            "productId": 61,
+            "stock": true
+
         }
     ],
     "ervasAromaticasECha": [
@@ -392,79 +498,105 @@
             "name": "alecrim",
             "price": 1,
             "image": "/images/ervasECha/alecrim.jpg",
-            "productId": 62
+            "productId": 62,
+            "stock": true
+
         },
         {
             "name": "chá de limonete",
             "price": 2,
             "image": "/images/ervasECha/cha_limonete.jpg",
-            "productId": 63
+            "productId": 63,
+            "stock": true              
+
         },
         {
             "name": "chá de cidreira",
             "price": 2,
             "image": "",
-            "productId": 64
+            "productId": 64,
+            "stock": true
+
         },
         {
             "name": "folhas de loureiro",
             "price": 1,
             "image": "",
-            "productId": 65
+            "productId": 65,
+            "stock": true      
+
         },
         {
             "name": "hortelã-pimenta",
             "price": 1,
             "image": "/images/ervasECha/hortela-pimenta.jpg",
-            "productId": 66
+            "productId": 66,
+            "stock": true
+
         },
         {
             "name": "hortelã menta",
             "price": 1,
             "image": "",
-            "productId": 67
+            "productId": 67,
+            "stock": true
+
         },
         {
             "name": "hortelã e chocolate",
             "price": 2,
             "image": "",
-            "productId": 68
+            "productId": 68,
+            "stock": true
+
         },
         {
             "name": "cidreira fresca",
             "price": 1,
             "image": "",
-            "productId": 69
+            "productId": 69,
+            "stock": true
+
         },
         {
             "name": "tomilho",
             "price": 1,
             "image": "",
-            "productId": 70
+            "productId": 70,
+            "stock": true
+
         },
         {
             "name": "oregãos",
             "price": 1,
             "image": "/images/ervasECha/oregaos.jpg",
-            "productId": 71
+            "productId": 71,
+            "stock": true
+
         },
         {
             "name": "coentros",
             "price": 1,
             "image": "/images/ervasECha/coentros.jpg",
-            "productId": 72
+            "productId": 72,
+            "stock": true
+
         },
         {
             "name": "hipericão do gerês",
             "price": 1,
             "image": "",
-            "productId": 73
+            "productId": 73,
+            "stock": true
+
         },
         {
             "name": "salsa",
             "price": 1,
             "image": "",
-            "productId": 74
+            "productId": 74,
+            "stock": true
+
         }
     ],
     "plantasEmVaso": [
@@ -472,97 +604,129 @@
             "name": "suculenta",
             "price": 2,
             "image": "",
-            "productId": 75
+            "productId": 75,
+            "stock": true
+
         },
         {
             "name": "amor-perfeito",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_amorPerfeito.jpg",
-            "productId": 76
+            "productId": 76,
+            "stock": true
+
         },
         {
             "name": "cravo tunico",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_cravoTunico.jpg",
-            "productId": 77
+            "productId": 77,
+            "stock": true
+
         },
         {
             "name": "oregãos",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_oregaos.jpg",
-            "productId": 78
+            "productId": 78,
+            "stock": true
+
         },
         {
             "name": "espargos",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_espargos.jpg",
-            "productId": 79
+            "productId": 79,
+            "stock": true
+
         },
         {
             "name": "salvia",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_salvia.jpg",
-            "productId": 80
+            "productId": 80,
+            "stock": true
+
         },
         {
             "name": "hortelã-pimenta",
             "price": 2,
             "image": "",
-            "productId": 81
+            "productId": 81,
+            "stock": true
+
         },
         {
             "name": "hortelã-pimenta-chocolate",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_hortelaPimentaChocolate.jpg",
-            "productId": 82
+            "productId": 82,
+            "stock": true
+
         },
         {
             "name": "hortelã menta",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_hortelaMenta.jpg",
-            "productId": 83
+            "productId": 83,
+            "stock": true
+
         },
         {
             "name": "tomilho",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_tomilho.jpg",
-            "productId": 84
+            "productId": 84,
+            "stock": true
+
         },
         {
             "name": "ervilha",
             "price": 5,
             "image": "",
-            "productId": 85
+            "productId": 85,
+            "stock": true
+
         }, 
         {
             "name": "girassol",
             "price": 5,
             "image": "",
-            "productId": 86
+            "productId": 86,
+            "stock": true
+
         },
         {
             "name": "rabanete rose",
             "price": 5,
             "image": "",
-            "productId": 87
+            "productId": 87,
+            "stock": true
+
         },
         {
             "name": "rabanete red rambo",
             "price": 5,
             "image": "",
-            "productId": 88
+            "productId": 88,
+            "stock": true
+
         },
         {
             "name": "2 vasos à escolha",
             "price": 9,
             "image": "",
-            "productId": 89
+            "productId": 89,
+            "stock": true
+
         },
         {
             "name": "3 vasos à escolha",
             "price": 12,
             "image": "",
-            "productId": 90
+            "productId": 90,
+            "stock": true
+
         }
     ],
     "testimonials": [

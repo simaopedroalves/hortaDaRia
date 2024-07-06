@@ -24,14 +24,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         let saladaName = object.saladas[i].name;
         let saladaPrice = object.saladas[i].price;
         let image = object.saladas[i].image;
-        
+        let stock = object.saladas[i].stock;
+        let product_id = object.saladas[i].productId;
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
             image = "/images/logo.png";
         }
 
         secSaladas.innerHTML += `
-        <div class="boxItem">
+        <div class="boxItem" id="${product_id}">
             <h3 id="itName">${saladaName}</h3>
             <img src="${image}" alt="">
             <div class="kiloPrice">${saladaPrice}€/kg</div>
@@ -51,6 +52,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             <button class="addToCart btn btn-success" disabled>Comprar</button>
         </div>
         `
+
+          // function on script.js
+          findStockOfItems (stock, product_id)
+
             let addCartBtn = document.querySelectorAll('.addToCart');
     
             let itemObj = [];

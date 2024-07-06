@@ -1,6 +1,6 @@
 // import {updateNumbItemsOnCart} from '/script.js';
 
-const secErvas = document.querySelector('.ervas');
+const section = document.querySelector('.ervas');
 // const cartList = document.querySelector('.shopping-cart')
 // let products = JSON.parse(localStorage.getItem('products'));
 
@@ -26,14 +26,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         let ervaName = object.ervasAromaticasECha[i].name;
         let ervaPrice = object.ervasAromaticasECha[i].price;
         let image = object.ervasAromaticasECha[i].image;
-        let resultado = document.querySelectorAll('.priceToPay');
+        // let resultado = document.querySelectorAll('.priceToPay');
+        let stock = object.ervasAromaticasECha[i].stock;
+        let product_id = object.ervasAromaticasECha[i].productId;
+
             //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
             if (image == '') {
                 image = "/images/logo.png";
             }
         
-        secErvas.innerHTML += `
-            <div class="boxItem">
+        section.innerHTML += `
+            <div class="boxItem" id="${product_id}">
                 <h3 id="itName">${ervaName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${ervaPrice}€/Kg</div>
@@ -51,6 +54,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
+        // function on script.js
+        findStockOfItems (stock, product_id)
 
         let addCartBtn = document.querySelectorAll('.addToCart');
           
@@ -156,6 +161,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 finalPricePerItem() 
             })
         })
+
     }
 
     updateNumbItemsOnCart()
