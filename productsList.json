@@ -338,7 +338,7 @@
             "price": 0.2,
             "image": "/images/floresComestiveis/flor_capuchinha.jpg",
             "productId": 41,
-            "stock": false
+            "stock": true
 
         },
         {
