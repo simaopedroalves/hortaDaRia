@@ -110,6 +110,10 @@
     text-align: center;
 }
 
+.introduction .introductionText {
+    font-size: 1rem;
+}
+
 .contactForm div:not(.introduction, .clientMessage) {
     display: flex;
     justify-content: space-around;

@@ -27,10 +27,6 @@
     --red: ;
 }
 
-.display-none {
-    display: none;
-}
-
 body {
     position: relative;
     background-color: var(--black);

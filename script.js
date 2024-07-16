@@ -119,13 +119,17 @@ function disabledAllOrders () {
  disabledAllOrders()
 
  
-// find inside JSON data if each item have stock to display
-// or not the respective item or not
+// find inside JSON data if each item have stock or not to display
+// a message saying that item his out of stock
 
 function findStockOfItems (stock, product_id) {
     let box = document.getElementById(product_id)
 
     if (!stock) {
-        box.classList.add('display-none')
+        box.querySelector('.addToCart').style.visibility = 'hidden'
+        box.querySelector('.quantity').style.visibility = 'hidden'
+        box.querySelector('.priceToPay').textContent = 'Esgotado'
+        box.querySelector('.priceToPay').style.color = 'var(--white)'
+        box.style.borderColor = 'var(--red)'
     }
 }

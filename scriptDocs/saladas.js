@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <img src="${image}" alt="">
             <div class="kiloPrice">${saladaPrice}€/kg</div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
-                <option value="qt">Quantidade</option>
+                <option class="no-stock-message" value="qt">Quantidade</option>
                 <option value="100 gr">100 gr</option>
                 <option value="250 gr">250 gr</option>
                 <option value="500 gr">500 gr</option>
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             let addCartBtn = document.querySelectorAll('.addToCart');
     
-            let itemObj = [];
+            // let itemObj = [];
     
             function addItem() {
 
