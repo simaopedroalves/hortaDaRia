@@ -35,6 +35,8 @@
 
 .social-media span {
     font-size: 0.7rem;
+    color: var(--white);
+
 }
 
 .media-and-contacts .footer-head {
@@ -183,7 +185,6 @@
         grid-column: span 1;
         padding: 1vw;
         margin: 0 5vw;
-        
     }
 
     .info-tel span:nth-child(2) {

@@ -100,6 +100,17 @@
     height: 100%;
 }
 
+.address-description {
+    color: var(--white);
+    display: grid;
+    gap: 1vh;
+    margin: 10vh auto 10vh 5vw;
+}
+
+.address-description span {
+    font-size: 0.8rem;
+}
+
 @media screen and (min-width: 700px) {
     
 .contactForm {
@@ -142,5 +153,10 @@
     width: 100%;
     height: 60dvh;
 }
-
+.address-description {
+    text-align: center;
+}
+.address-description span {
+    font-size: 1rem;
+}
 }
