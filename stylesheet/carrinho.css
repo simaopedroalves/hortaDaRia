@@ -321,7 +321,15 @@ body {
 #cp,
 #cP {
     max-width: calc(100vw/5);
+    display: flex;
+    padding-left: 10%;    
 }
+/* 
+#cp {
+    cursor: none;
+} */
+
+
 
 /* REMOVE ARROWS UP AND DOWN */
 #cp::-webkit-inner-spin-button,
@@ -479,6 +487,7 @@ select {
     #cP {
         max-width: 3rem;
         text-align: center;
+        padding-left: 0;    
     }
 
     .pick-up-sec span {

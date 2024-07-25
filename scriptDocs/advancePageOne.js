@@ -6,6 +6,7 @@ const deliverSection = document.querySelector('.deliver-sec');
 const pickUpSection = document.querySelector('.pick-up-sec');
 const pickUpHortaSection = document.querySelector('.horta-pick-up-sec');
 const allInputs = document.querySelectorAll('input');
+const firstCPNumber = document.querySelector('#cp');
  
 // the user needs to choose if he want a delivery or pick up the products
 function disableInputs () {
@@ -20,6 +21,7 @@ function enableInputs () {
     allInputs.forEach(el => {
         el.removeAttribute('readonly', true)
     })
+    firstCPNumber.setAttribute('readonly', true)
 }
 
 
@@ -99,9 +101,6 @@ clientName.addEventListener('input', () => {
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
     }
-
-
-
 })
 
 // CHECK IF EMAIL IS VALID
@@ -109,25 +108,29 @@ clientName.addEventListener('input', () => {
 const clientEmail = document.querySelector('#email');
 
 
-email.addEventListener('input', () => {
+clientEmail.addEventListener('input', () => {
 
     let regex = /^([0-9]|[a-z]|.|_)+\b@\b[a-z]{2,6}\.[a-z]{2,3}$/g
-    let string = email.value;
+    let string = clientEmail.value;
 
     if (regex.test(string) === true || string == '') {
-        email.parentElement.style.color = 'var(--white)'
-        email.parentElement.firstElementChild.classList.remove('invalid-input')
+        clientEmail.parentElement.style.color = 'var(--white)'
+        clientEmail.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage
         errorMessage.style.color = "var(--orange)" 
         return
     }
     else if (string == '') {
-
+        clientEmail.parentElement.style.color = 'var(--white)'
+        clientEmail.parentElement.firstElementChild.classList.remove('invalid-input')
+        submitBtn.disabled = false
+        errorMessage.textContent = validMessage
+        errorMessage.style.color = "var(--orange)" 
     }
     else {
-        email.parentElement.style.color = 'var(--red)'
-        email.parentElement.firstElementChild.classList.add('invalid-input')
+        clientEmail.parentElement.style.color = 'var(--red)'
+        clientEmail.parentElement.firstElementChild.classList.add('invalid-input')
         submitBtn.disabled = true
         errorMessage.textContent = invalidMessage 
         errorMessage.style.color = "var(--red)"
@@ -166,30 +169,29 @@ clientPhoneNumber.addEventListener('input', () => {
 
 //CHECK IF CODIDO POSTAL IS VALID
 
-const firstCPNumber = document.querySelector('#cp');
 const secondCPNumber = document.querySelector('#cP');
 
-firstCPNumber.addEventListener('input', () => {
+// firstCPNumber.addEventListener('input', () => {
 
-    let regex = /^\d{4}$/g
-    let string = firstCPNumber.value;
+//     let regex = /^\d{4}$/g
+//     let string = firstCPNumber.value;
 
-    if (regex.test(string) === true || firstCPNumber.value == "") {
-        firstCPNumber.parentElement.parentElement.style.color = 'var(--white)'
-        firstCPNumber.parentElement.parentElement.firstElementChild.classList.remove('invalid-input')
-        submitBtn.disabled = false
-        errorMessage.textContent = validMessage 
-        errorMessage.style.color = "var(--orange)" 
-        return
-    }
-    else {
-        firstCPNumber.parentElement.parentElement.style.color = 'var(--red)'
-        firstCPNumber.parentElement.parentElement.firstElementChild.classList.add('invalid-input')
-        submitBtn.disabled = true
-        errorMessage.textContent = invalidMessage
-        errorMessage.style.color = "var(--red)" 
-    }
-})
+//     if (regex.test(string) === true || firstCPNumber.value == "") {
+//         firstCPNumber.parentElement.parentElement.style.color = 'var(--white)'
+//         firstCPNumber.parentElement.parentElement.firstElementChild.classList.remove('invalid-input')
+//         submitBtn.disabled = false
+//         errorMessage.textContent = validMessage 
+//         errorMessage.style.color = "var(--orange)" 
+//         return
+//     }
+//     else {
+//         firstCPNumber.parentElement.parentElement.style.color = 'var(--red)'
+//         firstCPNumber.parentElement.parentElement.firstElementChild.classList.add('invalid-input')
+//         submitBtn.disabled = true
+//         errorMessage.textContent = invalidMessage
+//         errorMessage.style.color = "var(--red)" 
+//     }
+// })
 
 secondCPNumber.addEventListener('input', () => {
 
@@ -301,12 +303,11 @@ let disabledButtonSubmit = () => {
     
     if (orderDisableMessage.style.display == 'flex') {
         submitBtn.style.display = 'none';
-        errorMessage.style.display = 'none';
+        errorMessage.style.marginBottom = '15vh';
     }
 
     else {
         submitBtn.style.display = 'flex';
-        errorMessage.style.display = 'flex';
     }
 }
 
