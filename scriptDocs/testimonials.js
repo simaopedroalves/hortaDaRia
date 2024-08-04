@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         `
             <div class="client-testimonial">
                 <h4 class="client-name">${clientName}</h4>
-                <p class="testimonial-text">${clientTestimonial}</p>
+                <p class="testimonial-text">"${clientTestimonial}"</p>
                 <div class="date-and-job">
                     <h6 class="testimonial-date">${testimonialDate}</h6>
                 </div>
