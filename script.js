@@ -129,7 +129,9 @@ function findStockOfItems (stock, product_id) {
         box.querySelector('.addToCart').style.visibility = 'hidden'
         box.querySelector('.quantity').style.visibility = 'hidden'
         box.querySelector('.priceToPay').textContent = 'Esgotado'
-        box.querySelector('.priceToPay').style.color = 'var(--white)'
+        box.querySelector('.priceToPay').style.color = 'var(--red)'
+        box.querySelector('.priceToPay').style.textTransform = 'upperCase'
         box.style.borderColor = 'var(--red)'
+        box.style.textAlign = 'center'
     }
 }

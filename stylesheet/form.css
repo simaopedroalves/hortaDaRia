@@ -6,7 +6,7 @@
     border: solid var(--green) 0.2rem;
     padding: 1rem;
     border-radius: 0.3rem;
-    color: var(--white);
+    color: var(--green);
 }
 
 .contactForm div:not(.introduction, .clientMessage) {
@@ -25,7 +25,7 @@
     border-left: none;
     border-right: none;
     background-color: transparent;
-    color: var(--white);
+    color: var(--green);
 }
 
 .contactForm div input::placeholder, 
@@ -40,8 +40,8 @@
     padding: 0.4rem;
     margin: 0;
     resize: vertical;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: transparent;
+    color: var(--green);
 }
 
 .contactForm div textarea:hover {
@@ -65,7 +65,7 @@
 }
 
 .introduction .introductionText {
-    color: var(--white);
+    color: var(--green);
     text-align: justify;
     font-size: 0.8rem;
 }
@@ -101,14 +101,14 @@
 }
 
 .address-description {
-    color: var(--white);
+    color: var(--green);
     display: grid;
     gap: 1vh;
     margin: 10vh auto 10vh 5vw;
 }
 
 .address-description span {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 @media screen and (min-width: 700px) {

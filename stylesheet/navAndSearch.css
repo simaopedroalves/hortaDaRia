@@ -16,7 +16,7 @@
     --black: rgba(0,0,0,1);
     --gray: rgba(0,0,0,0.5);
     --black-hover-img: rgba(0,0,0,0.6);
-    --green-hover-img: rgb(136, 171, 142, 0.6);
+    --green-hover-img: rgb(136, 171, 142, 0.3);
 
 }
 
@@ -51,7 +51,6 @@ header {
 /* NAVBAR */
 .navbar {
     /* background-image: linear-gradient(90deg, var(--green), var(--black)); */
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -378,6 +377,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     header .menu-list a li {
+        background-color: transparent;
         list-style: none;
         color: var(--white);
         text-align: left;
@@ -429,7 +429,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     header .menu-list a li:hover {
-        color: var(--orange)
+        color: var(--black)
     }
 
     .searchBar-div {

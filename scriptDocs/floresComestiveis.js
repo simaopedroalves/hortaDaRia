@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <option value="500Un">500 Un</option>
             </select>
             <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-            <span class="hiddenStock display-none">${stock}</span>
             <div class="priceToPay"></div>
             <button class="addToCart btn btn-success" disabled>Comprar</button>
         </div>
