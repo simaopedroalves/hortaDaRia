@@ -29,11 +29,12 @@
 
 body {
     position: relative;
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 header {
-    background-image: linear-gradient(90deg, var(--green), var(--black));
+    background: var(--white);
+    /* background-image: linear-gradient(90deg, var(--green), var(--black)); */
     position: fixed;
     top: 0;
     left: 0;
@@ -168,16 +169,11 @@ header {
 }
 /* =========================================== */
 .menu-list {
-    /*display: none;
-    transition-property: all;
-    transition-duration: 500ms;
-    transition-timing-function: linear;*/
     position: absolute;
     top: 9svh;
     min-width: 100vw;
     right: -100dvw;
     transition: 1000ms;
-    /* background-color: var(--white);  */
 
 }
 
@@ -187,14 +183,14 @@ header {
 
 header .menu-list li {
     list-style: none;
-    /* background-color: var(--white); */
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--green);
     min-width: 70svw;
     text-align: center;
-    padding: 0.3rem;
+    padding: 1rem;
     font-weight: 900; 
     cursor: pointer;
-    background-image: linear-gradient(90deg, var(--green), var(--black));
+    /* background-image: linear-gradient(90deg, var(--green), var(--black)); */
     outline: none;
     border: none;
     
@@ -258,11 +254,17 @@ header .menu-list  a:hover {
 .welcomeSection {
     /* min-height: 94vh; */
     margin: 9svh 0 0 0;
+    display: flex;
+    overflow-x: scroll;
 }
 
 .welcomeSection .title-div {
-    min-height: 29svh;
-    max-height: 29svh;
+    /* min-height: 29svh;
+    max-height: 29svh; */
+    min-width: 98vw;
+    max-width: 98vw;
+    min-height: 90svh;
+    max-height: 90svh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -273,7 +275,8 @@ header .menu-list  a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-image: linear-gradient(90deg,  var(--black-hover-img), var(--green-hover-img), var(--black-hover-img)) fill 1;
+    position: relative;
+    /* border-image: linear-gradient(90deg,  var(--black-hover-img), var(--green-hover-img), var(--black-hover-img)) fill 1; */
     
 }
 
@@ -287,16 +290,23 @@ header .menu-list  a:hover {
 
 .welcomeSection .title-div h1 {
     margin: 0 auto;
-    /* font-size: 1rem; */
+    position: absolute;
+    bottom: 10vh;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    border-image: linear-gradient(90deg,  var(--black-hover-img), var(--green-hover-img), var(--black-hover-img)) fill 1;
+   
 }
 
-.reverse-flex-direction {
+/* .reverse-flex-direction {
     flex-direction: row-reverse;
-}
+} */
 
 body::-webkit-scrollbar {
     display: block;
-    width: 0.5vw;
+    width: 1vw;
     height: 1px;
     border: none;
     outline: none;

@@ -35,7 +35,7 @@
     border: solid var(--green-one) 0.2rem;
     margin: 0 5vw;
     border-radius: 5%;
-    color: var(--white);
+    color: var(--green);
 }
 
 .cabazPrice {
@@ -129,7 +129,7 @@
 
 .sugestion a span {
     text-align: center;
-    color: var(--black);
+    color: var(--white);
     font-size: 1.5rem;
 }
 /*
@@ -168,7 +168,7 @@
 .cabazContent h4 {
     font-weight: bold;
     background-color: transparent;
-    color: var(--black);
+    color: var(--white);
     padding: 0.3rem;
     min-width: max-content;
     text-transform: uppercase;
@@ -177,7 +177,7 @@
 .cabazContent span {
     background-color: var(--green);
     max-width: fit-content;
-    color: var(--black);
+    color: var(--white);
     font-weight: bold;
     margin: 0 auto;
     padding: 0.3rem;
@@ -205,7 +205,7 @@
 } 
 
 .cabazes-section-title {
-    color: var(-orange);
+    color: var(--orange);
     text-align: left;
 }
 

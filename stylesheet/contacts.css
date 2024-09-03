@@ -1,8 +1,8 @@
 .media-and-contacts {
     display: grid;
     gap: 3vh;
-    /* background-color: var(--green); */
-    background: linear-gradient(to top, var(--black), var(--green));
+    background-color: var(--green);
+    /* background: linear-gradient(to top, var(--black), var(--green)); */
 
     margin-bottom: 5vh;
     border-radius: 5rem 0 0 0;
