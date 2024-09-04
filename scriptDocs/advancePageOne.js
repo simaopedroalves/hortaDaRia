@@ -86,7 +86,7 @@ clientName.addEventListener('input', () => {
     let string = clientName.value;
 
     if (regex.test(string) === true || string == '') {
-        clientName.parentElement.style.color = 'var(--white)'
+        clientName.parentElement.style.color = 'var(--green)'
         submitBtn.disabled = false
         clientName.parentElement.firstElementChild.classList.remove('invalid-input')
         errorMessage.textContent = validMessage 
@@ -114,7 +114,7 @@ clientEmail.addEventListener('input', () => {
     let string = clientEmail.value;
 
     if (regex.test(string) === true || string == '') {
-        clientEmail.parentElement.style.color = 'var(--white)'
+        clientEmail.parentElement.style.color = 'var(--green)'
         clientEmail.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage
@@ -122,7 +122,7 @@ clientEmail.addEventListener('input', () => {
         return
     }
     else if (string == '') {
-        clientEmail.parentElement.style.color = 'var(--white)'
+        clientEmail.parentElement.style.color = 'var(--green)'
         clientEmail.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage
@@ -149,7 +149,7 @@ clientPhoneNumber.addEventListener('input', () => {
     let string = clientPhoneNumber.value;
 
     if (regex.test(string) === true || string == '') {
-        clientPhoneNumber.parentElement.style.color = 'var(--white)'
+        clientPhoneNumber.parentElement.style.color = 'var(--green)'
         clientPhoneNumber.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage 
@@ -199,7 +199,7 @@ secondCPNumber.addEventListener('input', () => {
     let string = secondCPNumber.value;
 
     if (regex.test(string) === true || secondCPNumber.value == "") {
-        secondCPNumber.parentElement.parentElement.style.color = 'var(--white)'
+        secondCPNumber.parentElement.parentElement.style.color = 'var(--green)'
         secondCPNumber.parentElement.parentElement.firstElementChild.classList.remove('invalid-input')
         submitBtn.disabled = false
         errorMessage.textContent = validMessage 

@@ -1,26 +1,7 @@
-body {
-    background-image: url('/images/empty-cart-background-image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.backgroundColor {
-    /* background: linear-gradient(to right, var(--green), var(--black)); */
-    background: var(--black);
-    z-index: -2;
-    min-height: 100vh;
-    min-width: 100vw;
-    position: absolute;
-    top: -10rem;
-    bottom: 0;
-    opacity: 0.93;
-}
 
 .white-background {
-    background: linear-gradient(to bottom, var(--black), var(--green));
-    color: var(--white);
+    /* background: linear-gradient(to bottom, var(--black), var(--green)); */
+    color: var(--green);
 }
 
 .cartList {
@@ -72,11 +53,12 @@ body {
 
 .box-2 h3 {
     font-weight: 800;
-    font-size: 0.8rem;
+    font-size: 1rem;
     max-width: 100%;
     text-align: left;
-    color: var(--white);
+    color: var(--green);
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .box-2 h3::first-letter {
@@ -222,12 +204,12 @@ body {
 }
 
 .client-data-sec form h4{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 1rem auto;
     font-weight: 600;
     text-align: center;
     max-width: 60vw;
-    color: var(--white);
+    color: var(--green);
 }
 
 .client-data-sec form section {
@@ -237,15 +219,15 @@ body {
 }
 
 .client-data-sec input, textarea {
-    background: linear-gradient(to top, var(--black), var(--green));
+    /* background: linear-gradient(to top, var(--black), var(--green)); */
     outline: none;
-    border: none;
+    border: solid var(--orange) 1px;
     margin-left: 1rem;
-    color: var(--white);
+    color: var(--green);
     font-weight: bold;
-    padding-left: 0.5rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
-
+    font-size: 0.9rem;
 } 
 
 /* animation to invalid inputs */
@@ -262,6 +244,7 @@ body {
 
 .name-email-phone div:not(.radio-buttons) {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -379,7 +362,7 @@ body {
 
 .obs-sec textarea::placeholder {
     padding: 0.1rem 0 0 0.1rem;
-    color: var(--white);
+    color: var(--orange);
     font-weight: bold;
 }
 
@@ -397,9 +380,9 @@ input[type="date"] {
 }
 
 select {
-    background: linear-gradient(to top, var(--black), var(--green));
+    /* background: linear-gradient(to top, var(--black), var(--green)); */
     font-weight: bold;
-    color: var(--white);
+    color: var(--orange);
 }
 
 /* COMO CHEGASTE ATÉ NÓS */
@@ -435,8 +418,10 @@ select {
 
 .error-message, 
 .required-input-icon {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: bold;
     color: var(--orange);
+    text-align: center;
 }
 
 @media screen and (min-width: 700px) {
