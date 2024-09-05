@@ -191,7 +191,7 @@
 
 /* PAGINA 1 APÓS AVANCAR */
 .client-data-sec {
-    max-width: 100vw;
+    max-width: 95vw;
     margin: 0 auto;
     display: grid;
     justify-content: center;
