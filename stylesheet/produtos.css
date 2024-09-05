@@ -17,16 +17,16 @@ body {
 
 .all-products .title-div {
     /* grid-column: span 2; */
-    /* background-color: black; */
+    background-color: var(--green-one);
     color: var(--white);
-    background-image: linear-gradient(90deg, var(--green), var(--black));
+    /* background-image: linear-gradient(90deg, var(--green), var(--black)); */
     border: none;
     outline: none;
+    margin: 7vh 0;
 }
 
 .all-products div:not(.title-div) {
     text-align: center;
-    font-weight: 800;
     padding: 0.5rem;
 } 
 
@@ -40,16 +40,20 @@ body {
 
 .all-products a {
     text-decoration: none;
+
 }
 
 .all-products a p {
     max-width: 75dvw;
+    border: solid var(--orange) 2px;
     border-radius: 1rem 0;
-    color: var(--black);
+    color: var(--white);
     background-color: var(--green-one);
     outline: none;
     padding: 1rem;
     margin: auto;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 
@@ -79,6 +83,9 @@ body {
 
     .all-products .title-div {
         grid-column: span 4;
+        margin: 8vh 0;
+        text-align: center;
+        max-width: 100vw;
     }
 
     /* .section-title {
