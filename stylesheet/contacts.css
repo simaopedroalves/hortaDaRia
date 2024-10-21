@@ -131,12 +131,11 @@
 @media screen and (min-width: 700px) {
 
      .media-and-contacts {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 0; 
-        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 0;
         min-width: 100vw;
         max-width: 100vw;
-    } 
+    }
 
     .footer-head, .line-break {
         grid-column: span 3;
@@ -182,11 +181,9 @@
         border: solid var(--orange) 2px;
         color: var(--white);
     }
- 
+
     .social-media {
-        grid-column: span 1;
-        padding: 1vw;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .info-tel span:nth-child(2) {
