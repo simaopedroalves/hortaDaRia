@@ -144,8 +144,9 @@
                 </div>
                 <div class="schedule-deliver">
                     <label for="schedule">Horário<span class="required-input-icon">*</span></label>
-                    <select id="schedule" name="Horário" value="horario entre: " required class="required">
+                    <select id="schedule" name="Horário" value="horario entre: " required class="required" placeholder="Selecionar">
                         <optgroup label="Manhã">
+                            <option value="">Selecionar</option>
                             <option value="9h-10h">09:00 - 10:00</option>
                             <option value="10h-11h">10:00 - 11:00</option>
                             <option value="12h-13h">11:00 - 13:00</option>
@@ -171,7 +172,7 @@
                 <h5>
                     Onde preferes levantar a tua encomenda?
                 </h5>
-                <input type="hidden"  name="Local de Levantamento:">
+                <!-- <input type="hidden"  name="Local de Levantamento:"> -->
                 <div>
                     <input id="praca" type="radio" name="local" value="Mercado" checked>
                     <div class="mercado">
@@ -187,7 +188,7 @@
             </section>
                 <!-- ======= LEVANTAR NA HORTA ========== -->
             <section class="horta-pick-up-sec border-1">
-                <input type="hidden" name="Levantamento na Horta">
+                <!-- <input type="hidden" name="Levantamento na Horta"> -->
                 <div>
                     <label for="pick-up-day">Dia de Levantamento</label>
                     <input id="pick-up-day" type="date" name="Quero Levantar neste dia">
@@ -196,6 +197,7 @@
                     <label for="ppick-up-schedule">Horário</label>
                     <select id="ppick-up-schedule" name="Horário">
                         <optgroup label="Manhã">
+                            <option value="">Selecionar</option>
                             <option value="9h-10h">09:00 - 10:00</option>
                             <option value="10h-11h">10:00 - 11:00</option>
                             <option value="12h-13h">11:00 - 13:00</option>
@@ -210,7 +212,7 @@
                     </select>
                     <div>
                         <label for="other-schedule">Outro horário</label>
-                        <input type="text" name="Horário p/Levantamento Opcional">
+                        <input type="text" name="">
                     </div>
             </section>
 
@@ -221,7 +223,7 @@
 
             <section class="hear-about-us-sec">
                 <label for="hear-about-us" name="Como Chegou até nós">Como chegaste até nós?</label>
-                <!-- <input type="hidden" name="CHEGOU ATÉ NÓS ATRAVÉS DE:"> -->
+                <input type="hidden" name="CHEGOU ATÉ NÓS ATRAVÉS DE:">
                 <div>
                     <input type="checkbox" id="facebook" name="facebook">
                     <label for="facebook">Facebook</label>

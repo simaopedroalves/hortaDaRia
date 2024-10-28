@@ -135,18 +135,3 @@ function findStockOfItems (stock, product_id) {
         box.style.textAlign = 'center'
     }
 }
-
-const allInputsAboutFormDelivery = document.querySelectorAll('.client-data-sec input');
-
-
-allInputsAboutFormDelivery.forEach(input => {
-    
-    input.addEventListener('input', () => {
-        if (input.value == '') {
-           input.name = ''
-        }
-        console.log(input.name);
-
-    })
-    
-})
