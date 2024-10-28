@@ -1,25 +1,19 @@
 body {
-    background-image: url('/images/alface-de-fundo.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .all-products {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     align-items: center;
-    /* justify-content: space-around; */
-    /* margin: 5vh 2vw 10vh 2vw; */
     max-width: 100vw;
     margin-bottom: 10vh;
    
 }
 
 .all-products .title-div {
-    /* grid-column: span 2; */
     background-color: var(--green-one);
     color: var(--white);
-    /* background-image: linear-gradient(90deg, var(--green), var(--black)); */
     border: none;
     outline: none;
     margin: 7vh 0;
@@ -33,7 +27,6 @@ body {
 .all-products img {
     object-fit: contain;
     max-width: 35vw;
-    /* max-height: 50%; */
     border-radius: 1rem;
     transition: 1s;
 }
@@ -87,10 +80,6 @@ body {
         text-align: center;
         max-width: 100vw;
     }
-
-    /* .section-title {
-        grid-column: span 4;
-    } */
 
     .all-products a p{
         min-height: 20vh;
