@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         let raizesName = object.raizes[i].name;
         let raizesPrice = object.raizes[i].price;
         let image = object.raizes[i].image;
+        let stock = object.raizes[i].stock;
+        let product_id = object.raizes[i].productId;
+
+
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
@@ -30,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         
         secRaizes.innerHTML += `
-            <div class="boxItem" id="">
+            <div class="boxItem" id="${product_id}">
                 <h3 id="itName">${raizesName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${raizesPrice}€/Kg</div>

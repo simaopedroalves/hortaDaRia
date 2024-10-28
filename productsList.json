@@ -106,7 +106,7 @@
         {
             "name": "couve galega",
             "price": 2,
-            "image": "",
+            "image": "/images/verduras/couve-galega.jpg",
             "productId": 13,
             "stock": true
 
@@ -226,9 +226,9 @@
     ],
     "raizes": [
         {
-            "name": "batata-doce",
+            "name": "batata doce polpa laranja",
             "price": 2,
-            "image": "",
+            "image": "/images/raizes/batata-doce-polpa-laranja.jpg",
             "productId": 28,
             "stock": true
 
@@ -499,7 +499,7 @@
             "price": 1,
             "image": "/images/ervasECha/alecrim.jpg",
             "productId": 62,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -543,14 +543,6 @@
 
         },
         {
-            "name": "hortelã e chocolate",
-            "price": 2,
-            "image": "",
-            "productId": 68,
-            "stock": true
-
-        },
-        {
             "name": "cidreira fresca",
             "price": 1,
             "image": "",
@@ -585,7 +577,7 @@
         {
             "name": "hipericão do gerês",
             "price": 1,
-            "image": "",
+            "image": "/images/ervasECha/hipericao-do-geres.jpg",
             "productId": 73,
             "stock": true
 

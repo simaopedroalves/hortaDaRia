@@ -33,7 +33,7 @@ deliverAtHomeRadioBtn.addEventListener('click', () => {
     pickUpHortaSection.classList.add('hide-section');
     deliverSection.classList.remove('hide-section');
     enableInputs()
-    addRequiredAttribute()
+    // addRequiredAttribute()
 });
 
 // when user click on radio button 'Levantar', the sections that are not 
@@ -43,7 +43,7 @@ pickUpRadioBtn.addEventListener('click', () => {
     pickUpHortaSection.classList.add('hide-section');
     deliverSection.classList.add('hide-section');
     enableInputs()
-    removeRequiredAttribute()
+    // removeRequiredAttribute()
 });
 
 pickUpAtMercadoBtn.addEventListener('click', () => {
@@ -55,22 +55,22 @@ pickUpAtHortaBtn.addEventListener('click', () => {
 });
 
 // when the user wants pick up, the input that are required on address section, aren't required 
-function removeRequiredAttribute() {
-    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
+// function removeRequiredAttribute() {
+//     let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
 
-    previousRequiredElements.forEach(el => {
-        el.removeAttribute('required')
-    })
-}
+//     previousRequiredElements.forEach(el => {
+//         el.removeAttribute('required')
+//     })
+// }
 
-// when the user wants a deliver, some input are required on address section
-function addRequiredAttribute() {
-    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
+// // when the user wants a deliver, some input are required on address section
+// function addRequiredAttribute() {
+//     let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
 
-    previousRequiredElements.forEach(el => {
-        el.setAttribute('required', '')
-    })
-}
+//     previousRequiredElements.forEach(el => {
+//         el.setAttribute('required', '')
+//     })
+// }
 
 // code to validate data like name, address, email...
 const clientName = document.querySelector('#name');
@@ -281,6 +281,7 @@ function getCartItemsFromLocalStorage () {
 
 const totalToPayInput = document.querySelector('#totalPriceToPayId');
 const finalPrice = JSON.parse(localStorage.getItem('finalPrice'));
+
 function getTotalToPay() {
     totalToPayInput.value = finalPrice + '€';
 }

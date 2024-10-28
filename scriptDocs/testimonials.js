@@ -24,10 +24,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         let clientTestimonial = object.testimonials[i].testimonial;
         let testimonialDate = object.testimonials[i].testimonialDate;
 
-        // let image = object.ervasAromaticasECha[i].image;
-    
-        // console.log('Nome: ' + ervaName + '\n' + 'Preço: ' + ervaPrice)
-        
         secTestimonials.innerHTML += 
         `
             <div class="client-testimonial">
