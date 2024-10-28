@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div>
-                    <label for="address-local">Localidade</label>
+                    <label for="address-local">Localidade<span class="required-input-icon">*</span></label>
                     <input id="address-local" type="text" name="Localidade">
                 </div>
                 <div>
@@ -144,9 +144,10 @@
                 </div>
                 <div class="schedule-deliver">
                     <label for="schedule">Horário<span class="required-input-icon">*</span></label>
-                    <select id="schedule" name="Horário" value="horario entre: " required class="required" placeholder="Selecionar">
+                    <select id="scheduleToDeliverAtHome" name="Horário" value="" required class="required" placeholder="Selecionar">
+                        <option value="">Selecionar</option>
                         <optgroup label="Manhã">
-                            <option value="">Selecionar</option>
+                            
                             <option value="9h-10h">09:00 - 10:00</option>
                             <option value="10h-11h">10:00 - 11:00</option>
                             <option value="12h-13h">11:00 - 13:00</option>
@@ -162,7 +163,7 @@
 
                     <div>
                         <label for="other-schedule">Outro horário</label>
-                        <input type="text" name="Horário Disponivel">
+                        <input type="text" name="Horário Disponivel" id="other-schedule">
                     </div>
                 </div>
             </section>
@@ -191,11 +192,11 @@
                 <!-- <input type="hidden" name="Levantamento na Horta"> -->
                 <div>
                     <label for="pick-up-day">Dia de Levantamento</label>
-                    <input id="pick-up-day" type="date" name="Quero Levantar neste dia">
+                    <input id="pick-up-day" type="date" name="Quero Levantar neste dia" required>
                 </div>
                 <div class="schedule-deliver">
                     <label for="ppick-up-schedule">Horário</label>
-                    <select id="ppick-up-schedule" name="Horário">
+                    <select id="ppick-up-schedule" name="Horario" required>
                         <optgroup label="Manhã">
                             <option value="">Selecionar</option>
                             <option value="9h-10h">09:00 - 10:00</option>

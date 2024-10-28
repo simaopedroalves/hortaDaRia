@@ -33,7 +33,10 @@ deliverAtHomeRadioBtn.addEventListener('click', () => {
     pickUpHortaSection.classList.add('hide-section');
     deliverSection.classList.remove('hide-section');
     enableInputs()
-    // addRequiredAttribute()
+    addRequiredAttribute()
+    document.querySelector('#other-schedule').removeAttribute('required')
+    document.querySelector('#pick-up-day').removeAttribute('required')
+
 });
 
 // when user click on radio button 'Levantar', the sections that are not 
@@ -43,34 +46,46 @@ pickUpRadioBtn.addEventListener('click', () => {
     pickUpHortaSection.classList.add('hide-section');
     deliverSection.classList.add('hide-section');
     enableInputs()
-    // removeRequiredAttribute()
+    removeRequiredAttribute()
+    document.querySelector('#pick-up-day').removeAttribute('required');
+
 });
 
 pickUpAtMercadoBtn.addEventListener('click', () => {
-    pickUpHortaSection.classList.add('hide-section')
+    pickUpHortaSection.classList.add('hide-section');
+    removeRequiredAttribute()
+    document.querySelector('#pick-up-day').removeAttribute('required');
 });
 
 pickUpAtHortaBtn.addEventListener('click', () => {
-    pickUpHortaSection.classList.remove('hide-section')
+    pickUpHortaSection.classList.remove('hide-section');
+    removeRequiredAttribute()
+
 });
 
 // when the user wants pick up, the input that are required on address section, aren't required 
-// function removeRequiredAttribute() {
-//     let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
+function removeRequiredAttribute() {
+    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
 
-//     previousRequiredElements.forEach(el => {
-//         el.removeAttribute('required')
-//     })
-// }
+    previousRequiredElements.forEach(el => {
+        el.removeAttribute('required');
+    })
+
+}
 
 // // when the user wants a deliver, some input are required on address section
-// function addRequiredAttribute() {
-//     let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
+function addRequiredAttribute() {
+    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
+    let floorInput = document.querySelector('#floor-number');
 
-//     previousRequiredElements.forEach(el => {
-//         el.setAttribute('required', '')
-//     })
-// }
+    previousRequiredElements.forEach(el => {
+        el.setAttribute('required', '');
+        console.log(el);
+
+    });
+
+    floorInput.removeAttribute('required')
+}
 
 // code to validate data like name, address, email...
 const clientName = document.querySelector('#name');
@@ -238,6 +253,7 @@ clientAddressLocal.addEventListener('input', () => {
         errorMessage.style.color = "var(--red)"
     }
 })
+
 
 // SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
 submitBtn.addEventListener('click', () => {
