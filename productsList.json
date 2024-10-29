@@ -40,7 +40,7 @@
         {
             "name": "salada natura",
             "price": 2,
-            "image": "/images/saladas/alfaces-mix.jpg",
+            "image": "/images/saladas/salada-natura.jpg",
             "productId": 5,
             "stock": true
 
@@ -64,7 +64,7 @@
         {
             "name": "Verduras asiáticas",
             "price": 1.5,
-            "image": "",
+            "image": "/images/saladas/verduras-asiaticas.jpg",
             "productId": 8,
             "stock": true
 
@@ -138,7 +138,7 @@
         {
             "name": "acelgas baby",
             "price": 2,
-            "image": "",
+            "image": "/images/verduras/acelgas-baby.jpg",
             "productId": 17,
             "stock": true
 
@@ -148,14 +148,6 @@
             "price": 2,
             "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18,
-            "stock": true
-
-        },
-        {
-            "name": "Espinafre de folha larga",
-            "price": 1.25,
-            "image": "",
-            "productId": 19,
             "stock": true
 
         },
@@ -214,14 +206,6 @@
             "productId": 26,
             "stock": true
 
-        },
-        {
-            "name": "verduras asiáticas",
-            "price": 1,
-            "image": "/images/verduras/verduras-asiaticas.jpg",
-            "productId": 27,
-            "stock": true
-
         }
     ],
     "raizes": [
@@ -270,7 +254,7 @@
         {
             "name": "rabanete rose",
             "price": 2.5,
-            "image": "/images/microverdes/microverdes-rabanetes.jpg",
+            "image": "/images/microverdes/microverdes-rabanete-rose.jpg",
             "productId": 33,
             "stock": true
 
@@ -278,7 +262,7 @@
         {
             "name": "rabanete red rambo",
             "price": 2.5,
-            "image": "/images/microverdes/rabanetes.jpg",
+            "image": "/images/microverdes/microverdes-rabanete-red-rambo.jpg",
             "productId": 34,
             "stock": true
 
@@ -308,10 +292,34 @@
 
         },
         {
+            "name": "capuchinha",
+            "price": 5,
+            "image": "/images/microverdes/microverdes-broculos.jpg",
+            "productId": 93,
+            "stock": true
+
+        },
+        {
             "name": "mix de microverdes",
             "price": 2,
             "image": "/images/microverdes/microverdes-mix.jpg",
             "productId": 38,
+            "stock": true
+
+        },
+        {
+            "name": "2 vasos microverdes",
+            "price": 9,
+            "image": "",
+            "productId": 91,
+            "stock": true
+
+        },
+        {
+            "name": "3 vasos microverdes",
+            "price": 12,
+            "image": "",
+            "productId": 92,
             "stock": true
 
         }
@@ -513,7 +521,7 @@
         {
             "name": "chá de cidreira",
             "price": 2,
-            "image": "",
+            "image": "/images/ervasECha/cha-cidreira.jpg",
             "productId": 64,
             "stock": true
 
@@ -521,7 +529,7 @@
         {
             "name": "folhas de loureiro",
             "price": 1,
-            "image": "",
+            "image": "/images/ervasECha/folha-loureiro.jpg",
             "productId": 65,
             "stock": true      
 
@@ -545,7 +553,7 @@
         {
             "name": "cidreira fresca",
             "price": 1,
-            "image": "",
+            "image": "/images/ervasECha/cidreira-fresca.jpg",
             "productId": 69,
             "stock": true
 
@@ -553,7 +561,7 @@
         {
             "name": "tomilho",
             "price": 1,
-            "image": "",
+            "image": "/images/ervasECha/tomilho.jpg",
             "productId": 70,
             "stock": true
 
@@ -585,7 +593,7 @@
         {
             "name": "salsa",
             "price": 1,
-            "image": "",
+            "image": "/images/ervasECha/salsa.jpg",
             "productId": 74,
             "stock": true
 
@@ -595,7 +603,7 @@
         {
             "name": "suculenta",
             "price": 2,
-            "image": "",
+            "image": "/images/plantasEmVaso/vaso_suculenta.jpg",
             "productId": 75,
             "stock": true
 
@@ -673,38 +681,6 @@
 
         },
         {
-            "name": "ervilha",
-            "price": 5,
-            "image": "",
-            "productId": 85,
-            "stock": true
-
-        }, 
-        {
-            "name": "girassol",
-            "price": 5,
-            "image": "",
-            "productId": 86,
-            "stock": true
-
-        },
-        {
-            "name": "rabanete rose",
-            "price": 5,
-            "image": "",
-            "productId": 87,
-            "stock": true
-
-        },
-        {
-            "name": "rabanete red rambo",
-            "price": 5,
-            "image": "",
-            "productId": 88,
-            "stock": true
-
-        },
-        {
             "name": "2 vasos à escolha",
             "price": 9,
             "image": "",
@@ -736,6 +712,16 @@
             "name": "Florbela Lages",
             "testimonial": "É um negócio de pessoas para pessoas, com os melhores produtos hortícolas de Famalicão. Podermos ter alimentos tão generosamente cuidados pelo Tiago e o Francisco e podermos dar o melhor aos nossos filhos, não tem preço. Obrigada!",
             "testimonialDate": "28/10/2024"
+        },
+        {
+            "name": "Raquel Lancão",
+            "testimonial": "Descobri na Horta da Ria produtos de ótima qualidade e super saborosos! Conhecer o local foi muito gratificante. O Tiago super acolhedor fez questão de mostrar a sua horta bem como explicar todo o processo de produção! Sem dúvida que os alimentos são muito bons. Optar por estes produtos foi mesmo uma boa escolha. Recomendo mesmo!",
+            "testimonialDate": "29/10/2024"
+        },
+        {
+            "name": "Isabel Miranda da Costa",
+            "testimonial": "Horta d'Ria é uma descoberta constante dos frescos que a terra dá. Sempre biológicos, locais e sazonais. Produzidos de forma sustentável, consciente e em harmonia com os ciclos da natureza. A diversidade de microverdes, os ovos de galinhas que vivem ao ar livre, até à produção artesanal de sabão. Tudo pelas mãos de dois seres humanos que adoram o que fazem, o Tiago e o Francisco, e sempre nos recebem com muita gentileza, dedicação e um sorriso!",
+            "testimonialDate": "29/10/2024"
         }
     ]
 

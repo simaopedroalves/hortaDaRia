@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             })
             
         })
-  
+        lookForVasos(microverdesName, microverdesPrice, product_id, image)
     }
 
     updateNumbItemsOnCart()
@@ -186,4 +186,22 @@ function updateNumbItemsOnCart() {
             }
         }
     })
+}
+
+function lookForVasos(microverdesName, microverdesPrice, product_id, image) {
+    microverdesName = [...microverdesName] 
+   let str = microverdesName.join('').toString()
+
+    console.log(microverdesName);
+    console.log(str);
+    console.log(typeof(str));
+
+    let strArr = str.split(' ')
+    console.log(strArr[1]);
+    
+    if (strArr[1] === 'vasos') {
+        console.log('match');
+        
+    }
+    
 }
