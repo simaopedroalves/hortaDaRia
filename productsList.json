@@ -36,10 +36,30 @@
             "productId": 4          
         }
     ],
+    "cogumelos": [
+        {
+            "name": "Cogumelos",
+            "price": 1,
+            "image": "",
+            "productId": 93,
+            "stock": true
+
+        }
+    ],
+    "compotas": [
+        {
+            "name": "Compota",
+            "price": 1,
+            "image": "",
+            "productId": 94,
+            "stock": true
+
+        }
+    ],
     "saladas": [
         {
             "name": "salada natura",
-            "price": 2,
+            "price": 15,
             "image": "/images/saladas/salada-natura.jpg",
             "productId": 5,
             "stock": true
@@ -454,16 +474,9 @@
     "ovos": [
         {
             "name": "ovos de galinha",
-            "price": 4,
+            "price": 4.5,
             "image": "/images/ovos/ovo-galinha.jpg",
             "productId": 56,
-            "stock": true
-        },
-        {
-            "name": "ovos de codorniz",
-            "price": 2,
-            "image": "/images/ovos/ovos-codorniz.jpg",
-            "productId": 57,
             "stock": true
         }
     ], 
@@ -504,7 +517,7 @@
     "ervasAromaticasECha": [
         {
             "name": "alecrim",
-            "price": 1,
+            "price": 330,
             "image": "/images/ervasECha/alecrim.jpg",
             "productId": 62,
             "stock": true
@@ -512,7 +525,7 @@
         },
         {
             "name": "chá de limonete",
-            "price": 2,
+            "price": 30,
             "image": "/images/ervasECha/cha_limonete.jpg",
             "productId": 63,
             "stock": true              
@@ -520,7 +533,7 @@
         },
         {
             "name": "chá de cidreira",
-            "price": 2,
+            "price": 30,
             "image": "/images/ervasECha/cha-cidreira.jpg",
             "productId": 64,
             "stock": true
@@ -528,7 +541,7 @@
         },
         {
             "name": "folhas de loureiro",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/folha-loureiro.jpg",
             "productId": 65,
             "stock": true      
@@ -536,7 +549,7 @@
         },
         {
             "name": "hortelã-pimenta",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/hortela-pimenta.jpg",
             "productId": 66,
             "stock": true
@@ -544,7 +557,7 @@
         },
         {
             "name": "hortelã menta",
-            "price": 1,
+            "price": 30,
             "image": "",
             "productId": 67,
             "stock": true
@@ -552,7 +565,7 @@
         },
         {
             "name": "cidreira fresca",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/cidreira-fresca.jpg",
             "productId": 69,
             "stock": true
@@ -560,7 +573,7 @@
         },
         {
             "name": "tomilho",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/tomilho.jpg",
             "productId": 70,
             "stock": true
@@ -568,7 +581,7 @@
         },
         {
             "name": "oregãos",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/oregaos.jpg",
             "productId": 71,
             "stock": true
@@ -576,7 +589,7 @@
         },
         {
             "name": "coentros",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/coentros.jpg",
             "productId": 72,
             "stock": true
@@ -584,7 +597,7 @@
         },
         {
             "name": "hipericão do gerês",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/hipericao-do-geres.jpg",
             "productId": 73,
             "stock": true
@@ -592,7 +605,7 @@
         },
         {
             "name": "salsa",
-            "price": 1,
+            "price": 30,
             "image": "/images/ervasECha/salsa.jpg",
             "productId": 74,
             "stock": true
