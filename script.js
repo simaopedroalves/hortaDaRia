@@ -135,3 +135,23 @@ function findStockOfItems (stock, product_id) {
         box.style.textAlign = 'center'
     }
 }
+
+
+// EVENTLISTENER TO CALL HORTA D'RIA ON CLICK BUTTON
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+    const allcallButtons = document.querySelectorAll('.media-and-constacts .contact a');
+
+    allcallButtons.forEach((el) => {
+        console.log(el);
+        console.log('o');
+        
+    });
+
+// });
+
+
+// console.log('');
+
+
