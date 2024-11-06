@@ -19,7 +19,7 @@
     gap: 3vw;
     grid-template-columns: repeat(1, 1fr);
     max-width: 100vw;
-    padding: 10vh 3vw;
+    padding: 10vh 3lvw;
     justify-content: center;
     /* border: solid red 1px; */
     /* background-color: var(--black); */
@@ -42,11 +42,13 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
     align-items: center;
     text-align: center;
     max-height: 50vh;
     min-height: 50vh;
+    /* max-width: 80lvw; */
     gap: 0.3rem;
     font-size: 1rem;
     font-weight: 700;
@@ -70,10 +72,10 @@
 .boxItem img {
     grid-column: span 2;
     object-fit: cover;
-    min-height: 30vh;
-    max-height: 30vh;
-    max-width: 70vw;
-    min-width: 70vw;
+    min-height: 30lvh;
+    max-height: 30lvh;
+    max-width: 70lvw;
+    min-width: 70lvw;
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -85,7 +87,8 @@
     color: var(--black);
 }
 
-.boxItem select {
+.boxItem select,
+.boxItem input {
     max-width: 70%;
     border-radius: 0.1rem;
     font-size: 0.8rem;
@@ -112,7 +115,7 @@
     font-weight: 700;
     letter-spacing: 0.1rem;
     outline: none;
-    max-width: 70%;
+    max-width: 60%;
 }
 
 @media screen and (min-width: 700px) {

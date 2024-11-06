@@ -6,6 +6,7 @@ const shoppingCart = document.querySelector('.cartList');
 function createCart() {
 
     let cart = JSON.parse(localStorage.getItem('cart'));
+    
   
     cart.forEach((el) => {
         let name = el.itName;

@@ -37,20 +37,76 @@
     ],
     "cogumelos": [
         {
-            "name": "Cogumelos",
-            "price": 1,
+            "name": "Cogumelos pleurotus",
+            "price": 10,
             "image": "",
             "productId": 93,
+            "stock": true
+
+        },
+        {
+            "name": "Cogumelos marron",
+            "price": 8,
+            "image": "",
+            "productId": 125,
             "stock": true
 
         }
     ],
     "compotas": [
         {
-            "name": "Compota",
-            "price": 1,
+            "name": "Morango",
+            "price": 14,
             "image": "",
-            "productId": 94,
+            "productId": 126,
+            "stock": true
+
+        },
+        {
+            "name": "framboesa",
+            "price": 14,
+            "image": "",
+            "productId": 127,
+            "stock": true
+
+        },
+        {
+            "name": "frutos silvestres",
+            "price": 10,
+            "image": "",
+            "productId": 128,
+            "stock": true
+
+        },
+        {
+            "name": "limão",
+            "price": 16.5,
+            "image": "",
+            "productId": 129,
+            "stock": true
+
+        },
+        {
+            "name": "geleia limão",
+            "price": 23.3,
+            "image": "",
+            "productId": 130,
+            "stock": true
+
+        },
+        {
+            "name": "figos",
+            "price": 16.6,
+            "image": "",
+            "productId": 131,
+            "stock": true
+
+        },
+        {
+            "name": "framboesa amarela",
+            "price": 16.6,
+            "image": "",
+            "productId": 132,
             "stock": true
 
         }
@@ -109,6 +165,46 @@
             "price": 15,
             "image": "/images/saladas/agriao-da-terra.jpg",
             "productId": 11,
+            "stock": true
+
+        },
+        {
+            "name": "Mizuna Verde",
+            "price": 20,
+            "image": "",
+            "productId": 95,
+            "stock": true
+
+        },
+        {
+            "name": "Mizuna Vermelha",
+            "price": 15,
+            "image": "",
+            "productId": 96,
+            "stock": true
+
+        },
+        {
+            "name": "Salada Gourmet",
+            "price": 15,
+            "image": "",
+            "productId": 97,
+            "stock": true
+
+        },
+        {
+            "name": "Folha de Gelo",
+            "price": 80,
+            "image": "",
+            "productId": 98,
+            "stock": true
+
+        },
+        {
+            "name": "Espinafre Nova Zelândia",
+            "price": 40,
+            "image": "",
+            "productId": 99,
             "stock": true
 
         }
@@ -179,6 +275,14 @@
 
         },
         {
+            "name": "Red russian kale",
+            "price": 1.5,
+            "image": "",
+            "productId": 101,
+            "stock": true
+
+        },
+        {
             "name": "Red russian kale baby",
             "price": 1.5,
             "image": "/images/verduras/red-russian-kale-baby.jpg",
@@ -225,14 +329,62 @@
             "productId": 26,
             "stock": true
 
+        },
+        {
+            "name": "Beldroegas",
+            "price": 5,
+            "image": "",
+            "productId": 100,
+            "stock": true
+
+        },
+        {
+            "name": "couve kale roxa",
+            "price": 1.5,
+            "image": "",
+            "productId": 103,
+            "stock": true
+
+        },
+        {
+            "name": "couve repolho coração",
+            "price": 1.5,
+            "image": "",
+            "productId": 104,
+            "stock": true
+
         }
     ],
     "raizes": [
+        {
+            "name": "Rabanetes",
+            "price": 2,
+            "image": "",
+            "productId": 105,
+            "stock": true
+
+        },
         {
             "name": "batata doce polpa laranja",
             "price": 2,
             "image": "/images/raizes/batata-doce-polpa-laranja.jpg",
             "productId": 28,
+            "stock": true
+
+        },
+        {
+            "name": "batata doce polpa branca",
+            "price": 2.5,
+            "image": "",
+            "productId": 111,
+            "stock": true
+
+        },
+        {
+            "name": "batata doce polpa laranja claro",
+            "price": 2.5,
+            "image": "",
+            "productId": 112,
             "stock": true
 
         },
@@ -245,6 +397,30 @@
 
         },
         {
+            "name": "cebola verde",
+            "price": 15,
+            "image": "",
+            "productId": 106,
+            "stock": true
+
+        },
+        {
+            "name": "nabo bola de neve",
+            "price": 5,
+            "image": "",
+            "productId": 107,
+            "stock": true
+
+        },
+        {
+            "name": "beterraba di gioggia",
+            "price": 6,
+            "image": "",
+            "productId": 108,
+            "stock": true
+
+        },
+        {
             "name": "cenouras",
             "price": 2,
             "image": "/images/raizes/cenouras.jpg",
@@ -253,10 +429,26 @@
 
         },
         {
-            "name": "cenouras baby",
-            "price": 2.5,
+            "name": "cenoura baby congelada",
+            "price": 6,
             "image": "",
             "productId": 31,
+            "stock": true
+
+        },
+        {
+            "name": "Rooties mix bag",
+            "price": 5,
+            "image": "",
+            "productId": 109,
+            "stock": true
+
+        },
+        {
+            "name": "Gengibre fresco",
+            "price": 30,
+            "image": "",
+            "productId": 110,
             "stock": true
 
         },
@@ -311,7 +503,7 @@
 
         },
         {
-            "name": "capuchinha",
+            "name": "bróculos",
             "price": 5,
             "image": "/images/microverdes/microverdes-broculos.jpg",
             "productId": 93,
@@ -423,6 +615,27 @@
             "productId": 48,
             "stock": true
 
+        },
+        {
+            "name": "flor de coentros",
+            "price": 0.1,
+            "image": "",
+            "productId": 114,
+            "stock": true
+        },
+        {
+            "name": "flor de malva",
+            "price": 0.2,
+            "image": "",
+            "productId": 115,
+            "stock": true
+        },
+        {
+            "name": "Crisântemos",
+            "price": 0.3,
+            "image": "",
+            "productId": 116,
+            "stock": true
         }
     ],
     "leguminosas": [
@@ -463,12 +676,77 @@
         },
         {
             "name": "limões",
-            "price": 1.5,
+            "price": 4,
             "image": "",
             "productId": 53,
             "stock": true
 
+        },
+        {
+            "name": "morangos",
+            "price": 8,
+            "image": "",
+            "productId": 117,
+            "stock": true
+
+        },
+        {
+            "name": "framboesas e amoras",
+            "price": 4,
+            "image": "",
+            "productId": 118,
+            "stock": true
+
+        },
+        {
+            "name": "Courgete",
+            "price": 4,
+            "image": "",
+            "productId": 119,
+            "stock": true
+
+        },
+        {
+            "name": "Bagas de goji",
+            "price": 20,
+            "image": "",
+            "productId": 120,
+            "stock": true
+
+        },
+        {
+            "name": "Fisalis",
+            "price": 15,
+            "image": "",
+            "productId": 121,
+            "stock": true
+
+        },
+        {
+            "name": "cucamelon",
+            "price": 15,
+            "image": "",
+            "productId": 122,
+            "stock": true
+
+        },
+        {
+            "name": "chuchu",
+            "price": 3,
+            "image": "",
+            "productId": 123,
+            "stock": true
+
+        },
+        {
+            "name": "tamarilho",
+            "price": 9,
+            "image": "",
+            "productId": 124,
+            "stock": true
+
         }
+        
     ],
     "ovos": [
         {
@@ -733,6 +1011,11 @@
         {
             "name": "Isabel Miranda da Costa",
             "testimonial": "Horta d'Ria é uma descoberta constante dos frescos que a terra dá. Sempre biológicos, locais e sazonais. Produzidos de forma sustentável, consciente e em harmonia com os ciclos da natureza. A diversidade de microverdes, os ovos de galinhas que vivem ao ar livre, até à produção artesanal de sabão. Tudo pelas mãos de dois seres humanos que adoram o que fazem, o Tiago e o Francisco, e sempre nos recebem com muita gentileza, dedicação e um sorriso!",
+            "testimonialDate": "29/10/2024"
+        },
+        {
+            "name": "Sara Silva",
+            "testimonial": "Cliente habitual há uns meses e todas as semanas recebo legumes frescos e deliciosos em casa. Sempre com honestidade e simpatia.",
             "testimonialDate": "29/10/2024"
         },
         {

@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             image = "/images/logo.png";
         }
 
-        // if (vasos != 'vasos') {
+        if (vasos != 'vasos') {
 
             secMicroverdes.innerHTML += `
             <div class="boxItem" id="${product_id}">
@@ -59,32 +59,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
             `
-        // }
+        }
 
-        // secMicroverdes.innerHTML += `
-        // <div class="boxItem" id="${product_id}">
-        //     <h3 id="itName">${microverdesName}</h3>
-        //     <img src="${image}" alt="">
-        //     <div class="kiloPrice">${microverdesPrice}€/Kg</div>
-        //     <select type="text" min="1" class="quantity" placeholder="quantidade">
-        //         <option value="qt">Quantidade</option>
-        //         <option value="25gr">25 gr</option>
-        //         <option value="50gr">50 gr</option>
-        //         <option value="75gr">75 gr</option>
-        //         <option value="100gr">100 gr</option>
-        //         <option value="150gr">150 gr</option>
-        //         <option value="200gr">200 gr</option>
-        //         <option value="250gr">250 gr</option>
-        //         <option value="500gr">500 gr</option>
-        //         <option value="1Un">1 Un</option>
-        //         <option value="2Un">2 Un</option>
-        //         <option value="3Un">3 Un</option>
-        //     </select>
-        //     <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-        //     <div class="priceToPay"></div>
-        //     <button class="addToCart btn btn-success" disabled>Comprar</button>
-        // </div>
-        // `
+        if (vasos == 'vasos') {
+
+            secMicroverdes.innerHTML += `
+                <div class="boxItem" id="${product_id}">
+                    <h3 id="itName">${microverdesName}</h3>
+                    <img src="${image}" alt="">
+                    <div class="kiloPrice">${microverdesPrice}€/Un</div>
+                    <input type="text" placeholder="Nome dos vasos" name="Vasos à escolha" class="quantity">
+                    <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+                    <div class="priceToPay">${microverdesPrice}€</div>
+                    <button class="addToCart btn btn-success" disabled>Comprar</button>
+                </div>
+            `
+        }
 
         // function on script.js
         findStockOfItems (stock, product_id)
