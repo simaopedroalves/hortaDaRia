@@ -30,19 +30,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error)
     }
 
-    let nameOne = object.cabazes[0].name
-    let priceOne = object.cabazes[0].price
-     
-        let newDivOne = document.createElement('div');
-        let newItemOne = `
+        let nameOne = object.cabazes[0].name
+        let priceOne = object.cabazes[0].price
+ 
+        cabazOne.innerHTML = `
             <div class="cabazContent">
                 <h4 class="cabazName">${nameOne}</h4>
                 <span class="cabazPrice">${priceOne}€</span>
             </div>
         `
-        newDivOne.innerHTML = newItemOne;
-        cabazOne.appendChild(newDivOne);
-
 
         let nameTwo = object.cabazes[1].name
         let priceTwo = object.cabazes[1].price
@@ -70,7 +66,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h4 class="cabazName">${nameFour}</h4>
             </div>
         `
-
 })
 
 
@@ -141,17 +136,17 @@ function findStockOfItems (stock, product_id) {
 
 
 // document.addEventListener('DOMContentLoaded', () => {
-    const allcallButtons = document.querySelectorAll('.media-and-constacts .contact a');
+    const allcallButtons = document.querySelectorAll('.media-and-contacts .contact a');
 
     allcallButtons.forEach((el) => {
-        console.log(el);
-        console.log('o');
+        el.href = 'tel:914547465';
+        console.log(el.href);
         
     });
 
 // });
 
 
-// console.log('');
+console.log('ups');
 
 
