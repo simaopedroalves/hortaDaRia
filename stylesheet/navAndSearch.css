@@ -41,7 +41,7 @@ header {
     background-color: var(--white);
     min-width: 100vw;
     max-width: 100vw;
-    min-height: 9svh;
+    min-height: 9lvh;
     /* max-height: 10svh; */
     z-index: 99;
     padding: auto;
@@ -170,29 +170,29 @@ header {
 .menu-list {
     position: absolute;
     top: 9svh;
-    min-width: 100vw;
+    min-width: 100lvw;
+    min-height: 100lvh;
     right: -100dvw;
     transition: 1000ms;
-
 }
 
 .show {
     right: 0;
 }
 
-header .menu-list li {
+header .menu-list a li {
     list-style: none;
     background-color: var(--white);
     color: var(--green);
-    min-width: 70svw;
+    min-width: 100%;
     text-align: center;
-    padding: 1rem;
-    font-weight: 900; 
+    padding: 1.5rem;
+    font-weight: 900;
     cursor: pointer;
-    /* background-image: linear-gradient(90deg, var(--green), var(--black)); */
     outline: none;
     border: none;
-    
+    border-bottom: var(--orange) solid 1px;
+    font-size: 1.2rem;
 }
 
 .menu-list a {
@@ -201,14 +201,12 @@ header .menu-list li {
     border: 0;
     outline: 0;
 }
-/* 
-header .menu-list  a:hover {
-    background-color: var(--gray);
-    color: var(--orange);
-    padding: 0.2rem;
-} */
 
-.menu-list li a:visited {
+header .menu-list a li:hover {
+    color: var(--orange);
+}
+
+.menu-list a li:visited {
     color: var(--black);
     background-color: var(--orange);
     border: 0;
@@ -235,7 +233,7 @@ header .menu-list  a:hover {
     max-width: 70svw;
 
 }
- 
+
 .searchBarInput {
     min-width: 80%;
     font-size: 0.8rem;
@@ -251,15 +249,12 @@ header .menu-list  a:hover {
 }
 
 .welcomeSection {
-    /* min-height: 94vh; */
     margin: 9svh 0 0 0;
     display: flex;
     overflow-x: scroll;
 }
 
 .welcomeSection .title-div {
-    /* min-height: 29svh;
-    max-height: 29svh; */
     min-width: 98vw;
     max-width: 98vw;
     min-height: 90svh;
@@ -275,8 +270,6 @@ header .menu-list  a:hover {
     background-size: cover;
     background-position: center;
     position: relative;
-    /* border-image: linear-gradient(90deg,  var(--black-hover-img), var(--green-hover-img), var(--black-hover-img)) fill 1; */
-    
 }
 
 .welcomeSection .title-div:nth-child(2) {
@@ -296,20 +289,14 @@ header .menu-list  a:hover {
     color: var(--white);
     text-transform: uppercase;
     border-image: linear-gradient(90deg,  var(--black-hover-img), var(--green-hover-img), var(--black-hover-img)) fill 1;
-   
-}
 
-/* .reverse-flex-direction {
-    flex-direction: row-reverse;
-} */
+}
 
 body::-webkit-scrollbar {
     display: block;
-    width: 1vw;
-    height: 1px;
     border: none;
     outline: none;
-    
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -332,20 +319,22 @@ body::-webkit-scrollbar:horizontal {
 body::-webkit-scrollbar:vertical {
     color: transparent;
     height: 1px;
+    width: 0.5vw;
+
 }
 
 
 
 
-@media screen and (min-width: 700px) { 
-   
+@media screen and (min-width: 700px) {
+
 
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         min-height: 12svh;
-        background-color: var(--green);
+        background-color: var(--white);
     }
 
     .navbar {
@@ -356,14 +345,14 @@ body::-webkit-scrollbar:vertical {
     }
 
     .cart-div .fa-basket-shopping {
-        color: var(--white);
+        color: var(--green);
     }
 
     .logo-img {
-        max-height: 10svh;
+        max-height: 10lvh;
         cursor: pointer;
     }
-    
+
     .menu-list {
         position: initial;
         max-width: fit-content;
@@ -371,6 +360,7 @@ body::-webkit-scrollbar:vertical {
         display: flex;
         justify-content: space-between;
         min-width: 60svw;
+        min-height: fit-content;
         margin: 0 2vw;
         padding: 0.3rem;
         background-color: transparent;
@@ -379,12 +369,13 @@ body::-webkit-scrollbar:vertical {
     header .menu-list a li {
         background-color: transparent;
         list-style: none;
-        color: var(--white);
+        color: var(--green);
         text-align: left;
         padding: 0.3rem;
-        font-weight: 900; 
+        font-weight: 900;
         cursor: pointer;
         min-width: 0svw;
+        border: none;
     }
 
     header .menu-list li {
@@ -401,6 +392,12 @@ body::-webkit-scrollbar:vertical {
     .welcomeSection .title-div {
         min-width: 33vw;
         max-height: 100vh;
+    }
+
+    .welcomeSection .title-div h1 {
+        bottom: 50%;
+        width: 100%;
+
     }
 
     body {
@@ -420,7 +417,7 @@ body::-webkit-scrollbar:vertical {
 }
 
 @media screen and (min-width: 860px) {
-    
+
     .menu-list {
         display: flex;
         justify-content: space-between;
@@ -429,7 +426,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     header .menu-list a li:hover {
-        color: var(--black)
+        color: var(--orange)
     }
 
     .searchBar-div {

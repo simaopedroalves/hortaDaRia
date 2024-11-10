@@ -76,16 +76,24 @@
         margin-bottom: 2dvh;
     }
     
-    .testimonials {
+    .testimonials,
+    .testimonials-flex {
+        display: grid;
+        overflow-x: none;
         grid-template-columns: repeat(2, 1fr); 
         gap: 5vh;
         justify-content: center;
         margin: 15dvh 3vw 20vh 3vw;
+        padding: 0;
     }
 
+    .testimonials > div:nth-child(odd), 
     .testimonials > div:nth-child(even) {
-        text-align: left;
+        text-align: center;
+        min-width: 40lvw;
+        max-width: 40lvw;
     }
+
 
     .client-testimonial {
         max-height: min-content;
