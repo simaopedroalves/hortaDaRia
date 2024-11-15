@@ -171,7 +171,7 @@
         {
             "name": "Mizuna Verde",
             "price": 20,
-            "image": "",
+            "image": "/images/saladas/mizuna-verde.jpg",
             "productId": 95,
             "stock": true
 
@@ -179,7 +179,7 @@
         {
             "name": "Mizuna Vermelha",
             "price": 15,
-            "image": "",
+            "image": "/images/saladas/mizuna-vermelha.jpg",
             "productId": 96,
             "stock": true
 
@@ -195,7 +195,7 @@
         {
             "name": "Folha de Gelo",
             "price": 80,
-            "image": "",
+            "image": "/images/saladas/folha-de-gelo.jpg",
             "productId": 98,
             "stock": true
 
@@ -203,7 +203,7 @@
         {
             "name": "Espinafre Nova Zelândia",
             "price": 40,
-            "image": "",
+            "image": "/images/saladas/espinafres-nova-zelandia.jpg",
             "productId": 99,
             "stock": true
 
