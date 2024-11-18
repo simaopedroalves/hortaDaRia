@@ -39,7 +39,7 @@
         {
             "name": "Cogumelos pleurotus",
             "price": 10,
-            "image": "",
+            "image": "/images/cogumelos/cogumelos-pleurotus.jpg",
             "productId": 93,
             "stock": true
 
@@ -187,7 +187,7 @@
         {
             "name": "Salada Gourmet",
             "price": 15,
-            "image": "",
+            "image": "/images/saladas/salada-gourmet.jpg",
             "productId": 97,
             "stock": true
 
@@ -277,7 +277,7 @@
         {
             "name": "Red russian kale",
             "price": 1.5,
-            "image": "",
+            "image": "/images/verduras/red-russian-kale.jpg",
             "productId": 101,
             "stock": true
 
@@ -331,25 +331,9 @@
 
         },
         {
-            "name": "Beldroegas",
-            "price": 5,
-            "image": "",
-            "productId": 100,
-            "stock": true
-
-        },
-        {
-            "name": "couve kale roxa",
-            "price": 1.5,
-            "image": "",
-            "productId": 103,
-            "stock": true
-
-        },
-        {
             "name": "couve repolho coração",
             "price": 1.5,
-            "image": "",
+            "image": "/images/verduras/couve-repolho-coracao.jpg",
             "productId": 104,
             "stock": true
 
@@ -359,7 +343,7 @@
         {
             "name": "Rabanetes",
             "price": 2,
-            "image": "",
+            "image": "/images/raizes/rabanete.jpg",
             "productId": 105,
             "stock": true
 
@@ -375,7 +359,7 @@
         {
             "name": "batata doce polpa branca",
             "price": 2.5,
-            "image": "",
+            "image": "/images/raizes/batata-doce-polpa-branca.jpg",
             "productId": 111,
             "stock": true
 
@@ -383,7 +367,7 @@
         {
             "name": "batata doce polpa laranja claro",
             "price": 2.5,
-            "image": "",
+            "image": "/images/raizes/batata-doce-polpa-laranja-claro.jpg",
             "productId": 112,
             "stock": true
 
@@ -399,7 +383,7 @@
         {
             "name": "cebola verde",
             "price": 15,
-            "image": "",
+            "image": "/images/raizes/cebola-verde.jpg",
             "productId": 106,
             "stock": true
 
@@ -413,9 +397,17 @@
 
         },
         {
+            "name": "alho francês",
+            "price": 5,
+            "image": "/images/raizes/alho-frances.jpg",
+            "productId": 703181124,
+            "stock": true
+
+        },
+        {
             "name": "beterraba di gioggia",
             "price": 6,
-            "image": "",
+            "image": "/images/raizes/beterraba-di-gioggia.jpg",
             "productId": 108,
             "stock": true
 
@@ -431,23 +423,15 @@
         {
             "name": "cenoura baby congelada",
             "price": 6,
-            "image": "",
+            "image": "/images/raizes/cenoura-baby-congelada.jpg",
             "productId": 31,
-            "stock": true
-
-        },
-        {
-            "name": "Rooties mix bag",
-            "price": 5,
-            "image": "",
-            "productId": 109,
             "stock": true
 
         },
         {
             "name": "Gengibre fresco",
             "price": 30,
-            "image": "",
+            "image": "/images/raizes/gengibre-fresco.jpg",
             "productId": 110,
             "stock": true
 
@@ -825,10 +809,10 @@
 
         },
         {
-            "name": "hortelã-pimenta",
+            "name": "hortelã",
             "price": 30,
-            "image": "/images/ervasECha/hortela-pimenta.jpg",
-            "productId": 66,
+            "image": "/images/ervasECha/hortela.jpg",
+            "productId": 715181124,
             "stock": true
 
         },
@@ -935,14 +919,6 @@
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_salvia.jpg",
             "productId": 80,
-            "stock": true
-
-        },
-        {
-            "name": "hortelã-pimenta",
-            "price": 2,
-            "image": "",
-            "productId": 81,
             "stock": true
 
         },
