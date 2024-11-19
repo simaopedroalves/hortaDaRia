@@ -1,8 +1,6 @@
-// import {updateNumbItemsOnCart} from '/script.js';
+const secfrutaDaEpoca = document.querySelector('.frutaDaEpoca');
 
-const secleguminosas = document.querySelector('.leguminosas');
-
-async function callleguminosas () {
+async function callfrutaDaEpoca () {
     return (await fetch('/productsList.json')).json()
 }
 
@@ -11,31 +9,31 @@ document.addEventListener('DOMContentLoaded', async () => {
     let object = '';
 
     try {
-        object = await callleguminosas();
+        object = await callfrutaDaEpoca();
     }
     catch (error) {
         console.error('ERROR');
         console.log(error)
     }
 
-    for (let i = 0; i < object.leguminosas.length; i++) {
+    for (let i = 0; i < object.frutaDaEpoca.length; i++) {
         
-        let leguminosasName = object.leguminosas[i].name;
-        let leguminosasPrice = object.leguminosas[i].price;
-        let image = object.leguminosas[i].image;
-        let stock = object.leguminosas[i].stock;
-        let product_id = object.leguminosas[i].productId;
+        let frutaDaEpocaName = object.frutaDaEpoca[i].name;
+        let frutaDaEpocaPrice = object.frutaDaEpoca[i].price;
+        let image = object.frutaDaEpoca[i].image;
+        let stock = object.frutaDaEpoca[i].stock;
+        let product_id = object.frutaDaEpoca[i].productId;
 
         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
         if (image == '') {
             image = "/images/logo.png";
         }
         
-        secleguminosas.innerHTML += `
+        secfrutaDaEpoca.innerHTML += `
             <div class="boxItem" id="${product_id}">
-                <h3 id="itName">${leguminosasName}</h3>
+                <h3 id="itName">${frutaDaEpocaName}</h3>
                 <img src="${image}" alt="">
-                <div class="kiloPrice">${leguminosasPrice}€/Kg</div>
+                <div class="kiloPrice">${frutaDaEpocaPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <option value="qt">Quantidade</option>
                     <option value="15gr">15 gr.</option>

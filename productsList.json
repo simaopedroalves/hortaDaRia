@@ -35,6 +35,64 @@
             "productId": 4          
         }
     ],
+    "frutaDaEpoca": [
+        {
+            "name": "melancia",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/melancia.jpg",
+            "productId": 2356181124,
+            "stock": true
+
+        },
+        {
+            "name": "figos",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/figos.jpg",
+            "productId": 2357181124,
+            "stock": true
+
+        },
+        {
+            "name": "cucamelon",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/cucamelon.jpg",
+            "productId": 2358181124,
+            "stock": true
+
+        },
+        {
+            "name": "framboesas amarelas",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/framboesas-amarelas.jpg",
+            "productId": 2359181124,
+            "stock": true
+
+        },
+        {
+            "name": "fisalis",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/fisalis.jpg",
+            "productId": 100181124,
+            "stock": true
+
+        },
+        {
+            "name": "morangos",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/morangos.jpg",
+            "productId": 101181124,
+            "stock": true
+
+        },
+        {
+            "name": "beringela",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/beringela.jpg",
+            "productId": 102181124,
+            "stock": true
+
+        }  
+    ],
     "cogumelos": [
         {
             "name": "Cogumelos pleurotus",
@@ -610,14 +668,14 @@
         {
             "name": "flor de malva",
             "price": 0.2,
-            "image": "",
+            "image": "/images/floresComestiveis/flor-de-malva.jpg",
             "productId": 115,
             "stock": true
         },
         {
-            "name": "Crisântemos",
+            "name": "flor de crisântemos",
             "price": 0.3,
-            "image": "",
+            "image": "/images/floresComestiveis/flor-de-crisantemos.jpg",
             "productId": 116,
             "stock": true
         }
@@ -667,26 +725,49 @@
 
         },
         {
-            "name": "morangos",
-            "price": 8,
-            "image": "",
-            "productId": 117,
-            "stock": true
-
-        },
-        {
-            "name": "framboesas e amoras",
+            "name": "tomate coração de boi",
             "price": 4,
-            "image": "",
-            "productId": 118,
+            "image": "/images/horticulas/tomate-coracao-boi.jpg",
+            "productId": 119,
             "stock": true
 
         },
         {
             "name": "Courgete",
             "price": 4,
-            "image": "",
+            "image": "/images/horticulas/courgete.jpg",
             "productId": 119,
+            "stock": true
+
+        },
+        {
+            "name": "Courgete baby",
+            "price": 4,
+            "image": "/images/horticulas/courgete-baby.jpg",
+            "productId": 2354181124,
+            "stock": true
+
+        },
+        {
+            "name": "pimentos",
+            "price": 4,
+            "image": "/images/horticulas/pimentos.jpg",
+            "productId": 2352181124,
+            "stock": true
+        },
+        {
+            "name": "pimento verde",
+            "price": 4,
+            "image": "/images/horticulas/pimento-verde.jpg",
+            "productId": 2355181124,
+            "stock": true
+
+        },
+        {
+            "name": "pimento albarello",
+            "price": 4,
+            "image": "/images/horticulas/pimento-albarello.jpg",
+            "productId": 2353181124,
             "stock": true
 
         },
@@ -695,22 +776,6 @@
             "price": 20,
             "image": "",
             "productId": 120,
-            "stock": true
-
-        },
-        {
-            "name": "Fisalis",
-            "price": 15,
-            "image": "",
-            "productId": 121,
-            "stock": true
-
-        },
-        {
-            "name": "cucamelon",
-            "price": 15,
-            "image": "",
-            "productId": 122,
             "stock": true
 
         },
