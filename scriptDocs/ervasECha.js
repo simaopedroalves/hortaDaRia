@@ -5,7 +5,7 @@ const section = document.querySelector('.ervas');
 // let products = JSON.parse(localStorage.getItem('products'));
 
 async function callErvas() {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/ervasAromaticasECha.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

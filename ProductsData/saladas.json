@@ -1,0 +1,92 @@
+{
+    "saladas": [
+        {
+            "name": "salada natura",
+            "price": 15,
+            "image": "/images/saladas/salada-natura.jpg",
+            "productId": 5,
+            "stock": true
+
+        },
+        {
+            "name": "alface mix",
+            "price": 15,
+            "image": "/images/saladas/mescla-de-alfaces.jpg",
+            "productId": 6,
+            "stock": true
+
+        },
+        {
+            "name": "Rúcula cultivata",
+            "price": 15,
+            "image": "/images/saladas/rucula-cultivata.jpg",
+            "productId": 7,
+            "stock": true
+
+        },
+        {
+            "name": "Verduras asiáticas",
+            "price": 15,
+            "image": "/images/saladas/verduras-asiaticas.jpg",
+            "productId": 8,
+            "stock": true
+
+        },
+        {
+            "name": "Salada Ibérica",
+            "price": 15,
+            "image": "/images/saladas/salada-iberica.jpg",
+            "productId": 9,
+            "stock": true
+
+        },
+        {
+            "name": "Salada Wok",
+            "price": 20,
+            "image": "/images/saladas/salada-wok.jpg",
+            "productId": 10,
+            "stock": true
+
+        },
+        {
+            "name": "Agrião da Terra",
+            "price": 15,
+            "image": "/images/saladas/agriao-da-terra.jpg",
+            "productId": 11,
+            "stock": true
+
+        },
+        {
+            "name": "Mizuna Verde",
+            "price": 20,
+            "image": "/images/saladas/mizuna-verde.jpg",
+            "productId": 95,
+            "stock": true
+
+        },
+        {
+            "name": "Mizuna Vermelha",
+            "price": 20,
+            "image": "/images/saladas/mizuna-vermelha.jpg",
+            "productId": 96,
+            "stock": true
+
+        },
+        {
+            "name": "Salada Gourmet",
+            "price": 15,
+            "image": "/images/saladas/salada-gourmet.jpg",
+            "productId": 97,
+            "stock": true
+
+        },
+        {
+            "name": "Folha de Gelo",
+            "price": 50,
+            "image": "/images/saladas/folha-de-gelo.jpg",
+            "productId": 98,
+            "stock": true
+
+        }    
+    ]
+}

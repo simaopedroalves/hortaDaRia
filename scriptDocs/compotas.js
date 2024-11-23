@@ -1,7 +1,7 @@
 const secCompotas = document.querySelector('.compotas');
 
 async function callCompotas () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/compotas.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

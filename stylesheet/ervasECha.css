@@ -14,8 +14,7 @@
 .sabaoNatural,
 .plantasEmVaso,
 .compotas,
-.cogumelos,
-.frutaDaEpoca {
+.cogumelos{
     display: grid;
     gap: 3vw;
     grid-template-columns: repeat(1, 1fr);
@@ -90,9 +89,9 @@
 
 .boxItem select,
 .boxItem input {
-    max-width: 70%;
+    max-width: 75%;
     border-radius: 0.1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0.2rem auto;
     font-weight: bold;
     font-size: 0.8rem;
@@ -103,7 +102,7 @@
 .boxItem select option {
     color: var(--white);
     background-color: var(--black);
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
     font-weight: 600;
 }
@@ -111,12 +110,13 @@
 .boxItem button {
     background-color: var(--orange);
     border-radius: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.5rem;
     color: var(--black);
-    font-weight: 700;
+    font-weight: bold;
     letter-spacing: 0.1rem;
     outline: none;
-    max-width: 60%;
+    border: none;
+    max-width: 75%;
 }
 
 @media screen and (min-width: 700px) {
@@ -133,8 +133,7 @@
 .sabaoNatural,
 .plantasEmVaso,
 .compotas,
-.cogumelos,
-.frutaDaEpoca {
+.cogumelos{
     grid-template-columns: repeat(2, 1fr);
     margin: 15vh auto;
     max-width: 80vw;
@@ -198,8 +197,7 @@
     .sabaoNatural,
     .plantasEmVaso,
     .compotas,
-    .cogumelos,
-    .frutaDaEpoca {
+    .cogumelos{
         grid-template-columns: repeat(4, 1fr);
     }
 

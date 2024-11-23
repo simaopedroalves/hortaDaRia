@@ -1,0 +1,108 @@
+{
+    "raizes": [
+        {
+            "name": "Rabanetes",
+            "price": 6,
+            "image": "/images/raizes/rabanete.jpg",
+            "productId": 105,
+            "stock": true
+
+        },
+        {
+            "name": "batata doce polpa laranja",
+            "price": 2,
+            "image": "/images/raizes/batata-doce-polpa-laranja.jpg",
+            "productId": 28,
+            "stock": true
+
+        },
+        {
+            "name": "batata doce polpa branca",
+            "price": 2.5,
+            "image": "/images/raizes/batata-doce-polpa-branca.jpg",
+            "productId": 111,
+            "stock": false
+
+        },
+        {
+            "name": "batata doce polpa laranja claro",
+            "price": 2.5,
+            "image": "/images/raizes/batata-doce-polpa-laranja-claro.jpg",
+            "productId": 112,
+            "stock": true
+
+        },
+        {
+            "name": "cebola-nova",
+            "price": 2.5,
+            "image": "/images/raizes/cebola-nova.jpg",
+            "productId": 29,
+            "stock": false
+
+        },
+        {
+            "name": "cebola verde",
+            "price": 15,
+            "image": "/images/raizes/cebola-verde.jpg",
+            "productId": 106,
+            "stock": true
+
+        },
+        {
+            "name": "nabo bola de neve",
+            "price": 6,
+            "image": "",
+            "productId": 107,
+            "stock": false
+
+        },
+        {
+            "name": "alho francês",
+            "price": 7,
+            "image": "/images/raizes/alho-frances.jpg",
+            "productId": 703181124,
+            "stock": true
+
+        },
+        {
+            "name": "beterraba di gioggia",
+            "price": 8,
+            "image": "/images/raizes/beterraba-di-gioggia.jpg",
+            "productId": 108,
+            "stock": true
+
+        },
+        {
+            "name": "cenouras",
+            "price": 3,
+            "image": "/images/raizes/cenouras.jpg",
+            "productId": 30,
+            "stock": false
+
+        },
+        {
+            "name": "cenoura baby congelada",
+            "price": 6,
+            "image": "/images/raizes/cenoura-baby-congelada.jpg",
+            "productId": 31,
+            "stock": true
+
+        },
+        {
+            "name": "Gengibre fresco",
+            "price": 25,
+            "image": "/images/raizes/gengibre-fresco.jpg",
+            "productId": 110,
+            "stock": false
+
+        },
+        {
+            "name": "espargos",
+            "price": 10,
+            "image": "/images/raizes/espargos.jpg",
+            "productId": 32,
+            "stock": false
+
+        }
+    ]
+}

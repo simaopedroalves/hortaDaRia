@@ -3,7 +3,7 @@
 const secSabaoNatural = document.querySelector('.sabaoNatural');
 
 async function callSabaoNatural () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/sabaoNatural.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

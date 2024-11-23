@@ -1,0 +1,105 @@
+{
+    "floresComestiveis": [
+        {
+            "name": "amor perfeito",
+            "price": 650,
+            "image": "/images/floresComestiveis/amores-perfeitos.jpg",
+            "productId": 39,
+            "stock": true
+
+        },
+        {
+            "name": "borragem",
+            "price": 750,
+            "image": "/images/floresComestiveis/borragem.jpg",
+            "productId": 40,
+            "stock": true
+
+        },
+        {
+            "name": "capuchinhas",
+            "price": 300,
+            "image": "/images/floresComestiveis/flor_capuchinha.jpg",
+            "productId": 41,
+            "stock": true
+
+        },
+        {
+            "name": "petunias",
+            "price": 600,
+            "image": "/images/floresComestiveis/flor_petunia.jpg",
+            "productId": 43,
+            "stock": true
+
+        },
+        {
+            "name": "flor da galega",
+            "price": 750,
+            "image": "/images/floresComestiveis/flor-galega.jpg",
+            "productId": 44,
+            "stock": true
+
+        },
+        {
+            "name": "flor de Courgete",
+            "price": 200,
+            "image": "/images/floresComestiveis/flor-courgete.jpg",
+            "productId": 45,
+            "stock": true
+
+        },
+        {
+            "name": "flor de calendula",
+            "price": 100,
+            "image": "/images/floresComestiveis/calendula.jpg",
+            "productId": 46,
+            "stock": true
+
+        },
+        {
+            "name": "flor da toscana",
+            "price": 750,
+            "image": "",
+            "productId": 47,
+            "stock": true
+
+        },
+        {
+            "name": "flor de mel",
+            "price": 650,
+            "image": "/images/floresComestiveis/flor-de-mel.jpg",
+            "productId": 48,
+            "stock": true
+
+        },
+        {
+            "name": "flor de coentros",
+            "price": 500,
+            "image": "",
+            "productId": 114,
+            "stock": true
+        },
+        {
+            "name": "flor de malva",
+            "price": 600,
+            "image": "/images/floresComestiveis/flor-de-malva.jpg",
+            "productId": 115,
+            "stock": true
+        },
+        {
+            "name": "flor de crisântemos",
+            "price": 300,
+            "image": "/images/floresComestiveis/flor-de-crisantemos.jpg",
+            "productId": 116,
+            "stock": true
+        },
+        {
+            "name": "mix de flores (unidade)",
+            "price": 2,
+            "image": "/images/floresComestiveis/mix.jpg",
+            "productId": 42,
+            "stock": true
+
+        }
+    ]
+}

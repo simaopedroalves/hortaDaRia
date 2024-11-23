@@ -3,7 +3,7 @@
 const secRaizes = document.querySelector('.raizes');
 
 async function callRaizes () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/raizes.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

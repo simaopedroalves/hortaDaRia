@@ -1,0 +1,139 @@
+{
+    "verduras": [
+        {
+            "name": "ruibarbo",
+            "price": 18,
+            "image": "/images/verduras/ruibarbo.jpg",
+            "productId": 12,
+            "stock": true
+
+        },
+        {
+            "name": "couve galega",
+            "price": 6,
+            "image": "/images/verduras/couve-galega.jpg",
+            "productId": 13,
+            "stock": true
+
+        },
+        {
+            "name": "couve galega cortada",
+            "price": 20,
+            "image": "",
+            "productId": 14,
+            "stock": true
+
+        },
+        {
+            "name": "acelgas",
+            "price": 6,
+            "image": "/images/verduras/acelgas.jpg",
+            "productId": 15,
+            "stock": true
+
+        },
+        {
+            "name": "alcachofra",
+            "price": 12,
+            "image": "/images/verduras/alcachofra.jpg",
+            "productId": 16,
+            "stock": false
+
+        },
+        {
+            "name": "acelgas baby",
+            "price": 10,
+            "image": "/images/verduras/acelgas-baby.jpg",
+            "productId": 17,
+            "stock": true
+
+        },
+        {
+            "name": "couve toscana",
+            "price": 12,
+            "image": "/images/verduras/couve-toscana.jpg",
+            "productId": 18,
+            "stock": true
+
+        },
+        {
+            "name": "Espinafre manteiga",
+            "price": 20,
+            "image": "/images/verduras/espinafre-manteiga.jpg",
+            "productId": 20,
+            "stock": true
+
+        },
+        {
+            "name": "Espinafre Nova Zelândia",
+            "price": 6,
+            "image": "/images/verduras/espinafres-nova-zelandia.jpg",
+            "productId": 99,
+            "stock": true
+        },
+        {
+            "name": "Red russian kale",
+            "price": 10,
+            "image": "/images/verduras/red-russian-kale.jpg",
+            "productId": 101,
+            "stock": false
+
+        },
+        {
+            "name": "Red russian kale baby",
+            "price": 15,
+            "image": "/images/verduras/red-russian-kale-baby.jpg",
+            "productId": 21,
+            "stock": false
+
+        },
+        {
+            "name": "Couve pack-choi",
+            "price": 8,
+            "image": "/images/verduras/couve-pack-choi.jpg",
+            "productId": 22,
+            "stock": true
+
+        },
+        {
+            "name": "Couve tatsoi",
+            "price": 8,
+            "image": "/images/verduras/couve-tatsoi.jpg",
+            "productId": 23,
+            "stock": true
+
+        },
+        {
+            "name": "Couve rabano roxa",
+            "price": 6,
+            "image": "/images/verduras/couve-rabano-roxa.jpg",
+            "productId": 24,
+            "stock": false
+
+        },
+        {
+            "name": "Couve rabano verde",
+            "price": 6,
+            "image": "/images/verduras/couve-rabano-verde.jpg",
+            "productId": 25,
+            "stock": false
+
+        },
+        {
+            "name": "Couve curly kale",
+            "price": 10,
+            "image": "/images/verduras/couve-kurly-kale.jpg",
+            "productId": 26,
+            "stock": true
+
+        },
+        {
+            "name": "couve repolho coração",
+            "price": 2.5,
+            "image": "/images/verduras/couve-repolho-coracao.jpg",
+            "productId": 104,
+            "stock": false
+
+        }
+    ]
+}

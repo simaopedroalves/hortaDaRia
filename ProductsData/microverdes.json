@@ -1,0 +1,92 @@
+{
+    "microverdes": [
+        {
+            "name": "rabanete rose",
+            "price": 50,
+            "image": "/images/microverdes/microverdes-rabanete-rose.jpg",
+            "productId": 33,
+            "stock": true
+
+        },
+        {
+            "name": "rabanete red rambo",
+            "price": 75,
+            "image": "/images/microverdes/microverdes-rabanete-red-rambo.jpg",
+            "productId": 34,
+            "stock": true
+
+        },
+        {
+            "name": "girassol",
+            "price": 50,
+            "image": "/images/microverdes/microverdes-girassol.jpg",
+            "productId": 35,
+            "stock": true
+
+        },
+        {
+            "name": "coentros",
+            "price": 75,
+            "image": "/images/microverdes/microverdes-coentros.jpg",
+            "productId": 102231124,
+            "stock": true
+
+        },
+        {
+            "name": "ervilhas",
+            "price": 50,
+            "image": "/images/microverdes/microverdes-ervilha.jpg",
+            "productId": 36,
+            "stock": true
+
+        },
+        {
+            "name": "capuchinha",
+            "price": 200,
+            "image": "/images/microverdes/microverdes-capuchinha.jpg",
+            "productId": 37,
+            "stock": true
+
+        },
+        {
+            "name": "bróculos",
+            "price": 75,
+            "image": "/images/microverdes/microverdes-broculos.jpg",
+            "productId": 93,
+            "stock": true
+
+        },
+        {
+            "name": "mix de microverdes",
+            "price": 50,
+            "image": "/images/microverdes/microverdes-mix.jpg",
+            "productId": 38,
+            "stock": true
+
+        },
+        {
+            "name": "1 vaso microverdes",
+            "price": 5,
+            "image": "",
+            "productId": 150231124,
+            "stock": false
+
+        },
+        {
+            "name": "2 vasos microverdes",
+            "price": 9,
+            "image": "",
+            "productId": 91,
+            "stock": false
+
+        },
+        {
+            "name": "3 vasos microverdes",
+            "price": 12,
+            "image": "",
+            "productId": 92,
+            "stock": false
+
+        }
+    ]
+}

@@ -1,0 +1,172 @@
+{    
+    "horticulas": [
+        {
+            "name": "melancia",
+            "price": 2,
+            "image": "/images/frutaDaEpoca/melancia.jpg",
+            "productId": 2356181124,
+            "stock": false
+
+        },
+        {
+            "name": "figos",
+            "price": 6,
+            "image": "/images/frutaDaEpoca/figos.jpg",
+            "productId": 2357181124,
+            "stock": false
+
+        },
+        {
+            "name": "cucamelon",
+            "price": 8,
+            "image": "/images/frutaDaEpoca/cucamelon.jpg",
+            "productId": 2358181124,
+            "stock": false
+
+        },
+        {
+            "name": "framboesas amarelas",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/framboesas-amarelas.jpg",
+            "productId": 2359181124,
+            "stock": false
+
+        },
+        {
+            "name": "fisalis",
+            "price": 15,
+            "image": "/images/frutaDaEpoca/fisalis.jpg",
+            "productId": 100181124,
+            "stock": false
+
+        },
+        {
+            "name": "morangos",
+            "price": 8,
+            "image": "/images/frutaDaEpoca/morangos.jpg",
+            "productId": 101181124,
+            "stock": false
+
+        },
+        {
+            "name": "beringela",
+            "price": 6,
+            "image": "/images/frutaDaEpoca/beringela.jpg",
+            "productId": 102181124,
+            "stock": false
+
+        },
+        {
+            "name": "pepino",
+            "price": 1.5,
+            "image": "/images/horticulas/pepino.jpg",
+            "productId": 103231124,
+            "stock": true
+
+        },
+        {
+            "name": "abóbora manteiga",
+            "price": 2,
+            "image": "",
+            "productId": 51,
+            "stock": true
+
+        },
+        {
+            "name": "abóbora muscade/laranja",
+            "price": 2,
+            "image": "",
+            "productId": 52,
+            "stock": true
+
+        },
+        {
+            "name": "limões",
+            "price": 4,
+            "image": "",
+            "productId": 53,
+            "stock": true
+
+        },
+        {
+            "name": "tomate coração de boi",
+            "price": 4,
+            "image": "/images/horticulas/tomate-coracao-boi.jpg",
+            "productId": 119,
+            "stock": false
+
+        },
+        {
+            "name": "Courgete amarela",
+            "price": 3,
+            "image": "/images/horticulas/courgete.jpg",
+            "productId": 119,
+            "stock": false
+
+        },
+        {
+            "name": "Courgete verde",
+            "price": 3,
+            "image": "",
+            "productId": 204231124,
+            "stock": false
+
+        },
+        {
+            "name": "Courgete baby",
+            "price": 10,
+            "image": "/images/horticulas/courgete-baby.jpg",
+            "productId": 2354181124,
+            "stock": false
+
+        },
+        {
+            "name": "pimentos",
+            "price": 4,
+            "image": "/images/horticulas/pimentos.jpg",
+            "productId": 2352181124,
+            "stock": false
+        },
+        {
+            "name": "pimento verde",
+            "price": 3,
+            "image": "/images/horticulas/pimento-verde.jpg",
+            "productId": 2355181124,
+            "stock": false
+
+        },
+        {
+            "name": "pimento albarello",
+            "price": 8,
+            "image": "/images/horticulas/pimento-albarello.jpg",
+            "productId": 2353181124,
+            "stock": false
+
+        },
+        {
+            "name": "Bagas de goji",
+            "price": 15,
+            "image": "",
+            "productId": 120,
+            "stock": false
+
+        },
+        {
+            "name": "chuchu",
+            "price": 2,
+            "image": "",
+            "productId": 123,
+            "stock": true
+
+        },
+        {
+            "name": "tamarilho",
+            "price": 9,
+            "image": "",
+            "productId": 124,
+            "stock": true
+
+        }
+        
+    ]
+}

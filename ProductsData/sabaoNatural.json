@@ -1,0 +1,36 @@
+{
+    "sabaoNatural": [
+        {
+            "name": "óleo de coco, azeite e alfazema",
+            "price": 4.5,
+            "image": "/images/sabaoNatural/sabao-natural.jpg",
+            "productId": 58,
+            "stock": true
+
+        },
+        {
+            "name": "óleo de coco, azeite e hortelã",
+            "price": 4.5,
+            "image": "/images/sabaoNatural/sabao-natural.jpg",
+            "productId": 59,
+            "stock": true
+
+        },
+        {
+            "name": "óleo de coco, azeite e laranja",
+            "price": 4.5,
+            "image": "/images/sabaoNatural/sabao-natural.jpg",
+            "productId": 60,
+            "stock": false
+
+        },
+        {
+            "name": "óleo de coco, azeite e alecrim",
+            "price": 4.5,
+            "image": "/images/sabaoNatural/sabao-natural.jpg",
+            "productId": 61,
+            "stock": true
+
+        }
+    ]
+}

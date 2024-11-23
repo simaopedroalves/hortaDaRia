@@ -3,7 +3,7 @@
 const secPlantasEmVaso = document.querySelector('.plantasEmVaso');
 
 async function callPlantasEmVaso () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/plantasEmVaso.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

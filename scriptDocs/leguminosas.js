@@ -3,7 +3,7 @@
 const secleguminosas = document.querySelector('.leguminosas');
 
 async function callleguminosas () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/leguminosas.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

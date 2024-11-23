@@ -1,0 +1,100 @@
+{
+    "ervasAromaticasECha": [
+        {
+            "name": "alecrim",
+            "price": 30,
+            "image": "/images/ervasECha/alecrim.jpg",
+            "productId": 62,
+            "stock": true
+
+        },
+        {
+            "name": "chá de limonete",
+            "price": 30,
+            "image": "/images/ervasECha/cha_limonete.jpg",
+            "productId": 63,
+            "stock": true              
+
+        },
+        {
+            "name": "chá de cidreira",
+            "price": 30,
+            "image": "/images/ervasECha/cha-cidreira.jpg",
+            "productId": 64,
+            "stock": true
+
+        },
+        {
+            "name": "folhas de loureiro",
+            "price": 30,
+            "image": "/images/ervasECha/folha-loureiro.jpg",
+            "productId": 65,
+            "stock": true      
+
+        },
+        {
+            "name": "hortelã",
+            "price": 30,
+            "image": "/images/ervasECha/hortela.jpg",
+            "productId": 715181124,
+            "stock": true
+
+        },
+        {
+            "name": "hortelã menta",
+            "price": 30,
+            "image": "/images/ervasECha/hortela-menta.jpg",
+            "productId": 67,
+            "stock": true
+
+        },
+        {
+            "name": "cidreira fresca",
+            "price": 30,
+            "image": "/images/ervasECha/cidreira-fresca.jpg",
+            "productId": 69,
+            "stock": true
+
+        },
+        {
+            "name": "tomilho",
+            "price": 40,
+            "image": "/images/ervasECha/tomilho.jpg",
+            "productId": 70,
+            "stock": true
+
+        },
+        {
+            "name": "oregãos",
+            "price": 30,
+            "image": "/images/ervasECha/oregaos.jpg",
+            "productId": 71,
+            "stock": true
+
+        },
+        {
+            "name": "coentros",
+            "price": 30,
+            "image": "/images/ervasECha/coentros.jpg",
+            "productId": 72,
+            "stock": true
+
+        },
+        {
+            "name": "hipericão do gerês",
+            "price": 40,
+            "image": "/images/ervasECha/hipericao-do-geres.jpg",
+            "productId": 73,
+            "stock": true
+
+        },
+        {
+            "name": "salsa",
+            "price": 30,
+            "image": "/images/ervasECha/salsa.jpg",
+            "productId": 74,
+            "stock": true
+
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "cogumelos": [
+        {
+            "name": "Cogumelos pleurotus",
+            "price": 10,
+            "image": "/images/cogumelos/cogumelos-pleurotus.jpg",
+            "productId": 93,
+            "stock": true
+
+        },
+        {
+            "name": "Cogumelos marron",
+            "price": 8,
+            "image": "",
+            "productId": 125,
+            "stock": true
+
+        },
+        {
+            "name": "Cogumelos shitaki",
+            "price": 13,
+            "image": "",
+            "productId": 207231124,
+            "stock": true
+
+        },
+        {
+            "name": "Cogumelos portabello",
+            "price": 10,
+            "image": "",
+            "productId": 208231124,
+            "stock": true
+
+        },
+        {
+            "name": "Cogumelos paris",
+            "price": 8,
+            "image": "",
+            "productId": 209231124,
+            "stock": true
+
+        }
+    ]
+}

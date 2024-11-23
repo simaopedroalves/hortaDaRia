@@ -1,0 +1,38 @@
+{
+    "cabazes": [
+        {
+            "name": "Cabaz pequeno",
+            "price": 10,
+            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix"],
+            "open": "/html/cabaz-um.html",
+            "image": "",
+            "productId": 1
+        },
+        {
+            "name": "Cabaz médio",
+            "price": 15,
+            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix", "Chuchu", "Tamarilhos", "Agrião de terra", 
+                        "Cogumelos marron"],
+            "open": "/html/cabaz-dois.html" ,
+            "image": "",
+            "productId": 2         
+        },
+        {
+            "name": "Cabaz grande",
+            "price": 20,
+            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix", "Chuchu", "Tamarilhos", "Agrião de terra", 
+                        "Cogumelos marron", "Gengibre", "Cenouras", "Espinafres manteiga", "Packchoi ou Tatsoi"],
+            "open": "/html/cabaz-tres.html",
+            "image": "",
+            "productId": 3         
+        },
+        {
+            "name": "Criar Cabaz",
+            "price": "",
+            "content": "",
+            "open": "/html/produtos.html",
+            "image": "",
+            "productId": 4          
+        }
+    ]
+}

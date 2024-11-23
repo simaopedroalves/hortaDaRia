@@ -3,7 +3,7 @@
 const secCabazTres = document.querySelector('.cabaz-tres');
 
 async function callCabazTres() {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/cabazes.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

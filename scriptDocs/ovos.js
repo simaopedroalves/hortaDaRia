@@ -3,7 +3,7 @@
 const secOvos = document.querySelector('.ovos');
 
 async function callOvos () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/ovos.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

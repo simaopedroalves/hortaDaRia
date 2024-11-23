@@ -1,0 +1,29 @@
+{
+    "leguminosas": [
+        {
+            "name": "favas",
+            "price": 6,
+            "description": "descascadas e congeladas",
+            "image": "/images/leguminosas/favas.jpg",
+            "productId": 49,
+            "stock": false
+
+        },
+        {
+            "name": "ervilhas de quebrar",
+            "price": 10,
+            "image": "/images/leguminosas/ervilhas-quebrar.jpg",
+            "productId": 50,
+            "stock": false
+
+        },
+        {
+            "name": "feijão verde rajado",
+            "price": 6,
+            "image": "",
+            "productId": 50,
+            "stock": false
+
+        }
+    ]
+}

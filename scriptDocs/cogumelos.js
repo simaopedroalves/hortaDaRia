@@ -1,7 +1,7 @@
 const secCogumelos = document.querySelector('.cogumelos');
 
 async function callCogumelos () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/cogumelos.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

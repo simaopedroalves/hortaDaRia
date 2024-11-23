@@ -3,7 +3,7 @@
 const section = document.querySelector('.horticulas');
 
 async function callHorticulas () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/horticulas.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

@@ -82,6 +82,11 @@
     border: none;
 }
 
+#phoneNumber::-webkit-inner-spin-button,
+#phoneNumber::-webkit-outer-spin-button {
+    display: none;
+}
+
 .btn-info:disabled {
     background-color: var(--red);
 }

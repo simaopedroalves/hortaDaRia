@@ -3,7 +3,7 @@
 const secTestimonials = document.querySelector('.testimonials');
 
 async function callTestimonials() {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/testimonials.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

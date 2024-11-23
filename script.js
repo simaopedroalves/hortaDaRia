@@ -15,7 +15,7 @@ const cabazFour = document.querySelector('.cabazFour')
 
 
 async function callData() {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/cabazes.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -123,7 +123,7 @@ function findStockOfItems (stock, product_id) {
     if (!stock) {
         box.querySelector('.addToCart').style.visibility = 'hidden'
         box.querySelector('.quantity').style.visibility = 'hidden'
-        box.querySelector('.priceToPay').textContent = 'Esgotado'
+        box.querySelector('.priceToPay').textContent = 'Indisponível'
         box.querySelector('.priceToPay').style.color = 'var(--red)'
         box.querySelector('.priceToPay').style.textTransform = 'upperCase'
         box.style.borderColor = 'var(--red)'

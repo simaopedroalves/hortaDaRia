@@ -3,7 +3,7 @@
 const secCabazUm = document.querySelector('.cabaz-um');
 
 async function callCabazUm() {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/cabazes.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

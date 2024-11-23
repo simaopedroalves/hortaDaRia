@@ -1,0 +1,60 @@
+{
+    "compotas": [
+        {
+            "name": "Morango",
+            "price": 14,
+            "image": "",
+            "productId": 126,
+            "stock": false
+
+        },
+        {
+            "name": "framboesa",
+            "price": 14,
+            "image": "",
+            "productId": 127,
+            "stock": false
+
+        },
+        {
+            "name": "frutos silvestres",
+            "price": 10,
+            "image": "",
+            "productId": 128,
+            "stock": false
+
+        },
+        {
+            "name": "limão",
+            "price": 16.5,
+            "image": "",
+            "productId": 129,
+            "stock": false
+
+        },
+        {
+            "name": "geleia limão",
+            "price": 23.3,
+            "image": "",
+            "productId": 130,
+            "stock": false
+
+        },
+        {
+            "name": "figos",
+            "price": 16.6,
+            "image": "",
+            "productId": 131,
+            "stock": false
+
+        },
+        {
+            "name": "framboesa amarela",
+            "price": 16.6,
+            "image": "",
+            "productId": 132,
+            "stock": false
+
+        }
+    ]
+}

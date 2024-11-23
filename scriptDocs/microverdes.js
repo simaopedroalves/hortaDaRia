@@ -3,7 +3,7 @@
 const secMicroverdes = document.querySelector('.microverdes');
 
 async function callMicroverdes () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/microverdes.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

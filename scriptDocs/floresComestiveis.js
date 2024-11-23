@@ -3,7 +3,7 @@
 const section = document.querySelector('.floresComestiveis');
 
 async function callFloresComestiveis () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/floresComestiveis.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {

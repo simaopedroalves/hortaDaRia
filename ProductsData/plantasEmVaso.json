@@ -1,0 +1,76 @@
+{
+    "plantasEmVaso": [
+        {
+            "name": "suculenta",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_suculenta.jpg",
+            "productId": 75,
+            "stock": true
+
+        },
+        {
+            "name": "amor-perfeito",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_amorPerfeito.jpg",
+            "productId": 76,
+            "stock": true
+
+        },
+        {
+            "name": "cravo tunico",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_cravoTunico.jpg",
+            "productId": 77,
+            "stock": true
+
+        },
+        {
+            "name": "oregãos",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_oregaos.jpg",
+            "productId": 78,
+            "stock": true
+
+        },
+        {
+            "name": "espargos",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_espargos.jpg",
+            "productId": 79,
+            "stock": false
+
+        },
+        {
+            "name": "salvia",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_salvia.jpg",
+            "productId": 80,
+            "stock": true
+
+        },
+        {
+            "name": "hortelã-pimenta-chocolate",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_hortelaPimentaChocolate.jpg",
+            "productId": 82,
+            "stock": true
+
+        },
+        {
+            "name": "hortelã menta",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_hortelaMenta.jpg",
+            "productId": 83,
+            "stock": true
+
+        },
+        {
+            "name": "tomilho",
+            "price": 2,
+            "image": "/images/plantasEmVaso/vaso_tomilho.jpg",
+            "productId": 84,
+            "stock": true
+
+        }
+    ]
+}

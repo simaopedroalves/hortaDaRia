@@ -3,7 +3,7 @@
 const secVerduras = document.querySelector('.verduras');
 
 async function callVerduras () {
-    return (await fetch('/productsList.json')).json()
+    return (await fetch('/ProductsData/verduras.json')).json()
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
