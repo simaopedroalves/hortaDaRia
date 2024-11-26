@@ -75,7 +75,7 @@
         {
             "name": "flor de coentros",
             "price": 500,
-            "image": "",
+            "image": "/images/floresComestiveis/flor-coentros.jpg",
             "productId": 114,
             "stock": true
         },
