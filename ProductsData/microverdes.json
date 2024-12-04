@@ -1,6 +1,14 @@
 {
     "microverdes": [
         {
+            "name": "trigo-sarraceno",
+            "price": 80,
+            "image": "/images/microverdes/microverdes-trigo-sarraceno.jpg",
+            "productId": 22741224,
+            "stock": true
+
+        },
+        {
             "name": "rabanete rose",
             "price": 50,
             "image": "/images/microverdes/microverdes-rabanete-rose.jpg",
