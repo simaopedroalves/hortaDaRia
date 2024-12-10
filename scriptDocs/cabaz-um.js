@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
             </div>
         `
-        updateNumbItemsOnCart()
         addCabazToCart()
+        updateNumbItemsOnCart()
 })
 
 function addCabazToCart() {
@@ -103,7 +103,6 @@ function addCabazToCart() {
         updateNumbItemsOnCart()
         showAllert(name)
 
-    
     })
 
 }

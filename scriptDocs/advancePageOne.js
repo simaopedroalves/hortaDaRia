@@ -51,11 +51,11 @@ pickUpRadioBtn.addEventListener('click', () => {
 
 });
 
-pickUpAtMercadoBtn.addEventListener('click', () => {
-    pickUpHortaSection.classList.add('hide-section');
-    removeRequiredAttribute()
-    document.querySelector('#pick-up-day').removeAttribute('required');
-});
+// pickUpAtMercadoBtn.addEventListener('click', () => {
+//     pickUpHortaSection.classList.add('hide-section');
+//     removeRequiredAttribute()
+//     document.querySelector('#pick-up-day').removeAttribute('required');
+// });
 
 pickUpAtHortaBtn.addEventListener('click', () => {
     pickUpHortaSection.classList.remove('hide-section');
@@ -96,7 +96,7 @@ const invalidMessage = "Algo está errado! Verifica os dados inseridos."
 
 // CHECK IF NAME IS VALID
 clientName.addEventListener('input', () => {
-    let label = document.querySelectorAll('label')
+    // let label = document.querySelectorAll('label')
     let regex = new RegExp (/^[a-z][a-z\s\ã\à\á\í\ó]+$/, "gi");
     let string = clientName.value;
 
@@ -106,6 +106,8 @@ clientName.addEventListener('input', () => {
         clientName.parentElement.firstElementChild.classList.remove('invalid-input')
         errorMessage.textContent = validMessage 
         errorMessage.style.color = "var(--orange)" 
+        console.log(string);
+        
         localStorage.setItem('clientName', JSON.stringify(string))
         return
     }
