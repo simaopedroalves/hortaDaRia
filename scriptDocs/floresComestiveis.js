@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <span class="cart-changed-message">${name} adicionado ao Cesto</span>
                 <button class="see-cart">
                     <a href="/html/carrinho.html">
-                        Ver Carrinho
+                        Ver Cesto
                     </a> 
                 </button>
             `
