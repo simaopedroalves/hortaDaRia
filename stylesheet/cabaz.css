@@ -64,7 +64,7 @@
     border: none;
     outline: none;
     font-weight: 700;
-    padding: 0.4rem;
+    padding: 0.5rem;
     /* grid-column-start: 2; */
     margin: 0 auto;
     /* grid-column: span 2; */
@@ -241,11 +241,15 @@
         min-width: 100%;
     }
 
-    .add-to-cart-button {
+    .add-to-cart-button-number-one,
+    .add-to-cart-button-number-two,
+    .add-to-cart-button-number-three{
         padding: 1rem;
     }
 
-    .add-to-cart-button:hover {
+    .add-to-cart-button-number-one:hover,
+    .add-to-cart-button-number-two:hover,
+    .add-to-cart-button-number-three:hover {
         transition: 750ms;
         background-color: var(--green);
     }

@@ -78,14 +78,15 @@ function addCabazToCart() {
     let addToCartBtn = secCabazUm.querySelector('.add-to-cart-button-number-one');
 
     addToCartBtn.addEventListener('click', () => {
+
         let name = secCabazUm.querySelector('.cabaz-name-title').textContent;
         let quantity = 1
         let itemPrice = secCabazUm.querySelector('.cabazPrice').textContent
         let itemTotal = itemPrice;
         let cart = JSON.parse(localStorage.getItem('cart'));
-
+       
         for (let i = 0; i < cart.length; i++) {
-           
+
             if (cart[i].itQuantity > 1) {
                 cart[i].itQuantity = quantity + 1
             }
