@@ -55,7 +55,9 @@
     justify-content: center;
 }
 
-.add-to-cart-button {
+.add-to-cart-button-number-one,
+.add-to-cart-button-number-two,
+.add-to-cart-button-number-three {
     background-color: var(--orange);
     color: var(--black);
     border-radius: 1rem;

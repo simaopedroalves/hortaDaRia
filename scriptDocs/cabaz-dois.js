@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="cabaz-list">
                         ${cabazContent}
                     </div>
-                    <button type="button" class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    <button type="button" class="add-to-cart-button-number-two">Adicionar ao Carrinho</button>
                 </div>
             </div>
 
@@ -111,7 +111,7 @@ function updateNumbItemsOnCart() {
 
 function addCabazToCart() {
 
-    let addToCartBtn = secCabazDois.querySelector('.add-to-cart-button');
+    let addToCartBtn = secCabazDois.querySelector('.add-to-cart-button-number-two');
 
     addToCartBtn.addEventListener('click', () => {
         let name = secCabazDois.querySelector('.cabaz-name-title').textContent;
