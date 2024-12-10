@@ -1,7 +1,7 @@
 const deliverAtHomeRadioBtn = document.querySelector('#deliver-box');
 const pickUpRadioBtn = document.querySelector('#pick-up-box');
 const pickUpAtHortaBtn = document.querySelector('#horta');
-const pickUpAtMercadoBtn = document.querySelector('#praca');
+// const pickUpAtMercadoBtn = document.querySelector('#praca');
 const deliverSection = document.querySelector('.deliver-sec');
 const pickUpSection = document.querySelector('.pick-up-sec');
 const pickUpHortaSection = document.querySelector('.horta-pick-up-sec');
@@ -43,12 +43,13 @@ deliverAtHomeRadioBtn.addEventListener('click', () => {
 //related with Pick Up dissapear
 pickUpRadioBtn.addEventListener('click', () => {
     pickUpSection.classList.remove('hide-section');
-    pickUpHortaSection.classList.add('hide-section');
+    pickUpHortaSection.classList.remove('hide-section');
     deliverSection.classList.add('hide-section');
     enableInputs()
     removeRequiredAttribute()
-    document.querySelector('#pick-up-day').removeAttribute('required');
-
+    document.querySelector('#pick-up-day').setAttribute("required", "");
+    document.querySelector('#ppick-up-schedule').setAttribute("required", "");
+    document.querySelector('#scheduleToDeliverAtHome').removeAttribute('required');
 });
 
 // pickUpAtMercadoBtn.addEventListener('click', () => {
@@ -75,7 +76,7 @@ function removeRequiredAttribute() {
 
 // // when the user wants a deliver, some input are required on address section
 function addRequiredAttribute() {
-    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input')
+    let previousRequiredElements = document.querySelectorAll('.deliver-sec div input');
     let floorInput = document.querySelector('#floor-number');
 
     previousRequiredElements.forEach(el => {
