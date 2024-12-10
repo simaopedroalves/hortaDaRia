@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="cabaz-list">
                         ${cabazContent}
                     </div>
-                    <button type="button" class="add-to-cart-button-number-three">Adicionar ao Carrinho</button>
+                    <button type="button" class="add-to-cart-button-number-three">Adicionar ao Cesto</button>
                 </div>
             </div>
 
