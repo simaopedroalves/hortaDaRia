@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix"],
+            "content": ["Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix"],
             "open": "/html/cabaz-um.html",
             "image": "",
             "productId": 1
@@ -11,8 +11,8 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix", "Chuchu", "Tamarilhos", "Agrião de terra", 
-                        "Cogumelos marron"],
+            "content": ["Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix", 
+                        "Abóbora", "Tamarilhos", "Verduras Asiáticas", "Cogumelos marron"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -20,8 +20,9 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix", "Chuchu", "Tamarilhos", "Agrião de terra", 
-                        "Cogumelos marron", "Gengibre", "Cenouras", "Espinafres manteiga", "Packchoi ou Tatsoi"],
+            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix", 
+                        "Abóbora", "Tamarilhos", "Verduras Asiáticas", "Cogumelos marron", 
+                        "Rabanetes", "Agrião da terra", "Couve nabiça", "Espinafres manteiga"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         
