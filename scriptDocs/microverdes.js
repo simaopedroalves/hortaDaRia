@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             image = "/images/logo.png";
         }
 
-        if (vasos != 'vasos') {
+        if (vasos != 'vasos' && vasos != 'vaso') {
 
             secMicroverdes.innerHTML += `
             <div class="boxItem" id="${product_id}">
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             `
         }
 
-        if (vasos == 'vasos') {
+        if (vasos == 'vasos' || vasos == 'vaso') {
 
             secMicroverdes.innerHTML += `
                 <div class="boxItem" id="${product_id}">

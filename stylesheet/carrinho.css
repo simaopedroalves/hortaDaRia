@@ -130,7 +130,7 @@
 .delete-cart {
     font-size: 0.7rem;    
     border-radius: 1rem 0;
-    border: 0;
+    border: 1px solid transparent;
     outline: 0;
     padding: 0.8rem;
     font-weight: bold;
@@ -138,16 +138,29 @@
     background-color: var(--orange);
     color: var(--white);
     cursor: pointer;
+    transition: 700ms;
+}
+
+.delete-cart:hover {
+    border-radius: 0 1rem;
+    border: 1px solid var(--green);
 }
 
 .advance-cart {
     font-size: 0.7rem;
     border-radius: 1rem 0;
-    border: 0;
+    border: 1px solid transparent;
     outline: 0;
     padding: 0.8rem;
     text-transform: uppercase;
     background-color: var(--green);
+    transition: 700ms;
+    cursor: pointer;
+}
+
+.advance-cart:hover {
+    border-radius: 0 1rem;
+    border: 1px solid var(--orange);
 }
 
 .advance-cart:disabled {

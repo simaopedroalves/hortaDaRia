@@ -42,7 +42,7 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1rem;
+    padding: 1.5lvh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -115,7 +115,7 @@
     font-weight: bold;
     letter-spacing: 0.1rem;
     outline: none;
-    border: none;
+    border: solid 2px var(--orange);
     max-width: 75%;
 }
 
@@ -136,7 +136,7 @@
 .cogumelos{
     grid-template-columns: repeat(2, 1fr);
     margin: 15vh auto;
-    max-width: 80vw;
+    max-width: 90vw;
     padding: 0;
 }
 

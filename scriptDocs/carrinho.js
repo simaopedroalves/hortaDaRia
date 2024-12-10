@@ -25,7 +25,7 @@ function createCart() {
             image = "/images/logo.png"
         }
 
-        var newItem = `
+        let newItem = `
 
             <div class="box-1">
                 <img src="${image}" alt="">
