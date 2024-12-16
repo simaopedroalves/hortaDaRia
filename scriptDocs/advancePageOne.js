@@ -128,7 +128,7 @@ const clientEmail = document.querySelector('#email');
 
 clientEmail.addEventListener('input', () => {
 
-    let regex = /^([0-9]|[a-z]|.|_)+\b@\b[a-z]{2,6}\.[a-z]{2,3}$/g
+    let regex = /^([0-9]|[a-z]|.|_)+\b@\b[a-z]{2,7}\.[a-z]{2,3}$/g
     let string = clientEmail.value;
 
     if (regex.test(string) === true || string == '') {
