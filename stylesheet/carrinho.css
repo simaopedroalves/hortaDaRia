@@ -204,7 +204,7 @@
 
 /* PAGINA 1 APÓS AVANCAR */
 .client-data-sec {
-    max-width: 95vw;
+    max-width: 100vw;
     margin: 0 auto;
     display: grid;
     justify-content: center;
@@ -212,12 +212,11 @@
 }
 
 .client-data-sec form{
-    margin: 9svh auto;
+    margin: 9svh auto 2lvh auto;
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    max-width: 95vw;
 }
 
 .client-data-sec form h4{

@@ -83,8 +83,6 @@ function addRequiredAttribute() {
 
     previousRequiredElements.forEach(el => {
         el.setAttribute('required', '');
-        console.log(el);
-
     });
 
     floorInput.removeAttribute('required')
@@ -259,7 +257,6 @@ clientAddressLocal.addEventListener('input', () => {
     }
 })
 
-
 // SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
 submitBtn.addEventListener('click', () => {
     clearCart()
@@ -314,7 +311,7 @@ window.onpageshow = (e) => {
     }
 }
 
-disabledAllOrders()
+
 
 // DISABLE SUBMIT BUTTON FROM THURSDAY TO SUNDAY BECAUSE
 // ORDERS ARE NOT AVAIABLE

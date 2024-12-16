@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // }
     addCabazToCart()
     updateNumbItemsOnCart()
-    disabledAllOrders()
+    
 
 })
 

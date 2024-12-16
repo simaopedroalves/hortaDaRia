@@ -186,7 +186,7 @@ header .menu-list a li {
     color: var(--green);
     min-width: 100%;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     font-weight: 900;
     cursor: pointer;
     outline: none;
@@ -326,7 +326,7 @@ body::-webkit-scrollbar:vertical {
 
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1100px) {
 
 
     header {
@@ -337,9 +337,17 @@ body::-webkit-scrollbar:vertical {
         background-color: var(--white);
     }
 
+    .fa-bars-staggered,
+    .fa-x,
+    .openMenu,
+    .openMenu::before,
+    .openMenu::after {
+        display: none;
+    }
+
     .navbar {
         display: flex;
-        gap: 5vw;
+        gap: 1vw;
         align-items: center;
         justify-content: space-between;
     }
@@ -416,7 +424,7 @@ body::-webkit-scrollbar:vertical {
 
 }
 
-@media screen and (min-width: 860px) {
+/* @media screen and (min-width: 860px) {
 
     .menu-list {
         display: flex;
@@ -442,4 +450,4 @@ body::-webkit-scrollbar:vertical {
         display: none;
     }
 
-}
+} */

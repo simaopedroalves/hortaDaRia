@@ -31,6 +31,29 @@
     cursor: pointer;
 }
 
+.termsAndConditionsDiv ul {
+    color: var(--green);
+    display: grid;
+    margin: 0 2rem 0 2rem;
+}
+
+.termsConditionsAgreement {
+    display: flex;
+}   
+
+.termsAndConditionsDiv h5 {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.termsAndConditionsAuthorization {
+    margin: 0 0.5rem 0 0;
+}
+
+.termsConditionsLink {
+    color: var(--orange);
+}
+
 @media screen and (min-width: 700px) { 
     .informations-sec {
         margin: 12lvh auto 0 auto;

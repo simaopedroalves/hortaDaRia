@@ -112,6 +112,7 @@ function disabledAllOrders () {
 
     else {
         orderDisableMessage.style.display = 'flex'
+        
     }
 }
 
@@ -147,11 +148,19 @@ allcallButtons.forEach((el) => {
 // FOOTER - MADE BY NAME AND RESERVED RIGHTS
 
 const madeBy = document.querySelector('.my-name');
-if (madeBy) {
-    madeBy.textContent = "Desenvolvido por Simão Pedro";
-} else {
-    console.error("Element with class 'my-name' not found.");
-}
+
+// madeBy.forEach(nameDescription => {
+
+//     document.addEventListener('DOMContentLoaded', () => {
+//         if (nameDescription) {
+//             nameDescription.textContent = "Desenvolvido por Simão Pedro";
+//         } else {
+//             console.error("Element with class 'my-name' not found.");
+//         }
+//     })
+// })
+
+madeBy.textContent = "Desenvolvido por Simão Pedro";
 
 const reservedRigtHs = document.querySelector('.reservedRigths');
 if (reservedRigtHs) {
