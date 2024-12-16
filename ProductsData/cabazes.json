@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix"],
+            "content": ["Laranja", "Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix"],
             "open": "/html/cabaz-um.html",
             "image": "",
             "productId": 1
@@ -11,7 +11,7 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix", 
+            "content": ["Laranja", "Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix", 
                         "Abóbora", "Tamarilhos", "Verduras Asiáticas", "Cogumelos marron"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
@@ -22,7 +22,7 @@
             "price": 20,
             "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix", 
                         "Abóbora", "Tamarilhos", "Verduras Asiáticas", "Cogumelos marron", 
-                        "Rabanetes", "Agrião da terra", "Couve nabiça", "Espinafres manteiga"],
+                        "Rabanetes", "Cenouras", "Couve penca", "Agrião da terra", "Espinafres manteiga"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         

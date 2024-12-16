@@ -1,4 +1,5 @@
 // import {updateNumbItemsOnCart} from '/script.js';
+import { findStockOfItems } from "../script.js";
 
 const secRaizes = document.querySelector('.raizes');
 

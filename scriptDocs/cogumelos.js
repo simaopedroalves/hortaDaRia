@@ -1,3 +1,5 @@
+import { findStockOfItems } from "../script.js";
+
 const secCogumelos = document.querySelector('.cogumelos');
 
 async function callCogumelos () {

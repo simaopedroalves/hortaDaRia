@@ -3,25 +3,25 @@
     text-align: center;
     min-height: fit-content;
     outline: 0;
-    margin-bottom: 3vh
+    margin-bottom: 3vh;
+    display: grid;
 }
 
 .webDevSp a {
     text-decoration: none;
 }
 
-.webDevSp .my-name {
-    /* color: var(--orange); */
-    background-color: var(--white);
+.webDevSp p {
+    color: var(--white);
     padding: 0.5rem;
-    font-weight: 800;
+    /* font-weight: 800; */
     font-size: small;
     background-color: transparent;
 }
 
-.webDevSp a p .designBy {
+/* .webDevSp a p .designBy {
     color: var(--white);
-}
+} */
 
 @media screen and (min-width: 700px) {
 

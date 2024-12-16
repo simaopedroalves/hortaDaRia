@@ -1,3 +1,5 @@
+
+
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
 // OPEN AND CLOSE THE MENU
@@ -66,6 +68,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h4 class="cabazName">${nameFour}</h4>
             </div>
         `
+
+        // termsAndConditions()
 })
 
 
@@ -117,7 +121,7 @@ function disabledAllOrders () {
 // find inside JSON data if each item have stock or not to display
 // a message saying that item his out of stock
 
-function findStockOfItems (stock, product_id) {
+export function findStockOfItems (stock, product_id) {
     let box = document.getElementById(product_id)
 
     if (!stock) {
@@ -140,6 +144,20 @@ allcallButtons.forEach((el) => {
     el.href = 'tel:914547465';
 });
 
-const boxItem = document.querySelectorAll('.boxItem')
+// FOOTER - MADE BY NAME AND RESERVED RIGHTS
+
+const madeBy = document.querySelector('.my-name');
+if (madeBy) {
+    madeBy.textContent = "Desenvolvido por Simão Pedro";
+} else {
+    console.error("Element with class 'my-name' not found.");
+}
+
+const reservedRigtHs = document.querySelector('.reservedRigths');
+if (reservedRigtHs) {
+    reservedRigtHs.textContent = "Todos os Direitos Reservados";
+} else {
+    console.error("Element with class 'reservedRigths' not found.");
+}
 
 

@@ -1,3 +1,5 @@
+import { findStockOfItems } from "../script.js";
+
 const secCompotas = document.querySelector('.compotas');
 
 async function callCompotas () {

@@ -1,4 +1,6 @@
 // import {updateNumbItemsOnCart} from '/script.js';
+import { findStockOfItems } from "../script.js";
+
 
 const secMicroverdes = document.querySelector('.microverdes');
 
