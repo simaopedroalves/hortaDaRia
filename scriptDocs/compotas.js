@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             <div class="boxItem" id="${product_id}">
                 <h3 id="itName">${compotasName}</h3>
                 <img src="${image}" alt="">
-                <div class="kiloPrice">${compotasPrice}€/Kg</div>
+                <div class="kiloPrice">${compotasPrice}€/Un</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <option value="qt">Quantidade</option>
-                    <option value="15gr">15 gr.</option>
-                    <option value="25gr">25 gr.</option>
-                    <option value="50gr">50 gr.</option>
-                    <option value="100gr">100 gr.</option>
-                    <option value="250gr">250 gr.</option>
-                    <option value="500gr">500 gr.</option>
+                    <option value="1un">1 un</option>
+                    <option value="2un">2 un</option>
+                    <option value="3un">3 un</option>
+                    <option value="4un">4 un</option>
+                    <option value="5">5 un</option>
+                    <option value="6">6 un</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         addCartBtn.setAttribute("disabled", "")
                     }
                     else {
-                    priceToPay = kg * (qt/1000)
+                    priceToPay = kg * qt
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
                     addCartBtn.removeAttribute("disabled")
