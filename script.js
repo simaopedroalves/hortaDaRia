@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // displayed on basket on top of the page
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
-    let cart = JSON.parse(localStorage.getItem('cart'));
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     numbOfItemsOnCart.forEach(el => {
         el.textContent = '0'
