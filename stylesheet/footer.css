@@ -3,10 +3,12 @@
     text-align: center;
     min-height: fit-content;
     outline: 0;
-    margin-bottom: 3vh;
-    display: grid;
-    color: var(--white);
+    margin: 0 auto 3vh auto;
+    display: flex;
+    gap: 2vh;
 
+    color: var(--white);
+    font-size: 0.7rem;
 }
 
 /* .webDevSp a {

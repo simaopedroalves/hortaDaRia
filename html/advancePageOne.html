@@ -194,7 +194,11 @@
                 <!-- <input type="hidden" name="Levantamento na Horta"> -->
                 <div>
                     <label for="pick-up-day">Dia de Levantamento</label>
-                    <input id="pick-up-day" type="date" name="Quero Levantar neste dia" required>
+                    <select id="pick-up-day" type="date" name="Quero Levantar neste dia" required>
+                        <option value="">Selecionar</option>
+                        <option value="Quinta-feira">5ª feira</option>
+                        <option value="Sexta-feira">6ª feira</option>
+                    </select>
                 </div>
                 <div class="schedule-deliver">
                     <label for="ppick-up-schedule">Horário</label>

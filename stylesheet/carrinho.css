@@ -234,7 +234,9 @@
     padding: 1.5rem;
 }
 
-.client-data-sec input, textarea {
+.client-data-sec input,
+ textarea,
+.client-data-sec select {
     /* background: linear-gradient(to top, var(--black), var(--green)); */
     outline: none;
     border: solid var(--orange) 1px;
@@ -388,7 +390,7 @@
     border: var(--orange) solid 2px;
     border-radius: 0.3rem;
 }
-
+/* 
 select,
 input[type="date"] {
     border: var(--orange) solid 2px;
@@ -396,16 +398,21 @@ input[type="date"] {
 }
 
 select {
-    /* background: linear-gradient(to top, var(--black), var(--green)); */
+    /* background: linear-gradient(to top, var(--black), var(--green)); 
     font-weight: bold;
     color: var(--orange);
-}
+} */
 
 /* COMO CHEGASTE ATÉ NÓS */
 
 .hear-about-us-sec {
     display: grid;
     gap: 1rem;
+}
+
+select {
+    min-width: 20%;
+    max-width: fit-content;
 }
 
 /* BUTTON SUBMIT */
@@ -511,5 +518,8 @@ select {
     font-size: 1rem;
     font-weight: 800;
     color: var(--orange);
+
+    
+    
 }
 }
