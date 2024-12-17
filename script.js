@@ -10,7 +10,7 @@ openMenu.addEventListener('click', () => {
 })
 
 // menu de cabazes na pagina principal
-const cabazOne = document.querySelector('.cabazOne')
+const cabazOne = document.querySelector('.cabazOne');
 const cabazTwo = document.querySelector('.cabazTwo')
 const cabazThree = document.querySelector('.cabazThree')
 const cabazFour = document.querySelector('.cabazFour')
@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error)
     }
 
-        let nameOne = object.cabazes[0].name
-        let priceOne = object.cabazes[0].price
+        let nameOne = object.cabazes[0].name;
+        let priceOne = object.cabazes[0].price;
  
-        cabazOne.innerHTML = `
+        cabazOne.innerHTML += `
             <div class="cabazContent">
                 <h4 class="cabazName">${nameOne}</h4>
                 <span class="cabazPrice">${priceOne}€</span>
