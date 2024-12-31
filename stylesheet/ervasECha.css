@@ -14,7 +14,8 @@
 .sabaoNatural,
 .plantasEmVaso,
 .compotas,
-.cogumelos{
+.cogumelos,
+.carnes{
     display: grid;
     gap: 3vw;
     grid-template-columns: repeat(1, 1fr);
@@ -133,7 +134,8 @@
 .sabaoNatural,
 .plantasEmVaso,
 .compotas,
-.cogumelos{
+.cogumelos,
+.carnes {
     grid-template-columns: repeat(2, 1fr);
     margin: 15vh auto;
     max-width: 90vw;
@@ -197,7 +199,8 @@
     .sabaoNatural,
     .plantasEmVaso,
     .compotas,
-    .cogumelos{
+    .cogumelos,
+    .carnes {
         grid-template-columns: repeat(4, 1fr);
     }
 

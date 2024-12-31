@@ -17,6 +17,14 @@
 
         },
         {
+            "name": "bróculo",
+            "price": 5,
+            "image": "/images/verduras/broculo.jpg",
+            "productId": 13,
+            "stock": true
+
+        },
+        {
             "name": "couve galega cortada",
             "price": 20,
             "image": "",
@@ -131,6 +139,14 @@
             "name": "couve repolho coração",
             "price": 2.5,
             "image": "/images/verduras/couve-repolho-coracao.jpg",
+            "productId": 104,
+            "stock": false
+
+        },
+        {
+            "name": "funcho baby",
+            "price": 8,
+            "image": "/images/verduras/funcho-baby.jpg",
             "productId": 104,
             "stock": false
 

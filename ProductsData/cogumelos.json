@@ -11,7 +11,7 @@
         {
             "name": "Cogumelos marron",
             "price": 8,
-            "image": "",
+            "image": "/images/cogumelos/cogumelos-marron.jpg",
             "productId": 125,
             "stock": true
 
@@ -19,7 +19,7 @@
         {
             "name": "Cogumelos shitaki",
             "price": 13,
-            "image": "",
+            "image": "/images/cogumelos/cogumelos-shitaki.jpg",
             "productId": 207231124,
             "stock": true
 
@@ -29,14 +29,6 @@
             "price": 10,
             "image": "",
             "productId": 208231124,
-            "stock": true
-
-        },
-        {
-            "name": "Cogumelos paris",
-            "price": 8,
-            "image": "",
-            "productId": 209231124,
             "stock": true
 
         }

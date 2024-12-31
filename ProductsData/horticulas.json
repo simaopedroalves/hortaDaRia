@@ -75,7 +75,7 @@
         {
             "name": "abóbora muscade/laranja",
             "price": 2,
-            "image": "",
+            "image": "/images/horticulas/abobora-muscade.jpg",
             "productId": 52,
             "stock": true
 
@@ -107,7 +107,7 @@
         {
             "name": "Courgete verde",
             "price": 3,
-            "image": "",
+            "image": "/images/horticulas/courgete-verde.jpg",
             "productId": 204231124,
             "stock": false
 
@@ -154,7 +154,7 @@
         {
             "name": "chuchu",
             "price": 2,
-            "image": "",
+            "image": "/images/horticulas/chuchu.jpg",
             "productId": 123,
             "stock": true
 
@@ -162,6 +162,14 @@
         {
             "name": "tamarilho",
             "price": 9,
+            "image": "/images/horticulas/tamarilho.jpg",
+            "productId": 124,
+            "stock": true
+
+        },
+        {
+            "name": "laranja",
+            "price": 2,
             "image": "",
             "productId": 124,
             "stock": true
