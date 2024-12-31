@@ -11,30 +11,6 @@
     font-size: 0.7rem;
 }
 
-/* .webDevSp a {
-    text-decoration: none;
- } */
-
-/*.webDevSp p {
-    /* color: var(--white); */
-    /* padding: 0.5rem; */
-    /* font-weight: 800; */
-    /* font-size: small; */
-    /* background-color: transparent; */
-/* } */ 
-
-/* .my-name {
-    color: var(--white);
-    border: red 1px solid;
-    z-index: 999;
-} */
-
-/* .webDevSp a p .designBy {
-    color: var(--white);
-} */ 
-
-
-
 @media screen and (min-width: 700px) {
 
     .webDevSp {
