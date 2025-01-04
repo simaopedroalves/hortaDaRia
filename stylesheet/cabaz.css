@@ -40,7 +40,7 @@
 
 .cabazPrice {
     text-align: center;
-    background-color: var(--black);
+    background-color: var(--background-color);
     width: fit-content;
     color: var(--orange);
     font-size: 1rem;
