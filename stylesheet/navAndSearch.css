@@ -17,7 +17,7 @@
     --gray: rgba(0,0,0,0.5);
     --black-hover-img: rgba(0,0,0,0.6);
     --green-hover-img: rgb(136, 171, 142, 0.3);
-
+    --background-color: rgb(239, 227, 194)
 }
 
 .dark-theme {
@@ -29,7 +29,7 @@
 
 body {
     position: relative;
-    background-color: var(--white);
+    background-color: var(--background-color);
 }
 
 header {

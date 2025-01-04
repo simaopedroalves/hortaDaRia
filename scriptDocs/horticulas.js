@@ -39,14 +39,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="kiloPrice">${horticulasPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <option value="qt">Quantidade</option>
+                     <option value="100gr">100 gr</option>
                     <option value="250gr">250 gr</option>
                     <option value="500gr">500 gr</option>
                     <option value="750gr">750 gr</option>
                     <option value="1kg">1 kg</option>
                     <option value="1.5kg">1.5 kg</option>
                     <option value="2kg">2 kg</option>
-                    <option value="1Un">1 Un</option>
-                    <option value="2Un">2 Un</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>

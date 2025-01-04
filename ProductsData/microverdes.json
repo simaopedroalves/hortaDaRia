@@ -34,7 +34,7 @@
         },
         {
             "name": "coentros",
-            "price": 75,
+            "price": 100,
             "image": "/images/microverdes/microverdes-coentros.jpg",
             "productId": 102231124,
             "stock": true
@@ -50,7 +50,7 @@
         },
         {
             "name": "capuchinha",
-            "price": 200,
+            "price": 250,
             "image": "/images/microverdes/microverdes-capuchinha.jpg",
             "productId": 37,
             "stock": true
@@ -58,7 +58,7 @@
         },
         {
             "name": "bróculos",
-            "price": 75,
+            "price": 80,
             "image": "/images/microverdes/microverdes-broculos.jpg",
             "productId": 93,
             "stock": true
@@ -73,7 +73,7 @@
 
         },
         {
-            "name": "1 vaso microverdes",
+            "name": "1 vaso microverdes mix",
             "price": 5,
             "image": "",
             "productId": 150231124,
@@ -81,7 +81,7 @@
 
         },
         {
-            "name": "2 vasos microverdes",
+            "name": "2 vasos microverdes mix",
             "price": 9,
             "image": "",
             "productId": 91,

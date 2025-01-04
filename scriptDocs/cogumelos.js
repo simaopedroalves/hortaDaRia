@@ -38,12 +38,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="kiloPrice">${cogumelosPrice}€/Kg</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <option value="qt">Quantidade</option>
-                    <option value="15gr">15 gr.</option>
-                    <option value="25gr">25 gr.</option>
-                    <option value="50gr">50 gr.</option>
                     <option value="100gr">100 gr.</option>
                     <option value="250gr">250 gr.</option>
                     <option value="500gr">500 gr.</option>
+                    <option value="750gr">750 gr.</option>
+                    <option value="1Kg">1 Kg</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>

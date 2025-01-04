@@ -2,15 +2,15 @@
     "compotas": [
         {
             "name": "Morango",
-            "price": 14,
+            "price": 3.5,
             "image": "",
             "productId": 126,
-            "stock": false
+            "stock": true
 
         },
         {
             "name": "framboesa",
-            "price": 14,
+            "price": 3.5,
             "image": "",
             "productId": 127,
             "stock": false
@@ -26,15 +26,15 @@
         },
         {
             "name": "laranja",
-            "price": 2.5,
+            "price": 3.5,
             "image": "/images/compotas/compota-laranja.jpg",
             "productId": 5316122024,
-            "stock": true
+            "stock": false
 
         },
         {
             "name": "limão",
-            "price": 16.5,
+            "price": 3.5,
             "image": "",
             "productId": 129,
             "stock": false
@@ -45,12 +45,12 @@
             "price": 3.5,
             "image": "/images/compotas/geleia-limao.jpg",
             "productId": 130,
-            "stock": true
+            "stock": false
 
         },
         {
             "name": "figos",
-            "price": 16.6,
+            "price": 3.5,
             "image": "",
             "productId": 131,
             "stock": false
@@ -58,7 +58,7 @@
         },
         {
             "name": "framboesa amarela",
-            "price": 16.6,
+            "price": 3.5,
             "image": "",
             "productId": 132,
             "stock": false

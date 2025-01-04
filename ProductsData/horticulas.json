@@ -18,7 +18,7 @@
         },
         {
             "name": "cucamelon",
-            "price": 8,
+            "price": 12,
             "image": "/images/frutaDaEpoca/cucamelon.jpg",
             "productId": 2358181124,
             "stock": false
@@ -42,7 +42,7 @@
         },
         {
             "name": "morangos",
-            "price": 8,
+            "price": 10,
             "image": "/images/frutaDaEpoca/morangos.jpg",
             "productId": 101181124,
             "stock": false
@@ -58,10 +58,10 @@
         },
         {
             "name": "pepino",
-            "price": 1.5,
+            "price": 2.5,
             "image": "/images/horticulas/pepino.jpg",
             "productId": 103231124,
-            "stock": true
+            "stock": false
 
         },
         {

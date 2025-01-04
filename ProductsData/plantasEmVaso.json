@@ -69,7 +69,7 @@
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_tomilho.jpg",
             "productId": 84,
-            "stock": true
+            "stock": false
 
         }
     ]

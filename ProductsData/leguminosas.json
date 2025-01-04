@@ -2,7 +2,7 @@
     "leguminosas": [
         {
             "name": "favas",
-            "price": 6,
+            "price": 4,
             "description": "descascadas e congeladas",
             "image": "/images/leguminosas/favas.jpg",
             "productId": 49,

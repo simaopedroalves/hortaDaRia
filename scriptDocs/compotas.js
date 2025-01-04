@@ -36,15 +36,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h3 id="itName">${compotasName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${compotasPrice}€/Un</div>
-                <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <option value="qt">Quantidade</option>
-                    <option value="1un">1 un</option>
-                    <option value="2un">2 un</option>
-                    <option value="3un">3 un</option>
-                    <option value="4un">4 un</option>
-                    <option value="5">5 un</option>
-                    <option value="6">6 un</option>
-                </select>
+
+                    <select type="text" min="1" class="quantity">
+                        <option value="">Quantidade</option>
+                        <option value="1un">1 un</option>
+                        <option value="2un">2 un</option>
+                        <option value="3un">3 un</option>
+                    </select>
+                    <!--    
+                    <select type="text" min="1" class="quantity">
+                    sabor:
+                    <option value="" readonly>Selecione o tipo de compota</option>
+                        <option value="1un">figo</option>
+                        <option value="2un">morango</option>
+                        <option value="3un">framboesa</option>
+                    </select>
+                    -->
+
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
                 <button class="addToCart btn btn-success" disabled>Comprar</button>

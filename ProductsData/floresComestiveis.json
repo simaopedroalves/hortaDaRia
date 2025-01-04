@@ -29,7 +29,7 @@
             "price": 0.10,
             "image": "/images/floresComestiveis/flor_petunia.jpg",
             "productId": 43,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -42,18 +42,18 @@
         },
         {
             "name": "flor de Courgete",
-            "price": 0.10,
+            "price": 0.50,
             "image": "/images/floresComestiveis/flor-courgete.jpg",
             "productId": 45,
-            "stock": true
+            "stock": false
 
         },
         {
             "name": "flor de calendula",
-            "price": 0.10,
+            "price": 0.25,
             "image": "/images/floresComestiveis/calendula.jpg",
             "productId": 46,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -61,12 +61,12 @@
             "price": 0.10,
             "image": "",
             "productId": 47,
-            "stock": true
+            "stock": false
 
         },
         {
             "name": "flor de mel",
-            "price": 0.10,
+            "price": 0.25,
             "image": "/images/floresComestiveis/flor-de-mel.jpg",
             "productId": 48,
             "stock": true
@@ -84,18 +84,18 @@
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-de-malva.jpg",
             "productId": 115,
-            "stock": true
+            "stock": false
         },
         {
             "name": "flor de crisântemos",
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-de-crisantemos.jpg",
             "productId": 116,
-            "stock": true
+            "stock": false
         },
         {
             "name": "mix de flores (unidade)",
-            "price": 0.10,
+            "price": 2,
             "image": "/images/floresComestiveis/mix.jpg",
             "productId": 42,
             "stock": true

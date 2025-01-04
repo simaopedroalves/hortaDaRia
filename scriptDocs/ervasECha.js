@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <option value="50gr">50 gr</option>
                     <option value="100gr">100 gr</option>
                     <option value="250gr">250 gr</option>
-                    <option value="500gr">500 gr</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>

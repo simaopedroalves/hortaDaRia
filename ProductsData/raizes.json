@@ -10,10 +10,10 @@
         },
         {
             "name": "batata doce polpa laranja",
-            "price": 2,
+            "price": 2.5,
             "image": "/images/raizes/batata-doce-polpa-laranja.jpg",
             "productId": 28,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -29,7 +29,7 @@
             "price": 2.5,
             "image": "/images/raizes/batata-doce-polpa-laranja-claro.jpg",
             "productId": 112,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -37,12 +37,12 @@
             "price": 2.5,
             "image": "/images/raizes/cebola-nova.jpg",
             "productId": 29,
-            "stock": false
+            "stock": true
 
         },
         {
             "name": "cebola verde",
-            "price": 15,
+            "price": 12,
             "image": "/images/raizes/cebola-verde.jpg",
             "productId": 106,
             "stock": true
@@ -58,7 +58,7 @@
         },
         {
             "name": "alho francês",
-            "price": 7,
+            "price": 6,
             "image": "/images/raizes/alho-frances.jpg",
             "productId": 703181124,
             "stock": true
@@ -74,11 +74,10 @@
         },
         {
             "name": "cenouras",
-            "price": 3,
+            "price": 4,
             "image": "/images/raizes/cenouras.jpg",
             "productId": 30,
-            "stock": false
-
+            "stock": true
         },
         {
             "name": "cenoura baby congelada",
@@ -98,11 +97,10 @@
         },
         {
             "name": "espargos",
-            "price": 10,
+            "price": 12,
             "image": "/images/raizes/espargos.jpg",
             "productId": 32,
-            "stock": false
-
+            "stock": true
         }
     ]
 }

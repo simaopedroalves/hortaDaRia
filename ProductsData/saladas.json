@@ -25,7 +25,7 @@
 
         },
         {
-            "name": "Verduras asiáticas",
+            "name": "Salada asiáticas",
             "price": 15,
             "image": "/images/saladas/verduras-asiaticas.jpg",
             "productId": 8,
@@ -42,7 +42,7 @@
         },
         {
             "name": "Salada Wok",
-            "price": 20,
+            "price": 15,
             "image": "/images/saladas/salada-wok.jpg",
             "productId": 10,
             "stock": true
@@ -58,7 +58,7 @@
         },
         {
             "name": "Mizuna Verde",
-            "price": 20,
+            "price": 15,
             "image": "/images/saladas/mizuna-verde.jpg",
             "productId": 95,
             "stock": true

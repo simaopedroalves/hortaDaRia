@@ -2,7 +2,7 @@
     "verduras": [
         {
             "name": "ruibarbo",
-            "price": 18,
+            "price": 10,
             "image": "/images/verduras/ruibarbo.jpg",
             "productId": 12,
             "stock": true
@@ -25,7 +25,7 @@
 
         },
         {
-            "name": "couve galega cortada",
+            "name": "couve galega cortada (caldo verde)",
             "price": 20,
             "image": "",
             "productId": 14,
@@ -58,7 +58,7 @@
         },
         {
             "name": "couve toscana",
-            "price": 12,
+            "price": 10,
             "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18,
             "stock": true
@@ -66,7 +66,7 @@
         },
         {
             "name": "Espinafre manteiga",
-            "price": 20,
+            "price": 15,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
             "stock": true
@@ -140,7 +140,7 @@
             "price": 2.5,
             "image": "/images/verduras/couve-repolho-coracao.jpg",
             "productId": 104,
-            "stock": false
+            "stock": true
 
         },
         {
