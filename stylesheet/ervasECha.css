@@ -90,11 +90,7 @@
     margin: 0.5rem;
 }
 
-.compotas .boxItem .kiloPrice,
-.compotas .boxItem .priceToPay {
-    grid-column: span 2;
 
-}
 
 .boxItem select,
 .boxItem input {
@@ -109,8 +105,12 @@
     background-color: var(--green-one);
 }
 
-.compotas .boxItem select,
-.compotas .boxItem input {
+.compotas .boxItem .kiloPrice,
+.compotas .boxItem .priceToPay {
+    grid-column: span 2;
+}
+
+.compotas .boxItem select {
     grid-column: span 2;
     width: 75%;
 }
@@ -204,12 +204,10 @@
     border: solid 2px var(--orange);
 }
 
-.compotas .boxItem select,
-.compotas .boxItem input {
-    grid-column: span 2;
-    width: 75%;
-    cursor: pointer;
+.compotas .boxItem select {
+    width: 100%;
 }
+
 
 select option {
     cursor: pointer;
