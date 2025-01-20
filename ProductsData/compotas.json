@@ -1,39 +1,36 @@
 {
-    "compotas": [
+    "compotasPequenas": [
         {
-            "name": "Morango",
-            "price": 3.5,
+            "name": "Compota Morango",
             "image": "",
             "productId": 126,
             "stock": true
 
         },
         {
-            "name": "framboesa",
-            "price": 3.5,
+            "name": "Compota framboesa",
             "image": "",
             "productId": 127,
-            "stock": false
+            "stock": true
 
         },
         {
-            "name": "frutos silvestres",
-            "price": 3.5,
+            "name": "Compota frutos silvestres",
             "image": "/images/compotas/compota-frutos-silvestres.jpg",
             "productId": 128,
-            "stock": false
+            "stock": true
 
         },
         {
-            "name": "laranja",
+            "name": "Compota laranja",
             "price": 3.5,
             "image": "/images/compotas/compota-laranja.jpg",
             "productId": 5316122024,
-            "stock": false
+            "stock": true
 
         },
         {
-            "name": "limão",
+            "name": "Compota limão",
             "price": 3.5,
             "image": "",
             "productId": 129,
@@ -41,7 +38,7 @@
 
         },
         {
-            "name": "geleia limão",
+            "name": "Geleia limão",
             "price": 3.5,
             "image": "/images/compotas/geleia-limao.jpg",
             "productId": 130,
@@ -49,7 +46,7 @@
 
         },
         {
-            "name": "figos",
+            "name": "Compota figos",
             "price": 3.5,
             "image": "",
             "productId": 131,
@@ -57,8 +54,67 @@
 
         },
         {
-            "name": "framboesa amarela",
+            "name": "Compota framboesa amarela",
             "price": 3.5,
+            "image": "",
+            "productId": 132,
+            "stock": false
+
+        }
+    ],
+
+    "compotasGrandes": [
+        {
+            "name": "Compota Morango",
+            "image": "",
+            "productId": 126,
+            "stock": false
+
+        },
+        {
+            "name": "Compota framboesa",
+            "image": "",
+            "productId": 127,
+            "stock": false
+
+        },
+        {
+            "name": "Compota frutos silvestres",
+            "image": "/images/compotas/compota-frutos-silvestres.jpg",
+            "productId": 128,
+            "stock": true
+
+        },
+        {
+            "name": "Compota laranja",
+            "image": "/images/compotas/compota-laranja.jpg",
+            "productId": 5316122024,
+            "stock": false
+
+        },
+        {
+            "name": "Compota limão",
+            "image": "",
+            "productId": 129,
+            "stock": false
+
+        },
+        {
+            "name": "Geleia limão",
+            "image": "/images/compotas/geleia-limao.jpg",
+            "productId": 130,
+            "stock": true
+
+        },
+        {
+            "name": "Compota figos",
+            "image": "",
+            "productId": 131,
+            "stock": true
+
+        },
+        {
+            "name": "Compota framboesa amarela",
             "image": "",
             "productId": 132,
             "stock": false

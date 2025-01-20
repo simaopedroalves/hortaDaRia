@@ -47,7 +47,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-height: 50vh;
+    /* max-height: 50vh; */
+    max-height: fit-content;
     min-height: 50vh;
     /* max-width: 80lvw; */
     gap: 0.3rem;
@@ -83,26 +84,40 @@
 
 .boxItem .kiloPrice,
 .boxItem .priceToPay {
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: bold;
     color: var(--black);
+    margin: 0.5rem;
+}
+
+.compotas .boxItem .kiloPrice,
+.compotas .boxItem .priceToPay {
+    grid-column: span 2;
+
 }
 
 .boxItem select,
 .boxItem input {
-    max-width: 75%;
+    width: 100%;
+    margin: 0 auto; 
     border-radius: 0.1rem;
-    font-size: 1rem;
-    padding: 0.2rem auto;
+    font-size: 0.9rem;
+    padding: 0.4rem;
     font-weight: bold;
-    font-size: 0.8rem;
     border: solid var(--green) 1px;
     color: var(--black);
+    background-color: var(--green-one);
+}
+
+.compotas .boxItem select,
+.compotas .boxItem input {
+    grid-column: span 2;
+    width: 75%;
 }
 
 .boxItem select option {
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--green-one);
     max-width: 60%;
     margin: 0 auto;
     font-weight: 600;
@@ -117,7 +132,12 @@
     letter-spacing: 0.1rem;
     outline: none;
     border: solid 2px var(--orange);
-    max-width: 75%;
+    grid-column: span 2;
+    width: 100%;
+}
+
+.displayNone {
+   display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -140,6 +160,7 @@
     margin: 15vh auto;
     max-width: 90vw;
     padding: 0;
+
 }
 
 .section-title {
@@ -181,6 +202,17 @@
     background-color: var(--black);
     cursor: pointer;
     border: solid 2px var(--orange);
+}
+
+.compotas .boxItem select,
+.compotas .boxItem input {
+    grid-column: span 2;
+    width: 75%;
+    cursor: pointer;
+}
+
+select option {
+    cursor: pointer;
 }
 
 }

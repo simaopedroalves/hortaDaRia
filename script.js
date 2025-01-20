@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let nameOne = object.cabazes[0].name;
         let priceOne = object.cabazes[0].price;
- 
+
         cabazOne.innerHTML += `
-            <div class="cabazContent">
+             <div class="cabazContent">
                 <h4 class="cabazName">${nameOne}</h4>
                 <span class="cabazPrice">${priceOne}€</span>
             </div>
