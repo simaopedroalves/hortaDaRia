@@ -1,5 +1,6 @@
 // import {updateNumbItemsOnCart} from '/script.js';
 import { findStockOfItems } from "../script.js";
+// import { itemsAnimation } from "../script.js";
 
 const section = document.querySelector('.ervas');
 // const cartList = document.querySelector('.shopping-cart')
@@ -10,7 +11,6 @@ async function callErvas() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-   
     let object = '';
    
     try {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         
         section.innerHTML += `
-            <div class="boxItem" id="${product_id}">
+            <div class="boxItem hidden" id="${product_id}" data-animation="animate__fadeInLeft">
                 <h3 id="itName">${ervaName}</h3>
                 <img src="${image}" alt="">
                 <div class="kiloPrice">${ervaPrice}€/Kg</div>

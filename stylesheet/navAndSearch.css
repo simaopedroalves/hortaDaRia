@@ -253,6 +253,7 @@ header .menu-list a li:hover {
     margin: 9svh 0 0 0;
     display: flex;
     overflow-x: scroll;
+    position: relative;
 }
 
 .welcomeSection .title-div {
@@ -291,6 +292,10 @@ header .menu-list a li:hover {
     text-transform: uppercase;
     border-image: linear-gradient(90deg,  var(--black-hover-img), var(--green-hover-img), var(--black-hover-img)) fill 1;
 
+}
+
+.welcomeSection::-webkit-scrollbar {
+    display: none;
 }
 
 body::-webkit-scrollbar {

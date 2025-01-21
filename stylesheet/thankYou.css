@@ -43,12 +43,26 @@
     text-decoration: none;
 }
 
-.fa-paper-plane {
-    display: inline-block;
-    /* animation: animate__backInLeft; */
-    animation-duration: 3s;
-    animation-delay: 0.5s;
+.fa-plane {
+    /* display: inline-block; */
+    /* animation-iteration-count: infinite;
+    animation-delay: 1500ms;
+    animation-duration: 3000ms;
+    animation-direction: normal; */
+    animation: 7s linear 0s infinite running slidein;
+    font-size: 2rem;
 }
+
+@keyframes slidein {
+    from {
+      /* pushes the sun down past the viewport */
+      transform: translateX(-50vw);
+    }
+    to {
+      /* returns the sun to its default position */
+      transform: translateX(50vw);
+    }
+  }
 
 /* MESSAGE AFTER USER SEND ORDER */
 

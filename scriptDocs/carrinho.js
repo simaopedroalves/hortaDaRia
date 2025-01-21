@@ -16,9 +16,11 @@ function createCart() {
         let newDiv = document.createElement('div');
         newDiv.classList.add('box-cart');
         let emptyCarMessage = document.querySelector('.empty-car-message');
+        let priceAlert = document.querySelector('.priceAlert');
 
         if(cart.length >= 1) {
             emptyCarMessage.style.display = 'none';
+            priceAlert.style.display = 'flex';
         }
 
         if (image == "") {

@@ -1,7 +1,6 @@
 // import {updateNumbItemsOnCart} from '/script.js';
 import { findStockOfItems } from "../script.js";
 
-
 const secMicroverdes = document.querySelector('.microverdes');
 
 async function callMicroverdes () {
@@ -9,7 +8,6 @@ async function callMicroverdes () {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-
     let object = '';
 
     try {

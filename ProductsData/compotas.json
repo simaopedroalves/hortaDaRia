@@ -23,7 +23,6 @@
         },
         {
             "name": "Compota Laranja",
-            "price": 3.5,
             "image": "/images/compotas/compota-laranja.jpg",
             "productId": 5316122024,
             "stock": true
@@ -31,7 +30,6 @@
         },
         {
             "name": "Compota Limão",
-            "price": 3.5,
             "image": "",
             "productId": 129,
             "stock": false
@@ -39,7 +37,6 @@
         },
         {
             "name": "Geleia Limão",
-            "price": 3.5,
             "image": "/images/compotas/geleia-limao.jpg",
             "productId": 130,
             "stock": false
@@ -47,7 +44,6 @@
         },
         {
             "name": "Compota Figos",
-            "price": 3.5,
             "image": "",
             "productId": 131,
             "stock": false
@@ -55,7 +51,6 @@
         },
         {
             "name": "Compota Framboesa Amarela",
-            "price": 3.5,
             "image": "",
             "productId": 132,
             "stock": false

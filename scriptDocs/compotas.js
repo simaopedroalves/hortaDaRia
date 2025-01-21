@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     compotasGrandes.innerHTML += `
         <h3>Compotas Grandes</h3>
         <img src="/images/logo.png" alt="" id="image">
-        <div class="kiloPrice">5.5€/Un</div>
+        <div class="kiloPrice">3.5€/Un</div>
 
         <select type="text" class="compotasOptions" id="productOptions">
             <option value="select" class="productOption">Selecione a compota</option>
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     compotasPequenas.innerHTML += `
         <h3 >Compotas Pequenas</h3>
         <img src="/images/logo.png" alt="" id="image">
-        <div class="kiloPrice">3.5€/Un</div>
+        <div class="kiloPrice">2.5€/Un</div>
 
         <select type="text" class="compotasOptions" id="productOptions">
             <option value="select" class="productOption">Selecione a compota</option>
@@ -279,8 +279,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     priceToPay = kg * qt;
                     priceToPay = priceToPay.toFixed(2);
                     finalItemPrice[i].style.visibility = 'visible';
-                    finalItemPrice[i].textContent = priceToPay + ' €'
-                    addCartBtn.removeAttribute("disabled")
+                    finalItemPrice[i].textContent = priceToPay + ' €';
+                    addCartBtn.removeAttribute("disabled");
                     }
                     
                     return priceToPay

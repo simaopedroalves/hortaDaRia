@@ -107,7 +107,7 @@ function disabledAllOrders () {
     let orderDisableMessage = document.querySelector('.disable-orders');
   
     if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed')  {
-       orderDisableMessage.style.display = 'none'
+       orderDisableMessage.style.display = 'none';
     }
 
     else {
@@ -169,4 +169,5 @@ if (reservedRigtHs) {
     console.error("Element with class 'reservedRigths' not found.");
 }
 
-
+  
+  

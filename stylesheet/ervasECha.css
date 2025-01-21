@@ -59,6 +59,10 @@
     border-radius: 0.5rem;
 }
 
+/* .animate__animated {
+    opacity: 1 !important;
+} */
+
 .boxItem h3 {
     margin: 0 auto;
     text-transform: uppercase;
@@ -90,8 +94,6 @@
     margin: 0.5rem;
 }
 
-
-
 .boxItem select,
 .boxItem input {
     width: 100%;
@@ -106,11 +108,15 @@
 }
 
 .compotas .boxItem .kiloPrice,
-.compotas .boxItem .priceToPay {
+.compotas .boxItem .priceToPay,
+.sabaoNatural .boxItem .kiloPrice,
+.sabaoNatural .boxItem .priceToPay
+ {
     grid-column: span 2;
 }
 
-.compotas .boxItem select {
+.compotas .boxItem select,
+.sabaoNatural .boxItem select {
     grid-column: span 2;
     width: 75%;
 }
