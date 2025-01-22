@@ -25,9 +25,9 @@
 
         },
         {
-            "name": "Cogumelos portabello",
+            "name": "Cogumelos portobello",
             "price": 10,
-            "image": "",
+            "image": "/images/cogumelos/cogumelos-portobello.jpg",
             "productId": 208231124,
             "stock": true
 
