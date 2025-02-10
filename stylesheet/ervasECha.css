@@ -73,7 +73,7 @@
 .boxItem h3 {
     margin: 0 auto;
     text-transform: uppercase;
-    color: var(--orange);
+    color: var(--black);
     grid-column: span 2;
     font-size: 0.7rem;
     font-weight: bold;
@@ -217,7 +217,8 @@
     border: solid 2px var(--orange);
 }
 
-.compotas .boxItem select {
+.compotas .boxItem select,
+.sabaoNatural .boxItem select  {
     width: 100%;
 }
 

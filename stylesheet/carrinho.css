@@ -34,8 +34,8 @@
 }
 
 .box-cart {
-    min-width: 90dvw;
-    max-width: 90dvw;
+    min-width: 90vw;
+    max-width: 90vw;
     border-bottom: var(--orange) solid 1px;
     display: flex;
     justify-content: center;    
@@ -472,24 +472,24 @@ select {
 
     .cartList {
         grid-template-columns: repeat(3, 1fr);
-        /* border: solid greenyellow 5px; */
-        justify-content: center;
-        align-items: center;
-        margin: 12vh auto;
+        padding: 0;
+    }
+
+    
+    .cartList img {
+        max-width: 20vh;
     }
     
     .box-cart {
-        min-width: fit-content;
+        min-width: min-content;
         max-width: min-content;
         min-height: 30vh;
-        /* background-color: var(--green-one); */
-        /* border-radius: 1rem; */
-        /* background-image: linear-gradient(45deg, var(--orange), var(--green)); */
-    
     }   
+
     .box-2 :nth-child(3) {
         gap: 3vw;
     }
+
     .buttonsDelAndAdvance {
         grid-column: span 3;
         margin-top: 5vh;
@@ -533,8 +533,5 @@ select {
     font-size: 1rem;
     font-weight: 800;
     color: var(--orange);
-
-    
-    
-}
+    }
 }
