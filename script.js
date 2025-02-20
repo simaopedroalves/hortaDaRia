@@ -9,6 +9,23 @@ openMenu.addEventListener('click', () => {
     openMenu.classList.toggle('fa-x')
 })
 
+// images scroll right automatically
+
+const welcomeSection = document.querySelector('.welcomeSection');
+welcomeSection.style.scrollBehavior = 'smooth';
+
+function scrollRight() {
+    welcomeSection.scrollLeft += window.innerWidth;
+
+    if (welcomeSection.scrollLeft >= welcomeSection.scrollWidth - window.innerWidth) {
+        welcomeSection.scrollLeft = 0;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setInterval(scrollRight, 3500)
+});
+
 // menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne');
 const cabazTwo = document.querySelector('.cabazTwo')

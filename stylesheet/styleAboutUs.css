@@ -69,7 +69,27 @@
     padding: 0.5rem 0.2rem;
 }
 
+.see-more-button button {
+    color: var(--orange);
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.description-hidden {
+    display: none;
+}
+
 @media screen and (min-width: 700px) {
+    .see-more-button button {
+        display: none;
+    }
+
+    .description-hidden {
+        display: block;
+    }
 
     .welcome {
         display: flex;
