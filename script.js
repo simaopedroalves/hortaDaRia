@@ -9,10 +9,20 @@ openMenu.addEventListener('click', () => {
     openMenu.classList.toggle('fa-x')
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.spanWithButton').forEach(button => {
+        button.classList.add('see-more-button');
+    })
+});
+
+
+
+
 // images scroll right automatically
 
 const welcomeSection = document.querySelector('.welcomeSection');
-welcomeSection.style.scrollBehavior = 'smooth';
+
+// welcomeSection.classList.add('scrollBehaviorSmooth');
 
 function scrollRight() {
     welcomeSection.scrollLeft += window.innerWidth;
@@ -25,6 +35,8 @@ function scrollRight() {
 document.addEventListener('DOMContentLoaded', () => {
     setInterval(scrollRight, 3500)
 });
+
+
 
 // menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne');
@@ -90,28 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 })
 
 
-// update number of items to be equal to the number
-// displayed on basket on top of the page
-function updateNumbItemsOnCart() {
-    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    numbOfItemsOnCart.forEach(el => {
-        el.textContent = '0'
-
-        for (let i = 0; i < cart.length; i++) {
-            if (cart.length > 0) {
-                el.textContent = cart.length
-            }
-            if (cart.length <= 0) {
-                el.textContent = '0'
-            }
-            else return
-        }
-    })
-}
-
-updateNumbItemsOnCart()
 
 // to disable cart order and add a message that says that, using DATE.
 
@@ -187,4 +178,25 @@ if (reservedRigtHs) {
 }
 
   
-  
+  // update number of items to be equal to the number
+// displayed on basket on top of the page
+export function updateNumbItemsOnCart() {
+    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    numbOfItemsOnCart.forEach(el => {
+        el.textContent = '0'
+
+        for (let i = 0; i < cart.length; i++) {
+            if (cart.length > 0) {
+                el.textContent = cart.length
+            }
+            if (cart.length <= 0) {
+                el.textContent = '0'
+            }
+            else return
+        }
+    })
+}
+
+updateNumbItemsOnCart()

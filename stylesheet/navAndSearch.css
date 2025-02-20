@@ -156,17 +156,7 @@ header {
     cursor: pointer;
 }
 
-.article-number {
-    border-radius: 40%;
-    background-color: var(--orange);
-    color: var(--white);
-    padding: 0.2rem 0.3rem;
-    position: absolute;
-    top: 0.7rem;
-    left: 0.7rem;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
+
 /* =========================================== */
 .menu-list {
     position: absolute;
@@ -329,8 +319,21 @@ body::-webkit-scrollbar:vertical {
 
 }
 
+.article-number {
+    border-radius: 40%;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0.2rem 0.3rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 0.7rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
 
-
+.scrollBehaviorSmooth {
+    scroll-behavior: smooth;
+}
 
 @media screen and (min-width: 1100px) {
 
