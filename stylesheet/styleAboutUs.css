@@ -21,7 +21,7 @@
     margin: 6vh auto;
     justify-content: center;
     position: relative;
-
+    align-items: center;
 }
 
 .about-us-div {
@@ -46,6 +46,7 @@
 .about-us-photo img{
     object-fit: cover;
     max-width: 100vw;
+    border-radius: 1rem;
 }
 
 .about-us .about-us-description {
@@ -123,6 +124,7 @@
 
     .about-us-photo img{
         max-width: 40vw;
+        max-height: 100lvh;
         object-fit: cover;
     }
 
@@ -145,8 +147,8 @@
     }
 
     .description-two {
-        grid-column: span 2;
-        max-width: 50lvw;
+        grid-column: span 1;
+        /* max-width: 50lvw; */
         margin: 0 auto;
     }
 }
