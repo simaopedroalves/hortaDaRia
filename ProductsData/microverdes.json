@@ -2,7 +2,7 @@
     "microverdes": [
         {
             "name": "trigo-sarraceno",
-            "price": 80,
+            "price": 75,
             "image": "/images/microverdes/microverdes-trigo-sarraceno.jpg",
             "productId": 22741224,
             "stock": true

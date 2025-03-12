@@ -37,7 +37,7 @@
             "price": 30,
             "image": "/images/ervasECha/hortela.jpg",
             "productId": 715181124,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -45,7 +45,7 @@
             "price": 30,
             "image": "/images/ervasECha/hortela-menta.jpg",
             "productId": 67,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -74,7 +74,7 @@
         },
         {
             "name": "coentros",
-            "price": 30,
+            "price": 20,
             "image": "/images/ervasECha/coentros.jpg",
             "productId": 72,
             "stock": true
@@ -90,7 +90,7 @@
         },
         {
             "name": "salsa",
-            "price": 30,
+            "price": 20,
             "image": "/images/ervasECha/salsa.jpg",
             "productId": 74,
             "stock": true

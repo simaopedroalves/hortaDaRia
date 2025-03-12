@@ -73,18 +73,34 @@
 
         },
         {
+            "name": "beterraba amarela",
+            "price": 8,
+            "image": "",
+            "productId": 111112032025,
+            "stock": false
+
+        },
+        {
+            "name": "beterraba",
+            "price": 8,
+            "image": "",
+            "productId": 111212032025,
+            "stock": false
+
+        },
+        {
             "name": "cenouras",
             "price": 4,
             "image": "/images/raizes/cenouras.jpg",
             "productId": 30,
-            "stock": true
+            "stock": false
         },
         {
             "name": "cenoura baby congelada",
             "price": 6,
             "image": "/images/raizes/cenoura-baby-congelada.jpg",
             "productId": 31,
-            "stock": true
+            "stock": false
 
         },
         {

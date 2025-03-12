@@ -5,7 +5,7 @@
             "price": 10,
             "image": "/images/verduras/ruibarbo.jpg",
             "productId": 12,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -21,7 +21,7 @@
             "price": 5,
             "image": "/images/verduras/broculo.jpg",
             "productId": 13,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -61,7 +61,7 @@
             "price": 10,
             "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18,
-            "stock": true
+            "stock": false
 
         },
         {

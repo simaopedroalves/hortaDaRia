@@ -85,7 +85,7 @@
             "price": 50,
             "image": "/images/saladas/folha-de-gelo.jpg",
             "productId": 98,
-            "stock": true
+            "stock": false
 
         }    
     ]

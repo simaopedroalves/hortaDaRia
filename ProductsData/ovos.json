@@ -2,7 +2,7 @@
     "ovos": [
         {
             "name": "ovos de galinha livre e feliz",
-            "price": 5,
+            "price": 6,
             "image": "/images/ovos/ovo-galinha.jpg",
             "productId": 56,
             "stock": true
