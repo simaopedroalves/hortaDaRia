@@ -2,6 +2,8 @@
 
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
+const cabazesMenu = document.querySelector('.cabazesMenu');
+
 // OPEN AND CLOSE THE MENU
 
 openMenu.addEventListener('click', () => {
@@ -15,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
+cabazesMenu.addEventListener('click', () => {
+    menu.classList.toggle('show')
+    openMenu.classList.toggle('fa-x')
+})
 
 
 
@@ -33,7 +39,7 @@ function scrollRight() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    setInterval(scrollRight, 3500)
+    setInterval(scrollRight, 2000)
 });
 
 
