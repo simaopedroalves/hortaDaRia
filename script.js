@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
+const cabazesMenu = document.querySelector('#cabazesButton');
+
 if (cabazesMenu) {
     cabazesMenu.addEventListener('click', () => {
         menu.classList.toggle('show')

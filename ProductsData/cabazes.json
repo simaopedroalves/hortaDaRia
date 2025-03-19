@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Laranja", "Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix"],
+            "content": ["Acelgas/Kales", "Rabanetes", "Microverdes Mix", "Salada nNatura", "Agrião da Terra"],
             "open": "/html/cabaz-um.html",
             "image": "",
             "productId": 1
@@ -11,8 +11,8 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Laranja", "Rúcula", "Chuchu", "Acelgas/Kales", "Salada natura", "Microverdes mix", 
-                        "Abóbora", "Tamarilhos", "Verduras Asiáticas", "Cogumelos marron"],
+            "content": ["Acelgas/Kales", "Rabanetes", "Microverdes Mix", "Salada Natura", "Agrião da Terra", 
+                        "Cogumelos Marron", "Pak Choi/Tatsoi", "Verduras Asiáticas ou Rúcula"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -20,9 +20,9 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Rabanetes", "Batata-doce", "Cebola verde", "Salada natura", "Microverdes mix", 
-                        "Abóbora", "Tamarilhos", "Verduras Asiáticas", "Cogumelos marron", 
-                        "Rabanetes", "Cenouras", "Couve penca", "Agrião da terra", "Espinafres manteiga"],
+            "content": ["Acelgas/Kales", "Rabanetes", "Microverdes Mix", "Salada Natura", "Agrião da Terra",
+                        "Cogumelos Marron", "Pak Choi/Tatsoi", "Verduras Asiáticas ou Rúcula", 
+                        "Espargos", "Salsa", "Espinafres Manteiga"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         

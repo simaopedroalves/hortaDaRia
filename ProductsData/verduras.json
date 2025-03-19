@@ -150,6 +150,22 @@
             "productId": 104,
             "stock": false
 
+        },
+        {
+            "name": "wasabino",
+            "price": 20,
+            "image": "/images/verduras/wasabino.jpg",
+            "productId": 233518032025,
+            "stock": false
+
+        },
+        {
+            "name": "mibuna",
+            "price": 20,
+            "image": "/images/verduras/mibuna.jpg",
+            "productId": 233618032025,
+            "stock": false
+
         }
     ]
 }
