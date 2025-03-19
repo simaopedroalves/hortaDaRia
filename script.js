@@ -16,17 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
-const cabazesMenu = document.querySelector('#cabazesButton');
-
-if(cabazesMenu) {
-    
-cabazesMenu.addEventListener('click', () => {
-    menu.classList.toggle('show')
-    openMenu.classList.toggle('fa-x')
-})
+if (cabazesMenu) {
+    cabazesMenu.addEventListener('click', () => {
+        menu.classList.toggle('show')
+        openMenu.classList.toggle('fa-x')
+    });
 }
-
-
 
 // images scroll right automatically
 
