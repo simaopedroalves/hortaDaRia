@@ -2,7 +2,6 @@
 
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
-const cabazesMenu = document.querySelector('.cabazesMenu');
 
 // OPEN AND CLOSE THE MENU
 
@@ -17,10 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
+const cabazesMenu = document.querySelector('#cabazesButton');
+
+if(cabazesMenu) {
+    
 cabazesMenu.addEventListener('click', () => {
     menu.classList.toggle('show')
     openMenu.classList.toggle('fa-x')
 })
+}
 
 
 
