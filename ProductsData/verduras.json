@@ -84,7 +84,7 @@
             "price": 10,
             "image": "/images/verduras/red-russian-kale.jpg",
             "productId": 101,
-            "stock": false
+            "stock": true
 
         },
         {
