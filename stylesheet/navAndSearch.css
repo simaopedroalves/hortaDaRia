@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Cormorant Infant", serif;
+    /* font-optical-sizing: auto; */
+    /* font-weight: 700; */
+    font-style: normal;
 }
 
 :root {
@@ -281,7 +287,7 @@ header .menu-list a li:hover {
     color: var(--white);
     text-transform: uppercase;
     border-image: linear-gradient(90deg,  var(--black-hover-img), var(--green-hover-img), var(--black-hover-img)) fill 1;
-
+    width: 100%;
 }
 
 .welcomeSection::-webkit-scrollbar {

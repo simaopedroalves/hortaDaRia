@@ -6,6 +6,7 @@
     margin: 7dvh 2vw;
     display: grid;
     max-width: 100%;
+    align-items: center;
 }
 
 .cabaz-box {

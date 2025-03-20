@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             imagesHtmlSection.innerHTML += `
                 <div class="img-div">
-                    <img src="${image}" alt="" class="cb-image">
+                    <img src="${image}" alt="cabaz de legumes" class="cb-image">
                 </div>
             `
             zoomImage()
@@ -41,14 +41,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                     let newDiv = `
                         <img src="${image}" alt="" class="zoom-image">
                     `
-                    imageToZoom.classList.toggle('test-show')
+                    imageToZoom.classList.toggle('show-image')
                     imagesHtmlSection.classList.toggle('disappear')
                     footer.classList.toggle('disappear')
                     imageToZoom.innerHTML = newDiv
 
-                    if (imageToZoom.classList.contains('test-show') === true) {
+                    if (imageToZoom.classList.contains('show-image') === true) {
                         imageToZoom.addEventListener('click', () => {
-                            imageToZoom.classList.remove('test-show')
+                            imageToZoom.classList.remove('show-image')
                             imagesHtmlSection.classList.remove('disappear')
                             footer.classList.remove('disappear')
                         })
