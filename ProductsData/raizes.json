@@ -37,7 +37,7 @@
             "price": 2.5,
             "image": "/images/raizes/cebola-nova.jpg",
             "productId": 29,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -45,7 +45,7 @@
             "price": 12,
             "image": "/images/raizes/cebola-verde.jpg",
             "productId": 106,
-            "stock": true
+            "stock": false
 
         },
         {
