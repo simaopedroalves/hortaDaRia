@@ -100,7 +100,7 @@
             "name": "Courgete amarela",
             "price": 3,
             "image": "/images/horticulas/courgete.jpg",
-            "productId": 119,
+            "productId": 130824032025,
             "stock": false
 
         },
@@ -171,8 +171,8 @@
             "name": "laranja",
             "price": 2,
             "image": "/images/frutaDaEpoca/laranja.jpg",
-            "productId": 124,
-            "stock": true
+            "productId": 130924032025,
+            "stock": false
 
         }
         
