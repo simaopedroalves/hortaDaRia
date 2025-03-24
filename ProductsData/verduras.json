@@ -164,7 +164,7 @@
             "price": 2.5,
             "image": "/images/verduras/couve-repolho-coracao.jpg",
             "productId": 104,
-            "stock": true
+            "stock": false
 
         },
         {
