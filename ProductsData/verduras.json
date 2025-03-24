@@ -5,7 +5,7 @@
             "price": 10,
             "image": "/images/verduras/ruibarbo.jpg",
             "productId": 12,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -20,7 +20,7 @@
             "name": "bróculo",
             "price": 5,
             "image": "/images/verduras/broculo.jpg",
-            "productId": 13,
+            "productId": 90220032025,
             "stock": false
 
         },
@@ -92,7 +92,7 @@
             "price": 10,
             "image": "/images/verduras/red-russian-kale.jpg",
             "productId": 101,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -171,7 +171,7 @@
             "name": "funcho baby",
             "price": 8,
             "image": "/images/verduras/funcho-baby.jpg",
-            "productId": 104,
+            "productId": 90420032025,
             "stock": false
 
         },

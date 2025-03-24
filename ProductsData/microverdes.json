@@ -37,7 +37,7 @@
             "price": 100,
             "image": "/images/microverdes/microverdes-coentros.jpg",
             "productId": 102231124,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -61,7 +61,7 @@
             "price": 80,
             "image": "/images/microverdes/microverdes-broculos.jpg",
             "productId": 93,
-            "stock": true
+            "stock": false
 
         },
         {
