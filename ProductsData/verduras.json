@@ -25,6 +25,14 @@
 
         },
         {
+            "name": "Folha de Gelo",
+            "price": 50,
+            "image": "/images/verduras/folha-de-gelo.jpg",
+            "productId": 98,
+            "stock": false
+
+        },
+        {
             "name": "couve galega cortada (caldo verde)",
             "price": 20,
             "image": "",
@@ -108,6 +116,22 @@
             "price": 8,
             "image": "/images/verduras/couve-tatsoi.jpg",
             "productId": 23,
+            "stock": true
+
+        },
+        {
+            "name": "Tatsoi Vermelha",
+            "price": 8,
+            "image": "/images/verduras/tatsoi-vermelha.jpg",
+            "productId": 12024032025,
+            "stock": true
+
+        },
+        {
+            "name": "Bokchoi",
+            "price": 8,
+            "image": "/images/verduras/bokchoi.jpg",
+            "productId": 12124032025,
             "stock": true
 
         },

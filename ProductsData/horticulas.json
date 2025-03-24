@@ -83,7 +83,7 @@
         {
             "name": "limões",
             "price": 4,
-            "image": "",
+            "image": "/images/horticulas/limoes.jpg",
             "productId": 53,
             "stock": true
 
@@ -170,7 +170,7 @@
         {
             "name": "laranja",
             "price": 2,
-            "image": "",
+            "image": "/images/frutaDaEpoca/laranja.jpg",
             "productId": 124,
             "stock": true
 
