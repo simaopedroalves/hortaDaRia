@@ -50,7 +50,7 @@ pickUpRadioBtn.addEventListener('click', () => {
     enableInputs()
     removeRequiredAttribute()
     document.querySelector('#pick-up-day').setAttribute("required", "");
-    document.querySelector('#ppick-up-schedule').setAttribute("required", "");
+    document.querySelector('#pick-up-schedule').setAttribute("required", "");
     document.querySelector('#scheduleToDeliverAtHome').removeAttribute('required');
 });
 
