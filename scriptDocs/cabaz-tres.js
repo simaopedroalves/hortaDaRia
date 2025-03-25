@@ -132,7 +132,7 @@ function addCabazToCart() {
 
 }
 
-addCabazToCart()
+// addCabazToCart()
 
 function showAllert (name) {
     let alert = document.querySelector('.alert');
