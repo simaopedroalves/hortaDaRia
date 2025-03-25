@@ -49,6 +49,7 @@ pickUpRadioBtn.addEventListener('click', () => {
     deliverSection.classList.add('hide-section');
     enableInputs()
     removeRequiredAttribute()
+    document.querySelector('#deliver-day').removeAttribute('required');
     document.querySelector('#pick-up-day').setAttribute("required", "");
     document.querySelector('#pick-up-schedule').setAttribute("required", "");
     document.querySelector('#scheduleToDeliverAtHome').removeAttribute('required');
