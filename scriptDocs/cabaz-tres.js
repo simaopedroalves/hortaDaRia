@@ -108,7 +108,7 @@ function addCabazToCart() {
         let quantity = 1
         let itemPrice = secCabazTres.querySelector('.cabazPrice').textContent
         let itemTotal = itemPrice;
-        let cart = JSON.parse(localStorage.getItem('cart'));
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         for (let i = 0; i < cart.length; i++) {
            
