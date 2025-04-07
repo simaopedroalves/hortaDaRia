@@ -66,15 +66,15 @@
         },
         {
             "name": "couve toscana",
-            "price": 10,
+            "price": 8,
             "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18,
-            "stock": false
+            "stock": true
 
         },
         {
             "name": "Espinafre manteiga",
-            "price": 15,
+            "price": 12.5,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
             "stock": true
@@ -89,7 +89,7 @@
         },
         {
             "name": "Red russian kale",
-            "price": 10,
+            "price": 8,
             "image": "/images/verduras/red-russian-kale.jpg",
             "productId": 101,
             "stock": true
@@ -105,7 +105,7 @@
         },
         {
             "name": "Couve pack-choi",
-            "price": 8,
+            "price": 6,
             "image": "/images/verduras/couve-pack-choi.jpg",
             "productId": 22,
             "stock": true
@@ -153,7 +153,7 @@
         },
         {
             "name": "Couve curly kale",
-            "price": 10,
+            "price": 8,
             "image": "/images/verduras/couve-kurly-kale.jpg",
             "productId": 26,
             "stock": true
@@ -172,22 +172,6 @@
             "price": 8,
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
-            "stock": false
-
-        },
-        {
-            "name": "wasabino",
-            "price": 20,
-            "image": "/images/verduras/wasabino.jpg",
-            "productId": 233518032025,
-            "stock": false
-
-        },
-        {
-            "name": "mibuna",
-            "price": 20,
-            "image": "/images/verduras/mibuna.jpg",
-            "productId": 233618032025,
             "stock": false
 
         }

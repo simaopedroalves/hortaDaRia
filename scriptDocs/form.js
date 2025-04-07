@@ -5,6 +5,7 @@ const autoResponseMessage = document.querySelector('#autoResponseMessage');
 const email = document.querySelector('#email');
 const clientMessage = document.querySelector('#clientMessage');
 const submitBtn = document.querySelector('#submitBtn');
+submitBtn.title = "Enviar mensagem";
 const clientName = document.querySelector('#name');
 const subjectNewMessage = document.querySelector('#newMessage')
 const phoneNumber = document.querySelector('#phoneNumber')
