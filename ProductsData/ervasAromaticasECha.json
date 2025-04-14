@@ -13,7 +13,7 @@
             "price": 30,
             "image": "/images/ervasECha/cha_limonete.jpg",
             "productId": 63,
-            "stock": true              
+            "stock": false              
 
         },
         {

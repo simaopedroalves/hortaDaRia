@@ -29,7 +29,7 @@
             "price": 50,
             "image": "/images/verduras/folha-de-gelo.jpg",
             "productId": 98,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -129,7 +129,7 @@
         },
         {
             "name": "Bokchoi",
-            "price": 8,
+            "price": 6,
             "image": "/images/verduras/bokchoi.jpg",
             "productId": 12124032025,
             "stock": true
