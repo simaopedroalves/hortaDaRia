@@ -35,7 +35,7 @@
         {
             "name": "couve galega cortada (caldo verde)",
             "price": 20,
-            "image": "",
+            "image": "/images/verduras/couve-galega-cortada-caldo-verde.jpg",
             "productId": 14,
             "stock": true
 
@@ -74,7 +74,7 @@
         },
         {
             "name": "Espinafre manteiga",
-            "price": 12.5,
+            "price": 10,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
             "stock": true
@@ -104,7 +104,7 @@
 
         },
         {
-            "name": "Couve pack-choi",
+            "name": "Couve pack choi",
             "price": 6,
             "image": "/images/verduras/couve-pack-choi.jpg",
             "productId": 22,
@@ -128,7 +128,7 @@
 
         },
         {
-            "name": "Bokchoi",
+            "name": "Couve Bok choi",
             "price": 6,
             "image": "/images/verduras/bokchoi.jpg",
             "productId": 12124032025,

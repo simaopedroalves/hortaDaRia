@@ -1,7 +1,7 @@
 {
     "carnes": [
         {
-            "name": "Carne desidratada (beef Jerky)",
+            "name": "Carne Bovina desidratada (beef Jerky)",
             "price": 80,
             "image": "/images/carnes/carne-desidratada.jpg",
             "productId": 24231122024,

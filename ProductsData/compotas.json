@@ -4,7 +4,7 @@
             "name": "Compota Morango",
             "image": "",
             "productId": 126,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -18,7 +18,7 @@
             "name": "Compota Amoras",
             "image": "",
             "productId": 110612032025,
-            "stock": true
+            "stock": false
 
         },
         {

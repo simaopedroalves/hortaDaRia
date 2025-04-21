@@ -45,7 +45,7 @@
             "price": 30,
             "image": "/images/ervasECha/hortela-menta.jpg",
             "productId": 67,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -74,7 +74,7 @@
         },
         {
             "name": "coentros",
-            "price": 20,
+            "price": 15,
             "image": "/images/ervasECha/coentros.jpg",
             "productId": 72,
             "stock": true
