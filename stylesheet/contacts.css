@@ -9,12 +9,12 @@
 }
 
 .media-and-contacts i {
-    color: var(--orange);
-    background-color: var(--black);
+    color: var(--green);
+    background-color: var(--white);
     width: fit-content;
     padding: 1rem;
     border-radius: 50%;
-    font-size: 0.7rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -34,9 +34,7 @@
 }
 
 .social-media span {
-    font-size: 0.7rem;
     color: var(--white);
-
 }
 
 .media-and-contacts .footer-head {
@@ -88,7 +86,7 @@
 }
 
 .info-tel span:nth-child(1) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
@@ -97,22 +95,27 @@
 }
 
 
-.footer-end {
+.media-and-contacts .footer-end {
     display: grid;
-    color: var(--white);
-    font-size: 0.7rem;
+    /* margin: 0 auto; */
+    font-size: 0.9rem;
     padding-left: 5vw;
     letter-spacing: 0.1em;
-    gap: 1vh;
+    gap: 2vh;
 }
 
-.footer-end a {
+.media-and-contacts .footer-end a{
     max-width: fit-content;
+
 }
 
 .footer-end p, .social-media{
     font-weight: 700;
     font-style: oblique;
+}
+
+.social-media .location-name {
+    font-size: 0.9rem;
 }
 
 .termsAndConditions {

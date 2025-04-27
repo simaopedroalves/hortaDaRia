@@ -2,12 +2,14 @@
 
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
+const headerMenu = document.querySelector('header');
 
 // OPEN AND CLOSE THE MENU
 
 openMenu.addEventListener('click', () => {
     menu.classList.toggle('show')
     openMenu.classList.toggle('fa-x')
+    headerMenu.classList.toggle('change-header-overflow-x')
 })
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,10 +28,7 @@ if (cabazesMenu) {
 }
 
 // images scroll right automatically
-
 const welcomeSection = document.querySelector('.welcomeSection');
-
-// welcomeSection.classList.add('scrollBehaviorSmooth');
 
 function scrollRight() {
     welcomeSection.scrollLeft += window.innerWidth;
@@ -40,10 +39,8 @@ function scrollRight() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    setInterval(scrollRight, 2000)
+    setInterval(scrollRight, 2200)
 });
-
-
 
 // menu de cabazes na pagina principal
 const cabazOne = document.querySelector('.cabazOne');
@@ -111,27 +108,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
 
-// to disable cart order and add a message that says that, using DATE.
+// // to disable cart order and add a message that says that, using DATE.
 
-let dateNow = new Date()
-dateNow = dateNow.toString().split(' ');
-dateNow = dateNow[0];
+// let dateNow = new Date()
+// dateNow = dateNow.toString().split(' ');
+// dateNow = dateNow[0];
 
-function disabledAllOrders () {
+// function disabledAllOrders () {
 
-    let orderDisableMessage = document.querySelector('.disable-orders');
+//     let orderDisableMessage = document.querySelector('.disable-orders');
   
-    if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed')  {
-       orderDisableMessage.style.display = 'none';
-    }
+//     if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed')  {
+//        orderDisableMessage.style.display = 'none';
+//     }
 
-    else {
-        orderDisableMessage.style.display = 'flex'
+//     else {
+//         orderDisableMessage.style.display = 'flex'
         
-    }
-}
+//     }
+// }
 
- disabledAllOrders()
+//  disabledAllOrders()
 
  
 // find inside JSON data if each item have stock or not to display
@@ -188,7 +185,7 @@ if (reservedRigtHs) {
   // update number of items to be equal to the number
 // displayed on basket on top of the page
 export function updateNumbItemsOnCart() {
-    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+    let numbOfItemsOnCart = document.querySelectorAll('.cart-div .article-number');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     numbOfItemsOnCart.forEach(el => {

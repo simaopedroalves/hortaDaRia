@@ -1,5 +1,5 @@
 .contactForm {
-    margin: 15dvh 3vw 5dvh 3vw;
+    margin: 5dvh 3vw 5dvh 3vw;
     display: grid;
     justify-content: center;
     gap: 2rem;
@@ -67,7 +67,7 @@
 .introduction .introductionText {
     color: var(--green);
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .btn-info {

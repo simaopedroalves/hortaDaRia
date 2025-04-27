@@ -32,37 +32,41 @@
 <body>
     
        <!-- NAVBAR -->
-    <header>
+       <header>
 
         <nav class="navbar" id="navBar">
-            <div class="logo-img-div">
-                <a href="/index.html" rel="noopener noreferrer">
-                    <img src="/images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
-                </a>    
-            </div>
 
-            <div class="disable-orders">
-                <h4>Encomendas Indisponíveis</h4>
-            </div>
-            
+            <!-- <div class="logo-img-div">
+                <img src="images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
+            </div> -->
+
+            <div class="logo-img-div">
+                <a href="/index.html">
+                     <h1>
+                         Horta d'Ria
+                     </h1>
+                </a>
+             </div>
+
             <div class="cart-and-menu">
 
                 <div class="cart-div">
                     <a href="/html/carrinho.html">
+                        <!-- cesto -->
                         <i class="fa-solid fa-basket-shopping"></i>
                     </a>
                     <span class="article-number"></span>
                 </div>
-
+                <!-- menu para telemovel -->
                 <i class="fa-solid fa-bars-staggered openMenu"></i>
-                <!-- <i class="fa-solid fa-x"></i>  fa-bars-staggered  -->
             </div>
+
         </nav>
 
         <ul class="menu-list">
-            <!-- href.value = element.id.value -->
-            <a href="/html/aboutUs.html"> <li>Quem Somos  </li>  </a>
-            <a href="/index.html#cabazesMenu"> <li>Cabazes</li></a>
+                <!-- href.value = element.id.value -->
+            <a href="/html/aboutUs.html"> <li>Quem Somos</li>  </a>
+            <a href="/index.html#cabazesMenu" id="cabazesButton"><li>Cabazes</li></a>
             <a href="/html/produtos.html"> <li>Produtos</li></a>
             <a href="/html/form.html"> <li>Contactos</li></a>
             <a href="/html/informations.html"> <li>Informações</li></a>
@@ -71,32 +75,50 @@
             <a href="/html/videos.html"><li>Videos</li></a>
         </ul>
 
-    </header>
+    </header>        
 
-         <!-- BOTTOM MENU BAR -->
-
-    <section class="bottom-menu">
-        <div class="home">
-            <a href="\index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div class="info">
-            <a href="/html/informations.html">
-                <i class="fa-solid fa-info"></i>
-            </a>
-        </div>
-        <div class="criar-cabaz">
-            <a href="/html/produtos.html">
-                <i class="fa-solid fa-seedling"></i>
-            </a>
-        </div>
-        <div class="">
-            <a href="/html/basketHistoric.html">
-                <i class="fa-solid fa-inbox"></i>
-            </a>
-        </div>
-    </section>
+    <!-- search bar -->
+        <!-- <div class="searchBar-div">
+            <input type="search" class="searchBarInput">
+                <i class="fa-solid fa-magnifying-glass"></i>
+        </div>  -->
+        <!-- <div class="popUpTerms"></div> -->
+        <!-- BOTTOM MENU BAR -->
+        <section class="bottom-menu">
+            <div class="home">
+                <a href="\index.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+        
+        
+            <!-- ==================test cart here ================== -->
+        
+            <div class="cart-div">
+                <a href="/html/carrinho.html">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+                <span class="article-number"></span>
+            </div>
+        
+            <!-- ================================================== -->
+        
+            <div class="info">
+                <a href="/html/informations.html">
+                    <i class="fa-solid fa-info"></i>
+                </a>
+            </div>
+            <div class="criar-cabaz">
+                <a href="/html/produtos.html">
+                    <i class="fa-solid fa-seedling"></i>
+                </a>
+            </div>
+            <div class="">
+                <a href="/html/basketHistoric.html">
+                    <i class="fa-solid fa-inbox"></i>
+                </a>
+            </div>
+        </section>
 
     <!-- ITEM ADDED TO CART -->
     <div class="alert"></div>

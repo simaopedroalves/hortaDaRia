@@ -319,15 +319,16 @@ window.onpageshow = (e) => {
 
 let disabledButtonSubmit = () => {
 
-    let orderDisableMessage = document.querySelector('.disable-orders');
+    let dateNow = new Date()
+    dateNow = dateNow.toString().split(' ');
+    dateNow = dateNow[0];
     
-    if (orderDisableMessage.style.display == 'flex') {
-        submitBtn.style.display = 'none';
-        errorMessage.style.marginBottom = '15vh';
+    if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed') {
+        submitBtn.style.display = 'flex';
     }
 
     else {
-        submitBtn.style.display = 'flex';
+        submitBtn.style.display = 'none';
     }
 }
 
