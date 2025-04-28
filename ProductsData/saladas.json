@@ -24,6 +24,13 @@
             "stock": true
         },
         {
+            "name": "Alface Romana",
+            "price": 4,
+            "image": "/images/saladas/alface-romana.jpg",
+            "productId": 10428042025,
+            "stock": true
+        },
+        {
             "name": "Alface Malhada",
             "price": 4,
             "image": "/images/saladas/alface-malhada.jpg",

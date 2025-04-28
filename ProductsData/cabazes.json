@@ -12,7 +12,7 @@
             "name": "Cabaz médio",
             "price": 15,
             "content": ["Acelgas/Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Nova", 
-                        "Pak Choi ou Tatsoi", "Cogumelos Marron", "Verduras Asiáticas", "Rúcula"],
+                        "Espinafres Manteiga", "Mix Cogumelos", "Verduras Asiáticas", "Rúcula"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -21,8 +21,8 @@
             "name": "Cabaz grande",
             "price": 20,
             "content": ["Acelgas/Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Nova", 
-                        "Pak Choi ou Tatsoi", "Cogumelos Marron", "Verduras Asiáticas", "Rúcula", 
-                        "Salsa ou Coentros", "Espargos", "Espinafres Manteiga", "Couve Bok choi"],
+                        "Espinafres Manteiga", "Mix Cogumelos", "Verduras Asiáticas", "Rúcula", 
+                        "Salsa ou Coentros", "Espargos", "Favas", "Couve Bok choi"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         

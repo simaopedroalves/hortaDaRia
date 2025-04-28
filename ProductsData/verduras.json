@@ -108,7 +108,7 @@
             "price": 6,
             "image": "/images/verduras/couve-pack-choi.jpg",
             "productId": 22,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -116,7 +116,7 @@
             "price": 8,
             "image": "/images/verduras/couve-tatsoi.jpg",
             "productId": 23,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -172,7 +172,7 @@
             "price": 8,
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
-            "stock": false
+            "stock": true
 
         }
     ]
