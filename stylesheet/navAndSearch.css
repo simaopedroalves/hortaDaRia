@@ -184,7 +184,7 @@ header {
 /* =========================================== */
 .menu-list {
     position: absolute;
-    top: 10lvh;
+    top: 3rem;
     bottom: 0;
     min-width: 100lvw;
     min-height: 100lvh;
