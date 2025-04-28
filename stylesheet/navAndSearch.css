@@ -374,8 +374,7 @@ body::-webkit-scrollbar:vertical {
         justify-content: space-between;
         /* min-height: 12svh; */
         min-height: fit-content;
-        background-color: var(--white-two);
-
+        background-color: var(--white);
     }
 
     .fa-bars-staggered,
@@ -418,6 +417,7 @@ body::-webkit-scrollbar:vertical {
         margin: 0 2vw;
         padding: 0.3rem;
         background-color: transparent;
+        /* z-index: 100; */
     }
 
     header .menu-list a li {
