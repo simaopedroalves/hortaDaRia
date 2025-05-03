@@ -15,9 +15,10 @@
 }
 
 .cartList img {
-    max-width: 15vh;
+    max-width: 100%;
+    min-height: 100%;
     object-fit: cover;
-    border-radius: 1rem 0;
+    border-radius: 1rem;
 }
 
 .totalPriceDiv {
@@ -75,6 +76,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
+    max-height: fit-content;
 }
 
 .box-2 :nth-child(2) {
@@ -99,13 +101,20 @@
     min-width: fit-content;
 }
 
+.box-2 :nth-child(3) button{
+    border: none;
+    outline: none;
+}
+
 .fa-trash-can {
-    color: var(--orange);
-    background-color: var(--black);
+    color: var(--black);
+    background-color: var(--orange);
     border-radius: 15%;
     padding: 0.3rem;
     font-size: 0.7rem;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 /* to ADVANCE PAGE STYLE */

@@ -132,12 +132,18 @@ document.addEventListener('DOMContentLoaded', async () => {
                     let qtText = selectedOptionValue[i].value;
                     let addCartBtn = btn.parentElement.querySelector('.addToCart')
 
-                    if (qtText === "qt") {
+                    if (kg > 10) {
+                        priceToPay = kg * (qt/1000)
+                        priceToPay = priceToPay.toFixed(2)
+                        finalItemPrice[i].textContent = priceToPay + ' €'
+                    }  
+
+                    else if (qtText === "qt") {
                         finalItemPrice[i].textContent = ''
                         addCartBtn.setAttribute("disabled", "")
                     }
                     else {
-                    priceToPay = kg * (qt/1000)
+                    priceToPay = kg * (qt)
                     priceToPay = priceToPay.toFixed(2)
                     finalItemPrice[i].textContent = priceToPay + ' €'
                     addCartBtn.removeAttribute("disabled")
@@ -160,7 +166,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 })
 
 function updateNumbItemsOnCart() {
-    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+    let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
      let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 

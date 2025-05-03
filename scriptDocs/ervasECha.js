@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
 // THE NUMBER OF ITEMS INSIDE CART IS UPDATED
 function updateNumbItemsOnCart() {
-    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
+    let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     numbOfItemsOnCart.forEach(el => {
