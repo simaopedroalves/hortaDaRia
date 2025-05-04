@@ -1,0 +1,98 @@
+dialog {
+    min-width: 100lvw;
+    min-height: 100lvh;
+    background-color: var(--black-hover-img);
+    border: none;
+}
+
+.pop-up-encomendas {
+
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black); 
+    border-radius: 1rem;
+    min-height: 70lvh;
+    margin: 15% auto;
+}
+
+.close-pop-up {
+    color: var(--white);
+    border-radius: 40%;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    text-align: end;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.close-pop-up:hover {
+    color: var(--orange);
+    transition: 0.5s;
+}
+
+.pop-up-mensagem {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: var(--orange);
+    width: 100%;
+    padding: 2rem;
+}
+
+.pop-up-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+.pop-up-buttons button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.pop-up-buttons :first-child {
+    color: var(--white);
+    background-color: var(--orange);
+    border: solid var(--orange) 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pop-up-buttons :first-child:hover {
+    color: var(--orange);
+    background-color: var(--black);
+    transition: 0.5s;
+}
+
+.pop-up-buttons :last-child {
+    color: var(--white);
+    background-color: var(--green);
+    border: solid var(--green) 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pop-up-buttons :last-child:hover {
+    color: var(--green);
+    background-color: var(--black);
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 1100px) {
+
+    .pop-up-encomendas {
+        min-width: 50vw;
+        min-height: 50vh;
+    }
+}
