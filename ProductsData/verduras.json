@@ -132,7 +132,7 @@
             "price": 6,
             "image": "/images/verduras/bokchoi.jpg",
             "productId": 12124032025,
-            "stock": true
+            "stock": false
 
         },
         {
