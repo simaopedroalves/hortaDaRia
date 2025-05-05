@@ -6,6 +6,8 @@ dialog {
     max-height: 25lvh;
     background-color: var(--black-hover-img);
     border: none;
+    display: none;
+    z-index: -10;
 }
 
 .pop-up-encomendas {
