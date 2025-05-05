@@ -45,7 +45,7 @@
             "price": 8,
             "image": "/images/frutaDaEpoca/morangos.jpg",
             "productId": 101181124,
-            "stock": false
+            "stock": true
 
         },
         {
