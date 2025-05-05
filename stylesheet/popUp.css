@@ -1,12 +1,14 @@
 dialog {
+    position: fixed;
+    bottom: 0;
     min-width: 100lvw;
-    min-height: 100lvh;
+    min-height: 25lvh;
+    max-height: 25lvh;
     background-color: var(--black-hover-img);
     border: none;
 }
 
 .pop-up-encomendas {
-
     text-align: center;
     display: grid;
     justify-content: center;
