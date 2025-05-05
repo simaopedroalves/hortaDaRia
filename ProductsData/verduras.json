@@ -82,7 +82,7 @@
         },
         {
             "name": "Espinafre Nova Zelândia",
-            "price": 6,
+            "price": 8,
             "image": "/images/verduras/espinafres-nova-zelandia.jpg",
             "productId": 99,
             "stock": true
