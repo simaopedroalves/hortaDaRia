@@ -1,4 +1,6 @@
-// import {updateNumbItemsOnCart} from "/script.js"
+
+
+// ========================  CARRINHO DE COMPRAS  ===========================================
 
 const shoppingCart = document.querySelector('.cartList');
 

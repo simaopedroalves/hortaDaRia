@@ -1,20 +1,6 @@
-const dialog = document.querySelector('dialog');
-const closePopUpButton = document.querySelector('dialog .close-pop-up');
-const seeCabazesButton = document.querySelector('#seeCabazes');
-const createCabazButton = document.querySelector('#createCabaz');
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
 const headerMenu = document.querySelector('header');
-
-// open cabaz grande
-//seeCabazesButton.addEventListener('click', () => {
-  //  window.location.href = 'html/cabaz-tres.html'
-//});
-
-// create cabaz 
-//createCabazButton.addEventListener('click', () => {
-  //  window.location.href = 'html/produtos.html'
-//});
 
 // OPEN AND CLOSE THE MENU
 
@@ -31,20 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// open pop-up encomendas
 
-//function openPopUp() {
-  //  dialog.showModal();
-//}
-
-//setTimeout(openPopUp, 2000);
-
-
-// close pop-up encomendas
-
-//closePopUpButton.addEventListener('click', () => {
-  //  dialog.close();
-//});
 
 const cabazesMenu = document.querySelector('#cabazesButton');
 
