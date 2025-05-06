@@ -172,7 +172,7 @@
             "price": 8,
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
-            "stock": true
+            "stock": false
 
         }
     ]
