@@ -258,11 +258,13 @@ clientAddressLocal.addEventListener('input', () => {
     }
 })
 
+const orderSubject = document.querySelector('#newOrderSubject');
+
 // SUBMIT BUTTON TO SEND DATA AND CLEAR CART 
 submitBtn.addEventListener('click', () => {
     clearCart()
     allInputs.value = ''
-
+    orderSubject.value = `Encomenda de ${clientName.value}`
 })
 
 function clearCart () {

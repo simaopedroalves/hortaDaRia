@@ -18,8 +18,9 @@ const invalidMessage = "Algo está errado! Verifica os dados inseridos."
 submitBtn.addEventListener('click', () => {
 
     subjectNewMessage.value = "Mensagem de " + clientName.value;
+    console.log(subjectNewMessage.value);
+    
 })
-
 
 
 
