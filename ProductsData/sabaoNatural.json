@@ -21,8 +21,7 @@
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
             "productId": 60,
-            "stock": false
-
+            "stock": true
         },
         {
             "name": "óleo de coco, azeite e alecrim",

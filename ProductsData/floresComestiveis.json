@@ -45,7 +45,7 @@
             "price": 0.50,
             "image": "/images/floresComestiveis/flor-courgete.jpg",
             "productId": 45,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -84,7 +84,7 @@
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-de-malva.jpg",
             "productId": 115,
-            "stock": false
+            "stock": true
         },
         {
             "name": "flor de crisântemos",

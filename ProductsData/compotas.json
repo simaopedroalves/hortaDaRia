@@ -4,7 +4,7 @@
             "name": "Compota Morango",
             "image": "",
             "productId": 126,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -67,8 +67,7 @@
             "name": "Compota Framboesa Amarela",
             "image": "",
             "productId": 132,
-            "stock": true
-
+            "stock": false
         }
     ],
 

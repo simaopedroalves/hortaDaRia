@@ -45,7 +45,7 @@
             "price": 12,
             "image": "/images/raizes/cebola-verde.jpg",
             "productId": 106,
-            "stock": false
+            "stock": true
 
         },
         {
