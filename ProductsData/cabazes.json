@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Nova"],
+            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Verde"],
             "open": "/html/cabaz-um.html",
             "image": "",
             "productId": 1
@@ -11,8 +11,8 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Nova", 
-                        "Espinafres Manteiga", "Mix Cogumelos", "Mizunas", "Rúcula", "Green Onions"],
+            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Verde", 
+                        "Espinafres Manteiga", "Mix Cogumelos", "Mizunas", "Rúcula", "Beldroegas"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -20,8 +20,8 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Acelgas/Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Nova", 
-                       "Espinafres Manteiga", "Mix Cogumelos", "Mizunas", "Rúcula", "Green Onions",
+            "content": ["Acelgas/Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Verde", 
+                       "Espinafres Manteiga", "Mix Cogumelos", "Mizunas", "Rúcula", "Beldroegas",
                         "Salsa ou Coentros", "Espargos", "Favas", "Morangos", "Wok Mix (saltear)"],
             "open": "/html/cabaz-tres.html",
             "image": "",

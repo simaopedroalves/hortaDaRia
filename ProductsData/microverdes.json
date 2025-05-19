@@ -61,7 +61,7 @@
             "price": 80,
             "image": "/images/microverdes/microverdes-broculos.jpg",
             "productId": 93,
-            "stock": false
+            "stock": true
 
         },
         {
