@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simão Alves">
+    <style>
+        section {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background-color: rgb(136, 171, 142, 1);;
+            border-radius: 1rem;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            text-align: center;
+            max-width: 100lvw;
+            margin: 0 auto;
+        }
+    
+        h1 {
+            color: black;
+        }
+    
+        .message {
+            font-size: 1.2rem;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+            background-color: rgb(175, 200, 173, 1);
+            border-radius: 1rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .clientContacts {
+            border-radius: 1rem;
+            padding: 2rem;
+            display: grid;
+            /* justify-content: space-between; */
+            align-items: center;
+            gap: 4rem;
+            margin: 0 auto;
+        }
+    
+        .clientContacts div {
+            display: grid;
+            /* gap: 1rem; */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black;
+            font-size: 1.2rem;
+            background-color: transparent;
+            margin: 0 auto;
+        }
+
+        .button {
+            text-decoration: none;
+            color: #007BFF;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            max-width: fit-content;
+            margin: 0 auto;
+        }
+    
+      
+        a:hover {
+            color: white;
+        }
+
+        body {
+            background-color: rgba(0,0,0,0.5);
+            display: grid;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .logo {
+            border-radius: 50%;
+            width: 10rem;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+    
+        @media screen and (min-width: 768px) {
+
+            section {
+                width: 50vw;
+            }
+            
+            .clientContacts  {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: space-between;
+                gap: 10rem;
+            }
+
+            .websiteButton {
+                grid-column: span 2;
+            }
+        }
+    
+    </style>
+    
+</head>
+<body>
+<section>
+    <img src="https://hortadaria.com/images/logo.png" alt="Lgotipo horta da ria" class="logo">
+
+    <h1>Mensagem de: {{nome}}</h1>
+
+    <div>
+       <p class="message">{{mensagem}}</p>
+    </div>
+
+    <div class="clientContacts">
+        <div>
+            <p>Email: {{email}}</p>
+            <a class="button" href="mailto:{{email}}">Responder</a>
+        </div>
+    
+        <div>
+            <p>Telemóvel: {{telemovel}}</p>
+            <a class="button" href="tel:{{telemovel}}">Ligar</a>
+        </div>
+    </div>
+
+    <div>
+        <a class="button websiteButton" href="https://hortadaria.com/">hortadaria.com</a>
+    </div>
+
+</section>
+
+</body> 
+</html>

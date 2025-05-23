@@ -29,6 +29,17 @@
     <title>Contactos - Horta d'Ria - Produtos 100% Naturais - Agricultura Local e Ecológica - V. N. Famalicão</title>
     <link rel="icon" type="image/jpg" href="/images/logo-circle.jpg">
 
+     <!-- EMAIL JS -->
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "RD41N2igpXWJ7I4hL",
+            });
+        })();
+    </script>
+    <script defer src="/EmailJSTemplates/contactForm.js"></script>
+
 </head>
 <body>
             <!-- NAVBAR -->
@@ -123,8 +134,11 @@
 
     <!-- FORMULARIO DE CONTACTO -->
 
-    <form class="contactForm" name="Horta_da_Ria" action="/html/success.html" method="POST" data-netlify="true"> 
-    <input type="hidden" name="subject" value="" id="newMessage" data-remove-prefix>
+    <!-- <form class="contactForm" name="Horta_da_Ria" action="/html/success.html" method="POST" data-netlify="true">  -->
+    <!-- <input type="hidden" name="subject" value="" id="newMessage" data-remove-prefix> -->
+
+    <form class="contactForm" onsubmit="openSuccessPage(event)" method="post "> 
+
         
 
         <div class="introduction">

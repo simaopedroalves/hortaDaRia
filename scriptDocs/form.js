@@ -15,12 +15,12 @@ const invalidMessage = "Algo está errado! Verifica os dados inseridos."
 
 // RESPOSTA AUTOMATICA DO NETLIFY PARA O CLIENTE
 
-submitBtn.addEventListener('click', () => {
+// submitBtn.addEventListener('click', () => {
 
-    subjectNewMessage.value = "Mensagem de " + clientName.value;
-    console.log(subjectNewMessage.value);
+//     subjectNewMessage.value = "Mensagem de " + clientName.value;
+//     console.log(subjectNewMessage.value);
     
-})
+// })
 
 
 
@@ -50,7 +50,7 @@ clientName.addEventListener('input', () => {
 
 email.addEventListener('input', () => {
 
-    let regex = /^([0-9]|[a-z]|.|_)+\b@\b[a-z]{2,6}\.[a-z]{2,3}$/g
+    let regex = /^([0-9]|[a-z]|.|_)+\b@\b[a-z]{2,7}\.[a-z]{2,3}$/g
     let string = email.value;
 
     if (regex.test(string) === true) {
@@ -119,3 +119,11 @@ function updateNumbItemsOnCart() {
         }
     })
 }
+
+// reload page when the user retroced after submit the form
+window.onpageshow = (e) => {
+    if(e.persisted) {
+        window.location.reload()
+    }
+}
+

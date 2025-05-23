@@ -1,6 +1,6 @@
 .thankYou {
     margin: 0 auto 0 auto;
-    height: 90vh;
+    min-height: 90vh;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: var(--green);
-    line-height: 10vh;
+    line-height: 5vh;
 }
 
 .follow-us-message {
