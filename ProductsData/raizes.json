@@ -37,7 +37,7 @@
             "price": 2.5,
             "image": "/images/raizes/cebola-nova.jpg",
             "productId": 29,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -61,12 +61,12 @@
             "price": 6,
             "image": "/images/raizes/alho-frances.jpg",
             "productId": 703181124,
-            "stock": false
+            "stock": true
 
         },
         {
             "name": "beterraba di gioggia",
-            "price": 8,
+            "price": 6,
             "image": "/images/raizes/beterraba-di-gioggia.jpg",
             "productId": 108,
             "stock": true
@@ -74,15 +74,15 @@
         },
         {
             "name": "beterraba amarela",
-            "price": 8,
+            "price": 6,
             "image": "",
             "productId": 111112032025,
-            "stock": false
+            "stock": true
 
         },
         {
             "name": "beterraba",
-            "price": 8,
+            "price": 6,
             "image": "",
             "productId": 111212032025,
             "stock": false
@@ -116,7 +116,7 @@
             "price": 12,
             "image": "/images/raizes/espargos.jpg",
             "productId": 32,
-            "stock": true
+            "stock": false
         }
     ]
 }

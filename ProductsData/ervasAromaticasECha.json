@@ -95,6 +95,14 @@
             "productId": 74,
             "stock": true
 
+        },
+        {
+            "name": "manjericão",
+            "price": 20,
+            "image": "",
+            "productId": 225925052025,
+            "stock": true
+
         }
     ]
 }

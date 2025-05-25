@@ -49,6 +49,14 @@
 
         },
         {
+            "name": "morangos silvestres",
+            "price": 25,
+            "image": "/images/frutaDaEpoca/morangos-silvestres.jpg",
+            "productId": 230825052025,
+            "stock": true
+
+        },
+        {
             "name": "beringela",
             "price": 6,
             "image": "/images/frutaDaEpoca/beringela.jpg",
@@ -58,10 +66,10 @@
         },
         {
             "name": "pepino",
-            "price": 2.5,
+            "price": 3,
             "image": "/images/horticulas/pepino.jpg",
             "productId": 103231124,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -132,7 +140,7 @@
             "price": 3,
             "image": "/images/horticulas/pimento-verde.jpg",
             "productId": 2355181124,
-            "stock": false
+            "stock": true
 
         },
         {

@@ -1,3 +1,9 @@
+const allFamilyImages = document.querySelectorAll('.all-products .photo-div-product img');
+
+allFamilyImages.forEach(image => {
+    image.setAttribute('loading', 'lazy');
+})
+
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
     let cart = JSON.parse(localStorage.getItem('cart'));
