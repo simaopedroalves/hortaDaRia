@@ -100,14 +100,6 @@
             "productId": 42,
             "stock": true
 
-        },
-        {
-            "name": "flor malva",
-            "price": 0.10,
-            "image": "/images/floresComestiveis/flor-malva.jpg",
-            "productId": 73119052025,
-            "stock": true
-
         }
     ]
 }
