@@ -109,7 +109,7 @@
             "price": 3,
             "image": "/images/horticulas/courgete.jpg",
             "productId": 130824032025,
-            "stock": false
+            "stock": true
 
         },
         {
