@@ -57,6 +57,14 @@
 
         },
         {
+            "name": "mirtilos",
+            "price": 10,
+            "image": "",
+            "productId": 11601062025,
+            "stock": true
+
+        },
+        {
             "name": "beringela",
             "price": 6,
             "image": "/images/frutaDaEpoca/beringela.jpg",

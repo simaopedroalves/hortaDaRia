@@ -3,16 +3,16 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Verde"],
+            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes"],
             "open": "/html/cabaz-um.html",
-            "image": "",
+            "image": "/images/fotosCabazes/cabazes-semana.jpg",
             "productId": 1
         },
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Verde", 
-                        "Espinafres", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi"],
+            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
+                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -20,9 +20,9 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Acelgas/Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Pé de Alface", "Cebola Verde", 
-                       "Espinafres", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi",
-                        "Coentros", "Courgete", "Favas", "Morangos", "Beterraba", "Pepino"],
+            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
+                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi",
+                        "Coentros", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         
