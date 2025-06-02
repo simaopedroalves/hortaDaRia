@@ -34,6 +34,17 @@
             "open": "/html/produtos.html",
             "image": "",
             "productId": 4          
+        },
+        {
+            "name": "Cabaz Extra",
+            "price": 25,
+            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
+                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi",
+                        "Coentros", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)",
+                        "Espinafres", "Favas", "Morangos", "Beterraba", "Pepino"],
+            "open": "/html/cabaz-extra.html",
+            "image": "",
+            "productId": 5         
         }
     ]
 }

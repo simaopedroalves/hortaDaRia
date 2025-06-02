@@ -2,7 +2,7 @@
 
 /* Cabaz Um */
 
-.cabaz-um, .cabaz-dois, .cabaz-tres {
+.cabaz-um, .cabaz-dois, .cabaz-tres, .cabaz-extra {
     margin: 7dvh 2vw;
     display: grid;
     max-width: 100%;
@@ -142,9 +142,19 @@
 
 /* home page stylesheet */
 
+.image-with-weekly-baskets {
+    max-width: 95vw;
+    min-height: 100lvh;
+    background-image: url("/images/fotosCabazes/cabazes-semana.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 2rem auto;
+}
+
 .cabazes {
     display: grid;
-    margin: 1vw;
+    margin: 2vw;
 }
 
 .cabaz-menu {
@@ -152,6 +162,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 3vw;
     margin: 3vh 1.5rem;
+}
+
+.cabaz-menu .cabaz-4 {
+    grid-column: span 2;
 }
 
 .cabazContent {
@@ -216,7 +230,7 @@
 
 @media screen and (min-width: 1100px) {  
 
-    .cabaz-um, .cabaz-dois, .cabaz-tres {
+    .cabaz-um, .cabaz-dois, .cabaz-tres, .cabaz-extra {
         margin: 15vh auto 5vh auto;
         grid-template-columns: repeat(2, 1fr);
         min-height: 80vh;
@@ -241,7 +255,7 @@
         padding: 0;
         grid-column: span 2;
         min-width: 100%;
-    }
+    }  
 
     .add-to-cart-button-number-one,
     .add-to-cart-button-number-two,
@@ -326,12 +340,14 @@
         border-radius: 0;
         font-size: 1.5rem;
     }
+
+    
 }
 
 @media screen and (min-width: 860px) {
 
     .cabaz-menu {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         gap: 5vw;
         align-items: center;
@@ -340,6 +356,15 @@
         font-size: 1.2rem;
         
     }
+    /* .cabaz-menu .cabaz-4 {
+        grid-column: span 1;
+    }  */
+    
+}
 
+@media screen and (min-width: 768px) {
 
+    .image-with-weekly-baskets {
+            background-size: contain;
+        }
 }

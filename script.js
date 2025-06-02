@@ -48,6 +48,7 @@ const cabazOne = document.querySelector('.cabazOne');
 const cabazTwo = document.querySelector('.cabazTwo')
 const cabazThree = document.querySelector('.cabazThree')
 const cabazFour = document.querySelector('.cabazFour')
+const cabazExtra = document.querySelector('.cabazExtra')
 
 
 async function callData() {
@@ -103,6 +104,15 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `
 
+        let nameExtra = object.cabazes[4].name
+        let priceExtra = object.cabazes[4].price
+
+        cabazExtra.innerHTML = `
+            <div class="cabazContent">
+                <h4 class="cabazName">${nameExtra}</h4>
+                <span class="cabazPrice">${priceExtra}€</span>
+            </div>
+        `
         // termsAndConditions()
 })
 

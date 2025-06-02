@@ -11,7 +11,7 @@
     justify-content: center;
     padding: 1rem 0;
     min-height: 60vh;
-    margin: 10vh 0;
+    margin: 10vh auto;
 }
 
 .cartList img {
@@ -35,10 +35,12 @@
 }
 
 .box-cart {
-    min-width: 90vw;
-    max-width: 90vw;
+    min-width: fit-content;
+    max-width: fit-content;
     border-bottom: var(--orange) solid 1px;
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;    
     align-content: center;
     gap: 5dvw;
@@ -480,19 +482,20 @@ select {
     }
 
     .cartList {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 0;
+        justify-content: center;
+        margin: 0 auto;
     }
-
     
     .cartList img {
-        max-width: 20vh;
+        max-width: 20vw;
+        max-height: 20vw;
     }
     
     .box-cart {
-        min-width: min-content;
-        max-width: min-content;
-        min-height: 30vh;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: min-content;
     }   
 
     .box-2 :nth-child(3) {
@@ -500,7 +503,7 @@ select {
     }
 
     .buttonsDelAndAdvance {
-        grid-column: span 3;
+        grid-column: span 2;
         margin-top: 5vh;
     }
     
@@ -534,7 +537,7 @@ select {
     }
 
     .schedule-deliver {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .error-message, 
