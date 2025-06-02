@@ -6,11 +6,11 @@
             "description": "descascadas e congeladas",
             "image": "/images/leguminosas/favas.jpg",
             "productId": 49,
-            "stock": true
+            "stock": false
 
         },
         {
-            "name": "favas descascadas",
+            "name": "favas descascadas e congeladas",
             "price": 6,
             "description": "descascadas e congeladas",
             "image": "/images/leguminosas/favas-descascadas.jpg",
