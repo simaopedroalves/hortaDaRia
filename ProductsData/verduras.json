@@ -13,7 +13,15 @@
             "price": 6,
             "image": "/images/verduras/couve-galega.jpg",
             "productId": 13,
-            "stock": true
+            "stock": false
+
+        },
+        {
+            "name": "couve galega cortada (caldo verde)",
+            "price": 20,
+            "image": "/images/verduras/couve-galega-cortada-caldo-verde.jpg",
+            "productId": 14,
+            "stock": false
 
         },
         {
@@ -37,14 +45,6 @@
             "price": 50,
             "image": "/images/verduras/folha-de-gelo.jpg",
             "productId": 98,
-            "stock": true
-
-        },
-        {
-            "name": "couve galega cortada (caldo verde)",
-            "price": 20,
-            "image": "/images/verduras/couve-galega-cortada-caldo-verde.jpg",
-            "productId": 14,
             "stock": true
 
         },
