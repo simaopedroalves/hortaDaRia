@@ -148,7 +148,7 @@
             "price": 6,
             "image": "/images/verduras/couve-rabano-roxa.jpg",
             "productId": 24,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -156,7 +156,7 @@
             "price": 6,
             "image": "/images/verduras/couve-rabano-verde.jpg",
             "productId": 25,
-            "stock": false
+            "stock": true
 
         },
         {

@@ -22,7 +22,7 @@
             "price": 20,
             "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
                         "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi",
-                        "Coentros", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)"],
+                        "Aromática", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         
@@ -40,8 +40,8 @@
             "price": 25,
             "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
                         "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi",
-                        "Coentros", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)",
-                        "Espinafres", "Favas", "Morangos", "Beterraba", "Pepino"],
+                        "Aromática", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)",
+                        "Espinafres", "Morangos", "Beterraba", "Pepino", "Cenouras"],
             "open": "/html/cabaz-extra.html",
             "image": "",
             "productId": 5         

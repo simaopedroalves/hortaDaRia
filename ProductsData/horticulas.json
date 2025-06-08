@@ -66,10 +66,10 @@
         },
         {
             "name": "beringela",
-            "price": 6,
+            "price": 3,
             "image": "/images/frutaDaEpoca/beringela.jpg",
             "productId": 102181124,
-            "stock": false
+            "stock": true
 
         },
         {

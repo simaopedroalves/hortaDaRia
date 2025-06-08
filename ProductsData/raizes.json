@@ -93,7 +93,7 @@
             "price": 4,
             "image": "/images/raizes/cenouras.jpg",
             "productId": 30,
-            "stock": false
+            "stock": true
         },
         {
             "name": "cenoura baby congelada",
