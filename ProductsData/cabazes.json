@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes"],
+            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Beterraba"],
             "open": "/html/cabaz-um.html",
             "image": "/images/fotosCabazes/cabazes-semana.jpg",
             "productId": 1
@@ -11,8 +11,8 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
-                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi"],
+            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Beterraba", 
+                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Agrião da Terra"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -20,8 +20,8 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
-                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi",
+            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Beterraba", 
+                       "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Agrião da Terra",
                         "Aromática", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)"],
             "open": "/html/cabaz-tres.html",
             "image": "",
@@ -38,10 +38,10 @@
         {
             "name": "Cabaz Premium",
             "price": 25,
-            "content": ["Acelgas", "Kales", "Rabanetes", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Rabanetes", 
-                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Packchoi/Tatsoi",
+            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Beterraba", 
+                        "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Agrião da Terra",
                         "Aromática", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)",
-                        "Espinafres", "Morangos", "Beterraba", "Pepino", "Cenouras"],
+                       "Espinafres", "Morangos", "Pepino", "Cenouras", "Flores Comestíveis"],
             "open": "/html/cabaz-extra.html",
             "image": "",
             "productId": 5         

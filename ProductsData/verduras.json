@@ -116,7 +116,7 @@
             "price": 6,
             "image": "/images/verduras/couve-pack-choi.jpg",
             "productId": 22,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -124,7 +124,7 @@
             "price": 8,
             "image": "/images/verduras/couve-tatsoi.jpg",
             "productId": 23,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -140,7 +140,7 @@
             "price": 6,
             "image": "/images/verduras/bokchoi.jpg",
             "productId": 12124032025,
-            "stock": true
+            "stock": false
 
         },
         {
