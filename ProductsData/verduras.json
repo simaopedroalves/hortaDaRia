@@ -85,7 +85,7 @@
             "price": 15,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -148,15 +148,14 @@
             "price": 6,
             "image": "/images/verduras/couve-rabano-roxa.jpg",
             "productId": 24,
-            "stock": true
-
+            "stock": false
         },
         {
             "name": "Couve rabano verde",
             "price": 6,
             "image": "/images/verduras/couve-rabano-verde.jpg",
             "productId": 25,
-            "stock": true
+            "stock":false
 
         },
         {

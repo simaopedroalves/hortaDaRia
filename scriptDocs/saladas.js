@@ -188,3 +188,7 @@ function updateNumbItemsOnCart() {
         }
     })
 }
+
+
+let screenWidth = window.innerWidth;
+console.log(`Screen width: ${screenWidth}px`);

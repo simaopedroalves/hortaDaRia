@@ -1,6 +1,14 @@
 {    
     "horticulas": [
         {
+            "name": "pêssego paraguaio",
+            "price": 3,
+            "image": "/images/frutaDaEpoca/pessego-paraguaio.jpg",
+            "productId": 234122062025,
+            "stock": true
+
+        },
+        {
             "name": "melancia",
             "price": 2,
             "image": "/images/frutaDaEpoca/melancia.jpg",
@@ -58,7 +66,7 @@
         },
         {
             "name": "mirtilos",
-            "price": 10,
+            "price": 9.5,
             "image": "/images/frutaDaEpoca/mirtilos.jpg",
             "productId": 11601062025,
             "stock": true
@@ -106,10 +114,10 @@
         },
         {
             "name": "tomate coração de boi",
-            "price": 4,
+            "price": 5,
             "image": "/images/horticulas/tomate-coracao-boi.jpg",
             "productId": 119,
-            "stock": false
+            "stock": true
 
         },
         {

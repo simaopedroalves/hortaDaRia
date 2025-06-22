@@ -13,7 +13,7 @@
             "price": 50,
             "image": "/images/microverdes/microverdes-rabanete-rose.jpg",
             "productId": 33,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -21,7 +21,7 @@
             "price": 75,
             "image": "/images/microverdes/microverdes-rabanete-red-rambo.jpg",
             "productId": 34,
-            "stock": true
+            "stock": false
 
         },
         {
