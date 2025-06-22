@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Beterraba"],
+            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras"],
             "open": "/html/cabaz-um.html",
             "image": "/images/fotosCabazes/cabazes-semana.jpg",
             "productId": 1
@@ -41,7 +41,7 @@
             "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Beterraba", 
                         "Pé de Alface", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Agrião da Terra",
                         "Aromática", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)",
-                       "Espinafres", "Morangos", "Pepino", "Cenouras", "Flores Comestíveis"],
+                        "Morangos", "Pepino", "Tomates", "Pêssego Paraguaio", "Flores Comestíveis"],
             "open": "/html/cabaz-extra.html",
             "image": "",
             "productId": 5         
