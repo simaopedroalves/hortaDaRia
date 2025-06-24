@@ -101,7 +101,7 @@ searchBarInput.addEventListener('input', () => {
 
   if (filtered.length === 0) {
     resultList.style.marginTop = "2rem";
-    resultList.style.textAlign = "center";
+    // resultList.style.textAlign = "center";
     resultList.innerHTML = "<h3>Nenhum produto encontrado. Tenta novamente!</h3>";
   }
 
