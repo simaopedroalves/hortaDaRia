@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         section.innerHTML += `
         <div class="boxItem" id="${product_id}">
             <h3 id="itName">${name}</h3>
-            <img class="itemImg" src="${image}" alt="">
+            <img class="itemImg" src="${image}" alt="" id=${image}>
             <div class="kiloPrice">${floresComestiveisPrice}€/Un</div>
             <select type="text" min="1" class="quantity" placeholder="quantidade">
                 <option value="qt">Quantidade</option> 

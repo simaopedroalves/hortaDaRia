@@ -1,0 +1,789 @@
+{
+  "allProductsData": [
+    {
+      "carnes": [
+        {
+          "name": "Carne Bovina desidratada (beef Jerky)",
+          "image": "/images/carnes/carne-desidratada.jpg",
+          "productId": 24231122024
+        }
+      ],
+      "cogumelos": [
+        {
+          "name": "Cogumelos pleurotus",
+          "image": "/images/cogumelos/cogumelos-pleurotus.jpg",
+          "productId": 93
+        },
+        {
+          "name": "Cogumelos marron",
+          "image": "/images/cogumelos/cogumelos-marron.jpg",
+          "productId": 125
+        },
+        {
+          "name": "Cogumelos shitaki",
+          "image": "/images/cogumelos/cogumelos-shitaki.jpg",
+          "productId": 207231124
+        },
+        {
+          "name": "Cogumelos portobello",
+          "image": "/images/cogumelos/cogumelos-portobello.jpg",
+          "productId": 208231124
+        }
+      ],
+      "compotas": [
+        {
+          "name": "Compota Morango",
+          "image": "/images/compotas/compota-morango.jpg",
+          "productId": 126
+        },
+        {
+          "name": "Compota Framboesa",
+          "image": "",
+          "productId": 127
+        },
+        {
+          "name": "Compota Amoras",
+          "image": "",
+          "productId": 110612032025
+        },
+        {
+          "name": "Compota Frutos Silvestres",
+          "image": "/images/compotas/compota-frutos-silvestres.jpg",
+          "productId": 128
+        },
+        {
+          "name": "Compota Laranja",
+          "image": "/images/compotas/compota-laranja.jpg",
+          "productId": 5316122024
+        },
+        {
+          "name": "Geleia Laranja",
+          "image": "",
+          "productId": 110412032025
+        },
+        {
+          "name": "Compota Limão",
+          "image": "",
+          "productId": 129
+        },
+        {
+          "name": "Geleia Limão",
+          "image": "/images/compotas/geleia-limao.jpg",
+          "productId": 130
+        },
+        {
+          "name": "Compota Figos",
+          "image": "",
+          "productId": 131
+        },
+        {
+          "name": "Compota Framboesa Amarela",
+          "image": "",
+          "productId": 132
+        }
+      ],
+      "ervasECha": [
+        {
+          "name": "alecrim",
+          "image": "/images/ervasECha/alecrim.jpg",
+          "productId": 62
+        },
+        {
+          "name": "chá de limonete",
+          "image": "/images/ervasECha/cha_limonete.jpg",
+          "productId": 63
+        },
+        {
+          "name": "chá de cidreira",
+          "image": "/images/ervasECha/cha-cidreira.jpg",
+          "productId": 64
+        },
+        {
+          "name": "folhas de loureiro",
+          "image": "/images/ervasECha/folha-loureiro.jpg",
+          "productId": 65
+        },
+        {
+          "name": "hortelã",
+          "image": "/images/ervasECha/hortela.jpg",
+          "productId": 715181124
+        },
+        {
+          "name": "hortelã menta",
+          "image": "/images/ervasECha/hortela-menta.jpg",
+          "productId": 67
+        },
+        {
+          "name": "cidreira fresca",
+          "image": "/images/ervasECha/cidreira-fresca.jpg",
+          "productId": 69
+        },
+        {
+          "name": "tomilho",
+          "image": "/images/ervasECha/tomilho.jpg",
+          "productId": 70
+        },
+        {
+          "name": "oregãos",
+          "image": "/images/ervasECha/oregaos.jpg",
+          "productId": 71
+        },
+        {
+          "name": "coentros",
+          "image": "/images/ervasECha/coentros.jpg",
+          "productId": 72
+        },
+        {
+          "name": "hipericão do gerês",
+          "image": "/images/ervasECha/hipericao-do-geres.jpg",
+          "productId": 73
+        },
+        {
+          "name": "salsa",
+          "image": "/images/ervasECha/salsa.jpg",
+          "productId": 74
+        },
+        {
+          "name": "manjericão",
+          "image": "",
+          "productId": 225925052025
+        }
+      ],
+      "floresComestiveis": [
+        {
+          "name": "amor perfeito",
+          "image": "/images/floresComestiveis/amores-perfeitos.jpg",
+          "productId": 39
+        },
+        {
+          "name": "borragem",
+          "image": "/images/floresComestiveis/borragem.jpg",
+          "productId": 40
+        },
+        {
+          "name": "capuchinhas",
+          "image": "/images/floresComestiveis/flor_capuchinha.jpg",
+          "productId": 41
+        },
+        {
+          "name": "petunias",
+          "image": "/images/floresComestiveis/flor_petunia.jpg",
+          "productId": 43
+        },
+        {
+          "name": "flor da galega",
+          "image": "/images/floresComestiveis/flor-galega.jpg",
+          "productId": 44
+        },
+        {
+          "name": "flor de Courgete",
+          "image": "/images/floresComestiveis/flor-courgete.jpg",
+          "productId": 45
+        },
+        {
+          "name": "flor de calendula",
+          "image": "/images/floresComestiveis/calendula.jpg",
+          "productId": 46
+        },
+        {
+          "name": "flor da toscana",
+          "image": "",
+          "productId": 47
+        },
+        {
+          "name": "flor de mel",
+          "image": "/images/floresComestiveis/flor-de-mel.jpg",
+          "productId": 48
+        },
+        {
+          "name": "flor de coentros",
+          "image": "/images/floresComestiveis/flor-coentros.jpg",
+          "productId": 114
+        },
+        {
+          "name": "flor de malva",
+          "image": "/images/floresComestiveis/flor-de-malva.jpg",
+          "productId": 115
+        },
+        {
+          "name": "flor de crisântemos",
+          "image": "/images/floresComestiveis/flor-de-crisantemos.jpg",
+          "productId": 116
+        },
+        {
+          "name": "mix de flores (unidade)",
+          "image": "/images/floresComestiveis/mix.jpg",
+          "productId": 42
+        }
+      ],
+      "horticulas": [
+        {
+          "name": "pêssego paraguaio",
+          "image": "/images/frutaDaEpoca/pessego-paraguaio.jpg",
+          "productId": 234122062025
+        },
+        {
+          "name": "melancia",
+          "image": "/images/frutaDaEpoca/melancia.jpg",
+          "productId": 2356181124
+        },
+        {
+          "name": "figos",
+          "image": "/images/frutaDaEpoca/figos.jpg",
+          "productId": 2357181124
+        },
+        {
+          "name": "cucamelon",
+          "image": "/images/frutaDaEpoca/cucamelon.jpg",
+          "productId": 2358181124
+        },
+        {
+          "name": "framboesas amarelas",
+          "image": "/images/frutaDaEpoca/framboesas-amarelas.jpg",
+          "productId": 2359181124
+        },
+        {
+          "name": "fisalis",
+          "image": "/images/frutaDaEpoca/fisalis.jpg",
+          "productId": 100181124
+        },
+        {
+          "name": "morangos",
+          "image": "/images/frutaDaEpoca/morangos.jpg",
+          "productId": 101181124
+        },
+        {
+          "name": "morangos silvestres",
+          "image": "/images/frutaDaEpoca/morangos-silvestres.jpg",
+          "productId": 230825052025
+        },
+        {
+          "name": "mirtilos",
+          "image": "/images/frutaDaEpoca/mirtilos.jpg",
+          "productId": 11601062025
+        },
+        {
+          "name": "beringela",
+          "image": "/images/frutaDaEpoca/beringela.jpg",
+          "productId": 102181124
+        },
+        {
+          "name": "pepino",
+          "image": "/images/horticulas/pepino.jpg",
+          "productId": 103231124
+        },
+        {
+          "name": "abóbora manteiga",
+          "image": "",
+          "productId": 51
+        },
+        {
+          "name": "abóbora muscade/laranja",
+          "image": "/images/horticulas/abobora-muscade.jpg",
+          "productId": 52
+        },
+        {
+          "name": "limões",
+          "image": "/images/horticulas/limoes.jpg",
+          "productId": 53
+        },
+        {
+          "name": "tomate coração de boi",
+          "image": "/images/horticulas/tomate-coracao-boi.jpg",
+          "productId": 119
+        },
+        {
+          "name": "Courgete amarela",
+          "image": "/images/horticulas/courgete.jpg",
+          "productId": 130824032025
+        },
+        {
+          "name": "Courgete verde",
+          "image": "/images/horticulas/courgete-verde.jpg",
+          "productId": 204231124
+        },
+        {
+          "name": "Courgete baby",
+          "image": "/images/horticulas/courgete-baby.jpg",
+          "productId": 2354181124
+        },
+        {
+          "name": "pimentos",
+          "image": "/images/horticulas/pimentos.jpg",
+          "productId": 2352181124
+        },
+        {
+          "name": "pimento verde",
+          "image": "/images/horticulas/pimento-verde.jpg",
+          "productId": 2355181124
+        },
+        {
+          "name": "pimento albarello",
+          "image": "/images/horticulas/pimento-albarello.jpg",
+          "productId": 2353181124
+        },
+        {
+          "name": "Bagas de goji",
+          "image": "",
+          "productId": 120
+        },
+        {
+          "name": "chuchu",
+          "image": "/images/horticulas/chuchu.jpg",
+          "productId": 123
+        },
+        {
+          "name": "tamarilho",
+          "image": "/images/horticulas/tamarilho.jpg",
+          "productId": 124
+        },
+        {
+          "name": "laranja",
+          "image": "/images/frutaDaEpoca/laranja.jpg",
+          "productId": 130924032025
+        }
+      ],
+      "leguminosas": [
+        {
+          "name": "favas",
+          "image": "/images/leguminosas/favas.jpg",
+          "productId": 49
+        },
+        {
+          "name": "favas descascadas e congeladas",
+          "image": "/images/leguminosas/favas-descascadas.jpg",
+          "productId": 160511052025
+        },
+        {
+          "name": "ervilhas de quebrar",
+          "image": "/images/leguminosas/ervilhas-quebrar.jpg",
+          "productId": 50
+        },
+        {
+          "name": "feijão verde rajado",
+          "image": "/images/leguminosas/feijao-verde-rajado.jpg",
+          "productId": 240231124
+        }
+      ],
+      "microverdes": [
+        {
+          "name": "trigo-sarraceno",
+          "image": "/images/microverdes/microverdes-trigo-sarraceno.jpg",
+          "productId": 22741224
+        },
+        {
+          "name": "rabanete rose",
+          "image": "/images/microverdes/microverdes-rabanete-rose.jpg",
+          "productId": 33
+        },
+        {
+          "name": "rabanete red rambo",
+          "image": "/images/microverdes/microverdes-rabanete-red-rambo.jpg",
+          "productId": 34
+        },
+        {
+          "name": "girassol",
+          "image": "/images/microverdes/microverdes-girassol.jpg",
+          "productId": 35
+        },
+        {
+          "name": "coentros",
+          "image": "/images/microverdes/microverdes-coentros.jpg",
+          "productId": 102231124
+        },
+        {
+          "name": "ervilhas",
+          "image": "/images/microverdes/microverdes-ervilha.jpg",
+          "productId": 36
+        },
+        {
+          "name": "capuchinha",
+          "image": "/images/microverdes/microverdes-capuchinha.jpg",
+          "productId": 37
+        },
+        {
+          "name": "bróculos",
+          "image": "/images/microverdes/microverdes-broculos.jpg",
+          "productId": 93
+        },
+        {
+          "name": "mix de microverdes",
+          "image": "/images/microverdes/microverdes-mix.jpg",
+          "productId": 38
+        },
+        {
+          "name": "1 vaso microverdes mix",
+          "image": "",
+          "productId": 150231124
+        },
+        {
+          "name": "2 vasos microverdes mix",
+          "image": "",
+          "productId": 91
+        },
+        {
+          "name": "3 vasos microverdes",
+          "image": "",
+          "productId": 92
+        }
+      ],
+      "ovos": [
+        {
+          "name": "ovos de galinha livre e feliz",
+          "image": "/images/ovos/ovo-galinha.jpg",
+          "productId": 56
+        }
+      ],
+      "plantasEmVaso": [
+        {
+          "name": "suculenta",
+          "image": "/images/plantasEmVaso/vaso_suculenta.jpg",
+          "productId": 75
+        },
+        {
+          "name": "amor-perfeito",
+          "image": "/images/plantasEmVaso/vaso_amorPerfeito.jpg",
+          "productId": 76
+        },
+        {
+          "name": "cravo tunico",
+          "image": "/images/plantasEmVaso/vaso_cravoTunico.jpg",
+          "productId": 77
+        },
+        {
+          "name": "oregãos",
+          "image": "/images/plantasEmVaso/vaso_oregaos.jpg",
+          "productId": 78
+        },
+        {
+          "name": "espargos",
+          "image": "/images/plantasEmVaso/vaso_espargos.jpg",
+          "productId": 79
+        },
+        {
+          "name": "salvia",
+          "image": "/images/plantasEmVaso/vaso_salvia.jpg",
+          "productId": 80
+        },
+        {
+          "name": "hortelã-pimenta-chocolate",
+          "image": "/images/plantasEmVaso/vaso_hortelaPimentaChocolate.jpg",
+          "productId": 82
+        },
+        {
+          "name": "hortelã menta",
+          "image": "/images/plantasEmVaso/vaso_hortelaMenta.jpg",
+          "productId": 83
+        },
+        {
+          "name": "tomilho",
+          "image": "/images/plantasEmVaso/vaso_tomilho.jpg",
+          "productId": 84
+        }
+      ],
+      "raizes": [
+        {
+          "name": "Rabanetes",
+          "image": "/images/raizes/rabanete.jpg",
+          "productId": 105
+        },
+        {
+          "name": "batata doce polpa laranja",
+          "image": "/images/raizes/batata-doce-polpa-laranja.jpg",
+          "productId": 28
+        },
+        {
+          "name": "batata doce polpa branca",
+          "image": "/images/raizes/batata-doce-polpa-branca.jpg",
+          "productId": 111
+        },
+        {
+          "name": "batata doce polpa laranja claro",
+          "image": "/images/raizes/batata-doce-polpa-laranja-claro.jpg",
+          "productId": 112
+        },
+        {
+          "name": "cebola nova",
+          "image": "/images/raizes/cebola-nova.jpg",
+          "productId": 29
+        },
+        {
+          "name": "cebola verde",
+          "image": "/images/raizes/cebola-verde.jpg",
+          "productId": 106
+        },
+        {
+          "name": "nabo bola de neve",
+          "image": "",
+          "productId": 107
+        },
+        {
+          "name": "alho francês",
+          "image": "/images/raizes/alho-frances.jpg",
+          "productId": 703181124
+        },
+        {
+          "name": "beterraba di gioggia",
+          "image": "/images/raizes/beterraba-di-gioggia.jpg",
+          "productId": 108
+        },
+        {
+          "name": "beterraba amarela",
+          "image": "",
+          "productId": 111112032025
+        },
+        {
+          "name": "beterraba",
+          "image": "",
+          "productId": 111212032025
+        },
+        {
+          "name": "cenouras",
+          "image": "/images/raizes/cenouras.jpg",
+          "productId": 30
+        },
+        {
+          "name": "cenoura baby congelada",
+          "image": "/images/raizes/cenoura-baby-congelada.jpg",
+          "productId": 31
+        },
+        {
+          "name": "Gengibre fresco",
+          "image": "/images/raizes/gengibre-fresco.jpg",
+          "productId": 110
+        },
+        {
+          "name": "espargos",
+          "image": "/images/raizes/espargos.jpg",
+          "productId": 32
+        }
+      ],
+      "sabaoNatural": [
+        {
+          "name": "óleo de coco, azeite e alfazema",
+          "image": "/images/sabaoNatural/sabao-natural.jpg",
+          "productId": 58
+        },
+        {
+          "name": "óleo de coco, azeite e hortelã",
+          "image": "/images/sabaoNatural/sabao-natural.jpg",
+          "productId": 59
+        },
+        {
+          "name": "óleo de coco, azeite e laranja",
+          "image": "/images/sabaoNatural/sabao-natural.jpg",
+          "productId": 60
+        },
+        {
+          "name": "óleo de coco, azeite e alecrim",
+          "image": "/images/sabaoNatural/sabao-natural.jpg",
+          "productId": 61
+        }
+      ],
+      "saladas": [
+        {
+          "name": "salada natura",
+          "image": "/images/saladas/salada-natura.jpg",
+          "productId": 5
+        },
+        {
+          "name": "alface mix",
+          "image": "/images/saladas/mescla-de-alfaces.jpg",
+          "productId": 6
+        },
+        {
+          "name": "Alface Verde",
+          "image": "/images/saladas/alface-verde.jpg",
+          "productId": 12314042025
+        },
+        {
+          "name": "Alface Romana",
+          "image": "/images/saladas/alface-romana.jpg",
+          "productId": 10428042025
+        },
+        {
+          "name": "Alface Malhada",
+          "image": "/images/saladas/alface-malhada.jpg",
+          "productId": 12214042025
+        },
+        {
+          "name": "Alface Frisada Verde",
+          "image": "/images/saladas/alface-frisada-verde.jpg",
+          "productId": 12014042025
+        },
+        {
+          "name": "Alface Frisada Vermelha",
+          "image": "/images/saladas/alface-frisada-vermelha.jpg",
+          "productId": 11914042025
+        },
+        {
+          "name": "Rúcula cultivata",
+          "image": "/images/saladas/rucula-cultivata.jpg",
+          "productId": 7
+        },
+        {
+          "name": "Salada asiática",
+          "image": "/images/saladas/verduras-asiaticas.jpg",
+          "productId": 8
+        },
+        {
+          "name": "Salada Ibérica",
+          "image": "/images/saladas/salada-iberica.jpg",
+          "productId": 9
+        },
+        {
+          "name": "Salada Wok (para saltear)",
+          "image": "/images/saladas/salada-wok.jpg",
+          "productId": 10
+        },
+        {
+          "name": "Agrião da Terra",
+          "image": "/images/saladas/agriao-da-terra.jpg",
+          "productId": 11
+        },
+        {
+          "name": "Mizuna Verde",
+          "image": "/images/saladas/mizuna-verde.jpg",
+          "productId": 95
+        },
+        {
+          "name": "Mizuna Vermelha",
+          "image": "/images/saladas/mizuna-vermelha.jpg",
+          "productId": 96
+        },
+        {
+          "name": "Salada Gourmet",
+          "image": "/images/saladas/salada-gourmet.jpg",
+          "productId": 97
+        },
+        {
+          "name": "wasabino",
+          "image": "/images/verduras/wasabino.jpg",
+          "productId": 233518032025
+        },
+        {
+          "name": "mibuna",
+          "image": "/images/verduras/mibuna.jpg",
+          "productId": 233618032025
+        }
+      ],
+      "verduras": [
+        {
+          "name": "ruibarbo",
+          "image": "/images/verduras/ruibarbo.jpg",
+          "productId": 12
+        },
+        {
+          "name": "couve galega",
+          "image": "/images/verduras/couve-galega.jpg",
+          "productId": 13
+        },
+        {
+          "name": "couve galega cortada (caldo verde)",
+          "image": "/images/verduras/couve-galega-cortada-caldo-verde.jpg",
+          "productId": 14
+        },
+        {
+          "name": "Beldroegas",
+          "image": "/images/verduras/beldroegas.jpg",
+          "productId": 160011052025
+        },
+        {
+          "name": "bróculo",
+          "image": "/images/verduras/broculo.jpg",
+          "productId": 90220032025
+        },
+        {
+          "name": "Folha de Gelo",
+          "image": "/images/verduras/folha-de-gelo.jpg",
+          "productId": 98
+        },
+        {
+          "name": "acelgas",
+          "image": "/images/verduras/acelgas.jpg",
+          "productId": 15
+        },
+        {
+          "name": "alcachofra",
+          "image": "/images/verduras/alcachofra.jpg",
+          "productId": 16
+        },
+        {
+          "name": "acelgas baby",
+          "image": "/images/verduras/acelgas-baby.jpg",
+          "productId": 17
+        },
+        {
+          "name": "couve toscana",
+          "image": "/images/verduras/couve-toscana.jpg",
+          "productId": 18
+        },
+        {
+          "name": "Espinafre manteiga",
+          "image": "/images/verduras/espinafre-manteiga.jpg",
+          "productId": 20
+        },
+        {
+          "name": "Espinafre Nova Zelândia",
+          "image": "/images/verduras/espinafres-nova-zelandia.jpg",
+          "productId": 99
+        },
+        {
+          "name": "Red russian kale",
+          "image": "/images/verduras/red-russian-kale.jpg",
+          "productId": 101
+        },
+        {
+          "name": "Red russian kale baby",
+          "image": "/images/verduras/red-russian-kale-baby.jpg",
+          "productId": 21
+        },
+        {
+          "name": "Couve pack choi",
+          "image": "/images/verduras/couve-pack-choi.jpg",
+          "productId": 22
+        },
+        {
+          "name": "Couve tatsoi",
+          "image": "/images/verduras/couve-tatsoi.jpg",
+          "productId": 23
+        },
+        {
+          "name": "Tatsoi Vermelha",
+          "image": "/images/verduras/tatsoi-vermelha.jpg",
+          "productId": 12024032025
+        },
+        {
+          "name": "Couve Bok choi",
+          "image": "/images/verduras/bokchoi.jpg",
+          "productId": 12124032025
+        },
+        {
+          "name": "Couve rabano roxa",
+          "image": "/images/verduras/couve-rabano-roxa.jpg",
+          "productId": 24
+        },
+        {
+          "name": "Couve rabano verde",
+          "image": "/images/verduras/couve-rabano-verde.jpg",
+          "productId": 25
+        },
+        {
+          "name": "Couve curly kale",
+          "image": "/images/verduras/couve-kurly-kale.jpg",
+          "productId": 26
+        },
+        {
+          "name": "couve repolho coração",
+          "image": "/images/verduras/couve-repolho-coracao.jpg",
+          "productId": 104
+        },
+        {
+          "name": "funcho baby",
+          "image": "/images/verduras/funcho-baby.jpg",
+          "productId": 90420032025
+        }
+      ]
+    }
+  ]
+}

@@ -32,6 +32,8 @@
     <title>Horta d'Ria - Home Page - Produtos 100% Naturais - Agricultura Local e Ecológica - V. N. Famalicão</title>
     <link rel="icon" type="image/jpg" href="/images/logo-circle.jpg">
     <script type="module" src="script.js" defer></script>
+    <script type="module" src="scriptDocs/searchBar.js" defer></script>
+
 
 
 </head>
@@ -52,6 +54,8 @@
             </div>
 
             <div class="cart-and-menu">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
 
                 <div class="cart-div">
                     <a href="/html/carrinho.html">
@@ -86,11 +90,19 @@
 
 
     <!-- search bar -->
-        <!-- <div class="searchBar-div">
-            <input type="search" class="searchBarInput">
-                <i class="fa-solid fa-magnifying-glass"></i>
-        </div>  -->
+
+        <div class="searchBar-div">
+            <h3>Procurar produtos na Horta d'Ria</h3>
+            <i class="fa-solid fa-xmark close-searchbar"></i>
+            <input type="search" class="searchBarInput" placeholder="Ex: Cenoura">
+            <ul class="searchResults"></ul>
+            <!-- <button type="button" class="searchbar-button">Pesquisar</button>    -->
+        </div> 
+
+
         <!-- <div class="popUpTerms"></div> -->
+
+
         <!-- BOTTOM MENU BAR -->
         <section class="bottom-menu">
             <div class="home">
