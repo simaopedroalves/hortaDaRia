@@ -1,6 +1,14 @@
 {
     "verduras": [
         {
+            "name": "red vein sorrel baby (azeda vermelha baby)",
+            "price": 100,
+            "image": "/images/verduras/azeda-vermelha-verde.jpg",
+            "productId": 2730062025,
+            "stock": true
+
+        },
+        {
             "name": "ruibarbo",
             "price": 10,
             "image": "/images/verduras/ruibarbo.jpg",
@@ -179,7 +187,7 @@
             "price": 12,
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
-            "stock": true
+            "stock": false
 
         }
     ]

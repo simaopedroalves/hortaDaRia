@@ -9,6 +9,22 @@
 
         },
         {
+            "name": "flor cravo túnico",
+            "price": 0.10,
+            "image": "/images/floresComestiveis/cravo-tunico.jpg",
+            "productId": 2130062025,
+            "stock": true
+
+        },
+        {
+            "name": "folha cravo túnico",
+            "price": 0.10,
+            "image": "/images/floresComestiveis/folha-cravo-tunico.jpg",
+            "productId": 2430062025,
+            "stock": true
+
+        },
+        {
             "name": "borragem",
             "price": 0.10,
             "image": "/images/floresComestiveis/borragem.jpg",
