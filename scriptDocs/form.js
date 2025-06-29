@@ -15,12 +15,12 @@ const invalidMessage = "Algo está errado! Verifica os dados inseridos."
 
 // RESPOSTA AUTOMATICA DO NETLIFY PARA O CLIENTE
 
-// submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener('click', () => {
 
-//     subjectNewMessage.value = "Mensagem de " + clientName.value;
-//     console.log(subjectNewMessage.value);
+    subjectNewMessage.value = "Mensagem de " + clientName.value;
+    console.log(subjectNewMessage.value);
     
-// })
+})
 
 
 
