@@ -23,14 +23,14 @@
         },
         {
             "name": "Compota Mirtilos",
-            "image": "",
+            "image": "/images/compotas/compota-mirtilos-pequena.jpg",
             "productId": 1630062025,
             "stock": true
 
         },
         {
-            "name": "Compota Pêssego",
-            "image": "",
+            "name": "Compota Pêssego Paraguaio",
+            "image": "/images/compotas/compota-pessego-paraguaio-pequena.jpg",
             "productId": 1530062025,
             "stock": true
 
@@ -104,14 +104,14 @@
             "name": "Compota Mirtilos",
             "image": "",
             "productId": 1430062025,
-            "stock": true
+            "stock": false
 
         },
         {
-            "name": "Compota Pêssego",
+            "name": "Compota Pêssego Paraguaio",
             "image": "",
             "productId": 1330062025,
-            "stock": true
+            "stock": false
 
         },
         {
