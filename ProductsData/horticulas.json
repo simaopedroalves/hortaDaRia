@@ -121,6 +121,22 @@
 
         },
         {
+            "name": "tomate cherry vermelho",
+            "price": 8,
+            "image": "/images/horticulas/tomate-cherry-vermelho.jpg",
+            "productId": 10707072025,
+            "stock": true
+
+        },
+        {
+            "name": "tomate cherry preto",
+            "price": 8,
+            "image": "/images/horticulas/tomate-cherry-preto.jpg",
+            "productId": 10807072025,
+            "stock": true
+
+        },
+        {
             "name": "Courgete amarela",
             "price": 2.5,
             "image": "/images/horticulas/courgete.jpg",
@@ -160,11 +176,27 @@
 
         },
         {
+            "name": "pimento jalapeno",
+            "price": 8,
+            "image": "/images/horticulas/pimento-jalapeno.jpg",
+            "productId": 10907072025,
+            "stock": true
+
+        },
+        {
             "name": "pimento albarello",
             "price": 8,
             "image": "/images/horticulas/pimento-albarello.jpg",
             "productId": 2353181124,
             "stock": false
+
+        },
+        {
+            "name": "pimento padron",
+            "price": 10,
+            "image": "/images/horticulas/pimento-padron.jpg",
+            "productId": 11007072025,
+            "stock": true
 
         },
         {

@@ -34,10 +34,10 @@
         },
         {
             "name": "cebola nova",
-            "price": 2.5,
+            "price": 3,
             "image": "/images/raizes/cebola-nova.jpg",
             "productId": 29,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -69,7 +69,7 @@
             "price": 6,
             "image": "/images/raizes/beterraba-di-gioggia.jpg",
             "productId": 108,
-            "stock": false
+            "stock": true
 
         },
         {
