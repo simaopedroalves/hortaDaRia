@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/ff1abd11bd.js" crossorigin="anonymous"></script> 
     <!-- <script  src="\scriptDocs/ervasECha.js" defer></script> -->
     <script type="module" src="/script.js" defer></script>
-
+    <script type="module" src="/scriptDocs/searchBar.js" defer></script>
     <script type="module" src="\scriptDocs/carrinho.js" defer></script>
 
     <title>Carrinho - Horta d'Ria - Produtos 100% Naturais - Agricultura Local e Ecológica - V. N. Famalicão</title>
@@ -32,100 +32,56 @@
 
 </head>
 <body>
-            <!-- NAVBAR -->
 
-            <header>
+    <!-- NAVBAR -->
+    <header></header>
 
-                <nav class="navbar" id="navBar">
-        
-                    <!-- <div class="logo-img-div">
-                        <img src="images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
-                    </div> -->
-        
-                    <div class="logo-img-div">
-                        <a href="/index.html">
-                             <h1>
-                                 Horta d'Ria
-                             </h1>
-                        </a>
-                     </div>
-        
-                    <div class="cart-and-menu">
-        
-                        <div class="cart-div">
-                            <a href="/html/carrinho.html">
-                                <!-- cesto -->
-                                <i class="fa-solid fa-basket-shopping"></i>
-                            </a>
-                            <span class="article-number"></span>
-                        </div>
-                        <!-- menu para telemovel -->
-                        <i class="fa-solid fa-bars-staggered openMenu"></i>
-                    </div>
-        
-                </nav>
-        
-                <ul class="menu-list">
-                        <!-- href.value = element.id.value -->
-                    <a href="/html/aboutUs.html"> <li>Quem Somos</li>  </a>
-                    <a href="/index.html#cabazesMenu" id="cabazesButton"><li>Cabazes</li></a>
-                    <a href="/html/produtos.html"> <li>Produtos</li></a>
-                    <a href="/html/form.html"> <li>Contactos</li></a>
-                    <a href="/html/informations.html"> <li>Informações</li></a>
-                    <a href="/html/testemunhos.html"> <li>Testemunhos</li></a>
-                    <a href="/html/basketHistoric.html"> <li>Fotos</li></a>
-                    <a href="/html/videos.html"><li>Videos</li></a>
-                </ul>
-        
-            </header>  
+    <!-- search bar -->
 
-            <!-- search bar -->
-                <!-- <div class="searchBar-div">
-                    <input type="search" class="searchBarInput">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                </div>  -->
-                <!-- <div class="popUpTerms"></div> -->
-                <!-- BOTTOM MENU BAR -->
-                <section class="bottom-menu">
-                    <div class="home">
-                        <a href="\index.html">
-                            <i class="fa-solid fa-house"></i>
-                        </a>
-                    </div>
-                
-                
-                    <!-- ==================test cart here ================== -->
-                
-                    <div class="cart-div">
-                        <a href="/html/carrinho.html">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-                        <span class="article-number"></span>
-                    </div>
-                
-                    <!-- ================================================== -->
-                
-                    <div class="info">
-                        <a href="/html/informations.html">
-                            <i class="fa-solid fa-info"></i>
-                        </a>
-                    </div>
-                    <div class="criar-cabaz">
-                        <a href="/html/produtos.html">
-                            <i class="fa-solid fa-seedling"></i>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a href="/html/basketHistoric.html">
-                            <i class="fa-solid fa-inbox"></i>
-                        </a>
-                    </div>
-                </section>
+    <div class="searchBar-div"></div>
+
+    <!-- <div class="popUpTerms"></div> -->
+    <!-- BOTTOM MENU BAR -->
+    <section class="bottom-menu">
+        <div class="home">
+            <a href="\index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+
+
+        <!-- ==================test cart here ================== -->
+
+        <div class="cart-div">
+            <a href="/html/carrinho.html">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+            <span class="article-number"></span>
+        </div>
+
+        <!-- ================================================== -->
+
+        <div class="info">
+            <a href="/html/informations.html">
+                <i class="fa-solid fa-info"></i>
+            </a>
+        </div>
+        <div class="criar-cabaz">
+            <a href="/html/produtos.html">
+                <i class="fa-solid fa-seedling"></i>
+            </a>
+        </div>
+        <div class="">
+            <a href="/html/basketHistoric.html">
+                <i class="fa-solid fa-inbox"></i>
+            </a>
+        </div>
+    </section>
 
     <div class="backgroundColor"></div>
 
-     <!-- ITEM ADDED TO CART -->
-     <div class="alert"></div>
+    <!-- ITEM ADDED TO CART -->
+    <div class="alert"></div>
 
     <section class="cartList">
 
@@ -133,13 +89,13 @@
             <button class="delete-cart">Esvaziar Cesto</button>
             <button class="advance-cart"><a href="/html/advancePageOne.html">Avançar</a></button>
         </div>
-        
+
         <div class="empty-car-message">
             <p>O teu Cesto ainda está vazio!</p>
             <p>Consulta a nossa lista de produtos e cabazes desta semana
-            no menu e clica em "Comprar".</p>
+                no menu e clica em "Comprar".</p>
         </div>
-        
+
     </section>
 
     <div class="sub-total">
@@ -150,69 +106,82 @@
 
 
     <section class="totalCartPrice"></section>
-      
 
-        <section class="media-and-contacts" id="contactsAndSocialMedia">
 
-            <div class="footer-head">
-                <img src="/images/logo.png" alt="" class="logo-img">
-                <h4>Horta d'Ria</h4>
-                <p>Produtos 100% Naturais</p>
-            </div>
-                
-            <hr class="line-break">
-            
-            <div class="social-media">
-    
-                <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-    
-                <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-    
-                <a href="mailto:hortadarianatural@gmail.com" target="_blank">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-    
-            </div>
-    
-            <div class="contact social-media">
-                <a href="callto:+351914547465"><i class="fa-solid fa-phone"></i></a>
-                <div class="info-tel">
-                    <span class="call-cost">914 547 465</span>
-                    <span class="call-cost">Custo chamada nacional</span>
-                </div>
-            </div>
-    
-             <div class="social-media">
-                <a href="https://www.google.com/maps/place/Horta+d'Ria/@41.4159307,-8.5320716,582m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2459ae2f36b75f:0x415ea5f6efaa6ccb!8m2!3d41.4159307!4d-8.5320716!16s%2Fg%2F11w20j5zxm?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                </a>
-                <span class="location-name">V. N. Famalicão</span>
+    <section class="media-and-contacts" id="contactsAndSocialMedia">
 
-            </div>
-    
-            <div class="footer-end">
-                <a href="/index.html#cabazesMenu"><p>Cabazes</p></a>
-                <a href="/html/produtos.html"><p>Produtos</p></a>
-                <a href="https://maps.app.goo.gl/ZR7CWSfpoNfkTDMD9" target="_blank"><p>Morada</p></a>
-                <a href="/html/aboutUs.html"><p>Sobre Nós</p></a>
-                <a href="#"><p>Voltar ao topo</p></a>
-                <a href="/html/informations.html#termsAndConditions"><p>Termos e Condições</p></a>
+        <div class="footer-head">
+            <img src="/images/logo.png" alt="" class="logo-img">
+            <h4>Horta d'Ria</h4>
+            <p>Produtos 100% Naturais</p>
+        </div>
 
-            </div>
-    
-           
-            <div class="webDevSp">
-                <p class="reservedRigths"></p>
+        <hr class="line-break">
 
-                <a href="https://portfoliosimaopedro.webdevsp.com/">
-                    <p class="my-name"></p>
-                </a>
+        <div class="social-media">
+
+            <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="mailto:hortadarianatural@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <div class="contact social-media">
+            <a href="callto:+351914547465"><i class="fa-solid fa-phone"></i></a>
+            <div class="info-tel">
+                <span class="call-cost">914 547 465</span>
+                <span class="call-cost">Custo chamada nacional</span>
             </div>
-            
-        </section>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.google.com/maps/place/Horta+d'Ria/@41.4159307,-8.5320716,582m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2459ae2f36b75f:0x415ea5f6efaa6ccb!8m2!3d41.4159307!4d-8.5320716!16s%2Fg%2F11w20j5zxm?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                target="_blank">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </a>
+            <span class="location-name">V. N. Famalicão</span>
+
+        </div>
+
+        <div class="footer-end">
+            <a href="/index.html#cabazesMenu">
+                <p>Cabazes</p>
+            </a>
+            <a href="/html/produtos.html">
+                <p>Produtos</p>
+            </a>
+            <a href="https://maps.app.goo.gl/ZR7CWSfpoNfkTDMD9" target="_blank">
+                <p>Morada</p>
+            </a>
+            <a href="/html/aboutUs.html">
+                <p>Sobre Nós</p>
+            </a>
+            <a href="#">
+                <p>Voltar ao topo</p>
+            </a>
+            <a href="/html/informations.html#termsAndConditions">
+                <p>Termos e Condições</p>
+            </a>
+
+        </div>
+
+
+        <div class="webDevSp">
+            <p class="reservedRigths"></p>
+
+            <a href="https://portfoliosimaopedro.webdevsp.com/">
+                <p class="my-name"></p>
+            </a>
+        </div>
+
+    </section>
 </body>
 </html>

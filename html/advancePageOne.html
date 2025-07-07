@@ -25,6 +25,8 @@
 
     <script type="module" src="/scriptDocs/advancePageOne.js" defer></script>
     <script type="module" src="/scriptDocs/popUpEncomendas.js"></script>
+    <script type="module" src="/scriptDocs/searchBar.js" defer></script>
+
 
     <title>Preenchimento dados - Horta d'Ria - Produtos 100% Naturais - Agricultura Local e Ecológica - V. N. Famalicão</title>
     <link rel="icon" type="image/jpg" href="/images/logo-circle.jpg">
@@ -33,105 +35,59 @@
 
 </head>
 <body class="white-background">
-            <!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <header></header>
 
-            <header>
+    <!-- search bar -->
 
-                <nav class="navbar" id="navBar">
-        
-                    <!-- <div class="logo-img-div">
-                        <img src="images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
-                    </div> -->
-        
-                    <div class="logo-img-div">
-                        <a href="/index.html">
-                             <h1>
-                                 Horta d'Ria
-                             </h1>
-                        </a>
-                     </div>
-        
-                    <div class="cart-and-menu">
-        
-                        <div class="cart-div">
-                            <a href="/html/carrinho.html">
-                                <!-- cesto -->
-                                <i class="fa-solid fa-basket-shopping"></i>
-                            </a>
-                            <span class="article-number"></span>
-                        </div>
-                        <!-- menu para telemovel -->
-                        <i class="fa-solid fa-bars-staggered openMenu"></i>
-                    </div>
-        
-                </nav>
-        
-                <ul class="menu-list">
-                        <!-- href.value = element.id.value -->
-                    <a href="/html/aboutUs.html"> <li>Quem Somos</li>  </a>
-                    <a href="/index.html#cabazesMenu" id="cabazesButton"><li>Cabazes</li></a>
-                    <a href="/html/produtos.html"> <li>Produtos</li></a>
-                    <a href="/html/form.html"> <li>Contactos</li></a>
-                    <a href="/html/informations.html"> <li>Informações</li></a>
-                    <a href="/html/testemunhos.html"> <li>Testemunhos</li></a>
-                    <a href="/html/basketHistoric.html"> <li>Fotos</li></a>
-                    <a href="/html/videos.html"><li>Videos</li></a>
-                </ul>
-        
-            </header>        
-    
-            <!-- POP-UP  -->
-            <section class="pop-up-encomendas" id="popUpEncomendas"></section>
+    <div class="searchBar-div"></div>
 
-    
-            <!-- search bar -->
-                <!-- <div class="searchBar-div">
-                    <input type="search" class="searchBarInput">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                </div>  -->
-                <!-- <div class="popUpTerms"></div> -->
-                <!-- BOTTOM MENU BAR -->
-                <section class="bottom-menu">
-                    <div class="home">
-                        <a href="\index.html">
-                            <i class="fa-solid fa-house"></i>
-                        </a>
-                    </div>
-                
-                
-                    <!-- ==================test cart here ================== -->
-                
-                    <div class="cart-div">
-                        <a href="/html/carrinho.html">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-                        <span class="article-number"></span>
-                    </div>
-                
-                    <!-- ================================================== -->
-                
-                    <div class="info">
-                        <a href="/html/informations.html">
-                            <i class="fa-solid fa-info"></i>
-                        </a>
-                    </div>
-                    <div class="criar-cabaz">
-                        <a href="/html/produtos.html">
-                            <i class="fa-solid fa-seedling"></i>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a href="/html/basketHistoric.html">
-                            <i class="fa-solid fa-inbox"></i>
-                        </a>
-                    </div>
-                </section>
+    <!-- POP-UP  -->
+    <section class="pop-up-encomendas" id="popUpEncomendas"></section>
+
+    <!-- BOTTOM MENU BAR -->
+    <section class="bottom-menu">
+        <div class="home">
+            <a href="\index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+
+
+        <!-- ==================test cart here ================== -->
+
+        <div class="cart-div">
+            <a href="/html/carrinho.html">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+            <span class="article-number"></span>
+        </div>
+
+        <!-- ================================================== -->
+
+        <div class="info">
+            <a href="/html/informations.html">
+                <i class="fa-solid fa-info"></i>
+            </a>
+        </div>
+        <div class="criar-cabaz">
+            <a href="/html/produtos.html">
+                <i class="fa-solid fa-seedling"></i>
+            </a>
+        </div>
+        <div class="">
+            <a href="/html/basketHistoric.html">
+                <i class="fa-solid fa-inbox"></i>
+            </a>
+        </div>
+    </section>
 
     <section class="client-data-sec">
         <!-- ADD ACTION  -->
-        <form class="cart-form" name="hortaDaRiaEncomenda" action="/html/orderSentPage.html" method="POST" data-netlify="true"> 
-        <input type="hidden" name="subject" value="" id="newOrderSubject" data-remove-prefix>
-        
+        <form class="cart-form" name="hortaDaRiaEncomenda" action="/html/orderSentPage.html" method="POST"
+            data-netlify="true">
+            <input type="hidden" name="subject" value="" id="newOrderSubject" data-remove-prefix>
+
 
             <h4>
                 Preferes levantar a tua encomenda ou queres te entreguemos em casa ou no teu local de trabalho?
@@ -150,7 +106,7 @@
 
             <section class="name-email-phone border-1">
 
-                
+
                 <div>
                     <label for="name">Nome<span class="required-input-icon">*</span></label>
                     <input id="name" type="text" name="NomeCliente" required class="required">
@@ -163,9 +119,9 @@
                     <label for="phone-number">Telemóvel</label>
                     <input id="phone-number" type="number" name="Telemóvel">
                 </div>
-                
+
             </section>
-                <!-- ======= ENTREGA ========= -->
+            <!-- ======= ENTREGA ========= -->
             <section class="deliver-sec border-1">
                 <div>
                     <label for="address">Morada<span class="required-input-icon">*</span></label>
@@ -203,10 +159,11 @@
 
                 <div class="schedule-deliver">
                     <label for="schedule">Horário<span class="required-input-icon">*</span></label>
-                    <select id="scheduleToDeliverAtHome" name="Horario" value="" required class="required" placeholder="Selecionar">
+                    <select id="scheduleToDeliverAtHome" name="Horario" value="" required class="required"
+                        placeholder="Selecionar">
                         <option value="">Selecionar</option>
                         <optgroup label="Manhã">
-                            
+
                             <option value="9h-10h">09:00 - 10:00</option>
                             <option value="10h-11h">10:00 - 11:00</option>
                             <option value="12h-13h">11:00 - 13:00</option>
@@ -228,7 +185,7 @@
 
             </section>
 
-                    <!-- ========== LEVANTAR ========= -->
+            <!-- ========== LEVANTAR ========= -->
             <section class="pick-up-sec border-1">
                 <h5>
                     Levantar a encomenda em:
@@ -245,9 +202,9 @@
                     <input id="horta" type="radio" name="local" value="Horta d'Ria" checked>
                     <label for="horta">Horta d'Ria</label>
                 </div>
-                
+
             </section>
-                <!-- ======= LEVANTAR NA HORTA ========== -->
+            <!-- ======= LEVANTAR NA HORTA ========== -->
             <section class="horta-pick-up-sec border-1">
                 <!-- <input type="hidden" name="Levantamento na Horta"> -->
                 <div>
@@ -305,11 +262,11 @@
                     <label for="publicidade">Publicidade</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="amigos" name="amigos" >
+                    <input type="checkbox" id="amigos" name="amigos">
                     <label for="amigos">Amigos</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="outros" name="outros" >
+                    <input type="checkbox" id="outros" name="outros">
                     <label for="outros">Outro</label>
                     <input type="text" id="outro" name="comoChegueiAteVos">
                 </div>
@@ -320,8 +277,10 @@
             </div>
 
             <div class="termsConditionsAgreement">
-                <input type="checkbox" required class="termsAndConditionsAuthorization" name="Termos e Condições" value="CONCORDO COM OS TERMOS E CONDIÇÕES"/>
-                <p>Li e concordo com os <a href="/html/informations.html#termsAndConditions" class="termsConditionsLink">Termos e Condições</a></p>
+                <input type="checkbox" required class="termsAndConditionsAuthorization" name="Termos e Condições"
+                    value="CONCORDO COM OS TERMOS E CONDIÇÕES" />
+                <p>Li e concordo com os <a href="/html/informations.html#termsAndConditions"
+                        class="termsConditionsLink">Termos e Condições</a></p>
             </div>
 
 
@@ -339,68 +298,81 @@
 
 
 
-        <section class="media-and-contacts" id="contactsAndSocialMedia">
+    <section class="media-and-contacts" id="contactsAndSocialMedia">
 
-            <div class="footer-head">
-                <img src="/images/logo.png" alt="" class="logo-img">
-                <h4>Horta d'Ria</h4>
-                <p>Produtos 100% Naturais</p>
-            </div>
-                
-            <hr class="line-break">
-            
-            <div class="social-media">
-    
-                <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-    
-                <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-    
-                <a href="mailto:hortadarianatural@gmail.com" target="_blank">
-                    <i class="fa-regular fa-envelope"></i>
-                </a>
-    
-            </div>
-    
-            <div class="contact social-media">
-                <a href="callto:+351914547465"><i class="fa-solid fa-phone"></i></a>
-                <div class="info-tel">
-                    <span class="call-cost">914 547 465</span>
-                    <span class="call-cost">Custo chamada nacional</span>
-                </div>
-            </div>
-    
-             <div class="social-media">
-                <a href="https://www.google.com/maps/place/Horta+d'Ria/@41.4159307,-8.5320716,582m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2459ae2f36b75f:0x415ea5f6efaa6ccb!8m2!3d41.4159307!4d-8.5320716!16s%2Fg%2F11w20j5zxm?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                </a>
-                <span class="location-name">V. N. Famalicão</span>
+        <div class="footer-head">
+            <img src="/images/logo.png" alt="" class="logo-img">
+            <h4>Horta d'Ria</h4>
+            <p>Produtos 100% Naturais</p>
+        </div>
 
-            </div>
-    
-            <div class="footer-end">
-                <a href="/index.html#cabazesMenu"><p>Cabazes</p></a>
-                <a href="/html/produtos.html"><p>Produtos</p></a>
-                <a href="https://maps.app.goo.gl/ZR7CWSfpoNfkTDMD9" target="_blank"><p>Morada</p></a>
-                <a href="/html/aboutUs.html"><p>Sobre Nós</p></a>
-                <a href="#"><p>Voltar ao topo</p></a>
-                <a href="/html/informations.html#termsAndConditions"><p>Termos e Condições</p></a>
+        <hr class="line-break">
 
-            </div>
-    
-           
-            <div class="webDevSp">
-                <p class="reservedRigths"></p>
+        <div class="social-media">
 
-                <a href="https://portfoliosimaopedro.webdevsp.com/">
-                    <p class="my-name"></p>
-                </a>
+            <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/horta.da.ria/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="mailto:hortadarianatural@gmail.com" target="_blank">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <div class="contact social-media">
+            <a href="callto:+351914547465"><i class="fa-solid fa-phone"></i></a>
+            <div class="info-tel">
+                <span class="call-cost">914 547 465</span>
+                <span class="call-cost">Custo chamada nacional</span>
             </div>
-            
-        </section>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.google.com/maps/place/Horta+d'Ria/@41.4159307,-8.5320716,582m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2459ae2f36b75f:0x415ea5f6efaa6ccb!8m2!3d41.4159307!4d-8.5320716!16s%2Fg%2F11w20j5zxm?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                target="_blank">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </a>
+            <span class="location-name">V. N. Famalicão</span>
+
+        </div>
+
+        <div class="footer-end">
+            <a href="/index.html#cabazesMenu">
+                <p>Cabazes</p>
+            </a>
+            <a href="/html/produtos.html">
+                <p>Produtos</p>
+            </a>
+            <a href="https://maps.app.goo.gl/ZR7CWSfpoNfkTDMD9" target="_blank">
+                <p>Morada</p>
+            </a>
+            <a href="/html/aboutUs.html">
+                <p>Sobre Nós</p>
+            </a>
+            <a href="#">
+                <p>Voltar ao topo</p>
+            </a>
+            <a href="/html/informations.html#termsAndConditions">
+                <p>Termos e Condições</p>
+            </a>
+
+        </div>
+
+
+        <div class="webDevSp">
+            <p class="reservedRigths"></p>
+
+            <a href="https://portfoliosimaopedro.webdevsp.com/">
+                <p class="my-name"></p>
+            </a>
+        </div>
+
+    </section>
 
 </body>
 </html>

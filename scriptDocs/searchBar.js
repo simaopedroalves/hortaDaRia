@@ -1,3 +1,17 @@
+//search bar container
+
+const searchBarContainer = document.querySelector('.searchBar-div');
+
+if (searchBarContainer) {
+  searchBarContainer.innerHTML= `
+    <h3>Procurar produtos na Horta d'Ria</h3>
+      <i class="fa-solid fa-xmark close-searchbar"></i>
+      <input type="search" class="searchBarInput" placeholder="Ex: Cenoura">
+      <ul class="searchResults"></ul>
+  `
+}
+// ===============================
+
 const closeSearchBar = document.querySelector('.close-searchbar');
 closeSearchBar.title = 'Fechar barra de pesquisa';
 
@@ -27,7 +41,7 @@ const categoryToPageMap = {
   'cogumelos': 'cogumelos.html',
   'compotas': 'compotas.html',
   'Compotas': 'compotas.html',
-  'ervasAromaticasECha': 'ervasECha.html',
+  'ervasECha': 'ervasECha.html',
   'floresComestiveis': 'floresComestiveis.html',
   'horticulas': 'horticulas.html',
   'leguminosas': 'leguminosas.html',

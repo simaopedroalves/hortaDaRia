@@ -1,3 +1,59 @@
+// HEADER
+
+
+export function header() {
+    const header = document.querySelector('header');
+
+    if (header) {
+        header.innerHTML = `
+         <nav class="navbar" id="navBar">
+
+            <!-- <div class="logo-img-div">
+                <img src="images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
+            </div> -->
+
+            <div class="logo-img-div">
+                <a href="/index.html">
+                     <h1>
+                         Horta d'Ria
+                     </h1>
+                </a>
+            </div>
+
+            <div class="cart-and-menu">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <div class="cart-div">
+                    <a href="/html/carrinho.html">
+                        <!-- cesto -->
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                    <span class="article-number"></span>
+                </div>
+                <!-- menu para telemovel -->
+                <i class="fa-solid fa-bars-staggered openMenu"></i>
+            </div>
+
+        </nav>
+
+        <ul class="menu-list">
+                <!-- href.value = element.id.value -->
+            <a href="/html/aboutUs.html"> <li>Quem Somos</li>  </a>
+            <a href="/index.html#cabazesMenu" id="cabazesButton"><li>Cabazes</li></a>
+            <a href="/html/produtos.html"> <li>Produtos</li></a>
+            <a href="/html/form.html"> <li>Contactos</li></a>
+            <a href="/html/informations.html"> <li>Informações</li></a>
+            <a href="/html/testemunhos.html"> <li>Testemunhos</li></a>
+            <a href="/html/basketHistoric.html"> <li>Fotos</li></a>
+            <a href="/html/videos.html"><li>Videos</li></a>
+        </ul>
+        `
+    }
+}
+
+header();
+
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
 const headerMenu = document.querySelector('header');
@@ -215,3 +271,5 @@ export function updateNumbItemsOnCart() {
 }
 
 updateNumbItemsOnCart()
+
+

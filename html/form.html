@@ -24,6 +24,7 @@
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/ff1abd11bd.js" crossorigin="anonymous"></script> 
     <script type="module" src="\script.js" defer></script>
+    <script type="module" src="/scriptDocs/searchBar.js" defer></script>
     
 
     <title>Contactos - Horta d'Ria - Produtos 100% Naturais - Agricultura Local e Ecológica - V. N. Famalicão</title>
@@ -42,103 +43,59 @@
 
 </head>
 <body>
-            <!-- NAVBAR -->
-            <header>
 
-                <nav class="navbar" id="navBar">
-        
-                    <!-- <div class="logo-img-div">
-                        <img src="images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
-                    </div> -->
-        
-                    <div class="logo-img-div">
-                        <a href="/index.html">
-                             <h1>
-                                 Horta d'Ria
-                             </h1>
-                        </a>
-                     </div>
-        
-                    <div class="cart-and-menu">
-        
-                        <div class="cart-div">
-                            <a href="/html/carrinho.html">
-                                <!-- cesto -->
-                                <i class="fa-solid fa-basket-shopping"></i>
-                            </a>
-                            <span class="article-number"></span>
-                        </div>
-                        <!-- menu para telemovel -->
-                        <i class="fa-solid fa-bars-staggered openMenu"></i>
-                    </div>
-        
-                </nav>
-        
-                <ul class="menu-list">
-                        <!-- href.value = element.id.value -->
-                    <a href="/html/aboutUs.html"> <li>Quem Somos</li>  </a>
-                    <a href="/index.html#cabazesMenu" id="cabazesButton"><li>Cabazes</li></a>
-                    <a href="/html/produtos.html"> <li>Produtos</li></a>
-                    <a href="/html/form.html"> <li>Contactos</li></a>
-                    <a href="/html/informations.html"> <li>Informações</li></a>
-                    <a href="/html/testemunhos.html"> <li>Testemunhos</li></a>
-                    <a href="/html/basketHistoric.html"> <li>Fotos</li></a>
-                    <a href="/html/videos.html"><li>Videos</li></a>
-                </ul>
-        
-            </header>       
+    <!-- NAVBAR -->
+    <header></header>
+
+    <!-- search bar -->
+
+    <div class="searchBar-div"></div>
+
+    <!-- <div class="popUpTerms"></div> -->
+    <!-- BOTTOM MENU BAR -->
+    <section class="bottom-menu">
+        <div class="home">
+            <a href="\index.html">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
 
 
-            <!-- search bar -->
-                <!-- <div class="searchBar-div">
-                    <input type="search" class="searchBarInput">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                </div>  -->
-                <!-- <div class="popUpTerms"></div> -->
-                <!-- BOTTOM MENU BAR -->
-                <section class="bottom-menu">
-                    <div class="home">
-                        <a href="\index.html">
-                            <i class="fa-solid fa-house"></i>
-                        </a>
-                    </div>
-                
-                
-                    <!-- ==================test cart here ================== -->
-                
-                    <div class="cart-div">
-                        <a href="/html/carrinho.html">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-                        <span class="article-number"></span>
-                    </div>
-                
-                    <!-- ================================================== -->
-                
-                    <div class="info">
-                        <a href="/html/informations.html">
-                            <i class="fa-solid fa-info"></i>
-                        </a>
-                    </div>
-                    <div class="criar-cabaz">
-                        <a href="/html/produtos.html">
-                            <i class="fa-solid fa-seedling"></i>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a href="/html/basketHistoric.html">
-                            <i class="fa-solid fa-inbox"></i>
-                        </a>
-                    </div>
-                </section>
+        <!-- ==================test cart here ================== -->
+
+        <div class="cart-div">
+            <a href="/html/carrinho.html">
+                <i class="fa-solid fa-basket-shopping"></i>
+            </a>
+            <span class="article-number"></span>
+        </div>
+
+        <!-- ================================================== -->
+
+        <div class="info">
+            <a href="/html/informations.html">
+                <i class="fa-solid fa-info"></i>
+            </a>
+        </div>
+        <div class="criar-cabaz">
+            <a href="/html/produtos.html">
+                <i class="fa-solid fa-seedling"></i>
+            </a>
+        </div>
+        <div class="">
+            <a href="/html/basketHistoric.html">
+                <i class="fa-solid fa-inbox"></i>
+            </a>
+        </div>
+    </section>
 
     <!-- FORMULARIO DE CONTACTO -->
 
-    <form class="contactForm" name="Horta_da_Ria" action="/html/success.html" method="POST" data-netlify="true"> 
-    <input type="hidden" name="subject" value="" id="newMessage" data-remove-prefix>
+    <form class="contactForm" name="Horta_da_Ria" action="/html/success.html" method="POST" data-netlify="true">
+        <input type="hidden" name="subject" value="" id="newMessage" data-remove-prefix>
 
-    <!-- code needed to send emails via EmailJSTemplates -->
-    <!-- <form class="contactForm" onsubmit="openSuccessPage(event)" method="post ">  -->
+        <!-- code needed to send emails via EmailJSTemplates -->
+        <!-- <form class="contactForm" onsubmit="openSuccessPage(event)" method="post ">  -->
 
         <div class="introduction">
             <p class="introductionText">
@@ -165,20 +122,24 @@
 
         <div class="clientMessage">
             <label for="message">Mensagem<span>*</span></label>
-            <textarea id="clientMessage" name="Mensagem" required autocorrect rows="5" placeholder="Escreve aqui a tua mensagem"></textarea>
+            <textarea id="clientMessage" name="Mensagem" required autocorrect rows="5"
+                placeholder="Escreve aqui a tua mensagem"></textarea>
         </div>
 
         <span class="obligationOrErrorMessage">* Preenchimento obrigatório</span>
 
         <button type="submit" class="btn-info" id="submitBtn">Enviar</button>
 
-        
+
     </form>
 
     <!-- GOOGLE MAPS MARKER -->
     <section class="googleMapsLocation">
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24403.239035449966!2d-8.549947995752449!3d41.41244371673814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2spt!4v1710806518386!5m2!1spt-PT!2spt" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d374.0095066870861!2d-8.532442!3d41.4158677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2459b24764729b%3A0x149826b776cab620!2sR.%20Pinho%20Leal%2087%2C%20Brufe!5e0!3m2!1spt-PT!2spt!4v1721437380572!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d374.0095066870861!2d-8.532442!3d41.4158677!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2459b24764729b%3A0x149826b776cab620!2sR.%20Pinho%20Leal%2087%2C%20Brufe!5e0!3m2!1spt-PT!2spt!4v1721437380572!5m2!1spt-PT!2spt"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 
@@ -197,9 +158,9 @@
             <h4>Horta d'Ria</h4>
             <p>Produtos 100% Naturais</p>
         </div>
-            
+
         <hr class="line-break">
-        
+
         <div class="social-media">
 
             <a href="https://www.facebook.com/Tiago.Horta.da.Ria/" target="_blank">
@@ -224,24 +185,37 @@
             </div>
         </div>
 
-         <div class="social-media">
-                <a href="https://www.google.com/maps/place/Horta+d'Ria/@41.4159307,-8.5320716,582m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2459ae2f36b75f:0x415ea5f6efaa6ccb!8m2!3d41.4159307!4d-8.5320716!16s%2Fg%2F11w20j5zxm?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                </a>
-                <span class="location-name">V. N. Famalicão</span>
-
-            </div>
-
-        <div class="footer-end">
-            <a href="/index.html#cabazesMenu"><p>Cabazes</p></a>
-            <a href="/html/produtos.html"><p>Produtos</p></a>
-            <a href="https://maps.app.goo.gl/ZR7CWSfpoNfkTDMD9" target="_blank"><p>Morada</p></a>
-            <a href="/html/aboutUs.html"><p>Sobre Nós</p></a>
-            <a href="#"><p>Voltar ao topo</p></a>
-            <a href="/html/informations.html#termsAndConditions"><p>Termos e Condições</p></a>
+        <div class="social-media">
+            <a href="https://www.google.com/maps/place/Horta+d'Ria/@41.4159307,-8.5320716,582m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd2459ae2f36b75f:0x415ea5f6efaa6ccb!8m2!3d41.4159307!4d-8.5320716!16s%2Fg%2F11w20j5zxm?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                target="_blank">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </a>
+            <span class="location-name">V. N. Famalicão</span>
 
         </div>
-       
+
+        <div class="footer-end">
+            <a href="/index.html#cabazesMenu">
+                <p>Cabazes</p>
+            </a>
+            <a href="/html/produtos.html">
+                <p>Produtos</p>
+            </a>
+            <a href="https://maps.app.goo.gl/ZR7CWSfpoNfkTDMD9" target="_blank">
+                <p>Morada</p>
+            </a>
+            <a href="/html/aboutUs.html">
+                <p>Sobre Nós</p>
+            </a>
+            <a href="#">
+                <p>Voltar ao topo</p>
+            </a>
+            <a href="/html/informations.html#termsAndConditions">
+                <p>Termos e Condições</p>
+            </a>
+
+        </div>
+
         <div class="webDevSp">
             <p class="reservedRigths"></p>
 
@@ -249,10 +223,10 @@
                 <p class="my-name"></p>
             </a>
         </div>
-        
-</section>
 
-    
+    </section>
+
+
 
 </body>
 </html>
