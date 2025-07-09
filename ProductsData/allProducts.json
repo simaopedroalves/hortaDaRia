@@ -293,6 +293,16 @@
           "productId": 119
         },
         {
+            "name": "tomate cherry vermelho",
+            "image": "/images/horticulas/tomate-cherry-vermelho.jpg",
+            "productId": 10707072025
+        },
+        {
+            "name": "tomate cherry preto",
+            "image": "/images/horticulas/tomate-cherry-preto.jpg",
+            "productId": 10807072025
+        },
+        {
           "name": "Courgete amarela",
           "image": "/images/horticulas/courgete.jpg",
           "productId": 130824032025
@@ -318,9 +328,19 @@
           "productId": 2355181124
         },
         {
+            "name": "pimento jalapeno",
+            "image": "/images/horticulas/pimento-jalapeno.jpg",
+            "productId": 10907072025
+        },
+        {
           "name": "pimento albarello",
           "image": "/images/horticulas/pimento-albarello.jpg",
           "productId": 2353181124
+        },
+         {
+            "name": "pimento padron",
+            "image": "/images/horticulas/pimento-padron.jpg",
+            "productId": 11007072025
         },
         {
           "name": "Bagas de goji",
