@@ -248,6 +248,11 @@
           "productId": 100181124
         },
         {
+            "name": "mix frutos silvestres",
+            "image": "/images/frutaDaEpoca/mix-frutos-silvestres.jpg",
+            "productId": 12510072025
+        },
+        {
           "name": "morangos",
           "image": "/images/frutaDaEpoca/morangos.jpg",
           "productId": 101181124

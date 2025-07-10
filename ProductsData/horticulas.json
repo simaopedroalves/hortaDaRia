@@ -49,6 +49,14 @@
 
         },
         {
+            "name": "mix frutos silvestres",
+            "price": 25,
+            "image": "/images/frutaDaEpoca/mix-frutos-silvestres.jpg",
+            "productId": 12510072025,
+            "stock": true
+
+        },
+        {
             "name": "morangos",
             "price": 8,
             "image": "/images/frutaDaEpoca/morangos.jpg",
