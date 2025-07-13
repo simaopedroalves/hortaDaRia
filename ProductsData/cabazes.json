@@ -3,7 +3,7 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras"],
+            "content": ["Acelgas", "Pêssego Paraguaio", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras"],
             "open": "/html/cabaz-um.html",
             "image": "/images/fotosCabazes/cabazes-semana.jpg",
             "productId": 1
@@ -11,7 +11,7 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras", 
+            "content": ["Acelgas", "Pêssego Paraguaio", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras", 
                         "Jalapenos", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Mangericão"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
@@ -20,7 +20,7 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras", 
+            "content": ["Acelgas", "Pêssego Paraguaio", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras", 
                        "Jalapenos", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Mangericão",
                         "Beterraba", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)"],
             "open": "/html/cabaz-tres.html",
@@ -38,10 +38,10 @@
         {
             "name": "Cabaz Premium",
             "price": 25,
-            "content": ["Acelgas", "Kales", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras", 
+            "content": ["Acelgas", "Pêssego Paraguaio", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Cenouras", 
                        "Jalapenos", "Mix Cogumelos", "Salada Asiática", "Beldroegas", "Mangericão",
                         "Beterraba", "Pimentos", "Mirtilos", "Courgete", "Salada Wok (Saltear)",
-                        "Morangos", "Pepino", "Tomates", "Pêssego Paraguaio", "Flores Comestíveis"],
+                        "Morangos", "Cebolas Novas", "Tomates", "Ameixas", "Flores Comestíveis"],
             "open": "/html/cabaz-extra.html",
             "image": "",
             "productId": 5         

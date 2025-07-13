@@ -90,10 +90,10 @@
         },
         {
             "name": "Espinafre manteiga",
-            "price": 15,
+            "price": 20,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
-            "stock": false
+            "stock": true
 
         },
         {

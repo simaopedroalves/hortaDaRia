@@ -9,6 +9,13 @@
 
         },
         {
+            "name": "ameixa vermelha",
+            "price": 3,
+            "image": "/images/frutaDaEpoca/ameixa-vermelha.jpg",
+            "productId": 2614072025,
+            "stock": true
+        },
+        {
             "name": "melancia",
             "price": 2,
             "image": "/images/frutaDaEpoca/melancia.jpg",
@@ -210,9 +217,9 @@
         {
             "name": "Bagas de goji",
             "price": 15,
-            "image": "",
+            "image": "/images/horticulas/bagas-de-goji.jpg",
             "productId": 120,
-            "stock": false
+            "stock": true
 
         },
         {

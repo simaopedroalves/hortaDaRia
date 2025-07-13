@@ -223,6 +223,11 @@
           "productId": 234122062025
         },
         {
+            "name": "ameixa vermelha",
+            "image": "/images/frutaDaEpoca/ameixa-vermelha.jpg",
+            "productId": 2614072025
+        },
+        {
           "name": "melancia",
           "image": "/images/frutaDaEpoca/melancia.jpg",
           "productId": 2356181124
