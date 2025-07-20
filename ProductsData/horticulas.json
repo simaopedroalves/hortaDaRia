@@ -5,7 +5,7 @@
             "price": 3,
             "image": "/images/frutaDaEpoca/pessego-paraguaio.jpg",
             "productId": 234122062025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -13,6 +13,13 @@
             "price": 3,
             "image": "/images/frutaDaEpoca/ameixa-vermelha.jpg",
             "productId": 2614072025,
+            "stock": false
+        },
+        {
+            "name": "ameixa amarela",
+            "price": 3,
+            "image": "/images/frutaDaEpoca/ameixa-amarela.jpg",
+            "productId": 1121072025,
             "stock": true
         },
         {
@@ -41,10 +48,10 @@
         },
         {
             "name": "framboesas amarelas",
-            "price": 10,
+            "price": 12,
             "image": "/images/frutaDaEpoca/framboesas-amarelas.jpg",
             "productId": 2359181124,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -84,8 +91,7 @@
             "price": 9,
             "image": "/images/frutaDaEpoca/mirtilos.jpg",
             "productId": 11601062025,
-            "stock": true
-
+            "stock": false
         },
         {
             "name": "beringela",

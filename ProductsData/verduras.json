@@ -93,7 +93,7 @@
             "price": 20,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
-            "stock": true
+            "stock": false
 
         },
         {
