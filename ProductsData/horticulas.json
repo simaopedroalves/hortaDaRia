@@ -159,7 +159,7 @@
         },
         {
             "name": "Courgete amarela",
-            "price": 2.5,
+            "price": 3,
             "image": "/images/horticulas/courgete.jpg",
             "productId": 130824032025,
             "stock": true
@@ -167,7 +167,7 @@
         },
         {
             "name": "Courgete verde",
-            "price": 2.5,
+            "price": 3,
             "image": "/images/horticulas/courgete-verde.jpg",
             "productId": 204231124,
             "stock": true
