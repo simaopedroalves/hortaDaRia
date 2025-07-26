@@ -8,9 +8,9 @@ export function header() {
         header.innerHTML = `
          <nav class="navbar" id="navBar">
 
-            <!-- <div class="logo-img-div">
+            <div class="logo-img-div">
                 <img src="images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
-            </div> -->
+            </div> 
 
             <div class="logo-img-div">
                 <a href="/index.html">
