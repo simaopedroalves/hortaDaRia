@@ -292,7 +292,6 @@ function getCartItemsFromLocalStorage () {
    
     cart.forEach(el => {
         let item = `${el.itQuantity} de ${el.itName}`;
-        // let clientCart = JSON.stringify(item);
         cartContent.value += item + "\n"
     })
 
@@ -324,7 +323,7 @@ let disabledButtonSubmit = () => {
     let dateNow = new Date()
     dateNow = dateNow.toString().split(' ');
     dateNow = dateNow[0];
-    dateNow = "Mon";
+
     
     if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed') {
         submitBtn.style.display = 'flex';
