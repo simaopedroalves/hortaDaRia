@@ -9,7 +9,7 @@ export function header() {
          <nav class="navbar" id="navBar">
 
             <div class="logo-img-div">
-                <img src="images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
+                <img src="/images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
             </div> 
 
             <div class="logo-img-div">
