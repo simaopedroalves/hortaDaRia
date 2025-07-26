@@ -291,13 +291,13 @@ function getCartItemsFromLocalStorage () {
     let cart = JSON.parse(localStorage.getItem('cart'));
    
     cart.forEach(el => {
-        let cesto = [];
-        cesto.push(el.itQuantity, el.itName);
-        cesto = cesto.join(' ' + 'de ');
-        let clientCart = JSON.stringify(cesto);
-        cartContent.value += clientCart
+        let item = `${el.itQuantity} de ${el.itName}`;
+        // let clientCart = JSON.stringify(item);
+        cartContent.value += item + "\n"
     })
 
+    console.log(cartContent.value);
+    
 }
 
 const totalToPayInput = document.querySelector('#totalPriceToPayId');
@@ -324,7 +324,7 @@ let disabledButtonSubmit = () => {
     let dateNow = new Date()
     dateNow = dateNow.toString().split(' ');
     dateNow = dateNow[0];
-
+    dateNow = "Mon";
     
     if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed') {
         submitBtn.style.display = 'flex';
