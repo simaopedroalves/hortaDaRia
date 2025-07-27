@@ -88,10 +88,10 @@
 .boxItem img {
     grid-column: span 2;
     object-fit: cover;
-    min-height: 30lvh;
-    max-height: 30lvh;
-    max-width: 70lvw;
-    min-width: 70lvw;
+    min-height: 90%;
+    max-height: 90%;
+    max-width: 90%;
+    min-width: 90%;
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -177,19 +177,11 @@
     grid-template-columns: repeat(2, 1fr);
     margin: 15vh auto;
     max-width: 90vw;
-    padding: 0;
-
+    padding: 0 2rem;
 }
 
 .section-title {
     grid-column: span 2;
-}
-
-.boxItem img {
-    min-height: 30vh;
-    max-height: 30vh;
-    min-width: 30vw;
-    max-width: 30vw;
 }
 
 .boxItem h3 {
@@ -255,12 +247,5 @@ select option {
 
     .section-title {
         grid-column: span 4;
-    }
-
-  .boxItem img {
-    min-height: 20vw;
-    max-height: 20vw;
-    min-width: 20vw;
-    max-width: 20vw;
     }
 }

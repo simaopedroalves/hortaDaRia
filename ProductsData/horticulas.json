@@ -94,6 +94,13 @@
             "stock": false
         },
         {
+            "name": "amoras",
+            "price": 10,
+            "image": "/images/frutaDaEpoca/amoras.jpg",
+            "productId": 3128072025,
+            "stock": true
+        },
+        {
             "name": "beringela",
             "price": 4,
             "image": "/images/frutaDaEpoca/beringela.jpg",
@@ -146,7 +153,7 @@
             "price": 8,
             "image": "/images/horticulas/tomate-cherry-vermelho.jpg",
             "productId": 10707072025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -154,7 +161,7 @@
             "price": 8,
             "image": "/images/horticulas/tomate-cherry-preto.jpg",
             "productId": 10807072025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -189,6 +196,13 @@
             "stock": false
         },
         {
+            "name": "pimento amarelo",
+            "price": 4,
+            "image": "/images/horticulas/pimento-amarelo.jpg",
+            "productId": 2128072025,
+            "stock": true
+        },
+        {
             "name": "pimento verde",
             "price": 3,
             "image": "/images/horticulas/pimento-verde.jpg",
@@ -197,12 +211,18 @@
 
         },
         {
+            "name": "pimento vermelho",
+            "price": 4,
+            "image": "",
+            "productId": 2728072025,
+            "stock": true
+        },
+        {
             "name": "pimento jalapeno",
             "price": 8,
             "image": "/images/horticulas/pimento-jalapeno.jpg",
             "productId": 10907072025,
             "stock": true
-
         },
         {
             "name": "pimento albarello",
@@ -210,7 +230,6 @@
             "image": "/images/horticulas/pimento-albarello.jpg",
             "productId": 2353181124,
             "stock": false
-
         },
         {
             "name": "pimento padron",

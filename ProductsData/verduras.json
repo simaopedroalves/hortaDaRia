@@ -85,7 +85,7 @@
             "price": 8,
             "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -108,7 +108,7 @@
             "price": 8,
             "image": "/images/verduras/red-russian-kale.jpg",
             "productId": 101,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -116,7 +116,7 @@
             "price": 15,
             "image": "/images/verduras/red-russian-kale-baby.jpg",
             "productId": 21,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -140,7 +140,7 @@
             "price": 8,
             "image": "/images/verduras/tatsoi-vermelha.jpg",
             "productId": 12024032025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -171,7 +171,7 @@
             "price": 8,
             "image": "/images/verduras/couve-kurly-kale.jpg",
             "productId": 26,
-            "stock": true
+            "stock": false
 
         },
         {

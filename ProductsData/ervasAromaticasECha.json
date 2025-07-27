@@ -69,7 +69,7 @@
             "price": 30,
             "image": "/images/ervasECha/oregaos.jpg",
             "productId": 71,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -97,9 +97,9 @@
 
         },
         {
-            "name": "manjericão",
+            "name": "mangericão",
             "price": 20,
-            "image": "",
+            "image": "/images/ervasECha/mangericao.jpg",
             "productId": 225925052025,
             "stock": true
 

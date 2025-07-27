@@ -438,7 +438,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     .logo-img {
-        max-height: 10lvh;
+        max-height: 7lvh;
         cursor: pointer;
     }
 
