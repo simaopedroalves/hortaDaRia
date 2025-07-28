@@ -233,6 +233,11 @@
             "productId": 1121072025
         },
         {
+            "name": "amoras",
+            "image": "/images/frutaDaEpoca/amoras.jpg",
+            "productId": 3128072025
+        },
+        {
           "name": "melancia",
           "image": "/images/frutaDaEpoca/melancia.jpg",
           "productId": 2356181124
@@ -351,6 +356,11 @@
           "name": "pimento albarello",
           "image": "/images/horticulas/pimento-albarello.jpg",
           "productId": 2353181124
+        },
+        {
+            "name": "pimento amarelo",
+            "image": "/images/horticulas/pimento-amarelo.jpg",
+            "productId": 2128072025
         },
          {
             "name": "pimento padron",
@@ -538,6 +548,16 @@
           "productId": 112
         },
         {
+            "name": "batata vermelha",
+            "image": "/images/raizes/batata-vermelha.jpg",
+            "productId": 2928072025
+        },
+        {
+            "name": "batata branca",
+            "image": "/images/raizes/batata-branca.jpg",
+            "productId": 3028072025
+        },
+        {
           "name": "cebola nova",
           "image": "/images/raizes/cebola-nova.jpg",
           "productId": 29
@@ -627,9 +647,14 @@
           "productId": 6
         },
         {
-          "name": "Alface Verde",
+          "name": "Alface Verde Lisa",
           "image": "/images/saladas/alface-verde.jpg",
           "productId": 12314042025
+        },
+        {
+            "name": "Alface vermelha Lisa",
+            "image": "/images/saladas/alface-vermelha-lisa.jpg",
+            "productId": 3428072025
         },
         {
           "name": "Alface Romana",
