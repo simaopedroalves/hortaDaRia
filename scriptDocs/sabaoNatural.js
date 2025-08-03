@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     sabaoNatural.innerHTML += `
         <h3>Sabão Natural</h3>
         <img src="/images/logo.png" alt="" id="image">
-        <div class="kiloPrice">3.5€/Un</div>
+        <div class="kiloPrice">4.5€/Un</div>
 
         <select type="text" class="sabaoOptions" id="productOptions">
             <option value="select" class="productOption">Selecione o Sabão</option>

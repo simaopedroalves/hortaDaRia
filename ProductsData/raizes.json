@@ -93,7 +93,7 @@
             "price": 6,
             "image": "",
             "productId": 111112032025,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -101,7 +101,7 @@
             "price": 6,
             "image": "",
             "productId": 111212032025,
-            "stock": false
+            "stock": true
 
         },
         {

@@ -34,7 +34,7 @@
         },
         {
             "name": "Beldroegas",
-            "price": 6,
+            "price": 10,
             "image": "/images/verduras/beldroegas.jpg",
             "productId": 160011052025,
             "stock": true
@@ -93,7 +93,7 @@
             "price": 20,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
-            "stock": false
+            "stock": true
 
         },
         {
