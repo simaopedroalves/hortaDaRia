@@ -40,7 +40,7 @@ export function setPopUpEncomendas(customMessage = null) {
 
     else if (today === 'Sat') {
         paragraphOne = 'Encomendas encerradas!'
-        paragraphTwo = 'Vem visitar-nos ao Mercado Municipal de Famalicão até às 13h!'
+        paragraphTwo = 'Vem visitar-nos ao Mercado Municipal de Famalicão até às 12:30h!'
     }
 
     else {
