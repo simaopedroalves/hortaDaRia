@@ -31,7 +31,7 @@
             "price": 6,
             "image": "/images/leguminosas/feijao-verde-rajado.jpg",
             "productId": 240231124,
-            "stock": false
+            "stock": true
 
         }
     ]
