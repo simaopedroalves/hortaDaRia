@@ -3,7 +3,6 @@
         {
             "name": "Cabaz pequeno",
             "price": 10,
-            "content": ["Acelgas", "Feijão Verde", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Batata"],
             "open": "/html/cabaz-um.html",
             "image": "/images/fotosCabazes/cabazes-semana.jpg",
             "productId": 1
@@ -11,8 +10,6 @@
         {
             "name": "Cabaz médio",
             "price": 15,
-            "content": ["Acelgas", "Feijão Verde", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Batata", 
-                        "Jalapenos", "Mix Cogumelos", "Salada Asiática", "Morangos", "Mangericão"],
             "open": "/html/cabaz-dois.html" ,
             "image": "",
             "productId": 2         
@@ -20,9 +17,6 @@
         {
             "name": "Cabaz grande",
             "price": 20,
-            "content": ["Acelgas", "Feijão Verde", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Batata", 
-                       "Jalapenos", "Mix Cogumelos", "Salada Asiática", "Morangos", "Mangericão",
-                        "Beterraba", "Pimentos", "Beringelas", "Courgete", "Pepino"],
             "open": "/html/cabaz-tres.html",
             "image": "",
             "productId": 3         
@@ -38,10 +32,12 @@
         {
             "name": "Cabaz Premium",
             "price": 25,
-            "content": ["Acelgas", "Feijão Verde", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Batata", 
-                       "Jalapenos", "Mix Cogumelos", "Salada Asiática", "Morangos", "Mangericão",
-                        "Beterraba", "Pimentos", "Beringelas", "Courgete", "Pepino",
-                        "Framboesas/Amoras", "Bagas Goji", "Tomates", "Padron", "Flores Comestíveis"],
+            "content": [
+                        ["Acelgas", "Feijão Verde", "Salada Natura", "Microverdes Mix", "Cebola Verde", "Batata"],
+                        ["Jalapenos", "Mix Cogumelos", "Salada Asiática", "Morangos", "Mangericão"],
+                        ["Beterraba", "Pimentos", "Beringelas", "Courgete", "Pepino"],
+                        ["Framboesas/Amoras", "Bagas Goji", "Tomates", "Padron", "Flores Comestíveis"]
+                        ],
             "open": "/html/cabaz-extra.html",
             "image": "",
             "productId": 5         

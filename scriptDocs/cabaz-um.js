@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         let cabazName = object.cabazes[0].name;
         let cabazPrice =  object.cabazes[0].price;
-        let cabazContent = object.cabazes[0].content;
+         let cabazContent = object.cabazes[4].content[0];
         let cabazNumTwo = object.cabazes[1].open;
         let cabazNumThree = object.cabazes[2].open;
         let createCabaz = object.cabazes[3].open;
