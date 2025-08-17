@@ -218,6 +218,11 @@
       ],
       "horticulas": [
         {
+            "name": "maracujá",
+            "image": "/images/frutaDaEpoca/maracuja.jpg",
+            "productId": 1618082025
+        },
+        {
           "name": "pêssego paraguaio",
           "image": "/images/frutaDaEpoca/pessego-paraguaio.jpg",
           "productId": 234122062025
@@ -576,6 +581,11 @@
           "name": "alho francês",
           "image": "/images/raizes/alho-frances.jpg",
           "productId": 703181124
+        },
+        {
+            "name": "alho francês baby",
+            "image": "",
+            "productId": 1518082025
         },
         {
           "name": "beterraba di gioggia",
