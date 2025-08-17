@@ -1,6 +1,14 @@
 {    
     "horticulas": [
         {
+            "name": "maracujá",
+            "price": 8,
+            "image": "/images/frutaDaEpoca/maracuja.jpg",
+            "productId": 1618082025,
+            "stock": true
+
+        },
+        {
             "name": "pêssego paraguaio",
             "price": 3,
             "image": "/images/frutaDaEpoca/pessego-paraguaio.jpg",

@@ -81,6 +81,14 @@
 
         },
         {
+            "name": "alho francês baby",
+            "price": 8,
+            "image": "",
+            "productId": 1518082025,
+            "stock": false
+
+        },
+        {
             "name": "beterraba di gioggia",
             "price": 6,
             "image": "/images/raizes/beterraba-di-gioggia.jpg",
