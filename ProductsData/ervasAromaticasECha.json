@@ -1,6 +1,30 @@
 {
     "ervasAromaticasECha": [
         {
+            "name": "Ramo Alfazema Grande",
+            "price": 5.2,
+            "image": "/images/ervasECha/ramo-alfazema-grande.jpg",
+            "productId": 150421082025,
+            "stock": true
+
+        },
+        {
+            "name": "Ramo Alfazema Pequeno",
+            "price": 1.95,
+            "image": "/images/ervasECha/ramo-alfazema-pequeno.jpg",
+            "productId": 150521082025,
+            "stock": true
+
+        },
+        {
+            "name": "Molho Paus Alfazema",
+            "price": 0.35,
+            "image": "/images/ervasECha/molho-paus-alfazema.jpg",
+            "productId": 150621082025,
+            "stock": true
+
+        },
+        {
             "name": "alecrim",
             "price": 30,
             "image": "/images/ervasECha/alecrim.jpg",

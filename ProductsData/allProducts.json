@@ -84,6 +84,21 @@
       ],
       "ervasECha": [
         {
+            "name": "Ramo Alfazema Grande",
+            "image": "/images/ervasECha/ramo-alfazema-grande.jpg",
+            "productId": 150421082025
+        },
+        {
+            "name": "Ramo Alfazema Pequeno",
+            "image": "/images/ervasECha/ramo-alfazema-pequeno.jpg",
+            "productId": 150521082025
+        },
+        {
+            "name": "Molho Paus Alfazema",
+            "image": "/images/ervasECha/molho-paus-alfazema.jpg",
+            "productId": 150621082025
+        },
+        {
           "name": "alecrim",
           "image": "/images/ervasECha/alecrim.jpg",
           "productId": 62

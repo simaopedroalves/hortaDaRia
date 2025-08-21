@@ -9,11 +9,13 @@ export function header() {
          <nav class="navbar" id="navBar">
 
             <div class="logo-img-div">
-                <img src="/images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
+                <a href="https://hortadaria.com/" target="_self">
+                    <img src="/images/logo.png" class="logo-img" alt="Logotipo - Horta d'Ria - Agricultura Natural - cor verde">
+                </a>
             </div> 
 
             <div class="logo-img-div">
-                <a href="/index.html">
+                <a href="https://hortadaria.com/" target="_self">
                      <h1>
                          Horta d'Ria
                      </h1>
