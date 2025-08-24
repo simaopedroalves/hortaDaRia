@@ -2,7 +2,7 @@
     "ervasAromaticasECha": [
         {
             "name": "Ramo Alfazema Grande",
-            "price": 5.2,
+            "price": 2.5,
             "image": "/images/ervasECha/ramo-alfazema-grande.jpg",
             "productId": 150421082025,
             "stock": true
@@ -10,7 +10,7 @@
         },
         {
             "name": "Ramo Alfazema Pequeno",
-            "price": 1.95,
+            "price": 1.5,
             "image": "/images/ervasECha/ramo-alfazema-pequeno.jpg",
             "productId": 150521082025,
             "stock": true

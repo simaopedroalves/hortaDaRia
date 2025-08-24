@@ -164,7 +164,6 @@
             "image": "/images/verduras/couve-rabano-verde.jpg",
             "productId": 25,
             "stock":false
-
         },
         {
             "name": "Couve curly kale",
@@ -172,7 +171,6 @@
             "image": "/images/verduras/couve-kurly-kale.jpg",
             "productId": 26,
             "stock": false
-
         },
         {
             "name": "couve repolho coração",
@@ -180,7 +178,13 @@
             "image": "/images/verduras/couve-repolho-coracao.jpg",
             "productId": 104,
             "stock": false
-
+        },
+        {
+            "name": "funcho",
+            "price": 8,
+            "image": "/images/verduras/funcho.jpg",
+            "productId": 114724082025,
+            "stock": true
         },
         {
             "name": "funcho baby",
@@ -188,7 +192,6 @@
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
             "stock": false
-
         }
     ]
 }

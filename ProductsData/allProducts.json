@@ -867,6 +867,11 @@
           "name": "funcho baby",
           "image": "/images/verduras/funcho-baby.jpg",
           "productId": 90420032025
+        },
+        {
+            "name": "funcho",
+            "image": "/images/verduras/funcho.jpg",
+            "productId": 114724082025
         }
       ]
     }
