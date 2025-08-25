@@ -5,7 +5,7 @@
             "price": 6,
             "image": "/images/ovos/ovo-galinha.jpg",
             "productId": 56,
-            "stock": false
+            "stock": true
         }
     ]
 }
