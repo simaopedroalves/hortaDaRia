@@ -84,19 +84,24 @@
       ],
       "ervasECha": [
         {
-            "name": "Ramo Alfazema Grande",
-            "image": "/images/ervasECha/ramo-alfazema-grande.jpg",
+            "name": "Ramo Lavanda Grande",
+            "image": "/images/ervasECha/ramo-lavanda-grande.jpg",
             "productId": 150421082025
         },
         {
-            "name": "Ramo Alfazema Pequeno",
-            "image": "/images/ervasECha/ramo-alfazema-pequeno.jpg",
+            "name": "Ramo Lavanda Pequeno",
+            "image": "/images/ervasECha/ramo-lavanda-pequeno.jpg",
             "productId": 150521082025
         },
         {
-            "name": "Molho Paus Alfazema",
-            "image": "/images/ervasECha/molho-paus-alfazema.jpg",
+            "name": "Molho Paus Lavanda",
+            "image": "/images/ervasECha/molho-paus-lavanda.jpg",
             "productId": 150621082025
+        },
+        {
+            "name": "Endro/Dill",
+            "image": "/images/ervasECha/endro-dill.jpg",
+            "productId": 174931082025
         },
         {
           "name": "alecrim",

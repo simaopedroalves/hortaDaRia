@@ -50,7 +50,7 @@
         },
         {
             "name": "Folha de Gelo",
-            "price": 50,
+            "price": 75,
             "image": "/images/verduras/folha-de-gelo.jpg",
             "productId": 98,
             "stock": true
@@ -58,7 +58,7 @@
         },
         {
             "name": "acelgas",
-            "price": 6,
+            "price": 8,
             "image": "/images/verduras/acelgas.jpg",
             "productId": 15,
             "stock": true
@@ -74,7 +74,7 @@
         },
         {
             "name": "acelgas baby",
-            "price": 10,
+            "price": 12,
             "image": "/images/verduras/acelgas-baby.jpg",
             "productId": 17,
             "stock": true

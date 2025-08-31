@@ -10,7 +10,7 @@
         },
         {
             "name": "flor cravo túnico",
-            "price": 0.10,
+            "price": 0.30,
             "image": "/images/floresComestiveis/cravo-tunico.jpg",
             "productId": 2130062025,
             "stock": true
@@ -34,7 +34,7 @@
         },
         {
             "name": "capuchinhas",
-            "price": 0.10,
+            "price": 0.30,
             "image": "/images/floresComestiveis/flor_capuchinha.jpg",
             "productId": 41,
             "stock": true
@@ -100,7 +100,7 @@
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-de-malva.jpg",
             "productId": 115,
-            "stock": true
+            "stock": false
         },
         {
             "name": "flor de crisântemos",
@@ -111,7 +111,7 @@
         },
         {
             "name": "mix de flores (unidade)",
-            "price": 2,
+            "price": 3,
             "image": "/images/floresComestiveis/mix.jpg",
             "productId": 42,
             "stock": true

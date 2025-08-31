@@ -46,14 +46,14 @@
         },
         {
             "name": "Alface Frisada Verde",
-            "price": 6,
+            "price": 4,
             "image": "/images/saladas/alface-frisada-verde.jpg",
             "productId": 12014042025,
             "stock": true
         },
         {
             "name": "Alface Frisada Vermelha",
-            "price": 6,
+            "price": 4,
             "image": "/images/saladas/alface-frisada-vermelha.jpg",
             "productId": 11914042025,
             "stock": true
@@ -83,7 +83,7 @@
         },
         {
             "name": "Salada Wok (para saltear)",
-            "price": 15,
+            "price": 20,
             "image": "/images/saladas/salada-wok.jpg",
             "productId": 10,
             "stock": true
@@ -126,7 +126,7 @@
             "price": 20,
             "image": "/images/verduras/wasabino.jpg",
             "productId": 233518032025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -134,7 +134,7 @@
             "price": 20,
             "image": "/images/verduras/mibuna.jpg",
             "productId": 233618032025,
-            "stock": true
+            "stock": false
 
         }    
     ]

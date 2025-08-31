@@ -13,7 +13,7 @@
             "price": 2,
             "image": "/images/raizes/batata-vermelha.jpg",
             "productId": 2928072025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -21,7 +21,7 @@
             "price": 2,
             "image": "/images/raizes/batata-branca.jpg",
             "productId": 3028072025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -85,7 +85,7 @@
             "price": 8,
             "image": "",
             "productId": 1518082025,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -106,7 +106,7 @@
         },
         {
             "name": "beterraba",
-            "price": 6,
+            "price": 4,
             "image": "",
             "productId": 111212032025,
             "stock": true

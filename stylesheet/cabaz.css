@@ -161,7 +161,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3vw;
-    margin: 3vh 1.5rem;
+    margin: 3vh;
 }
 
 .cabaz-menu .cabaz-4 {
@@ -212,7 +212,7 @@
     text-decoration: none;
 }
 
-.title-div {
+.title-div h1{
     font-weight: bold;
     /* margin: 5vh 0 0 0; */
     margin: 0;
@@ -225,6 +225,33 @@
 .cabazes-section-title {
     color: var(--orange);
     text-align: left;
+}
+
+
+@media screen and (min-width: 860px) {
+
+    .cabaz-menu {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 5vw;
+        align-items: center;
+        margin: 3vh 10vw;
+    }
+    .cabazContent h4 {
+        font-size: 1rem;
+        
+    }
+    /* .cabaz-menu .cabaz-4 {
+        grid-column: span 1;
+    }  */
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .image-with-weekly-baskets {
+            background-size: contain;
+        }
 }
 
 
@@ -320,6 +347,7 @@
         margin: 5vh auto;
         max-width: 70%;
         text-align: center;
+
     }
 
     .hortaDaRia {
@@ -338,33 +366,8 @@
         background-color: transparent;
         color: var(--black);
         border-radius: 0;
-        font-size: 1.5rem;
-    }
-
-    
-}
-
-@media screen and (min-width: 860px) {
-
-    .cabaz-menu {
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        gap: 5vw;
-        align-items: center;
-    }
-    .cabazContent h4 {
         font-size: 1.2rem;
-        
     }
-    /* .cabaz-menu .cabaz-4 {
-        grid-column: span 1;
-    }  */
+
     
-}
-
-@media screen and (min-width: 768px) {
-
-    .image-with-weekly-baskets {
-            background-size: contain;
-        }
 }

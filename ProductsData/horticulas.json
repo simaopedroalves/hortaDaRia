@@ -43,7 +43,7 @@
             "price": 6,
             "image": "/images/frutaDaEpoca/figos.jpg",
             "productId": 2357181124,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -56,7 +56,7 @@
         },
         {
             "name": "framboesas amarelas",
-            "price": 12,
+            "price": 15,
             "image": "/images/frutaDaEpoca/framboesas-amarelas.jpg",
             "productId": 2359181124,
             "stock": true
@@ -75,7 +75,7 @@
             "price": 25,
             "image": "/images/frutaDaEpoca/mix-frutos-silvestres.jpg",
             "productId": 12510072025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -91,7 +91,7 @@
             "price": 25,
             "image": "/images/frutaDaEpoca/morangos-silvestres.jpg",
             "productId": 230825052025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -145,7 +145,7 @@
             "price": 4,
             "image": "/images/horticulas/limoes.jpg",
             "productId": 53,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -174,7 +174,7 @@
         },
         {
             "name": "Courgete amarela",
-            "price": 3,
+            "price": 4,
             "image": "/images/horticulas/courgete.jpg",
             "productId": 130824032025,
             "stock": true
@@ -182,7 +182,7 @@
         },
         {
             "name": "Courgete verde",
-            "price": 3,
+            "price": 4,
             "image": "/images/horticulas/courgete-verde.jpg",
             "productId": 204231124,
             "stock": true
@@ -249,7 +249,7 @@
         },
         {
             "name": "Bagas de goji",
-            "price": 15,
+            "price": 25,
             "image": "/images/horticulas/bagas-de-goji.jpg",
             "productId": 120,
             "stock": true
