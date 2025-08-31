@@ -106,7 +106,7 @@
             "price": 10,
             "image": "/images/frutaDaEpoca/amoras.jpg",
             "productId": 3128072025,
-            "stock": true
+            "stock": false
         },
         {
             "name": "beringela",
