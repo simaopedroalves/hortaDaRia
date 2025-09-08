@@ -3,9 +3,9 @@
         {
             "name": "maracujá",
             "price": 8,
-            "image": "/images/frutaDaEpoca/maracuja.jpg",
+            "image": "/images/frutaDaEpoca/a.jpg",
             "productId": 1618082025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -177,7 +177,7 @@
             "price": 4,
             "image": "/images/horticulas/courgete.jpg",
             "productId": 130824032025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -185,7 +185,7 @@
             "price": 4,
             "image": "/images/horticulas/courgete-verde.jpg",
             "productId": 204231124,
-            "stock": true
+            "stock": false
 
         },
         {

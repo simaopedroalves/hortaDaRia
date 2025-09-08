@@ -106,7 +106,7 @@
         },
         {
             "name": "coentros",
-            "price": 15,
+            "price": 20,
             "image": "/images/ervasECha/coentros.jpg",
             "productId": 72,
             "stock": true
@@ -133,7 +133,7 @@
             "price": 20,
             "image": "/images/ervasECha/mangericao.jpg",
             "productId": 225925052025,
-            "stock": true
+            "stock": false
 
         }
     ]
