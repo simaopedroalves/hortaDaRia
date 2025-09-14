@@ -238,6 +238,11 @@
       ],
       "horticulas": [
         {
+            "name": "castanhas",
+            "image": "/images/horticulas/castanhas.jpg",
+            "productId": 3615092025
+        },
+        {
             "name": "maracujá",
             "image": "/images/frutaDaEpoca/maracuja.jpg",
             "productId": 1618082025
@@ -331,6 +336,11 @@
           "name": "limões",
           "image": "/images/horticulas/limoes.jpg",
           "productId": 53
+        },
+        {
+            "name": "tomate chucha",
+            "image": "/images/horticulas/tomate-chucha.jpg",
+            "productId": 3915092025
         },
         {
           "name": "tomate coração de boi",

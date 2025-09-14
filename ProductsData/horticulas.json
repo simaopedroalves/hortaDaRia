@@ -1,9 +1,17 @@
 {    
     "horticulas": [
         {
+            "name": "castanhas",
+            "price": 4,
+            "image": "/images/horticulas/castanhas.jpg",
+            "productId": 3615092025,
+            "stock": true
+
+        },
+        {
             "name": "maracujá",
             "price": 8,
-            "image": "/images/frutaDaEpoca/a.jpg",
+            "image": "/images/frutaDaEpoca/maracuja.jpg",
             "productId": 1618082025,
             "stock": false
 
@@ -121,7 +129,7 @@
             "price": 3,
             "image": "/images/horticulas/pepino.jpg",
             "productId": 103231124,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -147,6 +155,13 @@
             "productId": 53,
             "stock": false
 
+        },
+        {
+            "name": "tomate chucha",
+            "price": 3,
+            "image": "/images/horticulas/tomate-chucha.jpg",
+            "productId": 3915092025,
+            "stock": true
         },
         {
             "name": "tomate coração de boi",
