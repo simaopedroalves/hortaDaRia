@@ -244,6 +244,9 @@
     /* .cabaz-menu .cabaz-4 {
         grid-column: span 1;
     }  */
+    .title-div h1 {
+        color: var(--white);
+    }
     
 }
 
@@ -347,7 +350,6 @@
         margin: 5vh auto;
         max-width: 70%;
         text-align: center;
-
     }
 
     .hortaDaRia {
