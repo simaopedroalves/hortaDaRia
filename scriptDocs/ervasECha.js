@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="boxItem hidden" id="${product_id}" data-animation="animate__fadeInLeft">
                         <h3 id="itName">${ervaName}</h3>
                         <img src="${image}" alt="">
-                        <div class="kiloPrice">${ervaPrice}€</div>
+                        <div class="kiloPrice displayNone">${ervaPrice}€/Kg</div>
                         <input type="hidden" min="1" class="quantity" placeholder="quantidade" value="1">
                         <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-                        <div class="priceToPay"></div>
+                        <div class="priceToPay">${ervaPrice}€</div>
                         <button class="addToCart btn btn-success">Comprar</button>
                     </div>
                 `
