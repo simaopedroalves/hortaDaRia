@@ -14,7 +14,7 @@ body {
     margin-top: 0;
 }
 
-.all-products .title-div {
+.all-products .title-div{
     background-color: var(--green);
     color: var(--white);
     border: none;

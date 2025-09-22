@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         // function on script.js
         findStockOfItems (stock, product_id)
 
+        checkIfIsAUnitItem(product_id)
+
         let addCartBtn = document.querySelectorAll('.addToCart');
           
         function addItem() {
@@ -166,6 +168,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     updateNumbItemsOnCart()
 })
+
+function checkIfIsAUnitItem(product_id) {
+    let unitItems = [235821082025, 235721082025];
+    let item = document.getElementById(product_id);
+    let quantitySelect = item.querySelector('.quantity');
+    let priceToPay = item.querySelector('.kiloPrice');
+    let buttonAddToCart = item.querySelector('.addToCart');
+
+    if (unitItems.includes(product_id)) {
+        quantitySelect.style.display = 'none';
+        priceToPay.textContent = priceToPay.textContent.replace('€/Kg', '€');
+        buttonAddToCart.disabled = false;
+    }
+}
   
 // THE NUMBER OF ITEMS INSIDE CART IS UPDATED
 function updateNumbItemsOnCart() {

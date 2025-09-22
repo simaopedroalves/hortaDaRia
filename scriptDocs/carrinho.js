@@ -14,6 +14,7 @@ function createCart() {
         let name = el.itName;
         let image = el.itImageSrc;
         let price = el.itTotal;
+        let itPrice = el.itPrice;
         let quantity = el.itQuantity;
         let newDiv = document.createElement('div');
         newDiv.classList.add('box-cart');
@@ -53,9 +54,12 @@ function createCart() {
         newDiv.innerHTML = newItem; 
         shoppingCart.appendChild(newDiv);
 
+        checkIfIsAUnitItem(name, itPrice)
+
     })
     updateNumbItemsOnCart()
 }
+
 
 
 
@@ -187,6 +191,26 @@ function enableOrDisableButtonOnTop () {
 
         }
     })
+}
+
+function checkIfIsAUnitItem(name, itPrice) {
+    if (name === "1 Saco Organza Lavanda Inglesa" || name === "2 Sacos Organza Lavanda Inglesa") {
+        let quantitySpan = document.querySelectorAll('.quantity');
+        let price = document.querySelectorAll('.priceToPay');
+        
+            if (name === "1 Saco Organza Lavanda Inglesa") {
+                price[0].textContent = "3 €"
+            }
+            if (name === "2 Sacos Organza Lavanda Inglesa") {
+                price[1].textContent = "5 €"
+            }
+
+        quantitySpan.forEach(span => {
+            if (span.textContent === "qt") {
+                span.style.display = 'none';
+            }
+        });
+    }
 }
 
 enableOrDisableButtonOnTop()

@@ -56,10 +56,10 @@
         },
         {
             "name": "cucamelon",
-            "price": 12,
+            "price": 25,
             "image": "/images/frutaDaEpoca/cucamelon.jpg",
             "productId": 2358181124,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -67,7 +67,7 @@
             "price": 15,
             "image": "/images/frutaDaEpoca/framboesas-amarelas.jpg",
             "productId": 2359181124,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -150,10 +150,10 @@
         },
         {
             "name": "limões",
-            "price": 4,
+            "price": 3,
             "image": "/images/horticulas/limoes.jpg",
             "productId": 53,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -161,7 +161,7 @@
             "price": 3,
             "image": "/images/horticulas/tomate-chucha.jpg",
             "productId": 3915092025,
-            "stock": true
+            "stock": false
         },
         {
             "name": "tomate coração de boi",

@@ -5,7 +5,7 @@
             "price": 2.5,
             "image": "/images/ervasECha/ramo-lavanda-grande.jpg",
             "productId": 150421082025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -13,7 +13,7 @@
             "price": 1.5,
             "image": "/images/ervasECha/ramo-lavanda-pequeno.jpg",
             "productId": 150521082025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -21,6 +21,22 @@
             "price": 0.35,
             "image": "/images/ervasECha/molho-paus-lavanda.jpg",
             "productId": 150621082025,
+            "stock": false
+
+        },
+        {
+            "name": "1 Saco Organza Lavanda Inglesa",
+            "price": 3,
+            "image": "/images/ervasECha/saco-organza-lavanda.jpg",
+            "productId": 235821082025,
+            "stock": true
+
+        },
+        {
+            "name": "2 Sacos Organza Lavanda Inglesa",
+            "price": 5,
+            "image": "/images/ervasECha/sacos-organza-lavanda.jpg",
+            "productId": 235721082025,
             "stock": true
 
         },
@@ -30,7 +46,6 @@
             "image": "/images/ervasECha/endro-dill.jpg",
             "productId": 174931082025,
             "stock": true
-
         },
         {
             "name": "alecrim",
