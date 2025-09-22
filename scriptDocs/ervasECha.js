@@ -35,29 +35,51 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (image == '') {
                 image = "/images/logo.png";
             }
+
+            if (ervaName === "1 Saco Organza Lavanda Inglesa" || ervaName === "2 Sacos Organza Lavanda Inglesa") {
+                section.innerHTML += `
+                    <div class="boxItem hidden" id="${product_id}" data-animation="animate__fadeInLeft">
+                        <h3 id="itName">${ervaName}</h3>
+                        <img src="${image}" alt="">
+                        <div class="kiloPrice">${ervaPrice}€</div>
+                        <input type="hidden" min="1" class="quantity" placeholder="quantidade" value="1">
+                        <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+                        <div class="priceToPay"></div>
+                        <button class="addToCart btn btn-success">Comprar</button>
+                    </div>
+                `
+                let buttonAddToCart = document.querySelectorAll('.addToCart');
+                buttonAddToCart.forEach(btn => {
+                    btn.removeAttribute("disabled")
+                })
+            }
         
-        section.innerHTML += `
-            <div class="boxItem hidden" id="${product_id}" data-animation="animate__fadeInLeft">
-                <h3 id="itName">${ervaName}</h3>
-                <img src="${image}" alt="">
-                <div class="kiloPrice">${ervaPrice}€/Kg</div>
-                <select type="text" min="1" class="quantity" placeholder="quantidade">
-                    <option value="qt">Quantidade</option>
-                    <option value="15gr">15 gr</option>
-                    <option value="25gr">25 gr</option>
-                    <option value="50gr">50 gr</option>
-                    <option value="100gr">100 gr</option>
-                    <option value="250gr">250 gr</option>
-                </select>
-                <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-                <div class="priceToPay"></div>
-                <button class="addToCart btn btn-success" disabled>Comprar</button>
-            </div>
-        `
+        else {
+            section.innerHTML += `
+                <div class="boxItem hidden" id="${product_id}" data-animation="animate__fadeInLeft">
+                    <h3 id="itName">${ervaName}</h3>
+                    <img src="${image}" alt="">
+                    <div class="kiloPrice">${ervaPrice}€/Kg</div>
+                    <select type="text" min="1" class="quantity" placeholder="quantidade">
+                        <option value="qt">Quantidade</option>
+                        <option value="15gr">15 gr</option>
+                        <option value="25gr">25 gr</option>
+                        <option value="50gr">50 gr</option>
+                        <option value="100gr">100 gr</option>
+                        <option value="250gr">250 gr</option>
+                    </select>
+                    <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+                    <div class="priceToPay"></div>
+                    <button class="addToCart btn btn-success" disabled>Comprar</button>
+                </div>
+            `
+        }
         // function on script.js
         findStockOfItems (stock, product_id)
 
         // checkIfIsAUnitItem(product_id)
+
+       
 
         let addCartBtn = document.querySelectorAll('.addToCart');
           
