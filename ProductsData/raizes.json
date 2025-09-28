@@ -5,8 +5,7 @@
             "price": 6,
             "image": "/images/raizes/rabanete.jpg",
             "productId": 105,
-            "stock": false
-
+            "stock": true
         },
         {
             "name": "batata vermelha",

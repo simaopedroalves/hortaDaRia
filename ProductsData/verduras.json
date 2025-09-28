@@ -181,7 +181,7 @@
         },
         {
             "name": "funcho",
-            "price": 8,
+            "price": 6,
             "image": "/images/verduras/funcho.jpg",
             "productId": 114724082025,
             "stock": true

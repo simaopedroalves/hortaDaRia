@@ -32,6 +32,13 @@
             "stock": false
         },
         {
+            "name": "marmelos",
+            "price": 1.3,
+            "image": "/images/frutaDaEpoca/marmelos.jpg",
+            "productId": 829092025,
+            "stock": true
+        },
+        {
             "name": "ameixa amarela",
             "price": 3,
             "image": "/images/frutaDaEpoca/ameixa-amarela.jpg",

@@ -263,6 +263,11 @@
             "productId": 1121072025
         },
         {
+            "name": "marmelos",
+            "image": "/images/frutaDaEpoca/marmelos.jpg",
+            "productId": 829092025
+        },
+        {
             "name": "amoras",
             "image": "/images/frutaDaEpoca/amoras.jpg",
             "productId": 3128072025
