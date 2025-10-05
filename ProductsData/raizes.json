@@ -128,10 +128,10 @@
         },
         {
             "name": "Gengibre fresco",
-            "price": 25,
+            "price": 20,
             "image": "/images/raizes/gengibre-fresco.jpg",
             "productId": 110,
-            "stock": false
+            "stock": true
 
         },
         {

@@ -57,10 +57,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* max-height: 50vh; */
     max-height: max-content;
     min-height: 50vh;
-    /* max-width: 80lvw; */
     gap: 0.3rem;
     font-size: 1rem;
     font-weight: 700;
@@ -69,9 +67,6 @@
     border-radius: 0.5rem;
 }
 
-/* .animate__animated {
-    opacity: 1 !important;
-} */
 
 .boxItem h3 {
     margin: 0 auto;
