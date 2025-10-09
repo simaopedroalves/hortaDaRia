@@ -41,13 +41,11 @@ body {
 }
 
 header {
-    background: var(--green);
-    position: initial;
+    position: absolute;
     top: 0;
     left: 0;
     min-width: 100vw;
     max-width: 100vw;
-    /* min-height: 10lvh; */
     z-index: 99;
     padding: 0.5rem 0;
     display: grid;
@@ -314,8 +312,8 @@ header .menu-list a li:hover {
 .welcomeSection .title-div {
     min-width: 100vw;
     max-width: 100vw;
-    min-height: 90svh;
-    max-height: 90svh;
+    min-height: 100svh;
+    max-height: 100svh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -407,9 +405,8 @@ body::-webkit-scrollbar:vertical {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* min-height: 12svh; */
         min-height: fit-content;
-        background-color: var(--white);
+        /* background-color: var(--white); */
     }
 
     .fa-bars-staggered,
@@ -423,7 +420,7 @@ body::-webkit-scrollbar:vertical {
     /* SEARCH BAR  */
 
     .fa-magnifying-glass {
-        color: var(--green);
+        color: var(--white);
         transition: 500ms;
     }
 
@@ -440,7 +437,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     .cart-div .fa-basket-shopping {
-        color: var(--green);
+        color: var(--white);
     }
 
     .logo-img {
@@ -449,7 +446,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     .logo-img-div h1 {
-        color: var(--green);
+        color: var(--white);
         font-size: 2rem;
     }
 
@@ -471,7 +468,7 @@ body::-webkit-scrollbar:vertical {
     header .menu-list a li {
         background-color: transparent;
         list-style: none;
-        color: var(--green);
+        color: var(--white);
         text-align: left;
         padding: 0.3rem;
         font-weight: bold;
