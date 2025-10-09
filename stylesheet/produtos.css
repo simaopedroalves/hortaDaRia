@@ -35,7 +35,6 @@ body {
     align-items: center;
     margin: 0;
     border-radius: 1rem;
-    background-color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }

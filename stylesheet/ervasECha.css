@@ -58,12 +58,13 @@
     align-items: center;
     text-align: center;
     max-height: max-content;
-    min-height: 50vh;
+    /* min-height: 40vh; */
+    min-width: auto;
     gap: 0.3rem;
     font-size: 1rem;
     font-weight: 700;
     border: solid var(--green-one) 2px;
-    background-color: var(--green-hover-img);
+    background-color: var(--white-two);
     border-radius: 0.5rem;
 }
 
