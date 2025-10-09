@@ -171,9 +171,10 @@
 
 .cabazContent {
     font-size: 1rem;
-    border: solid var(--orange) 2px;
-    border-radius: 1rem 0;
-    background-color: var(--green-one);
+    /* border: solid var(--orange) 2px; */
+    box-shadow: 0 4px 8px 0 var(--green-hover-img), 0 6px 20px 0 var(--green-hover-img);
+    border-radius: 1rem;
+    /* background-color: var(--green-one); */
     display: grid;
     justify-content: center;
     align-items: center;
@@ -181,12 +182,13 @@
     min-width: 100%;
     gap: 3vh;
     padding: 10%;
+
 }
 
 .cabazContent h4 {
     font-weight: bold;
     background-color: transparent;
-    color: var(--white);
+    color: var(--green);
     padding: 0.3rem;
     min-width: max-content;
     text-transform: uppercase;
