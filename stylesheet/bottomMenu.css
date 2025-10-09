@@ -18,6 +18,10 @@
 
 }
 
+.bottom-menu .cart-div .fa-basket-shopping {
+    color: var(--white);
+}
+
 .bottom-menu div i {
     color: var(--white);
 }

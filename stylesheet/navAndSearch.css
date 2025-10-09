@@ -170,8 +170,7 @@ header {
 
 .cart-div .fa-basket-shopping,
 .fa-magnifying-glass,
-.fa-bars-staggered,
-.fa-x {
+.fa-bars-staggered {
     color: var(--green);
     font-size: 1rem;
     min-height: 100%;
