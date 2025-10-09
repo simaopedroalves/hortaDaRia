@@ -23,15 +23,16 @@
     gap: 3vw;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100vw;
-    padding: 10vh 4lvw;
+    padding: 3vh 1rem;
     justify-content: center;
     /* border: solid red 1px; */
     /* background-color: var(--black); */
-    position: static;
+    /*position: static;*/
+
 }
 
 .section-title {
-    grid-column: span 1;
+    grid-column: span 2;
     margin: 0 auto 1rem auto;
     font-size: 1rem;
     text-transform: uppercase;
@@ -72,11 +73,11 @@
     text-transform: uppercase;
     color: var(--black);
     grid-column: span 2;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
     /*min-height: 2.6rem;*/
-    max-width: 90%;
+    /*max-width: 90%;*/
 }
 
 .boxItem img {
