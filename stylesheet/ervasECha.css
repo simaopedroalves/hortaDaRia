@@ -54,7 +54,7 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1.5lvh;
+    padding: 0.5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
