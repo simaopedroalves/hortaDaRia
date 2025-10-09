@@ -185,13 +185,15 @@ header {
 /* =========================================== */
 .menu-list {
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     bottom: 0;
     min-width: 100lvw;
     min-height: 100lvh;
     opacity: 0;
     transition: 1200ms;
     z-index: -1;
+    padding: 3rem 0;
+    background-color: var(--green);
 }
 
 .show {
@@ -200,27 +202,30 @@ header {
     z-index: 100;
 }
 
-header .menu-list a li {
-    list-style: none;
-    background-color: var(--green);
-    color: var(--white);
-    min-width: 100%;
-    text-align: center;
-    padding: 1rem;
-    font-weight: 900;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    border-bottom: var(--orange) solid 2px;
-    font-size: 1.2rem;
-}
-
 .menu-list a {
     text-decoration: none;
     color: var(--white);
     border: 0;
     outline: 0;
+    font-weight: bold;
+    text-transform: uppercase;
 }
+
+header .menu-list a li {
+    list-style: none;
+    /* background-color: var(--green); */
+    /* color: var(--white); */
+    min-width: 100%;
+    text-align: right;
+    padding: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    /* border-bottom: var(--orange) solid 2px; */
+    font-size: 1.5rem;
+}
+
+
 
 header .menu-list a li:hover {
     color: var(--orange);
@@ -469,10 +474,11 @@ body::-webkit-scrollbar:vertical {
         color: var(--green);
         text-align: left;
         padding: 0.3rem;
-        font-weight: 900;
+        font-weight: bold;
         cursor: pointer;
         min-width: 0svw;
         border: none;
+        font-size: 1rem;
     }
 
     header .menu-list li {
