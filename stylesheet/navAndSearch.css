@@ -429,7 +429,7 @@ body::-webkit-scrollbar:vertical {
     /* SEARCH BAR  */
 
     .fa-magnifying-glass {
-        color: var(--white);
+        color: var(--green);
         transition: 500ms;
     }
 
@@ -446,7 +446,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     .cart-div .fa-basket-shopping {
-        color: var(--white);
+        color: var(--green);
     }
 
     .logo-img {
@@ -455,7 +455,7 @@ body::-webkit-scrollbar:vertical {
     }
 
     .logo-img-div h1 {
-        color: var(--white);
+        color: var(--green);
         font-size: 2rem;
     }
 
@@ -477,7 +477,7 @@ body::-webkit-scrollbar:vertical {
     header .menu-list a li {
         background-color: transparent;
         list-style: none;
-        color: var(--white);
+        color: var(--green);
         text-align: left;
         padding: 0.3rem;
         font-weight: bold;
