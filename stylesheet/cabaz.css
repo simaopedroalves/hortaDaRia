@@ -6,7 +6,8 @@
     margin: 7dvh 2vw;
     display: grid;
     max-width: 100%;
-    align-items: center;
+    align-items: self-start;
+    max-height: min-content;
 }
 
 .cabaz-box {
@@ -41,9 +42,9 @@
 
 .cabazPrice {
     text-align: center;
-    background-color: var(--background-color);
+    background-color: var(--green);
     width: fit-content;
-    color: var(--orange);
+    color: var(--white);
     font-size: 1rem;
     font-weight: bold;
     padding: 0.5rem;
@@ -258,9 +259,7 @@
 @media screen and (min-width: 1100px) {  
 
     .cabaz-um, .cabaz-dois, .cabaz-tres, .cabaz-extra {
-        margin: 15vh auto 5vh auto;
         grid-template-columns: repeat(2, 1fr);
-        min-height: 80vh;
     }
 
     .cabaz-box {
