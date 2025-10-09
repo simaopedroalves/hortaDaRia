@@ -94,7 +94,7 @@
 
 .boxItem .kiloPrice,
 .boxItem .priceToPay {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
     color: var(--black);
     margin: 0.5rem;
@@ -105,8 +105,8 @@
     width: 100%;
     margin: 0 auto; 
     border-radius: 0.1rem;
-    font-size: 0.9rem;
-    padding: 0.4rem;
+    font-size: 0.6rem;
+    padding: 0.2rem;
     font-weight: bold;
     border: solid var(--green) 1px;
     color: var(--black);
@@ -171,9 +171,9 @@
 .cogumelos,
 .carnes {
     grid-template-columns: repeat(2, 1fr);
-    margin: 15vh auto;
-    max-width: 90vw;
-    padding: 0 2rem;
+    margin: 5vh auto;
+    max-width: 100vw;
+    padding: 0 1rem;
 }
 
 .section-title {
