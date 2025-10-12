@@ -21,17 +21,18 @@
 .carnes{
     display: grid;
     gap: 3vw;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     max-width: 100vw;
-    padding: 10vh 4lvw;
+    padding: 3vh 1rem;
     justify-content: center;
     /* border: solid red 1px; */
     /* background-color: var(--black); */
-    position: static;
+    /*position: static;*/
+
 }
 
 .section-title {
-    grid-column: span 1;
+    grid-column: span 2;
     margin: 0 auto 1rem auto;
     font-size: 1rem;
     text-transform: uppercase;
@@ -53,16 +54,14 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
-    padding: 1.5lvh;
+    padding: 0.5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-height: max-content;
     /* min-height: 40vh; */
-    min-width: auto;
     gap: 0.3rem;
-    font-size: 1rem;
-    font-weight: 700;
+    /*font-size: 1rem;
+    font-weight: 700;*/
     border: solid var(--green-one) 2px;
     background-color: var(--white-two);
     border-radius: 0.5rem;
@@ -77,24 +76,25 @@
     font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    min-height: 2.6rem;
-    max-width: 90%;
+    /*min-height: 2.6rem;*/
+    /*max-width: 90%;*/
 }
 
 .boxItem img {
     grid-column: span 2;
     object-fit: cover;
-    min-height: 90%;
+    max-width: 100%;
+    /*min-height: 90%;
     max-height: 90%;
     max-width: 90%;
-    min-width: 90%;
+    min-width: 90%;*/
     margin: 0 auto;
     border-radius: 0.5rem;
 }
 
 .boxItem .kiloPrice,
 .boxItem .priceToPay {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
     color: var(--black);
     margin: 0.5rem;
@@ -105,8 +105,8 @@
     width: 100%;
     margin: 0 auto; 
     border-radius: 0.1rem;
-    font-size: 0.9rem;
-    padding: 0.4rem;
+    font-size: 0.8rem;
+    padding: 0.2rem;
     font-weight: bold;
     border: solid var(--green) 1px;
     color: var(--black);
@@ -171,9 +171,9 @@
 .cogumelos,
 .carnes {
     grid-template-columns: repeat(2, 1fr);
-    margin: 15vh auto;
-    max-width: 90vw;
-    padding: 0 2rem;
+    margin: 5vh auto;
+    max-width: 100vw;
+    padding: 0 1rem;
 }
 
 .section-title {
