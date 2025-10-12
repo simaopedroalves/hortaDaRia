@@ -57,7 +57,7 @@
         },
         {
             "name": "cebola verde",
-            "price": 8,
+            "price": 10,
             "image": "/images/raizes/cebola-verde.jpg",
             "productId": 106,
             "stock": true

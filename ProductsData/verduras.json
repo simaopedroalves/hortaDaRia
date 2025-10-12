@@ -90,7 +90,7 @@
         },
         {
             "name": "Espinafre manteiga",
-            "price": 20,
+            "price": 12.5,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
             "stock": true
@@ -177,7 +177,7 @@
             "price": 2.5,
             "image": "/images/verduras/couve-repolho-coracao.jpg",
             "productId": 104,
-            "stock": false
+            "stock": true
         },
         {
             "name": "funcho",

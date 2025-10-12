@@ -35,7 +35,7 @@
             "price": 4,
             "image": "/images/saladas/alface-romana.jpg",
             "productId": 10428042025,
-            "stock": true
+            "stock": false
         },
         {
             "name": "Alface Malhada",
