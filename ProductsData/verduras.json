@@ -177,7 +177,7 @@
             "price": 2.5,
             "image": "/images/verduras/couve-repolho-coracao.jpg",
             "productId": 104,
-            "stock": true
+            "stock": false
         },
         {
             "name": "funcho",
@@ -191,7 +191,7 @@
             "price": 12,
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
-            "stock": false
+            "stock": true
         }
     ]
 }
