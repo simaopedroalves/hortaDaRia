@@ -238,6 +238,22 @@
       ],
       "horticulas": [
         {
+            "name": "caviar limão",
+            "price": 39,
+            "image": "/images/horticulas/caviar-limao.jpg",
+            "productId": 10420102025,
+            "stock": true
+
+        },
+        {
+            "name": "nozes",
+            "price": 4.5,
+            "image": "/images/horticulas/nozes.jpg",
+            "productId": 10520102025,
+            "stock": true
+
+        },
+        {
             "name": "castanhas",
             "image": "/images/horticulas/castanhas.jpg",
             "productId": 3615092025
