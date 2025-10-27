@@ -1,6 +1,13 @@
 {    
     "horticulas": [
         {
+            "name": "kiwi",
+            "price": 1.95,
+            "image": "/images/frutaDaEpoca/kiwi.jpg",
+            "productId": 10028102025,
+            "stock": true
+        },
+        {
             "name": "caviar limão",
             "price": 39,
             "image": "/images/horticulas/caviar-limao.jpg",

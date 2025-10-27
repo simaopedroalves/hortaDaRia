@@ -1,6 +1,14 @@
 {
     "floresComestiveis": [
         {
+            "name": "Cosmos",
+            "price": 0.30,
+            "image": "/images/floresComestiveis/flor_cosmos.jpg",
+            "productId": 5527102025,
+            "stock": true
+
+        },
+        {
             "name": "amor perfeito",
             "price": 0.10,
             "image": "/images/floresComestiveis/amores-perfeitos.jpg",

@@ -171,6 +171,11 @@
       ],
       "floresComestiveis": [
         {
+            "name": "Cosmos",
+            "image": "/images/floresComestiveis/flor_cosmos.jpg",
+            "productId": 5527102025
+        },
+        {
           "name": "amor perfeito",
           "image": "/images/floresComestiveis/amores-perfeitos.jpg",
           "productId": 39
@@ -238,8 +243,12 @@
       ],
       "horticulas": [
         {
+            "name": "kiwi",
+            "image": "/images/frutaDaEpoca/kiwi.jpg",
+            "productId": 10028102025
+        },
+        {
             "name": "caviar limão",
-            "price": 39,
             "image": "/images/horticulas/caviar-limao.jpg",
             "productId": 10420102025,
             "stock": true
@@ -247,10 +256,8 @@
         },
         {
             "name": "nozes",
-            "price": 4.5,
             "image": "/images/horticulas/nozes.jpg",
-            "productId": 10520102025,
-            "stock": true
+            "productId": 10520102025
 
         },
         {
@@ -647,6 +654,11 @@
           "name": "beterraba amarela",
           "image": "",
           "productId": 111112032025
+        },
+        {
+            "name": "beterraba laranja",
+            "image": "/images/raizes/beterraba-laranja.jpg",
+            "productId": 5827102025
         },
         {
           "name": "beterraba",
