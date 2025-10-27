@@ -16,10 +16,10 @@
         },
         {
             "name": "castanhas",
-            "price": 4,
+            "price": 3.8,
             "image": "/images/horticulas/castanhas.jpg",
             "productId": 3615092025,
-            "stock": false
+            "stock": true
         },
         {
             "name": "maracujá",
@@ -49,7 +49,7 @@
             "price": 1.3,
             "image": "/images/frutaDaEpoca/marmelos.jpg",
             "productId": 829092025,
-            "stock": true
+            "stock": false
         },
         {
             "name": "ameixa amarela",
@@ -287,7 +287,7 @@
             "price": 25,
             "image": "/images/horticulas/bagas-de-goji.jpg",
             "productId": 120,
-            "stock": true
+            "stock": false
 
         },
         {

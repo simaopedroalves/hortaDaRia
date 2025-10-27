@@ -37,8 +37,7 @@
             "price": 10,
             "image": "/images/verduras/beldroegas.jpg",
             "productId": 160011052025,
-            "stock": true
-
+            "stock": false
         },
         {
             "name": "bróculo",
@@ -82,10 +81,10 @@
         },
         {
             "name": "couve toscana",
-            "price": 8,
+            "price": 10,
             "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -124,7 +123,7 @@
             "price": 6,
             "image": "/images/verduras/couve-pack-choi.jpg",
             "productId": 22,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -140,7 +139,7 @@
             "price": 8,
             "image": "/images/verduras/tatsoi-vermelha.jpg",
             "productId": 12024032025,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -167,10 +166,10 @@
         },
         {
             "name": "Couve curly kale",
-            "price": 8,
+            "price": 10,
             "image": "/images/verduras/couve-kurly-kale.jpg",
             "productId": 26,
-            "stock": false
+            "stock": true
         },
         {
             "name": "couve repolho coração",
