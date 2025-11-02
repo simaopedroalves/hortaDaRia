@@ -33,10 +33,10 @@
             "name": "Cabaz Premium",
             "price": 25,
             "content": [
-                        ["Acelgas", "Mix Cogumelos", "Salada Natura", "Microverdes Mix", "Rabanetes", "Chuchu"],
-                        ["Espinafres", "Pimentos", "Beterraba", "Alho Francês", "Aromática"],
+                        ["Acelgas", "Mix Cogumelos", "Salada Natura", "Microverdes Mix", "Chuchu"],
+                        ["Espinafres", "Pimentos", "Beterraba", "Cebola Verde", "Aromática"],
                         ["Rúcula", "Funcho", "Beringela", "Gengibre Fresco", "Pack-Choi ou Tatsoi"],
-                        ["Castanhas", "Tomates", "Wok Mix", "Kales Mix", "Flores Comestíveis Mix" ]
+                        ["Kiwis", "Castanhas", "Salada Asiática", "Kales Mix", "Batata Yacon" ]
                         ],
             "open": "/html/cabaz-extra.html",
             "image": "",

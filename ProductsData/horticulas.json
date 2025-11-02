@@ -86,7 +86,7 @@
             "price": 25,
             "image": "/images/frutaDaEpoca/cucamelon.jpg",
             "productId": 2358181124,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -203,7 +203,7 @@
             "price": 8,
             "image": "/images/horticulas/tomate-cherry-vermelho.jpg",
             "productId": 10707072025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -211,7 +211,7 @@
             "price": 8,
             "image": "/images/horticulas/tomate-cherry-preto.jpg",
             "productId": 10807072025,
-            "stock": true
+            "stock": false
 
         },
         {

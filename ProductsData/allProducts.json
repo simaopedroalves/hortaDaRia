@@ -606,6 +606,11 @@
           "productId": 111
         },
         {
+            "name": "batata yacon",
+            "image": "/images/raizes/batata-yacon.jpg",
+            "productId": 234802112025
+        },
+        {
           "name": "batata doce polpa laranja claro",
           "image": "/images/raizes/batata-doce-polpa-laranja-claro.jpg",
           "productId": 112
