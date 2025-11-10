@@ -34,9 +34,9 @@
             "price": 25,
             "content": [
                         ["Acelgas", "Mix Cogumelos", "Salada Natura", "Microverdes Mix", "Chuchu"],
-                        ["Espinafres", "Pimentos", "Beterraba", "Cebola Verde", "Aromática"],
-                        ["Rúcula", "Funcho", "Beringela", "Gengibre Fresco", "Pack-Choi ou Tatsoi"],
-                        ["Kiwis", "Castanhas", "Salada Asiática", "Kales Mix", "Batata Yacon" ]
+                        ["Espinafres", "Pimentos", "Beterraba", "Rúcula", "Aromática"],
+                        ["Funcho", "Beringela", "Cebola Verde", "Gengibre Fresco", "Pack-Choi ou Tatsoi"],
+                        ["Kiwis", "Feijão Rajado", "Salada Asiática", "Kales Mix", "Batata Yacon" ]
                         ],
             "open": "/html/cabaz-extra.html",
             "image": "",

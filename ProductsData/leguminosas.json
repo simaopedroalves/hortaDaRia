@@ -28,10 +28,10 @@
         },
         {
             "name": "feijão verde rajado",
-            "price": 6,
+            "price": 8,
             "image": "/images/leguminosas/feijao-verde-rajado.jpg",
             "productId": 240231124,
-            "stock": false
+            "stock": true
 
         }
     ]

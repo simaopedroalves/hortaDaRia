@@ -19,14 +19,14 @@
             "price": 4.5,
             "image": "/images/horticulas/nozes.jpg",
             "productId": 10520102025,
-            "stock": true
+            "stock": false
         },
         {
             "name": "castanhas",
             "price": 3.8,
             "image": "/images/horticulas/castanhas.jpg",
             "productId": 3615092025,
-            "stock": true
+            "stock": false
         },
         {
             "name": "maracujá",
@@ -148,7 +148,7 @@
             "price": 4,
             "image": "/images/frutaDaEpoca/beringela.jpg",
             "productId": 102181124,
-            "stock": true
+            "stock": false
 
         },
         {
