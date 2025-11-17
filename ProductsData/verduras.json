@@ -123,7 +123,7 @@
             "price": 6,
             "image": "/images/verduras/couve-pack-choi.jpg",
             "productId": 22,
-            "stock": true
+            "stock": false
 
         },
         {
