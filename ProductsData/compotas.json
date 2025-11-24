@@ -32,7 +32,7 @@
             "name": "Compota Pêssego Paraguaio",
             "image": "/images/compotas/compota-pessego-paraguaio-pequena.jpg",
             "productId": 1530062025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -145,6 +145,13 @@
             "name": "Geleia Laranja",
             "image": "",
             "productId": 110212032025,
+            "stock": false
+
+        },
+        {
+            "name": "Geleia Marmelos",
+            "image": "",
+            "productId": 1223112025,
             "stock": true
 
         },

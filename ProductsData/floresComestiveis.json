@@ -61,7 +61,7 @@
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-galega.jpg",
             "productId": 44,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -69,7 +69,7 @@
             "price": 0.50,
             "image": "/images/floresComestiveis/flor-courgete.jpg",
             "productId": 45,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -101,7 +101,7 @@
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-coentros.jpg",
             "productId": 114,
-            "stock": true
+            "stock": false
         },
         {
             "name": "flor de malva",

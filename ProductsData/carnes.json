@@ -7,6 +7,14 @@
             "productId": 24231122024,
             "stock": true
 
+        },
+        {
+            "name": "Caldo de carnes e de ossos",
+            "price": 12,
+            "image": "/images/carnes/caldo-carnes-ossos.jpg",
+            "productId": 235723112025,
+            "stock": true
+
         }
     ]
 }

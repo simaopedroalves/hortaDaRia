@@ -32,6 +32,14 @@
 
         },
         {
+            "name": "batata doce roxa",
+            "price": 3,
+            "image": "/images/raizes/batata-doce-roxa.jpg",
+            "productId": 123112025,
+            "stock": true
+
+        },
+        {
             "name": "batata doce polpa laranja",
             "price": 2.5,
             "image": "/images/raizes/batata-doce-polpa-laranja.jpg",

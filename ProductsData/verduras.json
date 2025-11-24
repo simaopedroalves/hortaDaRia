@@ -139,7 +139,7 @@
             "price": 8,
             "image": "/images/verduras/tatsoi-vermelha.jpg",
             "productId": 12024032025,
-            "stock": true
+            "stock": false
 
         },
         {

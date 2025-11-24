@@ -6,6 +6,11 @@
           "name": "Carne Bovina desidratada (beef Jerky)",
           "image": "/images/carnes/carne-desidratada.jpg",
           "productId": 24231122024
+        },
+        {
+            "name": "Caldo de carnes e de ossos",
+            "image": "/images/carnes/caldo-carnes-ossos.jpg",
+            "productId": 235723112025
         }
       ],
       "cogumelos": [
@@ -609,6 +614,11 @@
             "name": "batata yacon",
             "image": "/images/raizes/batata-yacon.jpg",
             "productId": 234802112025
+        },
+        {
+            "name": "batata doce roxa",
+            "image": "/images/raizes/batata-doce-roxa.jpg",
+            "productId": 123112025
         },
         {
           "name": "batata doce polpa laranja claro",

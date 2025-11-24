@@ -19,7 +19,7 @@
             "price": 4.5,
             "image": "/images/horticulas/nozes.jpg",
             "productId": 10520102025,
-            "stock": false
+            "stock": true
         },
         {
             "name": "castanhas",
@@ -299,7 +299,7 @@
         },
         {
             "name": "chuchu",
-            "price": 2.5,
+            "price": 3,
             "image": "/images/horticulas/chuchu.jpg",
             "productId": 123,
             "stock": true
@@ -307,18 +307,18 @@
         },
         {
             "name": "tamarilho",
-            "price": 9,
+            "price": 8,
             "image": "/images/horticulas/tamarilho.jpg",
             "productId": 124,
-            "stock": false
+            "stock": true
 
         },
         {
             "name": "laranja",
-            "price": 2,
+            "price": 1.5,
             "image": "/images/frutaDaEpoca/laranja.jpg",
             "productId": 130924032025,
-            "stock": false
+            "stock": true
 
         }
         
