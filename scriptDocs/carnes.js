@@ -30,26 +30,46 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (image == '') {
             image = "/images/logo.png";
         }
-        
-        secCarnes.innerHTML += `
+
+       if (carnesName === 'Caldo de carnes e de ossos - 250ml') {
+            secCarnes.innerHTML += `
             <div class="boxItem" id="${product_id}">
                 <h3 id="itName">${carnesName}</h3>
                 <img src="${image}" alt="">
-                <div class="kiloPrice">${carnesPrice}€/Kg</div>
+                <div class="kiloPrice">${carnesPrice}€/Un</div>
                 <select type="text" min="1" class="quantity" placeholder="quantidade">
                     <option value="qt">Quantidade</option>
-                    <option value="50gr">50 gr.</option>
-                    <option value="100gr">100 gr.</option>
-                    <option value="150gr">150 gr.</option>
-                    <option value="200gr">200 gr.</option>
-                    <option value="250gr">250 gr.</option>
+                    <option value="1 frasco">1 Frasco</option>
+                    <option value="2 frascos">2 Frascos</option>
+                    <option value="3 frascos">3 Frascos</option>
                 </select>
                 <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
                 <div class="priceToPay"></div>
                 <button class="addToCart btn btn-success" disabled>Comprar</button>
             </div>
         `
-
+       }
+        
+        else {
+            secCarnes.innerHTML += `
+                <div class="boxItem" id="${product_id}">
+                    <h3 id="itName">${carnesName}</h3>
+                    <img src="${image}" alt="">
+                    <div class="kiloPrice">${carnesPrice}€/Kg</div>
+                    <select type="text" min="1" class="quantity" placeholder="quantidade">
+                        <option value="qt">Quantidade</option>
+                        <option value="50gr">50 gr.</option>
+                        <option value="100gr">100 gr.</option>
+                        <option value="150gr">150 gr.</option>
+                        <option value="200gr">200 gr.</option>
+                        <option value="250gr">250 gr.</option>
+                    </select>
+                    <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
+                    <div class="priceToPay"></div>
+                    <button class="addToCart btn btn-success" disabled>Comprar</button>
+                </div>
+            `
+        }
         // function on script.js
         findStockOfItems (stock, product_id)
 
@@ -59,6 +79,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         function addItem() {
 
             addCartBtn.forEach(btn => {
+               
                 btn.addEventListener('click', (event) => {
                     btn = event.target;
                     let name = btn.parentElement.querySelector('#itName').textContent;
@@ -136,6 +157,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                         finalItemPrice[i].textContent = ''
                         addCartBtn.setAttribute("disabled", "")
                     }
+
+                    if (selectedOptionValue[i].value.includes('frasco' || 'frascos')) {
+                            priceToPay = kg * qt
+                            priceToPay = priceToPay.toFixed(2)
+                            finalItemPrice[i].textContent = priceToPay + ' €'
+                            addCartBtn.removeAttribute("disabled")
+                    }
+
                     else {
                     priceToPay = kg * (qt/1000)
                     priceToPay = priceToPay.toFixed(2)

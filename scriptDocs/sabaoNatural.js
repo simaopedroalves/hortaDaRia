@@ -49,16 +49,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     `
     const sabaoNaturalMenu = sabaoNatural.querySelector('#productOptions');
     const sabaoQuantity = sabaoNatural.querySelector('#quantityBtn');
-    const addCompotaGrandeToCartBtn = sabaoNatural.querySelector('.addToCart');
+    const addSabaoToCartBtn = sabaoNatural.querySelector('.addToCart');
 
-    function checkIfCompotaGrandeIsSelected() {
+    function checkIfSabaoIsSelected() {
 
         let finalPriceToPay = sabaoNatural.querySelector('.priceToPay');
         let imageDiv = sabaoNatural.querySelector('#image');
 
         if (sabaoNaturalMenu.value === 'select') {
             sabaoQuantity.disabled = true;
-            addCompotaGrandeToCartBtn.disabled = true;
+            addSabaoToCartBtn.disabled = true;
             sabaoQuantity.value = 'Quantidade';
             finalPriceToPay.style.visibility = 'hidden';
             imageDiv.src = '/images/logo.png';
@@ -68,9 +68,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }          
     }   
 
-    sabaoNaturalMenu.addEventListener('change', () => {checkIfCompotaGrandeIsSelected()})
+    sabaoNaturalMenu.addEventListener('change', () => {checkIfSabaoIsSelected()})
     
-    checkIfCompotaGrandeIsSelected()
+    checkIfSabaoIsSelected()
 
     for (let i = 0; i < allSabaoNatural.length; i++) {
             
