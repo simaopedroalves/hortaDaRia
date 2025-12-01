@@ -146,11 +146,22 @@
 .image-with-weekly-baskets {
     max-width: 95vw;
     min-height: 100lvh;
-    background-image: url("/images/fotosCabazes/cabazes-semana.jpg");
+    background-image: linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,0.9)), url("/images/fotosCabazes/cabazes-semana.jpg") ;
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
     margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* // Cabazes indisponiveis temporariamente */
+.cabazes-indisponiveis-temporariamente {
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .cabazes {

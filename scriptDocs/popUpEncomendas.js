@@ -13,8 +13,8 @@ export function setPopUpEncomendas(customMessage = null) {
     let today = new Date()
     today = today.toString().split(' ');
     today = today[0];
+    today = 'Sun'
 
-    // today = 'Sun'
 
     if (customMessage) {  
         ({ paragraphOne, paragraphTwo } = customMessage);  
@@ -43,9 +43,18 @@ export function setPopUpEncomendas(customMessage = null) {
         paragraphTwo = 'Vem visitar-nos ao Mercado Municipal de Famalicão até às 12:30h!'
     }
 
+    // else {
+    //     paragraphOne = 'Encomendas encerradas! Dá uma vista de olhos aos nossos produtos.'
+    //     paragraphTwo = 'Amanhã teremos novos cabazes!'
+    // }
+
+
+    // Cabazes indisponiveis temporariamente - apagar "today = 'Sun'" acima para voltar ao normal
+
+    
     else {
-        paragraphOne = 'Encomendas encerradas! Dá uma vista de olhos aos nossos produtos.'
-        paragraphTwo = 'Amanhã teremos novos cabazes!'
+        paragraphOne = 'Não haverá cabazes disponíveis até fevereiro/março.'
+        paragraphTwo = 'Entretanto, pode encontrar os nossos produtos disponíveis, no Mercado Municipal, todos os sábados de manhã.'
     }
 
     const popUpMessage = document.createElement('div');
