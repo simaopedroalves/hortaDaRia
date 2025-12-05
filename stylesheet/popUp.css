@@ -103,3 +103,52 @@
     background-color: var(--black);
     transition: 0.5s;
 }
+
+
+/* ==== holiday pop up ====  */
+
+.holiday-pop-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url('/images/pop-up-natal-hortaDaRia.webp');
+    position: fixed;
+    top: 15vh;
+    left: 12.5vw;
+    border-radius: 1rem;
+    min-height: 75vh;
+    min-width: 75vw;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+}
+
+.holiday-pop-up .fa-rectangle-xmark {
+    position: absolute;
+    top: 1rem;
+    right: -1rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {  
+    .holiday-pop-up {
+        top: 10vh;
+        left: 30vw;
+        min-height: 80vh;
+        min-width: 40vw;
+    }
+
+}
+
+@media  screen and (min-width: 1024px) {
+    .holiday-pop-up {
+        top: 5vh;
+        left: 33vw;
+        min-height: 90vh;
+        min-width: 30vw;
+    }
+    
+}
