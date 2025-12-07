@@ -324,7 +324,10 @@ let disabledButtonSubmit = () => {
     dateNow = dateNow[0];
     // Impossivel fazer encomendas temporariamente
     dateNow = 'Thu'; 
-    
+
+
+
+
     if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed') {
         submitBtn.style.display = 'flex';
     }

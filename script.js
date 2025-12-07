@@ -1,11 +1,22 @@
 // HEADER
-
+// GOOGLE TAG INSIDE HEADER FUNCTION
 
 export function header() {
     const header = document.querySelector('header');
 
     if (header) {
         header.innerHTML = `
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C2520N6HZE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C2520N6HZE');
+</script>
+
          <nav class="navbar" id="navBar">
 
             <div class="logo-img-div">
@@ -55,6 +66,54 @@ export function header() {
 }
 
 header();
+
+
+export function bottomIconsMenu () {
+    if (document.getElementById('bottomIconsMenu')) {
+        const bottomIconsMenu = document.getElementById('bottomIconsMenu');
+        bottomIconsMenu.innerHTML = `
+        <section class="bottom-menu" id="bottomIconsMenu">
+            <div class="home">
+                <a href="/index.html">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+        
+            <div class="cart-div">
+                <a href="/html/carrinho.html">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+                <span class="article-number"></span>
+            </div>
+        
+        
+            <div class="info">
+                <a href="/html/informations.html">
+                    <i class="fa-solid fa-info"></i>
+                </a>
+            </div>
+            <div class="criar-cabaz">
+                <a href="/html/produtos.html">
+                    <i class="fa-solid fa-seedling"></i>
+                </a>
+            </div>
+            <div class="">
+                <a href="/html/basketHistoric.html">
+                    <i class="fa-solid fa-inbox"></i>
+                </a>
+            </div>
+<!--
+
+            <div class="cart-div">
+                <a href="/html/ordersHistoric.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </a>
+            </div>
+-->
+        </section>`
+}}
+
+bottomIconsMenu();
 
 const openMenu = document.querySelector('.openMenu');
 const menu = document.querySelector('.menu-list');
@@ -275,3 +334,5 @@ export function updateNumbItemsOnCart() {
 updateNumbItemsOnCart()
 
 
+
+    

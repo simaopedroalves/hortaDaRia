@@ -1,0 +1,39 @@
+#ordersHistoricSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.historic-item {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.historic-item img.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.order-date {
+    color: var(--white);
+    filter: brightness(0.8);
+    padding: 4rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-size: cover;
+}
+
+.order-date h4 {
+    color: var(--white);
+    z-index: 2;
+    font-size: 1.5rem;
+    background-color: var(--green);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
