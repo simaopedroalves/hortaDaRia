@@ -324,7 +324,6 @@ let disabledButtonSubmit = () => {
     dateNow = dateNow[0];
     // Impossivel fazer encomendas temporariamente
     dateNow = 'Thu'; 
-    // dateNow = 'Mon'; 
 
 
 
