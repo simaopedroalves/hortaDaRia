@@ -323,8 +323,8 @@ let disabledButtonSubmit = () => {
     dateNow = dateNow.toString().split(' ');
     dateNow = dateNow[0];
     // Impossivel fazer encomendas temporariamente
-    // dateNow = 'Thu'; 
-    dateNow = 'Mon'; 
+    dateNow = 'Thu'; 
+    // dateNow = 'Mon'; 
 
 
 
