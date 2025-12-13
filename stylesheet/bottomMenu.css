@@ -26,7 +26,7 @@
     color: var(--white);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 769px) {
     .bottom-menu {
         display: none;
     }

@@ -1,119 +1,90 @@
-console.log('hi');
-// localStorage.clear();
-
 // ==== CHECK HISTORIC =====
 
-let sendOrderButton = document.querySelector('.send-user-data-btn');
-let recentOrder = JSON.parse(localStorage.getItem('cart')) || [];
-let historic = JSON.parse(localStorage.getItem('historic')) || [];
+const basketHistoric = JSON.parse(localStorage.getItem('basketHistoric')) || [];
+const saveButton =  document.querySelector('.send-user-data-btn');
+const cartData = JSON.parse(localStorage.getItem('cart')) || [];
+const ordersHistoricSection = document.querySelector('.orders-historic-section');
 
-console.log(sendOrderButton);
-
-
-// sendOrderButton.addEventListener('click', () => {
-
-
-//     if (recentOrder.length > 0) {
-//         historic.push(...recentOrder);
-//         localStorage.setItem('historic', JSON.stringify(historic));
-//     } 
-//     console.log('clicked');
-    
-// });
-
-// Add timestamp to each order when pushing to historic
-sendOrderButton.addEventListener('click', () => {
-    if (recentOrder.length > 0) {
-        const today = new Date();
-        const day = today.getDate();
-        const month = today.getMonth() + 1;
-        
-        recentOrder.forEach(item => {
-            item.orderDay = day;
-            item.orderMonth = month;
-        });
-        
-        historic.push(...recentOrder);
-        localStorage.setItem('historic', JSON.stringify(historic));
-    } 
-    console.log('clicked');
+saveButton.addEventListener('click', () => {
+    basketHistoric.push({   items: cartData, 
+                            date: new Date().toLocaleDateString() 
+                        });
+    localStorage.setItem('basketHistoric', JSON.stringify(basketHistoric));
+    cartData = [];
+    localStorage.setItem('cart', JSON.stringify(cartData));
+    location.reload();
 });
 
+basketHistoric.forEach((order) => {
+  // =====================
 
-const ordersHistoricSection = document.getElementById('ordersHistoricSection');
+  const orderDiv = document.createElement("div"); // Create a div for each order
+  orderDiv.classList.add("order-date");
+  orderDiv.innerHTML = `
+        <h3>Encomenda realizada em: ${order.date}</h3>
+        <button class="order-again-btn">Encomendar Novamente</button>`;
 
-let historicData = JSON.parse(localStorage.getItem('historic')) || [];
+  const popUpDiv = document.createElement("div"); // Create a pop-up div for order details
+  popUpDiv.classList.add("pop-up-order-details");
+  popUpDiv.innerHTML = `<h4>Encomenda de ${order.date}</h4>`;
 
+  orderDiv.addEventListener("click", () => {
+    popUpDiv.classList.toggle("show-order-details");
+    document.querySelectorAll('.pop-up-order-details').forEach((popup) => {
+        if (popup !== popUpDiv) {
+            popup.classList.remove('show-order-details');
+        }
+    });
+  });
 
-if (historicData.length > 0) {
-    historicData.forEach(item => {
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('historic-item');
-        let newItem = `
-        <section class="order-date" style="background-image: url('${item.itImageSrc}');">
-            <h4>Encomenda de: ${item.orderDay}/${item.orderMonth}</h4>
-            <button class="view-order-details-btn">Ver detalhes</button>
-            <button class="order-again-btn">Encomendar novamente</button>
-            <button class="delete-order-btn">Eliminar encomenda</button>
-        </section>
+  // ============================
+
+  order.items.forEach((item) => {
+    const itemDiv = document.createElement("div");
+    itemDiv.classList.add("order-item");
+    itemDiv.classList.add("pop-up-order-details");
+
+    itemDiv.innerHTML = `
+            <span class="item-quantity">${item.itQuantity} de: ${item.itName}</span>
         `;
-            
-        newDiv.innerHTML = newItem;
-        ordersHistoricSection.appendChild(newDiv);
-    });
-} else {
-    let noOrdersMessage = document.createElement('p');
-    noOrdersMessage.textContent = "Não há encomendas no histórico.";
-    ordersHistoricSection.appendChild(noOrdersMessage);
-}   
+    popUpDiv.appendChild(itemDiv);
+    orderDiv.style.backgroundImage = `url(${item.itImageSrc})`;
+  });
 
-let viewDetailsButtons = document.querySelectorAll('.view-order-details-btn');
-
-viewDetailsButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        const orderItems = historicData[index];
-        console.log('Order details:', orderItems);
-        const filteredOrder = historicData.filter(order => 
-            order.orderDay === orderItems.orderDay && 
-            order.orderMonth === orderItems.orderMonth
-        );
-        console.log('Filtered order details:', filteredOrder);
-    });
+  orderDiv.appendChild(popUpDiv);
+  ordersHistoricSection.appendChild(orderDiv);
 });
 
-let orderAgainButtons = document.querySelectorAll('.order-again-btn');
+function showAllert (name) {
+            let alert = document.querySelector('.alert');
+            alert.classList.add('show-alert');
+
+            alert.innerHTML = `
+                <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
+                <button class="see-cart">
+                    <a href="/html/carrinho.html">
+                        Ver Cesto
+                    </a> 
+                </button>
+            `
+
+            setTimeout(() => {
+                alert.classList.remove('show-alert')
+            }, 2000);
+        }
+
+const orderAgainButtons = document.querySelectorAll('.order-again-btn');
 
 orderAgainButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        const orderItems = historicData[index];
-        const filteredOrder = historicData.filter(order => 
-            order.orderDay === orderItems.orderDay && 
-            order.orderMonth === orderItems.orderMonth
-        );
-        
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart.push(...filteredOrder);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        
-        console.log('Order added to cart:', filteredOrder);
+        const orderItems = basketHistoric[index].items;     
+        let currentCart = JSON.parse(localStorage.getItem('cart')) || [];
+        currentCart = currentCart.concat(orderItems); 
+        localStorage.setItem('cart', JSON.stringify(currentCart));
+        showAllert('Encomenda');
+        setTimeout(() => {
+              location.reload();
+            }, 2000);
     });
-});
-let deleteOrderButtons = document.querySelectorAll('.delete-order-btn');
-
-deleteOrderButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        const orderItems = historicData[index];
-        historic = historic.filter(order => 
-            !(order.orderDay === orderItems.orderDay && 
-              order.orderMonth === orderItems.orderMonth)
-        );
-        localStorage.setItem('historic', JSON.stringify(historic));
-        location.reload();
-    });
-});
-
-// para apresentar cada encomenda
-// let newItem = `
-//             <img src="${item.itImageSrc}" alt="${item.itName}" class="product-image"/>
-//             <h3>${item.itName}</h3>
-//             <p>Quantidade: ${item.itQuantity}</p>`;
+}); 
+ 

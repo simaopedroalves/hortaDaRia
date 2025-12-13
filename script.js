@@ -35,6 +35,10 @@ export function header() {
 
             <div class="cart-and-menu">
 
+                <a href="/html/ordersHistoric.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </a>
+
                 <i class="fa-solid fa-magnifying-glass"></i>
 
                 <div class="cart-div">
@@ -102,14 +106,13 @@ export function bottomIconsMenu () {
                     <i class="fa-solid fa-inbox"></i>
                 </a>
             </div>
-<!--
 
             <div class="cart-div">
                 <a href="/html/ordersHistoric.html">
                     <i class="fa-solid fa-clock-rotate-left"></i>
                 </a>
             </div>
--->
+
         </section>`
 }}
 

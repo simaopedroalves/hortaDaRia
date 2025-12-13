@@ -14,11 +14,11 @@
     --green: rgb(136, 171, 142, 1);
     --green-one: rgb(175, 200, 173, 1);
     --yellow: rgb(238, 199, 89, 1);
-    --orange: rgba(235, 131, 23, 0.6);
+    --orange: rgba(235, 131, 23, 0.9);
     --orange-two: rgba(238, 147, 34, 0.3);
     --red: rgba(216, 63, 49, 1);
     --white: rgb(245, 245, 245, 1);
-    --white-two: rgb(245, 245, 245, 0.6);
+    --white-two: rgb(245, 245, 245, 0.8);
     --black: rgba(0,0,0,1);
     --gray: rgba(0,0,0,0.5);
     --black-hover-img: rgba(0,0,0,0.6);
@@ -112,6 +112,10 @@ header {
     align-items: center;
 }
 
+.cart-and-menu .fa-clock-rotate-left {
+    display: none;
+}
+
 /* CARRINHO */
 .alert {
     background-color: var(--orange);
@@ -170,7 +174,8 @@ header {
 
 .cart-div .fa-basket-shopping,
 .fa-magnifying-glass,
-.fa-bars-staggered {
+.fa-bars-staggered,
+.fa-clock-rotate-left {
     color: var(--green);
     font-size: 1rem;
     min-height: 100%;
@@ -408,6 +413,16 @@ body::-webkit-scrollbar:vertical {
     scroll-behavior: smooth;
 }
 
+@media screen and (min-width: 768px) {
+    a {
+        text-decoration: none;
+    }
+
+    .cart-and-menu .fa-clock-rotate-left {
+        display: flex;
+    }
+}
+
 @media screen and (min-width: 1100px) {
 
 
@@ -421,6 +436,7 @@ body::-webkit-scrollbar:vertical {
 
     .fa-bars-staggered,
     .fa-x,
+    .fa-clock-rotate-left,
     .openMenu,
     .openMenu::before,
     .openMenu::after {
