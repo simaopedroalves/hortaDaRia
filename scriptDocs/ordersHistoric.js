@@ -20,9 +20,6 @@ basketHistoric.forEach((order) => {
 const threeMonthsAgo = new Date();
 threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
 
-console.log(threeMonthsAgo);
-
-console.log(new Date(order.date));
 const orderDate = new Date(order.date);
 if (orderDate < threeMonthsAgo) {
     basketHistoric.splice(basketHistoric.indexOf(order), 1);
