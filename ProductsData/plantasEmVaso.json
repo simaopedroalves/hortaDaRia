@@ -13,64 +13,120 @@
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_amorPerfeito.jpg",
             "productId": 76,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Viola × wittrockiana",
+                "commonName": "Amor-perfeito",
+                "family": "Violaceae",
+                "description": "Planta ornamental com flores comestíveis. Ideal para decoração de vasos e jardins pequenos.",
+                "culinaryUses": ["Decoração de pratos", "Saladas florais"],
+                "traditionalProperties": ["Refrescante", "Aromática"]
+            }
         },
         {
             "name": "cravo tunico",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_cravoTunico.jpg",
             "productId": 77,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Dianthus barbatus",
+                "commonName": "Cravo-túnico, cravo-dos-poetas",
+                "family": "Caryophyllaceae",
+                "description": "Planta ornamental com flores comestíveis e aromáticas. Ideal para vasos e jardineiras.",
+                "culinaryUses": ["Decoração de pratos", "Aromatização"],
+                "traditionalProperties": ["Aromática", "Refrescante"]
+            }
         },
         {
             "name": "oregãos",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_oregaos.jpg",
             "productId": 78,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Origanum vulgare",
+                "commonName": "Orégãos",
+                "family": "Lamiaceae",
+                "description": "Erva aromática para cultivo em vaso. Ideal para cozinha mediterrânea.",
+                "culinaryUses": ["Pizzas", "Massas", "Carnes e legumes"],
+                "traditionalProperties": ["Digestiva", "Aromática", "Antisséptica"]
+            }
         },
         {
             "name": "espargos",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_espargos.jpg",
             "productId": 79,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Asparagus officinalis",
+                "commonName": "Espargos",
+                "family": "Asparagaceae",
+                "description": "Planta ornamental com propriedades culinárias. Cultivo em vaso possível.",
+                "culinaryUses": ["Salteados", "Sopas", "Grelhados"],
+                "traditionalProperties": ["Digestiva", "Diurética suave", "Mineralizante"]
+            }
         },
         {
             "name": "salvia",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_salvia.jpg",
             "productId": 80,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Salvia rosmarinus",
+                "commonName": "Alecrim/Sálvia",
+                "family": "Lamiaceae",
+                "description": "Erva aromática e medicinal. Excelente para cultivo em vaso.",
+                "culinaryUses": ["Carnes", "Batatas", "Pães"],
+                "traditionalProperties": ["Digestiva", "Estimulante", "Antisséptica"]
+            }
         },
         {
             "name": "hortelã comum",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_hortelaPimentaChocolate.jpg",
             "productId": 82,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Mentha spicata",
+                "commonName": "Hortelã-vulgar, hortelã-verde",
+                "family": "Lamiaceae",
+                "description": "Erva aromática refrescante. Cultivo fácil em vaso.",
+                "culinaryUses": ["Chás e infusões", "Bebidas", "Molhos"],
+                "traditionalProperties": ["Digestiva", "Refrescante", "Antiespasmódica"]
+            }
         },
         {
             "name": "hortelã menta",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_hortelaMenta.jpg",
             "productId": 83,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Mentha × piperita",
+                "commonName": "Hortelã-menta, menta-pimenta",
+                "family": "Lamiaceae",
+                "description": "Erva aromática com sabor mentolado intenso. Perfeita para vasos.",
+                "culinaryUses": ["Infusões", "Bebidas", "Molhos"],
+                "traditionalProperties": ["Digestiva", "Refrescante", "Descongestionante"]
+            }
         },
         {
             "name": "tomilho",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_tomilho.jpg",
             "productId": 84,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Thymus vulgaris",
+                "commonName": "Tomilho",
+                "family": "Lamiaceae",
+                "description": "Erva aromática robusta. Excelente para cultivo em vaso.",
+                "culinaryUses": ["Carnes", "Legumes", "Sopas"],
+                "traditionalProperties": ["Digestiva", "Antisséptica", "Expectorante"]
+            }
         }
     ]
 }

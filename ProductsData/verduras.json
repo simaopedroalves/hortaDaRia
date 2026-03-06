@@ -5,192 +5,375 @@
             "price": 100,
             "image": "/images/verduras/azeda-vermelha-verde.jpg",
             "productId": 2730062025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Rumex sanguineus",
+                "commonName": "Red vein sorrel, azeda vermelha",
+                "family": "Polygonaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 50},
+                "culinaryUses": ["Misturas de folhas baby", "Saladas gourmet", "Decoração de pratos", "Sabor ácido e fresco, tipo limão"],
+                "traditionalProperties": ["Digestiva", "Refrescante", "Estimulante ligeira", "Rica em ácidos orgânicos (uso alimentar)"]
+            }
         },
         {
             "name": "ruibarbo",
             "price": 10,
             "image": "/images/verduras/ruibarbo.jpg",
             "productId": 12,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Rheum rhabarbarum",
+                "commonName": "Ruibarbo",
+                "family": "Polygonaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Doces e compotas", "Cremes e sobremesas", "Infusões", "Marinadas para peixe"],
+                "traditionalProperties": ["Leve ação laxante suave", "Digestiva", "Estimulante da secreção biliar", "Rico em ácidos orgânicos e fibras"]
+            }
         },
         {
             "name": "couve galega",
             "price": 6,
             "image": "/images/verduras/couve-galega.jpg",
             "productId": 13,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. acephala",
+                "commonName": "Couve galega, couve portuguesa",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Caldo verde tradicional", "Saladas (em crú quando tenra)", "Cozidos e sopas", "Refogadas"],
+                "traditionalProperties": ["Altamente nutritiva e mineralizante", "Rica em vitamina C e K", "Anti-inflamatória", "Desintoxicante", "Excelente para sistema imunitário"]
+            }
         },
         {
             "name": "couve galega cortada (caldo verde)",
             "price": 20,
             "image": "/images/verduras/couve-galega-cortada-caldo-verde.jpg",
             "productId": 14,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. acephala",
+                "commonName": "Couve galega, couve portuguesa",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Pronta para caldo verde", "Sopas", "Saladas (em crú quando tenra)", "Cozidos"],
+                "traditionalProperties": ["Altamente nutritiva", "Rica em vitamina C e K", "Anti-inflamatória", "Desintoxicante", "Preparação facilitada"]
+            }
         },
         {
             "name": "Beldroegas",
             "price": 10,
             "image": "/images/verduras/beldroegas.jpg",
             "productId": 160011052025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Portulaca oleracea",
+                "commonName": "Beldroegas, beldroega",
+                "family": "Portulacaceae",
+                "harvestTime": {"minDays": 30, "maxDays": 50},
+                "culinaryUses": ["Saladas frescas (muito suculenta)", "Refogadas ligeiras", "Pickles e conservas", "Chás"],
+                "traditionalProperties": ["Refrescante e hidratante", "Rica em ómega-3 (raro em plantas)", "Ligeiramente laxante suave", "Anticiânica", "Detoxificante"]
+            }
         },
         {
             "name": "bróculo",
             "price": 5,
             "image": "/images/verduras/broculo.jpg",
             "productId": 90220032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. italica",
+                "commonName": "Bróculo, brócolis verde",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Vaporizados", "Refogados rápidos", "Saladas cruas (tenros)", "Sumos e batidos"],
+                "traditionalProperties": ["Anticancerígena (sulforafanos)", "Rica em vitamina C", "Anti-inflamatória", "Desintoxicante", "Alcalinizante"]
+            }
         },
         {
             "name": "Folha de Gelo",
             "price": 75,
             "image": "/images/verduras/folha-de-gelo.jpg",
             "productId": 98,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Mesembryanthemum crystallinum",
+                "commonName": "Folha de gelo, planta de gelo",
+                "family": "Aizoaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Saladas gourmet", "Folha de gelo (como base de pratos)", "Decoração e texturas", "Sabor levemente salgado"],
+                "traditionalProperties": ["Refrescante e hidratante", "Rica em minerais", "Digestiva ligeira", "Muito apreciada em culinária moderna"]
+            }
         },
         {
             "name": "acelgas",
             "price": 8,
             "image": "/images/verduras/acelgas.jpg",
             "productId": 15,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Beta vulgaris subsp. cicla",
+                "commonName": "Acelga, acelga suíça",
+                "family": "Amaranthaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 80},
+                "culinaryUses": ["Refogadas", "Sopas e caldos", "Estufados", "Tortas e empadas (folhas)"],
+                "traditionalProperties": ["Rica em ferro e ácido oxálico (importante para absorção)", "Alcalinizante", "Energética", "Anti-anêmica", "Rica em vitamina K"]
+            }
         },
         {
             "name": "alcachofra",
             "price": 12,
             "image": "/images/verduras/alcachofra.jpg",
             "productId": 16,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cynara cardunculus var. scolymus",
+                "commonName": "Alcachofra, alcachofra-de-bico",
+                "family": "Asteraceae",
+                "harvestTime": {"minDays": 150, "maxDays": 210},
+                "culinaryUses": ["Cozida ao vapor (folhas e centro)", "Assada no forno", "Conservas e pickles", "Sumos e infusões"],
+                "traditionalProperties": ["Depurativa do fígado (cinarina)", "Colecistoquinética (estimula bílis)", "Antioxidante", "Rica em fibras prebióticas", "Hipocolesteromiante"]
+            }
         },
         {
             "name": "acelgas baby",
             "price": 12,
             "image": "/images/verduras/acelgas-baby.jpg",
             "productId": 17,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Beta vulgaris subsp. cicla",
+                "commonName": "Acelga baby, acelga suíça tenra",
+                "family": "Amaranthaceae",
+                "harvestTime": {"minDays": 25, "maxDays": 40},
+                "culinaryUses": ["Saladas gourmet", "Salteados rápidos", "Misturas de folhas baby", "Decoração"],
+                "traditionalProperties": ["Rica em ferro e ácido oxálico", "Alcalinizante", "Energética", "Tenra e de fácil digestão quando crua"]
+            }
         },
         {
             "name": "couve toscana",
             "price": 10,
             "image": "/images/verduras/couve-toscana.jpg",
             "productId": 18,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. acephala",
+                "commonName": "Couve toscana, couve dinossauro",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Refogadas", "Chips crocantes no forno", "Sopas", "Saladas (quando tenra)"],
+                "traditionalProperties": ["Anti-inflamatória", "Rica em vitamina C e K", "Anticancerígena (sulforafanos)", "Mineralizante", "Excelente para circulação"]
+            }
         },
         {
             "name": "Espinafre manteiga",
             "price": 15,
             "image": "/images/verduras/espinafre-manteiga.jpg",
             "productId": 20,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Spinacia oleracea",
+                "commonName": "Espinafre manteiga, espinafre folha lisa",
+                "family": "Amaranthaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Saladas frescas", "Refogada ligeira", "Sopas e cremes", "Sumos verde"],
+                "traditionalProperties": ["Rica em ferro e ácido oxálico", "Anti-anêmica", "Alcalinizante", "Rica em luteína (visão)", "Folha suave e manteiguda"]
+            }
         },
         {
             "name": "Espinafre Nova Zelândia",
             "price": 8,
             "image": "/images/verduras/espinafres-nova-zelandia.jpg",
             "productId": 99,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Tetragonia tetragonioides",
+                "commonName": "Espinafre da Nova Zelândia",
+                "family": "Aizoaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 80},
+                "culinaryUses": ["Refogada ligeira", "Sopas", "Sumos verdes", "Chás"],
+                "traditionalProperties": ["Rica em ferro e ácido oxálico", "Anti-anêmica", "Refrescante", "Menos ácido que espinafre comum", "Tolerância ao calor"]
+            }
         },
         {
             "name": "Red russian kale",
             "price": 8,
             "image": "/images/verduras/red-russian-kale.jpg",
             "productId": 101,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. lacinata",
+                "commonName": "Couve kale russa vermelha",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 100},
+                "culinaryUses": ["Chips crocantes no forno", "Saladas", "Sumos verdes", "Refogada"],
+                "traditionalProperties": ["Muito nutritiva e mineralizante", "Anticancerígena (sulforafanos)", "Rica em vitamina C, K, e A", "Sabor suave com toque pimenta"]
+            }
         },
         {
             "name": "Red russian kale baby",
             "price": 15,
             "image": "/images/verduras/red-russian-kale-baby.jpg",
             "productId": 21,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. lacinata",
+                "commonName": "Couve kale russa vermelha baby",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 35, "maxDays": 50},
+                "culinaryUses": ["Saladas gourmet", "Misturas de folhas baby", "Decoração", "Sumos verdes"],
+                "traditionalProperties": ["Muito nutritiva mesmo em folha tenra", "Anticancerígena", "Rica em vitamina C e K", "Sabor suave e adocicado"]
+            }
         },
         {
             "name": "Couve pack choi",
             "price": 6,
             "image": "/images/verduras/couve-pack-choi.jpg",
             "productId": 22,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa subsp. chinensis",
+                "commonName": "Couve bok choi, pak choi",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Refogada rápida", "Sopas", "Misturas asiáticas", "Saladas (quando tenra)"],
+                "traditionalProperties": ["Rica em vitamina C, A e K", "Mineralizante (cálcio)", "Suave e fácil de digerir", "Tradicional em culinária asiática"]
+            }
         },
         {
             "name": "Couve tatsoi",
             "price": 8,
             "image": "/images/verduras/couve-tatsoi.jpg",
             "productId": 23,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa subsp. narinosa",
+                "commonName": "Couve tatsoi, roseta de mostarda",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Saladas (folhas tenras)", "Refogada", "Sopas e caldos", "Misturas asiáticas"],
+                "traditionalProperties": ["Rica em vitamina A, C e K", "Mineralizante (cálcio)", "Sabor suave com toque pimenta", "Folhas macias e tenras"]
+            }
         },
         {
             "name": "Tatsoi Vermelha",
             "price": 8,
             "image": "/images/verduras/tatsoi-vermelha.jpg",
             "productId": 12024032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa subsp. narinosa",
+                "commonName": "Couve tatsoi vermelha",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Saladas gourmet (decoração)", "Refogada", "Sopas", "Misturas"],
+                "traditionalProperties": ["Rica em antocianinas (cor vermelha)", "Antioxidante", "Rica em vitamina C e K", "Sabor suave com toque de pimenta"]
+            }
         },
         {
             "name": "Couve Bok choi",
             "price": 6,
             "image": "/images/verduras/bokchoi.jpg",
             "productId": 12124032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa subsp. chinensis",
+                "commonName": "Couve bok choi, pak choi",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Refogada rápida (típica em wok)", "Sopas", "Saladas (tenra)", "Misturas asiáticas"],
+                "traditionalProperties": ["Rica em vitamina C, A e K", "Mineralizante (cálcio e ferro)", "Suave e saudável", "Essencial em culinária asiática"]
+            }
         },
         {
             "name": "Couve rabano roxa",
             "price": 6,
             "image": "/images/verduras/couve-rabano-roxa.jpg",
             "productId": 24,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica juncea var. gemmifera",
+                "commonName": "Couve rábano roxa, kai-lan roxa",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 80},
+                "culinaryUses": ["Refogada", "Sopas e caldos", "Saladas (folhas tenras)", "Decoração"],
+                "traditionalProperties": ["Rica em vitamina C e K", "Antioxidante (antocianinas)", "Anti-inflamatória", "Mineralizante"]
+            }
         },
         {
             "name": "Couve rabano verde",
             "price": 6,
             "image": "/images/verduras/couve-rabano-verde.jpg",
             "productId": 25,
-            "stock":false
+            "stock":false,
+            "technicalSheet": {
+                "botanicalName": "Brassica juncea var. gemmifera",
+                "commonName": "Couve rábano verde, kai-lan",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 80},
+                "culinaryUses": ["Refogada rápida", "Sopas e caldos", "Saladas (folhas tenras)", "Wok asiático"],
+                "traditionalProperties": ["Rica em vitamina C e K", "Anti-inflamatória", "Mineralizante", "Suave e fácil de digerir"]
+            }
         },
         {
             "name": "Couve curly kale",
             "price": 10,
             "image": "/images/verduras/couve-kurly-kale.jpg",
             "productId": 26,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. acephala",
+                "commonName": "Couve kale, couve crespa",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 100},
+                "culinaryUses": ["Chips crocantes no forno", "Sumos verdes", "Saladas", "Refogada"],
+                "traditionalProperties": ["Muito nutritiva e mineralizante", "Anticancerígena (sulforafanos)", "Rica em vitamina A, C e K", "Fortalecedora e energizante", "Famosa por propriedades)"]
+            }
         },
         {
             "name": "couve repolho coração",
             "price": 2.5,
             "image": "/images/verduras/couve-repolho-coracao.jpg",
             "productId": 104,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. capitata",
+                "commonName": "Couve repolho branco",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 120},
+                "culinaryUses": ["Coleslaw (crú ralado)", "Cozido (repolho tradicional)", "Fermentado (chucrute)", "Conservas"],
+                "traditionalProperties": ["Rica em vitamina C", "Probiótica (quando fermentada)", "Anti-inflamatória do sistema digestivo", "Laxante suave", "Acessível e nutritiva"]
+            }
         },
         {
             "name": "funcho",
             "price": 6,
             "image": "/images/verduras/funcho.jpg",
             "productId": 114724082025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Foeniculum vulgare var. azoricum",
+                "commonName": "Funcho, hinojo",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 90, "maxDays": 130},
+                "culinaryUses": ["Cru em saladas (sabor anisado suave)", "Cozido", "Refogado", "Sumos e infusões"],
+                "traditionalProperties": ["Digestivo e anti-flatulência", "Diurético", "Estimula lactação em mães", "Anis natural suave", "Refrescante"]
+            }
         },
         {
             "name": "funcho baby",
             "price": 12,
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Foeniculum vulgare var. azoricum",
+                "commonName": "Funcho baby, hinojo baby",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 45, "maxDays": 65},
+                "culinaryUses": ["Saladas gourmet", "Decoração", "Salteado rápido", "Misturas baby"],
+                "traditionalProperties": ["Digestivo e anti-flatulência", "Diurético", "Anis natural suave e delicado", "Tenro e de fácil digestão", "Fresco e refrescante"]
+            }
         }
     ]
 }

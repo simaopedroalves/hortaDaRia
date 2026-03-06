@@ -5,31 +5,44 @@
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
             "productId": 58,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Sabão natural à base de óleo de coco virgem, azeite extra virgem, e óleo essencial de alfazema. Produto artesanal e eco-friendly.",
+                "components": ["Óleo de coco virgem", "Azeite extra virgem", "Óleo essencial de alfazema"]
+            }
         },
         {
             "name": "óleo de coco, azeite e hortelã",
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
             "productId": 59,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Sabão natural à base de óleo de coco virgem, azeite extra virgem, e óleo essencial de hortelã. Produto artesanal e eco-friendly.",
+                "components": ["Óleo de coco virgem", "Azeite extra virgem", "Óleo essencial de hortelã"]
+            }
         },
         {
             "name": "óleo de coco, azeite e laranja",
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
             "productId": 60,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "description": "Sabão natural à base de óleo de coco virgem, azeite extra virgem, e óleo essencial de laranja. Produto artesanal e eco-friendly.",
+                "components": ["Óleo de coco virgem", "Azeite extra virgem", "Óleo essencial de laranja"]
+            }
         },
         {
             "name": "óleo de coco, azeite e alecrim",
             "price": 4.5,
             "image": "/images/sabaoNatural/sabao-natural.jpg",
             "productId": 61,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Sabão natural à base de óleo de coco virgem, azeite extra virgem, e óleo essencial de alecrim. Produto artesanal e eco-friendly.",
+                "components": ["Óleo de coco virgem", "Azeite extra virgem", "Óleo essencial de alecrim"]
+            }
         }
     ]
 }

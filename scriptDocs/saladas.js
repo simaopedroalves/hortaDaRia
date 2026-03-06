@@ -336,6 +336,7 @@ function createPopupOverlay() {
 
 function closePopup() {
     document.getElementById('fichaPopupOverlay').classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 function buildFichaHTML(sheet, name) {
@@ -396,6 +397,7 @@ function buildFichaHTML(sheet, name) {
 function openPopup(sheet, name) {
     document.getElementById('fichaPopupContent').innerHTML = buildFichaHTML(sheet, name);
     document.getElementById('fichaPopupOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
 }
 
 // ─── FIM POPUP ───────────────────────────────────────────────────────────────

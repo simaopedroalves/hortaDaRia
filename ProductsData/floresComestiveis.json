@@ -5,125 +5,236 @@
             "price": 0.30,
             "image": "/images/floresComestiveis/flor_cosmos.jpg",
             "productId": 5527102025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Cosmos bipinnatus",
+                "commonName": "Cosmos",
+                "family": "Asteraceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas e bowls", "Decoração de pratos gourmet", "Infusões e chás", "Doces e sobremesas"],
+                "traditionalProperties": ["Digestiva suave", "Refrescante", "Fonte de antioxidantes naturais", "Aromática e estimulante para a apresentação de pratos"]
+            }
         },
         {
             "name": "amor perfeito",
             "price": 0.10,
             "image": "/images/floresComestiveis/amores-perfeitos.jpg",
             "productId": 39,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Viola × wittrockiana",
+                "commonName": "Amor-perfeito",
+                "family": "Violaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 100},
+                "culinaryUses": ["Saladas gourmet", "Decoração de pratos", "Sobremesas e bolos", "Cubos de gelo decorativos"],
+                "traditionalProperties": ["Refrescante", "Digestiva suave", "Fonte de antioxidantes", "Tradicionalmente associada a uso calmante leve", "Estimulante visual e aromática"]
+            }
         },
         {
             "name": "flor cravo túnico",
             "price": 0.30,
             "image": "/images/floresComestiveis/cravo-tunico.jpg",
             "productId": 2130062025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Dianthus barbatus",
+                "commonName": "Cravo-túnico, cravo-dos-poetas",
+                "family": "Caryophyllaceae",
+                "harvestTime": {"minDays": 90, "maxDays": 120},
+                "culinaryUses": ["Decoração de pratos gourmet", "Saladas florais", "Sobremesas e bolos", "Aromatização de vinagres e xaropes"],
+                "traditionalProperties": ["Aromática", "Refrescante", "Fonte de compostos antioxidantes", "Tradicionalmente associada a efeitos calmantes leves", "Estimulante sensorial (aroma + cor)"]
+            }
         },
         {
             "name": "folha cravo túnico",
             "price": 0.10,
             "image": "/images/floresComestiveis/folha-cravo-tunico.jpg",
             "productId": 2430062025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Dianthus barbatus",
+                "commonName": "Cravo-túnico, cravo-dos-poetas",
+                "family": "Caryophyllaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Decoração vegetal comestível", "Misturas de folhas baby (em pequenas quantidades)"],
+                "traditionalProperties": ["Refrescante", "Levemente aromática", "Tradicionalmente usada mais pela estética do que por valor nutricional", "Complemento visual em pratos florais"]
+            }
         },
         {
             "name": "borragem",
             "price": 0.10,
             "image": "/images/floresComestiveis/borragem.jpg",
             "productId": 40,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Borago officinalis",
+                "commonName": "Borragem",
+                "family": "Boraginaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 90},
+                "culinaryUses": ["Sopas tradicionais", "Saladas (folhas jovens, em pequenas quantidades)", "Decoração de pratos (flores)", "Infusões"],
+                "traditionalProperties": ["Diurética", "Refrescante", "Emoliente", "Tradicionalmente usada para apoio respiratório", "Fonte de minerais e compostos antioxidantes"]
+            }
         },
         {
             "name": "capuchinhas",
             "price": 0.30,
             "image": "/images/floresComestiveis/flor_capuchinha.jpg",
             "productId": 41,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Tropaeolum majus",
+                "commonName": "Capuchinha",
+                "family": "Tropaeolaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Saladas gourmet", "Decoração de pratos", "Recheios (flores grandes)", "Finalização de pratos quentes"],
+                "traditionalProperties": ["Digestiva", "Estimulante do apetite", "Antisséptica suave", "Rica em antioxidantes", "Refrescante e aromática"]
+            }
         },
         {
             "name": "petunias",
             "price": 0.10,
             "image": "/images/floresComestiveis/flor_petunia.jpg",
             "productId": 43,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Petunia × hybrida",
+                "commonName": "Petúnia",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 100},
+                "culinaryUses": ["Decoração de pratos", "Saladas florais", "Sobremesas e pastelaria", "Cubos de gelo decorativos"],
+                "traditionalProperties": ["Refrescante", "Aromática suave", "Uso essencialmente decorativo e sensorial", "Fonte leve de compostos antioxidantes"]
+            }
         },
         {
             "name": "flor da galega",
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-galega.jpg",
             "productId": 44,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. viridis",
+                "commonName": "Flor de couve-galega",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 180},
+                "culinaryUses": ["Salteados rápidos", "Sopas e caldos", "Ovos, arrozes e massas", "Cozinha tradicional (semelhante a grelos)"],
+                "traditionalProperties": ["Digestiva", "Mineralizante", "Rica em compostos sulfurados", "Fonte de vitaminas A, C e K", "Tradicionalmente considerada depurativa"]
+            }
         },
         {
             "name": "flor de Courgete",
             "price": 0.50,
             "image": "/images/floresComestiveis/flor-courgete.jpg",
             "productId": 45,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cucurbita pepo",
+                "commonName": "Flor de curgete",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Recheadas (fritas ou assadas)", "Tempura", "Saladas (flores jovens e frescas)", "Omeletes e massas"],
+                "traditionalProperties": ["Leves e de fácil digestão", "Baixo valor calórico", "Fonte modesta de antioxidantes", "Tradicionalmente consideradas refrescantes"]
+            }
         },
         {
             "name": "flor de calendula",
             "price": 0.25,
             "image": "/images/floresComestiveis/calendula.jpg",
             "productId": 46,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Calendula officinalis",
+                "commonName": "Calêndula",
+                "family": "Asteraceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas", "Arroz, massas e manteigas aromatizadas", "Decoração de pratos", "Substituto tradicional do açafrão (cor)"],
+                "traditionalProperties": ["Anti-inflamatória", "Antisséptica suave", "Cicatrizante", "Calmante da pele e mucosas"]
+            }
         },
         {
             "name": "flor da toscana",
             "price": 0.10,
             "image": "",
             "productId": 47,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. palmifolia (ou lacinato)",
+                "commonName": "Flor de couve toscana",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 180},
+                "culinaryUses": ["Salteados rápidos", "Sopas", "Massas e arrozes", "Ovos"],
+                "traditionalProperties": ["Digestiva", "Rica em minerais", "Fonte de vitaminas A, C e K", "Contém compostos sulfurados típicos das brassicas", "Tradicionalmente considerada depurativa"]
+            }
         },
         {
             "name": "flor de mel",
             "price": 0.25,
             "image": "/images/floresComestiveis/flor-de-mel.jpg",
             "productId": 48,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Allyson (nome comercial; variedade de flor comestível híbrida)",
+                "commonName": "Flor de mel, Allyson",
+                "family": "Asteraceae",
+                "harvestTime": {"minDays": 60, "maxDays": 80},
+                "culinaryUses": ["Saladas e bowls", "Decoração de sobremesas e bolos", "Infusões delicadas", "Aromatização de pratos gourmet"],
+                "traditionalProperties": ["Digestiva leve", "Refrescante", "Antioxidante natural", "Tradicionalmente usada para decoração e aromatização"]
+            }
         },
         {
             "name": "flor de coentros",
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-coentros.jpg",
             "productId": 114,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Coriandrum sativum",
+                "commonName": "Coentros",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Saladas e bowls", "Decoração de pratos gourmet", "Sopas, omeletes e guarnições"],
+                "traditionalProperties": ["Digestiva", "Carminativa (alivia gases)", "Antioxidante", "Mineralizante (potássio, cálcio e ferro)", "Refrescante e aromática"]
+            }
         },
         {
             "name": "flor de malva",
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-de-malva.jpg",
             "productId": 115,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Malva sylvestris",
+                "commonName": "Malva",
+                "family": "Malvaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas e bowls", "Infusões e chás", "Decoração de sobremesas e pratos gourmet"],
+                "traditionalProperties": ["Emoliente e digestiva", "Refrescante", "Suavizante para a garganta e mucosas", "Fonte de antioxidantes naturais", "Tradicionalmente usada em infusões calmantes"]
+            }
         },
         {
             "name": "flor de crisântemos",
             "price": 0.10,
             "image": "/images/floresComestiveis/flor-de-crisantemos.jpg",
             "productId": 116,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Chrysanthemum morifolium",
+                "commonName": "Crisântemo",
+                "family": "Asteraceae",
+                "harvestTime": {"minDays": 90, "maxDays": 120},
+                "culinaryUses": ["Saladas e bowls", "Decoração de pratos gourmet", "Chás florais", "Sobremesas e gelados"],
+                "traditionalProperties": ["Digestivo leve", "Anti-inflamatório suave", "Antioxidante natural", "Refrescante e aromático", "Tradicionalmente usado em infusões calmantes"]
+            }
         },
         {
             "name": "mix de flores (unidade)",
             "price": 3,
             "image": "/images/floresComestiveis/mix.jpg",
             "productId": 42,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Mistura de flores comestíveis frescas conforme disponibilidade",
+                "components": ["Variadas conforme estação"]
+            }
         }
     ]
 }

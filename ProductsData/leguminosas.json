@@ -6,8 +6,15 @@
             "description": "descascadas e congeladas",
             "image": "/images/leguminosas/favas.jpg",
             "productId": 49,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Vicia faba",
+                "commonName": "Fava, feijão-fava",
+                "family": "Fabaceae",
+                "harvestTime": {"minDays": 80, "maxDays": 120},
+                "culinaryUses": ["Sopas e caldos", "Salteados e refogados", "Purés e cremes", "Saladas (vagens finas ou sementes cozidas)"],
+                "traditionalProperties": ["Digestiva", "Rica em proteínas vegetais", "Fonte de fibras, ferro e potássio", "Mineralizante e saciante", "Tradicionalmente usada como alimento energético e nutritivo"]
+            }
         },
         {
             "name": "favas descascadas e congeladas",
@@ -15,24 +22,45 @@
             "description": "descascadas e congeladas",
             "image": "/images/leguminosas/favas-descascadas.jpg",
             "productId": 160511052025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Vicia faba",
+                "commonName": "Fava descascada, semente de fava",
+                "family": "Fabaceae",
+                "harvestTime": {"minDays": 80, "maxDays": 120},
+                "culinaryUses": ["Sopas e caldos diretos", "Purés e cremes", "Salteados", "Acompanhamentos"],
+                "traditionalProperties": ["Digestiva", "Rica em proteínas vegetais", "Fonte de fibras e ferro", "Preparação facilitada e rápida", "Congelada preserva nutrientes"]
+            }
         },
         {
             "name": "ervilhas de quebrar",
             "price": 10,
             "image": "/images/leguminosas/ervilhas-quebrar.jpg",
             "productId": 50,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Pisum sativum var. parthenon",
+                "commonName": "Ervilha de quebrar, ervilha seca",
+                "family": "Fabaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 80},
+                "culinaryUses": ["Sopas (sopa de ervilha tradicional)", "Purés e cremes", "Salteadas (cozidas)", "Acompanhamentos"],
+                "traditionalProperties": ["Digestiva e facilitadora da flora intestinal", "Rica em proteínas vegetais", "Teor elevado de fibras", "Saciante e energética", "Tradicional e nutritiva"]
+            }
         },
         {
             "name": "feijão verde rajado",
             "price": 8,
             "image": "/images/leguminosas/feijao-verde-rajado.jpg",
             "productId": 240231124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Phaseolus vulgaris",
+                "commonName": "Feijão verde rajado, feijão pintado",
+                "family": "Fabaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Refogados", "Sopas e caldos", "Saladas (vagens tenras cruas ou cozidas)", "Salteados"],
+                "traditionalProperties": ["Digestivo e facilitador da flora intestinal", "Rica em proteínas vegetais e fibras", "Ferro e minerais", "Sabor delicado", "Mais leve que feijão seco"]
+            }
         }
     ]
 }

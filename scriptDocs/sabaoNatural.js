@@ -1,13 +1,190 @@
-// import {updateNumbItemsOnCart} from '/script.js';
-// import { findStockOfItems } from "../script.js";
-
 const secSabaoNatural = document.querySelector('.sabaoNatural');
 
 async function callSabaoNatural () {
     return (await fetch('/ProductsData/sabaoNatural.json')).json()
 }
 
+// ─── POPUP: Ficha Técnica ────────────────────────────────────────────────────
+
+function createPopupOverlay() {
+    if (document.getElementById('fichaPopupOverlay')) return;
+
+    const overlay = document.createElement('div');
+    overlay.id = 'fichaPopupOverlay';
+    overlay.innerHTML = `
+        <div id="fichaPopup">
+            <button id="fichaPopupClose">&times;</button>
+            <div id="fichaPopupContent"></div>
+        </div>
+    `;
+
+    const style = document.createElement('style');
+    style.textContent = `
+        #fichaPopupOverlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+        #fichaPopupOverlay.active {
+            display: flex;
+        }
+        #fichaPopup {
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px 28px 28px;
+            max-width: 420px;
+            width: 90%;
+            position: relative;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+            animation: popupIn 0.22s ease;
+        }
+        @keyframes popupIn {
+            from { transform: scale(0.93); opacity: 0; }
+            to   { transform: scale(1);    opacity: 1; }
+        }
+        #fichaPopupClose {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: #555;
+            line-height: 1;
+        }
+        #fichaPopupClose:hover { color: #111; }
+        #fichaPopupContent h2 {
+            margin: 0 0 4px;
+            font-size: 1.25rem;
+        }
+        #fichaPopupContent .ficha-family {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+        #fichaPopupContent .ficha-section {
+            margin-bottom: 14px;
+        }
+        #fichaPopupContent .ficha-section-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #4a7c59;
+            margin-bottom: 6px;
+        }
+        #fichaPopupContent .ficha-harvest {
+            background: #f0f7f2;
+            border-radius: 8px;
+            padding: 8px 14px;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+        #fichaPopupContent ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        #fichaPopupContent ul li {
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+            color: #333;
+        }
+        #fichaPopupContent .ficha-flavor {
+            font-size: 0.88rem;
+            color: #555;
+            background: #fafaf0;
+            border-left: 3px solid #c8d88c;
+            padding: 6px 12px;
+            border-radius: 0 6px 6px 0;
+            margin-top: 4px;
+        }
+        #fichaPopupContent .ficha-components {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 4px;
+        }
+        #fichaPopupContent .ficha-tag {
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 20px;
+            padding: 3px 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .boxItem img { cursor: pointer; }
+        .boxItem img:hover { opacity: 0.88; transition: opacity 0.15s; }
+    `;
+
+    document.head.appendChild(style);
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closePopup();
+    });
+    document.getElementById('fichaPopupClose').addEventListener('click', closePopup);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closePopup();
+    });
+}
+
+function closePopup() {
+    document.getElementById('fichaPopupOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function buildFichaHTML(sheet, name) {
+    if (!sheet) return `<p style="color:#888;font-size:0.9rem">Ficha técnica não disponível.</p>`;
+
+    let html = `<h2>🧼 ${name}</h2>`;
+
+    if (sheet.description && sheet.components) {
+        html += `<p style="font-size:0.9rem;color:#444;margin-bottom:14px">${sheet.description}</p>`;
+        html += `<div class="ficha-section">
+            <div class="ficha-section-title">🧩 Composição</div>
+            <div class="ficha-components">
+                ${sheet.components.map(c => `<span class="ficha-tag">${c}</span>`).join('')}
+            </div>
+        </div>`;
+        return html;
+    }
+
+    if (sheet.botanicalName) {
+        html += `<div class="ficha-family"><em>${sheet.botanicalName}</em> · ${sheet.family}</div>`;
+        if (sheet.botanicalSynonym) {
+            html += `<div class="ficha-family" style="margin-top:-10px">sin. ${sheet.botanicalSynonym}</div>`;
+        }
+    }
+
+    if (sheet.traditionalProperties?.length) {
+        html += `<div class="ficha-section">
+            <div class="ficha-section-title">🌿 Propriedades Tradicionais</div>
+            <ul>${sheet.traditionalProperties.map(p => `<li>${p}</li>`).join('')}</ul>
+        </div>`;
+    }
+
+    return html;
+}
+
+function openPopup(sheet, name) {
+    document.getElementById('fichaPopupContent').innerHTML = buildFichaHTML(sheet, name);
+    document.getElementById('fichaPopupOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// ─── FIM POPUP ───────────────────────────────────────────────────────────────
+
 document.addEventListener('DOMContentLoaded', async () => {
+
+    createPopupOverlay();
 
     let object = '';
 
@@ -24,9 +201,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     sabaoNatural.classList.add('boxItem');
     let allSabaoNatural = object.sabaoNatural;
 
-    sabaoNatural.innerHTML += `
+    sabaoNatural.innerHTML = `
         <h3>Sabão Natural</h3>
-        <img src="/images/logo.png" alt="" id="image">
+        <img src="/images/logo.png" alt="" id="image" title="Ver ficha técnica">
         <div class="kiloPrice">4.5€/Un</div>
 
         <select type="text" class="sabaoOptions" id="productOptions">
@@ -35,32 +212,30 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         <select type="text" min="1" class="quantity" id="quantityBtn">
             <option value="Quantidade">Quantidade</option>
-            <option value="1un">1 Sabão</option>
-            <option value="2un">2 Sabões</option>
-            <option value="3un">3 Sabões</option>
-            <option value="4un">4 Sabões</option>
-            <option value="5un">5 Sabões</option>
-            <option value="6un">6 Sabões</option>
+            <option value="1">1 Sabão</option>
+            <option value="2">2 Sabões</option>
+            <option value="3">3 Sabões</option>
+            <option value="4">4 Sabões</option>
+            <option value="5">5 Sabões</option>
+            <option value="6">6 Sabões</option>
         </select>
                     
-              <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
         <div class="priceToPay"></div>
         <button class="addToCart btn btn-success" disabled>Comprar</button>
     `
     const sabaoNaturalMenu = sabaoNatural.querySelector('#productOptions');
     const sabaoQuantity = sabaoNatural.querySelector('#quantityBtn');
     const addSabaoToCartBtn = sabaoNatural.querySelector('.addToCart');
+    const imageDiv = sabaoNatural.querySelector('#image');
+    const priceToPayDiv = sabaoNatural.querySelector('.priceToPay');
+    const kiloPriceDiv = sabaoNatural.querySelector('.kiloPrice');
 
     function checkIfSabaoIsSelected() {
-
-        let finalPriceToPay = sabaoNatural.querySelector('.priceToPay');
-        let imageDiv = sabaoNatural.querySelector('#image');
-
         if (sabaoNaturalMenu.value === 'select') {
             sabaoQuantity.disabled = true;
             addSabaoToCartBtn.disabled = true;
             sabaoQuantity.value = 'Quantidade';
-            finalPriceToPay.style.visibility = 'hidden';
+            priceToPayDiv.style.visibility = 'hidden';
             imageDiv.src = '/images/logo.png';
         }
         if (sabaoNaturalMenu.value !== 'select') {
@@ -68,7 +243,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         }          
     }   
 
-    sabaoNaturalMenu.addEventListener('change', () => {checkIfSabaoIsSelected()})
+    sabaoNaturalMenu.addEventListener('change', () => {
+        checkIfSabaoIsSelected();
+    })
     
     checkIfSabaoIsSelected()
 
@@ -77,18 +254,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         let stock = allSabaoNatural[i].stock;
         let product_id = allSabaoNatural[i].productId;
         let name = allSabaoNatural[i].name;
-        let imageDiv = sabaoNatural.querySelector('#image');
+        let price = allSabaoNatural[i].price;
+        let technicalSheet = allSabaoNatural[i].technicalSheet;
 
-        //shows compota image when the user choose the type of compota
+        //shows image when option is selected
         sabaoNaturalMenu.addEventListener('change', () => {
             const optionsOnSelect = allSabaoNatural.find(option => option.name === sabaoNaturalMenu.value)
             if (optionsOnSelect) {
                 imageDiv.src = optionsOnSelect.image;
+                kiloPriceDiv.textContent = optionsOnSelect.price + '€/Un';
+                imageDiv.addEventListener('click', () => openPopup(optionsOnSelect.technicalSheet, name));
             }
-            if (optionsOnSelect.image == '') {
+            if (optionsOnSelect?.image == '') {
                 imageDiv.src = '/images/logo.png';
             }
-                       
         })
 
         let options = document.createElement('option');
@@ -105,163 +284,93 @@ document.addEventListener('DOMContentLoaded', async () => {
     } 
 
     secSabaoNatural.appendChild(sabaoNatural);
-// ==============================================================================================
-    // for (let i = 0; i < object.sabaoNatural.length; i++) {
-        
-    //     let sabaoNaturalName = object.sabaoNatural[i].name;
-    //     let sabaoNaturalPrice = object.sabaoNatural[i].price;
-    //     let image = object.sabaoNatural[i].image;
-    //     let stock = object.sabaoNatural[i].stock;
-    //     let product_id = object.sabaoNatural[i].productId;
 
-    //     //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
-    //     if (image == '') {
-    //         image = "/images/logo.png";
-    //     }
+    // ─── Comportamento do carrinho ───────────────────────────────────────────
 
-    //     secSabaoNatural.innerHTML += `
-    //         <div class="boxItem" id="${product_id}">
-    //             <h3 id="itName">${sabaoNaturalName}</h3>
-    //             <img src="${image}" alt="">
-    //             <div class="kiloPrice">${sabaoNaturalPrice}€/Un</div>
-    //             <select type="text" min="1" class="quantity" placeholder="quantidade">
-    //                 <option value="qt">Quantidade</option>
-    //                 <option value="1 Un">1 Un</option>
-    //                 <option value="2 Un">2 Un</option>
-    //                 <option value="3 Un">3 Un</option>
-    //                 <option value="4 Un">4 Un</option>
-    //                 <option value="5 Un">5 Un</option>
-    //                 <option value="10 Un">10 Un</option>
-    //             </select>
-    //             <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-    //             <div class="priceToPay"></div>
-    //             <button class="addToCart btn btn-success" disabled>Comprar</button>
-    //         </div>
-    //     `
+    const addCartBtn = sabaoNatural.querySelector('.addToCart');
+    const selectEl = sabaoNatural.querySelector('.quantity');
 
-        // function on script.js
-        // findStockOfItems (stock, product_id)
+    addCartBtn.addEventListener('click', () => {
+        let name = sabaoNaturalMenu.value;
+        let imageSrc = imageDiv.src;
+        let itemPrice = kiloPriceDiv.textContent;
+        let quantity = selectEl.value;
+        let itemTotal = priceToPayDiv.textContent;
+        addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal);
+        updateNumbItemsOnCart();
+        priceToPayDiv.textContent = '';
+        showAllert(name);
+        setTimeout(() => {
+            location.reload();
+        }, 2000);
+    });
 
-        let addCartBtn = document.querySelectorAll('.addToCart');
+    selectEl.addEventListener('change', () => {
+        const qtText = selectEl.value;
+        const qty = parseFloat(qtText);
+        const price = parseFloat(kiloPriceDiv.textContent);
 
-        function addItem() {
-
-            addCartBtn.forEach(btn => {
-                btn.addEventListener('click', (event) => {
-                    btn = event.target;
-                    let name = btn.parentElement.querySelector('.sabaoOptions').value;
-                    let imageSrc = btn.parentElement.querySelector('img').src;
-                    let itemPrice = btn.parentElement.querySelector('.kiloPrice').textContent;
-                    let quantity = btn.parentElement.querySelector('.quantity').value;
-                    let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
-                    addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
-                    updateNumbItemsOnCart()
-                    refreshItemSelected(btn)
-                    showAllert(name)
-                    setTimeout(() => {
-                        location.reload()
-                    }, 2000)
-                })
-            })
+        if (qtText === "Quantidade") {
+            priceToPayDiv.textContent = '';
+            addCartBtn.setAttribute("disabled", "");
         }
-
-        addItem()
-
-        function refreshItemSelected (btn) {
-            btn.parentElement.querySelector('.priceToPay').textContent = '';
+        else {
+            const priceToPay = (qty * price).toFixed(2);
+            priceToPayDiv.style.visibility = 'visible';
+            priceToPayDiv.textContent = priceToPay + ' €';
+            addCartBtn.removeAttribute("disabled");
         }
+    });
 
-        function showAllert (name) {
-            let alert = document.querySelector('.alert');
-            alert.classList.add('show-alert');
+    updateNumbItemsOnCart();
+});
 
-            alert.innerHTML = `
-                <span class="cart-changed-message">${name} adicionado(s) ao Cesto</span>
-                <button class="see-cart">
-                    <a href="/html/carrinho.html">
-                        Ver Cesto
-                    </a> 
-                </button>
-            `
+// ─── Alerta ───────────────────────────────────────────────────────────────────
 
-            setTimeout(() => {
-                alert.classList.remove('show-alert')
-            }, 2000);
-        }
-    
-        function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
-            let itemObj = JSON.parse(localStorage.getItem('cart'))
+function showAllert(name) {
+    let alert = document.querySelector('.alert');
+    alert.classList.add('show-alert');
 
-            if (itemObj === null) {
-                itemObj = []
-            }
-           
-            itemObj.push({
-                itName: name,
-                itImageSrc: imageSrc,
-                itPrice: itemPrice,
-                itQuantity: quantity,
-                itTotal: itemTotal
-            })
-            localStorage.setItem('cart', JSON.stringify(itemObj))
+    alert.innerHTML = `
+        <span class="cart-changed-message">${name} adicionado(s) ao Cesto</span>
+        <button class="see-cart">
+            <a href="/html/carrinho.html">Ver Cesto</a>
+        </button>
+    `
 
-        }
-                    
-        let selectedOptionValue = document.querySelectorAll('.quantity');
-        let kiloPrice = document.querySelectorAll('.kiloPrice');
-        let finalItemPrice = document.querySelectorAll('.priceToPay'); 
-            
-        selectedOptionValue.forEach((btn, i) => {
+    setTimeout(() => {
+        alert.classList.remove('show-alert')
+    }, 2000);
+}
 
-            btn.addEventListener('change', () => {           
+// ─── Adicionar ao localStorage ────────────────────────────────────────────────
 
-                function finalPricePerItem (kg, qt) {
-                    var priceToPay = 0;
-                    kg = parseFloat(selectedOptionValue[i].value);
-                    qt = parseFloat(kiloPrice[i].textContent)
-                    let qtText = selectedOptionValue[i].value;
-                    let addCartBtn = btn.parentElement.querySelector('.addToCart')
+function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
+    let itemObj = JSON.parse(localStorage.getItem('cart'))
 
-                    if (qtText === "Quantidade") {
-                        finalItemPrice[i].textContent = ''
-                        addCartBtn.setAttribute("disabled", "")
-                    }
-                    else {
-                    priceToPay = kg * qt;
-                    priceToPay = priceToPay.toFixed(2);
-                    finalItemPrice[i].style.visibility = 'visible';
-                    finalItemPrice[i].textContent = priceToPay + ' €';
-                    addCartBtn.removeAttribute("disabled");
-                    }
-                    
-                    return priceToPay
-
-                }
-
-                let buyBtn = btn.parentElement.querySelector('.addToCart');
-                buyBtn.removeAttribute('disabled'); 
-                
-                finalPricePerItem() 
-            })
-        })
+    if (itemObj === null) {
+        itemObj = []
+    }
+       
+    itemObj.push({
+        itName: name,
+        itImageSrc: imageSrc,
+        itPrice: itemPrice,
+        itQuantity: quantity,
+        itTotal: itemTotal
     })
-    updateNumbItemsOnCart()
+    localStorage.setItem('cart', JSON.stringify(itemObj))
+}
 
+// ─── Contador do carrinho ─────────────────────────────────────────────────────
 
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
     let cart = JSON.parse(localStorage.getItem('cart'));
 
     numbOfItemsOnCart.forEach(el => {
-        el.textContent = '0'
-
-        for (let i = 0; i < cart.length; i++) {
-            if (cart.length > 0) {
-                el.textContent = cart.length
-            }
-            if (cart.length <= 0) {
-                el.textContent = '0'
-            }
-        }
+        el.textContent = cart.length > 0 ? cart.length : '0';
     })
 }
+
+let screenWidth = window.innerWidth;

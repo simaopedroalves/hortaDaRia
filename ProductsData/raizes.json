@@ -5,165 +5,315 @@
             "price": 6,
             "image": "/images/raizes/rabanete.jpg",
             "productId": 105,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Raphanus sativus",
+                "commonName": "Rabanete",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 30, "maxDays": 50},
+                "culinaryUses": ["Saladas (cru, em rodelas ou quartos)", "Conservas rápidas (pickles)", "Salteados (folhas)"],
+                "traditionalProperties": ["Digestivo", "Estimulante do apetite", "Diurético suave", "Fonte de vitamina C e compostos sulfurados"]
+            }
         },
         {
             "name": "batata vermelha",
             "price": 2,
             "image": "/images/raizes/batata-vermelha.jpg",
             "productId": 2928072025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Solanum tuberosum",
+                "commonName": "Batata vermelha",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 90, "maxDays": 120},
+                "culinaryUses": ["Cozidos", "Assados", "Saladas de batata"],
+                "traditionalProperties": ["Energética", "Fonte de hidratos de carbono complexos", "Rica em potássio", "Saciante", "Fácil digestão quando bem cozinhada"]
+            }
         },
         {
             "name": "batata branca",
             "price": 2,
             "image": "/images/raizes/batata-branca.jpg",
             "productId": 3028072025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Solanum tuberosum",
+                "commonName": "Batata branca",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 90, "maxDays": 120},
+                "culinaryUses": ["Purés", "Fritar", "Assar", "Sopas"],
+                "traditionalProperties": ["Energética", "Saciante", "Fonte de hidratos de carbono", "Rica em potássio", "Fácil digestão quando bem cozinhada"]
+            }
         },
         {
             "name": "batata yacon",
             "price": 4.5,
             "image": "/images/raizes/batata-yacon.jpg",
             "productId": 234802112025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Smallanthus sonchifolius",
+                "commonName": "Batata yacon",
+                "family": "Asteraceae",
+                "harvestTime": {"minDays": 150, "maxDays": 210},
+                "culinaryUses": ["Saladas", "Sumos", "Lâminas finas como snack"],
+                "traditionalProperties": ["Digestiva", "Prebiótica (rica em frutooligossacarídeos)", "Auxilia o trânsito intestinal", "Baixo valor calórico"]
+            }
         },
         {
             "name": "batata doce roxa",
             "price": 3,
             "image": "/images/raizes/batata-doce-roxa.jpg",
             "productId": 123112025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Ipomoea batatas",
+                "commonName": "Batata-doce roxa",
+                "family": "Convolvulaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 150},
+                "culinaryUses": ["Cozidos", "Assados", "Purés", "Sobremesas"],
+                "traditionalProperties": ["Antioxidante (rica em antocianinas)", "Energética de libertação lenta", "Fonte de fibras", "Ajuda no equilíbrio glicémico"]
+            }
         },
         {
             "name": "batata doce polpa laranja",
             "price": 2.5,
             "image": "/images/raizes/batata-doce-polpa-laranja.jpg",
             "productId": 28,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Ipomoea batatas",
+                "commonName": "Batata-doce de polpa laranja",
+                "family": "Convolvulaceae",
+                "harvestTime": {"minDays": 100, "maxDays": 140},
+                "culinaryUses": ["Assados", "Purés", "Sopas", "Sobremesas"],
+                "traditionalProperties": ["Energética", "Rica em beta-caroteno (precursor da vitamina A)", "Antioxidante", "Fonte de fibras"]
+            }
         },
         {
             "name": "batata doce polpa branca",
             "price": 2.5,
             "image": "/images/raizes/batata-doce-polpa-branca.jpg",
             "productId": 111,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Ipomoea batatas",
+                "commonName": "Batata-doce de polpa branca",
+                "family": "Convolvulaceae",
+                "harvestTime": {"minDays": 110, "maxDays": 150},
+                "culinaryUses": ["Cozidos", "Assados", "Fritar", "Acompanhamentos"],
+                "traditionalProperties": ["Energética", "Fonte de hidratos de carbono complexos", "Digestiva", "Saciante"]
+            }
         },
         {
             "name": "batata doce polpa laranja claro",
             "price": 2.5,
             "image": "/images/raizes/batata-doce-polpa-laranja-claro.jpg",
             "productId": 112,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Ipomoea batatas",
+                "commonName": "Batata-doce de polpa laranja-claro",
+                "family": "Convolvulaceae",
+                "harvestTime": {"minDays": 100, "maxDays": 140},
+                "culinaryUses": ["Cozidos", "Assados", "Purés leves", "Acompanhamentos"],
+                "traditionalProperties": ["Energética", "Fonte moderada de beta-caroteno", "Antioxidante suave", "Fonte de fibras"]
+            }
         },
         {
             "name": "cebola nova",
             "price": 3,
             "image": "/images/raizes/cebola-nova.jpg",
             "productId": 29,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Allium cepa",
+                "commonName": "Cebola",
+                "family": "Amaryllidaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 180},
+                "culinaryUses": ["Refogados", "Sopas", "Assados", "Conservas"],
+                "traditionalProperties": ["Digestiva", "Antisséptica", "Antioxidante", "Estimulante do sistema imunitário"]
+            }
         },
         {
             "name": "cebola verde",
             "price": 12,
             "image": "/images/raizes/cebola-verde.jpg",
             "productId": 106,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Allium cepa var. cepa",
+                "commonName": "Cebola verde, cebolinho branco",
+                "family": "Amaryllidaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas frescas", "Refogados rápidos", "Guarnição", "Sopas"],
+                "traditionalProperties": ["Digestiva", "Estimulante do apetite", "Antisséptica", "Refrescante e suave"]
+            }
         },
         {
             "name": "nabo bola de neve",
             "price": 6,
             "image": "",
             "productId": 107,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa subsp. rapa",
+                "commonName": "Nabo Bola de Neve",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Saladas (raiz ralada ou em cubos)", "Cozidos e sopas", "Refogados"],
+                "traditionalProperties": ["Digestivo", "Mineralizante", "Diurético suave", "Fonte de vitamina C e fibras"]
+            }
         },
         {
             "name": "alho francês",
             "price": 6,
             "image": "/images/raizes/alho-frances.jpg",
             "productId": 703181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Allium ampeloprasum var. porrum",
+                "commonName": "Alho-francês, porro",
+                "family": "Amaryllidaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 150},
+                "culinaryUses": ["Sopas e caldos", "Refogados", "Assados", "Estufados"],
+                "traditionalProperties": ["Digestivo", "Estimulante suave do apetite", "Diurético", "Rico em compostos sulfurados"]
+            }
         },
         {
             "name": "alho francês baby",
             "price": 8,
             "image": "",
             "productId": 1518082025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Allium ampeloprasum var. porrum",
+                "commonName": "Alho-francês baby, porro baby",
+                "family": "Amaryllidaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 80},
+                "culinaryUses": ["Misturas de folhas baby", "Saladas frescas", "Salteados rápidos"],
+                "traditionalProperties": ["Digestivo", "Estimulante suave do apetite", "Refrescante", "Rico em compostos sulfurados"]
+            }
         },
         {
             "name": "beterraba di gioggia",
             "price": 6,
             "image": "/images/raizes/beterraba-di-gioggia.jpg",
             "productId": 108,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Beta vulgaris subsp. vulgaris",
+                "commonName": "Beterraba di Chioggia",
+                "family": "Amaranthaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas cruas raladas", "Cozida e em conserva", "Sumos e batidos"],
+                "traditionalProperties": ["Depurativa", "Rica em betaína (bons para o fígado)", "Anti-inflamatória", "Energética"]
+            }
         },
         {
             "name": "beterraba amarela",
             "price": 6,
             "image": "",
             "productId": 111112032025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Beta vulgaris subsp. vulgaris",
+                "commonName": "Beterraba amarela",
+                "family": "Amaranthaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas cruas raladas", "Cozida", "Sumos e batidos"],
+                "traditionalProperties": ["Depurativa", "Rica em betaína", "Mais suave que beterraba vermelha", "Energética"]
+            }
         },
         {
             "name": "beterraba laranja",
             "price": 6,
             "image": "/images/raizes/beterraba-laranja.jpg",
             "productId": 5827102025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Beta vulgaris subsp. vulgaris",
+                "commonName": "Beterraba laranja",
+                "family": "Amaranthaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas cruas raladas", "Cozida", "Sumos e batidos"],
+                "traditionalProperties": ["Depurativa", "Cor natural de carotenóides", "Mais suave que beterraba vermelha", "Energética"]
+            }
         },
         {
             "name": "beterraba",
             "price": 4,
             "image": "",
             "productId": 111212032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Beta vulgaris subsp. vulgaris",
+                "commonName": "Beterraba vulgar, beterraba vermelha",
+                "family": "Amaranthaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Saladas cruas raladas", "Cozida", "Conserva e pickles", "Sumos e batidos"],
+                "traditionalProperties": ["Depurativa", "Rica em betaína (benéfica para fígado)", "Anti-inflamatória", "Energética", "Aumenta energia natural"]
+            }
         },
         {
             "name": "cenouras",
             "price": 4,
             "image": "/images/raizes/cenouras.jpg",
             "productId": 30,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Daucus carota subsp. sativus",
+                "commonName": "Cenoura",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 120},
+                "culinaryUses": ["Cruas raladas em saladas", "Cozidas", "Sumos e batidos", "Assadas", "Refogadas"],
+                "traditionalProperties": ["Oftalmológica (visão)", "Rica em beta-caroteno", "Antioxidante", "Mineraliz ante", "Desintoxicante suave"]
+            }
         },
         {
             "name": "cenoura baby congelada",
             "price": 6,
             "image": "/images/raizes/cenoura-baby-congelada.jpg",
             "productId": 31,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Daucus carota subsp. sativus",
+                "commonName": "Cenoura baby, cenoura doce",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 30, "maxDays": 50},
+                "culinaryUses": ["Cruas em snacks", "Refogadas rápidas", "Saladas", "Acompanhamentos"],
+                "traditionalProperties": ["Oftalmológica", "Rica em beta-caroteno", "Antioxidante", "Suave e doce", "Perfeita para crianças"]
+            }
         },
         {
             "name": "Gengibre fresco",
             "price": 20,
             "image": "/images/raizes/gengibre-fresco.jpg",
             "productId": 110,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Zingiber officinale",
+                "commonName": "Gengibre fresco",
+                "family": "Zingiberaceae",
+                "harvestTime": {"minDays": 240, "maxDays": 300},
+                "culinaryUses": ["Sumos e batidos", "Infusões/chás quentes", "Refogados e curries", "Tempero em marinadas", "Sobremesas"],
+                "traditionalProperties": ["Aquecedor e energizante", "Digestivo e anti-náusea", "Anti-inflamatória", "Circulatória", "Estimula o metabolismo"]
+            }
         },
         {
             "name": "espargos",
             "price": 15,
             "image": "/images/raizes/espargos.jpg",
             "productId": 32,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Asparagus officinalis",
+                "commonName": "Espargos verdes",
+                "family": "Asparagaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 120},
+                "culinaryUses": ["Salteados rápidos", "Vaporizados", "Refogados", "Sopas", "Acompanhamentos"],
+                "traditionalProperties": ["Diurética e drenante", "Detox suave", "Antioxidante", "Rica em ácido fólico e vitaminas", "Alcalinizante"]
+            }
         }
     ]
 }

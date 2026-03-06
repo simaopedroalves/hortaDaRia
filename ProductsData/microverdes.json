@@ -5,72 +5,131 @@
             "price": 75,
             "image": "/images/microverdes/microverdes-trigo-sarraceno.jpg",
             "productId": 22741224,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Fagopyrum esculentum",
+                "commonName": "Trigo-sarraceno",
+                "family": "Polygonaceae",
+                "harvestTime": {"minDays": 7, "maxDays": 10},
+                "culinaryUses": ["Saladas e bowls", "Decoração de pratos", "Sanduíches e wraps", "Smoothies verdes"],
+                "traditionalProperties": ["Digestivo", "Mineralizante (magnésio, ferro e potássio)", "Rico em antioxidantes", "Fonte de proteínas vegetais", "Refrescante e nutritivo"]
+            }
         },
         {
             "name": "rabanete rose",
             "price": 50,
             "image": "/images/microverdes/microverdes-rabanete-rose.jpg",
             "productId": 33,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Raphanus sativus",
+                "commonName": "Rabanete Rose",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 7, "maxDays": 10},
+                "culinaryUses": ["Saladas e bowls", "Sanduíches e wraps", "Decoração de pratos gourmet", "Smoothies verdes"],
+                "traditionalProperties": ["Digestivo", "Mineralizante (potássio e ferro)", "Rico em antioxidantes e compostos sulfurados", "Fonte de proteínas vegetais", "Refrescante e estimulante para o paladar"]
+            }
         },
         {
             "name": "rabanete red rambo",
             "price": 75,
             "image": "/images/microverdes/microverdes-rabanete-red-rambo.jpg",
             "productId": 34,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Raphanus sativus",
+                "commonName": "Rabanete Red Rambo",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 7, "maxDays": 10},
+                "culinaryUses": ["Saladas e bowls", "Sanduíches e wraps", "Decoração de pratos gourmet", "Smoothies verdes"],
+                "traditionalProperties": ["Digestivo", "Mineralizante (potássio e ferro)", "Rico em antioxidantes e compostos sulfurados", "Fonte de proteínas vegetais", "Refrescante e estimulante para o paladar"]
+            }
         },
         {
             "name": "girassol",
             "price": 50,
             "image": "/images/microverdes/microverdes-girassol.jpg",
             "productId": 35,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Helianthus annuus",
+                "commonName": "Girassol",
+                "family": "Asteraceae",
+                "harvestTime": {"minDays": 7, "maxDays": 12},
+                "culinaryUses": ["Saladas e bowls", "Sanduíches e wraps", "Decoração de pratos"],
+                "traditionalProperties": ["Digestivo", "Mineralizante (magnésio, ferro e fósforo)", "Rico em antioxidantes", "Fonte de proteínas vegetais", "Energético e nutritivo"]
+            }
         },
         {
             "name": "coentros",
             "price": 100,
             "image": "/images/microverdes/microverdes-coentros.jpg",
             "productId": 102231124,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Coriandrum sativum",
+                "commonName": "Coentros",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 7, "maxDays": 14},
+                "culinaryUses": ["Saladas e bowls", "Sanduíches e wraps", "Decoração de pratos gourmet", "Sopas e cremes"],
+                "traditionalProperties": ["Digestivo", "Carminativo (alivia gases)", "Antioxidante", "Mineralizante (potássio, cálcio e ferro)", "Refrescante e estimulante para o paladar"]
+            }
         },
         {
             "name": "ervilhas",
             "price": 50,
             "image": "/images/microverdes/microverdes-ervilha.jpg",
             "productId": 36,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Pisum sativum",
+                "commonName": "Ervilha",
+                "family": "Fabaceae",
+                "harvestTime": {"minDays": 7, "maxDays": 12},
+                "culinaryUses": ["Saladas e bowls", "Sanduíches e wraps", "Decoração de pratos gourmet", "Smoothies verdes"],
+                "traditionalProperties": ["Digestivo", "Mineralizante (potássio, fósforo e magnésio)", "Rico em antioxidantes", "Fonte de proteínas vegetais", "Energético e nutritivo"]
+            }
         },
         {
             "name": "capuchinha",
             "price": 250,
             "image": "/images/microverdes/microverdes-capuchinha.jpg",
             "productId": 37,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Tropaeolum majus",
+                "commonName": "Capuchinha",
+                "family": "Tropaeolaceae",
+                "harvestTime": {"minDays": 7, "maxDays": 10},
+                "culinaryUses": ["Saladas e bowls", "Sanduíches e wraps", "Decoração de pratos gourmet"],
+                "traditionalProperties": ["Digestivo", "Mineralizante (potássio, cálcio e ferro)", "Rico em antioxidantes", "Estimulante do apetite", "Refrescante e ligeiramente aromático"]
+            }
         },
         {
             "name": "bróculos",
             "price": 80,
             "image": "/images/microverdes/microverdes-broculos.jpg",
             "productId": 93,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Brassica oleracea var. italica",
+                "commonName": "Brócolos",
+                "family": "Brassicaceae",
+                "harvestTime": {"minDays": 7, "maxDays": 10},
+                "culinaryUses": ["Saladas e bowls", "Sanduíches e wraps", "Decoração de pratos gourmet", "Smoothies verdes"],
+                "traditionalProperties": ["Digestivo", "Mineralizante (potássio, cálcio e ferro)", "Rico em antioxidantes e sulforafano", "Fonte de proteínas vegetais", "Energético e nutritivo"]
+            }
         },
         {
             "name": "mix de microverdes",
             "price": 50,
             "image": "/images/microverdes/microverdes-mix.jpg",
             "productId": 38,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Uma variedade de todos os microverdes que temos disponíveis no momento",
+                "components": ["Variados conforme disponibilidade"]
+            }
         },
         {
             "name": "1 vaso microverdes mix",

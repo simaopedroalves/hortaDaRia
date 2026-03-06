@@ -5,16 +5,22 @@
             "price": 80,
             "image": "/images/carnes/carne-desidratada.jpg",
             "productId": 24231122024,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Carne bovina de qualidade premium, desidratada lentamente a baixa temperatura, preservando nutrientes e sabor intenso. Snack proteico.",
+                "components": ["Carne bovina pura", "Sal marinho", "Temperos naturais"]
+            }
         },
         {
             "name": "Caldo de carnes e de ossos - 250ml",
             "price": 3,
             "image": "/images/carnes/caldo-carnes-ossos.jpg",
             "productId": 235723112025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Caldo caseiro de carnes e ossos, cozido lentamente para extrair gelátina, colágeno e minérais. Verstão tradicional nutritiva.",
+                "components": ["Ossos de carne bovina", "Órgãos nobres", "Agua filtrada", "Sal marinho integral"]
+            }
         }
     ]
 }

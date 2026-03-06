@@ -4,84 +4,121 @@
             "name": "Compota Morango",
             "image": "/images/compotas/compota-morango.jpg",
             "productId": 126,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Compota caseira de morango, preparada com fruto fresco da estação, açúcar integral e método tradicional. Sabor intenso do morango da primavera.",
+                "components": ["Morango fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Framboesa",
             "image": "",
             "productId": 127,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota de framboesa, fruto delicado da época estival. Sabor ácido-doce equilibrado, com textura encorpada pela framboesa natural.",
+                "components": ["Framboesa fresca", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Amoras",
             "image": "",
             "productId": 110612032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota de amoras silvestres, fruto de verão/outono com sabor profundo e complexo. Encorpação natural pelo fruto.",
+                "components": ["Amora silvestre", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Mirtilos",
             "image": "/images/compotas/compota-mirtilos-pequena.jpg",
             "productId": 1630062025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Compota de mirtilos, fruto de sabor intenso e propriedades antioxidantes conservadas no processo tradicional.",
+                "components": ["Mirtilo fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Pêssego Paraguaio",
             "image": "/images/compotas/compota-pessego-paraguaio-pequena.jpg",
             "productId": 1530062025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota de pêssego paraguaio, forma plana especial com polpa suculenta. Sabor adocicado e refrescante de verão.",
+                "components": ["Pêssego paraguaio fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Frutos Silvestres",
             "image": "/images/compotas/compota-frutos-silvestres.jpg",
             "productId": 128,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota mix de frutos silvestres, combinação intenso-antioxidante de morango, framboesa, amora e mirtilo.",
+                "components": ["Morango fresco", "Framboesa", "Amora", "Mirtilo", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Laranja",
             "image": "/images/compotas/compota-laranja.jpg",
             "productId": 5316122024,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota de laranja, cítrico refrescante com vitamina C preservada. Sabor cítrico equilibrado doce-ácido.",
+                "components": ["Laranja fresca", "Açúcar integral", "Pectina cítrica"]
+            }
         },
         {
             "name": "Geleia Laranja",
             "image": "",
             "productId": 110412032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Geleia de laranja, versão mais encorpada e brilhante que compota. Textura firme e sabor cítrico intenso.",
+                "components": ["Laranja fresca", "Açúcar integral", "Pectina natural elevada"]
+            }
         },
         {
             "name": "Compota Limão",
             "image": "",
             "productId": 129,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota de limão, cítrico ácido intenso. Para usos em molhos, marinadas ou pequenas quantidades com chá.",
+                "components": ["Limão fresco", "Açúcar integral", "Pectina cítrica"]
+            }
         },
         {
             "name": "Geleia Limão",
             "image": "/images/compotas/geleia-limao.jpg",
             "productId": 130,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Geleia de limão, textura firme brilhante com sabor cítrico ácido-doce. Para acompanhar chás ou patisserie.",
+                "components": ["Limão fresco", "Açúcar integral", "Pectina natural elevada"]
+            }
         },
         {
             "name": "Compota Figos",
             "image": "",
             "productId": 131,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota de figos, fruto doce e denso tradicional. Sabor melaço natural e textura encorpada pela própria fruta.",
+                "components": ["Figo fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Framboesa Amarela",
             "image": "",
             "productId": 132,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota de framboesa amarela, versão premium de sabor mais suave e delicado que framboesa vermelha.",
+                "components": ["Framboesa amarela fresca", "Açúcar integral", "Pectina natural"]
+            }
         }
     ],
 
@@ -90,84 +127,121 @@
             "name": "Compota Morango",
             "image": "/images/compotas/compota-morango.jpg",
             "productId": 126,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de morango, preparada com fruto fresco da estação, açúcar integral e método tradicional. Maior quantidade de sabor intenso.",
+                "components": ["Morango fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Framboesa",
             "image": "",
             "productId": 127,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de framboesa, fruto delicado da época estival. Sabor ácido-doce equilibrado em formato família.",
+                "components": ["Framboesa fresca", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Mirtilos",
             "image": "",
             "productId": 1430062025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de mirtilos, fruto de sabor intenso e propriedades antioxidantes. Formato grande para família.",
+                "components": ["Mirtilo fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Pêssego Paraguaio",
             "image": "",
             "productId": 1330062025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de pêssego paraguaio, forma plana especial com polpa suculenta. Versão grande-família refrescante.",
+                "components": ["Pêssego paraguaio fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Frutos Silvestres",
             "image": "/images/compotas/compota-frutos-silvestres.jpg",
             "productId": 128,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande mix de frutos silvestres, combinação intenso-antioxidante de morango, framboesa, amora e mirtilo.",
+                "components": ["Morango fresco", "Framboesa", "Amora", "Mirtilo", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Laranja",
             "image": "/images/compotas/compota-laranja.jpg",
             "productId": 5316122024,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de laranja, cítrico refrescante com vitamina C preservada. Sabor cítrico equilibrado doce-ácido.",
+                "components": ["Laranja fresca", "Açúcar integral", "Pectina cítrica"]
+            }
         },
         {
             "name": "Compota Limão",
             "image": "",
             "productId": 129,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de limão, cítrico ácido intenso. Para usos em molhos, marinadas em quantidade maior.",
+                "components": ["Limão fresco", "Açúcar integral", "Pectina cítrica"]
+            }
         },
         {
             "name": "Geleia Limão",
             "image": "/images/compotas/geleia-limao.jpg",
             "productId": 130,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Geleia grande de limão, textura firme brilhante com sabor cítrico ácido-doce. Para acompanhar chás ou patisserie em grande volume.",
+                "components": ["Limão fresco", "Açúcar integral", "Pectina natural elevada"]
+            }
         },
         {
             "name": "Geleia Laranja",
             "image": "",
             "productId": 110212032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Geleia grande de laranja, versão mais encorpada e brilhante que compota. Textura firme e sabor cítrico intenso em formato grande.",
+                "components": ["Laranja fresca", "Açúcar integral", "Pectina natural elevada"]
+            }
         },
         {
             "name": "Geleia Marmelos",
             "image": "",
             "productId": 1223112025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Geleia de marmelos, tradicional receita portuguesa. Textura firme encorpada e sabor doce-ácido equilibrado de fruto temperamental.",
+                "components": ["Marmelo fresco", "Açúcar integral", "Pectina natural elevada"]
+            }
         },
         {
             "name": "Compota Figos",
             "image": "",
             "productId": 131,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de figos, fruto doce e denso tradicional. Sabor melaço natural e textura encorpada.",
+                "components": ["Figo fresco", "Açúcar integral", "Pectina natural"]
+            }
         },
         {
             "name": "Compota Framboesa Amarela",
             "image": "",
             "productId": 132,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "description": "Compota grande de framboesa amarela, versão premium de sabor mais suave e delicado que framboesa vermelha.",
+                "components": ["Framboesa amarela fresca", "Açúcar integral", "Pectina natural"]
+            }
         }
     ]
 }

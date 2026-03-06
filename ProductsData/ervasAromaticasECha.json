@@ -45,111 +45,210 @@
             "price": 30,
             "image": "/images/ervasECha/endro-dill.jpg",
             "productId": 174931082025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Anethum graveolens",
+                "commonName": "Endro, aneto",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Folhas usadas frescas como erva aromática", "Peixes", "Batatas", "Ovos", "Molhos à base de iogurte", "Pode ser usado seco, mas perde aroma", "Sementes usadas como especiaria"],
+                "traditionalProperties": ["Digestivo", "Carminativo (reduz gases)", "Antiespasmódico ligeiro", "Estimulante suave do apetite"]
+            }
         },
         {
             "name": "alecrim",
             "price": 30,
             "image": "/images/ervasECha/alecrim.jpg",
             "productId": 62,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Salvia rosmarinus (sin. Rosmarinus officinalis)",
+                "commonName": "Alecrim",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 180},
+                "culinaryUses": ["Usado como erva aromática", "Carnes", "Batatas", "Pães e focaccias", "Usar com moderação (aroma intenso)", "Mantém aroma mesmo após cozedura"],
+                "traditionalProperties": ["Estimulante", "Digestivo", "Tónico geral", "Antisséptico ligeiro"]
+            }
         },
         {
             "name": "chá de limonete",
             "price": 30,
             "image": "/images/ervasECha/cha_limonete.jpg",
             "productId": 63,
-            "stock": false            
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Aloysia citrodora",
+                "commonName": "Limonete, lúcia-lima, erva-luísa",
+                "family": "Verbenaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 180},
+                "culinaryUses": ["Folhas usadas frescas ou secas", "Infusões e chás", "Sobremesas", "Aromatizar bebidas", "Aroma intenso a limão", "Secagem preserva bem o aroma"],
+                "traditionalProperties": ["Calmante", "Digestiva", "Antiespasmódica", "Relaxante"]
+            }
         },
         {
             "name": "chá de cidreira",
             "price": 30,
             "image": "/images/ervasECha/cha-cidreira.jpg",
             "productId": 64,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Melissa officinalis",
+                "commonName": "Cidreira, erva-cidreira",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Folhas usadas frescas ou secas", "Infusões e chás", "Bebidas aromatizadas", "Sobremesas", "Aroma suave a limão", "Perde aroma com cozedura prolongada"],
+                "traditionalProperties": ["Calmante", "Digestiva", "Antiespasmódica", "Relaxante"]
+            }
         },
         {
             "name": "folhas de loureiro",
             "price": 30,
             "image": "/images/ervasECha/folha-loureiro.jpg",
             "productId": 65,
-            "stock": true      
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Laurus nobilis",
+                "commonName": "Loureiro, louro",
+                "family": "Lauraceae",
+                "harvestTime": {"minDays": 180, "maxDays": 365},
+                "culinaryUses": ["Folhas usadas frescas ou secas", "Sopas", "Estufados", "Molhos", "Aroma intenso e persistente", "Retirar a folha antes de servir"],
+                "traditionalProperties": ["Digestivo", "Carminativo", "Estimulante ligeiro", "Antisséptico suave"]
+            }
         },
         {
             "name": "hortelã",
             "price": 30,
             "image": "/images/ervasECha/hortela.jpg",
             "productId": 715181124,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Mentha spicata",
+                "commonName": "Hortelã-vulgar, hortelã-verde",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Folhas usadas frescas ou secas", "Chás e infusões", "Bebidas refrescantes", "Saladas", "Molhos e sobremesas", "Aroma fresco e mentolado suave", "Perde aroma com cozedura prolongada"],
+                "traditionalProperties": ["Digestiva", "Refrescante", "Antiespasmódica", "Estimulante ligeira"]
+            }
         },
         {
             "name": "hortelã menta",
             "price": 30,
             "image": "/images/ervasECha/hortela-menta.jpg",
             "productId": 67,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Mentha × piperita",
+                "commonName": "Hortelã-menta, menta-pimenta",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Folhas usadas frescas ou secas", "Infusões e chás", "Sobremesas", "Bebidas", "Molhos", "Aroma mentolado intenso e fresco", "Resiste melhor ao calor que a hortelã-vulgar"],
+                "traditionalProperties": ["Digestiva", "Refrescante", "Antiespasmódica", "Descongestionante ligeira"]
+            }
         },
         {
             "name": "cidreira fresca",
             "price": 30,
             "image": "/images/ervasECha/cidreira-fresca.jpg",
             "productId": 69,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Melissa officinalis",
+                "commonName": "Cidreira, erva-cidreira",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Folhas usadas frescas", "Infusões e chás", "Bebidas aromatizadas", "Saladas de fruta", "Sobremesas", "Aroma fresco a limão, mais intenso que na folha seca", "Adicionar no final das preparações para preservar o aroma"],
+                "traditionalProperties": ["Calmante", "Digestiva", "Antiespasmódica", "Relaxante"]
+            }
         },
         {
             "name": "tomilho",
             "price": 40,
             "image": "/images/ervasECha/tomilho.jpg",
             "productId": 70,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Thymus vulgaris",
+                "commonName": "Tomilho",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 90, "maxDays": 120},
+                "culinaryUses": ["Folhas usadas frescas ou secas", "Carnes", "Peixes", "Legumes", "Sopas e estufados", "Aroma intenso e ligeiramente picante", "Mantém bem o aroma após cozedura"],
+                "traditionalProperties": ["Digestivo", "Antisséptico", "Expectorante ligeiro", "Estimulante suave"]
+            }
         },
         {
             "name": "oregãos",
             "price": 30,
             "image": "/images/ervasECha/oregaos.jpg",
             "productId": 71,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Origanum vulgare",
+                "commonName": "Orégãos",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 90, "maxDays": 120},
+                "culinaryUses": ["Folhas usadas frescas ou secas", "Pizzas", "Massas", "Molhos de tomate", "Carnes e legumes", "Aroma intenso e quente", "Aroma concentra-se após secagem"],
+                "traditionalProperties": ["Digestivos", "Antissépticos ligeiros", "Estimulantes", "Antioxidantes"]
+            }
         },
         {
             "name": "coentros",
             "price": 20,
             "image": "/images/ervasECha/coentros.jpg",
             "productId": 72,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Coriandrum sativum",
+                "commonName": "Coentros",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 30, "maxDays": 50},
+                "culinaryUses": ["Folhas usadas frescas", "Sopas", "Peixe", "Carnes", "Arroz e leguminosas", "Aroma fresco e característico", "Adicionar no final da confeção"],
+                "traditionalProperties": ["Digestivos", "Carminativos", "Estimulantes suaves", "Refrescantes"]
+            }
         },
         {
             "name": "hipericão do gerês",
             "price": 40,
             "image": "/images/ervasECha/hipericao-do-geres.jpg",
             "productId": 73,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Hypericum perforatum",
+                "commonName": "Hipericão-do-Gerês, hipericão, erva-de-São-João",
+                "family": "Hypericaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 180},
+                "culinaryUses": ["Usado principalmente em", "Infusões e chás", "Macerações em óleo", "Não é usado como erva culinária", "Partes usadas: flores e folhas"],
+                "traditionalProperties": ["Calmante", "Antidepressivo ligeiro (uso tradicional)", "Cicatrizante (uso externo em óleo)", "Anti-inflamatório suave"]
+            }
         },
         {
             "name": "salsa",
             "price": 20,
             "image": "/images/ervasECha/salsa.jpg",
             "productId": 74,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Petroselinum crispum",
+                "commonName": "Salsa",
+                "family": "Apiaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Folhas usadas frescas (principalmente)", "Sopas", "Peixe", "Carnes", "Molhos e saladas", "Aroma fresco e ligeiramente herbáceo", "Adicionar no final da confeção"],
+                "traditionalProperties": ["Digestiva", "Diurética suave", "Refrescante", "Rica em vitamina C (uso alimentar)"]
+            }
         },
         {
             "name": "mangericão",
             "price": 20,
             "image": "/images/ervasECha/mangericao.jpg",
             "productId": 225925052025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Ocimum basilicum",
+                "commonName": "Manjericão",
+                "family": "Lamiaceae",
+                "harvestTime": {"minDays": 40, "maxDays": 60},
+                "culinaryUses": ["Folhas usadas frescas", "Saladas", "Massas", "Molhos (pesto)", "Pratos mediterrânicos", "Aroma doce e intenso", "Perde aroma com cozedura prolongada", "Ideal adicionar no final"],
+                "traditionalProperties": ["Digestivo", "Estimulante suave", "Antiespasmódico ligeiro", "Aromático e refrescante"]
+            }
         }
     ]
 }

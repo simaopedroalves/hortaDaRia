@@ -5,32 +5,60 @@
             "price": 10,
             "image": "/images/cogumelos/cogumelos-pleurotus.jpg",
             "productId": 93,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Pleurotus ostreatus (ostra)",
+                "commonName": "Cogumelo ostra, Pleurotus",
+                "family": "Pleurotaceae",
+                "harvestTime": {"minDays": 14, "maxDays": 28},
+                "culinaryUses": ["Salteados e refogados", "Sopas e risotos", "Grelhados e assados", "Massas e pratos vegetarianos/gourmet"],
+                "traditionalProperties": ["Digestivo", "Fonte de proteínas vegetais, fibras e vitaminas do complexo B", "Rico em minerais (potássio, fósforo, ferro)", "Tradicionalmente usado como alimento nutritivo, leve e funcional"]
+            }
         },
         {
             "name": "Cogumelos marron",
             "price": 8,
             "image": "/images/cogumelos/cogumelos-marron.jpg",
             "productId": 125,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Agaricus bisporus",
+                "commonName": "Cogumelo marron, champignon marron, cremini",
+                "family": "Agaricaceae",
+                "harvestTime": {"minDays": 21, "maxDays": 28},
+                "culinaryUses": ["Salteados e refogados", "Sopas e risotos", "Assados e grelhados", "Molhos e pratos vegetarianos/gourmet"],
+                "traditionalProperties": ["Digestivo", "Fonte de proteínas vegetais, fibras e vitaminas do complexo B", "Rico em minerais (potássio, fósforo, selénio)", "Tradicionalmente usado como alimento nutritivo, leve e funcional"]
+            }
         },
         {
             "name": "Cogumelos shitaki",
             "price": 13,
             "image": "/images/cogumelos/cogumelos-shitaki.jpg",
             "productId": 207231124,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Lentinula edodes",
+                "commonName": "Shiitake",
+                "family": "Marasmiaceae",
+                "harvestTime": {"minDays": 49, "maxDays": 70},
+                "culinaryUses": ["Salteados e refogados", "Sopas e risotos", "Grelhados e assados", "Pratos asiáticos e gourmet"],
+                "traditionalProperties": ["Digestivo", "Fonte de proteínas vegetais, fibras e vitaminas B e D", "Rico em minerais (potássio, ferro, selénio)", "Tradicionalmente usado como alimento funcional, nutritivo e aromático"]
+            }
         },
         {
             "name": "Cogumelos portobello",
             "price": 10,
             "image": "/images/cogumelos/cogumelos-portobello.jpg",
             "productId": 208231124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Agaricus bisporus",
+                "commonName": "Portobello, cogumelo gigante",
+                "family": "Agaricaceae",
+                "harvestTime": {"minDays": 21, "maxDays": 28},
+                "culinaryUses": ["Grelhados e assados inteiros", "Salteados e refogados", "Recheios e burgers vegetarianos", "Sopas e risotos"],
+                "traditionalProperties": ["Digestivo", "Fonte de proteínas vegetais, fibras e vitaminas do complexo B", "Rico em minerais (potássio, fósforo, selénio)", "Tradicionalmente usado como alimento nutritivo, funcional e gourmet"]
+            }
         }
     ]
 }

@@ -5,321 +5,630 @@
             "price": 1.95,
             "image": "/images/frutaDaEpoca/kiwi.jpg",
             "productId": 10028102025,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Actinidia deliciosa",
+                "commonName": "Kiwi",
+                "family": "Actinidiaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Fruta fresca", "Sobremesas e sucos", "Smoothies", "Acompanhamento de iogurte"],
+                "traditionalProperties": ["Rica em vitamina C", "Enzima actinidina (digestão de proteínas)", "Laxante suave", "Antioxidante", "Refrescante"]
+            }
         },
         {
             "name": "caviar limão",
             "price": 39,
             "image": "/images/horticulas/caviar-limao.jpg",
             "productId": 10420102025,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Citrus australasica",
+                "commonName": "Caviar de limão, dedo de Buda cítrico",
+                "family": "Rutaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Decoração gourmet", "Cervejas e bebidas", "Molhos de peixe", "Guarnição de pratos sofisticados"],
+                "traditionalProperties": ["Explosão de cítrico fresco", "Sabor intenso e refrescante", "Antioxidante", "Exótico e exclusivo", "Premium gourmet"]
+            }
         },
         {
             "name": "nozes",
             "price": 4.5,
             "image": "/images/horticulas/nozes.jpg",
             "productId": 10520102025,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Juglans regia",
+                "commonName": "Noz",
+                "family": "Juglandaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Snack nutritivo", "Padaria e bolos", "Molhos (pesto de noz)", "Saladas"],
+                "traditionalProperties": ["Rica em omega-3 (ALA)", "Apoio cognitivo", "Antioxidante e anti-inflamatória", "Saciante e energética", "Drenante leve"]
+            }
         },
         {
             "name": "castanhas",
             "price": 3.8,
             "image": "/images/horticulas/castanhas.jpg",
             "productId": 3615092025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Castanea sativa",
+                "commonName": "Castanha",
+                "family": "Fagaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Assadas (fruta de outono)", "Sopas e purés", "Recheios", "Acompanhamentos de pratos principais"],
+                "traditionalProperties": ["Energética e aquecedora", "Rica em hidratos complexos", "Menos lipídica que frutos secos", "Tradicional de Natal", "Mineralizante e saciante"]
+            }
         },
         {
             "name": "maracujá",
             "price": 8,
             "image": "/images/frutaDaEpoca/maracuja.jpg",
             "productId": 1618082025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Passiflora edulis",
+                "commonName": "Maracujá",
+                "family": "Passifloraceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Sumos e bebidas frescas", "Sobremesas e pavés", "Molhos ácidos", "Compotas"],
+                "traditionalProperties": ["Calmante e sedativa ligeira", "Rica em vitamina C", "Refrescante", "Antioxidante", "Suporte ao sono"]
+            }
         },
         {
             "name": "pêssego paraguaio",
             "price": 3,
             "image": "/images/frutaDaEpoca/pessego-paraguaio.jpg",
             "productId": 234122062025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Prunus persica var. platycarpa",
+                "commonName": "Pêssego paraguaio, pêssego chato",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Fruta fresca de verão", "Sobremesas", "Compotas", "Grelhado"],
+                "traditionalProperties": ["Refrescante e hidratante", "Rica em flavonóides (pele)", "Laxante suave", "Antioxidante", "Forma chata é mais fácil de comer"]
+            }
         },
         {
             "name": "ameixa vermelha",
             "price": 3,
             "image": "/images/frutaDaEpoca/ameixa-vermelha.jpg",
             "productId": 2614072025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Prunus domestica",
+                "commonName": "Ameixa vermelha",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 150, "maxDays": 210},
+                "culinaryUses": ["Fruta fresca", "Compotas e geleias", "Assados", "Sobremesas"],
+                "traditionalProperties": ["Laxante natural (sorbitol)", "Refrescante", "Anti-inflamatória do tubo digestivo", "Rica em antioxidantes", "Equilibra flora intestinal"]
+            }
         },
         {
             "name": "marmelos",
             "price": 1.3,
             "image": "/images/frutaDaEpoca/marmelos.jpg",
             "productId": 829092025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cydonia oblonga",
+                "commonName": "Marmelo",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 180, "maxDays": "240},
+                "culinaryUses": ["Compotas e doces de marmelo (tradicional)", "Geleias", "Bebidas", "Tempero em pratos de carne"],
+                "traditionalProperties": ["Adstringente (taninos)", "Antisseptíca do tubo digestivo", "Digestiva", "Antidiarreica", "Rico em pectina (fibra solúvel)"]
+            }
         },
         {
             "name": "ameixa amarela",
             "price": 3,
             "image": "/images/frutaDaEpoca/ameixa-amarela.jpg",
             "productId": 1121072025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Prunus domestica",
+                "commonName": "Ameixa amarela",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 150, "maxDays": 210},
+                "culinaryUses": ["Fruta fresca", "Compotas", "Assados", "Sobremesas e tartes"],
+                "traditionalProperties": ["Laxante natural", "Refrescante", "Anti-inflamatória", "Adoçada naturalmente", "Antioxidante"]
+            }
         },
         {
             "name": "melancia",
             "price": 2,
             "image": "/images/frutaDaEpoca/melancia.jpg",
             "productId": 2356181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Citrullus lanatus",
+                "commonName": "Melancia",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 100},
+                "culinaryUses": ["Fruta fresca de verão", "Sumos refrescantes", "Saladas", "Gaspacho"],
+                "traditionalProperties": ["Muito hidratante (92% água)", "Licopeno antioxidante", "Refrescante e drenante", "Alcalinizante", "Frequente em temperaturas elevadas"]
+            }
         },
         {
             "name": "figos",
             "price": 6,
             "image": "/images/frutaDaEpoca/figos.jpg",
             "productId": 2357181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Ficus carica",
+                "commonName": "Figo",
+                "family": "Moraceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Fruta fresca", "Secados (tradicionais)", "Geleias", "Molhos com carnes", "Acompanhado de queijo"],
+                "traditionalProperties": ["Laxante suave (sementes e pectina)", "Alcalinizante", "Mineralizante (potzio, ferro)", "Cicatrizante interna", "Energia rápida"]
+            }
         },
         {
             "name": "cucamelon",
             "price": 25,
             "image": "/images/frutaDaEpoca/cucamelon.jpg",
             "productId": 2358181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Melothria scabra",
+                "commonName": "Cucamelon, melão-rato",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Snack fresco (como uva)", "Pickles e conservas", "Saladas gourmet", "Decoração"],
+                "traditionalProperties": ["Refrescante e hidratante", "Sabor cítrico natural", "Baixo teor calórico", "Exotico e gourmet", "Fácil de comer em bruto"]
+            }
         },
         {
             "name": "framboesas amarelas",
             "price": 15,
             "image": "/images/frutaDaEpoca/framboesas-amarelas.jpg",
             "productId": 2359181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Rubus idaeus",
+                "commonName": "Framboesa amarela",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 150, "maxDays": 180},
+                "culinaryUses": ["Fruta fresca gourmet", "Sobremesas refinadas", "Sucos e bebidas", "Geleias e compotas"],
+                "traditionalProperties": ["Antioxidante (menos intensa que vermelha)", "Refrescante", "Anti-inflamatória", "Sabor mais suave que vermelha", "Exclusiva e premium"]
+            }
         },
         {
             "name": "fisalis",
             "price": 15,
             "image": "/images/frutaDaEpoca/fisalis.jpg",
             "productId": 100181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Physalis peruviana",
+                "commonName": "Fisalis, ucúuva",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Fruta fresca gourmet", "Sobremesas e decoração", "Sucos", "Geleias"],
+                "traditionalProperties": ["Rica em vitamina C", "Antioxidante", "Sabor doce-ácido equilibrado", "Propriedades anti-inflamatórias", "Refrescante"]
+            }
         },
         {
             "name": "mix frutos silvestres",
             "price": 25,
             "image": "/images/frutaDaEpoca/mix-frutos-silvestres.jpg",
             "productId": 12510072025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Rubus/Vaccinium spp.",
+                "commonName": "Mix frutos silvestres",
+                "family": "Rosaceae/Ericaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 180},
+                "culinaryUses": ["Sobremesas sofisticadas", "Sucos e smoothies", "Iogurte e pudins", "Decoração"],
+                "traditionalProperties": ["Altíssimo poder antioxidante (combinação)", "Rica em antocianinas", "Anti-inflamatória", "Apoio cognitivo", "Versão premium multi-sabor"]
+            }
         },
         {
             "name": "morangos",
             "price": 8,
             "image": "/images/frutaDaEpoca/morangos.jpg",
             "productId": 101181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Fragaria × ananassa",
+                "commonName": "Morango",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 30, "maxDays": 45},
+                "culinaryUses": ["Fruta fresca primavera", "Sobremesas e pavês", "Sucos e smoothies", "Compotas"],
+                "traditionalProperties": ["Rica em vitamina C (mais de laranja)", "Antioxidante (antocianinas)", "Leve acao anti-inflamatória", "Refrescante", "Sabor adocicado natural"]
+            }
         },
         {
             "name": "morangos silvestres",
             "price": 25,
             "image": "/images/frutaDaEpoca/morangos-silvestres.jpg",
             "productId": 230825052025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Fragaria viridis",
+                "commonName": "Morango silvestre",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 30, "maxDays": 40},
+                "culinaryUses": ["Fruta gourmet excepcionalmente fresca", "Sobremesas premium", "Sucos especiais", "Decoração"],
+                "traditionalProperties": ["Sabor intenso incomparável", "Muito mais antioxidante que morango cultivado", "Tamanho pequeno concentra sabor", "Aroma selvagem", "Versão premium exclusiva"]
+            }
         },
         {
             "name": "mirtilos",
             "price": 9,
             "image": "/images/frutaDaEpoca/mirtilos.jpg",
             "productId": 11601062025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Vaccinium corymbosum",
+                "commonName": "Mirtilo",
+                "family": "Ericaceae",
+                "harvestTime": {"minDays": 90, "maxDays": 120},
+                "culinaryUses": ["Fruta fresca", "Sobremesas e pavês", "Múfins e bolos", "Sucos e bebidas"],
+                "traditionalProperties": ["Antocianinas (saúde da visão)", "Antioxidante muito potente", "Apoio à memória", "Anti-inflamatória", "Suporte à saúde cerebral"]
+            }
         },
         {
             "name": "amoras",
             "price": 10,
             "image": "/images/frutaDaEpoca/amoras.jpg",
             "productId": 3128072025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Rubus fruticosus",
+                "commonName": "Amora silvestre, amora-preta",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 120, "maxDays": 150},
+                "culinaryUses": ["Fruta fresca verão/outono", "Sobremesas e geleias", "Sucos e bebidas", "Compotas"],
+                "traditionalProperties": ["Antioxidante (antocianinas)", "Adstringente leve", "Alcalinizante", "Anti-inflamatória", "Sabor profundo e complexo"]
+            }
         },
         {
             "name": "beringela",
             "price": 4,
             "image": "/images/frutaDaEpoca/beringela.jpg",
             "productId": 102181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Solanum melongena",
+                "commonName": "Beringela",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 90},
+                "culinaryUses": ["Refogada ou assada", "Parm", "Caponata italiana", "Curry"],
+                "traditionalProperties": ["Colecistoquinética (estímula bilis)", "Depurativa do fígado", "Baixo teor calórico", "Alcalinizante", "Muito versátil na culinária"]
+            }
         },
         {
             "name": "pepino",
             "price": 3,
             "image": "/images/horticulas/pepino.jpg",
             "productId": 103231124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cucumis sativus",
+                "commonName": "Pepino",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Saladas frescas", "Pickles e conservas", "Sucos refrescantes", "Gazpacho"],
+                "traditionalProperties": ["Hidratante (96% água)", "Drenante e ligeiro", "Refrescante", "Diurético suave", "Alcalinizante"]
+            }
         },
         {
             "name": "abóbora manteiga",
             "price": 2,
             "image": "",
             "productId": 51,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cucurbita moschata",
+                "commonName": "Abóbora manteiga",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 80, "maxDays": 120},
+                "culinaryUses": ["Purés e cremes", "Assada ao forno", "Sopas", "Acompanhamentos doces salientes"],
+                "traditionalProperties": ["Rica em beta-caroteno", "Energtica e aquecedora", "Manteiguda e suave", "Digestória", "Alcalinizante"]
+            }
         },
         {
             "name": "abóbora muscade/laranja",
             "price": 2,
             "image": "/images/horticulas/abobora-muscade.jpg",
             "productId": 52,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cucurbita moschata",
+                "commonName": "Abóbora muscade",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 80, "maxDays": 120},
+                "culinaryUses": ["Purés e cremes", "Assada", "Sopas", "Risoto"],
+                "traditionalProperties": ["Rica em beta-caroteno (cor laranja)", "Energética", "Aquecedora para inverno", "Sabor adoçado com toque especiado", "Alcalinizante"]
+            }
         },
         {
             "name": "limões",
             "price": 3,
             "image": "/images/horticulas/limoes.jpg",
             "productId": 53,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Citrus limon",
+                "commonName": "Limão",
+                "family": "Rutaceae",
+                "harvestTime": {"minDays": 150, "maxDays": 180},
+                "culinaryUses": ["Sucos e bebidas ácidas frescas", "Molhos e marinadas", "Tempero de peixe", "Limpeza de verduras"],
+                "traditionalProperties": ["Rica em vitamina C", "Alcanilizante no organismo", "Digestivo e depurador", "Antisseptíca", "Antioxidante"]
+            }
         },
         {
             "name": "tomate chucha",
             "price": 3,
             "image": "/images/horticulas/tomate-chucha.jpg",
             "productId": 3915092025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Solanum lycopersicum",
+                "commonName": "Tomate chucha",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 80},
+                "culinaryUses": ["Saladas frescas", "Molhos de tomate", "Cozidos", "Pizza e trigo"],
+                "traditionalProperties": ["Licopeno antioxidante (vermelhidao)", "Vitamina C", "Alcalinizante", "Digestiva leve", "Versão peque e frutada do tomate"]
+            }
         },
         {
             "name": "tomate coração de boi",
             "price": 4,
             "image": "/images/horticulas/tomate-coracao-boi.jpg",
             "productId": 119,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Solanum lycopersicum",
+                "commonName": "Tomate coração de boi",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 90},
+                "culinaryUses": ["Saladas gourmet e saudáveis", "Cru em fatias finas", "Sucos", "Pratos refrescantes"],
+                "traditionalProperties": ["Licopeno antioxidante", "Vitamina C elevada", "Alcalinizante", "Polpa suculenta e saborosa", "Tamanho grande e formato tradicional"]
+            }
         },
         {
             "name": "tomate cherry vermelho",
             "price": 8,
             "image": "/images/horticulas/tomate-cherry-vermelho.jpg",
             "productId": 10707072025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Solanum lycopersicum var. cerasiforme",
+                "commonName": "Tomate cherry",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 80},
+                "culinaryUses": ["Snack fresco (como baga)", "Saladas gourmet", "Decoração", "Molhos raffinados"],
+                "traditionalProperties": ["Licopeno concentrado (pequeno)", "Sabor muito doce concentrado", "Vitamina C", "Fácil de comer como fruta", "Gourmet versão"]
+            }
         },
         {
             "name": "tomate cherry preto",
             "price": 8,
             "image": "/images/horticulas/tomate-cherry-preto.jpg",
             "productId": 10807072025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Solanum lycopersicum var. cerasiforme",
+                "commonName": "Tomate cherry preto",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 90},
+                "culinaryUses": ["Decoração gourmet", "Saladas refinadas", "Snack premium", "Molhos sofisticados"],
+                "traditionalProperties": ["Antocianinas (cor preta)", "Antioxidante muito potente", "Sabor profundo complexo", "Cherry tamanho", "Versão premium por cor e antioxidantes"]
+            }
         },
         {
             "name": "Courgete amarela",
             "price": 4,
             "image": "/images/horticulas/courgete.jpg",
             "productId": 130824032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cucurbita pepo",
+                "commonName": "Curgete amarela",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Refogada", "Grelhada", "Saladas cruas (tenra)", "Acompanhamentos"],
+                "traditionalProperties": ["Hidratante", "Baixo calórico", "Fácil de digerir", "Refrescante", "Opção clara do abobóbora de verão"]
+            }
         },
         {
             "name": "Courgete verde",
             "price": 4,
             "image": "/images/horticulas/courgete-verde.jpg",
             "productId": 204231124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cucurbita pepo",
+                "commonName": "Curgete verde",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 50, "maxDays": 70},
+                "culinaryUses": ["Refogada", "Grelhada (sumo retido)", "Saladas cruas", "Acompanhamentos versáteis"],
+                "traditionalProperties": ["Hidratante", "Baixo calórico", "Leve e digestiva", "Versão tradicional verde", "Fácil de preparar"]
+            }
         },
         {
             "name": "Courgete baby",
             "price": 10,
             "image": "/images/horticulas/courgete-baby.jpg",
             "productId": 2354181124,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Cucurbita pepo",
+                "commonName": "Curgete baby",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 30, "maxDays": 45},
+                "culinaryUses": ["Inteira grelhada", "Refogada rápida", "Saladas gourmet", "Snack assado"],
+                "traditionalProperties": ["Tenra e delicada quando baby", "Pode comer com casca", "Sabor suave", "Versão premium pequena", "Fácil preparação rápida"]
+            }
         },
         {
             "name": "pimentos",
             "price": 4,
             "image": "/images/horticulas/pimentos.jpg",
             "productId": 2352181124,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Capsicum annuum",
+                "commonName": "Pimento misto",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 90},
+                "culinaryUses": ["Refogados mistos", "Sopas", "Saladas frescas", "Acompanhamentos versáteis"],
+                "traditionalProperties": ["Vitamina C elevada (verde mais ainda)", "Capsaicina (ligeira)", "Anti-inflamatória", "Versão versátil mista", "Diária versátil não especial"]
+            }
         },
         {
             "name": "pimento amarelo",
             "price": 4,
             "image": "/images/horticulas/pimento-amarelo.jpg",
             "productId": 2128072025,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Capsicum annuum",
+                "commonName": "Pimento amarelo",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 90},
+                "culinaryUses": ["Refogados", "Saladas frescas", "Decoración gourmet", "Sopas suaves"],
+                "traditionalProperties": ["Vitamina C (doce)", "Sabor adocicado", "Menos picante que verde", "Beta-caroteno", "Cor radiante"]
+            }
         },
         {
             "name": "pimento verde",
             "price": 3,
             "image": "/images/horticulas/pimento-verde.jpg",
             "productId": 2355181124,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Capsicum annuum",
+                "commonName": "Pimento verde",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 75},
+                "culinaryUses": ["Refogados e sopas", "Saladas", "Versão verde menos madura", "Acompanhamentos diários"],
+                "traditionalProperties": ["Máxima vitamina C no estado verde", "Mais ligeiro em capsaicina", "Diário versátil", "Colhido mais cedo que amarelo/vermelho", "Priço acessível"]
+            }
         },
         {
             "name": "pimento vermelho",
             "price": 4,
             "image": "",
             "productId": 2728072025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Capsicum annuum",
+                "commonName": "Pimento vermelho",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 80, "maxDays": 100},
+                "culinaryUses": ["Refogados sofisticados", "Molhos vermelhos", "Saladas gourmet", "Assado inteiro (pele caída)"],
+                "traditionalProperties": ["Máximo teor de vitamina C (plenamente maduro)", "Beta-caroteno", "Licopeno", "Sabor doce intenso", "Versão madura versátil"]
+            }
         },
         {
             "name": "pimento jalapeno",
             "price": 8,
             "image": "/images/horticulas/pimento-jalapeno.jpg",
             "productId": 10907072025,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Capsicum jalapeño",
+                "commonName": "Pimento jalapeño",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 90},
+                "culinaryUses": ["Molhos quentes (pico de gallo)", "Pratos mexicanos", "Pickles e conservas", "Infusão em óleos/bebidas"],
+                "traditionalProperties": ["Picante moderado (2500-8000 SHU)", "Acelera metabolismo", "Digestiva", "Antinflamatória", "Versão picante exotica"]
+            }
         },
         {
             "name": "pimento albarello",
             "price": 8,
             "image": "/images/horticulas/pimento-albarello.jpg",
             "productId": 2353181124,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Capsicum annuum var. albarello",
+                "commonName": "Pimento albarello",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 70, "maxDays": 90},
+                "culinaryUses": ["Refogado tradicional", "Assado", "Molhos", "Versão italiana clássica"],
+                "traditionalProperties": ["Picante moderado (toque tradicional)", "Forma alongada", "Versão italiana clássica", "Sabor complexo e aromatético", "Tradicional em culinária mediterrânica"]
+            }
         },
         {
             "name": "pimento padron",
             "price": 10,
             "image": "/images/horticulas/pimento-padron.jpg",
             "productId": 11007072025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Capsicum annuum var. Padron",
+                "commonName": "Pimento padron",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 80},
+                "culinaryUses": ["Refogado rápido em azeite", "Snack quente", "Tapas espanholas", "Versão assada"],
+                "traditionalProperties": ["Picancia surpresa (varivel)", "Versão tradicional galega", "Pequeno tenro quando baby", "Sabor intenso concentrado", "Experiencia culinária clássica espanhola"]
+            }
         },
         {
             "name": "Bagas de goji",
             "price": 25,
             "image": "/images/horticulas/bagas-de-goji.jpg",
             "productId": 120,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lycium barbarum",
+                "commonName": "Bagas de goji",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Snack saudavel direto", "Chĺas e infusoes", "Sobremesas e granola", "Bebidas energéticas"],
+                "traditionalProperties": ["Antioxidante potencíssimo (TCM)", "Adaptogénica e energética", "Apoio imunológico", "Superfruto gourmet", "Versão secada premium"]
+            }
         },
         {
             "name": "chuchu",
             "price": 3,
             "image": "/images/horticulas/chuchu.jpg",
             "productId": 123,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Sechium edule",
+                "commonName": "Chuchu, chuchuzinho",
+                "family": "Cucurbitaceae",
+                "harvestTime": {"minDays": 80, "maxDays": 120},
+                "culinaryUses": ["Refogado", "Ensopado", "Cozido em sopas", "Acompanhamento versátil"],
+                "traditionalProperties": ["Leve e digestório", "Baixo calórico", "Bom para colesterol", "Comun em América Central/Sul", "Versátil em culinaria"]
+            }
         },
         {
             "name": "tamarilho",
             "price": 8,
             "image": "/images/horticulas/tamarilho.jpg",
             "productId": 124,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Solanum betaceum",
+                "commonName": "Tamarilho, tomate-de-árvore",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Fruta fresca (média colherão)", "Sucos e nectáres", "Sobremesas e compotas", "Molhos agridoces"],
+                "traditionalProperties": ["Rica em vitamina C", "Leve acao laxante", "Antioxidante", "Sabor ácido-doce tropical", "Versão exotica sul-americana"]
+            }
         },
         {
             "name": "laranja",
             "price": 1.5,
             "image": "/images/frutaDaEpoca/laranja.jpg",
             "productId": 130924032025,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Citrus sinensis",
+                "commonName": "Laranja",
+                "family": "Rutaceae",
+                "harvestTime": {"minDays": 180, "maxDays": 240},
+                "culinaryUses": ["Sucos fresco (vitamina)", "Fruta fresca des descas", "Molhos para pato/porco", "Bolos e doces"],
+                "traditionalProperties": ["Riquissima em vitamina C", "Antioxidante clasico", "Alcalinizante", "Imunoprotetora", "Fruta classica acessível"]
+            }
         }
         
     ]
