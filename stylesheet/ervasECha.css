@@ -1,4 +1,4 @@
-
+/* 
 
 
 .display-none {
@@ -25,9 +25,7 @@
     max-width: 100vw;
     padding: 3vh 1rem;
     justify-content: center;
-    /* border: solid red 1px; */
-    /* background-color: var(--black); */
-    /*position: static;*/
+ 
 
 }
 
@@ -58,10 +56,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* min-height: 40vh; */
     gap: 0.3rem;
-    /*font-size: 1rem;
-    font-weight: 700;*/
     border: solid var(--green-one) 2px;
     background-color: var(--white-two);
     border-radius: 0.5rem;
@@ -76,18 +71,13 @@
     font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    /*min-height: 2.6rem;*/
-    /*max-width: 90%;*/
+    
 }
 
 .boxItem img {
     grid-column: span 2;
     object-fit: cover;
     max-width: 100%;
-    /*min-height: 90%;
-    max-height: 90%;
-    max-width: 90%;
-    min-width: 90%;*/
     margin: 0 auto;
     border-radius: 0.5rem;
 }
@@ -154,7 +144,7 @@
 
 /* Media Queries */
 
-@media screen and (min-width: 700px) {
+/* @media screen and (min-width: 700px) {
 
 .ervas,
 .saladas,
@@ -243,5 +233,356 @@ select option {
 
     .section-title {
         grid-column: span 4;
+    }
+} */
+
+/* CLOUDE CODE */
+
+.display-none {
+    display: none;
+}
+
+/* ─── GRID DAS SECÇÕES ──────────────────────────────────────────────────────── */
+
+.ervas,
+.saladas,
+.verduras,
+.raizes,
+.microverdes,
+.floresComestiveis,
+.leguminosas,
+.horticulas,
+.ovos,
+.sabaoNatural,
+.plantasEmVaso,
+.compotas,
+.cogumelos,
+.carnes {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100vw;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+}
+
+/* ─── TÍTULO DE SECÇÃO ──────────────────────────────────────────────────────── */
+
+.section-title {
+    grid-column: span 2;
+    margin: 0 auto 0.5rem auto;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.2rem;
+    border-radius: 1rem 0;
+}
+
+/* ─── DESCRIÇÃO OVOS ────────────────────────────────────────────────────────── */
+
+.ovos .description {
+    color: var(--green);
+    text-align: center;
+    align-content: center;
+    font-size: 1rem;
+}
+
+/* ─── CARD DO PRODUTO ───────────────────────────────────────────────────────── */
+
+.boxItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.75rem;
+    gap: 0.5rem;
+    border: solid var(--green-one) 2px;
+    background-color: var(--white-two);
+    border-radius: 0.75rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.boxItem:hover {
+    box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+    transform: translateY(-2px);
+}
+
+/* ─── NOME DO PRODUTO ───────────────────────────────────────────────────────── */
+
+.boxItem h3 {
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    width: 100%;
+    min-height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ─── IMAGEM ────────────────────────────────────────────────────────────────── */
+
+.boxItem img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.boxItem img:hover {
+    opacity: 0.88;
+    transform: scale(1.02);
+}
+
+/* ─── PREÇOS ────────────────────────────────────────────────────────────────── */
+
+.boxItem .kiloPrice,
+.boxItem .priceToPay {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--black);
+    width: 100%;
+}
+
+.boxItem .priceToPay {
+    color: var(--green);
+    font-size: 0.95rem;
+    min-height: 1.2rem;
+}
+
+/* ─── SELECT / INPUT ────────────────────────────────────────────────────────── */
+
+.boxItem select,
+.boxItem input {
+    width: 100%;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    padding: 0.35rem 0.5rem;
+    font-weight: 600;
+    border: solid var(--green) 1.5px;
+    color: var(--black);
+    background-color: var(--green-one);
+    cursor: pointer;
+    transition: border-color 0.15s;
+}
+
+.boxItem select:hover,
+.boxItem select:focus {
+    border-color: var(--green);
+    outline: none;
+}
+
+.boxItem select option {
+    color: var(--black);
+    background-color: var(--green-one);
+    font-weight: 600;
+}
+
+/* ─── BOTÃO COMPRAR ─────────────────────────────────────────────────────────── */
+
+.boxItem button {
+    background-color: var(--orange);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.08rem;
+    outline: none;
+    border: solid 2px var(--orange);
+    width: 100%;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.boxItem button:hover:not([disabled]) {
+    color: var(--orange);
+    background-color: var(--black);
+    border-color: var(--orange);
+    cursor: pointer;
+}
+
+.boxItem button[disabled] {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* ─── EXCEÇÕES: COMPOTAS & SABÃO ────────────────────────────────────────────── */
+
+.compotas .boxItem .kiloPrice,
+.compotas .boxItem .priceToPay,
+.sabaoNatural .boxItem .kiloPrice,
+.sabaoNatural .boxItem .priceToPay {
+    width: 100%;
+}
+
+.compotas .boxItem select,
+.sabaoNatural .boxItem select {
+    width: 100%;
+}
+
+/* ─── UTILITÁRIOS ───────────────────────────────────────────────────────────── */
+
+.displayNone {
+    display: none;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   MEDIA QUERIES
+═══════════════════════════════════════════════════════════════════════════════ */
+
+@media screen and (min-width: 500px) {
+
+    .ervas,
+    .saladas,
+    .verduras,
+    .raizes,
+    .microverdes,
+    .floresComestiveis,
+    .leguminosas,
+    .horticulas,
+    .ovos,
+    .sabaoNatural,
+    .plantasEmVaso,
+    .compotas,
+    .cogumelos,
+    .carnes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        padding: 1.5rem;
+    }
+
+    .section-title {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .ervas,
+    .saladas,
+    .verduras,
+    .raizes,
+    .microverdes,
+    .floresComestiveis,
+    .leguminosas,
+    .horticulas,
+    .ovos,
+    .sabaoNatural,
+    .plantasEmVaso,
+    .compotas,
+    .cogumelos,
+    .carnes {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        max-width: 100vw;
+        padding: 2rem 1.5rem;
+        margin: 2vh auto;
+    }
+
+    .section-title {
+        grid-column: span 3;
+        font-size: 0.9rem;
+    }
+
+    .boxItem h3 {
+        font-size: 0.78rem;
+    }
+
+    .boxItem .kiloPrice,
+    .boxItem .priceToPay {
+        font-size: 0.88rem;
+    }
+
+    .boxItem button {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .ervas,
+    .saladas,
+    .verduras,
+    .raizes,
+    .microverdes,
+    .floresComestiveis,
+    .leguminosas,
+    .horticulas,
+    .ovos,
+    .sabaoNatural,
+    .plantasEmVaso,
+    .compotas,
+    .cogumelos,
+    .carnes {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.75rem;
+        max-width: 1400px;
+        margin: 3vh auto;
+        padding: 2rem 2rem;
+    }
+
+    .section-title {
+        grid-column: span 5;
+        font-size: 1rem;
+    }
+
+    .boxItem {
+        padding: 1rem;
+        gap: 0.6rem;
+    }
+
+    .boxItem h3 {
+        font-size: 0.8rem;
+    }
+
+    .boxItem .kiloPrice {
+        font-size: 0.9rem;
+    }
+
+    .boxItem .priceToPay {
+        font-size: 1rem;
+    }
+
+    .boxItem select,
+    .boxItem input {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .boxItem button {
+        font-size: 0.88rem;
+        padding: 0.55rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .ervas,
+    .saladas,
+    .verduras,
+    .raizes,
+    .microverdes,
+    .floresComestiveis,
+    .leguminosas,
+    .horticulas,
+    .ovos,
+    .sabaoNatural,
+    .plantasEmVaso,
+    .compotas,
+    .cogumelos,
+    .carnes {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 1600px;
+    }
+
+    .section-title {
+        grid-column: span 6;
     }
 }

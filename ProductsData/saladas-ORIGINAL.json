@@ -1,0 +1,141 @@
+{
+    "saladas": [
+        {
+            "name": "salada natura",
+            "price": 15,
+            "image": "/images/saladas/salada-natura.jpg",
+            "productId": 5,
+            "stock": true
+
+        },
+        {
+            "name": "alface mix",
+            "price": 15,
+            "image": "/images/saladas/mescla-de-alfaces.jpg",
+            "productId": 6,
+            "stock": true
+
+        },
+        {
+            "name": "Alface Verde Lisa",
+            "price": 4,
+            "image": "/images/saladas/alface-verde.jpg",
+            "productId": 12314042025,
+            "stock": false
+        },
+        {
+            "name": "Alface vermelha Lisa",
+            "price": 4,
+            "image": "/images/saladas/alface-vermelha-lisa.jpg",
+            "productId": 3428072025,
+            "stock": false
+        },
+        {
+            "name": "Alface Romana",
+            "price": 4,
+            "image": "/images/saladas/alface-romana.jpg",
+            "productId": 10428042025,
+            "stock": false
+        },
+        {
+            "name": "Alface Malhada",
+            "price": 4,
+            "image": "/images/saladas/alface-malhada.jpg",
+            "productId": 12214042025,
+            "stock": false
+        },
+        {
+            "name": "Alface Frisada Verde",
+            "price": 4,
+            "image": "/images/saladas/alface-frisada-verde.jpg",
+            "productId": 12014042025,
+            "stock": false
+        },
+        {
+            "name": "Alface Frisada Vermelha",
+            "price": 4,
+            "image": "/images/saladas/alface-frisada-vermelha.jpg",
+            "productId": 11914042025,
+            "stock": false        
+        },
+        {
+            "name": "Rúcula cultivata",
+            "price": 15,
+            "image": "/images/saladas/rucula-cultivata.jpg",
+            "productId": 7,
+            "stock": true
+        },
+        {
+            "name": "Salada asiática",
+            "price": 15,
+            "image": "/images/saladas/verduras-asiaticas.jpg",
+            "productId": 8,
+            "stock": true
+
+        },
+        {
+            "name": "Salada Ibérica",
+            "price": 15,
+            "image": "/images/saladas/salada-iberica.jpg",
+            "productId": 9,
+            "stock": true
+
+        },
+        {
+            "name": "Salada Wok (para saltear)",
+            "price": 20,
+            "image": "/images/saladas/salada-wok.jpg",
+            "productId": 10,
+            "stock": true
+
+        },
+        {
+            "name": "Agrião da Terra",
+            "price": 15,
+            "image": "/images/saladas/agriao-da-terra.jpg",
+            "productId": 11,
+            "stock": false
+
+        },
+        {
+            "name": "Mizuna Verde",
+            "price": 15,
+            "image": "/images/saladas/mizuna-verde.jpg",
+            "productId": 95,
+            "stock": true
+
+        },
+        {
+            "name": "Mizuna Vermelha",
+            "price": 20,
+            "image": "/images/saladas/mizuna-vermelha.jpg",
+            "productId": 96,
+            "stock": true
+
+        },
+        {
+            "name": "Salada Gourmet",
+            "price": 15,
+            "image": "/images/saladas/salada-gourmet.jpg",
+            "productId": 97,
+            "stock": true
+
+        },
+        {
+            "name": "wasabino",
+            "price": 20,
+            "image": "/images/verduras/wasabino.jpg",
+            "productId": 233518032025,
+            "stock": false
+
+        },
+        {
+            "name": "mibuna",
+            "price": 20,
+            "image": "/images/verduras/mibuna.jpg",
+            "productId": 233618032025,
+            "stock": false
+
+        }    
+    ]
+}

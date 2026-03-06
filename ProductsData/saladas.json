@@ -1,141 +1,462 @@
 {
     "saladas": [
         {
-            "name": "salada natura",
+            "name": "Salada Natura",
             "price": 15,
             "image": "/images/saladas/salada-natura.jpg",
             "productId": 5,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "A nossa salada mais diversificada. Combinação de alfaces mix, microverdes mix, rúcula cultivada, mizunas, wasabino e mibuna.",
+                "components": [
+                    "Alfaces mix",
+                    "Microverdes mix",
+                    "Rúcula cultivada",
+                    "Mizuna verde",
+                    "Mizuna vermelha",
+                    "Wasabino",
+                    "Mibuna"
+                ]
+            }
         },
         {
-            "name": "alface mix",
+            "name": "Alface mix",
             "price": 15,
             "image": "/images/saladas/mescla-de-alfaces.jpg",
             "productId": 6,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Diversos tipos diferentes de alfaces, cortada à folha.",
+                "components": [
+                    "Diversos tipos de alfaces"
+                ]
+            }
         },
         {
             "name": "Alface Verde Lisa",
             "price": 4,
             "image": "/images/saladas/alface-verde.jpg",
             "productId": 12314042025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lactuca sativa",
+                "commonName": "Alface",
+                "family": "Asteraceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 60
+                },
+                "culinaryUses": [
+                    "Consumo cru (saladas)",
+                    "Sopas",
+                    "Refogados leves",
+                    "Sumos verdes"
+                ],
+                "traditionalProperties": [
+                    "Calmante ligeiro",
+                    "Sedativa",
+                    "Digestiva",
+                    "Diurética suave"
+                ]
+            }
         },
         {
-            "name": "Alface vermelha Lisa",
+            "name": "Alface Vermelha Lisa",
             "price": 4,
             "image": "/images/saladas/alface-vermelha-lisa.jpg",
             "productId": 3428072025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lactuca sativa",
+                "commonName": "Alface",
+                "family": "Asteraceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 60
+                },
+                "culinaryUses": [
+                    "Consumo cru (saladas)",
+                    "Sopas",
+                    "Refogados leves",
+                    "Sumos verdes"
+                ],
+                "traditionalProperties": [
+                    "Calmante ligeiro",
+                    "Sedativa",
+                    "Digestiva",
+                    "Diurética suave"
+                ]
+            }
         },
         {
             "name": "Alface Romana",
             "price": 4,
             "image": "/images/saladas/alface-romana.jpg",
             "productId": 10428042025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lactuca sativa",
+                "commonName": "Alface",
+                "family": "Asteraceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 60
+                },
+                "culinaryUses": [
+                    "Consumo cru (saladas)",
+                    "Sopas",
+                    "Refogados leves",
+                    "Sumos verdes"
+                ],
+                "traditionalProperties": [
+                    "Calmante ligeiro",
+                    "Sedativa",
+                    "Digestiva",
+                    "Diurética suave"
+                ]
+            }
         },
         {
             "name": "Alface Malhada",
             "price": 4,
             "image": "/images/saladas/alface-malhada.jpg",
             "productId": 12214042025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lactuca sativa",
+                "commonName": "Alface",
+                "family": "Asteraceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 60
+                },
+                "culinaryUses": [
+                    "Consumo cru (saladas)",
+                    "Sopas",
+                    "Refogados leves",
+                    "Sumos verdes"
+                ],
+                "traditionalProperties": [
+                    "Calmante ligeiro",
+                    "Sedativa",
+                    "Digestiva",
+                    "Diurética suave"
+                ]
+            }
         },
         {
             "name": "Alface Frisada Verde",
             "price": 4,
             "image": "/images/saladas/alface-frisada-verde.jpg",
             "productId": 12014042025,
-            "stock": false
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lactuca sativa",
+                "commonName": "Alface",
+                "family": "Asteraceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 60
+                },
+                "culinaryUses": [
+                    "Consumo cru (saladas)",
+                    "Sopas",
+                    "Refogados leves",
+                    "Sumos verdes"
+                ],
+                "traditionalProperties": [
+                    "Calmante ligeiro",
+                    "Sedativa",
+                    "Digestiva",
+                    "Diurética suave"
+                ]
+            }
         },
         {
             "name": "Alface Frisada Vermelha",
             "price": 4,
             "image": "/images/saladas/alface-frisada-vermelha.jpg",
             "productId": 11914042025,
-            "stock": false        
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lactuca sativa",
+                "commonName": "Alface",
+                "family": "Asteraceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 60
+                },
+                "culinaryUses": [
+                    "Consumo cru (saladas)",
+                    "Sopas",
+                    "Refogados leves",
+                    "Sumos verdes"
+                ],
+                "traditionalProperties": [
+                    "Calmante ligeiro",
+                    "Sedativa",
+                    "Digestiva",
+                    "Diurética suave"
+                ]
+            }
         },
         {
-            "name": "Rúcula cultivata",
+            "name": "Rúcula Cultivada",
             "price": 15,
             "image": "/images/saladas/rucula-cultivata.jpg",
             "productId": 7,
-            "stock": true
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Eruca sativa",
+                "botanicalSynonym": "Eruca vesicaria subsp. sativa",
+                "commonName": "Rúcula, rúcula cultivada",
+                "family": "Brassicaceae",
+                "harvestTime": {
+                    "minDays": 25,
+                    "maxDays": 45
+                },
+                "culinaryUses": [
+                    "Consumida crua em saladas",
+                    "Massas",
+                    "Pizzas",
+                    "Sanduíches",
+                    "Pestos e molhos verdes",
+                    "Pode ser ligeiramente salteada (perde picância)"
+                ],
+                "flavorNotes": {
+                    "youngLeaves": "Sabor mais suave",
+                    "matureLeaves": "Sabor mais intenso e picante"
+                },
+                "traditionalProperties": [
+                    "Digestiva",
+                    "Estimulante do apetite",
+                    "Diurética suave",
+                    "Depurativa",
+                    "Rica em compostos sulfurados (característicos das Brassicaceae)"
+                ]
+            }
         },
         {
-            "name": "Salada asiática",
+            "name": "Salada Asiática",
             "price": 15,
             "image": "/images/saladas/verduras-asiaticas.jpg",
             "productId": 8,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Combinação de folhas asiáticas.",
+                "components": [
+                    "Mizuna verde",
+                    "Mizuna vermelha",
+                    "Rúcula cultivada"
+                ]
+            }
         },
         {
             "name": "Salada Ibérica",
             "price": 15,
             "image": "/images/saladas/salada-iberica.jpg",
             "productId": 9,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Salada de inspiração ibérica.",
+                "components": [
+                    "Alfaces mix",
+                    "Rúcula cultivada"
+                ]
+            }
         },
         {
             "name": "Salada Wok (para saltear)",
             "price": 20,
             "image": "/images/saladas/salada-wok.jpg",
             "productId": 10,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Mistura de folhas ideal para saltear.",
+                "components": [
+                    "Espinafres manteiga",
+                    "Acelgas baby",
+                    "Agrião de terra",
+                    "Microverdes de ervilha",
+                    "Baby kale"
+                ]
+            }
         },
         {
             "name": "Agrião da Terra",
             "price": 15,
             "image": "/images/saladas/agriao-da-terra.jpg",
             "productId": 11,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Lepidium sativum",
+                "commonName": "Agrião-de-terra",
+                "family": "Brassicaceae",
+                "harvestTime": {
+                    "minDays": 35,
+                    "maxDays": 45
+                },
+                "culinaryUses": [
+                    "Cru em saladas",
+                    "Sanduíches e wraps",
+                    "Sopas (adicionar no final)",
+                    "Ovos",
+                    "Patês"
+                ],
+                "traditionalProperties": [
+                    "Estimulante do apetite",
+                    "Digestivo",
+                    "Expectorante ligeiro",
+                    "Diurético",
+                    "Fonte de vitamina C"
+                ]
+            }
         },
         {
             "name": "Mizuna Verde",
             "price": 15,
             "image": "/images/saladas/mizuna-verde.jpg",
             "productId": 95,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa var. nipposinica",
+                "commonName": "Mizuna verde, mostarda japonesa",
+                "family": "Brassicaceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 45
+                },
+                "culinaryUses": [
+                    "Consumida crua em saladas",
+                    "Misturas de folhas baby",
+                    "Salteados rápidos (wok)",
+                    "Sopas e ramen (adicionar no final)"
+                ],
+                "flavorNotes": {
+                    "general": "Sabor suave a levemente picante",
+                    "youngLeaves": "Mais tenras",
+                    "matureLeaves": "Mais estruturadas"
+                },
+                "traditionalProperties": [
+                    "Digestiva",
+                    "Estimulante ligeiro",
+                    "Diurética suave",
+                    "Rica em compostos sulfurados e antioxidantes"
+                ]
+            }
         },
         {
             "name": "Mizuna Vermelha",
             "price": 20,
             "image": "/images/saladas/mizuna-vermelha.jpg",
             "productId": 96,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa var. nipposinica",
+                "commonName": "Mizuna vermelha",
+                "family": "Brassicaceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 45
+                },
+                "culinaryUses": [
+                    "Consumida crua em saladas",
+                    "Misturas de folhas baby",
+                    "Salteados rápidos",
+                    "Sopas e pratos asiáticos (adicionar no final)"
+                ],
+                "flavorNotes": {
+                    "general": "Sabor suave a ligeiramente picante",
+                    "texture": "Textura delicada",
+                    "visual": "Cor vermelha intensa valoriza pratos e misturas de folhas"
+                },
+                "traditionalProperties": [
+                    "Digestiva",
+                    "Estimulante ligeiro",
+                    "Diurética suave",
+                    "Rica em antioxidantes (antocianinas) e compostos sulfurados"
+                ]
+            }
         },
         {
             "name": "Salada Gourmet",
             "price": 15,
             "image": "/images/saladas/salada-gourmet.jpg",
             "productId": 97,
-            "stock": true
-
+            "stock": true,
+            "technicalSheet": {
+                "description": "Salada premium com folhas selecionadas.",
+                "components": [
+                    "Alfaces mix",
+                    "Microverdes mix"
+                ]
+            }
         },
         {
-            "name": "wasabino",
+            "name": "Wasabino",
             "price": 20,
             "image": "/images/verduras/wasabino.jpg",
             "productId": 233518032025,
-            "stock": false
-
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica juncea",
+                "commonName": "Wasabino, mostarda wasabi, rúcula wasabi",
+                "family": "Brassicaceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 45
+                },
+                "culinaryUses": [
+                    "Consumido cru em saladas",
+                    "Misturas de folhas baby",
+                    "Sanduíches e wraps",
+                    "Acompanhamento de pratos de peixe"
+                ],
+                "flavorNotes": {
+                    "general": "Sabor picante intenso, semelhante ao wasabi",
+                    "note": "O picante sente-se mais no nariz do que na boca",
+                    "heatEffect": "O calor reduz bastante a picância"
+                },
+                "traditionalProperties": [
+                    "Digestivo",
+                    "Estimulante do apetite",
+                    "Antisséptico ligeiro (uso tradicional)",
+                    "Rico em compostos sulfurados (isotiocianatos)"
+                ]
+            }
         },
         {
-            "name": "mibuna",
+            "name": "Mibuna",
             "price": 20,
             "image": "/images/verduras/mibuna.jpg",
             "productId": 233618032025,
-            "stock": false
-
-        }    
+            "stock": false,
+            "technicalSheet": {
+                "botanicalName": "Brassica rapa var. nipposinica",
+                "commonName": "Mibuna",
+                "family": "Brassicaceae",
+                "harvestTime": {
+                    "minDays": 30,
+                    "maxDays": 45
+                },
+                "culinaryUses": [
+                    "Consumida crua em saladas",
+                    "Misturas de folhas baby",
+                    "Salteados rápidos",
+                    "Sopas e pratos asiáticos (adicionar no final)"
+                ],
+                "flavorNotes": {
+                    "general": "Sabor suave a ligeiramente picante",
+                    "note": "Mais delicada e menos recortada que a mizuna"
+                },
+                "traditionalProperties": [
+                    "Digestiva",
+                    "Estimulante ligeiro",
+                    "Diurética suave",
+                    "Rica em compostos sulfurados"
+                ]
+            }
+        }
     ]
 }
+
