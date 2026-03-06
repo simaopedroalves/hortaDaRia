@@ -626,3 +626,9 @@ select option {
 .boxItem.out-of-stock h3 {
     color: #888;
 }
+
+/* Oculta completamente os elementos sem stock — evita espaço residual */
+.boxItem.out-of-stock .quantity,
+.boxItem.out-of-stock .addToCart {
+    display: none;
+}

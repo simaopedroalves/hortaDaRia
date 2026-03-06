@@ -291,7 +291,7 @@ function createPopupOverlay() {
             padding-left: 18px;
         }
         #fichaPopupContent ul li {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-bottom: 3px;
             color: #333;
         }
@@ -430,8 +430,6 @@ function createCard(item) {
 
     // ── Stock — passa o boxDiv directamente, sem precisar que esteja no DOM ──
     if (!stock) {
-        boxDiv.querySelector('.addToCart').style.visibility = 'hidden';
-        boxDiv.querySelector('.quantity').style.visibility = 'hidden';
         boxDiv.classList.add('out-of-stock');
     }
 
