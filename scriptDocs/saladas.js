@@ -196,8 +196,6 @@
 
 // CÓDIGO CLAUDE
 
-import { findStockOfItems } from "../script.js";
-
 const secSaladas = document.querySelector('.saladas');
 
 async function callSaladas () {
@@ -293,7 +291,7 @@ function createPopupOverlay() {
             padding-left: 18px;
         }
         #fichaPopupContent ul li {
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin-bottom: 3px;
             color: #333;
         }
@@ -430,8 +428,12 @@ function createCard(item) {
     // ── Popup na imagem ──────────────────────────────────────────────────────
     boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, name));
 
-    // ── Stock ────────────────────────────────────────────────────────────────
-    findStockOfItems(stock, productId);
+    // ── Stock — passa o boxDiv directamente, sem precisar que esteja no DOM ──
+    if (!stock) {
+        boxDiv.querySelector('.addToCart').style.visibility = 'hidden';
+        boxDiv.querySelector('.quantity').style.visibility = 'hidden';
+        boxDiv.classList.add('out-of-stock');
+    }
 
     // ── Botão Comprar — 1 listener, apenas neste boxDiv ─────────────────────
     const cartBtn      = boxDiv.querySelector('.addToCart');
