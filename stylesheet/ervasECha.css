@@ -521,7 +521,7 @@ select option {
     .compotas,
     .cogumelos,
     .carnes {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.75rem;
         max-width: 1400px;
         margin: 3vh auto;
@@ -529,7 +529,7 @@ select option {
     }
 
     .section-title {
-        grid-column: span 5;
+        grid-column: span 4;
         font-size: 1rem;
     }
 
@@ -578,11 +578,51 @@ select option {
     .compotas,
     .cogumelos,
     .carnes {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         max-width: 1600px;
     }
 
     .section-title {
-        grid-column: span 6;
+        grid-column: span 5;
     }
+}
+
+/* ─── SUBTÍTULOS DISPONÍVEL / INDISPONÍVEL ──────────────────────────────────── */
+
+.stock-subtitle {
+    grid-column: 1 / -1;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 0.5rem 0;
+    width: fit-content;
+    margin: 0.5rem 0 0.25rem 0;
+}
+
+.stock-subtitle--available {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.stock-subtitle--unavailable {
+    background-color: var(--green-one);
+    color: var(--black);
+    opacity: 0.75;
+}
+
+/* ─── CARD INDISPONÍVEL ─────────────────────────────────────────────────────── */
+
+.boxItem.out-of-stock {
+    border-color: var(--green-one);
+    opacity: 0.6;
+}
+
+.boxItem.out-of-stock img {
+    filter: grayscale(40%);
+}
+
+.boxItem.out-of-stock h3 {
+    color: #888;
 }

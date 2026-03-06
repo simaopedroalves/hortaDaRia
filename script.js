@@ -265,17 +265,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 // find inside JSON data if each item have stock or not to display
 // a message saying that item his out of stock
 
+// export function findStockOfItems (stock, product_id) {
+//     let box = document.getElementById(product_id)
+
+//     if (!stock) {
+//         box.querySelector('.addToCart').style.visibility = 'hidden'
+//         box.querySelector('.quantity').style.visibility = 'hidden'
+//         box.querySelector('.priceToPay').textContent = 'Indisponível'
+//         box.querySelector('.priceToPay').style.color = 'var(--red)'
+//         box.querySelector('.priceToPay').style.textTransform = 'upperCase'
+//         box.style.borderColor = 'var(--red)'
+//         box.style.textAlign = 'center'
+//     }
+// }
+
 export function findStockOfItems (stock, product_id) {
     let box = document.getElementById(product_id)
 
     if (!stock) {
         box.querySelector('.addToCart').style.visibility = 'hidden'
         box.querySelector('.quantity').style.visibility = 'hidden'
-        box.querySelector('.priceToPay').textContent = 'Indisponível'
-        box.querySelector('.priceToPay').style.color = 'var(--red)'
-        box.querySelector('.priceToPay').style.textTransform = 'upperCase'
-        box.style.borderColor = 'var(--red)'
-        box.style.textAlign = 'center'
+        box.classList.add('out-of-stock')
     }
 }
 

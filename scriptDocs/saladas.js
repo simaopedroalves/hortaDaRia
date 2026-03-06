@@ -293,7 +293,7 @@ function createPopupOverlay() {
             padding-left: 18px;
         }
         #fichaPopupContent ul li {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-bottom: 3px;
             color: #333;
         }
@@ -402,12 +402,96 @@ function openPopup(sheet, name) {
 
 // ─── FIM POPUP ───────────────────────────────────────────────────────────────
 
+// ─── CRIAR CARD ──────────────────────────────────────────────────────────────
+
+function createCard(item) {
+    const { name, price, image: rawImage, stock, productId, technicalSheet } = item;
+    const image = rawImage == '' ? "/images/logo.png" : rawImage;
+
+    const boxDiv = document.createElement('div');
+    boxDiv.className = 'boxItem';
+    boxDiv.id = productId;
+    boxDiv.innerHTML = `
+        <h3 id="itName">${name}</h3>
+        <img src="${image}" alt="" title="Ver ficha técnica">
+        <div class="kiloPrice">${price}€/kg</div>
+        <select class="quantity">
+            <option value="qt">Quantidade</option>
+            <option value="100 gr">100 gr</option>
+            <option value="250 gr">250 gr</option>
+            <option value="500 gr">500 gr</option>
+            <option value="750 gr">750 gr</option>
+            <option value="1 Kg">1 Kg</option>
+        </select>
+        <div class="priceToPay"></div>
+        <button class="addToCart btn btn-success" disabled>Comprar</button>
+    `;
+
+    // ── Popup na imagem ──────────────────────────────────────────────────────
+    boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, name));
+
+    // ── Stock ────────────────────────────────────────────────────────────────
+    findStockOfItems(stock, productId);
+
+    // ── Botão Comprar — 1 listener, apenas neste boxDiv ─────────────────────
+    const cartBtn      = boxDiv.querySelector('.addToCart');
+    const selectEl     = boxDiv.querySelector('.quantity');
+    const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
+    const priceToPayEl = boxDiv.querySelector('.priceToPay');
+
+    cartBtn.addEventListener('click', () => {
+        addToitemObj(
+            boxDiv.querySelector('#itName').textContent,
+            boxDiv.querySelector('img').src,
+            kiloPriceEl.textContent,
+            selectEl.value,
+            priceToPayEl.textContent
+        );
+        updateNumbItemsOnCart();
+        priceToPayEl.textContent = '';
+        showAllert(boxDiv.querySelector('#itName').textContent);
+        cartBtn.setAttribute('disabled', '');
+    });
+
+    // ── Cálculo de preço ao mudar quantidade ─────────────────────────────────
+    selectEl.addEventListener('change', () => {
+        const qtText = selectEl.value;
+        const kg     = parseFloat(qtText);
+        const qt     = parseFloat(kiloPriceEl.textContent);
+
+        if (qtText === 'qt') {
+            priceToPayEl.textContent = '';
+            cartBtn.setAttribute('disabled', '');
+            return;
+        }
+
+        const priceToPay = kg > 10
+            ? (kg * (qt / 1000)).toFixed(2)
+            : (kg * qt).toFixed(2);
+
+        priceToPayEl.textContent = priceToPay + ' €';
+        cartBtn.removeAttribute('disabled');
+    });
+
+    return boxDiv;
+}
+
+// ─── TÍTULO DE SUBSECÇÃO ──────────────────────────────────────────────────────
+
+function createSubtitle(text, available) {
+    const el = document.createElement('div');
+    el.className = `stock-subtitle ${available ? 'stock-subtitle--available' : 'stock-subtitle--unavailable'}`;
+    el.textContent = text;
+    return el;
+}
+
+// ─── MAIN ─────────────────────────────────────────────────────────────────────
+
 document.addEventListener('DOMContentLoaded', async () => {
 
     createPopupOverlay();
 
     let object = '';
-
     try {
         object = await callSaladas();
     } catch (error) {
@@ -415,90 +499,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error);
     }
 
-    for (let i = 0; i < object.saladas.length; i++) {
+    const available   = object.saladas.filter(s => s.stock === true);
+    const unavailable = object.saladas.filter(s => s.stock === false);
 
-        let saladaName     = object.saladas[i].name;
-        let saladaPrice    = object.saladas[i].price;
-        let image          = object.saladas[i].image;
-        let stock          = object.saladas[i].stock;
-        let product_id     = object.saladas[i].productId;
-        let technicalSheet = object.saladas[i].technicalSheet;
+    // ── Disponíveis ───────────────────────────────────────────────────────────
+    if (available.length > 0) {
+        secSaladas.appendChild(createSubtitle('✅ Disponíveis', true));
+        available.forEach(item => secSaladas.appendChild(createCard(item)));
+    }
 
-        if (image == '') image = "/images/logo.png";
-
-        // createElement evita que innerHTML += destrua listeners de iterações anteriores
-        const boxDiv = document.createElement('div');
-        boxDiv.className = 'boxItem';
-        boxDiv.id = product_id;
-        boxDiv.innerHTML = `
-            <h3 id="itName">${saladaName}</h3>
-            <img src="${image}" alt="" title="Ver ficha técnica">
-            <div class="kiloPrice">${saladaPrice}€/kg</div>
-            <select class="quantity">
-                <option value="qt">Quantidade</option>
-                <option value="100 gr">100 gr</option>
-                <option value="250 gr">250 gr</option>
-                <option value="500 gr">500 gr</option>
-                <option value="750 gr">750 gr</option>
-                <option value="1 Kg">1 Kg</option>
-            </select>
-            <div class="priceToPay"></div>
-            <button class="addToCart btn btn-success" disabled>Comprar</button>
-        `;
-        secSaladas.appendChild(boxDiv);
-
-        // ── Popup na imagem ──────────────────────────────────────────────────
-        boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, saladaName));
-
-        // ── Stock ────────────────────────────────────────────────────────────
-        findStockOfItems(stock, product_id);
-
-        // ── Botão Comprar — 1 listener, apenas neste boxDiv ──────────────────
-        const cartBtn      = boxDiv.querySelector('.addToCart');
-        const selectEl     = boxDiv.querySelector('.quantity');
-        const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
-        const priceToPayEl = boxDiv.querySelector('.priceToPay');
-
-        cartBtn.addEventListener('click', () => {
-            addToitemObj(
-                boxDiv.querySelector('#itName').textContent,
-                boxDiv.querySelector('img').src,
-                kiloPriceEl.textContent,
-                selectEl.value,
-                priceToPayEl.textContent
-            );
-            updateNumbItemsOnCart();
-            priceToPayEl.textContent = '';
-            showAllert(boxDiv.querySelector('#itName').textContent);
-            cartBtn.setAttribute('disabled', '');
-        });
-
-        // ── Cálculo de preço ao mudar quantidade ─────────────────────────────
-        selectEl.addEventListener('change', () => {
-            const qtText = selectEl.value;
-            const kg     = parseFloat(qtText);
-            const qt     = parseFloat(kiloPriceEl.textContent);
-
-            if (qtText === 'qt') {
-                priceToPayEl.textContent = '';
-                cartBtn.setAttribute('disabled', '');
-                return;
-            }
-
-            // valores > 10 estão em gramas (100, 250, 500, 750) → divide por 1000
-            const priceToPay = kg > 10
-                ? (kg * (qt / 1000)).toFixed(2)
-                : (kg * qt).toFixed(2);
-
-            priceToPayEl.textContent = priceToPay + ' €';
-            cartBtn.removeAttribute('disabled');
-        });
+    // ── Indisponíveis ─────────────────────────────────────────────────────────
+    if (unavailable.length > 0) {
+        secSaladas.appendChild(createSubtitle('⏳ Brevemente disponíveis', false));
+        unavailable.forEach(item => secSaladas.appendChild(createCard(item)));
     }
 
     updateNumbItemsOnCart();
 });
 
-// ─── Alerta ──────────────────────────────────────────────────────────────────
+// ─── Alerta ───────────────────────────────────────────────────────────────────
 
 function showAllert(name) {
     let alert = document.querySelector('.alert');
@@ -512,7 +531,7 @@ function showAllert(name) {
     setTimeout(() => alert.classList.remove('show-alert'), 2000);
 }
 
-// ─── Adicionar ao localStorage ───────────────────────────────────────────────
+// ─── Adicionar ao localStorage ────────────────────────────────────────────────
 
 function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
     let itemObj = JSON.parse(localStorage.getItem('cart'));
@@ -521,7 +540,7 @@ function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
     localStorage.setItem('cart', JSON.stringify(itemObj));
 }
 
-// ─── Contador do carrinho ────────────────────────────────────────────────────
+// ─── Contador do carrinho ─────────────────────────────────────────────────────
 
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
