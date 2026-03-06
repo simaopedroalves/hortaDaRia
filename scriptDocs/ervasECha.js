@@ -1,5 +1,3 @@
-import { findStockOfItems } from "../script.js";
-
 const secErvas = document.querySelector('.ervas');
 
 // ─── FUNÇÃO ───────────────────────────────────────────────────────────────────
@@ -121,11 +119,20 @@ function createPopupOverlay() {
 
     document.getElementById('fichaPopupClose').addEventListener('click', () => {
         document.getElementById('fichaPopupOverlay').classList.remove('active');
+        document.body.style.overflow = '';
     });
 
     document.getElementById('fichaPopupOverlay').addEventListener('click', (e) => {
         if (e.target.id === 'fichaPopupOverlay') {
             document.getElementById('fichaPopupOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            document.getElementById('fichaPopupOverlay').classList.remove('active');
+            document.body.style.overflow = '';
         }
     });
 }
@@ -200,7 +207,6 @@ function createCard(item) {
     boxDiv.id = productId;
     boxDiv.dataset.animation = 'animate__fadeInLeft';
 
-    // Verificar se é Lavanda Inglesa (sem select)
     const isLavanda = name === "1 Saco Organza Lavanda Inglesa" || name === "2 Sacos Organza Lavanda Inglesa";
 
     if (isLavanda) {
@@ -233,7 +239,7 @@ function createCard(item) {
     // ── Popup na imagem ──────────────────────────────────────────────────────
     boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, name));
 
-    // ── Stock — passa o boxDiv directamente, sem precisar que esteja no DOM ──
+    // ── Stock ────────────────────────────────────────────────────────────────
     if (!stock) {
         boxDiv.classList.add('out-of-stock');
     }
@@ -258,7 +264,6 @@ function createCard(item) {
         cartBtn.setAttribute('disabled', '');
     });
 
-    // ── Cálculo de preço ao mudar quantidade (apenas para select, não para Lavanda) ─────────────────────────────────
     if (!isLavanda) {
         selectEl.addEventListener('change', () => {
             const qtText = selectEl.value;
@@ -306,13 +311,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const available   = object.ervasAromaticasECha.filter(e => e.stock === true);
     const unavailable = object.ervasAromaticasECha.filter(e => e.stock === false);
 
-    // ── Disponíveis ───────────────────────────────────────────────────────────
     if (available.length > 0) {
         secErvas.appendChild(createSubtitle('✅ Disponíveis', true));
         available.forEach(item => secErvas.appendChild(createCard(item)));
     }
 
-    // ── Indisponíveis ─────────────────────────────────────────────────────────
     if (unavailable.length > 0) {
         secErvas.appendChild(createSubtitle('⏳ Brevemente disponíveis', false));
         unavailable.forEach(item => secErvas.appendChild(createCard(item)));

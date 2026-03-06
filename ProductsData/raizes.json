@@ -63,7 +63,7 @@
         {
             "name": "batata doce roxa",
             "price": 3,
-            "image": "/images/raizes/batata-doce-roxa.jpg",
+            "image": "",
             "productId": 123112025,
             "stock": false,
             "technicalSheet": {

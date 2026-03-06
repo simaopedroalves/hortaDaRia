@@ -115,7 +115,7 @@
                 "botanicalName": "Cydonia oblonga",
                 "commonName": "Marmelo",
                 "family": "Rosaceae",
-                "harvestTime": {"minDays": 180, "maxDays": "240},
+                "harvestTime": {"minDays": 180, "maxDays": "240"},
                 "culinaryUses": ["Compotas e doces de marmelo (tradicional)", "Geleias", "Bebidas", "Tempero em pratos de carne"],
                 "traditionalProperties": ["Adstringente (taninos)", "Antisseptíca do tubo digestivo", "Digestiva", "Antidiarreica", "Rico em pectina (fibra solúvel)"]
             }
