@@ -265,8 +265,8 @@ function createPopupOverlay() {
             font-size: 1.25rem;
         }
         #fichaPopupContent .ficha-family {
-            font-size: 0.9rem;
-            color: #5a5a5a;
+            font-size: 0.8rem;
+            color: #888;
             margin-bottom: 16px;
             font-style: italic;
         }
@@ -327,7 +327,6 @@ function createPopupOverlay() {
     document.head.appendChild(style);
     document.body.appendChild(overlay);
 
-    // Fechar ao clicar fora ou no X
     overlay.addEventListener('click', (e) => {
         if (e.target === overlay) closePopup();
     });
@@ -346,7 +345,6 @@ function buildFichaHTML(sheet, name) {
 
     let html = `<h2>🥬 ${name}</h2>`;
 
-    // Produtos compostos (misturas)
     if (sheet.description && sheet.components) {
         html += `<p style="font-size:0.9rem;color:#444;margin-bottom:14px">${sheet.description}</p>`;
         html += `<div class="ficha-section">
@@ -358,7 +356,6 @@ function buildFichaHTML(sheet, name) {
         return html;
     }
 
-    // Ficha botânica completa
     if (sheet.botanicalName) {
         html += `<div class="ficha-family"><em>${sheet.botanicalName}</em> · ${sheet.family}</div>`;
         if (sheet.botanicalSynonym) {
@@ -413,27 +410,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     try {
         object = await callSaladas();
-    }
-    catch (error) {
+    } catch (error) {
         console.error('ERROR');
-        console.log(error)
+        console.log(error);
     }
 
     for (let i = 0; i < object.saladas.length; i++) {
-        
-        let saladaName = object.saladas[i].name;
-        let saladaPrice = object.saladas[i].price;
-        let image = object.saladas[i].image;
-        let stock = object.saladas[i].stock;
-        let product_id = object.saladas[i].productId;
+
+        let saladaName     = object.saladas[i].name;
+        let saladaPrice    = object.saladas[i].price;
+        let image          = object.saladas[i].image;
+        let stock          = object.saladas[i].stock;
+        let product_id     = object.saladas[i].productId;
         let technicalSheet = object.saladas[i].technicalSheet;
 
-        //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
-        if (image == '') {
-            image = "/images/logo.png";
-        }
+        if (image == '') image = "/images/logo.png";
 
-        // Usar createElement evita que innerHTML += destrua os listeners das iterações anteriores
+        // createElement evita que innerHTML += destrua listeners de iterações anteriores
         const boxDiv = document.createElement('div');
         boxDiv.className = 'boxItem';
         boxDiv.id = product_id;
@@ -441,8 +434,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             <h3 id="itName">${saladaName}</h3>
             <img src="${image}" alt="" title="Ver ficha técnica">
             <div class="kiloPrice">${saladaPrice}€/kg</div>
-            <select type="text" min="1" class="quantity" placeholder="quantidade">
-                <option class="no-stock-message" value="qt">Quantidade</option>
+            <select class="quantity">
+                <option value="qt">Quantidade</option>
                 <option value="100 gr">100 gr</option>
                 <option value="250 gr">250 gr</option>
                 <option value="500 gr">500 gr</option>
@@ -454,146 +447,88 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
         secSaladas.appendChild(boxDiv);
 
-        // Bind popup à imagem — listener seguro porque o elemento ainda não foi re-renderizado
+        // ── Popup na imagem ──────────────────────────────────────────────────
         boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, saladaName));
 
-          // function on script.js
-          findStockOfItems (stock, product_id)
+        // ── Stock ────────────────────────────────────────────────────────────
+        findStockOfItems(stock, product_id);
 
-            let addCartBtn = document.querySelectorAll('.addToCart');
-    
-            // let itemObj = [];
-    
-            function addItem() {
+        // ── Botão Comprar — 1 listener, apenas neste boxDiv ──────────────────
+        const cartBtn      = boxDiv.querySelector('.addToCart');
+        const selectEl     = boxDiv.querySelector('.quantity');
+        const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
+        const priceToPayEl = boxDiv.querySelector('.priceToPay');
 
-                addCartBtn.forEach(btn => {
-                    btn.addEventListener('click', (event) => {
-                        btn = event.target;
-                        let name = btn.parentElement.querySelector('#itName').textContent;
-                        let imageSrc = btn.parentElement.querySelector('img').src;
-                        let itemPrice = btn.parentElement.querySelector('.kiloPrice').textContent;
-                        let quantity = btn.parentElement.querySelector('.quantity').value;
-                        let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
-                        addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
-                        updateNumbItemsOnCart() 
-                        refreshItemSelected(btn)
-                        showAllert(name)
-                        btn.setAttribute("disabled", "")
-                    })
-                })
+        cartBtn.addEventListener('click', () => {
+            addToitemObj(
+                boxDiv.querySelector('#itName').textContent,
+                boxDiv.querySelector('img').src,
+                kiloPriceEl.textContent,
+                selectEl.value,
+                priceToPayEl.textContent
+            );
+            updateNumbItemsOnCart();
+            priceToPayEl.textContent = '';
+            showAllert(boxDiv.querySelector('#itName').textContent);
+            cartBtn.setAttribute('disabled', '');
+        });
+
+        // ── Cálculo de preço ao mudar quantidade ─────────────────────────────
+        selectEl.addEventListener('change', () => {
+            const qtText = selectEl.value;
+            const kg     = parseFloat(qtText);
+            const qt     = parseFloat(kiloPriceEl.textContent);
+
+            if (qtText === 'qt') {
+                priceToPayEl.textContent = '';
+                cartBtn.setAttribute('disabled', '');
+                return;
             }
-    
-            addItem()
-    
-            function refreshItemSelected (btn) {
-                btn.parentElement.querySelector('.priceToPay').textContent = '';
-            }
-    
-            function showAllert (name) {
-                let alert = document.querySelector('.alert');
-                alert.classList.add('show-alert');
-    
-                alert.innerHTML = `
-                    <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
-                    <button class="see-cart">
-                        <a href="/html/carrinho.html">
-                            Ver Cesto
-                        </a> 
-                    </button>
-                `
-    
-                setTimeout(() => {
-                    alert.classList.remove('show-alert')
-                }, 2000);
-            }
-    
 
-            function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
+            // valores > 10 estão em gramas (100, 250, 500, 750) → divide por 1000
+            const priceToPay = kg > 10
+                ? (kg * (qt / 1000)).toFixed(2)
+                : (kg * qt).toFixed(2);
 
-                let itemObj = JSON.parse(localStorage.getItem('cart'))
-           
-                if (itemObj === null) {
-                    itemObj = []
-                }
-                  
-                itemObj.push({
-                    itName: name,
-                    itImageSrc: imageSrc,
-                    itPrice: itemPrice,
-                    itQuantity: quantity,
-                    itTotal: itemTotal
-                })
-                localStorage.setItem('cart', JSON.stringify(itemObj))
-            }
-                        
-            let selectedOptionValue = document.querySelectorAll('.quantity');
-            let kiloPrice = document.querySelectorAll('.kiloPrice');
-            let finalItemPrice = document.querySelectorAll('.priceToPay'); 
-                
-            selectedOptionValue.forEach((btn, i) => {
-    
-                btn.addEventListener('change', () => {           
-    
-                    function finalPricePerItem (kg, qt) {
-                        var priceToPay = 0;
-                        kg = parseFloat(selectedOptionValue[i].value);
-                        qt = parseFloat(kiloPrice[i].textContent)
-
-                        let qtText = selectedOptionValue[i].value;
-                        let addCartBtn = btn.parentElement.querySelector('.addToCart')
-                      
-    
-                        if (kg > 10) {
-                            priceToPay = kg * (qt/1000)
-                            priceToPay = priceToPay.toFixed(2)
-                            finalItemPrice[i].textContent = priceToPay + ' €'
-    
-                        }  
-    
-                        else if (qtText === "qt") {
-                            finalItemPrice[i].textContent = ''
-                            addCartBtn.setAttribute("disabled", "")
-                        }   
-    
-                        else {
-                            priceToPay = kg * (qt)
-                            priceToPay = priceToPay.toFixed(2)
-                            finalItemPrice[i].textContent = priceToPay + ' €'
-                        }
-                        
-                        return priceToPay
-    
-                    }
-
-                    let buyBtn = btn.parentElement.querySelector('.addToCart');
-                    buyBtn.removeAttribute('disabled'); 
-    
-                    finalPricePerItem() 
-                })
-                
-            })
+            priceToPayEl.textContent = priceToPay + ' €';
+            cartBtn.removeAttribute('disabled');
+        });
     }
-    updateNumbItemsOnCart()
-})
 
-function updateNumbItemsOnCart() {
+    updateNumbItemsOnCart();
+});
 
-    let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
-    let cart = JSON.parse(localStorage.getItem('cart'));
+// ─── Alerta ──────────────────────────────────────────────────────────────────
 
-    numbOfItemsOnCart.forEach(el => {
-        el.textContent = '0'
-
-        for (let i = 0; i < cart.length; i++) {
-            if (cart.length > 0) {
-                el.textContent = cart.length
-            }
-            if (cart.length <= 0) {
-                el.textContent = '0'
-            }
-        }
-    })
+function showAllert(name) {
+    let alert = document.querySelector('.alert');
+    alert.classList.add('show-alert');
+    alert.innerHTML = `
+        <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
+        <button class="see-cart">
+            <a href="/html/carrinho.html">Ver Cesto</a>
+        </button>
+    `;
+    setTimeout(() => alert.classList.remove('show-alert'), 2000);
 }
 
+// ─── Adicionar ao localStorage ───────────────────────────────────────────────
+
+function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
+    let itemObj = JSON.parse(localStorage.getItem('cart'));
+    if (itemObj === null) itemObj = [];
+    itemObj.push({ itName: name, itImageSrc: imageSrc, itPrice: itemPrice, itQuantity: quantity, itTotal: itemTotal });
+    localStorage.setItem('cart', JSON.stringify(itemObj));
+}
+
+// ─── Contador do carrinho ────────────────────────────────────────────────────
+
+function updateNumbItemsOnCart() {
+    let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    numbOfItemsOnCart.forEach(el => {
+        el.textContent = cart.length > 0 ? cart.length : '0';
+    });
+}
 
 let screenWidth = window.innerWidth;
