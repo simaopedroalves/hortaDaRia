@@ -16,7 +16,7 @@ export function header() {
 
     gtag('config', 'G-C2520N6HZE');
 </script>
-    // <canvas id="modu-snow-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999999;"> </canvas>
+  
          <nav class="navbar" id="navBar">
 
             <div class="logo-img-div">
@@ -339,7 +339,8 @@ updateNumbItemsOnCart()
 
 
 // ===== CAI NEVE ====
-
+//(colocar o canvas no header para aparecer em todas as paginas, e colocar o script dentro do script.js para nao ter de colocar em todas as paginas)
+  // <canvas id="modu-snow-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999999;"> </canvas> 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const canvas = document.getElementById("modu-snow-canvas");
 //   if (!canvas) return;
