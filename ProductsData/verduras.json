@@ -13,7 +13,7 @@
             "price": 10,
             "image": "/images/verduras/ruibarbo.jpg",
             "productId": 12,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -21,7 +21,7 @@
             "price": 6,
             "image": "/images/verduras/couve-galega.jpg",
             "productId": 13,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -183,14 +183,14 @@
             "price": 6,
             "image": "/images/verduras/funcho.jpg",
             "productId": 114724082025,
-            "stock": true
+            "stock": false
         },
         {
             "name": "funcho baby",
             "price": 12,
             "image": "/images/verduras/funcho-baby.jpg",
             "productId": 90420032025,
-            "stock": true
+            "stock": false
         }
     ]
 }

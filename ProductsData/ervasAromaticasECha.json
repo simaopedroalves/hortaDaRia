@@ -60,7 +60,7 @@
             "price": 30,
             "image": "/images/ervasECha/cha_limonete.jpg",
             "productId": 63,
-            "stock": true            
+            "stock": false            
 
         },
         {
@@ -92,7 +92,7 @@
             "price": 30,
             "image": "/images/ervasECha/hortela-menta.jpg",
             "productId": 67,
-            "stock": true
+            "stock": false
 
         },
         {

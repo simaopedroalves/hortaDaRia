@@ -13,7 +13,7 @@
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_amorPerfeito.jpg",
             "productId": 76,
-            "stock": false
+            "stock": true
 
         },
         {
@@ -49,11 +49,11 @@
 
         },
         {
-            "name": "hortelã-pimenta-chocolate",
+            "name": "hortelã comum",
             "price": 2,
             "image": "/images/plantasEmVaso/vaso_hortelaPimentaChocolate.jpg",
             "productId": 82,
-            "stock": false
+            "stock": true
 
         },
         {

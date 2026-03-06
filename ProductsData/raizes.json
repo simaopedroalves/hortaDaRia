@@ -28,7 +28,7 @@
             "price": 4.5,
             "image": "/images/raizes/batata-yacon.jpg",
             "productId": 234802112025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -36,7 +36,7 @@
             "price": 3,
             "image": "/images/raizes/batata-doce-roxa.jpg",
             "productId": 123112025,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -73,7 +73,7 @@
         },
         {
             "name": "cebola verde",
-            "price": 10,
+            "price": 12,
             "image": "/images/raizes/cebola-verde.jpg",
             "productId": 106,
             "stock": true
@@ -92,7 +92,7 @@
             "price": 6,
             "image": "/images/raizes/alho-frances.jpg",
             "productId": 703181124,
-            "stock": true
+            "stock": false
 
         },
         {
@@ -155,15 +155,15 @@
             "price": 20,
             "image": "/images/raizes/gengibre-fresco.jpg",
             "productId": 110,
-            "stock": true
+            "stock": false
 
         },
         {
             "name": "espargos",
-            "price": 12,
+            "price": 15,
             "image": "/images/raizes/espargos.jpg",
             "productId": 32,
-            "stock": false
+            "stock": true
         }
     ]
 }
