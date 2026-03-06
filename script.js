@@ -16,7 +16,7 @@ export function header() {
 
     gtag('config', 'G-C2520N6HZE');
 </script>
-    <canvas id="modu-snow-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999999;"> </canvas>
+    // <canvas id="modu-snow-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999999;"> </canvas>
          <nav class="navbar" id="navBar">
 
             <div class="logo-img-div">
@@ -340,78 +340,78 @@ updateNumbItemsOnCart()
 
 // ===== CAI NEVE ====
 
-document.addEventListener("DOMContentLoaded", function () {
-  const canvas = document.getElementById("modu-snow-canvas");
-  if (!canvas) return;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const canvas = document.getElementById("modu-snow-canvas");
+//   if (!canvas) return;
 
-  const ctx = canvas.getContext("2d");
+//   const ctx = canvas.getContext("2d");
 
-  let width = canvas.width = window.innerWidth;
-  let height = canvas.height = window.innerHeight;
+//   let width = canvas.width = window.innerWidth;
+//   let height = canvas.height = window.innerHeight;
 
-  // ❄️ SETTINGS
-  const SNOWFLAKE_COUNT = 80;
-  const MIN_SIZE = 1;
-  const MAX_SIZE = 4;
+//   // ❄️ SETTINGS
+//   const SNOWFLAKE_COUNT = 80;
+//   const MIN_SIZE = 1;
+//   const MAX_SIZE = 4;
 
-  let particles = [];
+//   let particles = [];
 
-  for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
-    particles.push({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      r: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
-      d: Math.random() * 50
-    });
-  }
+//   for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
+//     particles.push({
+//       x: Math.random() * width,
+//       y: Math.random() * height,
+//       r: Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE,
+//       d: Math.random() * 50
+//     });
+//   }
 
-  function draw() {
-    ctx.clearRect(0, 0, width, height);
-    ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
-    ctx.beginPath();
+//   function draw() {
+//     ctx.clearRect(0, 0, width, height);
+//     ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+//     ctx.beginPath();
 
-    for (let i = 0; i < particles.length; i++) {
-      const p = particles[i];
-      ctx.moveTo(p.x, p.y);
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
-    }
+//     for (let i = 0; i < particles.length; i++) {
+//       const p = particles[i];
+//       ctx.moveTo(p.x, p.y);
+//       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2, true);
+//     }
 
-    ctx.fill();
-    update();
-  }
+//     ctx.fill();
+//     update();
+//   }
 
-  let angle = 0;
+//   let angle = 0;
 
-  function update() {
-    angle += 0.01;
+//   function update() {
+//     angle += 0.01;
 
-    for (let i = 0; i < particles.length; i++) {
-      const p = particles[i];
-      p.y += Math.cos(angle + p.d) + 1 + p.r / 2;
-      p.x += Math.sin(angle) * 0.5;
+//     for (let i = 0; i < particles.length; i++) {
+//       const p = particles[i];
+//       p.y += Math.cos(angle + p.d) + 1 + p.r / 2;
+//       p.x += Math.sin(angle) * 0.5;
 
-      if (p.x > width + 5 || p.x < -5 || p.y > height) {
-        if (i % 3 > 0) {
-          particles[i] = { x: Math.random() * width, y: -10, r: p.r, d: p.d };
-        } else {
-          particles[i] = {
-            x: Math.sin(angle) > 0 ? -5 : width + 5,
-            y: Math.random() * height,
-            r: p.r,
-            d: p.d
-          };
-        }
-      }
-    }
-  }
+//       if (p.x > width + 5 || p.x < -5 || p.y > height) {
+//         if (i % 3 > 0) {
+//           particles[i] = { x: Math.random() * width, y: -10, r: p.r, d: p.d };
+//         } else {
+//           particles[i] = {
+//             x: Math.sin(angle) > 0 ? -5 : width + 5,
+//             y: Math.random() * height,
+//             r: p.r,
+//             d: p.d
+//           };
+//         }
+//       }
+//     }
+//   }
 
-  setInterval(draw, 33);
+//   setInterval(draw, 33);
 
-  window.addEventListener("resize", () => {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
-  });
-});
+//   window.addEventListener("resize", () => {
+//     width = canvas.width = window.innerWidth;
+//     height = canvas.height = window.innerHeight;
+//   });
+// });
 
 
 
