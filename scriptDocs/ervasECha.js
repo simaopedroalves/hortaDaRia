@@ -1,5 +1,31 @@
 const secErvas = document.querySelector('.ervas');
 
+// ─── SHEETS CONFIG ────────────────────────────────────────────────────────────
+
+const SHEET_ID = '1iXbRmLHG90ER9vr5pge2KVLF11w2E2qW7rzerCxAZXQ';
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;
+
+async function fetchSheetsData() {
+    try {
+        const response = await fetch(SHEET_URL);
+        const text = await response.text();
+        const json = JSON.parse(text.substring(47, text.length - 2));
+
+        const map = {};
+        json.table.rows.forEach(row => {
+            const id    = row.c[0]?.v?.toString();
+            const preco = row.c[2]?.v;
+            const stock = row.c[3]?.v === 'true' || row.c[3]?.v === true;
+            if (id) map[id] = { preco, stock };
+        });
+
+        return map;
+    } catch (error) {
+        console.error('Erro ao buscar Sheets:', error);
+        return {};
+    }
+}
+
 // ─── FUNÇÃO ───────────────────────────────────────────────────────────────────
 
 async function callErvas() {
@@ -199,7 +225,12 @@ function openPopup(sheet, name) {
 // ─── CRIAR CARD ──────────────────────────────────────────────────────────────
 
 function createCard(item) {
-    const { name, price, image: rawImage, stock, productId, technicalSheet } = item;
+    const { name, image: rawImage, productId, technicalSheet } = item;
+
+    // ── Preço e stock vêm do Sheets, com fallback para o JSON ────────────────
+    const price = item._sheetPrice  ?? item.price;
+    const stock = item._sheetStock  ?? item.stock;
+
     const image = rawImage == '' ? "/images/logo.png" : rawImage;
 
     const boxDiv = document.createElement('div');
@@ -236,18 +267,15 @@ function createCard(item) {
         `;
     }
 
-    // ── Popup na imagem ──────────────────────────────────────────────────────
     boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, name));
 
-    // ── Stock ────────────────────────────────────────────────────────────────
     if (!stock) {
         boxDiv.classList.add('out-of-stock');
     }
 
-    // ── Botão Comprar — 1 listener, apenas neste boxDiv ─────────────────────
-    const cartBtn      = boxDiv.querySelector('.addToCart');
-    const selectEl     = boxDiv.querySelector('.quantity');
-    const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
+    const cartBtn = boxDiv.querySelector('.addToCart');
+    const selectEl = boxDiv.querySelector('.quantity');
+    const kiloPriceEl = boxDiv.querySelector('.kiloPrice');
     const priceToPayEl = boxDiv.querySelector('.priceToPay');
 
     cartBtn.addEventListener('click', () => {
@@ -308,8 +336,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error);
     }
 
-    const available   = object.ervasAromaticasECha.filter(e => e.stock === true);
-    const unavailable = object.ervasAromaticasECha.filter(e => e.stock === false);
+    // ── Buscar preços e stock do Sheets ──────────────────────────────────────
+    const sheetsData = await fetchSheetsData();
+
+    // ── Aplicar valores do Sheets a cada produto pelo productId ─────────────
+    const produtos = object.ervasAromaticasECha.map(item => {
+        const sheetItem = sheetsData[item.productId?.toString()];
+        if (sheetItem) {
+            item._sheetPrice = sheetItem.preco;
+            item._sheetStock = sheetItem.stock;
+        }
+        return item;
+    });
+
+    const available   = produtos.filter(e => (e._sheetStock ?? e.stock) === true);
+    const unavailable = produtos.filter(e => (e._sheetStock ?? e.stock) === false);
 
     if (available.length > 0) {
         secErvas.appendChild(createSubtitle('✅ Disponíveis', true));
