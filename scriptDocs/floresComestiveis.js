@@ -4,6 +4,49 @@ async function callFloresComestiveis () {
     return (await fetch('/ProductsData/floresComestiveis.json')).json()
 }
 
+// ─── SHEETS CONFIG ────────────────────────────────────────────────────────────
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1iXbRmLHG90ER9vr5pge2KVLF11w2E2qW7rzerCxAZXQ/gviz/tq?tqx=out:csv&gid=0';
+
+async function fetchSheetsData() {
+    const CACHE_KEY      = 'sheetsCache_flores';
+    const CACHE_DATE_KEY = 'sheetsCacheDate_flores';
+    const cached     = localStorage.getItem(CACHE_KEY);
+    const cachedDate = localStorage.getItem(CACHE_DATE_KEY);
+
+    function getLastMondayMidnight() {
+        const now = new Date(); 
+        const day = now.getDay();
+        const monday = new Date(now);
+        monday.setDate(now.getDate() - (day === 0 ? 6 : day - 1));
+        monday.setHours(0,0,0,0); 
+        return monday.getTime();
+    }
+
+    if (cached && cachedDate && parseInt(cachedDate) >= getLastMondayMidnight()) {
+        console.log('A usar cache do Sheets');
+        return JSON.parse(cached);
+    }
+
+    try {
+        console.log('A fazer fetch ao Sheets');
+        const text = await (await fetch(SHEET_CSV_URL)).text();
+        const map  = {};
+        text.trim().split('\n').slice(1).forEach(row => {
+            const cols  = row.split(',');
+            const id    = cols[0]?.trim().replace(/"/g, '');
+            const preco = parseFloat(cols[2]?.trim().replace(/"/g, ''));
+            const stock = cols[3]?.trim().replace(/"/g, '').toLowerCase() === 'true';
+            if (id) map[id] = { preco, stock };
+        });
+        localStorage.setItem(CACHE_KEY, JSON.stringify(map));
+        localStorage.setItem(CACHE_DATE_KEY, Date.now().toString());
+        return map;
+    } catch (e) {
+        console.error('Erro Sheets (flores):', e);
+        return cached ? JSON.parse(cached) : {};
+    }
+}
+
 // ─── POPUP: Ficha Técnica ────────────────────────────────────────────────────
 
 function createPopupOverlay() {
@@ -160,7 +203,9 @@ function openPopup(sheet, name) {
 // ─── CRIAR CARD ──────────────────────────────────────────────────────────────
 
 function createCard(item) {
-    const { name, price, image: rawImage, stock, productId, technicalSheet } = item;
+    const { name, image: rawImage, productId, technicalSheet } = item;
+    const price = item._sheetPrice ?? item.price;
+    const stock = item._sheetStock ?? item.stock;
     const image = rawImage == '' ? "/images/logo.png" : rawImage;
 
     const boxDiv = document.createElement('div');
@@ -192,7 +237,7 @@ function createCard(item) {
     // ── Stock ────────────────────────────────────────────────────────────────
     if (!stock) boxDiv.classList.add('out-of-stock');
 
-    // ── Botão Comprar — 1 listener, apenas neste boxDiv ─────────────────────
+    // ── Botão Comprar ────────────────────────────────────────────────────────
     const cartBtn      = boxDiv.querySelector('.addToCart');
     const selectEl     = boxDiv.querySelector('.quantity');
     const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
@@ -214,8 +259,8 @@ function createCard(item) {
 
     // ── Cálculo de preço (unidades × preço unitário) ─────────────────────────
     selectEl.addEventListener('change', () => {
-        const qtText = selectEl.value;
-        const units  = parseFloat(qtText);
+        const qtText    = selectEl.value;
+        const units     = parseFloat(qtText);
         const unitPrice = parseFloat(kiloPriceEl.textContent);
 
         if (qtText === 'qt') {
@@ -255,8 +300,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error);
     }
 
-    const available   = object.floresComestiveis.filter(s => s.stock === true);
-    const unavailable = object.floresComestiveis.filter(s => s.stock === false);
+    const sheetsData = await fetchSheetsData();
+    const produtos   = object.floresComestiveis.map(item => {
+        const s = sheetsData[item.productId?.toString()];
+        if (s) { item._sheetPrice = s.preco; item._sheetStock = s.stock; }
+        return item;
+    });
+
+    const available   = produtos.filter(s => (s._sheetStock ?? s.stock) === true);
+    const unavailable = produtos.filter(s => (s._sheetStock ?? s.stock) === false);
 
     if (available.length > 0) {
         section.appendChild(createSubtitle('✅ Disponíveis', true));
