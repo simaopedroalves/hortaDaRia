@@ -5,7 +5,7 @@ async function callFloresComestiveis () {
 }
 
 // ─── SHEETS CONFIG ────────────────────────────────────────────────────────────
-const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1iXbRmLHG90ER9vr5pge2KVLF11w2E2qW7rzerCxAZXQ/gviz/tq?tqx=out:csv&gid=0';
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTt94zo_YFY4pz2ILaVDJDmQ_iIeD0XdSC3sASqse1a_tyIAUca2Q5Kr2yIgIqB8SJ3_zr0iCJdm1tc/pub?gid=0&single=true&output=csv';
 
 async function fetchSheetsData() {
     const CACHE_KEY      = 'sheetsCache_flores';
