@@ -1,6 +1,6 @@
 const secCarnes = document.querySelector('.carnes');
 
-async function callCarnes () {
+async function callCarnes() {
     return (await fetch('/ProductsData/carnes.json')).json()
 }
 
@@ -14,10 +14,12 @@ async function fetchSheetsData() {
     const cachedDate = localStorage.getItem(CACHE_DATE_KEY);
 
     function getLastMondayMidnight() {
-        const now = new Date(); const day = now.getDay();
+        const now = new Date();
+        const day = now.getDay();
         const monday = new Date(now);
         monday.setDate(now.getDate() - (day === 0 ? 6 : day - 1));
-        monday.setHours(0,0,0,0); return monday.getTime();
+        monday.setHours(0, 0, 0, 0);
+        return monday.getTime();
     }
 
     if (cached && cachedDate && parseInt(cachedDate) >= getLastMondayMidnight()) {
@@ -96,11 +98,14 @@ function createPopupOverlay() {
         }
         #fichaPopupClose:hover { color: #111; }
         #fichaPopupContent h2 { margin: 0 0 4px; font-size: 1.25rem; }
+        #fichaPopupContent .ficha-family { font-size: 0.8rem; color: #888; margin-bottom: 16px; font-style: italic; }
         #fichaPopupContent .ficha-section { margin-bottom: 14px; }
         #fichaPopupContent .ficha-section-title {
             font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
             letter-spacing: 0.08em; color: #4a7c59; margin-bottom: 6px;
         }
+        #fichaPopupContent ul { margin: 0; padding-left: 18px; }
+        #fichaPopupContent ul li { font-size: 0.9rem; margin-bottom: 3px; color: #333; }
         #fichaPopupContent .ficha-components { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
         #fichaPopupContent .ficha-tag {
             background: #e8f5e9; color: #2e7d32; border-radius: 20px;
@@ -152,6 +157,117 @@ function openPopup(sheet, name) {
 
 // ─── FIM POPUP ────────────────────────────────────────────────────────────────
 
+// ─── CRIAR CARD ──────────────────────────────────────────────────────────────
+
+function createCard(item) {
+    const { name, image: rawImage, productId, technicalSheet } = item;
+    const price = item._sheetPrice ?? item.price;
+    const stock = item._sheetStock ?? item.stock;
+    const image = rawImage == '' ? "/images/logo.png" : rawImage;
+
+    const isCaldo = name === 'Caldo de carnes e de ossos - 250ml';
+
+    const boxDiv = document.createElement('div');
+    boxDiv.className = 'boxItem';
+    boxDiv.id = productId;
+
+    if (isCaldo) {
+        boxDiv.innerHTML = `
+            <h3 id="itName">${name}</h3>
+            <img src="${image}" alt="" title="Ver ficha técnica">
+            <div class="kiloPrice">${price}€/Un</div>
+            <select class="quantity">
+                <option value="qt">Quantidade</option>
+                <option value="1">1 Frasco</option>
+                <option value="2">2 Frascos</option>
+                <option value="3">3 Frascos</option>
+            </select>
+            <div class="priceToPay"></div>
+            <button class="addToCart btn btn-success" disabled>Comprar</button>
+        `;
+    } else {
+        boxDiv.innerHTML = `
+            <h3 id="itName">${name}</h3>
+            <img src="${image}" alt="" title="Ver ficha técnica">
+            <div class="kiloPrice">${price}€/Kg</div>
+            <select class="quantity">
+                <option value="qt">Quantidade</option>
+                <option value="50">50 gr.</option>
+                <option value="100">100 gr.</option>
+                <option value="150">150 gr.</option>
+                <option value="200">200 gr.</option>
+                <option value="250">250 gr.</option>
+            </select>
+            <div class="priceToPay"></div>
+            <button class="addToCart btn btn-success" disabled>Comprar</button>
+        `;
+    }
+
+    // ── Popup na imagem ───────────────────────────────────────────────────────
+    boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, name));
+
+    // ── Stock ─────────────────────────────────────────────────────────────────
+    if (!stock) boxDiv.classList.add('out-of-stock');
+
+    // ── Referências ───────────────────────────────────────────────────────────
+    const cartBtn      = boxDiv.querySelector('.addToCart');
+    const selectEl     = boxDiv.querySelector('.quantity');
+    const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
+    const priceToPayEl = boxDiv.querySelector('.priceToPay');
+
+    // ── Botão Comprar ─────────────────────────────────────────────────────────
+    cartBtn.addEventListener('click', () => {
+        addToitemObj(
+            boxDiv.querySelector('#itName').textContent,
+            boxDiv.querySelector('img').src,
+            kiloPriceEl.textContent,
+            selectEl.value,
+            priceToPayEl.textContent
+        );
+        updateNumbItemsOnCart();
+        priceToPayEl.textContent = '';
+        showAllert(boxDiv.querySelector('#itName').textContent);
+        cartBtn.setAttribute('disabled', '');
+    });
+
+    // ── Cálculo de preço ──────────────────────────────────────────────────────
+    selectEl.addEventListener('change', () => {
+        const qtText    = selectEl.value;
+        const unitPrice = parseFloat(kiloPriceEl.textContent);
+
+        if (qtText === 'qt') {
+            priceToPayEl.textContent = '';
+            cartBtn.setAttribute('disabled', '');
+            return;
+        }
+
+        let priceToPay;
+        if (isCaldo) {
+            // frascos: quantidade × preço unitário
+            priceToPay = parseFloat(qtText) * unitPrice;
+        } else {
+            // gramas: (gramas / 1000) × preço por kg
+            priceToPay = (parseFloat(qtText) / 1000) * unitPrice;
+        }
+
+        priceToPayEl.textContent = priceToPay.toFixed(2) + ' €';
+        cartBtn.removeAttribute('disabled');
+    });
+
+    return boxDiv;
+}
+
+// ─── TÍTULO DE SUBSECÇÃO ──────────────────────────────────────────────────────
+
+function createSubtitle(text, available) {
+    const el = document.createElement('div');
+    el.className = `stock-subtitle ${available ? 'stock-subtitle--available' : 'stock-subtitle--unavailable'}`;
+    el.textContent = text;
+    return el;
+}
+
+// ─── MAIN ─────────────────────────────────────────────────────────────────────
+
 document.addEventListener('DOMContentLoaded', async () => {
 
     createPopupOverlay();
@@ -164,7 +280,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error);
     }
 
-    // ── Aplicar dados do Sheets ───────────────────────────────────────────────
     const sheetsData = await fetchSheetsData();
     const produtos   = object.carnes.map(item => {
         const s = sheetsData[item.productId?.toString()];
@@ -172,160 +287,53 @@ document.addEventListener('DOMContentLoaded', async () => {
         return item;
     });
 
-    for (let i = 0; i < produtos.length; i++) {
+    const available   = produtos.filter(s => (s._sheetStock ?? s.stock) === true);
+    const unavailable = produtos.filter(s => (s._sheetStock ?? s.stock) === false);
 
-        const item        = produtos[i];
-        const carnesName  = item.name;
-        const carnesPrice = item._sheetPrice ?? item.price;
-        const image       = item.image == '' ? "/images/logo.png" : item.image;
-        const stock       = item._sheetStock ?? item.stock;
-        const product_id  = item.productId;
-        const techSheet   = item.technicalSheet;
+    if (available.length > 0) {
+        secCarnes.appendChild(createSubtitle('✅ Disponíveis', true));
+        available.forEach(item => secCarnes.appendChild(createCard(item)));
+    }
 
-        if (carnesName === 'Caldo de carnes e de ossos - 250ml') {
-            secCarnes.innerHTML += `
-                <div class="boxItem" id="${product_id}">
-                    <h3 id="itName">${carnesName}</h3>
-                    <img src="${image}" alt="" title="Ver ficha técnica">
-                    <div class="kiloPrice">${carnesPrice}€/Un</div>
-                    <select type="text" min="1" class="quantity" placeholder="quantidade">
-                        <option value="qt">Quantidade</option>
-                        <option value="1 frasco">1 Frasco</option>
-                        <option value="2 frascos">2 Frascos</option>
-                        <option value="3 frascos">3 Frascos</option>
-                    </select>
-                    <div class="priceToPay"></div>
-                    <button class="addToCart btn btn-success" disabled>Comprar</button>
-                </div>
-            `;
-        } else {
-            secCarnes.innerHTML += `
-                <div class="boxItem" id="${product_id}">
-                    <h3 id="itName">${carnesName}</h3>
-                    <img src="${image}" alt="" title="Ver ficha técnica">
-                    <div class="kiloPrice">${carnesPrice}€/Kg</div>
-                    <select type="text" min="1" class="quantity" placeholder="quantidade">
-                        <option value="qt">Quantidade</option>
-                        <option value="50gr">50 gr.</option>
-                        <option value="100gr">100 gr.</option>
-                        <option value="150gr">150 gr.</option>
-                        <option value="200gr">200 gr.</option>
-                        <option value="250gr">250 gr.</option>
-                    </select>
-                    <div class="priceToPay"></div>
-                    <button class="addToCart btn btn-success" disabled>Comprar</button>
-                </div>
-            `;
-        }
-
-        // ── Stock ─────────────────────────────────────────────────────────────
-        findStockOfItems(stock, product_id);
-
-        // ── Popup na imagem ───────────────────────────────────────────────────
-        const boxDiv = document.getElementById(product_id);
-        boxDiv.querySelector('img').addEventListener('click', () => openPopup(techSheet, carnesName));
-
-        // ── Botão Comprar ─────────────────────────────────────────────────────
-        let addCartBtn = document.querySelectorAll('.addToCart');
-
-        function addItem() {
-            addCartBtn.forEach(btn => {
-                btn.addEventListener('click', (event) => {
-                    btn = event.target;
-                    let name      = btn.parentElement.querySelector('#itName').textContent;
-                    let imageSrc  = btn.parentElement.querySelector('img').src;
-                    let itemPrice = btn.parentElement.querySelector('.kiloPrice').textContent;
-                    let quantity  = btn.parentElement.querySelector('.quantity').value;
-                    let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
-                    addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal);
-                    updateNumbItemsOnCart();
-                    refreshItemSelected(btn);
-                    showAllert(name);
-                    btn.setAttribute("disabled", "");
-                });
-            });
-        }
-
-        addItem();
-
-        function refreshItemSelected(btn) {
-            btn.parentElement.querySelector('.priceToPay').textContent = '';
-        }
-
-        function showAllert(name) {
-            let alert = document.querySelector('.alert');
-            alert.classList.add('show-alert');
-            alert.innerHTML = `
-                <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
-                <button class="see-cart">
-                    <a href="/html/carrinho.html">Ver Cesto</a>
-                </button>
-            `;
-            setTimeout(() => alert.classList.remove('show-alert'), 2000);
-        }
-
-        function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
-            let itemObj = JSON.parse(localStorage.getItem('cart'));
-            if (itemObj === null) itemObj = [];
-            itemObj.push({ itName: name, itImageSrc: imageSrc, itPrice: itemPrice, itQuantity: quantity, itTotal: itemTotal });
-            localStorage.setItem('cart', JSON.stringify(itemObj));
-        }
-
-        // ── Cálculo de preço ──────────────────────────────────────────────────
-        let selectedOptionValue = document.querySelectorAll('.quantity');
-        let kiloPrice           = document.querySelectorAll('.kiloPrice');
-        let finalItemPrice      = document.querySelectorAll('.priceToPay');
-
-        selectedOptionValue.forEach((btn, i) => {
-            btn.addEventListener('change', () => {
-
-                function finalPricePerItem(kg, qt) {
-                    var priceToPay = 0;
-                    kg = parseFloat(selectedOptionValue[i].value);
-                    qt = parseFloat(kiloPrice[i].textContent);
-
-                    let qtText    = selectedOptionValue[i].value;
-                    let addCartBtn = btn.parentElement.querySelector('.addToCart');
-
-                    if (qtText === "qt") {
-                        finalItemPrice[i].textContent = '';
-                        addCartBtn.setAttribute("disabled", "");
-                    }
-
-                    if (selectedOptionValue[i].value.includes('frasco' || 'frascos')) {
-                        priceToPay = kg * qt;
-                        priceToPay = priceToPay.toFixed(2);
-                        finalItemPrice[i].textContent = priceToPay + ' €';
-                        addCartBtn.removeAttribute("disabled");
-                    } else {
-                        priceToPay = kg * (qt / 1000);
-                        priceToPay = priceToPay.toFixed(2);
-                        finalItemPrice[i].textContent = priceToPay + ' €';
-                        addCartBtn.removeAttribute("disabled");
-                    }
-
-                    return priceToPay;
-                }
-
-                let buyBtn = btn.parentElement.querySelector('.addToCart');
-                buyBtn.removeAttribute('disabled');
-                finalPricePerItem();
-            });
-        });
+    if (unavailable.length > 0) {
+        secCarnes.appendChild(createSubtitle('⏳ Brevemente disponíveis', false));
+        unavailable.forEach(item => secCarnes.appendChild(createCard(item)));
     }
 
     updateNumbItemsOnCart();
 });
 
+// ─── Alerta ───────────────────────────────────────────────────────────────────
+
+function showAllert(name) {
+    let alert = document.querySelector('.alert');
+    alert.classList.add('show-alert');
+    alert.innerHTML = `
+        <span class="cart-changed-message">${name} adicionado ao Cesto</span>
+        <button class="see-cart">
+            <a href="/html/carrinho.html">Ver Cesto</a>
+        </button>
+    `;
+    setTimeout(() => alert.classList.remove('show-alert'), 2000);
+}
+
+// ─── Adicionar ao localStorage ────────────────────────────────────────────────
+
+function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
+    let itemObj = JSON.parse(localStorage.getItem('cart'));
+    if (itemObj === null) itemObj = [];
+    itemObj.push({ itName: name, itImageSrc: imageSrc, itPrice: itemPrice, itQuantity: quantity, itTotal: itemTotal });
+    localStorage.setItem('cart', JSON.stringify(itemObj));
+}
+
+// ─── Contador do carrinho ─────────────────────────────────────────────────────
+
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
     numbOfItemsOnCart.forEach(el => {
-        el.textContent = '0';
-        for (let i = 0; i < cart.length; i++) {
-            if (cart.length > 0) el.textContent = cart.length;
-            if (cart.length <= 0) el.textContent = '0';
-        }
+        el.textContent = cart.length > 0 ? cart.length : '0';
     });
 }
+
+let screenWidth = window.innerWidth;
