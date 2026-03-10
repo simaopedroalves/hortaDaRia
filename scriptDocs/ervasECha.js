@@ -2,26 +2,55 @@ const secErvas = document.querySelector('.ervas');
 
 // ─── SHEETS CONFIG ────────────────────────────────────────────────────────────
 
-const SHEET_ID = '1iXbRmLHG90ER9vr5pge2KVLF11w2E2qW7rzerCxAZXQ';
-const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTt94zo_YFY4pz2ILaVDJDmQ_iIeD0XdSC3sASqse1a_tyIAUca2Q5Kr2yIgIqB8SJ3_zr0iCJdm1tc/pub?gid=0&single=true&output=csv';
 
 async function fetchSheetsData() {
-    try {
-        const response = await fetch(SHEET_URL);
-        const text = await response.text();
-        const json = JSON.parse(text.substring(47, text.length - 2));
+    const CACHE_KEY      = 'sheetsCache';
+    const CACHE_DATE_KEY = 'sheetsCacheDate';
 
-        const map = {};
-        json.table.rows.forEach(row => {
-            const id    = row.c[0]?.v?.toString();
-            const preco = row.c[2]?.v;
-            const stock = row.c[3]?.v === 'true' || row.c[3]?.v === true;
+    const cached     = localStorage.getItem(CACHE_KEY);
+    const cachedDate = localStorage.getItem(CACHE_DATE_KEY);
+
+    function getLastMondayMidnight() {
+        const now  = new Date();
+        const day  = now.getDay();
+        const diff = (day === 0) ? 6 : day - 1;
+        const monday = new Date(now);
+        monday.setDate(now.getDate() - diff);
+        monday.setHours(0, 0, 0, 0);
+        return monday.getTime();
+    }
+
+    const lastMonday = getLastMondayMidnight();
+
+    if (cached && cachedDate && parseInt(cachedDate) >= lastMonday) {
+        console.log('A usar cache do Sheets');
+        return JSON.parse(cached);
+    }
+
+    try {
+        console.log('A fazer fetch ao Sheets...');
+        const response = await fetch(SHEET_CSV_URL);
+        const text     = await response.text();
+
+        const rows = text.trim().split('\n').slice(1);
+        const map  = {};
+
+        rows.forEach(row => {
+            const cols  = row.split(',');
+            const id    = cols[0]?.trim();
+            const preco = parseFloat(cols[2]?.trim());
+            const stock = cols[3]?.trim().toLowerCase() === 'true';
             if (id) map[id] = { preco, stock };
         });
+
+        localStorage.setItem(CACHE_KEY, JSON.stringify(map));
+        localStorage.setItem(CACHE_DATE_KEY, Date.now().toString());
 
         return map;
     } catch (error) {
         console.error('Erro ao buscar Sheets:', error);
+        if (cached) return JSON.parse(cached);
         return {};
     }
 }
