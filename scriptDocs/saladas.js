@@ -1,205 +1,57 @@
-// import {updateNumbItemsOnCart} from '/script.js'
-
-// import { findStockOfItems } from "../script.js";
-
-// const secSaladas = document.querySelector('.saladas');
-
-// async function callSaladas () {
-//     return (await fetch('/ProductsData/saladas.json')).json()
-// }
-
-// document.addEventListener('DOMContentLoaded', async () => {
-
-//     let object = '';
-
-//     try {
-//         object = await callSaladas();
-//     }
-//     catch (error) {
-//         console.error('ERROR');
-//         console.log(error)
-//     }
-
-//     for (let i = 0; i < object.saladas.length; i++) {
-        
-//         let saladaName = object.saladas[i].name;
-//         let saladaPrice = object.saladas[i].price;
-//         let image = object.saladas[i].image;
-//         let stock = object.saladas[i].stock;
-//         let product_id = object.saladas[i].productId;
-//         //WHEN, IN productList.json() AN IMAGE KEY IS AN EMPTY STRING
-//         if (image == '') {
-//             image = "/images/logo.png";
-//         }
-
-//         secSaladas.innerHTML += `
-//         <div class="boxItem" id="${product_id}">
-//             <h3 id="itName">${saladaName}</h3>
-//             <img src="${image}" alt="">
-//             <div class="kiloPrice">${saladaPrice}€/kg</div>
-//             <select type="text" min="1" class="quantity" placeholder="quantidade">
-//                 <option class="no-stock-message" value="qt">Quantidade</option>
-//                 <option value="100 gr">100 gr</option>
-//                 <option value="250 gr">250 gr</option>
-//                 <option value="500 gr">500 gr</option>
-//                 <option value="750 gr">750 gr</option>
-//                 <option value="1 Kg">1 Kg</option>
-//             </select>
-//             <!-- Igual à quantidade a multiplicar pelo preço por kilo -->
-//             <div class="priceToPay"></div>
-//             <button class="addToCart btn btn-success" disabled>Comprar</button>
-//         </div>
-//         `
-
-//           // function on script.js
-//           findStockOfItems (stock, product_id)
-
-//             let addCartBtn = document.querySelectorAll('.addToCart');
-    
-//             // let itemObj = [];
-    
-//             function addItem() {
-
-//                 addCartBtn.forEach(btn => {
-//                     btn.addEventListener('click', (event) => {
-//                         btn = event.target;
-//                         let name = btn.parentElement.querySelector('#itName').textContent;
-//                         let imageSrc = btn.parentElement.querySelector('img').src;
-//                         let itemPrice = btn.parentElement.querySelector('.kiloPrice').textContent;
-//                         let quantity = btn.parentElement.querySelector('.quantity').value;
-//                         let itemTotal = btn.parentElement.querySelector('.priceToPay').textContent;
-//                         addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal)
-//                         updateNumbItemsOnCart() 
-//                         refreshItemSelected(btn)
-//                         showAllert(name)
-//                         btn.setAttribute("disabled", "")
-//                     })
-//                 })
-//             }
-    
-//             addItem()
-    
-//             function refreshItemSelected (btn) {
-//                 btn.parentElement.querySelector('.priceToPay').textContent = '';
-//             }
-    
-//             function showAllert (name) {
-//                 let alert = document.querySelector('.alert');
-//                 alert.classList.add('show-alert');
-    
-//                 alert.innerHTML = `
-//                     <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
-//                     <button class="see-cart">
-//                         <a href="/html/carrinho.html">
-//                             Ver Cesto
-//                         </a> 
-//                     </button>
-//                 `
-    
-//                 setTimeout(() => {
-//                     alert.classList.remove('show-alert')
-//                 }, 2000);
-//             }
-    
-
-//             function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
-
-//                 let itemObj = JSON.parse(localStorage.getItem('cart'))
-           
-//                 if (itemObj === null) {
-//                     itemObj = []
-//                 }
-                  
-//                 itemObj.push({
-//                     itName: name,
-//                     itImageSrc: imageSrc,
-//                     itPrice: itemPrice,
-//                     itQuantity: quantity,
-//                     itTotal: itemTotal
-//                 })
-//                 localStorage.setItem('cart', JSON.stringify(itemObj))
-//             }
-                        
-//             let selectedOptionValue = document.querySelectorAll('.quantity');
-//             let kiloPrice = document.querySelectorAll('.kiloPrice');
-//             let finalItemPrice = document.querySelectorAll('.priceToPay'); 
-                
-//             selectedOptionValue.forEach((btn, i) => {
-    
-//                 btn.addEventListener('change', () => {           
-    
-//                     function finalPricePerItem (kg, qt) {
-//                         var priceToPay = 0;
-//                         kg = parseFloat(selectedOptionValue[i].value);
-//                         qt = parseFloat(kiloPrice[i].textContent)
-
-//                         let qtText = selectedOptionValue[i].value;
-//                         let addCartBtn = btn.parentElement.querySelector('.addToCart')
-                      
-    
-//                         if (kg > 10) {
-//                             priceToPay = kg * (qt/1000)
-//                             priceToPay = priceToPay.toFixed(2)
-//                             finalItemPrice[i].textContent = priceToPay + ' €'
-    
-//                         }  
-    
-//                         else if (qtText === "qt") {
-//                             finalItemPrice[i].textContent = ''
-//                             addCartBtn.setAttribute("disabled", "")
-//                         }   
-    
-//                         else {
-//                             priceToPay = kg * (qt)
-//                             priceToPay = priceToPay.toFixed(2)
-//                             finalItemPrice[i].textContent = priceToPay + ' €'
-//                         }
-                        
-//                         return priceToPay
-    
-//                     }
-
-//                     let buyBtn = btn.parentElement.querySelector('.addToCart');
-//                     buyBtn.removeAttribute('disabled'); 
-    
-//                     finalPricePerItem() 
-//                 })
-                
-//             })
-//     }
-//     updateNumbItemsOnCart()
-// })
-
-// function updateNumbItemsOnCart() {
-
-//     let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
-//     let cart = JSON.parse(localStorage.getItem('cart'));
-
-//     numbOfItemsOnCart.forEach(el => {
-//         el.textContent = '0'
-
-//         for (let i = 0; i < cart.length; i++) {
-//             if (cart.length > 0) {
-//                 el.textContent = cart.length
-//             }
-//             if (cart.length <= 0) {
-//                 el.textContent = '0'
-//             }
-//         }
-//     })
-// }
-
-
-// let screenWidth = window.innerWidth;
-// console.log(`Screen width: ${screenWidth}px`);
-
-
-// CÓDIGO CLAUDE
-
 const secSaladas = document.querySelector('.saladas');
 
 async function callSaladas () {
     return (await fetch('/ProductsData/saladas.json')).json()
+}
+
+// ─── SHEETS CONFIG ────────────────────────────────────────────────────────────
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTt94zo_YFY4pz2ILaVDJDmQ_iIeD0XdSC3sASqse1a_tyIAUca2Q5Kr2yIgIqB8SJ3_zr0iCJdm1tc/pub?gid=0&single=true&output=csv';
+
+async function fetchSheetsData() {
+    const CACHE_KEY      = 'sheetsCache_saladas';
+    const CACHE_DATE_KEY = 'sheetsCacheDate_saladas';
+    const cached     = localStorage.getItem(CACHE_KEY);
+    const cachedDate = localStorage.getItem(CACHE_DATE_KEY);
+
+    function getLastScheduledTime() {
+        const now = new Date();
+        const hours = [8, 12, 17];
+        const todaySlots = hours.map(h => {
+            const d = new Date(now);
+            d.setHours(h, 0, 0, 0);
+            return d.getTime();
+        });
+        const pastSlots = todaySlots.filter(t => t <= Date.now());
+        if (pastSlots.length > 0) return Math.max(...pastSlots);
+        const yesterday17 = new Date(now);
+        yesterday17.setDate(now.getDate() - 1);
+        yesterday17.setHours(17, 0, 0, 0);
+        return yesterday17.getTime();
+    }
+
+    if (cached && cachedDate && parseInt(cachedDate) >= getLastScheduledTime()) {
+        console.log('A usar cache do Sheets (saladas)');
+        return JSON.parse(cached);
+    }
+
+    try {
+        console.log('A fazer fetch ao Sheets (saladas)...');
+        const text = await (await fetch(`${SHEET_CSV_URL}&t=${Date.now()}`)).text();
+        const map  = {};
+        text.trim().split('\n').slice(1).forEach(row => {
+            const cols  = row.split(',');
+            const id    = cols[0]?.trim().replace(/"/g, '');
+            const preco = parseFloat(cols[2]?.trim().replace(/"/g, ''));
+            const stock = cols[3]?.trim().replace(/"/g, '').toLowerCase() === 'true';
+            if (id) map[id] = { preco, stock };
+        });
+        localStorage.setItem(CACHE_KEY, JSON.stringify(map));
+        localStorage.setItem(CACHE_DATE_KEY, Date.now().toString());
+        return map;
+    } catch (e) {
+        console.error('Erro Sheets (saladas):', e);
+        return cached ? JSON.parse(cached) : {};
+    }
 }
 
 // ─── POPUP: Ficha Técnica ────────────────────────────────────────────────────
@@ -405,7 +257,9 @@ function openPopup(sheet, name) {
 // ─── CRIAR CARD ──────────────────────────────────────────────────────────────
 
 function createCard(item) {
-    const { name, price, image: rawImage, stock, productId, technicalSheet } = item;
+    const { name, image: rawImage, productId, technicalSheet } = item;
+    const price = item._sheetPrice ?? item.price;
+    const stock = item._sheetStock ?? item.stock;
     const image = rawImage == '' ? "/images/logo.png" : rawImage;
 
     const boxDiv = document.createElement('div');
@@ -430,12 +284,10 @@ function createCard(item) {
     // ── Popup na imagem ──────────────────────────────────────────────────────
     boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, name));
 
-    // ── Stock — passa o boxDiv directamente, sem precisar que esteja no DOM ──
-    if (!stock) {
-        boxDiv.classList.add('out-of-stock');
-    }
+    // ── Stock ────────────────────────────────────────────────────────────────
+    if (!stock) boxDiv.classList.add('out-of-stock');
 
-    // ── Botão Comprar — 1 listener, apenas neste boxDiv ─────────────────────
+    // ── Referências ──────────────────────────────────────────────────────────
     const cartBtn      = boxDiv.querySelector('.addToCart');
     const selectEl     = boxDiv.querySelector('.quantity');
     const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
@@ -455,7 +307,6 @@ function createCard(item) {
         cartBtn.setAttribute('disabled', '');
     });
 
-    // ── Cálculo de preço ao mudar quantidade ─────────────────────────────────
     selectEl.addEventListener('change', () => {
         const qtText = selectEl.value;
         const kg     = parseFloat(qtText);
@@ -501,16 +352,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error);
     }
 
-    const available   = object.saladas.filter(s => s.stock === true);
-    const unavailable = object.saladas.filter(s => s.stock === false);
+    const sheetsData = await fetchSheetsData();
+    const produtos   = object.saladas.map(item => {
+        const s = sheetsData[item.productId?.toString()];
+        if (s) { item._sheetPrice = s.preco; item._sheetStock = s.stock; }
+        return item;
+    });
 
-    // ── Disponíveis ───────────────────────────────────────────────────────────
+    const available   = produtos.filter(s => (s._sheetStock ?? s.stock) === true);
+    const unavailable = produtos.filter(s => (s._sheetStock ?? s.stock) === false);
+
     if (available.length > 0) {
         secSaladas.appendChild(createSubtitle('✅ Disponíveis', true));
         available.forEach(item => secSaladas.appendChild(createCard(item)));
     }
 
-    // ── Indisponíveis ─────────────────────────────────────────────────────────
     if (unavailable.length > 0) {
         secSaladas.appendChild(createSubtitle('⏳ Brevemente disponíveis', false));
         unavailable.forEach(item => secSaladas.appendChild(createCard(item)));
@@ -546,7 +402,7 @@ function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
 
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
-    let cart = JSON.parse(localStorage.getItem('cart'));
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
     numbOfItemsOnCart.forEach(el => {
         el.textContent = cart.length > 0 ? cart.length : '0';
     });

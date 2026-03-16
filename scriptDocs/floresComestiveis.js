@@ -8,28 +8,41 @@ async function callFloresComestiveis () {
 const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTt94zo_YFY4pz2ILaVDJDmQ_iIeD0XdSC3sASqse1a_tyIAUca2Q5Kr2yIgIqB8SJ3_zr0iCJdm1tc/pub?gid=0&single=true&output=csv';
 
 async function fetchSheetsData() {
-    const CACHE_KEY      = 'sheetsCache_flores';
-    const CACHE_DATE_KEY = 'sheetsCacheDate_flores';
+    const CACHE_KEY      = 'sheetsCache_floresComestiveis';
+    const CACHE_DATE_KEY = 'sheetsCacheDate_floresComestiveis';
     const cached     = localStorage.getItem(CACHE_KEY);
     const cachedDate = localStorage.getItem(CACHE_DATE_KEY);
 
-    function getLastMondayMidnight() {
-        const now = new Date(); 
-        const day = now.getDay();
-        const monday = new Date(now);
-        monday.setDate(now.getDate() - (day === 0 ? 6 : day - 1));
-        monday.setHours(0,0,0,0); 
-        return monday.getTime();
+    function getLastScheduledTime() {
+        const now = new Date();
+        const hours = [8, 12, 17];
+        const todaySlots = hours.map(h => {
+            const d = new Date(now);
+            d.setHours(h, 0, 0, 0);
+            return d.getTime();
+        });
+
+        const pastSlots = todaySlots.filter(t => t <= Date.now());
+
+        if (pastSlots.length > 0) {
+            return Math.max(...pastSlots);
+        }
+
+        // before 8AM — use yesterday's 17h
+        const yesterday17 = new Date(now);
+        yesterday17.setDate(now.getDate() - 1);
+        yesterday17.setHours(17, 0, 0, 0);
+        return yesterday17.getTime();
     }
 
-    if (cached && cachedDate && parseInt(cachedDate) >= getLastMondayMidnight()) {
-        console.log('A usar cache do Sheets');
+    if (cached && cachedDate && parseInt(cachedDate) >= getLastScheduledTime()) {
+        console.log('A usar cache do Sheets (floresComestiveis)');
         return JSON.parse(cached);
     }
 
     try {
-        console.log('A fazer fetch ao Sheets');
-        const text = await (await fetch(SHEET_CSV_URL)).text();
+        console.log('A fazer fetch ao Sheets (floresComestiveis)...');
+        const text = await (await fetch(`${SHEET_CSV_URL}&t=${Date.now()}`)).text();
         const map  = {};
         text.trim().split('\n').slice(1).forEach(row => {
             const cols  = row.split(',');
@@ -42,11 +55,10 @@ async function fetchSheetsData() {
         localStorage.setItem(CACHE_DATE_KEY, Date.now().toString());
         return map;
     } catch (e) {
-        console.error('Erro Sheets (flores):', e);
+        console.error('Erro Sheets (floresComestiveis):', e);
         return cached ? JSON.parse(cached) : {};
     }
 }
-
 // ─── POPUP: Ficha Técnica ────────────────────────────────────────────────────
 
 function createPopupOverlay() {

@@ -4,6 +4,56 @@ async function callPlantasEmVaso () {
     return (await fetch('/ProductsData/plantasEmVaso.json')).json()
 }
 
+// ─── SHEETS CONFIG ────────────────────────────────────────────────────────────
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTt94zo_YFY4pz2ILaVDJDmQ_iIeD0XdSC3sASqse1a_tyIAUca2Q5Kr2yIgIqB8SJ3_zr0iCJdm1tc/pub?gid=0&single=true&output=csv';
+
+async function fetchSheetsData() {
+    const CACHE_KEY      = 'sheetsCache_plantasEmVaso';
+    const CACHE_DATE_KEY = 'sheetsCacheDate_plantasEmVaso';
+    const cached     = localStorage.getItem(CACHE_KEY);
+    const cachedDate = localStorage.getItem(CACHE_DATE_KEY);
+
+    function getLastScheduledTime() {
+        const now = new Date();
+        const hours = [8, 12, 17];
+        const todaySlots = hours.map(h => {
+            const d = new Date(now);
+            d.setHours(h, 0, 0, 0);
+            return d.getTime();
+        });
+        const pastSlots = todaySlots.filter(t => t <= Date.now());
+        if (pastSlots.length > 0) return Math.max(...pastSlots);
+        const yesterday17 = new Date(now);
+        yesterday17.setDate(now.getDate() - 1);
+        yesterday17.setHours(17, 0, 0, 0);
+        return yesterday17.getTime();
+    }
+
+    if (cached && cachedDate && parseInt(cachedDate) >= getLastScheduledTime()) {
+        console.log('A usar cache do Sheets (plantasEmVaso)');
+        return JSON.parse(cached);
+    }
+
+    try {
+        console.log('A fazer fetch ao Sheets (plantasEmVaso)...');
+        const text = await (await fetch(`${SHEET_CSV_URL}&t=${Date.now()}`)).text();
+        const map  = {};
+        text.trim().split('\n').slice(1).forEach(row => {
+            const cols  = row.split(',');
+            const id    = cols[0]?.trim().replace(/"/g, '');
+            const preco = parseFloat(cols[2]?.trim().replace(/"/g, ''));
+            const stock = cols[3]?.trim().replace(/"/g, '').toLowerCase() === 'true';
+            if (id) map[id] = { preco, stock };
+        });
+        localStorage.setItem(CACHE_KEY, JSON.stringify(map));
+        localStorage.setItem(CACHE_DATE_KEY, Date.now().toString());
+        return map;
+    } catch (e) {
+        console.error('Erro Sheets (plantasEmVaso):', e);
+        return cached ? JSON.parse(cached) : {};
+    }
+}
+
 // ─── POPUP: Ficha Técnica ────────────────────────────────────────────────────
 
 function createPopupOverlay() {
@@ -136,6 +186,7 @@ function createPopupOverlay() {
     });
 }
 
+
 function closePopup() {
     document.getElementById('fichaPopupOverlay').classList.remove('active');
     document.body.style.overflow = '';
@@ -144,8 +195,8 @@ function closePopup() {
 function buildFichaHTML(sheet, name) {
     if (!sheet) return `<p style="color:#888;font-size:0.9rem">Ficha técnica não disponível.</p>`;
 
-    let html = `<h2>🥬 ${name}</h2>`;
-
+    let html = `<h2>${name}</h2>`;
+ 
     if (sheet.description && sheet.components) {
         html += `<p style="font-size:0.9rem;color:#444;margin-bottom:14px">${sheet.description}</p>`;
         html += `<div class="ficha-section">
@@ -164,11 +215,8 @@ function buildFichaHTML(sheet, name) {
         }
     }
 
-    if (sheet.harvestTime) {
-        html += `<div class="ficha-section">
-            <div class="ficha-section-title">⏳ Sementeira → Colheita</div>
-            <span class="ficha-harvest">${sheet.harvestTime.minDays} a ${sheet.harvestTime.maxDays} dias</span>
-        </div>`;
+    if (sheet.description) {
+        html += `<p style="font-size:0.9rem;color:#444;margin-bottom:14px">${sheet.description}</p>`;
     }
 
     if (sheet.culinaryUses?.length) {
@@ -178,17 +226,9 @@ function buildFichaHTML(sheet, name) {
         </div>`;
     }
 
-    if (sheet.flavorNotes) {
-        const notes = Object.values(sheet.flavorNotes).join(' · ');
-        html += `<div class="ficha-section">
-            <div class="ficha-section-title">👅 Notas de Sabor</div>
-            <div class="ficha-flavor">${notes}</div>
-        </div>`;
-    }
-
     if (sheet.traditionalProperties?.length) {
         html += `<div class="ficha-section">
-            <div class="ficha-section-title">🌿 Propriedades Tradicionais</div>
+            <div class="ficha-section-title">🌿 Propriedades</div>
             <ul>${sheet.traditionalProperties.map(p => `<li>${p}</li>`).join('')}</ul>
         </div>`;
     }
@@ -207,7 +247,9 @@ function openPopup(sheet, name) {
 // ─── CRIAR CARD ──────────────────────────────────────────────────────────────
 
 function createCard(item) {
-    const { name, price, image: rawImage, stock, productId, technicalSheet } = item;
+    const { name, image: rawImage, productId, technicalSheet } = item;
+    const price = item._sheetPrice ?? item.price;
+    const stock = item._sheetStock ?? item.stock;
     const image = rawImage == '' ? "/images/logo.png" : rawImage;
 
     const boxDiv = document.createElement('div');
@@ -233,12 +275,10 @@ function createCard(item) {
     // ── Popup na imagem ──────────────────────────────────────────────────────
     boxDiv.querySelector('img').addEventListener('click', () => openPopup(technicalSheet, name));
 
-    // ── Stock — passa o boxDiv directamente, sem precisar que esteja no DOM ──
-    if (!stock) {
-        boxDiv.classList.add('out-of-stock');
-    }
+    // ── Stock ────────────────────────────────────────────────────────────────
+    if (!stock) boxDiv.classList.add('out-of-stock');
 
-    // ── Botão Comprar — 1 listener, apenas neste boxDiv ─────────────────────
+    // ── Referências ──────────────────────────────────────────────────────────
     const cartBtn      = boxDiv.querySelector('.addToCart');
     const selectEl     = boxDiv.querySelector('.quantity');
     const kiloPriceEl  = boxDiv.querySelector('.kiloPrice');
@@ -258,7 +298,6 @@ function createCard(item) {
         cartBtn.setAttribute('disabled', '');
     });
 
-    // ── Cálculo de preço ao mudar quantidade — unitário ────────────────────
     selectEl.addEventListener('change', () => {
         const qtText = selectEl.value;
         const kg     = parseFloat(qtText);
@@ -301,16 +340,21 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(error);
     }
 
-    const available   = object.plantasEmVaso.filter(s => s.stock === true);
-    const unavailable = object.plantasEmVaso.filter(s => s.stock === false);
+    const sheetsData = await fetchSheetsData();
+    const produtos   = object.plantasEmVaso.map(item => {
+        const s = sheetsData[item.productId?.toString()];
+        if (s) { item._sheetPrice = s.preco; item._sheetStock = s.stock; }
+        return item;
+    });
 
-    // ── Disponíveis ───────────────────────────────────────────────────────────
+    const available   = produtos.filter(s => (s._sheetStock ?? s.stock) === true);
+    const unavailable = produtos.filter(s => (s._sheetStock ?? s.stock) === false);
+
     if (available.length > 0) {
         secPlantasEmVaso.appendChild(createSubtitle('✅ Disponíveis', true));
         available.forEach(item => secPlantasEmVaso.appendChild(createCard(item)));
     }
 
-    // ── Indisponíveis ─────────────────────────────────────────────────────────
     if (unavailable.length > 0) {
         secPlantasEmVaso.appendChild(createSubtitle('⏳ Brevemente disponíveis', false));
         unavailable.forEach(item => secPlantasEmVaso.appendChild(createCard(item)));
@@ -346,7 +390,7 @@ function addToitemObj(name, imageSrc, itemPrice, quantity, itemTotal) {
 
 function updateNumbItemsOnCart() {
     let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
-    let cart = JSON.parse(localStorage.getItem('cart'));
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
     numbOfItemsOnCart.forEach(el => {
         el.textContent = cart.length > 0 ? cart.length : '0';
     });

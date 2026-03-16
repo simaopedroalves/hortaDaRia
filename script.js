@@ -237,8 +237,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 })
 
 
-
-
 // // to disable cart order and add a message that says that, using DATE.
 
 // let dateNow = new Date()

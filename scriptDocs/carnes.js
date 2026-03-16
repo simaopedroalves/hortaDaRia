@@ -13,23 +13,36 @@ async function fetchSheetsData() {
     const cached     = localStorage.getItem(CACHE_KEY);
     const cachedDate = localStorage.getItem(CACHE_DATE_KEY);
 
-    function getLastMondayMidnight() {
+    function getLastScheduledTime() {
         const now = new Date();
-        const day = now.getDay();
-        const monday = new Date(now);
-        monday.setDate(now.getDate() - (day === 0 ? 6 : day - 1));
-        monday.setHours(0, 0, 0, 0);
-        return monday.getTime();
+        const hours = [8, 12, 11];
+        const todaySlots = hours.map(h => {
+            const d = new Date(now);
+            d.setHours(h, 0, 0, 0);
+            return d.getTime();
+        });
+
+        const pastSlots = todaySlots.filter(t => t <= Date.now());
+
+        if (pastSlots.length > 0) {
+            return Math.max(...pastSlots);
+        }
+
+        // before 8AM — use yesterday's 17h
+        const yesterday17 = new Date(now);
+        yesterday17.setDate(now.getDate() - 1);
+        yesterday17.setHours(17, 0, 0, 0);
+        return yesterday17.getTime();
     }
 
-    if (cached && cachedDate && parseInt(cachedDate) >= getLastMondayMidnight()) {
+    if (cached && cachedDate && parseInt(cachedDate) >= getLastScheduledTime()) {
         console.log('A usar cache do Sheets (carnes)');
         return JSON.parse(cached);
     }
 
     try {
         console.log('A fazer fetch ao Sheets (carnes)...');
-        const text = await (await fetch(SHEET_CSV_URL)).text();
+        const text = await (await fetch(`${SHEET_CSV_URL}&t=${Date.now()}`)).text();
         const map  = {};
         text.trim().split('\n').slice(1).forEach(row => {
             const cols  = row.split(',');
@@ -46,7 +59,6 @@ async function fetchSheetsData() {
         return cached ? JSON.parse(cached) : {};
     }
 }
-
 // ─── POPUP: Ficha Técnica ─────────────────────────────────────────────────────
 
 function createPopupOverlay() {
