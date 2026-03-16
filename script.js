@@ -228,27 +228,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 
-// // to disable cart order and add a message that says that, using DATE.
+// to disable cart order and add a message that says that, using DATE.
 
-// let dateNow = new Date()
-// dateNow = dateNow.toString().split(' ');
-// dateNow = dateNow[0];
+let dateNow = new Date()
+dateNow = dateNow.toString().split(' ');
+dateNow = dateNow[0];
 
-// function disabledAllOrders () {
+function disabledAllOrders () {
 
-//     let orderDisableMessage = document.querySelector('.disable-orders');
+    let orderDisableMessage = document.querySelector('.disable-orders');
   
-//     if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed')  {
-//        orderDisableMessage.style.display = 'none';
-//     }
+    if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed')  {
+       orderDisableMessage.style.display = 'none';
+    }
 
-//     else {
-//         orderDisableMessage.style.display = 'flex'
+    else {
+        orderDisableMessage.style.display = 'flex'
         
-//     }
-// }
+    }
+}
 
-//  disabledAllOrders()
+disabledAllOrders()
 
  
 // find inside JSON data if each item have stock or not to display

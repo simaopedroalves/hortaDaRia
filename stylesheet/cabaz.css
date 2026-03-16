@@ -147,7 +147,8 @@
 .image-with-weekly-baskets {
     max-width: 95vw;
     min-height: 100lvh;
-    background-image: linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,0.9)), url("/images/fotosCabazes/cabazes-semana.jpg") ;
+    /* background-image: linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,0.9)), url("/images/fotosCabazes/cabazes-semana.jpeg") ; */
+    background-image: url("/images/fotosCabazes/cabazes-semana.jpeg");
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
