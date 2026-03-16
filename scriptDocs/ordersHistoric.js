@@ -97,3 +97,17 @@ orderAgainButtons.forEach((button, index) => {
     });
 }); 
  
+let dateNow = new Date().toString().split(' ')[0];
+
+function disabledAllOrders() {
+    const orderDisableMessage = document.querySelector('.disable-orders');
+    if (!orderDisableMessage) return;
+
+    if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed') {
+        orderDisableMessage.style.display = 'none';
+    } else {
+        orderDisableMessage.style.display = 'flex';
+    }
+}
+
+disabledAllOrders();

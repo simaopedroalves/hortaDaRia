@@ -230,25 +230,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // to disable cart order and add a message that says that, using DATE.
 
-let dateNow = new Date()
-dateNow = dateNow.toString().split(' ');
-dateNow = dateNow[0];
+let dateNow = new Date().toString().split(' ')[0];
 
-function disabledAllOrders () {
+function disabledAllOrders() {
+    const orderDisableMessage = document.querySelector('.disable-orders');
+    if (!orderDisableMessage) return;
 
-    let orderDisableMessage = document.querySelector('.disable-orders');
-  
-    if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed')  {
-       orderDisableMessage.style.display = 'none';
-    }
-
-    else {
-        orderDisableMessage.style.display = 'flex'
-        
+    if (dateNow == 'Mon' || dateNow == 'Tue' || dateNow == 'Wed') {
+        orderDisableMessage.style.display = 'none';
+    } else {
+        orderDisableMessage.style.display = 'flex';
     }
 }
 
-disabledAllOrders()
+disabledAllOrders();
 
  
 // find inside JSON data if each item have stock or not to display

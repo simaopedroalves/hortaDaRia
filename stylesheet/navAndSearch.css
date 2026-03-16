@@ -95,14 +95,14 @@ header {
 }
 
 /* ===============MESSAGE WHEN ORDER ARE DISABLE============================ */
-/* .disable-orders {
+.disable-orders {
     color: var(--orange);
     padding: 0.5rem;
     border-radius: 0.5rem;
     max-width: fit-content;
     animation: pulse 2s 1s infinite;
     display: none;
-} */
+}
 
 /* =======div with cart and hamburguer menu============= */
 
