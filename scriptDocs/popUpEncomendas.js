@@ -13,7 +13,7 @@ export function setPopUpEncomendas(customMessage = null) {
     let today = new Date()
     today = today.toString().split(' ');
     today = today[0];
-    today = 'Sun'
+    // today = 'Sun'; // para testar mensagem de encomendas encerradas
 
 
     if (customMessage) {  
@@ -52,10 +52,10 @@ export function setPopUpEncomendas(customMessage = null) {
     // Cabazes indisponiveis temporariamente - apagar "today = 'Sun'" acima para voltar ao normal
 
     
-    else {
-        paragraphOne = 'Não haverá cabazes disponíveis até fevereiro/março.'
-        paragraphTwo = 'Entretanto, pode encontrar os nossos produtos disponíveis, no Mercado Municipal, todos os sábados de manhã.'
-    }
+    // else {
+    //     paragraphOne = 'Não haverá cabazes disponíveis até fevereiro/março.'
+    //     paragraphTwo = 'Entretanto, pode encontrar os nossos produtos disponíveis, no Mercado Municipal, todos os sábados de manhã.'
+    // }
 
     const popUpMessage = document.createElement('div');
     popUpMessage.classList.add('pop-up-mensagem');
