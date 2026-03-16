@@ -59,7 +59,8 @@
 
 .add-to-cart-button-number-one,
 .add-to-cart-button-number-two,
-.add-to-cart-button-number-three {
+.add-to-cart-button-number-three,
+.add-to-cart-button-extra {
     background-color: var(--orange);
     color: var(--black);
     border-radius: 1rem;
@@ -298,13 +299,15 @@
 
     .add-to-cart-button-number-one,
     .add-to-cart-button-number-two,
-    .add-to-cart-button-number-three{
+    .add-to-cart-button-number-three,
+    .add-to-cart-button-extra{
         padding: 1rem;
     }
 
     .add-to-cart-button-number-one:hover,
     .add-to-cart-button-number-two:hover,
-    .add-to-cart-button-number-three:hover {
+    .add-to-cart-button-number-three:hover,
+    .add-to-cart-button-extra:hover {
         transition: 750ms;
         background-color: var(--green);
     }

@@ -1,5 +1,6 @@
 // HEADER
 // GOOGLE TAG INSIDE HEADER FUNCTION
+import { fetchCabazesSheetData } from '/scriptDocs/script-cabazes.js';
 
 export function header() {
     const header = document.querySelector('header');
@@ -164,12 +165,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // menu de cabazes na pagina principal
-const cabazOne = document.querySelector('.cabazOne');
-const cabazTwo = document.querySelector('.cabazTwo')
-const cabazThree = document.querySelector('.cabazThree')
-const cabazFour = document.querySelector('.cabazFour')
-const cabazExtra = document.querySelector('.cabazExtra')
-
+const cabazOne   = document.querySelector('.cabazOne');
+const cabazTwo   = document.querySelector('.cabazTwo');
+const cabazThree = document.querySelector('.cabazThree');
+const cabazFour  = document.querySelector('.cabazFour');
+const cabazExtra = document.querySelector('.cabazExtra');
 
 async function callData() {
     return (await fetch('/ProductsData/cabazes.json')).json()
@@ -177,64 +177,55 @@ async function callData() {
 
 document.addEventListener('DOMContentLoaded', async () => {
 
-    let object = ''
-
+    let object = '';
     try {
         object = await callData();
-    }
-    catch (error) {
-        console.error('ERROR')
-        console.log(error)
+    } catch (error) {
+        console.error('ERROR', error);
     }
 
-        let nameOne = object.cabazes[0].name;
-        let priceOne = object.cabazes[0].price;
+    const sheetsData = await fetchCabazesSheetData();
+    const cabazes    = object.cabazes;
 
-        cabazOne.innerHTML += `
-             <div class="cabazContent">
-                <h4 class="cabazName">${nameOne}</h4>
-                <span class="cabazPrice">${priceOne}€</span>
-            </div>
-        `
+    const priceOne   = sheetsData['1']?.preco ?? cabazes[0].price;
+    const priceTwo   = sheetsData['2']?.preco ?? cabazes[1].price;
+    const priceThree = sheetsData['3']?.preco ?? cabazes[2].price;
+    const priceExtra = sheetsData['5']?.preco ?? cabazes[4].price;
 
-        let nameTwo = object.cabazes[1].name
-        let priceTwo = object.cabazes[1].price
+    cabazOne.innerHTML += `
+        <div class="cabazContent">
+            <h4 class="cabazName">${cabazes[0].name}</h4>
+            <span class="cabazPrice">${priceOne}€</span>
+        </div>
+    `;
 
-        cabazTwo.innerHTML = `
-            <div class="cabazContent">
-                <h4 class="cabazName">${nameTwo}</h4>
-                <span class="cabazPrice">${priceTwo}€</span>
-            </div>
-        `
-        let nameThree = object.cabazes[2].name
-        let priceThree = object.cabazes[2].price
+    cabazTwo.innerHTML = `
+        <div class="cabazContent">
+            <h4 class="cabazName">${cabazes[1].name}</h4>
+            <span class="cabazPrice">${priceTwo}€</span>
+        </div>
+    `;
 
-        cabazThree.innerHTML = `
-            <div class="cabazContent">
-                <h4 class="cabazName">${nameThree}</h4>
-                <span class="cabazPrice">${priceThree}€</span>
-            </div>
-        `
-        let nameFour = object.cabazes[3].name
-        let priceFour = object.cabazes[3].price
+    cabazThree.innerHTML = `
+        <div class="cabazContent">
+            <h4 class="cabazName">${cabazes[2].name}</h4>
+            <span class="cabazPrice">${priceThree}€</span>
+        </div>
+    `;
 
-        cabazFour.innerHTML = `
-            <div class="cabazContent">
-                <h4 class="cabazName">${nameFour}</h4>
-            </div>
-        `
+    cabazFour.innerHTML = `
+        <div class="cabazContent">
+            <h4 class="cabazName">${cabazes[3].name}</h4>
+        </div>
+    `;
 
-        let nameExtra = object.cabazes[4].name
-        let priceExtra = object.cabazes[4].price
-
-        cabazExtra.innerHTML = `
-            <div class="cabazContent">
-                <h4 class="cabazName">${nameExtra}</h4>
-                <span class="cabazPrice">${priceExtra}€</span>
-            </div>
-        `
-        // termsAndConditions()
-})
+    cabazExtra.innerHTML = `
+        <div class="cabazContent">
+            <h4 class="cabazName">${cabazes[4].name}</h4>
+            <span class="cabazPrice">${priceExtra}€</span>
+        </div>
+    `;
+});
 
 
 // // to disable cart order and add a message that says that, using DATE.

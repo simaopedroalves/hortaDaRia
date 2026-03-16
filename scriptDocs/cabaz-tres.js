@@ -1,4 +1,4 @@
-// import {updateNumbItemsOnCart} from '/script.js'
+import { fetchCabazesSheetData, getCabazContent } from '/scriptDocs/script-cabazes.js';
 
 const secCabazTres = document.querySelector('.cabaz-tres');
 
@@ -9,165 +9,71 @@ async function callCabazTres() {
 document.addEventListener('DOMContentLoaded', async () => {
 
     let object = '';
-
     try {
         object = await callCabazTres();
-    }
-    catch (error) {
-        console.error('ERROR');
-        console.log(error);
+    } catch (error) {
+        console.error('ERROR', error);
     }
 
-    // for (let i = 0; i < object.cabazes.length; i++) {
+    const sheetsData   = await fetchCabazesSheetData();
+    const allContent   = getCabazContent(sheetsData, object.cabazes[4].content.flat());
 
-        let cabazName = object.cabazes[2].name;
-        let cabazPrice =  object.cabazes[2].price;
-         let cabazContent = object.cabazes[4].content[0]
-                            .concat(object.cabazes[4].content[1])
-                            .concat(object.cabazes[4].content[2])
-        let cabazNumOne = object.cabazes[0].open;
-        let cabazNumTwo = object.cabazes[1].open;
-        let createCabaz = object.cabazes[3].open;
-        // let imageCabazOne = object.cabazes[0].image;
-        // let imageCabazTwo = object.cabazes[1].image;
-        // let imageCabazThree = object.cabazes[2].image;
-        // let imageCreateCabaz = object.cabazes[3].image;
+    const cabazName    = object.cabazes[2].name;
+    const cabazPrice   = sheetsData['3']?.preco ?? object.cabazes[2].price;
+    const cabazContent = allContent.grande;
+    const cabazNumOne  = object.cabazes[0].open;
+    const cabazNumTwo  = object.cabazes[1].open;
+    const createCabaz  = object.cabazes[3].open;
 
+    const contentHTML = cabazContent.join('<br>');
 
-
-        console.log('Nome: ' + cabazName + '\n' + 'Preço: ' + cabazPrice + '\n' + 'Conteudo: ' + cabazContent)
-
-        // console.log(cabazContent)
-        // console.log(typeof(cabazContent.toString()))
-
-        cabazContent = cabazContent.toString().replaceAll(',', '<br>')
-        secCabazTres.innerHTML += `
-            <div class="cabaz-box">
-                <h2 class="cabaz-name-title">${cabazName}</h2>
-                <span class="cabazPrice">${cabazPrice} €</span>
-
-                <div class="cabaz-content">
-                    <div class="cabaz-list">
-                        ${cabazContent}
-                    </div>
-                    <button type="button" class="add-to-cart-button-number-three">Adicionar ao Cesto</button>
-                </div>
+    secCabazTres.innerHTML += `
+        <div class="cabaz-box">
+            <h2 class="cabaz-name-title">${cabazName}</h2>
+            <span class="cabazPrice">${cabazPrice} €</span>
+            <div class="cabaz-content">
+                <div class="cabaz-list">${contentHTML}</div>
+                <button type="button" class="add-to-cart-button-number-three">Adicionar ao Cesto</button>
             </div>
+        </div>
+        <div class="sugestionsContent">
+            <h4 class="sugestionsTitle">Outras Sugestões:</h4>
+            <div class="sugestionOne sugestion"><a href="${cabazNumOne}"><span>Cabaz pequeno</span></a></div>
+            <div class="sugestionTwo sugestion"><a href="${cabazNumTwo}"><span>Cabaz médio</span></a></div>
+            <div class="sugestionThree sugestion"><a href="${createCabaz}"><span>Criar Cabaz</span></a></div>
+        </div>
+    `;
 
-            <div class="sugestionsContent">
-                <h4 class="sugestionsTitle">Outras Sugestões:</h4>
-
-                <div class="sugestionOne sugestion">
-                    <a href="${cabazNumOne}">
-                        <span>Cabaz pequeno</span>
-                    </a>
-                </div>
-
-                <div class="sugestionTwo sugestion">
-                    <a href="${cabazNumTwo}">
-                        <span>Cabaz médio</span>
-                    </a>
-                </div>
-
-                <div class="sugestionThree sugestion">
-                    <a href="${createCabaz}">
-                        <span>Criar Cabaz</span>
-                    </a>
-                </div>
-
-            </div>
-        `
-        addCabazToCart()
-        updateNumbItemsOnCart()
-    // }
-})
-
-function updateNumbItemsOnCart() {
-    let numbOfItemsOnCart = document.querySelectorAll('nav .article-number');
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-
-    numbOfItemsOnCart.forEach(el => {
-        el.textContent = '0'
-
-        for (let i = 0; i < cart.length; i++) {
-            if (cart.length > 0) {
-                el.textContent = cart.length
-            }
-            if (cart.length <= 0) {
-                el.textContent = '0'
-            }
-        }
-    })
-}
+    addCabazToCart();
+    updateNumbItemsOnCart();
+});
 
 function addCabazToCart() {
-
-    let addToCartBtn = secCabazTres.querySelector('.add-to-cart-button-number-three');
-
+    const addToCartBtn = secCabazTres.querySelector('.add-to-cart-button-number-three');
     addToCartBtn.addEventListener('click', () => {
-        let name = secCabazTres.querySelector('.cabaz-name-title').textContent;
-        let quantity = 1
-        let itemPrice = secCabazTres.querySelector('.cabazPrice').textContent
-        let itemTotal = itemPrice;
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-        for (let i = 0; i < cart.length; i++) {
-           
-            if (cart[i].itQuantity > 1) {
-                cart[i].itQuantity = quantity + 1
-            }
-        }
-
-         cart.push({
-                    itName: name,
-                    itImageSrc: "",
-                    itPrice: itemPrice,
-                    itQuantity: quantity + " Cabaz",
-                    itTotal: itemTotal
-                })
-
-        localStorage.setItem('cart', JSON.stringify(cart))
-        updateNumbItemsOnCart()
-        showAllert(name)
-    })
-
+        const name      = secCabazTres.querySelector('.cabaz-name-title').textContent;
+        const itemPrice = secCabazTres.querySelector('.cabazPrice').textContent;
+        const cart      = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push({ itName: name, itImageSrc: '', itPrice: itemPrice, itQuantity: '1 Cabaz', itTotal: itemPrice });
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateNumbItemsOnCart();
+        showAllert(name);
+    });
 }
 
-// addCabazToCart()
-
-function showAllert (name) {
-    let alert = document.querySelector('.alert');
+function showAllert(name) {
+    const alert = document.querySelector('.alert');
     alert.classList.add('show-alert');
-
     alert.innerHTML = `
         <span class="cart-changed-message">${name} adicionado(a) ao Cesto</span>
-        <button class="see-cart">
-            <a href="/html/carrinho.html">
-                Ver Cesto
-            </a> 
-        </button>
-    `
-
-    setTimeout(() => {
-        alert.classList.remove('show-alert')
-    }, 2000);
+        <button class="see-cart"><a href="/html/carrinho.html">Ver Cesto</a></button>
+    `;
+    setTimeout(() => alert.classList.remove('show-alert'), 2000);
 }
 
 function updateNumbItemsOnCart() {
-    let numbOfItemsOnCart = document.querySelectorAll('div .article-number');
-    let cart = JSON.parse(localStorage.getItem('cart'));
-
-    numbOfItemsOnCart.forEach(el => {
-        el.textContent = '0'
-
-        for (let i = 0; i < cart.length; i++) {
-            if (cart.length > 0) {
-                el.textContent = cart.length
-            }
-            if (cart.length <= 0) {
-                el.textContent = '0'
-            }
-        }
-    })
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    document.querySelectorAll('div .article-number').forEach(el => {
+        el.textContent = cart.length > 0 ? cart.length : '0';
+    });
 }
