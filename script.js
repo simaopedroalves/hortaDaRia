@@ -245,7 +245,65 @@ function disabledAllOrders() {
 
 disabledAllOrders();
 
- 
+
+//weekly cabazes image
+
+const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTt94zo_YFY4pz2ILaVDJDmQ_iIeD0XdSC3sASqse1a_tyIAUca2Q5Kr2yIgIqB8SJ3_zr0iCJdm1tc/pub?gid=1984719515&single=true&output=csv';
+const BASE_URL = "https://drive.google.com/thumbnail?sz=w1920&id=";
+
+async function loadWeeklyBasketImage() {
+    try {
+        const now = new Date();
+        const dayOfWeek = now.getDay(); // 0=domingo, 1=segunda, ...
+        const hour = now.getHours();
+        const cacheKey = 'weeklyBasketImage';
+        const cacheTimeKey = 'weeklyBasketImageTime';
+
+        const cachedImage = localStorage.getItem(cacheKey);
+        const cachedTime = localStorage.getItem(cacheTimeKey);
+
+        // calcula a última segunda-feira às 00:00
+        const lastMonday = new Date(now);
+        lastMonday.setDate(now.getDate() - ((dayOfWeek + 6) % 7));
+        lastMonday.setHours(0, 0, 0, 0);
+
+        const cacheIsValid = cachedImage && cachedTime && new Date(cachedTime) >= lastMonday;
+
+        if (cacheIsValid) {
+            console.log("A usar cache da imagem");
+            applyImage(cachedImage);
+            return;
+        }
+
+        // fetch novo
+        const response = await fetch(SHEET_URL);
+        const text = await response.text();
+
+        const rows = text.split("\n");
+        const imageId = rows[1].split(",")[1].replace(/"/g, "").trim();
+        const imageUrl = `${BASE_URL}${imageId}`;
+
+        localStorage.setItem(cacheKey, imageUrl);
+        localStorage.setItem(cacheTimeKey, now.toISOString());
+
+        applyImage(imageUrl);
+        console.log("URL final:", imageUrl);
+
+    } catch (error) {
+        console.error('Erro:', error);
+    }
+}
+
+function applyImage(url) {
+    const section = document.querySelector('.image-with-weekly-baskets');
+    if (section) {
+        section.style.backgroundImage = `url("${url}")`;
+    }
+}
+
+loadWeeklyBasketImage();
+
+
 // find inside JSON data if each item have stock or not to display
 // a message saying that item his out of stock
 

@@ -43,10 +43,10 @@ export function setPopUpEncomendas(customMessage = null) {
         paragraphTwo = 'Vem visitar-nos ao Mercado Municipal de Famalicão até às 12:30h!'
     }
 
-    // else {
-    //     paragraphOne = 'Encomendas encerradas! Dá uma vista de olhos aos nossos produtos.'
-    //     paragraphTwo = 'Amanhã teremos novos cabazes!'
-    // }
+    else {
+        paragraphOne = 'Encomendas encerradas! Dá uma vista de olhos aos nossos produtos.'
+        paragraphTwo = 'Amanhã teremos novos cabazes!'
+    }
 
 
     // Cabazes indisponiveis temporariamente - apagar "today = 'Sun'" acima para voltar ao normal
