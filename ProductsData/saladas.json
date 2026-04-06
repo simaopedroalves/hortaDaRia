@@ -243,32 +243,30 @@
             "productId": 10506042026,
             "stock": true,
             "technicalSheet": {
-                "botanicalName": "Eruca sativa",
-                "botanicalSynonym": "Eruca vesicaria subsp. sativa",
-                "commonName": "Rúcula, rúcula cultivada",
+                "botanicalName": "Diplotaxis tenuifolia",
+                "botanicalSynonym": "",
+                "commonName": "Rúcula selvática, rúcula brava",
                 "family": "Brassicaceae",
                 "harvestTime": {
-                    "minDays": 25,
-                    "maxDays": 45
+                    "minDays": 20,
+                    "maxDays": 50
                 },
                 "culinaryUses": [
-                    "Consumida crua em saladas",
-                    "Massas",
-                    "Pizzas",
-                    "Sanduíches",
+                    "Saladas frescas e mixes de folhas",
+                    "Pizzas e massas",
                     "Pestos e molhos verdes",
-                    "Pode ser ligeiramente salteada (perde picância)"
+                    "Decoração de pratos"
                 ],
                 "flavorNotes": {
-                    "youngLeaves": "Sabor mais suave",
-                    "matureLeaves": "Sabor mais intenso e picante"
+                    "youngLeaves": "Sabor picante, intenso e ligeiramente amargo",
+                    "matureLeaves": "Sabor mais forte que a rúcula cultivada, textura fina e recortada, cor verde escuro"
                 },
                 "traditionalProperties": [
                     "Digestiva",
+                    "Rica em vitamina C, antioxidantes e compostos sulfurados",
+                    "Mineralizante (cálcio, ferro, potássio)",
                     "Estimulante do apetite",
-                    "Diurética suave",
-                    "Depurativa",
-                    "Rica em compostos sulfurados (característicos das Brassicaceae)"
+                    "Depurativa"
                 ]
             }
         },
