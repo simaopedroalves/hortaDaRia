@@ -66,6 +66,13 @@
             "stock": true
         },
         {
+            "name": "Rúcula Selvática",
+            "price": 20,
+            "image": "/images/saladas/rucula-selvatica.jpeg",
+            "productId": 10506042026,
+            "stock": true
+        },
+        {
             "name": "Salada asiática",
             "price": 15,
             "image": "/images/saladas/verduras-asiaticas.jpg",

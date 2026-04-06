@@ -770,6 +770,11 @@
           "productId": 7
         },
         {
+            "name": "Rúcula Selvática",
+            "image": "/images/saladas/rucula-selvatica.jpeg",
+            "productId": 10506042026
+        },
+        {
           "name": "Salada asiática",
           "image": "/images/saladas/verduras-asiaticas.jpg",
           "productId": 8

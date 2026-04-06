@@ -237,6 +237,42 @@
             }
         },
         {
+            "name": "Rúcula Selvática",
+            "price": 20,
+            "image": "/images/saladas/rucula-selvatica.jpeg",
+            "productId": 10506042026,
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Eruca sativa",
+                "botanicalSynonym": "Eruca vesicaria subsp. sativa",
+                "commonName": "Rúcula, rúcula cultivada",
+                "family": "Brassicaceae",
+                "harvestTime": {
+                    "minDays": 25,
+                    "maxDays": 45
+                },
+                "culinaryUses": [
+                    "Consumida crua em saladas",
+                    "Massas",
+                    "Pizzas",
+                    "Sanduíches",
+                    "Pestos e molhos verdes",
+                    "Pode ser ligeiramente salteada (perde picância)"
+                ],
+                "flavorNotes": {
+                    "youngLeaves": "Sabor mais suave",
+                    "matureLeaves": "Sabor mais intenso e picante"
+                },
+                "traditionalProperties": [
+                    "Digestiva",
+                    "Estimulante do apetite",
+                    "Diurética suave",
+                    "Depurativa",
+                    "Rica em compostos sulfurados (característicos das Brassicaceae)"
+                ]
+            }
+        },
+        {
             "name": "Salada Asiática",
             "price": 15,
             "image": "/images/saladas/verduras-asiaticas.jpg",
