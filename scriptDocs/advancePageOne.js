@@ -6,6 +6,7 @@ const pickUpSection = document.querySelector('.pick-up-sec');
 const pickUpHortaSection = document.querySelector('.horta-pick-up-sec');
 const allInputs = document.querySelectorAll('input');
 
+
 // ─── DISABLE/ENABLE INPUTS ────────────────────────────────────────────────────
 
 function disableInputs() {
@@ -17,6 +18,23 @@ function enableInputs() {
 }
 
 disableInputs();
+
+// ─── CHECK THURSDAY AVAILABILITY BECAUSE Orders must be placed a minimum of 24 hours in advance.  ──────────────────────────────────────────────
+
+function checkThursdayAvailability() {
+    const now = new Date();
+    const day = now.getDay();
+    const hour = now.getHours();
+    if (day === 3 && hour >= 12) {
+        const thursdayOptions = document.querySelectorAll('#thursday');
+        thursdayOptions.forEach(option => {
+            option.remove();
+        });
+    }
+    
+}
+
+checkThursdayAvailability();
 
 // ─── RADIO BUTTONS ────────────────────────────────────────────────────────────
 
