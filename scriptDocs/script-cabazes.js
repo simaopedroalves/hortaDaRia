@@ -83,9 +83,9 @@ export async function fetchCabazesSheetData() {
 export function getCabazContent(sheetsData, fallbackItems) {
     const fullContent = sheetsData['5']?.content ?? fallbackItems;
     return {
-        pequeno: fullContent.slice(0, 4),
-        medio:   fullContent.slice(0, 8),
-        grande:  fullContent.slice(0, 12),
+        pequeno: fullContent.slice(0, 5),
+        medio:   fullContent.slice(0, 10),
+        grande:  fullContent.slice(0, 14),
         premium: fullContent
     };
 }

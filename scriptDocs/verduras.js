@@ -170,6 +170,9 @@ function createPopupOverlay() {
             font-size: 0.8rem;
             font-weight: 500;
         }
+        .baby-harvest {
+            margin-bottom: 6px;
+        }
         .boxItem img { cursor: pointer; }
         .boxItem img:hover { opacity: 0.88; transition: opacity 0.15s; }
     `;
@@ -215,10 +218,29 @@ function buildFichaHTML(sheet, name) {
     }
 
     if (sheet.harvestTime) {
-        html += `<div class="ficha-section">
-            <div class="ficha-section-title">⏳ Sementeira → Colheita</div>
-            <span class="ficha-harvest">${sheet.harvestTime.minDays} a ${sheet.harvestTime.maxDays} dias</span>
-        </div>`;
+        const ht = sheet.harvestTime;
+
+        // Formato novo: { baby: {minDays, maxDays}, adult: {minDays, maxDays} }
+        if (ht.baby || ht.adult) {
+            let harvestHTML = '';
+            if (ht.baby) {
+                harvestHTML += `<span class="ficha-harvest baby-harvest">🌱 Folha Bebé: ${ht.baby.minDays} a ${ht.baby.maxDays} dias</span>`;
+            }
+            if (ht.adult) {
+                harvestHTML += `<span class="ficha-harvest">🌿 Folha Adulta: ${ht.adult.minDays} a ${ht.adult.maxDays} dias</span>`;
+            }
+            html += `<div class="ficha-section">
+                <div class="ficha-section-title">⏳ Sementeira → Colheita</div>
+                ${harvestHTML}
+            </div>`;
+
+            // Formato antigo: { minDays, maxDays }
+        } else if (ht.minDays !== undefined) {
+            html += `<div class="ficha-section">
+                <div class="ficha-section-title">⏳ Sementeira → Colheita</div>
+                <span class="ficha-harvest">${ht.minDays} a ${ht.maxDays} dias</span>
+            </div>`;
+        }
     }
 
     if (sheet.culinaryUses?.length) {

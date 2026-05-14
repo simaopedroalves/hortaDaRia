@@ -1,5 +1,23 @@
 {
     "verduras": [
+                {
+            "name": "folhas de amaranto",
+            "price": 10,
+            "image": "/images/verduras/folhas-de-amaranto.jpeg",
+            "productId": 133614052026,
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Amaranthus spp.",
+                "commonName": "Folhas de amaranto, espinafre africano",
+                "family": "Amaranthaceae",
+                "harvestTime": {
+                    "baby": {"minDays": 20, "maxDays": 30},
+                    "adult": {"minDays": 40, "maxDays": 60}
+                },
+                "culinaryUses": ["Salteados e refogados", "Sopas e guisados", "Saladas de folha jovem", "Misturas de folhas e pratos vegetarianos"],
+                "traditionalProperties": ["Rico em ferro, cálcio e magnésio", "Fonte de proteínas vegetais e fibras", "Rico em vitaminas A, C e antioxidantes", "Digestivo e mineralizante", "Folha nutritiva e fortalecedora"]
+            }
+        },
         {
             "name": "red vein sorrel baby (azeda vermelha baby)",
             "price": 100,

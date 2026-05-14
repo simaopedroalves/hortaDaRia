@@ -253,6 +253,11 @@
             "productId": 10028102025
         },
         {
+            "name": "Groselha vermelha",
+            "image": "/images/frutaDaEpoca/groselha-vermelha.jpeg",
+            "productId": 132614052026
+        },
+        {
             "name": "caviar limão",
             "image": "/images/horticulas/caviar-limao.jpg",
             "productId": 10420102025,
@@ -821,6 +826,11 @@
         }
       ],
       "verduras": [
+        {
+          "name": "folhas de amaranto",
+          "image": "/images/verduras/folhas-de-amaranto.jpeg",
+          "productId": 133614052026
+        },
         {
           "name": "ruibarbo",
           "image": "/images/verduras/ruibarbo.jpg",

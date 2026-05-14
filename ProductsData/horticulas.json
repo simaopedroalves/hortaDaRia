@@ -1,5 +1,20 @@
 {    
     "horticulas": [
+                {
+            "name": "groselha vermelha",
+            "price": 25,
+            "image": "/images/frutaDaEpoca/groselha-vermelha.jpeg",
+            "productId": 132614052026,
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Ribes rubrum",
+                "commonName": "Groselha vermelha",
+                "family": "Grossulariaceae",
+                "harvestTime": {"minDays": 730, "maxDays": 1095},
+                "culinaryUses": ["Sobremesas e pastelaria", "Compotas, geleias e xaropes", "Decoração de pratos gourmet", "Saladas de frutas e cocktails"],
+                "traditionalProperties": ["Digestiva", "Rica em vitamina C, antioxidantes e fibras", "Mineralizante (potássio, manganês)", "Refrescante e ligeiramente estimulante", "Fruta funcional e decorativa"]
+            }
+        },
         {
             "name": "kiwi",
             "price": 1.95,
