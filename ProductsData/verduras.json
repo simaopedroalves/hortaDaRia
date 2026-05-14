@@ -2,7 +2,7 @@
     "verduras": [
                 {
             "name": "folhas de amaranto",
-            "price": 10,
+            "price": 25,
             "image": "/images/verduras/folhas-de-amaranto.jpeg",
             "productId": 133614052026,
             "stock": true,
