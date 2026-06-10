@@ -91,6 +91,9 @@
             <!-- ======= ENTREGA ========= -->
             <section class="deliver-sec border-1">
                 <div>
+                     <span class="error-message">Apenas entregas no concelho de V. N. de Famalicão</span>
+                </div>
+                <div>
                     <label for="address">Morada<span class="required-input-icon">*</span></label>
                     <input id="address" type="text" name="Morada" required class="required">
                 </div>
@@ -107,7 +110,7 @@
                         <label for="cp">Código Postal<span class="required-input-icon">*</span></label>
                     </div>
                     <div class="cp-numbers">
-                        <input id="cp" type="number" name="CódigoPostalUm" required class="required" value="">
+                        <input id="cp" type="number" name="CódigoPostalUm" readonly class="required" value="4760">
                         <input id="cP" type="number" name="CódigoPostalDois" required class="required">
                     </div>
                 </div>
@@ -148,6 +151,7 @@
                         <label for="other-schedule">Outro horário</label>
                         <input type="text" name="Horário Disponivel" id="other-schedule">
                     </div>
+
                 </div>
 
             </section>

@@ -516,7 +516,7 @@ select {
     font-weight: 700;
     color: var(--orange);
     text-align: center;
-    margin-bottom: 5vh;
+    margin: 2vh auto 2vh auto;
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════════
