@@ -399,13 +399,12 @@ textarea:focus,
 
 .deliver-sec .cp .cp-numbers {
     display: flex;
-    max-width: min-content;
     justify-content: center;
 }
 
 #cp,
 #cP {
-    max-width: calc(100vw / 5);
+    min-width: 90px;
     display: flex;
     padding-left: 10%;
 }
@@ -512,6 +511,14 @@ select {
 
 .error-message,
 .required-input-icon {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--orange);
+    text-align: center;
+    margin: 2vh auto 2vh auto;
+}
+
+.deliver-message-region {
     font-size: 0.9rem;
     font-weight: 700;
     color: var(--orange);

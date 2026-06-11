@@ -91,7 +91,7 @@
             <!-- ======= ENTREGA ========= -->
             <section class="deliver-sec border-1">
                 <div>
-                     <span class="error-message">Apenas entregas no concelho de V. N. de Famalicão</span>
+                     <span class="deliver-message-region">Apenas entregas nos concelhos de V. N. de Famalicão e Sto Tirso</span>
                 </div>
                 <div>
                     <label for="address">Morada<span class="required-input-icon">*</span></label>
@@ -110,7 +110,11 @@
                         <label for="cp">Código Postal<span class="required-input-icon">*</span></label>
                     </div>
                     <div class="cp-numbers">
-                        <input id="cp" type="number" name="CódigoPostalUm" readonly class="required" value="4760">
+                        <select id="cp" name="CódigoPostalUm" required class="required">
+                            <option value="" disabled selected>Selecionar</option>
+                            <option value="4760">4760</option>
+                            <option value="4780">4780</option>
+                        </select>
                         <input id="cP" type="number" name="CódigoPostalDois" required class="required">
                     </div>
                 </div>
