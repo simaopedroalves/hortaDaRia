@@ -1,4 +1,7 @@
-
+document.addEventListener('DOMContentLoaded', async () => {
+    await removeOutOfStockFromCart();
+    updateNumbItemsOnCart();
+});
 
 // ========================  CARRINHO DE COMPRAS  ===========================================
 
@@ -216,4 +219,5 @@ window.onpageshow = (e) => {
         window.location.reload()
     }
 }
+
 

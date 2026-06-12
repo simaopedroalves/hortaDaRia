@@ -79,23 +79,49 @@ function showAllert (name) {
 
             setTimeout(() => {
                 alert.classList.remove('show-alert')
-            }, 2000);
+            }, 6000);
         }
 
 const orderAgainButtons = document.querySelectorAll('.order-again-btn');
 
+// orderAgainButtons.forEach((button, index) => {
+//     button.addEventListener('click', () => {
+//         const orderItems = basketHistoric[index].items;     
+//         let currentCart = JSON.parse(localStorage.getItem('cart')) || [];
+//         currentCart = currentCart.concat(orderItems); 
+//         localStorage.setItem('cart', JSON.stringify(currentCart));
+//         showAllert('Encomenda');
+//         setTimeout(() => {
+//               location.reload();
+//             }, 2000);
+//     });
+// }); 
+
 orderAgainButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        const orderItems = basketHistoric[index].items;     
+    button.addEventListener('click', async () => {
+        const orderItems = basketHistoric[index].items;
+
+        // busca stock atual
+        const stockMap = await fetchStockMap();
+
+        const validItems = stockMap
+            ? orderItems.filter(item => stockMap[item.itName] !== false)
+            : orderItems; // se falhar o fetch, adiciona tudo (fail-safe)
+
         let currentCart = JSON.parse(localStorage.getItem('cart')) || [];
-        currentCart = currentCart.concat(orderItems); 
+        currentCart = currentCart.concat(validItems);
         localStorage.setItem('cart', JSON.stringify(currentCart));
-        showAllert('Encomenda');
-        setTimeout(() => {
-              location.reload();
-            }, 2000);
+
+        const removed = orderItems.length - validItems.length;
+        if (removed > 0) {
+            showAllert(`Encomenda adicionada (${removed} artigo(s) sem stock ignorado(s))`);
+        } else {
+            showAllert('Encomenda');
+        }
+
+        setTimeout(() => location.reload(), 6000);
     });
-}); 
+});
  
 let dateNow = new Date().toString().split(' ')[0];
 
