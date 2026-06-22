@@ -405,6 +405,21 @@
                 "traditionalProperties": ["Licopeno antioxidante", "Vitamina C elevada", "Alcalinizante", "Polpa suculenta e saborosa", "Tamanho grande e formato tradicional"]
             }
         },
+         {
+            "name": "tomate cereja/cherry dourado",
+            "price": 8,
+            "image": "",
+            "productId": 171422062026,
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Solanum lycopersicum var. cerasiforme",
+                "commonName": "Tomate cherry",
+                "family": "Solanaceae",
+                "harvestTime": {"minDays": 60, "maxDays": 80},
+                "culinaryUses": ["Snack fresco (como baga)", "Saladas gourmet", "Decoração", "Molhos raffinados"],
+                "traditionalProperties": ["Licopeno concentrado (pequeno)", "Sabor muito doce concentrado", "Vitamina C", "Fácil de comer como fruta", "Gourmet versão"]
+            }
+        },
         {
             "name": "tomate cherry vermelho",
             "price": 8,
