@@ -63,12 +63,18 @@ pickUpRadioBtn.addEventListener('click', () => {
 pickUpAtHortaBtn.addEventListener('click', () => {
     pickUpHortaSection.classList.remove('hide-section');
     removeRequiredAttribute();
+    removeRequiredAttributeOnPostalCode()
 });
 
 // ─── REQUIRED ATTRIBUTES ─────────────────────────────────────────────────────
 
 function removeRequiredAttribute() {
     let previousRequiredElements = document.querySelectorAll('.deliver-sec div input');
+    previousRequiredElements.forEach(el => el.removeAttribute('required'));
+}
+
+function removeRequiredAttributeOnPostalCode() {
+    let previousRequiredElements = document.querySelectorAll('.cp .cp-numbers select');
     previousRequiredElements.forEach(el => el.removeAttribute('required'));
 }
 
