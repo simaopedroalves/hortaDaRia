@@ -74,7 +74,7 @@ function removeRequiredAttribute() {
 }
 
 function removeRequiredAttributeOnPostalCode() {
-    let previousRequiredElements = document.querySelectorAll('.cp .cp-numbers #cp');
+    let previousRequiredElements = document.querySelector('.cp');
     previousRequiredElements.style.display = 'none';
     console.log('teste em ' + previousRequiredElements)
 }
