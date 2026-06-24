@@ -163,24 +163,25 @@ clientPhoneNumber.addEventListener('input', () => {
 const firstCPNumber  = document.querySelector('#cp');
 const secondCPNumber = document.querySelector('#cP');
 
-firstCPNumber.addEventListener('input', () => {
-    let regex  = /^\d{4}$/g;
-    let string = firstCPNumber.value;
+// FirstCPNumber.addEventListener('input', () => {
+//     let regex  = /^\d{4}$/g;
+//     let string = firstCPNumber.value;
+// 
+//     if (regex.test(string) === true || firstCPNumber.value == '') {
+//         firstCPNumber.parentElement.parentElement.style.color = 'var(--green)';
+//         firstCPNumber.parentElement.parentElement.firstElementChild.classList.remove('invalid-input');
+//         submitBtn.disabled = false;
+//         errorMessage.textContent = validMessage;
+//         errorMessage.style.color = 'var(--orange)';
+//     } else {
+//         firstCPNumber.parentElement.parentElement.style.color = 'var(--red)';
+//         firstCPNumber.parentElement.parentElement.firstElementChild.classList.add('invalid-input');
+//         submitBtn.disabled = true;
+//         errorMessage.textContent = invalidMessage;
+//         errorMessage.style.color = 'var(--red)';
+//     }
+// });
 
-    if (regex.test(string) === true || firstCPNumber.value == '') {
-        firstCPNumber.parentElement.parentElement.style.color = 'var(--green)';
-        firstCPNumber.parentElement.parentElement.firstElementChild.classList.remove('invalid-input');
-        submitBtn.disabled = false;
-        errorMessage.textContent = validMessage;
-        errorMessage.style.color = 'var(--orange)';
-    } else {
-        firstCPNumber.parentElement.parentElement.style.color = 'var(--red)';
-        firstCPNumber.parentElement.parentElement.firstElementChild.classList.add('invalid-input');
-        submitBtn.disabled = true;
-        errorMessage.textContent = invalidMessage;
-        errorMessage.style.color = 'var(--red)';
-    }
-});
 
 secondCPNumber.addEventListener('input', () => {
     let regex  = /^\d{3}$/g;
