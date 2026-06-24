@@ -9,16 +9,23 @@ const allSelects = document.querySelectorAll('select');
 
 
 // ─── DISABLE/ENABLE INPUTS ────────────────────────────────────────────────────
-
+// DISABLE/ENABLE — usa 'disabled' só nos inputs, nos selects bloqueia via pointer-events
 function disableInputs() {
     allInputs.forEach(el => el.setAttribute('readonly', true));
-    allSelects.forEach(el => el.setAttribute('disabled', true));
+    allSelects.forEach(el => {
+        el.style.pointerEvents = 'none';
+        el.style.opacity = '0.5';
+    });
 }
 
 function enableInputs() {
     allInputs.forEach(el => el.removeAttribute('readonly'));
-    allSelects.forEach(el => el.removeAttribute('disabled'));
+    allSelects.forEach(el => {
+        el.style.pointerEvents = '';
+        el.style.opacity = '';
+    });
 }
+
 
 disableInputs();
 
