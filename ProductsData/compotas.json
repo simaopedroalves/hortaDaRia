@@ -241,6 +241,16 @@
                 "description": "Compota grande de framboesa amarela, versão premium de sabor mais suave e delicado que framboesa vermelha.",
                 "components": ["Framboesa amarela fresca", "Açúcar integral", "Pectina natural"]
             }
+        },
+        {
+            "name": "Compota Ameixa Vermelha",
+            "image": "",
+            "productId": "30410072026",
+            "stock": true,
+            "technicalSheet": {
+                "description": "Compota grande de ameixa vermelha, versão tradicional de sabor intenso e textura encorpada.",
+                "components": ["Ameixa vermelha fresca", "Açúcar integral", "Pectina natural"]
+            }
         }
     ]
 }
