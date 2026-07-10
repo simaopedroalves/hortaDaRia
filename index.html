@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="stylesheet" href="/stylesheet/testemunhos.css">
     <link rel="stylesheet" href="stylesheet/popUp.css">
-
+    <link rel="stylesheet" href="stylesheet/form.css">
     <meta name="google-site-verification" content="fG5KQroNX36_63dnQaTQEBEGgJNf0-74G9XbwX3rN8U">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script type="module" src="/scriptDocs/script-cabazes.js" defer></script>
@@ -311,6 +311,47 @@
                 <img src="/images/conta-la-logo.webp" alt="Logo do Jornal Conta Lá" class="press-logo">
             </div>
         </section>
+
+        <!-- ==================================== -->
+<!-- FORMULARIO DE TESTEMUNHOS -->
+
+    <form class="contactForm" name="Testimonial" action="/html/success.html" method="POST" data-netlify="true">
+        <input type="hidden" name="subject" value="" id="newTestimonial" data-remove-prefix>
+
+        <!-- code needed to send emails via EmailJSTemplates -->
+        <!-- <form class="contactForm" onsubmit="openSuccessPage(event)" method="post ">  -->
+
+        <div class="introduction">
+            <p class="introductionText">
+                Já adquiriste algum dos nossos produtos? Então deixa-nos o teu testemunho. A tua opinião é muito importante para nós e para os nossos futuros clientes.
+            </p>
+        </div>
+
+        <div>
+            <label for="name">Nome<span>*</span></label>
+            <input type="text" name="Nome" id="name" required>
+        </div>
+
+        <div>
+            <label for="email" class="mail">E-mail<span>*</span></label>
+            <input type="email" name="email" id="email" required placeholder="exemplo@email.com">
+        </div>
+
+        <div class="clientMessage">
+            <label for="testimonial">Testemunho<span>*</span></label>
+            <textarea id="testimonial" name="Testemunho" required autocorrect rows="5"
+                placeholder="Escreve aqui o teu testemunho"></textarea>
+        </div>
+
+        <span class="obligationOrErrorMessage">* Preenchimento obrigatório</span>
+
+        <button type="submit" class="btn-info" id="submitBtn">Enviar</button>
+
+
+    </form>
+
+
+        <!-- ============================================= -->
 
         <section class="media-and-contacts" id="contactsAndSocialMedia">
 
