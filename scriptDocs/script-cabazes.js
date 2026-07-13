@@ -80,12 +80,13 @@ export async function fetchCabazesSheetData() {
     }
 }
 
+// Number of items for each cabaz type
 export function getCabazContent(sheetsData, fallbackItems) {
     const fullContent = sheetsData['5']?.content ?? fallbackItems;
     return {
         pequeno: fullContent.slice(0, 5),
         medio:   fullContent.slice(0, 10),
-        grande:  fullContent.slice(0, 14),
+        grande:  fullContent.slice(0, 15),
         premium: fullContent
     };
 }
