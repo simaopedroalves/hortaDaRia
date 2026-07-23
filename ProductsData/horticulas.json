@@ -1,6 +1,36 @@
 {    
     "horticulas": [
-                {
+        {
+            "name": "Maçã Bio - Gonçalo Pindela",
+            "price": 2.25,
+            "image": "/images/frutaDaEpoca/maca-goncalo-pindela.webp",
+            "productId": 234123072026,
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Malus domestica",
+                "commonName": "Maçã biológica certificada - Gonçalo Pindela",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 0, "maxDays": 0},
+                "culinaryUses": ["Fruta fresca", "Sobremesas e sumos", "Smoothies", "Acompanhamento de iogurte"],
+                "traditionalProperties": ["Rica em vitamina C", "Digestiva", "Refrescante", "Antioxidante", "Versátil na culinária"]
+            }
+        },
+        {
+            "name": "Pêra Bio - Gonçalo Pindela",
+            "price": 3,
+            "image": "/images/frutaDaEpoca/pera-goncalo-pindela.webp",
+            "productId": 234523072026,
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Pyrus communis",
+                "commonName": "Pêra biológica certificada - Gonçalo Pindela",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 0, "maxDays": 0},
+                "culinaryUses": ["Fruta fresca", "Sobremesas e sumos", "Smoothies", "Acompanhamento de iogurte"],
+                "traditionalProperties": ["Rica em vitamina C", "Digestiva", "Refrescante", "Antioxidante", "Versátil na culinária"]
+            }
+        },        
+        {
             "name": "groselha vermelha",
             "price": 25,
             "image": "/images/frutaDaEpoca/groselha-vermelha.jpeg",
@@ -26,7 +56,7 @@
                 "commonName": "Kiwi",
                 "family": "Actinidiaceae",
                 "harvestTime": {"minDays": 180, "maxDays": 240},
-                "culinaryUses": ["Fruta fresca", "Sobremesas e sucos", "Smoothies", "Acompanhamento de iogurte"],
+                "culinaryUses": ["Fruta fresca", "Sobremesas e sumos", "Smoothies", "Acompanhamento de iogurte"],
                 "traditionalProperties": ["Rica em vitamina C", "Enzima actinidina (digestão de proteínas)", "Laxante suave", "Antioxidante", "Refrescante"]
             }
         },
@@ -108,7 +138,7 @@
         {
             "name": "ameixa vermelha",
             "price": 3,
-            "image": "/images/frutaDaEpoca/ameixa-vermelha.jpg",
+            "image": "/images/frutaDaEpoca/ameixa-vermelha.webp",
             "productId": 2614072025,
             "stock": false,
             "technicalSheet": {

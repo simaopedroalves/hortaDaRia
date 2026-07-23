@@ -253,6 +253,16 @@
       ],
       "horticulas": [
         {
+            "name": "Maçã Bio - Gonçalo Pindela",
+            "image": "/images/frutaDaEpoca/maca-goncalo-pindela.webp",
+            "productId": 234123072026
+        },
+        {
+            "name": "Pêra Bio - Gonçalo Pindela",
+            "image": "/images/frutaDaEpoca/pera-goncalo-pindela.webp",
+            "productId": 234523072026
+        },
+        {
             "name": "kiwi",
             "image": "/images/frutaDaEpoca/kiwi.jpg",
             "productId": 10028102025
