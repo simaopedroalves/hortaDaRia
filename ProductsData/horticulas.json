@@ -1,6 +1,21 @@
 {    
     "horticulas": [
         {
+            "name": "Abrunho",
+            "price": 3.5,
+            "image": "/images/frutaDaEpoca/abrunho.webp",
+            "productId": 24604082026,
+            "stock": true,
+            "technicalSheet": {
+                "botanicalName": "Prunus spinosa",
+                "commonName": "Abrunho, abrunheiro-bravo, ameixa-brava",
+                "family": "Rosaceae",
+                "harvestTime": {"minDays": 1095, "maxDays": 1825},
+                "culinaryUses": ["Compotas e geleias", "Licores e aguardentes aromatizadas", "Xaropes e molhos", "Chutneys e sobremesas"],
+                "traditionalProperties": ["Rico em vitamina C, antioxidantes e fibras", "Fonte de compostos fenólicos e antocianinas", "Digestivo", "Propriedades adstringentes e antioxidantes"]
+            }
+        },
+        {
             "name": "Maçã Bio - Gonçalo Pindela",
             "price": 2.25,
             "image": "/images/frutaDaEpoca/maca-goncalo-pindela.webp",

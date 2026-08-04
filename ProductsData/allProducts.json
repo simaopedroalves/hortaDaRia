@@ -253,6 +253,11 @@
       ],
       "horticulas": [
         {
+            "name": "Abrunho",
+            "image": "/images/frutaDaEpoca/abrunho.webp",
+            "productId": 24604082026
+        },
+        {
             "name": "Maçã Bio - Gonçalo Pindela",
             "image": "/images/frutaDaEpoca/maca-goncalo-pindela.webp",
             "productId": 234123072026
