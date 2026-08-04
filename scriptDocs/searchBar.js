@@ -33,22 +33,40 @@ closeSearchBar.addEventListener('click', () => {
 });
 
 // Map category names to their corresponding HTML files
+// const categoryToPageMap = {
+//   'ovos': 'ovos.html',
+//   'verduras': 'verduras.html',
+//   'raizes': 'raizes.html',
+//   'carnes': 'carnes.html',
+//   'cogumelos': 'cogumelos.html',
+//   'compotas': 'compotas.html',
+//   'Compotas': 'compotas.html',
+//   'ervasECha': 'ervasECha.html',
+//   'floresComestiveis': 'floresComestiveis.html',
+//   'horticulas': 'horticulas.html',
+//   'leguminosas': 'leguminosas.html',
+//   'microverdes': 'microverdes.html',
+//   'plantasEmVaso': 'plantasEmVaso.html',
+//   'sabaoNatural': 'sabaoNatural.html',
+//   'saladas': 'saladas.html'
+// };
+
 const categoryToPageMap = {
-  'ovos': 'ovos.html',
-  'verduras': 'verduras.html',
-  'raizes': 'raizes.html',
-  'carnes': 'carnes.html',
-  'cogumelos': 'cogumelos.html',
-  'compotas': 'compotas.html',
-  'Compotas': 'compotas.html',
-  'ervasECha': 'ervasECha.html',
-  'floresComestiveis': 'floresComestiveis.html',
-  'horticulas': 'horticulas.html',
-  'leguminosas': 'leguminosas.html',
-  'microverdes': 'microverdes.html',
-  'plantasEmVaso': 'plantasEmVaso.html',
-  'sabaoNatural': 'sabaoNatural.html',
-  'saladas': 'saladas.html'
+  'ovos': 'ovos',
+  'verduras': 'verduras',
+  'raizes': 'raizes',
+  'carnes': 'carnes',
+  'cogumelos': 'cogumelos',
+  'compotas': 'compotas',
+  'Compotas': 'compotas',
+  'ervasECha': 'ervasECha',
+  'floresComestiveis': 'floresComestiveis',
+  'horticulas': 'horticulas',
+  'leguminosas': 'leguminosas',
+  'microverdes': 'microverdes',
+  'plantasEmVaso': 'plantasEmVaso',
+  'sabaoNatural': 'sabaoNatural',
+  'saladas': 'saladas'
 };
 
 fetch("/ProductsData/allProducts.json")
@@ -89,14 +107,16 @@ searchBarInput.addEventListener('input', () => {
     li.style.gap = "1em";
 
     // Use the mapping to get the correct page URL
-    const categoryPage = categoryToPageMap[product.category] || '/html/products.html';
+    // const categoryPage = categoryToPageMap[product.category] || '/html/products.html';
+    const categoryPage = categoryToPageMap[product.category] || 'products';
+
     
     // li.onclick = () => {
     //     window.location.href = `/html/${categoryPage}` + '#' + `${product.image}`;
     // };
 
     li.innerHTML = `
-    <a href="/html/${categoryPage}/#${product.productId}" style="text-decoration: none; color: inherit; display: flex; gap: 1em; background-color: var(--green); padding: 0.5em; border-radius: 0.5em; box-shadow: 0 2px 4px rgba(0,0,0,0.1); min-width: 100%; align-items: center;">
+    <a href="/html/${categoryPage}#${product.productId}" style="text-decoration: none; color: inherit; display: flex; gap: 1em; background-color: var(--green); padding: 0.5em; border-radius: 0.5em; box-shadow: 0 2px 4px rgba(0,0,0,0.1); min-width: 100%; align-items: center;">
       <img src="${product.image || '/images/logo.png'}" alt="${product.name}" style="min-width: 75px; max-height: 75px; object-fit: cover; border-radius: 50%; border: 1px solid var(--orange);">
        <div>
         <strong style="text-transform: uppercase">${product.name}</strong><br>
