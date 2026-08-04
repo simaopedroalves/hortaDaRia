@@ -96,7 +96,7 @@ searchBarInput.addEventListener('input', () => {
     // };
 
     li.innerHTML = `
-    <a href="/html/${categoryPage}#${product.productId}" style="text-decoration: none; color: inherit; display: flex; gap: 1em; background-color: var(--green); padding: 0.5em; border-radius: 0.5em; box-shadow: 0 2px 4px rgba(0,0,0,0.1); min-width: 100%; align-items: center;">
+    <a href="/html/${categoryPage}/#${product.productId}" style="text-decoration: none; color: inherit; display: flex; gap: 1em; background-color: var(--green); padding: 0.5em; border-radius: 0.5em; box-shadow: 0 2px 4px rgba(0,0,0,0.1); min-width: 100%; align-items: center;">
       <img src="${product.image || '/images/logo.png'}" alt="${product.name}" style="min-width: 75px; max-height: 75px; object-fit: cover; border-radius: 50%; border: 1px solid var(--orange);">
        <div>
         <strong style="text-transform: uppercase">${product.name}</strong><br>
