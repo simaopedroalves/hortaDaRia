@@ -389,18 +389,25 @@ export function updateNumbItemsOnCart() {
 updateNumbItemsOnCart()
 
 
-let allAddBasketCabazesButton = document.querySelectorAll(".cabaz-content [type=button]");
-console.log(allAddBasketCabazesButton.textContent);
-
-allAddBasketCabazesButton.forEach((el) => {
-    console.log(el.textContent);
-});
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Sua função aqui
-    allAddBasketCabazesButton.forEach((el) => {
-    console.log(el.textContent);
-});
+    try {
+        let allAddBasketCabazesButton = document.querySelectorAll(".cabaz-content [type=button]");
+        
+        // Verifica se encontrou elementos
+        if (allAddBasketCabazesButton.length === 0) {
+            console.warn('Nenhum botão encontrado com o seletor: .cabaz-content [type=button]');
+            return;
+        }
+        
+        console.log(`✅ Encontrados ${allAddBasketCabazesButton.length} botões`);
+        
+        allAddBasketCabazesButton.forEach((el, index) => {
+            console.log(`Botão ${index + 1}: "${el.textContent.trim()}"`);
+        });
+        
+    } catch (error) {
+        console.error('Erro ao processar botões:', error);
+    }
 });
 
 // ===== CAI NEVE ====
