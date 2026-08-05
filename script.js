@@ -390,23 +390,29 @@ updateNumbItemsOnCart()
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    try {
-        let allAddBasketCabazesButton = document.querySelectorAll('.cabaz-content button[type="button"]');
-        
-        // Verifica se encontrou elementos
-        if (allAddBasketCabazesButton.length === 0) {
-            console.warn('Nenhum botão encontrado com o seletor: .cabaz-content [type=button]');
-            return;
-        }
-        
-        console.log(`✅ Encontrados ${allAddBasketCabazesButton.length} botões`);
-        
-        allAddBasketCabazesButton.forEach((el, index) => {
-            console.log(`Botão ${index + 1}: "${el.textContent.trim()}"`);
+    // Seleciona TODOS os botões dentro de .cabaz-content
+    const botoes = document.querySelectorAll('.cabaz-content button[type="button"]');
+    
+    console.log('Total de botões encontrados:', botoes.length);
+    
+    if (botoes.length > 0) {
+        botoes.forEach((botao, index) => {
+            // Desabilita
+            botao.disabled = true;
+            
+            // Muda o texto
+            botao.textContent = 'Indisponível';
+            
+            // Estiliza
+            botao.style.opacity = '0.6';
+            botao.style.cursor = 'not-allowed';
+            botao.style.backgroundColor = '#d3d3d3';
+            botao.style.color = '#808080';
+            
+            console.log(`✅ Botão ${index + 1} alterado:`, botao.className);
         });
-        
-    } catch (error) {
-        console.error('Erro ao processar botões:', error);
+    } else {
+        console.warn('❌ Nenhum botão encontrado!');
     }
 });
 
