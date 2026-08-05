@@ -395,7 +395,7 @@ updateNumbItemsOnCart()
 // CÓDIGO PARA DESABILITAR BOTÕES
 // =============================================
 function desabilitarBotoesAdicionar() {
-    const botoes = document.querySelectorAll('.cabaz-content button[type="button"]');
+    const botoes = document.querySelectorAll('.cabaz-box .cabaz-content button[type="button"]');
     
     if (botoes.length === 0) return false;
     
