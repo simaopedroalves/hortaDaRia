@@ -391,7 +391,7 @@ updateNumbItemsOnCart()
 
 document.addEventListener('DOMContentLoaded', function() {
     try {
-        let allAddBasketCabazesButton = document.querySelectorAll(".cabaz-content [type=button]");
+        let allAddBasketCabazesButton = document.querySelectorAll(".cabaz-content button[type=button]");
         
         // Verifica se encontrou elementos
         if (allAddBasketCabazesButton.length === 0) {
