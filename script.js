@@ -389,30 +389,42 @@ export function updateNumbItemsOnCart() {
 updateNumbItemsOnCart()
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Seleciona TODOS os botões dentro de .cabaz-content
+// ... seus exports e imports ...
+
+// =============================================
+// CÓDIGO PARA DESABILITAR BOTÕES
+// =============================================
+function desabilitarBotoesAdicionar() {
     const botoes = document.querySelectorAll('.cabaz-content button[type="button"]');
     
-    console.log('Total de botões encontrados:', botoes.length);
+    if (botoes.length === 0) return false;
     
-    if (botoes.length > 0) {
-        botoes.forEach((botao, index) => {
-            // Desabilita
+    botoes.forEach(botao => {
+        if (!botao.disabled) {
             botao.disabled = true;
-            
-            // Muda o texto
             botao.textContent = 'Indisponível';
-            
-            // Estiliza
             botao.style.opacity = '0.6';
             botao.style.cursor = 'not-allowed';
             botao.style.backgroundColor = '#d3d3d3';
             botao.style.color = '#808080';
-            
-            console.log(`✅ Botão ${index + 1} alterado:`, botao.className);
+        }
+    });
+    
+    console.log(`✅ ${botoes.length} botões desabilitados`);
+    return true;
+}
+
+// Executa quando o DOM carrega
+document.addEventListener('DOMContentLoaded', function() {
+    // Tenta desabilitar
+    if (!desabilitarBotoesAdicionar()) {
+        // Se não encontrou, observa mudanças
+        const observer = new MutationObserver(() => {
+            if (desabilitarBotoesAdicionar()) {
+                observer.disconnect();
+            }
         });
-    } else {
-        console.warn('❌ Nenhum botão encontrado!');
+        observer.observe(document.body, { childList: true, subtree: true });
     }
 });
 
