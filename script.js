@@ -390,7 +390,12 @@ updateNumbItemsOnCart()
 
 
 let allAddBasketCabazesButton = document.querySelectorAll(".cabaz-content [type=button]");
-console.log(allAddBasketCabazesButton);
+console.log(allAddBasketCabazesButton.textContent);
+
+allAddBasketCabazesButton.forEach((el) => {
+    console.log(el.textContent);
+});
+
 // ===== CAI NEVE ====
 //(colocar o canvas no header para aparecer em todas as paginas, e colocar o script dentro do script.js para nao ter de colocar em todas as paginas)
   // <canvas id="modu-snow-canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 999999;"> </canvas> 
